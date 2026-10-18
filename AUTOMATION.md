@@ -33,9 +33,10 @@ Ce fichier est lu par la tâche programmée de Claude, chaque jour. Il décrit t
    - priorité aux accroches au statut `V` (fait vérifié), jamais `A` ;
    - ne pas répéter un sujet publié dans `etat.json` ;
    - tourner les styles A → J ; dès que 2 styles ont au moins 5 Reels mesurés, appliquer la règle 70/30 (70 % style gagnant, 30 % test) ; gagnant = le plus de vues à 7 jours (Zernio ne donne pas le taux de skip) ;
-   - si un sujet a nettement plus de partages que la moyenne, proposer une suite (série).
+   - si un sujet a nettement plus de partages que la moyenne, proposer une suite (série) ;
+   - **ton de voix** : par défaut le style « promo » (étape 5). Dès que 5 Reels sont mesurés, 1 Reel sur 3 teste une variante de ton (plus rapide, plus posé, plus complice…) en ne changeant QUE la voix, jamais le style d'accroche le même jour, pour savoir ce qui fait la différence.
 4. **Script** : 6 à 10 lignes, une phrase par ligne, 25 à 40 s. Ligne 1 = l'accroche, qui commence par « Plombiers ! » quand c'est naturel. Dernière ligne, toujours : « Prouèssia : les règles du plombier, en trente secondes. » Écrire les nombres en lettres pour la voix.
-5. **Voix** : lancer 6 avec `text` = le script, `style` = le texte ci-dessous, `path` = `NN/voix.txt` (NN = `prochain_numero_dossier` sur 2 chiffres). `git pull`. Le fichier contient du JSON suivi de `|200` : extraire le champ `"data"` (base64) avec une regex, décoder → WAV 24 kHz. Vérifier la transcription avec `moteur/caler.py` : toutes les phrases présentes, rien de lu en trop. Gemini répète parfois tout le texte deux fois : ne garder que la première prise (couper au silence qui suit la dernière phrase, avant le calage). S'il manque une phrase, relancer une seule fois.
+5. **Voix** : lancer 6 avec `text` = le script, `style` = le texte ci-dessous, `path` = `NN/voix.txt` (NN = `prochain_numero_dossier` sur 2 chiffres). `git pull`. Le fichier contient du JSON suivi de `|200` : extraire le champ `"data"` (base64) avec une regex, décoder → WAV 24 kHz. Vérifier la transcription avec `moteur/caler.py` : toutes les phrases présentes, rien de lu en trop. Gemini répète parfois tout le texte deux fois : ne garder que la première prise (couper au silence qui suit la dernière phrase, avant le calage). S'il manque une phrase, relancer une seule fois. Puis **mesurer le ton** : `python3 moteur/analyse_voix.py NN/voix.wav <nombre de mots du script>` et garder le résultat (débit, hauteur, variation de hauteur, dynamique, attaque, pauses) pour `etat.json`.
 
    Style (ton « promo », validé par la fondatrice le 18/10/2026) : « Style promo énergique : voix d'homme enthousiaste et pleine d'entrain, léger accent du Sud-Ouest, débit vif et rythmé, grand sourire dans la voix. Attaque la première phrase avec punch, comme pour interpeller quelqu'un sur un chantier. Appuie fort sur les chiffres et les mots clés, intonation qui monte franchement sur les questions, courte pause dynamique entre chaque ligne. Reste naturel et complice, jamais criard ni vendeur de télé-achat. Dernière phrase dite avec un grand sourire. »
 6. **Vidéo** : copier `moteur/exemple_reel03.py` en `NN/reel.py` et l'adapter (PH, BORNES via `caler.segments` + `caler.transcrire`, scènes). Obligatoire :
@@ -50,8 +51,8 @@ Ce fichier est lu par la tâche programmée de Claude, chaque jour. Il décrit t
 7. `git add NN && git commit && git push`.
 8. **Ajouter** : lancer 1 avec `video_file=NN/video.mp4`, `cover_file=NN/cover.png`, `sources_file=NN/sources.pdf`, `scheduled_at` = aujourd'hui 19:00 heure de Paris convertie en UTC (17:00Z en heure d'été, 18:00Z en heure d'hiver), plus topic, hook, caption (légende + « Sources officielles : … » + « Information générale, pas un conseil personnalisé. » + 5 à 7 hashtags) et pinned_comment (une question aux plombiers).
 9. Lancer 2 (déjà actif) pour envoyer l'e-mail « À valider » tout de suite.
-10. Mettre à jour `etat.json` (n, style, sujet, date, dossier) et incrémenter `prochain_numero_dossier`. Commit + push.
-11. **Le lundi** : écrire `bilans/AAAA-MM-JJ.md` (ce qui a été testé, vues à 7 jours par style, décision de la semaine) et le pousser.
+10. Mettre à jour `etat.json` (n, style, sujet, date, dossier, `ton` = nom du style de voix, `voix_mesures` = sortie de `analyse_voix.py`) et incrémenter `prochain_numero_dossier`. Commit + push.
+11. **Le lundi** : écrire `bilans/AAAA-MM-JJ.md` (ce qui a été testé, vues à 7 jours par style d'accroche ET par ton de voix, lien entre les mesures de voix (débit, variation de hauteur, attaque) et les vues, décision de la semaine) et le pousser.
 
 ## En cas de problème
 
