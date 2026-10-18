@@ -26,6 +26,17 @@ Ce fichier est lu par la tâche programmée de Claude, chaque jour. Il décrit t
 
 **Budget : 1 000 crédits par mois.** Une journée normale ≈ 30 crédits ; le lundi ≈ 50 (veille : 3 recherches à 4 crédits + 3 analyses à 2 crédits). Ne pas relancer un scénario « pour voir ». Un seul Reel par jour.
 
+## Mots-clés en commentaire (Instagram, via Zernio, connexion « Prouessia Zernio v2 » 12080150)
+
+Automatisation active sur tout le compte Instagram : un commentaire qui est **exactement** « DEVIS » reçoit en message privé la fiche à imprimer `guides/DEVIS-fiche-a-imprimer.pdf` (et une réponse publique « envoyé en message privé »). Profil Zernio 6ad4b6cfee58f47508be0456, compte Instagram 6ad4e37eebbb709cd6908c42. Pour chaque Reel sur les devis, ajouter à la légende : « 👉 Écrivez DEVIS en commentaire : on vous envoie notre fiche à imprimer en message privé. » Ne jamais promettre un mot-clé qui n'a pas son automatisation (liste : `GET /comment-automations?profileId=…` avec le module Universal de Zernio). Un nouveau guide = une nouvelle automatisation, guide relu et sourcé d'abord.
+
+## Leçons d'une vidéo virale (18/10/2026), à tester une par une
+
+- Promesse + bénéfice dans la 1re seconde, puis 2 ou 3 bénéfices cochés un par un.
+- Relance au milieu (vers 12-15 s) : écran plein « La plupart des plombiers s'arrêtent là… » puis la suite.
+- Fin par un appel à commenter un mot-clé (voir ci-dessus).
+- Tests possibles plus tard : sous-titres mot à mot, mascotte, démo de l'outil à l'écran.
+
 ## Procédure
 
 1. `cd` dans le dépôt, `git pull`, `bash setup.sh`.
