@@ -80,6 +80,12 @@ Le scénario « Prospection · outils » (8038120, à lancer en jonglant les cr�
 - `exporter` : `n` → les prospects à rechercher (JSON), ils passent en `recherche`.
 - `maj` : `payload` = tableau JSON `[{id, site_web, email, email_source, objet, message, statut, notes}]` (JSON valide sur une ligne, guillemets échappés).
 - `bilan` : nombre de prospects par statut.
+- `importer_json` : `payload` = `{"results":[{"siren","nom_complet","etat_administratif":"A","siege":{"libelle_commune","code_postal"},"complements":{"est_entrepreneur_individuel":true|false}}]}` pour ajouter des entreprises trouvées autrement (source B ci-dessous).
+
+Constat du 19/10 : les artisans en nom propre du registre ont rarement un site ou un e-mail public (0 sur 6 au premier test). D'où deux sources :
+- **Source A, le registre** : sert surtout la liste « à visiter » (ceux sans site sont la meilleure cible pour un site à leur nom).
+- **Source B, le web** : chercher « plombier <ville> » pour les villes du département de la semaine, garder les plombiers qui ont un site avec un e-mail de contact, vérifier leur SIREN dans les mentions légales ou sur annuaire-entreprises.data.gouv.fr (activité 43.22A ou plomberie, entreprise active), puis `importer_json` et `maj`. Jamais d'annuaire payant ni de liste achetée.
+- Une entreprise dont l'adresse est « [NON-DIFFUSIBLE] » au registre a demandé à ne pas être diffusée : statut `ecarte`, on ne la contacte pas.
 
 Chaque jour :
 1. **Le lundi** : `importer` 2 pages pour le département de la semaine (S1 : 78, S2 : 92, S3 : 91, S4 : 94, puis 75, 95, 93, 77), en reprenant à la page suivante de la dernière fois (noter la page dans `etat.json` → `prospection`).
