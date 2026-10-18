@@ -21,10 +21,11 @@ Ce fichier est lu par la tâche programmée de Claude, chaque jour. Il décrit t
 | 5 · Exporter les stats vers GitHub | 8032370 | éteint |
 | 6 · Générer la voix vers GitHub | 8032472 | éteint |
 | 7 · Veille et analyse vidéo vers GitHub | 8032962 | éteint |
+| Prospection · outils (vers GitHub) | 8038120 | éteint |
 
 **Offre gratuite : 2 scénarios actifs maximum.** Pour lancer un scénario éteint : éteindre 8031972 → allumer le scénario → `scenarios_run` (responsive) → l'éteindre → **rallumer 8031972**. Toujours rallumer 8031972 à la fin, même après une erreur. En cas de « Too Many Requests », attendre 40 s et réessayer une fois.
 
-**Budget : 1 000 crédits par mois.** Une journée normale ≈ 30 crédits ; le lundi ≈ 50 (veille : 3 recherches à 4 crédits + 3 analyses à 2 crédits). Ne pas relancer un scénario « pour voir ». Un seul Reel par jour.
+**Budget : 1 000 crédits par mois.** Une journée normale ≈ 35 crédits avec la prospection ; le lundi ≈ 60 (veille : 3 recherches à 4 crédits + 3 analyses à 2 crédits). Ne pas relancer un scénario « pour voir ». Un seul Reel par jour.
 
 ## Mots-clés en commentaire (Instagram, via Zernio, connexion « Prouessia Zernio v2 » 12080150)
 
@@ -69,6 +70,36 @@ Automatisation active sur tout le compte Instagram : un commentaire qui est **ex
 11. **Analyse de nos vidéos** : pour chaque Reel publié il y a 2 jours, lancer 7 avec `mode=analyse`, `video_url` = l'URL YouTube du Short (id YouTube dans `platform_ids`), `path=analyses/NN.json`. On obtient la même grille que pour les concurrents (accroche, plans, voix, musique, moments à risque de skip). À mettre en face du taux de skip réel.
 12. **Le lundi, veille concurrents** : lancer 7 avec `mode=recherche`, `after` = il y a 90 jours (ISO, UTC), `path=veille/AAAA-MM-JJ-<mot>.txt`, pour 3 recherches : « plombier », « astuce plomberie », « artisan devis facture ». Le fichier donne, Short par Short (séparés par ` ## `) : id, titre, chaîne, vues, likes, commentaires, durée, date. Choisir les 3 Shorts en français avec le plus de vues par jour depuis leur publication, et lancer 7 en `mode=analyse` sur chacun (`path=veille/analyses/AAAA-MM-JJ-<id>.json`). Le fichier contient la réponse Gemini : le JSON d'analyse est le champ `text`. Seules des vidéos publiques sont analysées (aucune donnée client n'est envoyée à Gemini).
 13. **Le lundi, bilan** : écrire `bilans/AAAA-MM-JJ.md` (ce qui a été testé, vues à 7 jours par style d'accroche ET par ton de voix, lien entre les mesures de voix (débit, variation de hauteur, attaque) et les vues, décision de la semaine) et le pousser.
+
+## Prospection automatique (lundi au vendredi, après le Reel)
+
+Table Supabase `prospects` (SQL : `prospection/01-prospects.sql`). Statuts : `nouveau` → `recherche` → `pret` | `sans_email` | `ecarte` → `envoye_1` → `envoye_2` → `repondu` | `client` | `desinscrit`. L'envoi part tout seul à 9 h 05 avec le scénario 2 (15 e-mails maximum par jour ouvré, une seule relance à J+5, puis plus rien). Lien de désinscription dans chaque e-mail (webhook `?d=stop&p=<id>`).
+
+Le scénario « Prospection · outils » (8038120, à lancer en jonglant les créneaux comme les autres) a 4 modes, résultat écrit dans le fichier `path` du dépôt :
+- `importer` : `departement`, `page` → 25 entreprises 43.22A actives du registre officiel (recherche-entreprises.api.gouv.fr). Le fichier donne `importes=<n>` et la fin du JSON avec `total_pages`.
+- `exporter` : `n` → les prospects à rechercher (JSON), ils passent en `recherche`.
+- `maj` : `payload` = tableau JSON `[{id, site_web, email, email_source, objet, message, statut, notes}]` (JSON valide sur une ligne, guillemets échappés).
+- `bilan` : nombre de prospects par statut.
+
+Chaque jour :
+1. **Le lundi** : `importer` 2 pages pour le département de la semaine (S1 : 78, S2 : 92, S3 : 91, S4 : 94, puis 75, 95, 93, 77), en reprenant à la page suivante de la dernière fois (noter la page dans `etat.json` → `prospection`).
+2. `exporter` avec `n=20`, `path=prospection/a-rechercher/AAAA-MM-JJ.json`, `git pull`.
+3. Pour chaque prospect, chercher avec WebSearch/WebFetch : son site officiel et une adresse e-mail **publiée par l'entreprise elle-même** (page contact, mentions légales, fiche officielle). Jamais d'adresse devinée (prenom.nom@…), jamais d'adresse personnelle trouvée ailleurs. `email_source` = l'URL de la page où l'adresse est écrite. Pas d'adresse : statut `sans_email` (liste pour les visites). Grosse entreprise, activité sans rapport avec la plomberie ou fermée : `ecarte`.
+4. Pour ceux qui ont une adresse, écrire `objet` (moins de 60 caractères, sans majuscules partout, pas de « gratuit », pas de point d'exclamation) et `message` (70 à 110 mots, texte simple) :
+   - « Bonjour » + le nom du dirigeant s'il est connu (« Bonjour Monsieur X ») sinon « Bonjour, » ;
+   - d'où vient le contact : « on a trouvé votre entreprise de plomberie à [ville] dans l'annuaire officiel des entreprises » ;
+   - une phrase sur lui : s'il n'a pas de site, « vous n'avez pas encore de site à votre nom » ; s'il en a un, on parle des devis ;
+   - ce qu'on fait, uniquement ce qui existe : site à son nom, demandes de clients sur son téléphone, devis signé du doigt, relance automatique des devis sans réponse, liste des devis sans réponse ;
+   - l'appel : « On vous montre en 10 minutes, au téléphone ou chez vous ? Il suffit de répondre à ce message. » ;
+   - voix de marque (« on »), vouvoiement, jamais le prénom de la fondatrice, pas de prix dans le premier e-mail, pas de pièce jointe ;
+   - le pied de message (signature, désinscription) est ajouté automatiquement : ne pas l'écrire.
+   Puis statut `pret`.
+5. `maj` avec tout le lot, `path=prospection/maj/AAAA-MM-JJ.txt`. Vérifier que le fichier dit `maj=200`.
+6. Écrire `prospection/a-visiter/AAAA-MM-JJ.md` : les `sans_email` des Yvelines et des Hauts-de-Seine, avec adresse (registre officiel) et site s'il existe, pour les visites et les comptoirs. Pas d'appel à froid sans accord (loi du 30 juin 2025, en vigueur depuis le 11/08/2026, doute pour les pros : on ne prend pas le risque).
+7. Écrire `prospection/envoyes/AAAA-MM-JJ.md` : les prospects contactés la veille, avec pour chacun deux liens à cliquer par la fondatrice quand il répond : « A répondu » `https://hook.eu1.make.com/k5jcskqhsbvtd7wz7ijzea3ow1889ufn?d=repondu&p=<id>` et « Client » `…?d=client&p=<id>`.
+8. **Le lundi** : `bilan` → ajouter les chiffres (importés, prêts, envoyés, réponses, clients, désinscrits) au bilan de la semaine.
+
+Interdits : messages automatiques sur Instagram, TikTok, Facebook ou LinkedIn à des inconnus, appels ou SMS automatiques, achat de fichiers, plus de 15 e-mails par jour, relancer un `desinscrit` ou un `repondu`.
 
 ## En cas de problème
 
