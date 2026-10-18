@@ -91,14 +91,11 @@ Chaque jour :
 1. **Le lundi** : `importer` 2 pages pour le département de la semaine (S1 : 78, S2 : 92, S3 : 91, S4 : 94, puis 75, 95, 93, 77), en reprenant à la page suivante de la dernière fois (noter la page dans `etat.json` → `prospection`).
 2. `exporter` avec `n=20`, `path=prospection/a-rechercher/AAAA-MM-JJ.json`, `git pull`.
 3. Pour chaque prospect, chercher avec WebSearch/WebFetch : son site officiel et une adresse e-mail **publiée par l'entreprise elle-même** (page contact, mentions légales, fiche officielle). Jamais d'adresse devinée (prenom.nom@…), jamais d'adresse personnelle trouvée ailleurs. `email_source` = l'URL de la page où l'adresse est écrite. Pas d'adresse : statut `sans_email` (liste pour les visites). Grosse entreprise, activité sans rapport avec la plomberie ou fermée : `ecarte`.
-4. Pour ceux qui ont une adresse, écrire `objet` (moins de 60 caractères, sans majuscules partout, pas de « gratuit », pas de point d'exclamation) et `message` (70 à 110 mots, texte simple) :
-   - « Bonjour » + le nom du dirigeant s'il est connu (« Bonjour Monsieur X ») sinon « Bonjour, » ;
-   - d'où vient le contact : « on a trouvé votre entreprise de plomberie à [ville] dans l'annuaire officiel des entreprises » ;
-   - une phrase sur lui : s'il n'a pas de site, « vous n'avez pas encore de site à votre nom » ; s'il en a un, on parle des devis ;
-   - ce qu'on fait, uniquement ce qui existe : site à son nom, demandes de clients sur son téléphone, devis signé du doigt, relance automatique des devis sans réponse, liste des devis sans réponse ;
-   - l'appel : « On vous montre en 10 minutes, au téléphone ou chez vous ? Il suffit de répondre à ce message. » ;
-   - voix de marque (« on »), vouvoiement, jamais le prénom de la fondatrice, pas de prix dans le premier e-mail, pas de pièce jointe ;
-   - le pied de message (signature, désinscription) est ajouté automatiquement : ne pas l'écrire.
+4. Pour ceux qui ont une adresse, écrire `objet` (moins de 50 caractères, ex. « Vos devis à <Ville> », pas de majuscules partout, pas de « gratuit », pas de point d'exclamation) et `message` : **30 mots maximum**, texte simple, sur ce modèle :
+   « Bonjour[ Monsieur X], on a vu votre entreprise de plomberie à <Ville>. Un devis sans réponse, c'est un client perdu : Prouessia le relance tout seul.
+
+   Ça vous intéresse ? Répondez simplement à ce mail. »
+   On peut changer la 2e phrase selon le prospect (pas de site → « on crée aussi votre site à votre nom »), en restant à 30 mots et en ne citant que ce qui existe. Voix de marque (« on »), vouvoiement, jamais le prénom de la fondatrice, pas de prix, pas de pièce jointe. **Ne pas écrire** le lien de la vidéo de démo (26 s), la signature ni la désinscription : ils sont ajoutés automatiquement.
    Puis statut `pret`.
 5. `maj` avec tout le lot, `path=prospection/maj/AAAA-MM-JJ.txt`. Vérifier que le fichier dit `maj=200`.
 6. Écrire `prospection/a-visiter/AAAA-MM-JJ.md` : les `sans_email` des Yvelines et des Hauts-de-Seine, avec adresse (registre officiel) et site s'il existe, pour les visites et les comptoirs. Pas d'appel à froid sans accord (loi du 30 juin 2025, en vigueur depuis le 11/08/2026, doute pour les pros : on ne prend pas le risque).

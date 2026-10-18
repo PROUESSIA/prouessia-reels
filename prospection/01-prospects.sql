@@ -55,7 +55,8 @@ end $$;
 create or replace function prospects_lot(n integer default 15)
 returns jsonb language plpgsql security definer set search_path = public as $$
 declare lot jsonb; ids jsonb; deja integer;
-  pied text := E'\n\n—\nL''équipe Prouessia · https://www.prouessia.fr\nVous ne souhaitez plus recevoir nos messages ? Un clic suffit : ';
+  video text := E'\n\nLa vidéo (26 s) : https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/demo/prouessia-relance.mp4';
+  pied text := E'\n\n—\nL''équipe Prouessia · www.prouessia.fr\nNe plus recevoir nos messages : ';
   lien text := 'https://hook.eu1.make.com/k5jcskqhsbvtd7wz7ijzea3ow1889ufn?d=stop&p=';
 begin
   if extract(isodow from now() at time zone 'Europe/Paris') > 5 then
@@ -79,10 +80,9 @@ begin
            'to', jsonb_build_array(email),
            'reply_to', 'prouessia.contact@gmail.com',
            'subject', case when statut = 'pret' then objet else 'Re : ' || objet end,
-           'text', case when statut = 'pret' then message
-                   else E'Bonjour,\n\nJe me permets de revenir vers vous au sujet de mon message de la semaine dernière. '
-                        || E'Si vous perdez parfois des devis restés sans réponse, on peut vous montrer en 10 minutes comment Prouessia les relance tout seul.\n\n'
-                        || E'Si ce n''est pas le bon moment, aucun souci : un clic en bas de ce message et on ne vous écrit plus.' end
+           'text', case when statut = 'pret' then message || video
+                   else E'Bonjour, on revient vers vous : 26 secondes pour voir comment Prouessia relance vos devis sans réponse.'
+                        || video || E'\n\nPas le bon moment ? Un clic en bas, et on arrête.' end
                    || pied || lien || id::text,
            'headers', jsonb_build_object('List-Unsubscribe', '<' || lien || id::text || '>')
          )), '[]'::jsonb),
