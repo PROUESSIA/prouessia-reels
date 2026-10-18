@@ -1,0 +1,22 @@
+{
+ "num": "08",
+ "titre": "Photos de chantier :<br>lesquelles garder ?",
+ "date": "15.10.2026",
+ "affirmations": [
+  {"dit": "D'abord, tout ce qui sera caché. Ensuite, l'avant et l'après, avec la date. Et le jour de la réception des travaux.",
+   "ref": "une méthode pratique, pas une obligation légale. Elle sert de trace en cas de question sur ce qui a été posé.",
+   "label": "Notre conseil :",
+   "liens": []},
+  {"dit": "Au moins dix ans : c'est la durée de la garantie décennale.",
+   "ref": "la garantie décennale court pendant 10 ans à compter de la réception des travaux (Code civil, art. 1792-4-1). Garder ses photos au moins aussi longtemps est notre conseil, pas une obligation.",
+   "label": "Ce que dit le texte :",
+   "liens": [["service-public.gouv.fr : Garantie décennale des constructeurs", "https://www.service-public.gouv.fr/particuliers/vosdroits/F2034"]]},
+  {"dit": "Vous voulez publier une photo chez un client ? Demandez-lui son accord avant.",
+   "ref": "une bonne pratique de respect du client et de sa vie privée. Pour une photo où une personne est reconnaissable, demandez un accord écrit.",
+   "label": "Notre conseil :",
+   "liens": []}
+ ],
+ "non_couvert": ["Les règles détaillées du droit à l'image et de la protection des données.",
+                 "La durée de conservation des factures et des documents comptables."],
+ "avert": "Ce Reel donne une méthode, pas une règle de droit. Pour un litige ou une question précise, voyez un juriste ou votre assureur."
+}

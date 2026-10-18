@@ -1,0 +1,26 @@
+{
+ "num": "02",
+ "titre": "Facture électronique :<br>deux dates à retenir",
+ "date": "12.10.2026",
+ "affirmations": [
+  {"dit": "1er septembre 2026 : toutes les entreprises doivent pouvoir recevoir des factures électroniques. C'est donc déjà le cas aujourd'hui.",
+   "ref": "obligation de réception pour toutes les entreprises, quelle que soit leur taille, depuis le 1er septembre 2026, pour les opérations entre entreprises assujetties à la TVA établies en France. Loi n° 2023-1322 du 29 décembre 2023 (finances pour 2024), art. 91.",
+   "liens": [["impots.gouv.fr : Je passe à la facturation électronique", "https://www.impots.gouv.fr/professionnel/je-passe-la-facturation-electronique"],
+             ["economie.gouv.fr : calendrier de la facturation électronique", "https://www.economie.gouv.fr/actualites/facturation-electronique-les-entreprises-accompagnees-tout-au-long-du-deploiement"]]},
+  {"dit": "1er septembre 2027 : les petites entreprises devront aussi les émettre.",
+   "ref": "obligation d'émission au 1er septembre 2026 pour les grandes entreprises et les ETI, au 1er septembre 2027 pour les PME et les micro-entreprises.",
+   "liens": [["economie.gouv.fr : calendrier de la facturation électronique", "https://www.economie.gouv.fr/actualites/facturation-electronique-les-entreprises-accompagnees-tout-au-long-du-deploiement"],
+             ["entreprendre.service-public.gouv.fr : mentions obligatoires sur une facture (calendrier)", "https://entreprendre.service-public.gouv.fr/vosdroits/F31808"]]},
+  {"dit": "Vos clients particuliers : ce n'est pas la facture électronique, c'est une transmission de données à l'administration.",
+   "ref": "les ventes et prestations aux particuliers relèvent de la transmission de données (e-reporting), pas de la facturation électronique. Une entreprise qui a des clients professionnels et particuliers est concernée par les deux.",
+   "liens": [["impots.gouv.fr : FAQ facturation électronique", "https://impots.gouv.fr/node/14376"]]},
+  {"dit": "Recevoir, c'est maintenant. Émettre, c'est dans moins d'un an.",
+   "ref": "les deux dates ci-dessus ; « moins d’un an » est compté à partir de la date de vérification.",
+   "label": "Résumé :",
+   "liens": []}
+ ],
+ "non_couvert": ["Le choix d'une plateforme agréée pour recevoir et émettre.",
+                 "Le calendrier et le contenu précis de la transmission de données (e-reporting).",
+                 "Les quatre nouvelles mentions des factures."],
+ "avert": "Cette fiche résume des sources officielles. Elle ne remplace pas un conseil personnalisé : pour votre situation, voyez votre comptable ou votre expert-comptable."
+}

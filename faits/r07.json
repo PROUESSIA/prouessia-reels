@@ -1,0 +1,32 @@
+{
+ "num": "07",
+ "titre": "Facture :<br>les points clés",
+ "date": "12.10.2026",
+ "affirmations": [
+  {"dit": "Un numéro unique, qui suit une séquence chronologique et continue. La date de la prestation.",
+   "ref": "numéro unique fondé sur une séquence chronologique et continue ; date de la vente ou de la prestation (date de fin d'exécution). Code de commerce, art. L441-9 ; CGI, ann. II, art. 242 nonies A.",
+   "liens": [["entreprendre.service-public.gouv.fr : Mentions obligatoires sur une facture", "https://entreprendre.service-public.gouv.fr/vosdroits/F31808"]]},
+  {"dit": "Entrepreneur individuel : votre nom, la mention EI, votre adresse et votre numéro SIREN.",
+   "ref": "pour un entrepreneur individuel : nom et prénom précédés ou suivis de « Entrepreneur individuel » ou « EI », adresse et numéro SIREN. Une société indique sa dénomination, sa forme juridique, son capital, son siège et son SIREN.",
+   "liens": [["entreprendre.service-public.gouv.fr : Mentions obligatoires sur une facture", "https://entreprendre.service-public.gouv.fr/vosdroits/F31808"]]},
+  {"dit": "Le détail : quantité, prix unitaire hors taxes, taux de TVA. Les totaux HT et TTC.",
+   "ref": "décompte détaillé (quantité, dénomination précise, prix unitaire HT, taux de TVA ou mention d'exonération) et sommes totales HT et TTC.",
+   "liens": [["entreprendre.service-public.gouv.fr : Mentions obligatoires sur une facture", "https://entreprendre.service-public.gouv.fr/vosdroits/F31808"]]},
+  {"dit": "La date de règlement, et le taux des pénalités de retard.",
+   "ref": "date à laquelle le paiement doit intervenir et taux des pénalités exigibles en cas de retard.",
+   "liens": [["entreprendre.service-public.gouv.fr : Mentions obligatoires sur une facture", "https://entreprendre.service-public.gouv.fr/vosdroits/F31808"]]},
+  {"dit": "Artisan : votre assurance professionnelle, l'assureur, et la couverture géographique.",
+   "ref": "pour une activité artisanale : références du contrat d'assurance professionnelle, coordonnées de l'assureur ou du garant et couverture géographique. Code de l'artisanat, art. L132-1 et R132-1.",
+   "liens": [["entreprendre.service-public.gouv.fr : Mentions obligatoires sur une facture", "https://entreprendre.service-public.gouv.fr/vosdroits/F31808"]]},
+  {"dit": "En franchise de TVA : « TVA non applicable, article 293 B du CGI ».",
+   "ref": "mention obligatoire pour les entreprises en franchise en base de TVA. CGI, art. 293 B.",
+   "liens": [["entreprendre.service-public.gouv.fr : Mentions obligatoires sur une facture", "https://entreprendre.service-public.gouv.fr/vosdroits/F31808"]]},
+  {"dit": "Avec la facture électronique, quatre nouvelles mentions arrivent.",
+   "ref": "SIREN du client professionnel, adresse de livraison si différente, nature des opérations (biens, services ou les deux), option pour le paiement de la TVA d'après les débits le cas échéant.",
+   "liens": [["entreprendre.service-public.gouv.fr : Mentions obligatoires sur une facture", "https://entreprendre.service-public.gouv.fr/vosdroits/F31808"]]}
+ ],
+ "non_couvert": ["L'identité complète du client, le numéro de TVA intracommunautaire, les réductions et l'escompte.",
+                 "L'indemnité forfaitaire de 40 € pour frais de recouvrement (clients professionnels uniquement).",
+                 "La date d'application des nouvelles mentions selon la taille de l'entreprise."],
+ "avert": "Cette fiche résume une source officielle. Elle ne remplace pas un conseil personnalisé : pour votre situation, voyez votre comptable."
+}

@@ -1,0 +1,8 @@
+[
+ {"id": "delais-paiement-pro", "dit": "Entre professionnels, le délai de paiement est en principe de 30 jours après la prestation ; au maximum 60 jours après la facture ou 45 jours fin de mois si c'est écrit. Indemnité forfaitaire de recouvrement : 40 € par facture payée en retard. Pénalités de retard : au moins 3 fois le taux d'intérêt légal.",
+  "source": "entreprendre.service-public.gouv.fr F23211 (page vérifiée le 07/08/2026)", "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23211", "verifie_le": "2026-10-17", "revoir_avant": "2027-04-17"},
+ {"id": "conservation-factures", "dit": "Factures clients et fournisseurs : 10 ans à partir de la clôture de l'exercice (Code de commerce L123-22). Côté fiscal : 6 ans.",
+  "source": "entreprendre.service-public.gouv.fr F10029", "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F10029", "verifie_le": "2026-10-17", "revoir_avant": "2027-04-17"},
+ {"id": "mediateur-conso", "dit": "Un professionnel doit permettre à tout client consommateur l'accès à un dispositif de médiation de la consommation ; nom, coordonnées et site du médiateur visibles sur le site, les CGV/CGS ou les bons de commande, sinon tout autre moyen approprié.",
+  "source": "economie.gouv.fr, Médiation de la consommation : vos principales obligations", "url": "https://www.economie.gouv.fr/mediation-conso/vous-etes-un-professionnel/vos-principales-obligations-0", "verifie_le": "2026-10-17", "revoir_avant": "2027-04-17"}
+]

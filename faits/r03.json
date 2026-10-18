@@ -1,0 +1,29 @@
+{
+ "num": "03",
+ "titre": "Garantie décennale :<br>ce qu'elle couvre",
+ "date": "12.10.2026",
+ "affirmations": [
+  {"dit": "Dix ans, à partir de la réception des travaux.",
+   "ref": "le délai démarre le lendemain de la signature du procès-verbal de réception. Code civil, art. 1792-4-1.",
+   "liens": [["service-public.gouv.fr : Garantie décennale des constructeurs", "https://www.service-public.gouv.fr/particuliers/vosdroits/F2034"]]},
+  {"dit": "Elle vise les dommages qui menacent la solidité de l'ouvrage, ou le rendent impropre à son usage.",
+   "ref": "Code civil, art. 1792.",
+   "liens": [["service-public.gouv.fr : Garantie décennale des constructeurs", "https://www.service-public.gouv.fr/particuliers/vosdroits/F2034"]]},
+  {"dit": "Les canalisations et le chauffage central peuvent être concernés : ce sont des équipements indissociables du bâtiment.",
+   "ref": "exemples d'éléments d'équipement indissociables cités par service-public : canalisation, chauffage central, plafond, plancher, huisseries, installation électrique encastrée. Code civil, art. 1792-2.",
+   "liens": [["service-public.gouv.fr : Garantie décennale des constructeurs", "https://www.service-public.gouv.fr/particuliers/vosdroits/F2034"]]},
+  {"dit": "Un ballon d'eau chaude se retire sans abîmer le bâti : c'est la garantie de bon fonctionnement, deux ans.",
+   "ref": "garantie de bon fonctionnement (« biennale ») : 2 ans à compter de la réception, pour les équipements dissociables ; le ballon d'eau chaude est l'exemple donné. Code civil, art. 1792-3.",
+   "liens": [["service-public.gouv.fr : Garanties après la réception des travaux", "https://www.service-public.gouv.fr/particuliers/vosdroits/F2958"]]},
+  {"dit": "Le constructeur professionnel doit être assuré en décennale.",
+   "ref": "obligation d'assurance de responsabilité décennale. Code des assurances, art. L241-1.",
+   "liens": [["service-public.gouv.fr : Garantie décennale des constructeurs", "https://www.service-public.gouv.fr/particuliers/vosdroits/F2034"]]},
+  {"dit": "Les références de votre assurance doivent figurer sur vos factures.",
+   "ref": "pour une activité artisanale : références du contrat d'assurance professionnelle, coordonnées de l'assureur et couverture géographique. Code de l'artisanat, art. L132-1 et R132-1.",
+   "liens": [["entreprendre.service-public.gouv.fr : Mentions obligatoires sur une facture", "https://entreprendre.service-public.gouv.fr/vosdroits/F31808"]]}
+ ],
+ "non_couvert": ["La garantie de parfait achèvement (1 an après la réception).",
+                 "Les exclusions et franchises de votre contrat d'assurance.",
+                 "La situation des sous-traitants."],
+ "avert": "Cette fiche résume des sources officielles. Elle ne remplace pas un conseil personnalisé : pour votre contrat, voyez votre assureur ; pour un litige, un juriste."
+}

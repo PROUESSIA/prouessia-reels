@@ -1,0 +1,25 @@
+{
+ "num": "05",
+ "titre": "TVA des travaux :<br>5,5 %, 10 % ou 20 % ?",
+ "date": "12.10.2026",
+ "affirmations": [
+  {"dit": "10 % : amélioration, transformation, aménagement, entretien. Dans un logement achevé depuis plus de deux ans.",
+   "ref": "taux intermédiaire de 10 % pour ces travaux dans les locaux à usage d'habitation achevés depuis plus de deux ans (métropole). Hors gros équipements et cas exclus (voir sources).",
+   "liens": [["economie.gouv.fr : TVA à taux réduit, pour quels travaux ?", "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/tva-taux-reduit-pour-quels-travaux"],
+             ["impots.gouv.fr : Quel taux de TVA pour les travaux dans les logements ?", "https://www.impots.gouv.fr/professionnel/questions/quel-taux-de-tva-appliquer-pour-les-travaux-realises-dans-les-logements"]]},
+  {"dit": "5,5 % : la rénovation énergétique.",
+   "ref": "taux réduit de 5,5 % pour les travaux de rénovation ou d'amélioration de la performance énergétique (conditions techniques fixées par le CGI, art. 278-0 bis A).",
+   "liens": [["entreprendre.service-public.gouv.fr : Taux de TVA pour les travaux de rénovation", "https://entreprendre.service-public.gouv.fr/vosdroits/F23568"]]},
+  {"dit": "Depuis le 1er mars 2025, une chaudière au gaz ou au fioul, fournie et posée, c’est 20 %. Son entretien reste au taux réduit.",
+   "ref": "depuis le 1er mars 2025, la fourniture et l'installation d'une chaudière utilisant des combustibles fossiles relèvent du taux normal de 20 % ; l'entretien de ces chaudières reste au taux réduit.",
+   "liens": [["impots.gouv.fr : Quel taux de TVA pour les travaux dans les logements ?", "https://www.impots.gouv.fr/professionnel/questions/quel-taux-de-tva-appliquer-pour-les-travaux-realises-dans-les-logements"],
+             ["economie.gouv.fr : TVA à taux réduit, pour quels travaux ?", "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/tva-taux-reduit-pour-quels-travaux"]]},
+  {"dit": "Le client certifie les conditions par une simple mention sur le devis ou la facture.",
+   "ref": "depuis le 1er mars 2025, une mention sur le devis ou la facture remplace l'attestation à part. Loi n° 2025-127 du 14 février 2025 (finances pour 2025), art. 41.",
+   "liens": [["entreprendre.service-public.gouv.fr : une simple mention suffit (actualité)", "https://entreprendre.service-public.gouv.fr/actualites/A18088"]]}
+ ],
+ "non_couvert": ["Les taux applicables en Guadeloupe, Martinique et à La Réunion.",
+                 "Les gros équipements exclus du taux réduit et les travaux assimilés à du neuf.",
+                 "Le panneau solaire et les critères techniques détaillés du 5,5 %."],
+ "avert": "Cette fiche résume des sources officielles. Elle ne remplace pas un conseil personnalisé : pour un chantier précis, voyez votre comptable."
+}

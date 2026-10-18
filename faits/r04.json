@@ -1,0 +1,25 @@
+{
+ "num": "04",
+ "titre": "Devis :<br>trois oublis à éviter",
+ "date": "12.10.2026",
+ "affirmations": [
+  {"dit": "Sans délai indiqué, chez un particulier, vous devez intervenir au plus tard 30 jours après son accord.",
+   "ref": "à défaut de date ou de délai indiqué, le professionnel exécute la prestation sans retard injustifié et au plus tard 30 jours après la conclusion du contrat. Code de la consommation, art. L216-1.",
+   "liens": [["economie.gouv.fr : Devis obligatoire, comment ça marche ?", "https://www.economie.gouv.fr/entreprises/gerer-sa-comptabilite-et-ses-demarches/devis-obligatoire-comment-ca-marche"]]},
+  {"dit": "Un devis payant est possible, mais le client doit le savoir avant.",
+   "ref": "le devis est en principe gratuit ; il peut être payant quand aucun texte n'impose la gratuité, avec l'obligation d'en informer le client en amont. Pour le dépannage : arrêté du 24 janvier 2017, art. 2.",
+   "liens": [["economie.gouv.fr : Devis obligatoire, comment ça marche ?", "https://www.economie.gouv.fr/entreprises/gerer-sa-comptabilite-et-ses-demarches/devis-obligatoire-comment-ca-marche"],
+             ["Légifrance : arrêté du 24 janvier 2017", "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033935513"]]},
+  {"dit": "Un devis accepté vous engage : le prix et l'étendue des travaux, c'est ce qui est écrit.",
+   "ref": "une fois le devis accepté par le client, il engage le professionnel à en respecter les termes (étendue, durée, coût de l'intervention).",
+   "liens": [["economie.gouv.fr : Devis obligatoire, comment ça marche ?", "https://www.economie.gouv.fr/entreprises/gerer-sa-comptabilite-et-ses-demarches/devis-obligatoire-comment-ca-marche"]]},
+  {"dit": "Une date, un prix annoncé, un devis relu avant l'envoi.",
+   "ref": "le résumé des trois points ; « relire avant l'envoi » est une bonne pratique.",
+   "label": "Notre conseil :",
+   "liens": []}
+ ],
+ "non_couvert": ["Les mentions obligatoires complètes d'un devis (voir notre Reel 01 et la fiche DEVIS pour le dépannage).",
+                 "Les travaux supplémentaires en cours de chantier.",
+                 "Les cas où le devis doit être gratuit."],
+ "avert": "Cette fiche résume des sources officielles. Elle ne remplace pas un conseil personnalisé : pour votre situation, voyez un juriste ou votre chambre de métiers."
+}

@@ -1,0 +1,24 @@
+{
+ "num": "06",
+ "titre": "Devis sans réponse :<br>quand relancer ?",
+ "date": "12.10.2026",
+ "affirmations": [
+  {"dit": "Aucun texte ne le fixe : c'est une question de méthode.",
+   "ref": "à notre connaissance, aucune règle officielle ne fixe le délai ou le nombre de relances d'un devis. Ce qui suit est notre méthode, pas une obligation.",
+   "label": "À savoir :",
+   "liens": []},
+  {"dit": "Une première relance quelques jours après l'envoi. Une deuxième, avant la fin de validité du devis. Ensuite, on s'arrête.",
+   "ref": "une méthode simple : la durée de validité de l'offre sert de repère. Pour un devis de dépannage, cette durée est une mention obligatoire (arrêté du 24 janvier 2017, art. 4).",
+   "label": "Notre conseil :",
+   "liens": [["Légifrance : arrêté du 24 janvier 2017", "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033935513"],
+             ["economie.gouv.fr (DGCCRF) : fiche « Dépannage à domicile »", "https://www.economie.gouv.fr/dgccrf/publications/vie-pratique/fiches-pratiques/depannage-a-domicile"]]},
+  {"dit": "Avec Prouessia, vos devis sans réponse sont listés, et la relance part toute seule par e-mail, à la date prévue.",
+   "ref": "fonctions disponibles aujourd'hui dans Prouessia : liste des devis sans réponse et envoi automatique d'un e-mail de relance au client, à la date prévue.",
+   "label": "Prouessia :",
+   "liens": [["prouessia.fr", "https://prouessia.fr"]]}
+ ],
+ "non_couvert": ["Le contenu exact du message de relance.",
+                 "La relance d'une facture impayée (c'est un autre sujet, avec ses propres règles).",
+                 "Les règles de prospection commerciale par e-mail."],
+ "avert": "Les parties « méthode » sont nos conseils, pas des obligations légales. Pour une situation particulière, voyez un juriste ou votre chambre de métiers."
+}
