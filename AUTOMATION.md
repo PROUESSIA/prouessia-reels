@@ -94,7 +94,7 @@ Chaque jour :
 4. Pour ceux qui ont une adresse, écrire `objet` (moins de 50 caractères, ex. « Vos devis à <Ville> », pas de majuscules partout, pas de « gratuit », pas de point d'exclamation) et `message` : **30 mots maximum**, texte simple, sur ce modèle :
    « Bonjour[ Monsieur X], on a vu votre entreprise de plomberie à <Ville>. Un devis sans réponse, c'est un client perdu : Prouessia le relance tout seul.
 
-   Ça vous intéresse ? Répondez simplement à ce mail. »
+   Ça vous intéresse ? Répondez simplement. »
    On peut changer la 2e phrase selon le prospect (pas de site → « on crée aussi votre site à votre nom »), en restant à 30 mots et en ne citant que ce qui existe. Voix de marque (« on »), vouvoiement, jamais le prénom de la fondatrice, pas de prix, pas de pièce jointe. **Ne pas écrire** le lien de la vidéo de démo (26 s), la signature ni la désinscription : ils sont ajoutés automatiquement.
    Puis statut `pret`.
 5. `maj` avec tout le lot, `path=prospection/maj/AAAA-MM-JJ.txt`. Vérifier que le fichier dit `maj=200`.
