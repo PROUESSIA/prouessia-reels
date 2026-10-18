@@ -20,19 +20,21 @@ Ce fichier est lu par la tâche programmée de Claude, chaque jour. Il décrit t
 | 4 · Relever les stats | 8032365 | éteint |
 | 5 · Exporter les stats vers GitHub | 8032370 | éteint |
 | 6 · Générer la voix vers GitHub | 8032472 | éteint |
+| 7 · Veille et analyse vidéo vers GitHub | 8032962 | éteint |
 
 **Offre gratuite : 2 scénarios actifs maximum.** Pour lancer un scénario éteint : éteindre 8031972 → allumer le scénario → `scenarios_run` (responsive) → l'éteindre → **rallumer 8031972**. Toujours rallumer 8031972 à la fin, même après une erreur. En cas de « Too Many Requests », attendre 40 s et réessayer une fois.
 
-**Budget : 1 000 crédits par mois.** Une journée normale ≈ 27 crédits. Ne pas relancer un scénario « pour voir ». Un seul Reel par jour.
+**Budget : 1 000 crédits par mois.** Une journée normale ≈ 30 crédits ; le lundi ≈ 50 (veille : 3 recherches à 4 crédits + 3 analyses à 2 crédits). Ne pas relancer un scénario « pour voir ». Un seul Reel par jour.
 
 ## Procédure
 
 1. `cd` dans le dépôt, `git pull`, `bash setup.sh`.
-2. **Stats** : lancer 4 (relever) puis, le lundi seulement, 5 (exporter). `git pull`, lire le dernier `stats/*.md`.
+2. **Stats** : lancer 4 (relever : vues, portée, partages, commentaires sur Instagram et TikTok via Zernio ; vues, likes, commentaires sur YouTube ; et, dès que le jeton Instagram est en place, taux de skip, durée moyenne de visionnage, enregistrements et repartages Instagram) puis, le lundi seulement, 5 (exporter). `git pull`, lire le dernier `stats/*.md`.
 3. **Choisir le Reel du jour** dans `faits/accroches-50.json` :
    - priorité aux accroches au statut `V` (fait vérifié), jamais `A` ;
    - ne pas répéter un sujet publié dans `etat.json` ;
-   - tourner les styles A → J ; dès que 2 styles ont au moins 5 Reels mesurés, appliquer la règle 70/30 (70 % style gagnant, 30 % test) ; gagnant = le plus de vues à 7 jours (Zernio ne donne pas le taux de skip) ;
+   - tourner les styles A → J ; dès que 2 styles ont au moins 5 Reels mesurés, appliquer la règle 70/30 (70 % style gagnant, 30 % test) ; gagnant = **le taux de skip Instagram le plus bas** (puis la durée moyenne de visionnage, puis les vues à 7 jours) quand le jeton Instagram est en place, sinon le plus de vues à 7 jours ;
+   - lire aussi les dernières fiches `veille/analyses/` et `analyses/` : reprendre ce qui retient (type d'accroche, rythme des plans, ton de voix), jamais copier un concurrent, jamais reprendre un chiffre vu chez un concurrent sans le vérifier sur une source officielle ;
    - si un sujet a nettement plus de partages que la moyenne, proposer une suite (série) ;
    - **ton de voix** : par défaut le style « promo » (étape 5). Dès que 5 Reels sont mesurés, 1 Reel sur 3 teste une variante de ton (plus rapide, plus posé, plus complice…) en ne changeant QUE la voix, jamais le style d'accroche le même jour, pour savoir ce qui fait la différence.
 4. **Script** : 6 à 10 lignes, une phrase par ligne, 25 à 40 s. Ligne 1 = l'accroche, qui commence par « Plombiers ! » quand c'est naturel. Dernière ligne, toujours : « Prouèssia : les règles du plombier, en trente secondes. » Écrire les nombres en lettres pour la voix.
@@ -52,7 +54,9 @@ Ce fichier est lu par la tâche programmée de Claude, chaque jour. Il décrit t
 8. **Ajouter** : lancer 1 avec `video_file=NN/video.mp4`, `cover_file=NN/cover.png`, `sources_file=NN/sources.pdf`, `scheduled_at` = aujourd'hui 19:00 heure de Paris convertie en UTC (17:00Z en heure d'été, 18:00Z en heure d'hiver), plus topic, hook, caption (légende + « Sources officielles : … » + « Information générale, pas un conseil personnalisé. » + 5 à 7 hashtags) et pinned_comment (une question aux plombiers).
 9. Lancer 2 (déjà actif) pour envoyer l'e-mail « À valider » tout de suite.
 10. Mettre à jour `etat.json` (n, style, sujet, date, dossier, `ton` = nom du style de voix, `voix_mesures` = sortie de `analyse_voix.py`) et incrémenter `prochain_numero_dossier`. Commit + push.
-11. **Le lundi** : écrire `bilans/AAAA-MM-JJ.md` (ce qui a été testé, vues à 7 jours par style d'accroche ET par ton de voix, lien entre les mesures de voix (débit, variation de hauteur, attaque) et les vues, décision de la semaine) et le pousser.
+11. **Analyse de nos vidéos** : pour chaque Reel publié il y a 2 jours, lancer 7 avec `mode=analyse`, `video_url` = l'URL YouTube du Short (id YouTube dans `platform_ids`), `path=analyses/NN.json`. On obtient la même grille que pour les concurrents (accroche, plans, voix, musique, moments à risque de skip). À mettre en face du taux de skip réel.
+12. **Le lundi, veille concurrents** : lancer 7 avec `mode=recherche`, `after` = il y a 90 jours (ISO, UTC), `path=veille/AAAA-MM-JJ-<mot>.txt`, pour 3 recherches : « plombier », « astuce plomberie », « artisan devis facture ». Le fichier donne, Short par Short (séparés par ` ## `) : id, titre, chaîne, vues, likes, commentaires, durée, date. Choisir les 3 Shorts en français avec le plus de vues par jour depuis leur publication, et lancer 7 en `mode=analyse` sur chacun (`path=veille/analyses/AAAA-MM-JJ-<id>.json`). Le fichier contient la réponse Gemini : le JSON d'analyse est le champ `text`. Seules des vidéos publiques sont analysées (aucune donnée client n'est envoyée à Gemini).
+13. **Le lundi, bilan** : écrire `bilans/AAAA-MM-JJ.md` (ce qui a été testé, vues à 7 jours par style d'accroche ET par ton de voix, lien entre les mesures de voix (débit, variation de hauteur, attaque) et les vues, décision de la semaine) et le pousser.
 
 ## En cas de problème
 
