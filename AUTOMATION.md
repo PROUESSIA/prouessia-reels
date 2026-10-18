@@ -15,7 +15,7 @@ Ce fichier est lu par la tâche programmée de Claude, chaque jour. Il décrit t
 | Scénario | ID | État normal |
 |---|---|---|
 | 1 · Ajouter un Reel | 8031966 | éteint |
-| 2 · Validation + Publication | 8032025 | **actif** (passe 1 fois par jour) |
+| 2 · Validation + Publication | 8032025 | **actif** (passe chaque jour à 07:35, heure de Paris) |
 | 3 · Réponse Valider / Refuser | 8031972 | **actif** |
 | 4 · Relever les stats | 8032365 | éteint |
 | 5 · Exporter les stats vers GitHub | 8032370 | éteint |
@@ -51,7 +51,7 @@ Ce fichier est lu par la tâche programmée de Claude, chaque jour. Il décrit t
 
    Vérifier une planche d'images fixes avant le rendu final. Sortie : `NN/video.mp4` (< 50 Mo), `NN/cover.png` (image juste après l'accroche), `NN/sources.pdf`, `NN/verification.md`.
 7. `git add NN && git commit && git push`.
-8. **Ajouter** : lancer 1 avec `video_file=NN/video.mp4`, `cover_file=NN/cover.png`, `sources_file=NN/sources.pdf`, `scheduled_at` = aujourd'hui 19:00 heure de Paris convertie en UTC (17:00Z en heure d'été, 18:00Z en heure d'hiver), plus topic, hook, caption (légende + « Sources officielles : … » + « Information générale, pas un conseil personnalisé. » + 5 à 7 hashtags) et pinned_comment (une question aux plombiers).
+8. **Ajouter** : lancer 1 avec `video_file=NN/video.mp4`, `cover_file=NN/cover.png`, `sources_file=NN/sources.pdf`, `scheduled_at` = **demain 07:30** heure de Paris convertie en UTC (05:30Z en heure d'été, 06:30Z en heure d'hiver ; passage à l'heure d'hiver le dernier dimanche d'octobre). Le Reel est préparé la veille : la fondatrice a toute la journée pour valider, et il part le lendemain matin au passage de 07:35, plus topic, hook, caption (légende + « Sources officielles : … » + « Information générale, pas un conseil personnalisé. » + 5 à 7 hashtags) et pinned_comment : **ce texte est publié automatiquement en commentaire** sous le Reel sur YouTube (et sur Instagram dès que la connexion Instagram existe dans Make ; TikTok n'a pas d'API de commentaire, la fondatrice le colle à la main). Une question courte aux plombiers liée au sujet, voix de marque, vouvoiement, 150 caractères max, pas de lien, pas de chiffre non vérifié.
 9. Lancer 2 (déjà actif) pour envoyer l'e-mail « À valider » tout de suite.
 10. Mettre à jour `etat.json` (n, style, sujet, date, dossier, `ton` = nom du style de voix, `voix_mesures` = sortie de `analyse_voix.py`) et incrémenter `prochain_numero_dossier`. Commit + push.
 11. **Analyse de nos vidéos** : pour chaque Reel publié il y a 2 jours, lancer 7 avec `mode=analyse`, `video_url` = l'URL YouTube du Short (id YouTube dans `platform_ids`), `path=analyses/NN.json`. On obtient la même grille que pour les concurrents (accroche, plans, voix, musique, moments à risque de skip). À mettre en face du taux de skip réel.
