@@ -1,0 +1,50 @@
+{
+ "num": "10",
+ "titre": "Délai d'intervention :<br>sans date, trente jours maximum",
+ "date": "12.10.2026",
+ "affirmations": [
+  {
+   "dit": "Chez un particulier, sans date ni délai écrits sur le devis, vous devez intervenir sans retard injustifié et au plus tard trente jours après son accord.",
+   "ref": "à défaut de date ou de délai indiqué, le professionnel exécute la prestation sans retard injustifié et au plus tard 30 jours après la conclusion du contrat. Code de la consommation, art. L216-1.",
+   "liens": [
+    [
+     "economie.gouv.fr : Devis obligatoire, comment ça marche ?",
+     "https://www.economie.gouv.fr/entreprises/gerer-sa-comptabilite-et-ses-demarches/devis-obligatoire-comment-ca-marche"
+    ]
+   ]
+  },
+  {
+   "dit": "Un devis accepté vous engage : les travaux, la durée et le prix écrits dessus.",
+   "ref": "une fois le devis accepté par le client, il engage le professionnel à en respecter les termes (étendue, durée, coût de l'intervention).",
+   "liens": [
+    [
+     "economie.gouv.fr : Devis obligatoire, comment ça marche ?",
+     "https://www.economie.gouv.fr/entreprises/gerer-sa-comptabilite-et-ses-demarches/devis-obligatoire-comment-ca-marche"
+    ]
+   ]
+  },
+  {
+   "dit": "Mettez toujours une date ou un délai sur vos devis.",
+   "ref": "une bonne pratique, pas une obligation légale.",
+   "liens": [],
+   "label": "Notre conseil :"
+  },
+  {
+   "dit": "Prouessia relance tout seul par e-mail les devis restés sans réponse.",
+   "ref": "fonction du logiciel Prouessia (liste des devis sans réponse, relance automatique par e-mail).",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Ce qui se passe si le délai n'est pas respecté (recours du client).",
+  "Les contrats entre professionnels (clients pros).",
+  "Le droit de rétractation pour un devis signé chez le client : voir notre fiche à imprimer DEVIS."
+ ],
+ "avert": "Cette fiche résume des sources officielles. Elle ne remplace pas un conseil personnalisé : pour votre situation, voyez un juriste ou votre chambre de métiers."
+}
