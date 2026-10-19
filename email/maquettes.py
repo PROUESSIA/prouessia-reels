@@ -28,7 +28,7 @@ def point(c):
 
 def pilule(txt, href, fond=BLEU, couleur='#ffffff', taille=15):
     return (f'<a href="{href}" style="display:inline-block;background:{fond};color:{couleur};font-weight:600;font-size:{taille}px;'
-            f'text-decoration:none;padding:13px 26px;border-radius:999px">{txt}</a>')
+            f'text-decoration:none;padding:13px 22px;border-radius:999px;white-space:nowrap;margin:0 8px 8px 0">{txt}</a>')
 
 
 RESEAUX = [('instagram', 'https://www.instagram.com/prouessia'), ('tiktok', 'https://www.tiktok.com/@prouessia.fr'), ('youtube', 'https://www.youtube.com/@prouessia')]
@@ -48,8 +48,8 @@ def signature():
    <div style="font-size:13px;color:{GRIS};margin-top:2px">Votre métier, en plus simple</div>
    <div style="font-size:13px;margin-top:8px;line-height:1.7">
     <a href="https://www.prouessia.fr" style="color:{BLEU};text-decoration:none;font-weight:600">prouessia.fr</a>
-    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="mailto:{MAIL}" style="color:{TEXTE};text-decoration:none">{MAIL}</a>
-    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="tel:+33605874521" style="color:{TEXTE};text-decoration:none">{TEL}</a></div>
+    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="mailto:{MAIL}" style="color:{TEXTE};text-decoration:none;white-space:nowrap">{MAIL}</a>
+    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="tel:+33605874521" style="color:{TEXTE};text-decoration:none;white-space:nowrap">{TEL}</a></div>
    <div style="margin-top:10px">{reseaux()}</div>
   </td></tr></table>'''
 
@@ -64,9 +64,7 @@ def email_plombier(p):
 <p style="margin:0 0 14px">Prouessia relance vos clients automatiquement, pendant que vous êtes sur le chantier.</p>
 <p style="margin:0 0 20px">Intéressé&nbsp;? Répondez simplement.</p>
 <a href="{VIDEO}" style="display:block;text-decoration:none;max-width:360px"><img src="{RAW}apercu-video.gif" width="360" height="360" alt="Prouessia relance vos devis sans réponse (vidéo de 26 s)" style="display:block;width:100%;max-width:360px;height:auto;border-radius:18px;background:#EEEDE8"></a>
-<table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px"><tr>
- <td style="padding:0 8px 8px 0">{pilule("▶&nbsp; Regarder la vidéo (26 s)", VIDEO, fond=NUIT, taille=14)}</td>
- <td style="padding:0 0 8px 0">{pilule("Découvrir Prouessia", "https://www.prouessia.fr", taille=14)}</td></tr></table>
+<div style="margin-top:14px">{pilule("▶&nbsp; Regarder la vidéo (26 s)", VIDEO, fond=NUIT, taille=14)}{pilule("Découvrir Prouessia", "https://www.prouessia.fr", taille=14)}</div>
 {signature()}
 <p style="font-size:11px;color:#9AA1AE;line-height:1.5;margin:22px 0 0">Vous recevez ce message car l’adresse {e(p["email"])} est publiée sur la fiche de votre entreprise.
 <a href="{HOOK}?d=stop&p=ID" style="color:#9AA1AE">Ne plus recevoir nos messages</a>.<br>{LEGAL}</p>
