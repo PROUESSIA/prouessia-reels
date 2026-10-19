@@ -1,7 +1,7 @@
 """Fusionne tous les scénarios Make en un seul scénario actif (offre gratuite : 2 actifs max).
 Le scénario 2 devient le « hub » : passage planifié (sans mode) = publication + relances,
 lancements manuels avec data.mode = ajouter | stats | export_stats | voix | veille | analyse |
-importer | exporter | maj | bilan | importer_json | plan."""
+importer | exporter | maj | bilan | importer_json | plan | pages | lire | ecrire."""
 import json, re, sys
 SP = '/tmp/claude-0/-home-claude/0d2ec442-8b50-5cf5-89e8-ff56ed7ae875/scratchpad/'
 SB, GH, YT, ZE, GE, RS = 12067470, 12075389, 12069432, 12080150, 12068262, 12067592
@@ -81,6 +81,34 @@ veille, analyse = v7[0]['flow'], v7[1]['flow']
 outils = json.load(open(SP + 'bp-prosp.json'))['flow'][0]['routes']
 o_imp, o_exp, o_maj, o_bil, o_json = [r['flow'] for r in outils]
 
+# mode pages : lit des fiches publiques d'annuaires (URL séparées par des virgules) et écrit leur texte dans le dépôt
+pages = [
+ {"id": 1, "module": "builtin:BasicFeeder", "version": 1, "mapper": {"array": "{{split(var.input.payload; \",\")}}"}},
+ {"id": 2, "module": "http:MakeRequest", "version": 4, "parameters": {"authenticationType": "noAuth", "tlsType": ""},
+  "mapper": {"url": "{{trim(1.value)}}", "method": "get", "contentType": "", "parseResponse": False, "stopOnHttpError": False, "timeout": 40,
+             "allowRedirects": True, "shareCookies": False, "requestCompressedContent": True},
+  "onerror": [{"id": 5, "module": "builtin:Ignore", "version": 1}]},
+ {"id": 3, "module": "util:TextAggregator", "version": 1, "parameters": {"feeder": 1, "rowSeparator": "\n"},
+  "mapper": {"value": "=== {{trim(1.value)}} [{{2.statusCode}}]\n{{substring(stripHTML(2.data); ifempty(var.input.after; 0); ifempty(var.input.n; 200000))}}"}},
+ {"id": 4, "module": "github:makeRestApiCall", "version": 4, "parameters": {"__IMTCONN__": GH},
+  "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
+             "body": {"branch": "main", "message": "pages annuaire", "content": "{{base64(3.text)}}"}}}]
+
+# mode lire : GET /rest/v1/<query> (lecture de la table prospects) ; mode ecrire : upsert de prospects par SIREN
+lire = [
+ {"id": 1, "module": "supabase:makeAnApiCall", "version": 1, "parameters": {"__IMTCONN__": SB},
+  "mapper": {"url": "/rest/v1/{{var.input.query}}", "method": "GET", "headers": [{"key": "Accept", "value": "text/csv"}]}},
+ {"id": 2, "module": "github:makeRestApiCall", "version": 4, "parameters": {"__IMTCONN__": GH},
+  "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
+             "body": {"branch": "main", "message": "lecture prospects", "content": "{{base64(1.statusCode + newline + toString(1.body))}}"}}}]
+ecrire = [
+ {"id": 1, "module": "supabase:makeAnApiCall", "version": 1, "parameters": {"__IMTCONN__": SB},
+  "mapper": {"url": "/rest/v1/prospects?on_conflict=siren", "method": "POST", "body": "{{var.input.payload}}",
+             "headers": [{"key": "Content-Type", "value": "application/json"}, {"key": "Prefer", "value": "resolution=merge-duplicates,return=minimal"}]}},
+ {"id": 2, "module": "github:makeRestApiCall", "version": 4, "parameters": {"__IMTCONN__": GH},
+  "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
+             "body": {"branch": "main", "message": "ecriture prospects", "content": "{{base64(1.statusCode + newline + toString(1.body))}}"}}}]
+
 routes = [
  (with_filter(prospects_lot, sans_mode), 0),
  (with_filter(publication, sans_mode), 100),
@@ -96,6 +124,9 @@ routes = [
  (with_filter(o_maj, mode('maj')), 1100),
  (with_filter(o_bil, mode('bilan')), 1200),
  (with_filter(o_json, mode('importer_json')), 1300),
+ (with_filter(pages, mode('pages')), 1400),
+ (with_filter(lire, mode('lire')), 1500),
+ (with_filter(ecrire, mode('ecrire')), 1600),
 ]
 # les flows 7 et outils filtraient déjà sur var.input.mode (recherche/analyse/importer…) : on retire ce doublon
 def strip_old(flow):
