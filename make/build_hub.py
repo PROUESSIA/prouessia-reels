@@ -1,7 +1,7 @@
 """Fusionne tous les scénarios Make en un seul scénario actif (offre gratuite : 2 actifs max).
 Le scénario 2 devient le « hub » : passage planifié (sans mode) = publication + relances,
 lancements manuels avec data.mode = ajouter | stats | export_stats | voix | veille | analyse |
-importer | exporter | maj | bilan | importer_json | plan | pages | lire | ecrire."""
+importer | exporter | maj | bilan | importer_json | plan | pages | lire | ecrire | test_mail."""
 import json, re, sys
 SP = '/tmp/claude-0/-home-claude/0d2ec442-8b50-5cf5-89e8-ff56ed7ae875/scratchpad/'
 SB, GH, YT, ZE, GE, RS = 12067470, 12075389, 12069432, 12080150, 12068262, 12067592
@@ -109,6 +109,12 @@ ecrire = [
   "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
              "body": {"branch": "main", "message": "ecriture prospects", "content": "{{base64(1.statusCode + newline + toString(1.body))}}"}}}]
 
+# mode test_mail : envoie un exemple d'e-mail UNIQUEMENT à la boîte de la fondatrice (destinataire figé)
+test_mail = [
+ {"id": 1, "module": "resend:sendAnEmail", "version": 1, "parameters": {"__IMTCONN__": RS},
+  "mapper": {"to": ["prouessia.contact@gmail.com"], "from": "Prouessia <contact@prouessia.fr>", "replyTo": ["contact@prouessia.fr"],
+             "subject": "{{var.input.hook}}", "html": "{{var.input.text}}", "sendEmailAs": "html"}}]
+
 routes = [
  (with_filter(prospects_lot, sans_mode), 0),
  (with_filter(publication, sans_mode), 100),
@@ -127,6 +133,7 @@ routes = [
  (with_filter(pages, mode('pages')), 1400),
  (with_filter(lire, mode('lire')), 1500),
  (with_filter(ecrire, mode('ecrire')), 1600),
+ (with_filter(test_mail, mode('test_mail')), 1700),
 ]
 # les flows 7 et outils filtraient déjà sur var.input.mode (recherche/analyse/importer…) : on retire ce doublon
 def strip_old(flow):
