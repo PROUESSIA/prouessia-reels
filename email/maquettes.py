@@ -16,8 +16,9 @@ LAV_F, LAV_T = '#E3E8FA', '#3556DB'
 CREME_F, CREME_T = '#FBF1D3', '#8A6200'
 ROUGE = '#D93B3B'
 FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
-TEL = '[votre numéro]'      # à remplacer après réponse
-SIREN = '[votre SIREN]'     # à remplacer après réponse
+TEL = '06 05 87 45 21'
+MAIL = 'contact@prouessia.fr'
+LEGAL = 'Prouessia · SIRET 923 093 637 00018 · 50, avenue des Champs-Élysées, 75008 Paris'
 e = html.escape
 
 
@@ -36,11 +37,11 @@ def signature():
  <tr><td style="padding:18px 20px;vertical-align:middle;width:52px"><img src="{RAW}icone-prouessia.png" width="46" height="46" alt="Prouessia" style="display:block;border-radius:12px"></td>
   <td style="padding:18px 20px 18px 6px;vertical-align:middle;font-family:{FONT}">
    <div style="font-size:16px;font-weight:600;color:{TEXTE}">L’équipe Prouessia</div>
-   <div style="font-size:13px;color:{GRIS};margin-top:2px">Le site et les devis des plombiers indépendants</div>
+   <div style="font-size:13px;color:{GRIS};margin-top:2px">Votre métier, en plus simple</div>
    <div style="font-size:13px;margin-top:8px;line-height:1.7">
     <a href="https://www.prouessia.fr" style="color:{BLEU};text-decoration:none;font-weight:600">prouessia.fr</a>
-    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="mailto:prouessia.contact@gmail.com" style="color:{TEXTE};text-decoration:none">prouessia.contact@gmail.com</a>
-    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><span style="color:{TEXTE}">{TEL}</span></div>
+    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="mailto:{MAIL}" style="color:{TEXTE};text-decoration:none">{MAIL}</a>
+    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="tel:+33605874521" style="color:{TEXTE};text-decoration:none">{TEL}</a></div>
   </td></tr></table>'''
 
 
@@ -56,7 +57,7 @@ def email_plombier(p):
 <div style="margin-top:14px">{pilule("▶&nbsp; Voir la vidéo (26 s)", VIDEO, taille=14)}</div>
 {signature()}
 <p style="font-size:11px;color:#9AA1AE;line-height:1.5;margin:22px 0 0">Vous recevez ce message car l’adresse {e(p["email"])} est publiée sur la fiche de votre entreprise.
-<a href="{HOOK}?d=stop&p=ID" style="color:#9AA1AE">Ne plus recevoir nos messages</a>.<br>Prouessia · Vélizy-Villacoublay (78) · SIREN {SIREN}</p>
+<a href="{HOOK}?d=stop&p=ID" style="color:#9AA1AE">Ne plus recevoir nos messages</a>.<br>{LEGAL}</p>
 </div></body></html>'''
 
 
@@ -112,8 +113,7 @@ def plan(prospects):
 
  <tr><td style="padding:0 4px 22px">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-   <td style="vertical-align:middle;width:56px"><img src="{RAW}icone-prouessia.png" width="46" height="46" alt="Prouessia" style="display:block;border-radius:12px"></td>
-   <td style="vertical-align:middle"><div style="font-size:18px;font-weight:600;color:{TEXTE}">Prouessia</div><div style="font-size:13px;color:{GRIS}">Plan du jour</div></td>
+   <td style="vertical-align:middle"><img src="{RAW}logo-prouessia.png" width="170" alt="Prouessia · Votre métier, en plus simple" style="display:block;width:170px;height:auto"></td>
   </tr></table></td></tr>
 
  <tr><td style="padding:0 4px 18px">
