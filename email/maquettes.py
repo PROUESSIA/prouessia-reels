@@ -53,8 +53,8 @@ def email_plombier(p):
 <p style="margin:0 0 14px">Bonjour,</p>
 <p style="margin:0 0 14px">On a vu votre entreprise de plomberie à {e(p["ville"])}. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone.</p>
 <p style="margin:0 0 20px">Intéressé&nbsp;? Répondez simplement à ce message.</p>
-<a href="{VIDEO}" style="display:block;text-decoration:none"><img src="{RAW}vignette-video.png" width="516" alt="▶ Voir la vidéo (26 s)" style="display:block;width:100%;max-width:516px;height:auto;border-radius:18px"></a>
-<div style="margin-top:14px">{pilule("▶&nbsp; Voir la vidéo (26 s)", VIDEO, taille=14)}</div>
+<a href="{VIDEO}" style="display:block;text-decoration:none;max-width:360px"><img src="{RAW}apercu-video.gif" width="360" height="360" alt="Prouessia relance vos devis sans réponse (vidéo de 26 s)" style="display:block;width:100%;max-width:360px;height:auto;border-radius:18px;background:#EEEDE8"></a>
+<div style="margin-top:14px">{pilule("▶&nbsp; Regarder avec le son (26 s)", VIDEO, taille=14)}</div>
 {signature()}
 <p style="font-size:11px;color:#9AA1AE;line-height:1.5;margin:22px 0 0">Vous recevez ce message car l’adresse {e(p["email"])} est publiée sur la fiche de votre entreprise.
 <a href="{HOOK}?d=stop&p=ID" style="color:#9AA1AE">Ne plus recevoir nos messages</a>.<br>{LEGAL}</p>
