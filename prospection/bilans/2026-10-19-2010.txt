@@ -1,0 +1,1 @@
+{"ecarte": 14, "nouveau": 24, "propose": 3, "desinscrit": 1, "sans_email": 9}
