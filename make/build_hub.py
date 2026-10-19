@@ -89,7 +89,7 @@ pages = [
              "allowRedirects": True, "shareCookies": False, "requestCompressedContent": True},
   "onerror": [{"id": 5, "module": "builtin:Ignore", "version": 1}]},
  {"id": 3, "module": "util:TextAggregator", "version": 1, "parameters": {"feeder": 1, "rowSeparator": "\n"},
-  "mapper": {"value": "=== {{trim(1.value)}} [{{2.statusCode}}]\n{{substring(stripHTML(2.data); ifempty(var.input.after; 0); ifempty(var.input.n; 200000))}}"}},
+  "mapper": {"value": "=== {{trim(1.value)}} [{{2.statusCode}}]\n{{substring(if(var.input.style; 2.data; stripHTML(2.data)); ifempty(var.input.after; 0); ifempty(var.input.n; 200000))}}"}},
  {"id": 4, "module": "github:makeRestApiCall", "version": 4, "parameters": {"__IMTCONN__": GH},
   "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
              "body": {"branch": "main", "message": "pages annuaire", "content": "{{base64(3.text)}}"}}}]
@@ -115,6 +115,14 @@ test_mail = [
   "mapper": {"to": ["prouessia.contact@gmail.com"], "from": "Prouessia <contact@prouessia.fr>", "replyTo": ["contact@prouessia.fr"],
              "subject": "{{var.input.hook}}", "html": "{{var.input.text}}", "sendEmailAs": "html"}}]
 
+# mode copier : télécharge un fichier public (video_url) et le range dans le dépôt (path)
+copier = [
+ {"id": 1, "module": "http:DownloadFile", "version": 4, "parameters": {"authenticationType": "noAuth"},
+  "mapper": {"url": "{{var.input.video_url}}", "shareCookies": False, "stopOnHttpError": True}},
+ {"id": 2, "module": "github:makeRestApiCall", "version": 4, "parameters": {"__IMTCONN__": GH},
+  "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
+             "body": {"branch": "main", "message": "copie {{var.input.path}}", "content": "{{base64(1.data)}}"}}}]
+
 routes = [
  (with_filter(prospects_lot, sans_mode), 0),
  (with_filter(publication, sans_mode), 100),
@@ -134,6 +142,7 @@ routes = [
  (with_filter(lire, mode('lire')), 1500),
  (with_filter(ecrire, mode('ecrire')), 1600),
  (with_filter(test_mail, mode('test_mail')), 1700),
+ (with_filter(copier, mode('copier')), 1800),
 ]
 # les flows 7 et outils filtraient déjà sur var.input.mode (recherche/analyse/importer…) : on retire ce doublon
 def strip_old(flow):

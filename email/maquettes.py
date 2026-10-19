@@ -7,7 +7,7 @@ import json, html, os, re
 
 D = os.path.dirname(os.path.abspath(__file__))
 RAW = 'https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/'
-VIDEO = 'https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/demo/prouessia-relance.mp4'  # la vidéo seule
+VIDEO = 'https://www.prouessia.fr/#video'  # la vidéo de 45 s sur la page d'accueil
 HOOK = 'https://hook.eu1.make.com/k5jcskqhsbvtd7wz7ijzea3ow1889ufn'
 # couleurs du back-office
 NUIT, BLEU, FOND, TEXTE, GRIS, LIGNE = '#142445', '#3556DB', '#F2F3F7', '#1A2240', '#5D6478', '#E6E8EF'
@@ -63,8 +63,8 @@ def email_plombier(p):
 <p style="margin:0 0 14px">Combien de vos devis dorment sans réponse&nbsp;? Souvent, c’est un client qui signe ailleurs.</p>
 <p style="margin:0 0 14px">Prouessia relance vos clients automatiquement, pendant que vous êtes sur le chantier.</p>
 <p style="margin:0 0 20px">Intéressé&nbsp;? Répondez simplement.</p>
-<a href="{VIDEO}" style="display:block;text-decoration:none;max-width:360px"><img src="{RAW}apercu-video.gif" width="360" height="360" alt="Prouessia relance vos devis sans réponse (vidéo de 26 s)" style="display:block;width:100%;max-width:360px;height:auto;border-radius:18px;background:#EEEDE8"></a>
-<div style="margin-top:14px">{pilule("▶&nbsp; Regarder la vidéo (26 s)", VIDEO, fond=NUIT, taille=14)}{pilule("Découvrir Prouessia", "https://www.prouessia.fr", taille=14)}</div>
+<a href="{VIDEO}" style="display:block;text-decoration:none;max-width:516px"><img src="{RAW}apercu-presentation.gif" width="516" alt="Prouessia en vidéo (45 s)" style="display:block;width:100%;max-width:516px;height:auto;border-radius:18px;background:#16181D"></a>
+<div style="margin-top:14px">{pilule("▶&nbsp; Regarder la vidéo (45 s)", VIDEO, fond=NUIT, taille=14)}{pilule("Découvrir Prouessia", "https://www.prouessia.fr", taille=14)}</div>
 {signature()}
 <p style="font-size:11px;color:#9AA1AE;line-height:1.5;margin:22px 0 0">Vous recevez ce message car l’adresse {e(p["email"])} est publiée sur la fiche de votre entreprise.
 <a href="{HOOK}?d=stop&p=ID" style="color:#9AA1AE">Ne plus recevoir nos messages</a>.<br>{LEGAL}</p>
