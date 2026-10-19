@@ -7,7 +7,7 @@ import json, html, os, re
 
 D = os.path.dirname(os.path.abspath(__file__))
 RAW = 'https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/'
-VIDEO = 'https://www.prouessia.fr/video'  # page vidéo du site (fichier : email/page-video.html)
+VIDEO = 'https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/demo/prouessia-relance.mp4'  # la vidéo seule
 HOOK = 'https://hook.eu1.make.com/k5jcskqhsbvtd7wz7ijzea3ow1889ufn'
 # couleurs du back-office
 NUIT, BLEU, FOND, TEXTE, GRIS, LIGNE = '#142445', '#3556DB', '#F2F3F7', '#1A2240', '#5D6478', '#E6E8EF'
@@ -64,7 +64,9 @@ def email_plombier(p):
 <p style="margin:0 0 14px">Prouessia relance vos clients automatiquement, pendant que vous êtes sur le chantier.</p>
 <p style="margin:0 0 20px">Intéressé&nbsp;? Répondez simplement.</p>
 <a href="{VIDEO}" style="display:block;text-decoration:none;max-width:360px"><img src="{RAW}apercu-video.gif" width="360" height="360" alt="Prouessia relance vos devis sans réponse (vidéo de 26 s)" style="display:block;width:100%;max-width:360px;height:auto;border-radius:18px;background:#EEEDE8"></a>
-<div style="margin-top:14px">{pilule("▶&nbsp; Regarder avec le son (26 s)", VIDEO, taille=14)}</div>
+<table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px"><tr>
+ <td style="padding:0 8px 8px 0">{pilule("▶&nbsp; Regarder la vidéo (26 s)", VIDEO, fond=NUIT, taille=14)}</td>
+ <td style="padding:0 0 8px 0">{pilule("Découvrir Prouessia", "https://www.prouessia.fr", taille=14)}</td></tr></table>
 {signature()}
 <p style="font-size:11px;color:#9AA1AE;line-height:1.5;margin:22px 0 0">Vous recevez ce message car l’adresse {e(p["email"])} est publiée sur la fiche de votre entreprise.
 <a href="{HOOK}?d=stop&p=ID" style="color:#9AA1AE">Ne plus recevoir nos messages</a>.<br>{LEGAL}</p>
