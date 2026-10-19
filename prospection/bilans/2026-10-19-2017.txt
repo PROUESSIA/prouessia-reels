@@ -1,0 +1,1 @@
+{"ecarte": 17, "nouveau": 24, "desinscrit": 1, "sans_email": 9}
