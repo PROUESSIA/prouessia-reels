@@ -7,7 +7,7 @@ import json, html, os, re
 
 D = os.path.dirname(os.path.abspath(__file__))
 RAW = 'https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/'
-VIDEO = 'https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/demo/prouessia-relance.mp4'
+VIDEO = 'https://www.prouessia.fr/video'  # page vidéo du site (fichier : email/page-video.html)
 HOOK = 'https://hook.eu1.make.com/k5jcskqhsbvtd7wz7ijzea3ow1889ufn'
 # couleurs du back-office
 NUIT, BLEU, FOND, TEXTE, GRIS, LIGNE = '#142445', '#3556DB', '#F2F3F7', '#1A2240', '#5D6478', '#E6E8EF'
