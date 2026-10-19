@@ -31,6 +31,14 @@ def pilule(txt, href, fond=BLEU, couleur='#ffffff', taille=15):
             f'text-decoration:none;padding:13px 26px;border-radius:999px">{txt}</a>')
 
 
+RESEAUX = [('instagram', 'https://www.instagram.com/prouessia'), ('tiktok', 'https://www.tiktok.com/@prouessia'), ('youtube', 'https://www.youtube.com/@prouessia')]
+
+
+def reseaux():
+    return ''.join(f'<a href="{u}" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="{RAW}reseau-{n}.png" width="28" height="28" alt="{n.capitalize()}" style="display:block"></a>'
+                   for n, u in RESEAUX)
+
+
 def signature():
     return f'''
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;background:{FOND};border-radius:18px">
@@ -42,6 +50,7 @@ def signature():
     <a href="https://www.prouessia.fr" style="color:{BLEU};text-decoration:none;font-weight:600">prouessia.fr</a>
     <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="mailto:{MAIL}" style="color:{TEXTE};text-decoration:none">{MAIL}</a>
     <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="tel:+33605874521" style="color:{TEXTE};text-decoration:none">{TEL}</a></div>
+   <div style="margin-top:10px">{reseaux()}</div>
   </td></tr></table>'''
 
 
