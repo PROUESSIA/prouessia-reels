@@ -15,7 +15,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Sartrouville. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "72 Avenue de la Convention, 78500 Sartrouville",
+  "maps": "https://www.google.com/maps/search/?api=1&query=FR%20PLOMBERIE%26CHAUFFAGE%2072%20Avenue%20de%20la%20Convention%2078500%20Sartrouville",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "72 Avenue de la Convention 78500 Sartrouville"
  },
  {
   "siren": "937915999",
@@ -33,7 +41,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Moisson. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "21 Promenade Claude Monet, Lavacourt, 78840 Moisson",
+  "maps": "https://www.google.com/maps/search/?api=1&query=KML%20RENOV%2021%20Promenade%20Claude%20Monet%2C%20Lavacourt%2078840%20Moisson",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "Lavacourt 21 Promenade Claude Monet 78840 Moisson"
  },
  {
   "siren": "983146713",
@@ -51,7 +67,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Dammartin-en-Serve. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22B"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22B",
+  "adresse": "4 bis rue des Brossets, 78111 Dammartin-en-Serve",
+  "maps": "https://www.google.com/maps/search/?api=1&query=FW%20CONCEPT%204%20bis%20rue%20des%20Brossets%2078111%20Dammartin-en-Serve",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "4 B Rue des Brossets 78111 Dammartin-En-Serve"
  },
  {
   "siren": "947528162",
@@ -69,7 +93,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Chatou. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "13 chemin des Petits Chênes, 78400 Chatou",
+  "maps": "https://www.google.com/maps/search/?api=1&query=JORDAN%20PEIXOTO%2013%20chemin%20des%20Petits%20Ch%C3%AAnes%2078400%20Chatou",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "13 Chemin des Petits Chenes 78400 Chatou"
  },
  {
   "siren": "919929083",
@@ -87,7 +119,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Aubergenville. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "6 Villa Artois, 78410 Aubergenville",
+  "maps": "https://www.google.com/maps/search/?api=1&query=PATRICK%20ROCHE%206%20Villa%20Artois%2078410%20Aubergenville",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "6 Villa Artois 78410 Aubergenville"
  },
  {
   "siren": "908572878",
@@ -105,7 +145,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Beynes. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "49 Rue du Blanc Soleil, 78650 Beynes",
+  "maps": "https://www.google.com/maps/search/?api=1&query=R.H%20PLOMBERIE%20ET%20CLIMATISATION%2049%20Rue%20du%20Blanc%20Soleil%2078650%20Beynes",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "49 Rue du Blanc Soleil 78650 Beynes"
  },
  {
   "siren": "902470327",
@@ -123,7 +171,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Guitrancourt. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "11 Rue de la Groue, 78440 Guitrancourt",
+  "maps": "https://www.google.com/maps/search/?api=1&query=KEVIN%20DAVID%20PLOMBERIE%20CHAUFFAGE%2011%20Rue%20de%20la%20Groue%2078440%20Guitrancourt",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "Rue de la Groue 78440 Guitrancourt"
  },
  {
   "siren": "893537886",
@@ -141,7 +197,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Sartrouville. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "5 Bis Rue de Bataille, 78500 Sartrouville",
+  "maps": "https://www.google.com/maps/search/?api=1&query=SERGHEI%20DEDIU%205%20Bis%20Rue%20de%20Bataille%2078500%20Sartrouville",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "5 B Rue Bataille 78500 Sartrouville"
  },
  {
   "siren": "891211963",
@@ -159,14 +223,22 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Achères. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "7 Rue de Seine, 78260 Achères",
+  "maps": "https://www.google.com/maps/search/?api=1&query=DDPC%207%20Rue%20de%20Seine%2078260%20Ach%C3%A8res",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "7 Rue de Seine 78260 Acheres"
  },
  {
   "siren": "881498901",
   "nom": "MICHAEL HEZON",
   "dirigeant": "Michael Hezon (Hezon)",
   "ville": "Bennecourt",
-  "code_postal": "78200",
+  "code_postal": "78270",
   "departement": "78",
   "date_creation": "2020-02-11",
   "est_ei": true,
@@ -177,7 +249,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Bennecourt. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "10 Bis Rue des Loges, 78270 Bennecourt",
+  "maps": "https://www.google.com/maps/search/?api=1&query=MICHAEL%20HEZON%2010%20Bis%20Rue%20des%20Loges%2078270%20Bennecourt",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "7 Rue Armand Cassan 78200 Mantes-La-Jolie"
  },
  {
   "siren": "821693140",
@@ -195,7 +275,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Orgeval. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "Route des Alluets, 78630 Orgeval",
+  "maps": "https://www.google.com/maps/search/?api=1&query=SARL%20ERIC%20ALBORNO%20Route%20des%20Alluets%2078630%20Orgeval",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "Route des Alluets 78630 Orgeval"
  },
  {
   "siren": "814259917",
@@ -213,7 +301,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Chanteloup-les-Vignes. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22B"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22B",
+  "adresse": "5 Allée des Agates, 78570 Chanteloup-les-Vignes",
+  "maps": "https://www.google.com/maps/search/?api=1&query=ETCEC%20GENIE%20CLIMATIQUE%205%20All%C3%A9e%20des%20Agates%2078570%20Chanteloup-les-Vignes",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "5 Allee des Agates 78570 Chanteloup-Les-Vignes"
  },
  {
   "siren": "794674127",
@@ -231,7 +327,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Gressey. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "29 Rue du Môle, 78550 Gressey",
+  "maps": "https://www.google.com/maps/search/?api=1&query=ERIC%20BOGARD%2029%20Rue%20du%20M%C3%B4le%2078550%20Gressey",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "57 Rue Saint Mathieu 78550 Houdan"
  },
  {
   "siren": "534869714",
@@ -249,7 +353,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Bonnelles. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "30 Avenue de la Croix Boisée, 78830 Bonnelles",
+  "maps": "https://www.google.com/maps/search/?api=1&query=A.A.D.%20WAUTERS%2030%20Avenue%20de%20la%20Croix%20Bois%C3%A9e%2078830%20Bonnelles",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "30 Avenue de la Croix Boisee 78830 Bonnelles"
  },
  {
   "siren": "517816492",
@@ -267,7 +379,15 @@
   "statut": "propose",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Saint-Germain-de-la-Grange. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "7 Rue de la Mairie, 78640 Saint-Germain-de-la-Grange",
+  "maps": "https://www.google.com/maps/search/?api=1&query=TPC%207%20Rue%20de%20la%20Mairie%2078640%20Saint-Germain-de-la-Grange",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "7 Rue de la Mairie 78640 Saint-Germain-De-La-Grange"
  },
  {
   "siren": "489544239",
@@ -285,7 +405,15 @@
   "statut": "a_proposer",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Achères. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "11 Rue Surmont, 78260 Achères",
+  "maps": "https://www.google.com/maps/search/?api=1&query=B.T.T.R.%2011%20Rue%20Surmont%2078260%20Ach%C3%A8res",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "11 Rue Surmont 78260 Acheres"
  },
  {
   "siren": "487469223",
@@ -303,7 +431,15 @@
   "statut": "a_proposer",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Mantes-la-Jolie. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "40 Rue de Verdun, 78200 Mantes-la-Jolie",
+  "maps": "https://www.google.com/maps/search/?api=1&query=FORTUNAT%2040%20Rue%20de%20Verdun%2078200%20Mantes-la-Jolie",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "40 Rue de Verdun 78200 Mantes-La-Jolie"
  },
  {
   "siren": "480420793",
@@ -321,7 +457,15 @@
   "statut": "a_proposer",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Chambourcy. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "4 Rue Chaude, 78240 Chambourcy",
+  "maps": "https://www.google.com/maps/search/?api=1&query=VINCENT%20MUSCOLINO%204%20Rue%20Chaude%2078240%20Chambourcy",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "4 Rue Chaude 78240 Chambourcy"
  },
  {
   "siren": "423872191",
@@ -339,14 +483,22 @@
   "statut": "a_proposer",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Follainville-Dennemont. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "260 rue Jean Jaurès, 78520 Follainville-Dennemont",
+  "maps": "https://www.google.com/maps/search/?api=1&query=POUSSET%20ET%20FAUCRET%20260%20rue%20Jean%20Jaur%C3%A8s%2078520%20Follainville-Dennemont",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "260 Rue Jean Jaures 78520 Follainville-Dennemont"
  },
  {
   "siren": "749933776",
   "nom": "D.I.P.C.",
   "dirigeant": "Josselin Jean Pierre Petermin (Petermin)",
   "ville": "Maisons-Laffitte",
-  "code_postal": "95310",
+  "code_postal": "78600",
   "departement": "95",
   "date_creation": "2012-02-22",
   "est_ei": false,
@@ -357,14 +509,22 @@
   "statut": "a_proposer",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Maisons-Laffitte. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.22A",
+  "adresse": "104 rue d'achėres, 78600 Maisons-Laffitte",
+  "maps": "https://www.google.com/maps/search/?api=1&query=D.I.P.C.%20104%20rue%20d%27ach%C4%97res%2078600%20Maisons-Laffitte",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "46 Rue du Mail 95310 Saint-Ouen-L'Aumone"
  },
  {
   "siren": "934563339",
   "nom": "SNETSI PRO",
   "dirigeant": "Ihor Sudak",
   "ville": "Sartrouville",
-  "code_postal": "78420",
+  "code_postal": "78500",
   "departement": "78",
   "date_creation": "2024-10-16",
   "est_ei": false,
@@ -375,7 +535,15 @@
   "statut": "a_proposer",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Sartrouville. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 41.20A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 41.20A",
+  "adresse": "27 avenue Jean Jaurès, 78500 Sartrouville",
+  "maps": "https://www.google.com/maps/search/?api=1&query=SNETSI%20PRO%2027%20avenue%20Jean%20Jaur%C3%A8s%2078500%20Sartrouville",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "35 Boulevard Carnot 78420 Carrieres-Sur-Seine"
  },
  {
   "siren": "893903351",
@@ -393,7 +561,15 @@
   "statut": "a_proposer",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Gargenville. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 41.20A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 41.20A",
+  "adresse": "15 Rue Julie Thourout, 78440 Gargenville",
+  "maps": "https://www.google.com/maps/search/?api=1&query=MV%20RENOVATION%2015%20Rue%20Julie%20Thourout%2078440%20Gargenville",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "15 Rue Julie Thourout 78440 Gargenville"
  },
  {
   "siren": "984677112",
@@ -411,7 +587,15 @@
   "statut": "a_proposer",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Mareil-sur-Mauldre. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.99C"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.99C",
+  "adresse": "16 rue du Pain Perdu, 78124 Mareil-sur-Mauldre",
+  "maps": "https://www.google.com/maps/search/?api=1&query=ABMP%20RENOVATION%2016%20rue%20du%20Pain%20Perdu%2078124%20Mareil-sur-Mauldre",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "16 Rue du Pain Perdu 78124 Mareil-Sur-Mauldre"
  },
  {
   "siren": "889522579",
@@ -429,7 +613,15 @@
   "statut": "a_proposer",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Orgeval. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.39Z"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 43.39Z",
+  "adresse": "37 chemin de la Malrue, 78630 Orgeval",
+  "maps": "https://www.google.com/maps/search/?api=1&query=AR%20RENOVATION%2037%20chemin%20de%20la%20Malrue%2078630%20Orgeval",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "37 Chemin de la Malrue 78630 Orgeval"
  },
  {
   "siren": "438160608",
@@ -447,6 +639,14 @@
   "statut": "a_proposer",
   "objet": "Votre site, à votre nom",
   "message": "Bonjour, on a vu votre entreprise de plomberie à Chapet. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone. Intéressé ? Répondez simplement.",
-  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 41.20A"
+  "notes": "Sans site (fiche Guide Artisan sans site, adresse webmail publiée sur la fiche) · NAF 41.20A",
+  "adresse": "30 B Rue de la Garenne, 78130 Chapet",
+  "maps": "https://www.google.com/maps/search/?api=1&query=ENTREPRISE%20GENERALE%20DE%20BATIMENT%20FERREIRA%2030%20B%20Rue%20de%20la%20Garenne%2078130%20Chapet",
+  "verif": {
+   "registre": "active (A), vérifiée le 19/10",
+   "site": "aucun site sur la fiche ni en recherche web (19/10)",
+   "email": "publiée par l'entreprise sur sa fiche Guide Artisan"
+  },
+  "adresse_registre": "30 B Rue de la Garenne 78130 Chapet"
  }
 ]
