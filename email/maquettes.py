@@ -1,125 +1,159 @@
-"""Maquettes HTML des deux e-mails (à ouvrir dans le navigateur) :
+"""Maquettes HTML des deux e-mails (à ouvrir dans le navigateur), au style du back-office Prouessia :
+fond gris-bleu clair, grandes cartes arrondies, cartes pastel (vert, lavande, crème), pilules bleu vif et bleu nuit.
 - email/maquette-email-plombier.html : l'e-mail que reçoit le plombier, avec la signature Prouessia
 - email/maquette-plan-du-jour.html   : le « Plan du jour » que reçoit la fondatrice
-Code compatible messageries (tableaux + styles en ligne, polices système), le même HTML sera repris dans le SQL."""
-import json, html, os
+Code compatible messageries (tableaux + styles en ligne, polices système) ; le même HTML sera repris dans le SQL."""
+import json, html, os, re
 
 D = os.path.dirname(os.path.abspath(__file__))
 RAW = 'https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/'
 VIDEO = 'https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/demo/prouessia-relance.mp4'
 HOOK = 'https://hook.eu1.make.com/k5jcskqhsbvtd7wz7ijzea3ow1889ufn'
-INK, BLUE, MUST, PAPIER, GRIS, LIGNE, VERT = '#0B1B3A', '#1E40AF', '#F2B705', '#F7F5EF', '#5B6577', '#E5E2DA', '#1F7A4D'
+# couleurs du back-office
+NUIT, BLEU, FOND, TEXTE, GRIS, LIGNE = '#142445', '#3556DB', '#F2F3F7', '#1A2240', '#5D6478', '#E6E8EF'
+VERT_F, VERT_T = '#E6F2DE', '#2E6B2F'
+LAV_F, LAV_T = '#E3E8FA', '#3556DB'
+CREME_F, CREME_T = '#FBF1D3', '#8A6200'
+ROUGE = '#D93B3B'
 FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
 TEL = '[votre numéro]'      # à remplacer après réponse
 SIREN = '[votre SIREN]'     # à remplacer après réponse
 e = html.escape
 
 
+def point(c):
+    return f'<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:{c};margin-right:8px;vertical-align:middle"></span>'
+
+
+def pilule(txt, href, fond=BLEU, couleur='#ffffff', taille=15):
+    return (f'<a href="{href}" style="display:inline-block;background:{fond};color:{couleur};font-weight:600;font-size:{taille}px;'
+            f'text-decoration:none;padding:13px 26px;border-radius:999px">{txt}</a>')
+
+
 def signature():
     return f'''
-<table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:28px;border-top:1px solid {LIGNE};padding-top:18px;width:100%">
- <tr><td style="padding-top:18px;vertical-align:top;width:56px"><img src="{RAW}icone-prouessia.png" width="44" height="44" alt="Prouessia" style="display:block;border-radius:11px"></td>
-  <td style="padding-top:18px;padding-left:12px;vertical-align:top;font-family:{FONT}">
-   <div style="font-size:15px;font-weight:700;color:{INK}">L’équipe Prouessia</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;background:{FOND};border-radius:18px">
+ <tr><td style="padding:18px 20px;vertical-align:middle;width:52px"><img src="{RAW}icone-prouessia.png" width="46" height="46" alt="Prouessia" style="display:block;border-radius:12px"></td>
+  <td style="padding:18px 20px 18px 6px;vertical-align:middle;font-family:{FONT}">
+   <div style="font-size:16px;font-weight:600;color:{TEXTE}">L’équipe Prouessia</div>
    <div style="font-size:13px;color:{GRIS};margin-top:2px">Le site et les devis des plombiers indépendants</div>
-   <div style="font-size:13px;margin-top:8px;line-height:1.6">
-    <a href="https://www.prouessia.fr" style="color:{BLUE};text-decoration:none;font-weight:600">prouessia.fr</a>
-    <span style="color:{LIGNE}">&nbsp;|&nbsp;</span><a href="mailto:prouessia.contact@gmail.com" style="color:{INK};text-decoration:none">prouessia.contact@gmail.com</a>
-    <span style="color:{LIGNE}">&nbsp;|&nbsp;</span><span style="color:{INK}">{TEL}</span></div>
-   <div style="width:44px;height:3px;background:{MUST};margin-top:10px;border-radius:2px"></div>
+   <div style="font-size:13px;margin-top:8px;line-height:1.7">
+    <a href="https://www.prouessia.fr" style="color:{BLEU};text-decoration:none;font-weight:600">prouessia.fr</a>
+    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="mailto:prouessia.contact@gmail.com" style="color:{TEXTE};text-decoration:none">prouessia.contact@gmail.com</a>
+    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><span style="color:{TEXTE}">{TEL}</span></div>
   </td></tr></table>'''
 
 
 def email_plombier(p):
-    corps = (f'<p style="margin:0 0 14px">Bonjour,</p>'
-             f'<p style="margin:0 0 14px">On a vu votre entreprise de plomberie à {e(p["ville"])}. On crée votre site à votre nom, '
-             f'et les demandes de clients arrivent sur votre téléphone.</p>'
-             f'<p style="margin:0 0 18px">Intéressé&nbsp;? Répondez simplement à ce message.</p>')
     return f'''<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(p["objet"])}</title></head>
 <body style="margin:0;padding:0;background:#ffffff">
-<div style="max-width:560px;margin:0 auto;padding:28px 22px;font-family:{FONT};font-size:15px;line-height:1.6;color:{INK}">
-{corps}
-<a href="{VIDEO}" style="display:block;text-decoration:none"><img src="{RAW}vignette-video.png" width="516" alt="▶ Voir la vidéo (26 s)" style="display:block;width:100%;max-width:516px;height:auto;border-radius:12px;border:1px solid {LIGNE}"></a>
-<div style="font-size:13px;color:{GRIS};margin-top:8px">▶ <a href="{VIDEO}" style="color:{BLUE};font-weight:600;text-decoration:none">Voir la vidéo (26 s)</a></div>
+<div style="max-width:560px;margin:0 auto;padding:28px 22px;font-family:{FONT};font-size:15px;line-height:1.6;color:{TEXTE}">
+<p style="margin:0 0 14px">Bonjour,</p>
+<p style="margin:0 0 14px">On a vu votre entreprise de plomberie à {e(p["ville"])}. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone.</p>
+<p style="margin:0 0 20px">Intéressé&nbsp;? Répondez simplement à ce message.</p>
+<a href="{VIDEO}" style="display:block;text-decoration:none"><img src="{RAW}vignette-video.png" width="516" alt="▶ Voir la vidéo (26 s)" style="display:block;width:100%;max-width:516px;height:auto;border-radius:18px"></a>
+<div style="margin-top:14px">{pilule("▶&nbsp; Voir la vidéo (26 s)", VIDEO, taille=14)}</div>
 {signature()}
-<p style="font-size:11px;color:#9AA1AE;line-height:1.5;margin:26px 0 0">Vous recevez ce message car l’adresse {e(p["email"])} est publiée sur la fiche de votre entreprise.
+<p style="font-size:11px;color:#9AA1AE;line-height:1.5;margin:22px 0 0">Vous recevez ce message car l’adresse {e(p["email"])} est publiée sur la fiche de votre entreprise.
 <a href="{HOOK}?d=stop&p=ID" style="color:#9AA1AE">Ne plus recevoir nos messages</a>.<br>Prouessia · Vélizy-Villacoublay (78) · SIREN {SIREN}</p>
 </div></body></html>'''
 
 
-def badge(txt, ok=True):
-    c, fond = (VERT, '#E8F5EE') if ok else ('#9A5B00', '#FFF4D6')
-    return (f'<span style="display:inline-block;font-size:12px;font-weight:600;color:{c};background:{fond};border-radius:20px;'
-            f'padding:3px 10px;margin:0 6px 6px 0">{"✓" if ok else "!"} {txt}</span>')
+def chip(txt, href=None):
+    c = (f'<span style="display:inline-block;font-size:12px;font-weight:600;color:{VERT_T};background:{VERT_F};border-radius:999px;'
+         f'padding:4px 11px;margin:0 6px 6px 0">✓ {txt}</span>')
+    return f'<a href="{e(href)}" style="text-decoration:none">{c}</a>' if href else c
+
+
+def cle(a):
+    cp = re.findall(r'\b\d{5}\b', a)
+    num = re.match(r'\s*(\d+)', a.split('Lavacourt')[-1].strip())
+    return (cp[-1] if cp else None, num.group(1) if num else None)
 
 
 def carte_prospect(i, p):
-    import re
-    def cle(a):
-        cp = re.findall(r'\b\d{5}\b', a); num = re.match(r'\s*(\d+)', a.split('Lavacourt')[-1].strip())
-        return (cp[-1] if cp else None, num.group(1) if num else None)
     (c1, n1), (c2, n2) = cle(p['adresse']), cle(p['adresse_registre'])
-    diff = c1 != c2 or (n1 and n2 and n1 != n2)
-    alerte = (f'<div style="font-size:12px;color:#9A5B00;margin-top:4px">Siège au registre : {e(p["adresse_registre"])}</div>' if diff else '')
-    dirigeant = f' · {e(p["dirigeant"].split(" (")[0])}' if p.get('dirigeant') else ''
+    alerte = ''
+    if c1 != c2 or (n1 and n2 and n1 != n2):
+        alerte = (f'<div style="font-size:12px;color:{CREME_T};background:{CREME_F};border-radius:12px;padding:7px 12px;margin-top:8px">'
+                  f'Adresse du siège au registre : {e(p["adresse_registre"])}</div>')
+    dirigeant = e(p['dirigeant'].split(' (')[0]) if p.get('dirigeant') else ''
     return f'''
-<tr><td style="padding:18px 0;border-top:1px solid {LIGNE}">
- <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-  <td style="vertical-align:top;width:30px;font-size:13px;font-weight:700;color:{GRIS};padding-top:2px">{i}</td>
-  <td style="vertical-align:top">
-   <div style="font-size:16px;font-weight:700;color:{INK}">{e(p["nom"])}<span style="font-weight:400;color:{GRIS};font-size:14px">{dirigeant}</span></div>
-   <div style="font-size:14px;color:{INK};margin-top:4px">{e(p["adresse"])}&nbsp;&nbsp;<a href="{e(p["maps"])}" style="color:{BLUE};font-weight:600;text-decoration:none;white-space:nowrap">Voir sur Google Maps →</a></div>
+<tr><td style="padding:0 0 12px">
+ <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:22px">
+  <tr><td style="padding:20px 22px">
+   <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="vertical-align:top;width:46px"><div style="width:36px;height:36px;border-radius:50%;background:{LAV_F};color:{LAV_T};font-weight:600;font-size:14px;line-height:36px;text-align:center">{i}</div></td>
+    <td style="vertical-align:top">
+     <div style="font-size:16px;font-weight:600;color:{TEXTE}">{e(p["nom"])}</div>
+     <div style="font-size:13px;color:{GRIS};margin-top:1px">{dirigeant}</div>
+    </td>
+    <td style="vertical-align:top;text-align:right;width:90px"><a href="{HOOK}?d=retire&p=ID" style="display:inline-block;font-size:13px;color:{ROUGE};text-decoration:none;font-weight:600;border:1px solid #F3C9C9;border-radius:999px;padding:5px 12px">Retirer</a></td>
+   </tr></table>
+   <div style="font-size:14px;color:{TEXTE};margin-top:12px">{e(p["adresse"])}</div>
+   <div style="margin-top:6px"><a href="{e(p["maps"])}" style="font-size:13px;color:{BLEU};font-weight:600;text-decoration:none">Voir sur Google Maps →</a></div>
    {alerte}
-   <div style="margin-top:10px">{badge("Entreprise active (registre)")}{badge("Aucun site trouvé")}<a href="{e(p["email_source"])}" style="text-decoration:none">{badge("Adresse publiée par l’artisan")}</a></div>
-   <div style="font-size:13px;color:{GRIS};margin-top:4px">À : <b style="color:{INK};font-weight:600">{e(p["email"])}</b> · Objet : <b style="color:{INK};font-weight:600">{e(p["objet"])}</b></div>
-   <div style="font-size:14px;line-height:1.55;color:{INK};background:{PAPIER};border-radius:10px;padding:12px 14px;margin-top:8px">{e(p["message"])}</div>
-  </td>
-  <td style="vertical-align:top;text-align:right;width:80px;padding-left:10px"><a href="{HOOK}?d=retire&p=ID" style="font-size:13px;color:#B42318;text-decoration:none;font-weight:600">Retirer</a></td>
- </tr></table></td></tr>'''
-
-
-def bouton(txt):
-    return (f'<a href="{HOOK}?d=plan" style="display:inline-block;background:{INK};color:#ffffff;font-weight:700;font-size:16px;'
-            f'text-decoration:none;padding:15px 30px;border-radius:10px;border-bottom:4px solid {MUST}">{txt}</a>')
+   <div style="margin-top:12px">{chip("Entreprise active")}{chip("Aucun site trouvé")}{chip("Adresse publiée par l’artisan", p["email_source"])}</div>
+   <div style="background:{FOND};border-radius:16px;padding:14px 16px;margin-top:6px">
+    <div style="font-size:12px;color:{GRIS}">À <b style="color:{TEXTE};font-weight:600">{e(p["email"])}</b> · Objet <b style="color:{TEXTE};font-weight:600">{e(p["objet"])}</b></div>
+    <div style="font-size:14px;line-height:1.55;color:{TEXTE};margin-top:6px">{e(p["message"])}</div>
+   </div>
+  </td></tr></table></td></tr>'''
 
 
 def plan(prospects):
-    reel = f'''
-<tr><td style="padding:22px 26px;background:#ffffff">
- <div style="font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:{GRIS}">Reel du jour · publication mardi 20/10 à 9 h 05</div>
- <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:12px"><tr>
-  <td style="vertical-align:top;width:110px"><a href="#"><img src="{RAW.replace('email/', '10/')}cover.png" width="96" alt="Couverture" style="display:block;width:96px;border-radius:10px;border:1px solid {LIGNE}"></a></td>
-  <td style="vertical-align:top">
-   <div style="font-size:17px;font-weight:700;color:{INK};line-height:1.35">Plombiers ! Vrai ou faux : sans date sur le devis, vous avez tout votre temps.</div>
-   <div style="font-size:14px;color:{GRIS};margin-top:6px">Instagram · TikTok · YouTube</div>
-   <div style="margin-top:10px;font-size:14px"><a href="#" style="color:{BLUE};font-weight:600;text-decoration:none">▶ Voir la vidéo</a>
-    <span style="color:{LIGNE}">&nbsp;|&nbsp;</span><a href="#" style="color:{BLUE};font-weight:600;text-decoration:none">Fiche sources</a>
-    <span style="color:{LIGNE}">&nbsp;|&nbsp;</span><a href="#" style="color:#B42318;font-weight:600;text-decoration:none">Refuser ce Reel</a></div>
-  </td></tr></table></td></tr>'''
+    n = len(prospects)
     cartes = ''.join(carte_prospect(i + 1, p) for i, p in enumerate(prospects))
     return f'''<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Plan du jour</title></head>
-<body style="margin:0;padding:0;background:{PAPIER}">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{PAPIER}"><tr><td align="center" style="padding:24px 12px">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;font-family:{FONT};color:{INK}">
- <tr><td style="background:#ffffff;padding:22px 26px;border-radius:14px 14px 0 0;border-bottom:4px solid {MUST}">
+<body style="margin:0;padding:0;background:{FOND}">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{FOND}"><tr><td align="center" style="padding:26px 12px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;font-family:{FONT};color:{TEXTE}">
+
+ <tr><td style="padding:0 4px 22px">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-   <td><img src="{RAW}logo-prouessia.png" width="150" alt="Prouessia" style="display:block"></td>
-   <td style="text-align:right;font-size:13px;color:{GRIS}">Plan du jour<br><b style="color:{INK};font-size:15px">Mardi 20 octobre</b></td></tr></table></td></tr>
- <tr><td style="background:{INK};padding:24px 26px;color:#ffffff">
-  <div style="font-size:22px;font-weight:700">1 Reel et {len(prospects)} e-mails à valider</div>
-  <div style="font-size:14px;color:#C9D1E3;margin-top:6px;line-height:1.5">Un clic valide tout : le Reel part à l’heure prévue et les e-mails partent aussitôt (15 maximum par jour). Retirez d’abord ce que vous ne voulez pas. Sans clic, rien ne part.</div>
-  <div style="margin-top:18px"><a href="{HOOK}?d=plan" style="display:inline-block;background:{MUST};color:{INK};font-weight:700;font-size:16px;text-decoration:none;padding:14px 28px;border-radius:10px">Tout valider</a></div>
+   <td style="vertical-align:middle;width:56px"><img src="{RAW}icone-prouessia.png" width="46" height="46" alt="Prouessia" style="display:block;border-radius:12px"></td>
+   <td style="vertical-align:middle"><div style="font-size:18px;font-weight:600;color:{TEXTE}">Prouessia</div><div style="font-size:13px;color:{GRIS}">Plan du jour</div></td>
+  </tr></table></td></tr>
+
+ <tr><td style="padding:0 4px 18px">
+  <div style="font-size:14px;color:{GRIS}">Mardi 20 octobre</div>
+  <div style="font-size:30px;font-weight:600;color:{TEXTE};letter-spacing:-.01em;margin-top:2px">Le plan du jour</div>
  </td></tr>
- {reel}
- <tr><td style="padding:22px 26px 6px;background:#ffffff;border-top:8px solid {PAPIER}">
-  <div style="font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:{GRIS}">E-mails de prospection · plombiers sans site</div>
-  <div style="font-size:13px;color:{GRIS};margin-top:6px;line-height:1.5">Chaque plombier est vérifié : entreprise active au registre officiel, aucun site trouvé, adresse e-mail publiée par l’artisan lui-même (cliquez sur le badge pour voir la page).
-   <a href="email-plombier" style="color:{BLUE};text-decoration:none;font-weight:600">Aperçu de l’e-mail reçu →</a></div>
+
+ <tr><td style="padding:0 0 14px">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{VERT_F};border-radius:26px"><tr><td style="padding:24px 26px">
+   <div style="font-size:15px;font-weight:600;color:{VERT_T}">{point("#3F9A43")}À valider aujourd’hui</div>
+   <div style="margin-top:12px"><span style="font-size:44px;font-weight:600;color:{TEXTE};letter-spacing:-.02em">{n}</span>
+    <span style="font-size:15px;color:{TEXTE}">&nbsp;e-mails de prospection · 1 Reel</span></div>
+   <div style="font-size:14px;color:{GRIS};margin-top:8px;line-height:1.5">Un clic valide tout : le Reel part à l’heure prévue, les e-mails partent aussitôt (15 maximum par jour). Retirez d’abord ce que vous ne voulez pas. Sans clic, rien ne part.</div>
+   <div style="margin-top:18px">{pilule("+&nbsp; Tout valider", HOOK + "?d=plan")}</div>
+  </td></tr></table></td></tr>
+
+ <tr><td style="padding:0 0 26px">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{LAV_F};border-radius:26px"><tr><td style="padding:22px 24px">
+   <div style="font-size:15px;font-weight:600;color:{LAV_T}">{point(LAV_T)}Reel du jour · mardi 20/10 à 9 h 05</div>
+   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:14px"><tr>
+    <td style="vertical-align:top;width:104px"><img src="{RAW.replace('email/', '10/')}cover.png" width="88" alt="Couverture" style="display:block;width:88px;border-radius:14px"></td>
+    <td style="vertical-align:top">
+     <div style="font-size:16px;font-weight:600;color:{TEXTE};line-height:1.4">Plombiers ! Vrai ou faux : sans date sur le devis, vous avez tout votre temps.</div>
+     <div style="font-size:13px;color:{GRIS};margin-top:6px">Instagram · TikTok · YouTube</div>
+     <div style="margin-top:12px">
+      <a href="#" style="display:inline-block;background:{NUIT};color:#fff;font-size:13px;font-weight:600;text-decoration:none;padding:8px 16px;border-radius:999px;margin:0 6px 6px 0">▶ Voir la vidéo</a>
+      <a href="#" style="display:inline-block;background:#fff;color:{TEXTE};font-size:13px;font-weight:600;text-decoration:none;padding:8px 16px;border-radius:999px;margin:0 6px 6px 0">Fiche sources</a>
+      <a href="#" style="display:inline-block;background:#fff;color:{ROUGE};font-size:13px;font-weight:600;text-decoration:none;padding:8px 16px;border-radius:999px;margin:0 6px 6px 0">Refuser</a>
+     </div></td></tr></table>
+  </td></tr></table></td></tr>
+
+ <tr><td style="padding:0 4px 12px">
+  <div style="font-size:20px;font-weight:600;color:{TEXTE}">Plombiers à contacter <span style="display:inline-block;background:{ROUGE};color:#fff;font-size:12px;font-weight:700;border-radius:999px;padding:2px 9px;vertical-align:middle">{n}</span></div>
+  <div style="font-size:13px;color:{GRIS};margin-top:6px;line-height:1.5">Tous sans site et vérifiés : entreprise active au registre officiel, aucun site trouvé, adresse e-mail publiée par l’artisan lui-même (le badge ouvre la page).
+   <a href="email-plombier" style="color:{BLEU};text-decoration:none;font-weight:600">Aperçu de l’e-mail reçu →</a></div>
  </td></tr>
- <tr><td style="padding:0 26px 10px;background:#ffffff"><table role="presentation" width="100%" cellpadding="0" cellspacing="0">{cartes}</table></td></tr>
- <tr><td style="background:#ffffff;padding:20px 26px 26px;text-align:center;border-radius:0 0 14px 14px;border-top:1px solid {LIGNE}">{bouton("Tout valider")}</td></tr>
- <tr><td style="padding:16px 26px;text-align:center;font-size:12px;color:{GRIS}">Prouessia · machine à Reels et prospection · rien ne part sans votre clic</td></tr>
+ <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0">{cartes}</table></td></tr>
+
+ <tr><td style="padding:14px 0 6px;text-align:center">{pilule("+&nbsp; Tout valider", HOOK + "?d=plan")}</td></tr>
+ <tr><td style="padding:16px 0;text-align:center;font-size:12px;color:{GRIS}">Prouessia · rien ne part sans votre clic</td></tr>
 </table></td></tr></table></body></html>'''
 
 
