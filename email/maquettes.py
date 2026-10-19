@@ -51,8 +51,9 @@ def email_plombier(p):
 <body style="margin:0;padding:0;background:#ffffff">
 <div style="max-width:560px;margin:0 auto;padding:28px 22px;font-family:{FONT};font-size:15px;line-height:1.6;color:{TEXTE}">
 <p style="margin:0 0 14px">Bonjour,</p>
-<p style="margin:0 0 14px">On a vu votre entreprise de plomberie à {e(p["ville"])}. On crée votre site à votre nom, et les demandes de clients arrivent sur votre téléphone.</p>
-<p style="margin:0 0 20px">Intéressé&nbsp;? Répondez simplement à ce message.</p>
+<p style="margin:0 0 14px">Combien de vos devis dorment sans réponse&nbsp;? Souvent, c’est un client qui signe ailleurs.</p>
+<p style="margin:0 0 14px">Prouessia relance vos clients automatiquement, pendant que vous êtes sur le chantier.</p>
+<p style="margin:0 0 20px">Intéressé&nbsp;? Répondez simplement.</p>
 <a href="{VIDEO}" style="display:block;text-decoration:none;max-width:360px"><img src="{RAW}apercu-video.gif" width="360" height="360" alt="Prouessia relance vos devis sans réponse (vidéo de 26 s)" style="display:block;width:100%;max-width:360px;height:auto;border-radius:18px;background:#EEEDE8"></a>
 <div style="margin-top:14px">{pilule("▶&nbsp; Regarder avec le son (26 s)", VIDEO, taille=14)}</div>
 {signature()}
