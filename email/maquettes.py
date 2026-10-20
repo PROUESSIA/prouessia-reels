@@ -35,7 +35,7 @@ RESEAUX = [('facebook', 'https://www.facebook.com/profile.php?id=61595467356122'
 
 
 def reseaux():
-    return ''.join(f'<a href="{u}" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="{RAW}reseau-{n}.png" width="28" height="28" alt="{n.capitalize()}" style="display:block"></a>'
+    return ''.join(f'<a href="{u}" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="{RAW}reseau-{n}.png" width="28" height="28" alt="{ {'tiktok':'TikTok','youtube':'YouTube','linkedin':'LinkedIn'}.get(n, n.capitalize())}" style="display:block"></a>'
                    for n, u in RESEAUX)
 
 
