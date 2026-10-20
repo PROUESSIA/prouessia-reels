@@ -70,7 +70,7 @@ def email_plombier(p):
 <div style="margin-top:14px">{pilule("▶&nbsp; Regarder la vidéo (45 s)", VIDEO, fond=NUIT, taille=14)}{pilule("Découvrir Prouessia", "https://www.prouessia.fr", taille=14)}</div>
 {signature()}
 <p style="font-size:11px;color:#9AA1AE;line-height:1.5;margin:22px 0 0">Vous recevez ce message car l’adresse {e(p["email"])} est publiée sur la fiche de votre entreprise.
-<a href="{HOOK}?d=stop&p=ID" style="color:#9AA1AE">Ne plus recevoir nos messages</a>.<br>{LEGAL}</p>
+<a href="{HOOK}?d=stop&p=ID" style="color:#9AA1AE">Ne plus recevoir nos messages</a>.<br>{LEGAL}<span style="display:none;font-size:0;line-height:0;max-height:0;overflow:hidden;opacity:0">{UNIQUE}</span></p>
 </div></body></html>'''
 
 
