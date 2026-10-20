@@ -31,7 +31,7 @@ def pilule(txt, href, fond=BLEU, couleur='#ffffff', taille=15):
             f'text-decoration:none;padding:13px 22px;border-radius:999px;white-space:nowrap;margin:0 8px 8px 0">{txt}</a>')
 
 
-RESEAUX = [('instagram', 'https://www.instagram.com/prouessia'), ('tiktok', 'https://www.tiktok.com/@prouessia.fr'), ('youtube', 'https://www.youtube.com/@prouessia')]
+RESEAUX = [('facebook', 'https://www.facebook.com/profile.php?id=61595467356122'), ('instagram', 'https://www.instagram.com/prouessia'), ('tiktok', 'https://www.tiktok.com/@prouessia.fr'), ('youtube', 'https://www.youtube.com/@prouessia')]
 
 
 def reseaux():

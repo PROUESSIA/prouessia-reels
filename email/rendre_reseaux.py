@@ -4,6 +4,7 @@ from playwright.async_api import async_playwright
 G = {
  'instagram': '<rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="16.3" cy="7.7" r="1" fill="#fff"/>',
  'tiktok': '<path d="M13.2 5v9.2a2.7 2.7 0 1 1-2.2-2.65" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round"/><path d="M13.2 5c.3 2 1.6 3.3 3.6 3.5" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round"/>',
+ 'facebook': '<path d="M13.3 19v-6.2h2.1l.3-2.4h-2.4V8.9c0-.7.2-1.2 1.2-1.2h1.3V5.6c-.2 0-1-.1-1.9-.1-1.9 0-3.2 1.2-3.2 3.3v1.8H8.6v2.4h2.1V19z" fill="#fff"/>',
  'youtube': '<rect x="4.5" y="7" width="15" height="10" rx="3" fill="#fff"/><path d="M10.6 9.6v4.8l4-2.4z" fill="#142445"/>',
 }
 async def main():
