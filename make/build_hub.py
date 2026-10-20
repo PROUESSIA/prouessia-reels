@@ -72,6 +72,17 @@ ajouter = [
  {"id": 4, "mapper": {"upsert": True, "bucketID": "reels", "file_data": "{{3.data}}", "file_name": "{{var.input.video_file}}"}, "module": "supabase:uploadAFile", "version": 1, "parameters": {"__IMTCONN__": SB}},
  {"id": 1, "mapper": {"hook": "{{var.input.hook}}", "table": "social_posts", "topic": "{{var.input.topic}}", "series": "{{var.input.series}}", "status": "a_valider", "caption": "{{var.input.caption}}", "cover_path": "https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/{{var.input.cover_file}}", "video_path": "https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/{{var.input.video_file}}", "scheduled_at": "{{var.input.scheduled_at}}", "pinned_comment": "{{var.input.pinned_comment}}", "sources_pdf_path": "https://github.com/PROUESSIA/prouessia-reels/blob/main/{{var.input.sources_file}}"}, "module": "supabase:createARow", "version": 1, "parameters": {"__IMTCONN__": SB}}]
 stats = json.load(open(SP + 'stats.json'))
+# extraire l'identifiant de chaque réseau dans platform_ids sans guillemet échappé (Make refuse « \" » dans une formule)
+def ident(reseau):
+    # platform_ids (jsonb) lu directement comme objet : aucune formule avec guillemets (Make les refuse depuis le 20/10)
+    return '{{1.platform_ids.%s}}' % reseau
+for m in stats:
+    mp = m.get('mapper', {})
+    if m['module'] == 'make-nodes-late:getPostById':
+        mp['postId'] = ident('instagram' if 'instagram' in mp['postId'] else 'tiktok')
+    for q in mp.get('qs', []):
+        if q.get('key') == 'id' and 'platform_ids' in q.get('value', ''):
+            q['value'] = ident('youtube')
 export = json.load(open(SP + 'export.json'))
 voix = [
  {"id": 1, "mapper": {"url": "/v1beta/models/{{ifempty(var.input.model; \"gemini-3.8-flash-tts\")}}:generateContent", "body": "{\"contents\":[{\"parts\":[{\"text\":\"{{replace(replace(replace(\"### DIRECTOR'S NOTES (do not read aloud)\" + newline + var.input.style + newline + newline + \"### TRANSCRIPT (read only this, in French)\" + newline + var.input.text; \"\\\\\"; \"\\\\\\\\\"); \"\\\"\"; \"\\\\\\\"\"); newline; \"\\\\n\")}}\"}]}],\"generationConfig\":{\"responseModalities\":[\"AUDIO\"],\"speechConfig\":{\"voiceConfig\":{\"prebuiltVoiceConfig\":{\"voiceName\":\"{{ifempty(var.input.voice; \"Elio\")}}\"}}}}}", "method": "POST", "headers": [{"key": "Content-Type", "value": "application/json"}]}, "module": "gemini-ai:makeApiCall", "version": 1, "parameters": {"__IMTCONN__": GE}},
