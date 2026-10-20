@@ -31,7 +31,7 @@ def pilule(txt, href, fond=BLEU, couleur='#ffffff', taille=15):
             f'text-decoration:none;padding:13px 22px;border-radius:999px;white-space:nowrap;margin:0 8px 8px 0">{txt}</a>')
 
 
-RESEAUX = [('facebook', 'https://www.facebook.com/profile.php?id=61595467356122'), ('instagram', 'https://www.instagram.com/prouessia'), ('tiktok', 'https://www.tiktok.com/@prouessia.fr'), ('youtube', 'https://www.youtube.com/@prouessia')]
+RESEAUX = [('facebook', 'https://www.facebook.com/profile.php?id=61595467356122'), ('instagram', 'https://www.instagram.com/prouessia'), ('tiktok', 'https://www.tiktok.com/@prouessia.fr'), ('youtube', 'https://www.youtube.com/@prouessia'), ('linkedin', 'https://www.linkedin.com/company/prouessia/')]
 
 
 def reseaux():
@@ -53,6 +53,7 @@ def signature():
     <a href="https://www.prouessia.fr" style="color:{BLEU};text-decoration:none;font-weight:600">prouessia.fr</a>
     <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="mailto:{MAIL}" style="color:{TEXTE};text-decoration:none;white-space:nowrap">{MAIL}</a>
     <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="tel:+33605874521" style="color:{TEXTE};text-decoration:none;white-space:nowrap">{TEL}</a></div>
+   <div style="font-size:12px;color:{GRIS};margin-top:2px"><a href="https://www.google.com/maps/search/?api=1&amp;query=50+avenue+des+Champs-%C3%89lys%C3%A9es+75008+Paris" style="color:{GRIS};text-decoration:none">50, avenue des Champs-Élysées, 75008 Paris</a></div>
    <div style="margin-top:10px">{reseaux()}</div>
   </td></tr></table>'''
 
