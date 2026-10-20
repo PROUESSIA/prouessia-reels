@@ -9,6 +9,10 @@ Ce fichier est lu par la tâche programmée de Claude, chaque jour. Il décrit t
 3. **Voix de marque** : « on / nous », vouvoiement des plombiers, jamais le prénom de la fondatrice.
 4. **Chaque vidéo a sa fiche sources PDF** (`moteur/fiche_sources.py`). Pas de fiche, pas de Reel.
 5. **Rien n'est publié sans le clic Valider.** La procédure s'arrête à l'e-mail.
+6. **Mouvement dès la première image (règle de la fondatrice, 20/10).** Jamais d'image fixe au début : dès 0 s, il se passe quelque chose de visible sur tout l'écran (vraie vidéo qui bouge, zoom, coupe, texte qui arrive). Aucun plan ne reste immobile plus d'une seconde. Contrôle obligatoire avant d'ajouter un Reel : extraire les images à 0,1 s, 0,5 s, 1 s, 2 s, 3 s et 4 s ; si deux images consécutives sont presque identiques, la vidéo est refaite.
+7. **Écran rempli du haut en bas (règle de la fondatrice, 20/10).** Jamais une moitié d'écran vide : le contenu occupe toute la hauteur 1080×1920 (en gardant le texte important hors des zones des boutons Instagram/TikTok : 250 px en bas, 120 px à droite). Contrôle sur les mêmes images : aucune bande vide de plus de 25 % de la hauteur.
+8. **Pas une présentation, du contenu de plombier (règle de la fondatrice, 20/10).** Interdit : uniquement du texte sur fond uni, et voix de synthèse qui sonne robot. Chaque Reel montre de vraies images de plomberie (chantier, fuite, outils, devis en main) : d'abord les vidéos fournies par la fondatrice, sinon des vidéos sous licence libre (Pexels, Pixabay) dont la source est notée dans `NN/sources.json`. Le texte vient par-dessus l'image, il ne la remplace pas. Voix : une voix humaine enregistrée si la fondatrice en fournit une, sinon la voix la plus naturelle disponible (jamais la voix Gemini actuelle).
+9. **15 à 20 secondes, une seule idée**, fin sur une question qui fait commenter.
 
 ## Make : un seul scénario à lancer (équipe 3236251, zone eu1)
 
