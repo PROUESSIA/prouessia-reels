@@ -67,14 +67,14 @@ publication = [
  {"id": 8, "mapper": {"data": "{{7.data}}", "title": "{{substring(1.hook; 0; 90)}} #Shorts", "fileName": "{{7.fileName}}", "categoryId": "26", "description": "{{1.caption}}", "privacyStatus": "public", "containsSyntheticMedia": False, "selfDeclaredMadeForKids": False}, "module": "youtube:uploadVideo", "version": 4, "parameters": {"__IMTCONN__": YT}},
  {"id": 9, "mapper": {"id": "{{1.id}}", "table": "social_posts", "status": "publie", "platform_ids": "{\"instagram\":\"{{5.post.`_id`}}\",\"tiktok\":\"{{6.post.`_id`}}\",\"youtube\":\"{{8.id}}\"}"}, "module": "supabase:upsertARecord", "version": 1, "parameters": {"__IMTCONN__": SB}},
  {"id": 11, "filter": {"name": "Commentaire présent", "conditions": [[{"a": "{{1.pinned_comment}}", "o": "exist"}]]}, "mapper": {"qs": [{"key": "part", "value": "snippet"}], "url": "/v3/commentThreads", "body": {"snippet": {"videoId": "{{8.id}}", "topLevelComment": {"snippet": {"textOriginal": "{{1.pinned_comment}}"}}}}, "method": "POST", "headers": [{"key": "Content-Type", "value": "application/json"}]}, "module": "youtube:universal", "onerror": [{"id": 12, "module": "builtin:Ignore", "version": 1}], "version": 4, "parameters": {"__IMTCONN__": YT}},
- {"id": 13, "module": "make-nodes-late:Universal", "version": 1, "parameters": {"__IMTCONN__": ZE},
-  "mapper": {"url": "/accounts", "method": "GET"}, "onerror": [{"id": 15, "module": "builtin:Ignore", "version": 1}]},
+ {"id": 13, "module": "make-nodes-late:getSocialAccounts", "version": 1, "parameters": {"__IMTCONN__": ZE},
+  "mapper": {"profileid": "6ad4b6cfee58f47508be0456"}, "onerror": [{"id": 15, "module": "builtin:Ignore", "version": 1}]},
  {"id": 14, "module": "make-nodes-late:Universal", "version": 1, "parameters": {"__IMTCONN__": ZE},
-  "filter": {"name": "Page Facebook connectée", "conditions": [[{"a": "{{first(map(13.body.accounts; \"_id\"; \"platform\"; \"facebook\"))}}", "o": "exist"}]]},
+  "filter": {"name": "Page Facebook", "conditions": [[{"a": "{{13.platform}}", "o": "text:equal", "b": "facebook"}]]},
   "mapper": {"url": "/posts", "method": "POST", "headers": [{"key": "Content-Type", "value": "application/json"}],
              "body": {"content": "{{1.caption}}", "publishNow": True,
                       "mediaItems": [{"type": "video", "url": "{{1.video_path}}"}],
-                      "platforms": [{"platform": "facebook", "accountId": "{{first(map(13.body.accounts; \"_id\"; \"platform\"; \"facebook\"))}}"}]}},
+                      "platforms": [{"platform": "facebook", "accountId": "{{13._id}}"}]}},
   "onerror": [{"id": 16, "module": "builtin:Ignore", "version": 1}]}]
 ajouter = [
  {"id": 3, "mapper": {"url": "https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/{{var.input.video_file}}", "shareCookies": False, "stopOnHttpError": True}, "module": "http:DownloadFile", "version": 4, "parameters": {"authenticationType": "noAuth"}},
@@ -134,11 +134,12 @@ copier = [
 
 # mode comptes : liste des comptes connectés à Zernio (plateforme, id, nom) écrite dans le dépôt
 comptes = [
- {"id": 1, "module": "make-nodes-late:Universal", "version": 1, "parameters": {"__IMTCONN__": ZE},
-  "mapper": {"url": "/accounts", "method": "GET"}},
- {"id": 2, "module": "github:makeRestApiCall", "version": 4, "parameters": {"__IMTCONN__": GH},
+ {"id": 1, "module": "make-nodes-late:getSocialAccounts", "version": 1, "parameters": {"__IMTCONN__": ZE}, "mapper": {"profileid": "6ad4b6cfee58f47508be0456"}},
+ {"id": 2, "module": "util:TextAggregator", "version": 1, "parameters": {"feeder": 1, "rowSeparator": "\n"},
+  "mapper": {"value": "{{1.platform}} | {{1._id}} | {{1.displayName}} | {{1.username}} | actif {{1.isActive}}"}},
+ {"id": 3, "module": "github:makeRestApiCall", "version": 4, "parameters": {"__IMTCONN__": GH},
   "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
-             "body": {"branch": "main", "message": "comptes zernio", "content": "{{base64(1.statusCode + newline + join(map(1.body.accounts; \"platform\"); \" ## \") + newline + join(map(1.body.accounts; \"_id\"); \" ## \") + newline + join(map(1.body.accounts; \"displayName\"); \" ## \") + newline + join(map(1.body.accounts; \"username\"); \" ## \"))}}"}}}]
+             "body": {"branch": "main", "message": "comptes zernio", "content": "{{base64(2.text)}}"}}}]
 
 routes = [
  (with_filter(prospects_lot, sans_mode), 0),
