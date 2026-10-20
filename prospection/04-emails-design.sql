@@ -26,7 +26,7 @@ __CORPS__
 <div style="font-size:13px;margin-top:8px;line-height:1.7">
 <a href="https://www.prouessia.fr" style="color:#3556DB;text-decoration:none;font-weight:600">prouessia.fr</a>
 <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="mailto:contact@prouessia.fr" style="color:#1A2240;text-decoration:none;white-space:nowrap">contact@prouessia.fr</a>
-<span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="tel:+33605874521" style="color:#1A2240;text-decoration:none;white-space:nowrap">06 05 87 45 21</a></div>
+<span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="tel:+33749491777" style="color:#1A2240;text-decoration:none;white-space:nowrap">07 49 49 17 77</a></div>
 <div style="font-size:12px;color:#5D6478;margin-top:2px"><a href="https://www.google.com/maps/search/?api=1&amp;query=50+avenue+des+Champs-%C3%89lys%C3%A9es+75008+Paris" style="color:#5D6478;text-decoration:none">50, avenue des Champs-Élysées, 75008 Paris</a></div>
 <div style="margin-top:10px"><a href="https://www.facebook.com/profile.php?id=61595467356122" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/reseau-facebook.png" width="28" height="28" alt="Facebook" style="display:block"></a><a href="https://www.instagram.com/prouessia" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/reseau-instagram.png" width="28" height="28" alt="Instagram" style="display:block"></a><a href="https://www.tiktok.com/@prouessia.fr" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/reseau-tiktok.png" width="28" height="28" alt="TikTok" style="display:block"></a><a href="https://www.youtube.com/@prouessia" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/reseau-youtube.png" width="28" height="28" alt="YouTube" style="display:block"></a><a href="https://www.linkedin.com/company/prouessia/" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/reseau-linkedin.png" width="28" height="28" alt="LinkedIn" style="display:block"></a></div>
 </td></tr></table>
@@ -55,7 +55,7 @@ create or replace function prospects_lot(n integer default 15)
 returns jsonb language plpgsql security definer set search_path = public as $$
 declare lot jsonb; ids jsonb; deja integer;
   lien text := 'https://hook.eu1.make.com/k5jcskqhsbvtd7wz7ijzea3ow1889ufn?d=stop&p=';
-  pied text := E'\n\n—\nL''équipe Prouessia · prouessia.fr · contact@prouessia.fr · 06 05 87 45 21\nNe plus recevoir nos messages : ';
+  pied text := E'\n\n—\nL''équipe Prouessia · prouessia.fr · contact@prouessia.fr · 07 49 49 17 77\nNe plus recevoir nos messages : ';
   video text := E'\n\nLa vidéo (45 s) : https://www.prouessia.fr/#video';
 begin
   if extract(isodow from now() at time zone 'Europe/Paris') > 5 then

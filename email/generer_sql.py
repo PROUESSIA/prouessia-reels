@@ -106,7 +106,7 @@ create or replace function prospects_lot(n integer default 15)
 returns jsonb language plpgsql security definer set search_path = public as $$
 declare lot jsonb; ids jsonb; deja integer;
   lien text := '{W}?d=stop&p=';
-  pied text := E'\\n\\n—\\nL''équipe Prouessia · prouessia.fr · contact@prouessia.fr · 06 05 87 45 21\\nNe plus recevoir nos messages : ';
+  pied text := E'\\n\\n—\\nL''équipe Prouessia · prouessia.fr · contact@prouessia.fr · 07 49 49 17 77\\nNe plus recevoir nos messages : ';
   video text := E'\\n\\nLa vidéo (45 s) : https://www.prouessia.fr/#video';
 begin
   if extract(isodow from now() at time zone 'Europe/Paris') > 5 then

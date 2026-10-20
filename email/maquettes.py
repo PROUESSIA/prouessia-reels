@@ -16,7 +16,7 @@ LAV_F, LAV_T = '#E3E8FA', '#3556DB'
 CREME_F, CREME_T = '#FBF1D3', '#8A6200'
 ROUGE = '#D93B3B'
 FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
-TEL = '06 05 87 45 21'
+TEL = '07 49 49 17 77'
 MAIL = 'contact@prouessia.fr'
 LEGAL = 'Prouessia · SIRET 923 093 637 00018 · 50, avenue des Champs-Élysées, 75008 Paris'
 e = html.escape
@@ -52,7 +52,7 @@ def signature():
    <div style="font-size:13px;margin-top:8px;line-height:1.7">
     <a href="https://www.prouessia.fr" style="color:{BLEU};text-decoration:none;font-weight:600">prouessia.fr</a>
     <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="mailto:{MAIL}" style="color:{TEXTE};text-decoration:none;white-space:nowrap">{MAIL}</a>
-    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="tel:+33605874521" style="color:{TEXTE};text-decoration:none;white-space:nowrap">{TEL}</a></div>
+    <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="tel:+33749491777" style="color:{TEXTE};text-decoration:none;white-space:nowrap">{TEL}</a></div>
    <div style="font-size:12px;color:{GRIS};margin-top:2px"><a href="https://www.google.com/maps/search/?api=1&amp;query=50+avenue+des+Champs-%C3%89lys%C3%A9es+75008+Paris" style="color:{GRIS};text-decoration:none">50, avenue des Champs-Élysées, 75008 Paris</a></div>
    <div style="margin-top:10px">{reseaux()}</div>
   </td></tr></table>'''

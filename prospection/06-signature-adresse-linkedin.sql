@@ -1,4 +1,4 @@
--- Prouessia · signature des e-mails : adresse du siège + LinkedIn (20/10/2026). Remplace aussi le fichier 05.
+-- Prouessia · signature des e-mails : adresse du siège, LinkedIn et nouveau numéro 07 49 49 17 77 (20/10/2026). Remplace aussi le fichier 05.
 -- À coller une fois dans Supabase > SQL Editor > Run. Rien n'est envoyé en lançant ce fichier.
 
 -- e-mail HTML complet pour un prospect (premier envoi ou relance)
@@ -20,7 +20,7 @@ __CORPS__
 <div style="font-size:13px;margin-top:8px;line-height:1.7">
 <a href="https://www.prouessia.fr" style="color:#3556DB;text-decoration:none;font-weight:600">prouessia.fr</a>
 <span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="mailto:contact@prouessia.fr" style="color:#1A2240;text-decoration:none;white-space:nowrap">contact@prouessia.fr</a>
-<span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="tel:+33605874521" style="color:#1A2240;text-decoration:none;white-space:nowrap">06 05 87 45 21</a></div>
+<span style="color:#C3C7D3">&nbsp;·&nbsp;</span><a href="tel:+33749491777" style="color:#1A2240;text-decoration:none;white-space:nowrap">07 49 49 17 77</a></div>
 <div style="font-size:12px;color:#5D6478;margin-top:2px"><a href="https://www.google.com/maps/search/?api=1&amp;query=50+avenue+des+Champs-%C3%89lys%C3%A9es+75008+Paris" style="color:#5D6478;text-decoration:none">50, avenue des Champs-Élysées, 75008 Paris</a></div>
 <div style="margin-top:10px"><a href="https://www.facebook.com/profile.php?id=61595467356122" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/reseau-facebook.png" width="28" height="28" alt="Facebook" style="display:block"></a><a href="https://www.instagram.com/prouessia" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/reseau-instagram.png" width="28" height="28" alt="Instagram" style="display:block"></a><a href="https://www.tiktok.com/@prouessia.fr" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/reseau-tiktok.png" width="28" height="28" alt="TikTok" style="display:block"></a><a href="https://www.youtube.com/@prouessia" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/reseau-youtube.png" width="28" height="28" alt="YouTube" style="display:block"></a><a href="https://www.linkedin.com/company/prouessia/" style="display:inline-block;margin-right:8px;text-decoration:none"><img src="https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/email/reseau-linkedin.png" width="28" height="28" alt="LinkedIn" style="display:block"></a></div>
 </td></tr></table>
@@ -42,4 +42,46 @@ begin
     '__EMAIL__', html_txt(p.email)),
     '__ID__', p.id::text),
     '__UNIQUE__', p.id::text || '-' || to_char(now(), 'YYYYMMDDHH24MISS'));
+end $$;
+
+-- Le lot d'e-mails du jour (format Resend /emails/batch), jours ouvrés, 15 maximum par jour
+create or replace function prospects_lot(n integer default 15)
+returns jsonb language plpgsql security definer set search_path = public as $$
+declare lot jsonb; ids jsonb; deja integer;
+  lien text := 'https://hook.eu1.make.com/k5jcskqhsbvtd7wz7ijzea3ow1889ufn?d=stop&p=';
+  pied text := E'\n\n—\nL''équipe Prouessia · prouessia.fr · contact@prouessia.fr · 07 49 49 17 77\nNe plus recevoir nos messages : ';
+  video text := E'\n\nLa vidéo (45 s) : https://www.prouessia.fr/#video';
+begin
+  if extract(isodow from now() at time zone 'Europe/Paris') > 5 then
+    return jsonb_build_object('nb', 0, 'batch_text', '[]', 'ids_text', '');
+  end if;
+  select count(*) into deja from prospects
+   where (envoye_1_at at time zone 'Europe/Paris')::date = (now() at time zone 'Europe/Paris')::date
+      or (envoye_2_at at time zone 'Europe/Paris')::date = (now() at time zone 'Europe/Paris')::date;
+  n := greatest(0, n - deja);
+  with choix as (
+    select * from prospects
+    where email is not null and (
+      (statut = 'pret' and objet is not null and message is not null)
+      or (statut = 'envoye_1' and envoye_1_at < now() - interval '5 days'))
+    order by statut desc, created_at
+    limit n
+  )
+  select coalesce(jsonb_agg(jsonb_build_object(
+           'from', 'Prouessia <contact@prouessia.fr>',
+           'to', jsonb_build_array(c.email),
+           'reply_to', 'contact@prouessia.fr',
+           'bcc', jsonb_build_array('contact@prouessia.fr'),   -- copie de chaque envoi dans la boîte contact@
+           'subject', case when c.statut = 'pret' then c.objet else 'Re : ' || c.objet end,
+           'html', email_html(c, c.statut <> 'pret'),
+           'text', case when c.statut = 'pret' then c.message
+                   else E'Bonjour, on revient vers vous : en 45 secondes, voyez comment Prouessia relance vos devis sans réponse, pendant que vous êtes sur le chantier.\n\nPas le bon moment ? Un clic en bas, et on arrête.' end
+                   || video || pied || lien || c.id::text,
+           'headers', jsonb_build_object('List-Unsubscribe', '<' || lien || c.id::text || '>')
+         )), '[]'::jsonb),
+         coalesce(jsonb_agg(c.id), '[]'::jsonb)
+    into lot, ids
+  from choix c;
+  return jsonb_build_object('nb', jsonb_array_length(lot), 'batch_text', lot::text,
+                            'ids_text', (select coalesce(string_agg(x, ','), '') from jsonb_array_elements_text(ids) x));
 end $$;
