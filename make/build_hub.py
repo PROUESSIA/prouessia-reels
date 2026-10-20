@@ -109,10 +109,10 @@ ecrire = [
   "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
              "body": {"branch": "main", "message": "ecriture prospects", "content": "{{base64(1.statusCode + newline + toString(1.body))}}"}}}]
 
-# mode test_mail : envoie un exemple d'e-mail UNIQUEMENT à la boîte de la fondatrice (destinataire figé)
+# mode test_mail : envoie un exemple d'e-mail UNIQUEMENT aux deux boîtes de la fondatrice (destinataires figés)
 test_mail = [
  {"id": 1, "module": "resend:sendAnEmail", "version": 1, "parameters": {"__IMTCONN__": RS},
-  "mapper": {"to": ["prouessia.contact@gmail.com"], "from": "Prouessia <contact@prouessia.fr>", "replyTo": ["contact@prouessia.fr"],
+  "mapper": {"to": ["prouessia.contact@gmail.com", "rimbaabou9@gmail.com"], "from": "Prouessia <contact@prouessia.fr>", "replyTo": ["contact@prouessia.fr"],
              "subject": "{{var.input.hook}}", "html": "{{var.input.text}}", "sendEmailAs": "html"}}]
 
 # mode copier : télécharge un fichier public (video_url) et le range dans le dépôt (path)
