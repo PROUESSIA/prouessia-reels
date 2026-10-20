@@ -39,12 +39,15 @@ def reseaux():
                    for n, u in RESEAUX)
 
 
+UNIQUE = 'ID-ENVOI'  # remplacé à chaque envoi par l'identifiant du prospect + la date : Gmail ne replie plus la signature
+
+
 def signature():
     return f'''
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;background:{FOND};border-radius:18px">
  <tr><td style="padding:18px 20px;vertical-align:middle;width:52px"><img src="{RAW}icone-prouessia.png" width="46" height="46" alt="Prouessia" style="display:block;border-radius:12px"></td>
   <td style="padding:18px 20px 18px 6px;vertical-align:middle;font-family:{FONT}">
-   <div style="font-size:16px;font-weight:600;color:{TEXTE}">L’équipe Prouessia</div>
+   <div style="font-size:16px;font-weight:600;color:{TEXTE}">L’équipe Prouessia<span style="display:none;font-size:0;line-height:0;max-height:0;overflow:hidden;opacity:0">{UNIQUE}</span></div>
    <div style="font-size:13px;color:{GRIS};margin-top:2px">Votre métier, en plus simple</div>
    <div style="font-size:13px;margin-top:8px;line-height:1.7">
     <a href="https://www.prouessia.fr" style="color:{BLEU};text-decoration:none;font-weight:600">prouessia.fr</a>
