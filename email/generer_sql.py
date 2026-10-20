@@ -128,6 +128,7 @@ begin
            'from', 'Prouessia <contact@prouessia.fr>',
            'to', jsonb_build_array(c.email),
            'reply_to', 'contact@prouessia.fr',
+           'bcc', jsonb_build_array('contact@prouessia.fr'),   -- copie de chaque envoi dans la boîte contact@
            'subject', case when c.statut = 'pret' then c.objet else 'Re : ' || c.objet end,
            'html', email_html(c, c.statut <> 'pret'),
            'text', case when c.statut = 'pret' then c.message
