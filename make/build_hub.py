@@ -135,6 +135,16 @@ copier = [
              "body": {"branch": "main", "message": "copie {{var.input.path}}", "content": "{{base64(1.data)}}"}}}]
 
 # mode comptes : liste des comptes connectés à Zernio (plateforme, id, nom) écrite dans le dépôt
+# Pixabay : recherche de vidéos libres de droits (clé « Prouessia Pixabay », trousseau 269845, passée en query string)
+pixabay = [
+ {"id": 1, "module": "http:MakeRequest", "version": 4, "parameters": {"authenticationType": "apiKey", "apiKeyKeychain": 269845, "tlsType": ""},
+  "mapper": {"url": "https://pixabay.com/api/videos/", "method": "get", "queryParameters": [
+     {"name": "q", "value": "{{var.input.query}}"}, {"name": "per_page", "value": "{{ifempty(var.input.n; 20)}}"},
+     {"name": "safesearch", "value": "true"}, {"name": "lang", "value": "fr"}],
+   "contentType": "", "parseResponse": False, "stopOnHttpError": False, "timeout": 40, "allowRedirects": True, "shareCookies": False, "requestCompressedContent": True}},
+ {"id": 2, "module": "github:makeRestApiCall", "version": 4, "parameters": {"__IMTCONN__": GH},
+  "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
+   "body": {"branch": "main", "message": "pixabay {{var.input.path}}", "content": "{{base64(1.statusCode + newline + 1.data)}}"}}}]
 comptes = [
  {"id": 1, "module": "make-nodes-late:getSocialAccounts", "version": 1, "parameters": {"__IMTCONN__": ZE}, "mapper": {"profileid": "6ad4b6cfee58f47508be0456"}},
  {"id": 2, "module": "util:TextAggregator", "version": 1, "parameters": {"feeder": 1, "rowSeparator": "\n"},
@@ -164,6 +174,7 @@ routes = [
  (with_filter(test_mail, mode('test_mail')), 1700),
  (with_filter(copier, mode('copier')), 1800),
  (with_filter(comptes, mode('comptes')), 1900),
+ (with_filter(pixabay, mode('pixabay')), 2000),
 ]
 # les flows 7 et outils filtraient déjà sur var.input.mode (recherche/analyse/importer…) : on retire ce doublon
 def strip_old(flow):
