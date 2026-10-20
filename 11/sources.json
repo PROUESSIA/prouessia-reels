@@ -1,0 +1,41 @@
+{
+ "num": "11",
+ "titre": "Devis de dépannage :<br>la durée de validité, une ligne obligatoire",
+ "date": "12.10.2026",
+ "affirmations": [
+  {
+   "dit": "Chez un particulier, un devis écrit est obligatoire dès le premier euro.",
+   "ref": "arrêté du 24 janvier 2017, art. 4 : le devis détaillé est remis avant l'exécution de la prestation, sans seuil de montant (art. 1 et annexe 1 : la plomberie est concernée). La DGCCRF parle d'un « contrat écrit et formalisé dès le 1er euro ».",
+   "liens": [
+    ["Légifrance : arrêté du 24 janvier 2017", "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033935513"],
+    ["economie.gouv.fr (DGCCRF) : fiche « Dépannage à domicile »", "https://www.economie.gouv.fr/dgccrf/publications/vie-pratique/fiches-pratiques/depannage-a-domicile"]
+   ]
+  },
+  {
+   "dit": "Il liste les mentions : la date, le client, le lieu, les réparations, les prix, le déplacement. Et aussi : la durée de validité de l'offre.",
+   "ref": "arrêté du 24 janvier 2017, art. 4-I : date de rédaction, nom et adresse de l'entreprise, nom du client, lieu d'exécution, nature exacte des réparations, prix unitaire et quantité, frais de déplacement, total HT, TVA, TTC, durée de validité de l'offre, caractère gratuit ou payant du devis. Liste reprise par la DGCCRF.",
+   "liens": [
+    ["Légifrance : arrêté du 24 janvier 2017", "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033935513"],
+    ["economie.gouv.fr (DGCCRF) : fiche « Dépannage à domicile »", "https://www.economie.gouv.fr/dgccrf/publications/vie-pratique/fiches-pratiques/depannage-a-domicile"]
+   ]
+  },
+  {
+   "dit": "Écrivez-la en clair, par exemple « offre valable un mois ».",
+   "ref": "une bonne pratique, pas une obligation légale. Le texte n'impose pas de durée précise : « un mois » n'est qu'un exemple.",
+   "liens": [],
+   "label": "Notre conseil :"
+  },
+  {
+   "dit": "Prouessia relance tout seul par e-mail les devis restés sans réponse.",
+   "ref": "fonction du logiciel Prouessia (liste des devis sans réponse, relance automatique par e-mail).",
+   "liens": [["prouessia.fr", "https://prouessia.fr"]],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Le devis signé chez le client (contrat hors établissement) : il suit aussi les règles du Code de la consommation, avec le droit de rétractation et son exception en cas d'urgence. Voir notre fiche à imprimer DEVIS.",
+  "Les clients professionnels.",
+  "La note (facture) remise après la prestation (art. 5 de l'arrêté)."
+ ],
+ "avert": "Cette fiche résume des textes officiels. Elle ne remplace pas un conseil personnalisé : pour votre situation, voyez votre comptable, un juriste ou votre chambre de métiers."
+}
