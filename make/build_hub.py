@@ -66,7 +66,16 @@ publication = [
  {"id": 7, "mapper": {"url": "{{1.video_path}}", "shareCookies": False, "stopOnHttpError": True}, "module": "http:DownloadFile", "version": 4, "parameters": {"authenticationType": "noAuth"}},
  {"id": 8, "mapper": {"data": "{{7.data}}", "title": "{{substring(1.hook; 0; 90)}} #Shorts", "fileName": "{{7.fileName}}", "categoryId": "26", "description": "{{1.caption}}", "privacyStatus": "public", "containsSyntheticMedia": False, "selfDeclaredMadeForKids": False}, "module": "youtube:uploadVideo", "version": 4, "parameters": {"__IMTCONN__": YT}},
  {"id": 9, "mapper": {"id": "{{1.id}}", "table": "social_posts", "status": "publie", "platform_ids": "{\"instagram\":\"{{5.post.`_id`}}\",\"tiktok\":\"{{6.post.`_id`}}\",\"youtube\":\"{{8.id}}\"}"}, "module": "supabase:upsertARecord", "version": 1, "parameters": {"__IMTCONN__": SB}},
- {"id": 11, "filter": {"name": "Commentaire présent", "conditions": [[{"a": "{{1.pinned_comment}}", "o": "exist"}]]}, "mapper": {"qs": [{"key": "part", "value": "snippet"}], "url": "/v3/commentThreads", "body": {"snippet": {"videoId": "{{8.id}}", "topLevelComment": {"snippet": {"textOriginal": "{{1.pinned_comment}}"}}}}, "method": "POST", "headers": [{"key": "Content-Type", "value": "application/json"}]}, "module": "youtube:universal", "onerror": [{"id": 12, "module": "builtin:Ignore", "version": 1}], "version": 4, "parameters": {"__IMTCONN__": YT}}]
+ {"id": 11, "filter": {"name": "Commentaire présent", "conditions": [[{"a": "{{1.pinned_comment}}", "o": "exist"}]]}, "mapper": {"qs": [{"key": "part", "value": "snippet"}], "url": "/v3/commentThreads", "body": {"snippet": {"videoId": "{{8.id}}", "topLevelComment": {"snippet": {"textOriginal": "{{1.pinned_comment}}"}}}}, "method": "POST", "headers": [{"key": "Content-Type", "value": "application/json"}]}, "module": "youtube:universal", "onerror": [{"id": 12, "module": "builtin:Ignore", "version": 1}], "version": 4, "parameters": {"__IMTCONN__": YT}},
+ {"id": 13, "module": "make-nodes-late:Universal", "version": 1, "parameters": {"__IMTCONN__": ZE},
+  "mapper": {"url": "/accounts", "method": "GET"}, "onerror": [{"id": 15, "module": "builtin:Ignore", "version": 1}]},
+ {"id": 14, "module": "make-nodes-late:Universal", "version": 1, "parameters": {"__IMTCONN__": ZE},
+  "filter": {"name": "Page Facebook connectée", "conditions": [[{"a": "{{first(map(13.body.accounts; \"_id\"; \"platform\"; \"facebook\"))}}", "o": "exist"}]]},
+  "mapper": {"url": "/posts", "method": "POST", "headers": [{"key": "Content-Type", "value": "application/json"}],
+             "body": {"content": "{{1.caption}}", "publishNow": True,
+                      "mediaItems": [{"type": "video", "url": "{{1.video_path}}"}],
+                      "platforms": [{"platform": "facebook", "accountId": "{{first(map(13.body.accounts; \"_id\"; \"platform\"; \"facebook\"))}}"}]}},
+  "onerror": [{"id": 16, "module": "builtin:Ignore", "version": 1}]}]
 ajouter = [
  {"id": 3, "mapper": {"url": "https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/{{var.input.video_file}}", "shareCookies": False, "stopOnHttpError": True}, "module": "http:DownloadFile", "version": 4, "parameters": {"authenticationType": "noAuth"}},
  {"id": 4, "mapper": {"upsert": True, "bucketID": "reels", "file_data": "{{3.data}}", "file_name": "{{var.input.video_file}}"}, "module": "supabase:uploadAFile", "version": 1, "parameters": {"__IMTCONN__": SB}},
@@ -123,6 +132,14 @@ copier = [
   "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
              "body": {"branch": "main", "message": "copie {{var.input.path}}", "content": "{{base64(1.data)}}"}}}]
 
+# mode comptes : liste des comptes connectés à Zernio (plateforme, id, nom) écrite dans le dépôt
+comptes = [
+ {"id": 1, "module": "make-nodes-late:Universal", "version": 1, "parameters": {"__IMTCONN__": ZE},
+  "mapper": {"url": "/accounts", "method": "GET"}},
+ {"id": 2, "module": "github:makeRestApiCall", "version": 4, "parameters": {"__IMTCONN__": GH},
+  "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
+             "body": {"branch": "main", "message": "comptes zernio", "content": "{{base64(1.statusCode + newline + join(map(1.body.accounts; \"platform\"); \" ## \") + newline + join(map(1.body.accounts; \"_id\"); \" ## \") + newline + join(map(1.body.accounts; \"displayName\"); \" ## \") + newline + join(map(1.body.accounts; \"username\"); \" ## \"))}}"}}}]
+
 routes = [
  (with_filter(prospects_lot, sans_mode), 0),
  (with_filter(publication, sans_mode), 100),
@@ -143,6 +160,7 @@ routes = [
  (with_filter(ecrire, mode('ecrire')), 1600),
  (with_filter(test_mail, mode('test_mail')), 1700),
  (with_filter(copier, mode('copier')), 1800),
+ (with_filter(comptes, mode('comptes')), 1900),
 ]
 # les flows 7 et outils filtraient déjà sur var.input.mode (recherche/analyse/importer…) : on retire ce doublon
 def strip_old(flow):
