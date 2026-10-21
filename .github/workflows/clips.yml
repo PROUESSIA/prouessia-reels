@@ -1,0 +1,28 @@
+name: Télécharger des clips
+# Rapatrie les vidéos libres de droits listées dans videos/a_telecharger.txt (lignes « id url »)
+# vers videos/clips/<id>.mp4, sans dépenser de crédits Make.
+on:
+  push:
+    paths: ['videos/a_telecharger.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  clips:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Télécharger
+        run: |
+          mkdir -p videos/clips
+          while read -r id url; do
+            [ -z "$id" ] && continue
+            [ -f "videos/clips/$id.mp4" ] && continue
+            curl -fsSL --retry 3 -o "videos/clips/$id.mp4" "$url" || echo "échec $id"
+          done < videos/a_telecharger.txt
+          : > videos/a_telecharger.txt
+      - name: Pousser
+        run: |
+          git config user.name "machine-reels"; git config user.email "machine-reels@users.noreply.github.com"
+          git add videos && git commit -m "clips téléchargés" || exit 0
+          git push
