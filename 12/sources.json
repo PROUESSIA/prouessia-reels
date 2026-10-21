@@ -1,0 +1,96 @@
+{
+ "num": "12",
+ "titre": "Urgence de nuit :<br>le devis avant la caisse à outils",
+ "date": "12.10.2026",
+ "affirmations": [
+  {
+   "dit": "Chez un particulier, il est obligatoire dès le premier euro.",
+   "ref": "arrêté du 24 janvier 2017, art. 4 : le devis détaillé est remis avant l'exécution de la prestation, sans seuil de montant (art. 1 et annexe 1 : la plomberie et le génie climatique sont concernés). La DGCCRF parle d'un « contrat écrit et formalisé dès le 1er euro ».",
+   "liens": [
+    [
+     "Légifrance : arrêté du 24 janvier 2017",
+     "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033935513"
+    ],
+    [
+     "economie.gouv.fr (DGCCRF) : fiche « Dépannage à domicile »",
+     "https://www.economie.gouv.fr/dgccrf/publications/vie-pratique/fiches-pratiques/depannage-a-domicile"
+    ],
+    [
+     "inc-conso.fr (Institut national de la consommation) : devis quel que soit le montant",
+     "https://www.inc-conso.fr/content/vous-contestez-labsence-de-remise-dun-devis-loccasion-dun-depannage-domicile-compter-du-1er"
+    ]
+   ]
+  },
+  {
+   "dit": "Et il est remis avant l'intervention.",
+   "ref": "arrêté du 24 janvier 2017, art. 4 : le devis détaillé est remis au consommateur avant l'exécution de la prestation. L'article ne prévoit pas d'exception selon l'heure du dépannage.",
+   "liens": [
+    [
+     "Légifrance : arrêté du 24 janvier 2017",
+     "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033935513"
+    ],
+    [
+     "economie.gouv.fr (DGCCRF) : fiche « Dépannage à domicile »",
+     "https://www.economie.gouv.fr/dgccrf/publications/vie-pratique/fiches-pratiques/depannage-a-domicile"
+    ]
+   ]
+  },
+  {
+   "dit": "Vingt-deux heures, une fuite chez un client.",
+   "ref": "une mise en situation pour illustrer la règle, pas un cas réel.",
+   "liens": [],
+   "label": "Mise en scène :"
+  },
+  {
+   "dit": "Un devis resté sans réponse ? Prouessia le relance tout seul, par e-mail.",
+   "ref": "fonction du logiciel Prouessia (liste des devis sans réponse, relance automatique par e-mail).",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Le devis signé chez le client (contrat hors établissement) : il suit aussi les règles du Code de la consommation, avec le droit de rétractation et son exception en cas d'urgence. Voir notre fiche à imprimer DEVIS et la fiche DGCCRF.",
+  "Les mentions obligatoires du devis (date, client, lieu, réparations, prix, déplacement, durée de validité…) : voir nos Reels précédents et l'art. 4-I de l'arrêté.",
+  "Les clients professionnels."
+ ],
+ "avert": "Cette fiche résume des textes officiels. Elle ne remplace pas un conseil personnalisé : pour votre situation, voyez votre comptable, un juriste ou votre chambre de métiers.",
+ "videos": [
+  {
+   "id": "257090",
+   "sujet": "robinet qui goutte",
+   "url": "https://pixabay.com/videos/id-257090/",
+   "auteur": "padrinan"
+  },
+  {
+   "id": "4728",
+   "sujet": "visseuse",
+   "url": "https://pixabay.com/videos/id-4728/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "100344",
+   "sujet": "main qui écrit",
+   "url": "https://pixabay.com/videos/id-100344/",
+   "auteur": "egemen_izmirli"
+  },
+  {
+   "id": "136086",
+   "sujet": "robinet qui coule",
+   "url": "https://pixabay.com/videos/id-136086/",
+   "auteur": "Kaffeesüchtig"
+  },
+  {
+   "id": "51541",
+   "sujet": "goutte au robinet",
+   "url": "https://pixabay.com/videos/id-51541/",
+   "auteur": "terski"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "ElevenLabs, voix « Anthony Sirius - Naturel et direct » (Kg44Et7dmnb41tHrZjeN), modèle eleven_v4"
+}
