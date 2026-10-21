@@ -16,6 +16,8 @@ VOIX_NOM = 'Charon'
 STYLE = ("Voix d'homme française, naturelle, comme un artisan qui parle à un collègue sur TikTok. Ton de constat posé, presque "
          "pince-sans-rire, sans aucune emphase publicitaire. Débit rapide (environ 5 mots par seconde). Phrases courtes enchaînées "
          "avec des micro-pauses très brèves. Seule la question finale monte légèrement.")
+FIN = 'Prouessia, le partenaire des plombiers.'  # fin identique de chaque Reel (idees/100-idees-reels.pdf)
+FIN_HTML = 'Prouessia, <b>le partenaire des plombiers</b><br><span style="font-size:60px;color:#fff">prouessia.fr</span>'
 PAUSE = 0.2  # pause entre deux phrases (les références : 0,1 à 0,3 s)
 
 def dit(html):
@@ -31,12 +33,17 @@ def charger(nn):
     assert not deja, f'règle 12 : clips déjà utilisés récemment {sorted(deja)}'
     manquants = [k for k in clips if not os.path.exists(f'{CLIPS}/{k}.mp4')]
     assert not manquants, f'clips à télécharger d\'abord (videos/a_telecharger.txt) : {manquants}'
-    lignes = [dit(p['html']) or dit(c['titre']) for p in ph]
+    lignes = [(FIN + ' prouessia.fr') if p['html'] == FIN_HTML else (dit(p['html']) or dit(c['titre'])) for p in ph]
     lignes = [l if l[-1] in '.?!…' else l + '.' for l in lignes]
+    assert ph[-1]['html'] == FIN_HTML, 'la dernière phrase doit être FIN_HTML (fin identique)'
+    assert 10 <= len(ph) <= 16, '10 à 16 phrases'
     return c, lignes
 
 def texte(nn):
-    _, l = charger(nn); print(' '.join(l))
+    _, l = charger(nn)
+    # prononciation : « Prouèssia », « prouessia point fr »
+    t = ' '.join(l).replace('prouessia.fr', 'prouessia point f r').replace('Prouessia', 'Prouèssia').replace('prouessia', 'prouèssia')
+    print(t)
 
 def voix(nn, fichier):
     import numpy as np, soundfile as sf

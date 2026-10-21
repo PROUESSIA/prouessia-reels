@@ -1,0 +1,802 @@
+[
+ {
+  "n": 1,
+  "theme": "Gagner du temps sur les devis",
+  "avantage": "Un devis en 2 minutes",
+  "accroche": "Un devis en deux minutes, pas en deux heures.",
+  "images": "Plombier dans sa camionnette, téléphone en main, le devis se remplit à l'écran",
+  "fait": false
+ },
+ {
+  "n": 2,
+  "theme": "Gagner du temps sur les devis",
+  "avantage": "Fini les devis du soir",
+  "accroche": "Fini les devis à 22 h sur la table de la cuisine.",
+  "images": "Table de cuisine la nuit, ordinateur fermé, puis plombier qui rentre à l'heure",
+  "fait": false
+ },
+ {
+  "n": 3,
+  "theme": "Gagner du temps sur les devis",
+  "avantage": "Vos prestations enregistrées une fois",
+  "accroche": "Vos tarifs, on les saisit une seule fois.",
+  "images": "Liste de prestations qui défile, doigt qui en choisit trois",
+  "fait": false
+ },
+ {
+  "n": 4,
+  "theme": "Gagner du temps sur les devis",
+  "avantage": "Total calculé tout seul",
+  "accroche": "Zéro calculette: HT, TVA, total, tout est calculé.",
+  "images": "Calculette poussée du plan de travail, montant qui s'affiche",
+  "fait": false
+ },
+ {
+  "n": 5,
+  "theme": "Gagner du temps sur les devis",
+  "avantage": "Même présentation à chaque devis",
+  "accroche": "Chaque devis a le même look sérieux, sans y penser.",
+  "images": "Trois devis qui se superposent, identiques et propres",
+  "fait": false
+ },
+ {
+  "n": 6,
+  "theme": "Gagner du temps sur les devis",
+  "avantage": "Le devis chez le client",
+  "accroche": "Le devis se fait chez le client, pas au bureau.",
+  "images": "Plombier accroupi sous un évier, téléphone posé sur la boîte à outils",
+  "fait": false
+ },
+ {
+  "n": 7,
+  "theme": "Gagner du temps sur les devis",
+  "avantage": "Client déjà connu, déjà rempli",
+  "accroche": "Client déjà connu? Ses infos sont déjà là.",
+  "images": "Fiche client qui se pré- remplit, clé à molette en arrière-plan",
+  "fait": false
+ },
+ {
+  "n": 8,
+  "theme": "Gagner du temps sur les devis",
+  "avantage": "Envoi en un clic",
+  "accroche": "Un clic, et le devis part par mail.",
+  "images": "Pouce qui appuie, enveloppe qui s'envole sur fond de chantier",
+  "fait": false
+ },
+ {
+  "n": 9,
+  "theme": "Gagner du temps sur les devis",
+  "avantage": "Le client ouvre sans rien installer",
+  "accroche": "Votre client ouvre le devis sans rien installer.",
+  "images": "Client sur son canapé qui ouvre le lien sur son téléphone",
+  "fait": false
+ },
+ {
+  "n": 10,
+  "theme": "Gagner du temps sur les devis",
+  "avantage": "Tous les devis au même endroit",
+  "accroche": "Tous vos devis au même endroit, retrouvés en 3 secondes.",
+  "images": "Pile de papiers froissés dans la camionnette, puis liste nette à l'écran",
+  "fait": false
+ },
+ {
+  "n": 11,
+  "theme": "Un site qui vous apporte des clients",
+  "avantage": "On crée votre site pour vous",
+  "accroche": "Votre site de plombier, on le crée. Vous n'y touchez pas.",
+  "images": "Plombier qui range ses clés, son site qui se construit sur un écran derrière lui",
+  "fait": false
+ },
+ {
+  "n": 12,
+  "theme": "Un site qui vous apporte des clients",
+  "avantage": "Votre logo, vos couleurs",
+  "accroche": "Votre logo, vos couleurs, votre site.",
+  "images": "Logo sur la camionnette qui glisse vers l'en-tête du site",
+  "fait": false
+ },
+ {
+  "n": 13,
+  "theme": "Un site qui vous apporte des clients",
+  "avantage": "Un site qui fait sérieux",
+  "accroche": "Un site qui rassure avant même le premier appel.",
+  "images": "Client qui hésite devant son téléphone, puis qui sourit en voyant le site",
+  "fait": false
+ },
+ {
+  "n": 14,
+  "theme": "Un site qui vous apporte des clients",
+  "avantage": "Trouvable sur Google",
+  "accroche": "Quand on cherche un plombier chez vous, on vous trouve.",
+  "images": "Recherche tapée sur téléphone, résultats qui défilent",
+  "fait": false
+ },
+ {
+  "n": 15,
+  "theme": "Un site qui vous apporte des clients",
+  "avantage": "Votre zone bien indiquée",
+  "accroche": "Vos communes affichées, plus de déplacements pour rien.",
+  "images": "Carte de la zone, camionnette qui roule dans les rues",
+  "fait": false
+ },
+ {
+  "n": 16,
+  "theme": "Un site qui vous apporte des clients",
+  "avantage": "Vos services classés",
+  "accroche": "Dépannage, chauffe-eau, salle de bain: tout est clair.",
+  "images": "Gros plans: robinet, chauffe- eau, douche, un par service",
+  "fait": false
+ },
+ {
+  "n": 17,
+  "theme": "Un site qui vous apporte des clients",
+  "avantage": "Le client vous écrit depuis le site",
+  "accroche": "Le client remplit le formulaire, vous recevez la demande.",
+  "images": "Doigt qui remplit un formulaire, notification sur le téléphone du plombier",
+  "fait": false
+ },
+ {
+  "n": 18,
+  "theme": "Un site qui vous apporte des clients",
+  "avantage": "Numéro cliquable",
+  "accroche": "Un appui, et le client vous appelle.",
+  "images": "Pouce sur le numéro, téléphone qui sonne dans la camionnette",
+  "fait": false
+ },
+ {
+  "n": 19,
+  "theme": "Un site qui vous apporte des clients",
+  "avantage": "Site rapide sur mobile",
+  "accroche": "Il s'ouvre vite, même avec une seule barre de réseau.",
+  "images": "Mur de parpaings, une barre de réseau, page qui s'affiche d'un coup",
+  "fait": false
+ },
+ {
+  "n": 20,
+  "theme": "Un site qui vous apporte des clients",
+  "avantage": "Une adresse web à votre nom",
+  "accroche": "Une adresse web à votre nom, facile à donner.",
+  "images": "Adresse inscrite sur la camionnette et sur une carte de visite",
+  "fait": false
+ },
+ {
+  "n": 21,
+  "theme": "Signature et contrats",
+  "avantage": "Signature au doigt sur téléphone",
+  "accroche": "Votre client signe le devis avec son doigt.",
+  "images": "Doigt qui trace une signature sur l'écran, salle de bain en chantier derrière",
+  "fait": false
+ },
+ {
+  "n": 22,
+  "theme": "Signature et contrats",
+  "avantage": "Plus d'impression ni de scan",
+  "accroche": "Plus d'imprimante, plus de scan, plus de papier.",
+  "images": "Imprimante en panne, bourrage papier, puis signature en ligne",
+  "fait": false
+ },
+ {
+  "n": 23,
+  "theme": "Signature et contrats",
+  "avantage": "PDF signé généré automatiquement",
+  "accroche": "Le devis signé se fait tout seul en PDF.",
+  "images": "Page PDF qui se tamponne « signé », classeur qui se remplit",
+  "fait": false
+ },
+ {
+  "n": 24,
+  "theme": "Signature et contrats",
+  "avantage": "Vous êtes prévenu dès la signature",
+  "accroche": "Il signe, et votre téléphone vous prévient.",
+  "images": "Plombier sur une échelle, notification qui vibre dans sa poche",
+  "fait": false
+ },
+ {
+  "n": 25,
+  "theme": "Signature et contrats",
+  "avantage": "Date et heure conservées",
+  "accroche": "Qui a signé, quand, depuis quel appareil: c'est gardé.",
+  "images": "Ligne d'horodatage qui s'écrit sous la signature",
+  "fait": false
+ },
+ {
+  "n": 26,
+  "theme": "Signature et contrats",
+  "avantage": "Signature depuis le canapé",
+  "accroche": "Il signe depuis son canapé, vous commencez lundi.",
+  "images": "Client en pantoufles sur son téléphone, calendrier qui marque lundi",
+  "fait": false
+ },
+ {
+  "n": 27,
+  "theme": "Signature et contrats",
+  "avantage": "Devis signés jamais perdus",
+  "accroche": "Fini le devis signé introuvable au fond de la camionnette.",
+  "images": "Fouille dans un tableau de bord encombré, puis document retrouvé à l'écran",
+  "fait": false
+ },
+ {
+  "n": 28,
+  "theme": "Signature et contrats",
+  "avantage": "Contrats signés en ligne",
+  "accroche": "Un contrat? Le client le signe en ligne aussi.",
+  "images": "Chaudière en gros plan, contrat qui s'affiche et se signe",
+  "fait": false
+ },
+ {
+  "n": 29,
+  "theme": "Signature et contrats",
+  "avantage": "Un seul document pour tout le monde",
+  "accroche": "Vous et votre client avez le même document.",
+  "images": "Deux téléphones côte à côte qui affichent le même devis",
+  "fait": false
+ },
+ {
+  "n": 30,
+  "theme": "Signature et contrats",
+  "avantage": "Chantier lancé plus vite",
+  "accroche": "Signature plus vite, chantier lancé plus vite.",
+  "images": "Camionnette qui démarre, outils chargés, chrono qui s'accélère",
+  "fait": false
+ },
+ {
+  "n": 31,
+  "theme": "Relances et argent qui rentre",
+  "avantage": "Relance de devis automatique par mail",
+  "accroche": "Le client n'a pas répondu? Le mail de relance part tout seul.",
+  "images": "Boîte mail vide, mail de relance qui part, réponse qui arrive",
+  "fait": false
+ },
+ {
+  "n": 32,
+  "theme": "Relances et argent qui rentre",
+  "avantage": "Liste des devis sans réponse",
+  "accroche": "Voyez d'un coup d'œil les devis restés sans réponse.",
+  "images": "Liste d'écran avec les devis en attente qui se surlignent",
+  "fait": false
+ },
+ {
+  "n": 33,
+  "theme": "Relances et argent qui rentre",
+  "avantage": "Plus de gêne à relancer",
+  "accroche": "Relancer un client, c'est gênant. Là, c'est fait pour vous.",
+  "images": "Plombier qui hésite, téléphone en main, puis pose le téléphone, soulagé",
+  "fait": false
+ },
+ {
+  "n": 34,
+  "theme": "Relances et argent qui rentre",
+  "avantage": "Aucun devis oublié",
+  "accroche": "Un devis oublié, c'est un chantier perdu.",
+  "images": "Devis qui s'empile dans un tiroir, puis tiré vers l'écran",
+  "fait": false
+ },
+ {
+  "n": 35,
+  "theme": "Relances et argent qui rentre",
+  "avantage": "Montant en attente visible",
+  "accroche": "Combien d'argent dort dans vos devis? Vous le voyez.",
+  "images": "Chiffre qui monte à l'écran, tirelire de chantier",
+  "fait": false
+ },
+ {
+  "n": 36,
+  "theme": "Relances et argent qui rentre",
+  "avantage": "Tableau de bord clair",
+  "accroche": "Un seul écran pour savoir où vous en êtes.",
+  "images": "Accueil du portail, doigt qui fait défiler les chiffres",
+  "fait": false
+ },
+ {
+  "n": 37,
+  "theme": "Relances et argent qui rentre",
+  "avantage": "Voir ce qui est signé",
+  "accroche": "Signé, en attente, refusé: tout est classé.",
+  "images": "Trois piles de devis qui se rangent par statut",
+  "fait": false
+ },
+ {
+  "n": 38,
+  "theme": "Relances et argent qui rentre",
+  "avantage": "Moins de devis sans suite",
+  "accroche": "Plus de devis suivis, moins de devis perdus.",
+  "images": "Courbe qui monte sur fond de chantier en cours",
+  "fait": false
+ },
+ {
+  "n": 39,
+  "theme": "Relances et argent qui rentre",
+  "avantage": "Relance faite pendant que vous travaillez",
+  "accroche": "Vous êtes sur le chantier, la relance part quand même.",
+  "images": "Plombier qui soude un tuyau, notification discrète dans le coin",
+  "fait": false
+ },
+ {
+  "n": 40,
+  "theme": "Relances et argent qui rentre",
+  "avantage": "Le client répond plus vite",
+  "accroche": "Un petit rappel, et le client se décide.",
+  "images": "Client qui reprend le mail, relit le devis et signe",
+  "fait": false
+ },
+ {
+  "n": 41,
+  "theme": "Sur le chantier",
+  "avantage": "Dictée vocale dans les devis",
+  "accroche": "Dictez vos notes, le texte s'écrit tout seul.",
+  "images": "Plombier qui parle à son téléphone, mots qui apparaissent à l'écran",
+  "fait": false
+ },
+ {
+  "n": 42,
+  "theme": "Sur le chantier",
+  "avantage": "Mains mouillées, pas de souci",
+  "accroche": "Les mains pleines de joint? Parlez, ne tapez pas.",
+  "images": "Mains pleines de pâte à joint, téléphone posé à côté",
+  "fait": false
+ },
+ {
+  "n": 43,
+  "theme": "Sur le chantier",
+  "avantage": "Dictée sur la fiche client",
+  "accroche": "Une remarque sur le client? Dites-la, c'est noté.",
+  "images": "Plombier qui sort de la maison et dicte, fiche client qui se complète",
+  "fait": false
+ },
+ {
+  "n": 44,
+  "theme": "Sur le chantier",
+  "avantage": "Fonctionne sans réseau",
+  "accroche": "Une cave sans réseau, et vous continuez quand même.",
+  "images": "Escalier de cave, icône réseau barrée, devis qui continue de se remplir",
+  "fait": false
+ },
+ {
+  "n": 45,
+  "theme": "Sur le chantier",
+  "avantage": "Devis envoyé au retour du réseau",
+  "accroche": "Il part tout seul quand le réseau revient.",
+  "images": "Plombier qui sort de la cave, le devis part dès qu'une barre réapparaît",
+  "fait": false
+ },
+ {
+  "n": 46,
+  "theme": "Sur le chantier",
+  "avantage": "Brouillon sauvegardé automatiquement",
+  "accroche": "Le téléphone sonne en plein devis? Vous retrouvez tout.",
+  "images": "Appel entrant, retour à l'écran, devis intact",
+  "fait": false
+ },
+ {
+  "n": 47,
+  "theme": "Sur le chantier",
+  "avantage": "À l'écran d'accueil du téléphone",
+  "accroche": "Un raccourci sur votre écran d'accueil, comme une appli.",
+  "images": "Pouce qui ajoute l'icône, puis ouvre le portail",
+  "fait": false
+ },
+ {
+  "n": 48,
+  "theme": "Sur le chantier",
+  "avantage": "Gros boutons faciles à toucher",
+  "accroche": "De vrais gros boutons, même avec des gants.",
+  "images": "Gant de chantier qui appuie sur un bouton large",
+  "fait": false
+ },
+ {
+  "n": 49,
+  "theme": "Sur le chantier",
+  "avantage": "Messages d'erreur clairs",
+  "accroche": "Un souci? On vous explique en français, sans jargon.",
+  "images": "Message d'erreur technique barré, remplacé par une phrase simple",
+  "fait": false
+ },
+ {
+  "n": 50,
+  "theme": "Sur le chantier",
+  "avantage": "Interventions notées sur place",
+  "accroche": "L'intervention est notée avant de remonter dans la camionnette.",
+  "images": "Plombier qui ferme sa boîte à outils et valide sur téléphone",
+  "fait": false
+ },
+ {
+  "n": 51,
+  "theme": "Une image sérieuse",
+  "avantage": "Devis avec votre logo",
+  "accroche": "Votre logo en haut de chaque devis.",
+  "images": "Logo qui se place sur un devis, camionnette à votre nom en fond",
+  "fait": false
+ },
+ {
+  "n": 52,
+  "theme": "Une image sérieuse",
+  "avantage": "Vos couleurs sur les documents",
+  "accroche": "Vos couleurs, pas celles d'un logiciel générique.",
+  "images": "Palette qui change la couleur d'un devis",
+  "fait": false
+ },
+ {
+  "n": 53,
+  "theme": "Une image sérieuse",
+  "avantage": "Un devis lisible",
+  "accroche": "Un devis que le client comprend du premier coup.",
+  "images": "Client qui lit le devis, hoche la tête, lignes surlignées une à une",
+  "fait": false
+ },
+ {
+  "n": 54,
+  "theme": "Une image sérieuse",
+  "avantage": "Mails soignés",
+  "accroche": "Des mails propres, vos clients voient que vous êtes sérieux.",
+  "images": "Boîte de réception, mail net et bien présenté",
+  "fait": false
+ },
+ {
+  "n": 55,
+  "theme": "Une image sérieuse",
+  "avantage": "Répondre vite fait pro",
+  "accroche": "Celui qui répond le premier a souvent le chantier.",
+  "images": "Deux plombiers, deux téléphones, un seul répond à temps",
+  "fait": false
+ },
+ {
+  "n": 56,
+  "theme": "Une image sérieuse",
+  "avantage": "Site et devis assortis",
+  "accroche": "Un site et des devis qui se ressemblent: ça rassure.",
+  "images": "Site à gauche, devis à droite, mêmes couleurs, même logo",
+  "fait": false
+ },
+ {
+  "n": 57,
+  "theme": "Une image sérieuse",
+  "avantage": "Se démarquer du papier",
+  "accroche": "Pendant que d'autres envoient du papier, vous envoyez du pro.",
+  "images": "Devis manuscrit froissé contre devis propre sur téléphone",
+  "fait": false
+ },
+ {
+  "n": 58,
+  "theme": "Une image sérieuse",
+  "avantage": "Le client sait ce qu'il signe",
+  "accroche": "Le client voit tout avant de signer.",
+  "images": "Défilement du devis ligne par ligne sur téléphone",
+  "fait": false
+ },
+ {
+  "n": 59,
+  "theme": "Une image sérieuse",
+  "avantage": "Aperçu avant l'envoi",
+  "accroche": "Vous voyez le devis comme votre client le verra.",
+  "images": "Bascule entre l'écran plombier et l'écran client",
+  "fait": false
+ },
+ {
+  "n": 60,
+  "theme": "Une image sérieuse",
+  "avantage": "Bonne impression dès le premier contact",
+  "accroche": "La première impression se joue avant l'arrivée sur place.",
+  "images": "Client qui regarde le site, puis ouvre sa porte au plombier",
+  "fait": false
+ },
+ {
+  "n": 61,
+  "theme": "Tarif, paiement et simplicité",
+  "avantage": "39 € par mois",
+  "accroche": "39 euros par mois, le prix est affiché.",
+  "images": "Chiffre 39 qui s'affiche sur le tableau de bord de la camionnette",
+  "fait": false
+ },
+ {
+  "n": 62,
+  "theme": "Tarif, paiement et simplicité",
+  "avantage": "Un seul outil au lieu de plusieurs",
+  "accroche": "Site, devis, signature, relances: un seul outil.",
+  "images": "Quatre icônes qui fusionnent en une seule",
+  "fait": false
+ },
+ {
+  "n": 63,
+  "theme": "Tarif, paiement et simplicité",
+  "avantage": "Paiement par virement programmé",
+  "accroche": "Vous réglez par virement programmé, rien à penser.",
+  "images": "Application bancaire, virement qui se programme une fois",
+  "fait": false
+ },
+ {
+  "n": 64,
+  "theme": "Tarif, paiement et simplicité",
+  "avantage": "Pas de carte bancaire demandée",
+  "accroche": "Pas de carte bancaire à donner.",
+  "images": "Carte bancaire qui reste dans le portefeuille, portefeuille qui se ferme",
+  "fait": false
+ },
+ {
+  "n": 65,
+  "theme": "Tarif, paiement et simplicité",
+  "avantage": "Pas de prélèvement surprise",
+  "accroche": "Pas de prélèvement: vous gardez la main.",
+  "images": "Relevé bancaire propre, sans ligne inconnue",
+  "fait": false
+ },
+ {
+  "n": 66,
+  "theme": "Tarif, paiement et simplicité",
+  "avantage": "Résiliable à tout moment",
+  "accroche": "Résiliable à tout moment, sans prise de tête.",
+  "images": "Porte de la camionnette qui s'ouvre, personne ne vous retient",
+  "fait": false
+ },
+ {
+  "n": 67,
+  "theme": "Tarif, paiement et simplicité",
+  "avantage": "Rien à installer sur l'ordinateur",
+  "accroche": "Rien à installer: vous ouvrez, ça marche.",
+  "images": "Ordinateur qui s'allume sur le portail directement",
+  "fait": false
+ },
+ {
+  "n": 68,
+  "theme": "Tarif, paiement et simplicité",
+  "avantage": "Prise en main rapide",
+  "accroche": "Si vous savez envoyer un SMS, vous savez l'utiliser.",
+  "images": "Plombier à la cinquantaine, à l'aise sur son téléphone",
+  "fait": false
+ },
+ {
+  "n": 69,
+  "theme": "Tarif, paiement et simplicité",
+  "avantage": "Tout en français, sans jargon",
+  "accroche": "Du français simple, pas du langage d'informaticien.",
+  "images": "Mot technique barré à l'écran, remplacé par un mot de plombier",
+  "fait": false
+ },
+ {
+  "n": 70,
+  "theme": "Tarif, paiement et simplicité",
+  "avantage": "Prix affiché clairement",
+  "accroche": "Le prix est affiché. Pas de mauvaise surprise.",
+  "images": "Page tarif avec une seule ligne, doigt qui la montre",
+  "fait": false
+ },
+ {
+  "n": 71,
+  "theme": "Clients et suivi",
+  "avantage": "Une fiche par client",
+  "accroche": "Chaque client a sa fiche, tout est dedans.",
+  "images": "Fiches qui se classent comme des dossiers suspendus",
+  "fait": false
+ },
+ {
+  "n": 72,
+  "theme": "Clients et suivi",
+  "avantage": "Historique des devis par client",
+  "accroche": "Ce qu'on a proposé à ce client, en un coup d'œil.",
+  "images": "Frise de devis passés qui défile sous le doigt",
+  "fait": false
+ },
+ {
+  "n": 73,
+  "theme": "Clients et suivi",
+  "avantage": "Nouvelle demande: notification",
+  "accroche": "Un client vous contacte, vous le savez tout de suite.",
+  "images": "Notification « Nouvelle demande de devis » sur téléphone, plombier qui lit",
+  "fait": false
+ },
+ {
+  "n": 74,
+  "theme": "Clients et suivi",
+  "avantage": "La demande arrive aussi par mail",
+  "accroche": "Et elle arrive aussi par mail, à votre bureau.",
+  "images": "Mail qui tombe sur l'ordinateur du bureau",
+  "fait": false
+ },
+ {
+  "n": 75,
+  "theme": "Clients et suivi",
+  "avantage": "Contacts retrouvés vite",
+  "accroche": "Le numéro du client? Trois secondes.",
+  "images": "Barre de recherche qui trouve un nom en tapant deux lettres",
+  "fait": false
+ },
+ {
+  "n": 76,
+  "theme": "Clients et suivi",
+  "avantage": "Interventions classées",
+  "accroche": "Toutes vos interventions, rangées par client.",
+  "images": "Calendrier de chantiers qui se range tout seul",
+  "fait": false
+ },
+ {
+  "n": 77,
+  "theme": "Clients et suivi",
+  "avantage": "Notes sur chaque client",
+  "accroche": "Code du portail, chien méchant: tout est noté.",
+  "images": "Note qui s'écrit sur une fiche, grille de portail en arrière-plan",
+  "fait": false
+ },
+ {
+  "n": 78,
+  "theme": "Clients et suivi",
+  "avantage": "Réponse rapide aux nouvelles demandes",
+  "accroche": "Celui qui répond en premier décroche le chantier.",
+  "images": "Chronomètre qui démarre à la notification, s'arrête à la réponse",
+  "fait": false
+ },
+ {
+  "n": 79,
+  "theme": "Clients et suivi",
+  "avantage": "Tarifs retrouvés sans effort",
+  "accroche": "Votre barème, toujours sous la main.",
+  "images": "Carnet papier perdu, puis liste de prestations propre",
+  "fait": false
+ },
+ {
+  "n": 80,
+  "theme": "Clients et suivi",
+  "avantage": "Plus de carnet à recopier",
+  "accroche": "Plus de carnet à recopier le soir.",
+  "images": "Carnet posé dans le tiroir, téléphone à la place",
+  "fait": false
+ },
+ {
+  "n": 81,
+  "theme": "Sécurité et sérénité",
+  "avantage": "Données hébergées en Europe",
+  "accroche": "Vos données restent en Europe, pas de l'autre côté de l'océan.",
+  "images": "Globe qui tourne et se fige sur l'Europe",
+  "fait": false
+ },
+ {
+  "n": 82,
+  "theme": "Sécurité et sérénité",
+  "avantage": "Chacun ne voit que ses données",
+  "accroche": "Vos clients sont à vous, personne d'autre ne les voit.",
+  "images": "Porte de local technique qui se verrouille",
+  "fait": false
+ },
+ {
+  "n": 83,
+  "theme": "Sécurité et sérénité",
+  "avantage": "Code d'accès sur chaque devis",
+  "accroche": "Chaque devis est protégé par un code.",
+  "images": "Cadenas, clavier de code, devis qui s'ouvre",
+  "fait": false
+ },
+ {
+  "n": 84,
+  "theme": "Sécurité et sérénité",
+  "avantage": "Protégé contre les robots",
+  "accroche": "Les robots, on les bloque à l'entrée.",
+  "images": "Portail de chantier qui se ferme devant des silhouettes",
+  "fait": false
+ },
+ {
+  "n": 85,
+  "theme": "Sécurité et sérénité",
+  "avantage": "Connexion sécurisée",
+  "accroche": "Un mot de passe, une vérification, et vous êtes dedans.",
+  "images": "Clavier qui tape, case à cocher, accès accordé",
+  "fait": false
+ },
+ {
+  "n": 86,
+  "theme": "Sécurité et sérénité",
+  "avantage": "Mot de passe oublié, réglé en une minute",
+  "accroche": "Mot de passe oublié? Une minute et c'est réglé.",
+  "images": "Plombier à la porte du local, mail de réinitialisation qui arrive",
+  "fait": false
+ },
+ {
+  "n": 87,
+  "theme": "Sécurité et sérénité",
+  "avantage": "Déconnexion qui nettoie le téléphone",
+  "accroche": "Vous vous déconnectez, vos données partent du téléphone.",
+  "images": "Bouton déconnexion, écran qui se vide",
+  "fait": false
+ },
+ {
+  "n": 88,
+  "theme": "Sécurité et sérénité",
+  "avantage": "Dictée respectueuse de la vie privée",
+  "accroche": "La dictée vocale est facultative, c'est vous qui décidez.",
+  "images": "Bouton micro qu'on active puis qu'on coupe",
+  "fait": false
+ },
+ {
+  "n": 89,
+  "theme": "Sécurité et sérénité",
+  "avantage": "Pages légales claires",
+  "accroche": "Mentions légales, confidentialité: tout est lisible.",
+  "images": "Pages légales qui défilent, mots clés surlignés",
+  "fait": false
+ },
+ {
+  "n": 90,
+  "theme": "Sécurité et sérénité",
+  "avantage": "Devis signés conservés en lieu sûr",
+  "accroche": "Vos devis signés sont gardés au chaud.",
+  "images": "Coffre-fort numérique, documents qui s'y rangent",
+  "fait": false
+ },
+ {
+  "n": 91,
+  "theme": "Accompagnement et passage à l'action",
+  "avantage": "Un vrai numéro à appeler",
+  "accroche": "Un souci? Appelez-nous, au 07 49 49 17 77.",
+  "images": "Téléphone qui sonne, numéro affiché en grand",
+  "fait": false
+ },
+ {
+  "n": 92,
+  "theme": "Accompagnement et passage à l'action",
+  "avantage": "Support dans le portail",
+  "accroche": "Une question? Elle part en un clic depuis le portail.",
+  "images": "Bouton d'aide, message envoyé, réponse reçue",
+  "fait": false
+ },
+ {
+  "n": 93,
+  "theme": "Accompagnement et passage à l'action",
+  "avantage": "Pensé pour les plombiers",
+  "accroche": "Un outil fait pour les plombiers, pas pour tout le monde.",
+  "images": "Clé à molette qui devient le curseur d'un écran",
+  "fait": false
+ },
+ {
+  "n": 94,
+  "theme": "Accompagnement et passage à l'action",
+  "avantage": "On vous recontacte très vite",
+  "accroche": "Laissez vos coordonnées, on vous contacte très vite.",
+  "images": "Formulaire de contact rempli, téléphone qui sonne ensuite",
+  "fait": false
+ },
+ {
+  "n": 95,
+  "theme": "Accompagnement et passage à l'action",
+  "avantage": "Démo en 90 secondes",
+  "accroche": "Quatre-vingt-dix secondes pour tout comprendre.",
+  "images": "Chrono qui avance sur fond de mini-démo du portail",
+  "fait": false
+ },
+ {
+  "n": 96,
+  "theme": "Accompagnement et passage à l'action",
+  "avantage": "L'outil évolue",
+  "accroche": "L'outil s'améliore, sans que vous ayez rien à faire.",
+  "images": "Écran qui gagne une nouvelle fonction, plombier qui ne s'en aperçoit qu'après",
+  "fait": false
+ },
+ {
+  "n": 97,
+  "theme": "Accompagnement et passage à l'action",
+  "avantage": "Vos retours comptent",
+  "accroche": "Dites-nous ce qui manque, on l'écoute.",
+  "images": "Plombier qui dicte une remarque, message envoyé à l'équipe",
+  "fait": false
+ },
+ {
+  "n": 98,
+  "theme": "Accompagnement et passage à l'action",
+  "avantage": "Pas de jargon informatique",
+  "accroche": "On parle chantier, pas informatique.",
+  "images": "Tableau noir avec un schéma de plomberie, pas de termes techniques",
+  "fait": false
+ },
+ {
+  "n": 99,
+  "theme": "Accompagnement et passage à l'action",
+  "avantage": "Se lancer sans prise de tête",
+  "accroche": "Se lancer, c'est simple: un formulaire et on s'occupe du reste.",
+  "images": "Formulaire de contact court, pouce qui valide",
+  "fait": false
+ },
+ {
+  "n": 100,
+  "theme": "Accompagnement et passage à l'action",
+  "avantage": "Le partenaire des plombiers",
+  "accroche": "Prouessia, le partenaire des plombiers.",
+  "images": "Montage rapide des 99 reels précédents en accéléré, logo final",
+  "fait": false
+ }
+]

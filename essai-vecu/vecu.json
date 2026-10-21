@@ -98,6 +98,13 @@
    "debut": 4.0,
    "cx": 0.5,
    "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "109878",
+   "debut": 2.0,
+   "cx": 0.5,
+   "sens": -1
   }
  ]
 }
