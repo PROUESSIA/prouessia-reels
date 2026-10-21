@@ -123,3 +123,9 @@ N'importe quelle étape échoue deux fois : on s'arrête, on rallume 8031972 si 
 
 ## E-mails au plombier (format validé le 20/10)
 HTML généré par `prospects_lot` → `email_html()` (SQL `prospection/04-emails-design.sql`, issu de `email/generer_sql.py` et des maquettes `email/maquettes.py`) : expéditeur et réponses `contact@prouessia.fr`, aperçu animé de la vidéo de 45 s (`email/apercu-presentation.gif`) qui ouvre `https://www.prouessia.fr/#video`, boutons « Regarder la vidéo » et « Découvrir Prouessia », signature (logo, « L'équipe Prouessia », « Votre métier, en plus simple », site, e-mail, 07 49 49 17 77, Instagram/TikTok @prouessia.fr/YouTube), mentions SIRET, code invisible unique pour que Gmail ne replie pas la signature. Pour tester un e-mail : mode `test_mail` (`hook` = objet, `text` = HTML) : il part uniquement vers les deux boîtes de la fondatrice.
+
+
+## Page Facebook (depuis le 22/10/2026)
+- Module `facebook-pages:uploadAReel` v6 (connexion Make 12206314, Page Prouessia 1328493890355892) en fin des deux branches de publication, erreur ignorée.
+- Facebook ne permet pas la programmation par ce module : les deux Reels du jour partent sur la Page au passage de 9 h 05.
+- Ne pas utiliser facebook-pages v5 (droits obsolètes, aucune Page visible).

@@ -67,7 +67,9 @@ publication = [
  {"id": 8, "mapper": {"data": "{{7.data}}", "title": "{{substring(1.hook; 0; 90)}} #Shorts", "fileName": "{{7.fileName}}", "categoryId": "26", "description": "{{1.caption}}", "privacyStatus": "public", "containsSyntheticMedia": False, "selfDeclaredMadeForKids": False}, "module": "youtube:uploadVideo", "version": 4, "parameters": {"__IMTCONN__": YT}},
  {"id": 9, "mapper": {"id": "{{1.id}}", "table": "social_posts", "status": "publie", "platform_ids": "{\"instagram\":\"{{5.post.`_id`}}\",\"tiktok\":\"{{6.post.`_id`}}\",\"youtube\":\"{{8.id}}\"}"}, "module": "supabase:upsertARecord", "version": 1, "parameters": {"__IMTCONN__": SB}},
  {"id": 10, "mapper": {"media": "{{1.video_path}}", "content": "{{1.hook}}", "accountid": "6ad4e37eebbb709cd6908c42", "scheduledFor": "{{formatDate(addMinutes(now; 2); \"YYYY-MM-DDTHH:mm:ss.SSS[Z]\"; \"UTC\")}}"}, "module": "make-nodes-late:addInstagramStory", "onerror": [{"id": 13, "module": "builtin:Ignore", "version": 1}], "version": 1, "parameters": {"__IMTCONN__": ZE}},
- {"id": 11, "filter": {"name": "Commentaire présent", "conditions": [[{"a": "{{1.pinned_comment}}", "o": "exist"}]]}, "mapper": {"qs": [{"key": "part", "value": "snippet"}], "url": "/v3/commentThreads", "body": {"snippet": {"videoId": "{{8.id}}", "topLevelComment": {"snippet": {"textOriginal": "{{1.pinned_comment}}"}}}}, "method": "POST", "headers": [{"key": "Content-Type", "value": "application/json"}]}, "module": "youtube:universal", "onerror": [{"id": 12, "module": "builtin:Ignore", "version": 1}], "version": 4, "parameters": {"__IMTCONN__": YT}}]
+ {"id": 11, "filter": {"name": "Commentaire présent", "conditions": [[{"a": "{{1.pinned_comment}}", "o": "exist"}]]}, "mapper": {"qs": [{"key": "part", "value": "snippet"}], "url": "/v3/commentThreads", "body": {"snippet": {"videoId": "{{8.id}}", "topLevelComment": {"snippet": {"textOriginal": "{{1.pinned_comment}}"}}}}, "method": "POST", "headers": [{"key": "Content-Type", "value": "application/json"}]}, "module": "youtube:universal", "onerror": [{"id": 12, "module": "builtin:Ignore", "version": 1}], "version": 4, "parameters": {"__IMTCONN__": YT}},
+ # Page Facebook Prouessia (pas de programmation possible : publié au passage de 9 h 05) — en dernier, erreur ignorée
+ {"id": 14, "mapper": {"page_id": "1328493890355892", "uploadMethod": "url", "url": "{{1.video_path}}", "title": "{{substring(1.hook; 0; 90)}}", "description": "{{1.caption}}"}, "module": "facebook-pages:uploadAReel", "onerror": [{"id": 15, "module": "builtin:Ignore", "version": 1}], "version": 6, "parameters": {"__IMTCONN__": 12206314}}]
 ajouter = [
  {"id": 3, "mapper": {"url": "https://raw.githubusercontent.com/PROUESSIA/prouessia-reels/main/{{var.input.video_file}}", "shareCookies": False, "stopOnHttpError": True}, "module": "http:DownloadFile", "version": 4, "parameters": {"authenticationType": "noAuth"}},
  {"id": 4, "mapper": {"upsert": True, "bucketID": "reels", "file_data": "{{3.data}}", "file_name": "{{var.input.video_file}}"}, "module": "supabase:uploadAFile", "version": 1, "parameters": {"__IMTCONN__": SB}},
@@ -196,7 +198,7 @@ assert pub[0]['id'] == 101
 maintenant = pub[1:]
 plus_tard = copy.deepcopy(maintenant)
 txt = json.dumps(plus_tard)
-for i in (104, 105, 106, 107, 108, 109, 110, 111, 112, 113):
+for i in (104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115):
     txt = txt.replace('"id": %d' % i, '"id": %d' % (i + 20)).replace('{{%d.' % i, '{{%d.' % (i + 20))
 txt = txt.replace('formatDate(addMinutes(now; 2); \\"YYYY', 'formatDate(101.scheduled_at; \\"YYYY')
 plus_tard = json.loads(txt)
