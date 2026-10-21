@@ -1,0 +1,24 @@
+{
+ "num": "13",
+ "titre": "POV : le devis<br>resté sans réponse",
+ "date": "21.10.2026",
+ "affirmations": [
+  {
+   "dit": "POV : votre devis est parti il y a 10 jours. Silence radio. Vous n'osez pas relancer, et le client signe ailleurs.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Prouessia liste vos devis sans réponse et les relance tout seul, par e-mail.",
+   "ref": "fonction du logiciel Prouessia (liste des devis sans réponse, relance automatique par e-mail).",
+   "liens": [["prouessia.fr", "https://prouessia.fr"]],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Le nombre de devis qui restent sans réponse : nous n'avons pas de chiffre officiel.",
+  "Les règles légales du devis : voir nos Reels 09, 10, 11 et 12 et notre fiche à imprimer DEVIS."
+ ],
+ "avert": "Cette fiche décrit une mise en situation et une fonction de Prouessia. Elle ne remplace pas un conseil personnalisé."
+}
