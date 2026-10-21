@@ -1,32 +1,34 @@
 """Exemple « formule vécu » (inspirée des vidéos de référence, sans copier) :
 titre fixe en haut + phrase centrale qui change toutes les ~1,5 s + plan différent à chaque phrase + fin en question.
 python3 essai/exemple_vecu.py → essai/exemple-vecu.mp4"""
-import os, sys, subprocess, base64, math, wave, struct, random
+import os, sys, subprocess, base64, re
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, 'moteur')); sys.path.insert(0, HERE)
 from commun import FONTS, INK, MUST
 from playwright.sync_api import sync_playwright
 CLIPS = os.path.join(ROOT, 'videos', 'clips'); W, H = 1080, 1920
 TITRE = 'Le client qui dit <b>«&nbsp;je vais réfléchir&nbsp;»</b>'
-# (phrase, clip, départ dans le clip, centre horizontal 0-1, sens du panoramique)
+# (phrase affichée = phrase dite, clip, départ dans le clip, centre horizontal 0-1, sens du panoramique) — un clip différent par phrase (règle 12)
 P = [
- ('Tu te <b>déplaces</b>', '4728', 0.5, .5, 1),
- ('Tu trouves <b>la fuite</b>', '257090', 2.0, .25, -1),
- ('Tu fais le devis <b>sur place</b>', '100344', 0.5, .6, 1),
- ('Il te dit&nbsp;: <b>«&nbsp;je vais réfléchir&nbsp;»</b>', '51541', 1.0, .45, -1),
- ('<b>Une semaine.</b><br>Rien.', '136086', 1.0, .3, 1),
- ('Tu n\'oses pas <b>relancer</b>', '257090', 9.0, .7, 1),
- ('Tu ne veux pas passer <b>pour un vendeur</b>', '4728', 6.0, .35, -1),
- ('<b>Trois semaines</b> plus tard…', '51541', 8.0, .6, 1),
- ('Il a signé <b>avec un autre</b>', '136086', 6.0, .7, -1),
- ('Celui qui <b>a rappelé</b>', '100344', 5.0, .4, -1),
- ('Astuce&nbsp;: écris <b>«&nbsp;offre valable 1&nbsp;mois&nbsp;»</b> sur le devis', '257090', 14.0, .2, 1),
- ('Ça te donne <b>une raison</b> de rappeler', '4728', 10.5, .6, 1),
- ('Et toi, <b>tu relances</b> ou tu attends&nbsp;?', '51541', 13.0, .4, -1),
+ ('', '7376', 3.0, .35, 1),
+ ('Vous vous <b>déplacez</b>', '85349', 1.0, .2, 1),
+ ('Vous trouvez <b>la fuite</b>', '9517', 3.0, .6, -1),
+ ('Vous faites le devis <b>sur place</b>', '155023', 4.0, .6, 1),
+ ('Et il vous dit&nbsp;: <b>«&nbsp;je vais réfléchir&nbsp;»</b>', '109877', 1.0, .4, -1),
+ ('<b>Une semaine.</b><br>Rien.', '115', 2.0, .5, 1),
+ ('Vous n\'osez pas <b>relancer</b>', '2348', 5.0, .55, -1),
+ ('Vous ne voulez pas passer <b>pour un vendeur</b>', '4729', 2.0, .45, 1),
+ ('<b>Trois semaines</b> plus tard…', '147075', 4.0, .3, -1),
+ ('Il a signé <b>avec un autre</b>', '4974', 2.0, .5, 1),
+ ('Celui qui <b>a rappelé</b>', '85350', 1.0, .6, -1),
+ ('Écrivez <b>«&nbsp;offre valable un&nbsp;mois&nbsp;»</b> sur le devis', '87050', 2.0, .5, 1),
+ ('Ça vous donne <b>une raison</b> de rappeler', '136297', 3.0, .5, -1),
+ ('Et vous, <b>vous relancez</b> ou vous attendez&nbsp;?', '257093', 4.0, .5, 1),
 ]
-def duree(t):
-    import re; n = len(re.sub('<[^>]+>|&nbsp;', ' ', t)); return round(min(2.6, 1.0 + 0.045 * n), 2)
-D = [duree(p[0]) for p in P]; D[-1] += 1.2; TOTAL = sum(D)
+assert len({p[1] for p in P}) == len(P), 'un clip différent par phrase'
+def mots(t): return len(re.sub('<[^>]+>|&nbsp;|[«»:?….,]', ' ', t).split())
+# rythme des vidéos de référence : ~4,6 mots/s + micro-pause
+D = [round(max(1.3, mots(p[0] or TITRE) / 4.6 + 0.25), 2) for p in P]; D[-1] += 1.0; TOTAL = sum(D)
 ICONE = base64.b64encode(open(os.path.join(ROOT, 'email', 'icone-prouessia.png'), 'rb').read()).decode()
 CSS = f"""{FONTS}*{{margin:0;padding:0;box-sizing:border-box}}
 body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-serif}}
@@ -48,24 +50,6 @@ def calques():
                            f'<div class="logo"><img src="data:image/png;base64,{ICONE}">prouessia</div></body></html>')
             pg.wait_for_timeout(120); pg.screenshot(path=f'{d}/{i}.png', omit_background=True)
         b.close()
-def musique(path):
-    """Petit beat 96 BPM synthétisé (kick, charleston, basse) — libre de droits, sans voix."""
-    sr = 44100; n = int(sr * (TOTAL + .2)); s = [0.0] * n; beat = 60 / 96
-    notes = [55, 55, 41.2, 49]  # La, La, Mi, Sol (Hz basse)
-    for k in range(int(TOTAL / beat) + 1):
-        t0 = int(k * beat * sr)
-        for j in range(int(.25 * sr)):  # kick
-            if t0 + j < n and k % 2 == 0: s[t0 + j] += .9 * math.sin(2 * math.pi * (50 + 90 * math.exp(-j / 900)) * j / sr) * math.exp(-j / 5000)
-        th = t0 + int(beat / 2 * sr)
-        for j in range(int(.05 * sr)):  # charleston
-            if th + j < n: s[th + j] += .18 * (random.random() * 2 - 1) * math.exp(-j / 500)
-        f = notes[(k // 4) % 4]
-        for j in range(int(beat * .9 * sr)):  # basse
-            if t0 + j < n: s[t0 + j] += .28 * math.sin(2 * math.pi * f * j / sr) * math.exp(-j / 9000)
-    m = max(abs(x) for x in s)
-    with wave.open(path, 'w') as w:
-        w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr)
-        w.writeframes(b''.join(struct.pack('<h', int(x / m * 26000)) for x in s))
 def video():
     inp, fil = [], []; n = len(P)
     for i, (t, clip, off, cx, sens) in enumerate(P):
@@ -78,8 +62,9 @@ def video():
         fil.append(f"[{n+i}:v]fps=30,format=rgba,trim=duration={D[i]:.2f},setpts=PTS-STARTPTS[c{i}]")
         fil.append(f"[v{i}][c{i}]overlay=0:0:shortest=1[o{i}]")
     fil.append(''.join(f'[o{i}]' for i in range(n)) + f'concat=n={n}:v=1:a=0,format=yuv420p[v]')
-    mus = f'{HERE}/musique-vecu.wav'; musique(mus); inp += ['-i', mus]
-    fil.append(f"[{2*n}:a]atrim=0:{TOTAL:.2f},afade=t=out:st={TOTAL-1:.2f}:d=1,loudnorm=I=-16:TP=-1.5[a]")
+    VOIX = f'{HERE}/voix-vecu.mp3'
+    inp += ['-i', VOIX] if os.path.exists(VOIX) else ['-f', 'lavfi', '-t', f'{TOTAL:.2f}', '-i', 'anullsrc=r=44100:cl=mono']
+    fil.append(f"[{2*n}:a]apad,atrim=0:{TOTAL:.2f}[a]")
     out = f'{HERE}/exemple-vecu.mp4'
     subprocess.run(['ffmpeg', '-v', 'error', '-y', *inp, '-filter_complex', ';'.join(fil), '-map', '[v]', '-map', '[a]',
                     '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out], check=True)
