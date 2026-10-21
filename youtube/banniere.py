@@ -21,8 +21,8 @@ h1 b{{background:{MUST};color:{INK};padding:0 18px;border-radius:16px}}
 <div class="trait" style="top:410px"></div><div class="trait" style="top:1020px"></div>
 <div class="zone"><img src="data:image/png;base64,{ico}"><div>
 <div class="nom">prouessia</div>
-<h1>La règle de plomberie <b>du jour</b></h1>
-<div class="sous">Devis, factures, normes — en 30 secondes · <span>prouessia.fr</span></div>
+<h1>Le partenaire <b>des plombiers</b></h1>
+<div class="sous">Devis, factures, règles du métier · <span>prouessia.fr</span></div>
 </div></div></body></html>"""
 with sync_playwright() as p:
     b = p.chromium.launch(); pg = b.new_page(viewport={'width':2560,'height':1440})
