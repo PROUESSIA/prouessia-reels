@@ -28,7 +28,11 @@ P = [
 assert len({p[1] for p in P}) == len(P), 'un clip différent par phrase'
 def mots(t): return len(re.sub('<[^>]+>|&nbsp;|[«»:?….,]', ' ', t).split())
 # rythme des vidéos de référence : ~4,6 mots/s + micro-pause
-D = [round(max(1.3, mots(p[0] or TITRE) / 4.6 + 0.25), 2) for p in P]; D[-1] += 1.0; TOTAL = sum(D)
+import json
+_dj = os.path.join(HERE, 'durees-vecu.json')
+if os.path.exists(_dj): D = json.load(open(_dj))  # durées calées sur la voix (essai/aligner.py)
+else: D = [round(max(1.3, mots(p[0] or TITRE) / 4.6 + 0.25), 2) for p in P]; D[-1] += 1.0
+TOTAL = sum(D)
 ICONE = base64.b64encode(open(os.path.join(ROOT, 'email', 'icone-prouessia.png'), 'rb').read()).decode()
 CSS = f"""{FONTS}*{{margin:0;padding:0;box-sizing:border-box}}
 body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-serif}}
@@ -62,9 +66,9 @@ def video():
         fil.append(f"[{n+i}:v]fps=30,format=rgba,trim=duration={D[i]:.2f},setpts=PTS-STARTPTS[c{i}]")
         fil.append(f"[v{i}][c{i}]overlay=0:0:shortest=1[o{i}]")
     fil.append(''.join(f'[o{i}]' for i in range(n)) + f'concat=n={n}:v=1:a=0,format=yuv420p[v]')
-    VOIX = f'{HERE}/voix-vecu.mp3'
+    VOIX = f'{HERE}/voix-vecu.wav'
     inp += ['-i', VOIX] if os.path.exists(VOIX) else ['-f', 'lavfi', '-t', f'{TOTAL:.2f}', '-i', 'anullsrc=r=44100:cl=mono']
-    fil.append(f"[{2*n}:a]apad,atrim=0:{TOTAL:.2f}[a]")
+    fil.append(f"[{2*n}:a]apad,atrim=0:{TOTAL:.2f},loudnorm=I=-14:TP=-1.5[a]")
     out = f'{HERE}/exemple-vecu.mp4'
     subprocess.run(['ffmpeg', '-v', 'error', '-y', *inp, '-filter_complex', ';'.join(fil), '-map', '[v]', '-map', '[a]',
                     '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out], check=True)
