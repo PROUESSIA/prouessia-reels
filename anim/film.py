@@ -132,6 +132,9 @@ def carte(nom, fond, du, out):
     ico = base64.b64encode(open(os.path.join(ROOT, 'email', 'icone-prouessia.png'), 'rb').read()).decode()
     if nom == 'sponsor':
         corps = f"""<div class="s" style="margin:0">présenté par</div><div class="m"><img src="data:image/png;base64,{ico}">Prouessia</div>"""
+    elif nom == 'precedemment':   # rappel muet de 2 s en ouverture (pour ceux qui arrivent en cours de série)
+        corps = f"""<div class="s" style="margin:0;color:{MUST};font-weight:900;letter-spacing:.12em">PRÉCÉDEMMENT</div>
+<div class="e" style="margin-top:40px;padding:0 90px">{EP.get('precedemment', '')}</div>"""
     elif nom == 'tel_eteint':   # gros plan : le téléphone de Julien, écran noir
         corps = """<div style="width:430px;height:880px;border-radius:64px;background:#0b0b0d;border:14px solid #2a2b30;box-shadow:0 30px 80px rgba(0,0,0,.8),inset 0 0 0 2px #444;
 position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(125deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,0) 38%)"></div>
@@ -158,7 +161,10 @@ def montage(items, total):
         du = it['fin'] - it['debut']; out = os.path.join(d, f'{i:02d}.mp4')
         if it.get('carte'):
             n = int(it['debut'] * FPS) - 1
-            while not os.path.exists(f'{fr}/{n:05d}.jpg'): n -= 1
+            while n >= 0 and not os.path.exists(f'{fr}/{n:05d}.jpg'): n -= 1
+            if n < 0:                                   # carte au tout début (rappel) : fond = première image rendue
+                n = int(it['fin'] * FPS)
+                while not os.path.exists(f'{fr}/{n:05d}.jpg'): n += 1
             carte(it['carte'], f'{fr}/{n:05d}.jpg', du, out)
         else:
             src = json.load(open(os.path.join(EPD, 'items-rendu.json'))) if '--reutiliser' in sys.argv else None

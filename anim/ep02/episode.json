@@ -58,6 +58,13 @@
  },
  "deroule": [
   {
+   "carte": "precedemment",
+   "duree": 2.2,
+   "pause": 0,
+   "son": "sonnerie",
+   "volume": 0.5
+  },
+  {
    "qui": "julien",
    "n": 0,
    "pause": 0.1,
@@ -202,9 +209,43 @@
    "pause": 0
   },
   {
+   "plan": "cle",
+   "decor": "maison_rocher",
+   "duree": 4.4,
+   "incrust": "23 h 26",
+   "cam": [
+    [
+     -1.0,
+     0.85,
+     3.5
+    ],
+    [
+     -2.3,
+     1.0,
+     3.0
+    ]
+   ],
+   "cible": [
+    [
+     -0.8,
+     0.15,
+     2.35
+    ],
+    [
+     -1.59,
+     0.95,
+     2.26
+    ]
+   ],
+   "soustitre": "La clé cachée sous le pot…<br><b>est dans la serrure.</b>",
+   "ev": [
+    "dehors"
+   ]
+  },
+  {
    "plan": "entree",
    "decor": "maison_rocher",
-   "duree": 3.0,
+   "duree": 2.2,
    "cam": [
     [
      -1.25,
@@ -229,7 +270,9 @@
      -1.0
     ]
    ],
-   "incrust": "23 h 26"
+   "ev": [
+    "dehors"
+   ]
   },
   {
    "qui": "julien",
@@ -293,83 +336,6 @@
    "soustitre": "« aujourd'hui · 23 h 10 »"
   },
   {
-   "plan": "tel_eau",
-   "decor": "maison_rocher",
-   "duree": 3.6,
-   "cam": [
-    [
-     -0.12,
-     0.48,
-     -0.5
-    ],
-    [
-     -0.24,
-     0.36,
-     -0.64
-    ]
-   ],
-   "cible": [
-    [
-     -0.35,
-     0.06,
-     -0.85
-    ],
-    [
-     -0.35,
-     0.06,
-     -0.85
-    ]
-   ],
-   "ev": [
-    "tel_eau"
-   ],
-   "son": "sonnerie",
-   "volume": 0.6
-  },
-  {
-   "qui": "julien",
-   "n": 3,
-   "pause": 0.1,
-   "decor": "maison_rocher",
-   "cam": [
-    [
-     0.32,
-     1.55,
-     -1.28
-    ],
-    [
-     0.26,
-     1.56,
-     -1.15
-    ]
-   ],
-   "cible": [
-    [
-     0.05,
-     1.6,
-     -0.35
-    ],
-    [
-     0.05,
-     1.6,
-     -0.35
-    ]
-   ],
-   "ev": [
-    "tel_eau"
-   ],
-   "son": "sonnerie",
-   "volume": 0.35,
-   "gras": 2
-  },
-  {
-   "qui": "julien",
-   "n": 4,
-   "pause": 1.6,
-   "carte": "tel_eteint",
-   "gras": 1
-  },
-  {
    "plan": "lampe",
    "decor": "maison_rocher",
    "duree": 2.2,
@@ -398,8 +364,7 @@
     ]
    ],
    "ev": [
-    "lampe",
-    "tel_eau_fixe"
+    "lampe"
    ]
   },
   {
@@ -442,5 +407,6 @@
    "son": "generique",
    "volume": 0.6
   }
- ]
+ ],
+ "precedemment": "Vasseur Dépannage arnaque les personnes âgées.<br><b>Julien</b> veut prévenir ses autres clientes."
 }

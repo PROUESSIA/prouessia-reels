@@ -19,3 +19,6 @@ anim/ep*/calques.mov
 anim/ep*/*.wav
 anim/ep*/film.log
 anim/ep*/carte-*.png
+anim/*/frames*/
+anim/*/*-v1.*
+anim/*/rendu.log

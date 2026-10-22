@@ -242,6 +242,18 @@ function decorMaisonRocher(x0) {
   // porte d'entrée entrouverte (côté gauche, au premier plan)
   box(.1, 2.2, .1, '#2a2a2a', -1.95, 1.1, 1.55, g); box(.1, 2.2, .1, '#2a2a2a', -1.0, 1.1, 1.55, g); box(1.05, .1, .1, '#2a2a2a', -1.47, 2.2, 1.55, g);
   const porte = box(.9, 2.1, .05, '#6a4b33', -1.5, 1.05, 1.55, g); porte.geometry.translate(.45, 0, 0); porte.position.x = -1.95; porte.rotation.y = -1.1;
+  // la clé cachée sous le pot de fleurs : le pot est renversé, la clé est restée dans la serrure (ép. 2)
+  const OR = M('#e8c25a', {metalness: .5, roughness: .3, emissive: '#5a4310'});
+  for (const s of [1, -1]) { box(.06, .04, .07, OR, .8, -.08, s * .06, porte); box(.2, .04, .016, OR, .86, -.08, s * .1, porte); box(.05, .07, .016, OR, .97, -.08, s * .1, porte); }
+  box(.04, .14, .03, '#888', .8, -.12, 0, porte);                                                    // poignée
+  const anneau = new THREE.Mesh(new THREE.TorusGeometry(.06, .012, 6, 14), OR); anneau.position.set(.8, -.2, .1); porte.add(anneau);
+  const anneau2 = anneau.clone(); anneau2.position.z = -.1; porte.add(anneau2);
+  const pot = new THREE.Group(); pot.position.set(-.75, .12, 2.35); pot.rotation.z = 1.45; pot.rotation.y = .4; g.add(pot);
+  cyl(.17, .12, .3, '#c0602f', 0, 0, 0, pot, 12); cyl(.16, .16, .02, '#3a2616', 0, .15, 0, pot, 12);
+  for (let i = 0; i < 4; i++) box(.05, .22, .05, '#3f7a34', (i - 1.5) * .04, .26, (i % 2) * .03, pot).rotation.z = (i - 1.5) * .25;
+  for (let i = 0; i < 7; i++) box(.08 + rnd() * .06, .025, .06 + rnd() * .05, '#3a2616', -.55 + rnd() * .35, .012, 2.25 + rnd() * .3, g);
+  const perron = new THREE.PointLight('#ffcf8a', 3.2, 3.2, 1.6); perron.position.set(-1.2, 2.25, 2.9); g.add(perron); const perron2 = new THREE.PointLight('#ffcf8a', 1.6, 1.6, 1.4); perron2.position.set(-.6, .9, 2.8); g.add(perron2);   // lampe du perron
+  box(.16, .2, .12, '#2b2b2b', -1.2, 2.4, 2.9, g); const ampoule = new THREE.Mesh(new THREE.SphereGeometry(.05, 8, 6), new THREE.MeshBasicMaterial({color: '#ffe2a8'})); ampoule.position.set(-1.2, 2.28, 2.9); g.add(ampoule);
   // table et facture
   box(1.0, .06, .8, '#7a5d40', .7, .75, -1.2, g); for (const [a, b] of [[.3, -1.55], [1.1, -1.55], [.3, -.85], [1.1, -.85]]) box(.05, .72, .05, '#5e4630', a, .36, b, g);
   const fac = new THREE.Mesh(new THREE.PlaneGeometry(.21, .297), new THREE.MeshStandardMaterial({map: texte([{t: 'VASSEUR DÉPANNAGE', y: 70, s: 24, g: 1, c: '#a01818'}, {t: 'FACTURE', y: 130, s: 30, g: 1, c: '#111'}, {t: "Aujourd'hui · 23 h 10", y: 190, s: 22, c: '#111'}, {t: "Robinet d'arrêt", y: 260, s: 22, c: '#333', a: 'left'}, {t: '890,00 €', y: 300, s: 26, g: 1, c: '#111', a: 'left'}, {t: 'PAYÉ', y: 420, s: 60, g: 1, c: '#c22'}], {fond: '#f3efe6', w: 256, h: 362}), roughness: .9}));
@@ -265,6 +277,7 @@ function decorMaisonRocher(x0) {
     const p = geo.attributes.position.array; for (let i = 0; i < p.length; i += 3) p[i + 1] = base[i + 1] + Math.sin(base[i] * 3 + t * 2) * .007 + Math.cos(base[i + 2] * 4 + t * 1.6) * .007;
     geo.attributes.position.needsUpdate = true;
     const vib = ev.has('tel_eau'); ecran.visible = vib || ev.has('tel_eau_fixe'); halo.intensity = vib ? 1.4 + Math.sin(t * 30) * .6 : 0; tel.position.x = -.35 + (vib ? Math.sin(t * 90) * .004 : 0);
+    julien.root.visible = !ev.has('dehors');
     if (ev.has('tel_julien')) { if (julien.pose !== 'telephone_main') pose(julien, 'telephone_main'); telJ.visible = true; julien.tete.rotation.x = .45; } 
     if (ev.has('lampe')) { vasseur.root.visible = true; torche.intensity = 16; flare.visible = true; torche.target.position.set(.05, 1.4, -.35); torche.target.updateMatrixWorld(); if (ev.has('retourne')) julien.root.rotation.y = -0.35; }
     else { torche.intensity = 0; vasseur.root.visible = false; flare.visible = false; }
