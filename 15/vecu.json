@@ -1,0 +1,103 @@
+{
+ "titre": "Fini les devis à <b>22&nbsp;h</b> sur la table de la cuisine",
+ "phrases": [
+  {
+   "html": "",
+   "clip": "7376",
+   "debut": 5.0,
+   "cx": 0.45,
+   "sens": 1
+  },
+  {
+   "html": "Toute la journée <b>sur les chantiers</b>",
+   "clip": "85349",
+   "debut": 1.0,
+   "cx": 0.45,
+   "sens": -1
+  },
+  {
+   "html": "Le dernier dépannage <b>finit tard</b>",
+   "clip": "257091",
+   "debut": 5.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Vous rentrez, <b>enfin</b>",
+   "clip": "37379",
+   "debut": 10.0,
+   "cx": 0.55,
+   "sens": -1
+  },
+  {
+   "html": "Mais il reste <b>les devis</b>",
+   "clip": "155023",
+   "debut": 4.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Vous ouvrez <b>l'ordinateur</b>",
+   "clip": "197",
+   "debut": 8.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Sur <b>la table de la cuisine</b>",
+   "clip": "10822",
+   "debut": 2.0,
+   "cx": 0.4,
+   "sens": 1
+  },
+  {
+   "html": "Le repas <b>refroidit</b>",
+   "clip": "109880",
+   "debut": 3.0,
+   "cx": 0.4,
+   "sens": -1
+  },
+  {
+   "html": "<b>22&nbsp;h.</b> Toujours pas fini.",
+   "clip": "215751",
+   "debut": 4.0,
+   "cx": 0.35,
+   "sens": 1
+  },
+  {
+   "html": "Avec Prouessia, <b>fini les devis du soir</b>",
+   "clip": "16360",
+   "debut": 2.0,
+   "cx": 0.55,
+   "sens": -1
+  },
+  {
+   "html": "Le soir, l'ordinateur <b>reste fermé</b>",
+   "clip": "1110",
+   "debut": 1.0,
+   "cx": 0.55,
+   "sens": 1
+  },
+  {
+   "html": "Vous rentrez <b>à l'heure</b>",
+   "clip": "85350",
+   "debut": 1.0,
+   "cx": 0.6,
+   "sens": -1
+  },
+  {
+   "html": "Et vous, votre dernier devis, <b>fini à quelle heure</b>&nbsp;?",
+   "clip": "4973",
+   "debut": 3.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "2805",
+   "debut": 4.0,
+   "cx": 0.4,
+   "sens": -1
+  }
+ ]
+}

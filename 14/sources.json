@@ -1,0 +1,111 @@
+{
+ "num": "14",
+ "titre": "Un devis en deux minutes,<br>pas en deux heures",
+ "date": "22.10.2026",
+ "affirmations": [
+  {
+   "dit": "Le client vous appelle à 8 h. Vous passez voir la fuite. Il veut un prix tout de suite… Le lendemain, il a appelé un autre.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, un devis en deux minutes. Depuis la camionnette, avant de repartir. Pas deux heures le soir.",
+   "ref": "avantage n° 1 « Un devis en 2 minutes » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel).",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Le temps réel d'un devis dépend du chantier et de vos prestations."
+ ],
+ "avert": "Cette fiche décrit une mise en situation et une fonction de Prouessia. Elle ne remplace pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "12041",
+   "sujet": "gants",
+   "url": "https://pixabay.com/videos/id-12041/",
+   "auteur": "chayka1270"
+  },
+  {
+   "id": "47743",
+   "sujet": "téléphoner",
+   "url": "https://pixabay.com/videos/id-47743/",
+   "auteur": "crew_jak"
+  },
+  {
+   "id": "257093",
+   "sujet": "eau",
+   "url": "https://pixabay.com/videos/id-257093/",
+   "auteur": "padrinan"
+  },
+  {
+   "id": "2348",
+   "sujet": "égoutter",
+   "url": "https://pixabay.com/videos/id-2348/",
+   "auteur": "Life-Of-Vids"
+  },
+  {
+   "id": "4504",
+   "sujet": "artisanat",
+   "url": "https://pixabay.com/videos/id-4504/",
+   "auteur": "faxtastic"
+  },
+  {
+   "id": "128630",
+   "sujet": "la technologie",
+   "url": "https://pixabay.com/videos/id-128630/",
+   "auteur": "computergottyt"
+  },
+  {
+   "id": "3176",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-3176/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "4974",
+   "sujet": "percer",
+   "url": "https://pixabay.com/videos/id-4974/",
+   "auteur": "klimkin"
+  },
+  {
+   "id": "44859",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-44859/",
+   "auteur": "FlorenceCdeM"
+  },
+  {
+   "id": "3514",
+   "sujet": "circulation",
+   "url": "https://pixabay.com/videos/id-3514/",
+   "auteur": "josemdelaa"
+  },
+  {
+   "id": "3188",
+   "sujet": "clavier d'ordinateur",
+   "url": "https://pixabay.com/videos/id-3188/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "4729",
+   "sujet": "tournevis",
+   "url": "https://pixabay.com/videos/id-4729/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "109878",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-109878/",
+   "auteur": "Martin_Grabo"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

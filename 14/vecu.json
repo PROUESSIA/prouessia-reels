@@ -1,0 +1,96 @@
+{
+ "titre": "Un devis en <b>deux minutes</b>, pas en deux heures",
+ "phrases": [
+  {
+   "html": "",
+   "clip": "12041",
+   "debut": 2.0,
+   "cx": 0.6,
+   "sens": 1
+  },
+  {
+   "html": "Le client vous appelle <b>à 8&nbsp;h</b>",
+   "clip": "47743",
+   "debut": 1.0,
+   "cx": 0.55,
+   "sens": -1
+  },
+  {
+   "html": "Vous passez voir <b>la fuite</b>",
+   "clip": "257093",
+   "debut": 8.0,
+   "cx": 0.45,
+   "sens": 1
+  },
+  {
+   "html": "Il veut <b>un prix</b>. Tout de suite.",
+   "clip": "2348",
+   "debut": 3.0,
+   "cx": 0.6,
+   "sens": -1
+  },
+  {
+   "html": "Vous dites&nbsp;: <b>«&nbsp;je vous l'envoie ce soir&nbsp;»</b>",
+   "clip": "4504",
+   "debut": 3.0,
+   "cx": 0.4,
+   "sens": 1
+  },
+  {
+   "html": "Le soir, <b>vous oubliez</b>",
+   "clip": "128630",
+   "debut": 5.0,
+   "cx": 0.45,
+   "sens": -1
+  },
+  {
+   "html": "Le lendemain, il a <b>appelé un autre</b>",
+   "clip": "3176",
+   "debut": 2.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Le devis, c'est <b>là</b> qu'il vous choisit",
+   "clip": "4974",
+   "debut": 4.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Avec Prouessia, <b>un devis en deux minutes</b>",
+   "clip": "44859",
+   "debut": 2.0,
+   "cx": 0.45,
+   "sens": 1
+  },
+  {
+   "html": "Depuis <b>la camionnette</b>, avant de repartir",
+   "clip": "3514",
+   "debut": 0.5,
+   "cx": 0.35,
+   "sens": -1
+  },
+  {
+   "html": "Pas <b>deux heures</b> le soir",
+   "clip": "3188",
+   "debut": 2.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Et vous, un devis, ça vous prend <b>combien de temps</b>&nbsp;?",
+   "clip": "4729",
+   "debut": 2.0,
+   "cx": 0.3,
+   "sens": -1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "109878",
+   "debut": 2.0,
+   "cx": 0.55,
+   "sens": 1
+  }
+ ]
+}

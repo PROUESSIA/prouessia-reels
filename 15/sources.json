@@ -1,0 +1,117 @@
+{
+ "num": "15",
+ "titre": "Fini les devis à 22 h<br>sur la table de la cuisine",
+ "date": "22.10.2026",
+ "affirmations": [
+  {
+   "dit": "Toute la journée sur les chantiers, vous rentrez tard, il reste les devis : l'ordinateur sur la table de la cuisine, 22 h, toujours pas fini.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, fini les devis du soir. Le soir, l'ordinateur reste fermé. Vous rentrez à l'heure.",
+   "ref": "avantage n° 2 « Fini les devis du soir » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel).",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Le temps réel d'un devis dépend du chantier et de vos prestations."
+ ],
+ "avert": "Cette fiche décrit une mise en situation et une fonction de Prouessia. Elle ne remplace pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "7376",
+   "sujet": "construction",
+   "url": "https://pixabay.com/videos/id-7376/",
+   "auteur": "Luiz-Jorge-Artista"
+  },
+  {
+   "id": "85349",
+   "sujet": "constructeur",
+   "url": "https://pixabay.com/videos/id-85349/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "257091",
+   "sujet": "eau",
+   "url": "https://pixabay.com/videos/id-257091/",
+   "auteur": "padrinan"
+  },
+  {
+   "id": "37379",
+   "sujet": "camions",
+   "url": "https://pixabay.com/videos/id-37379/",
+   "auteur": "antoinedes"
+  },
+  {
+   "id": "155023",
+   "sujet": "écrire",
+   "url": "https://pixabay.com/videos/id-155023/",
+   "auteur": "32472866"
+  },
+  {
+   "id": "197",
+   "sujet": "carnet",
+   "url": "https://pixabay.com/videos/id-197/",
+   "auteur": "Life-Of-Vids"
+  },
+  {
+   "id": "10822",
+   "sujet": "clavier",
+   "url": "https://pixabay.com/videos/id-10822/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "109880",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-109880/",
+   "auteur": "Martin_Grabo"
+  },
+  {
+   "id": "215751",
+   "sujet": "homme",
+   "url": "https://pixabay.com/videos/id-215751/",
+   "auteur": "G3Remote"
+  },
+  {
+   "id": "16360",
+   "sujet": "téléphoner",
+   "url": "https://pixabay.com/videos/id-16360/",
+   "auteur": "StefWithAnF"
+  },
+  {
+   "id": "1110",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-1110/",
+   "auteur": "DistillVideos"
+  },
+  {
+   "id": "85350",
+   "sujet": "constructeur",
+   "url": "https://pixabay.com/videos/id-85350/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "4973",
+   "sujet": "scie sauteuse",
+   "url": "https://pixabay.com/videos/id-4973/",
+   "auteur": "klimkin"
+  },
+  {
+   "id": "2805",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-2805/",
+   "auteur": "Luiz-Jorge-Artista"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

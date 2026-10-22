@@ -1,0 +1,12 @@
+{
+ "duree_s": 20.7,
+ "parole_s": 14.9,
+ "hauteur_moyenne_hz": 115.0,
+ "variation_hauteur_demi_tons": 5.26,
+ "etendue_hauteur_demi_tons": 16.3,
+ "dynamique_db": 23.0,
+ "attaque_db": 4.8,
+ "pauses_n": 19,
+ "pause_moyenne_s": 0.24,
+ "delai_premier_mot_s": 0.03
+}
