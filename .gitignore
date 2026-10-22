@@ -6,3 +6,9 @@ essai/musique-vecu.wav
 essai/musique-vecu.wav
 anim/node_modules/
 anim/frames/
+anim/*.wav
+anim/compose.log
+anim/st/
+anim/parts/
+anim/sous-titres.mov
+anim/fin.png
