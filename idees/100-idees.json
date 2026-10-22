@@ -5,7 +5,10 @@
   "avantage": "Un devis en 2 minutes",
   "accroche": "Un devis en deux minutes, pas en deux heures.",
   "images": "Plombier dans sa camionnette, téléphone en main, le devis se remplit à l'écran",
-  "fait": "2026-10-22 · 14"
+  "fait": "2026-10-22 · 14",
+  "captures": [
+   "app:01-nouveau-devis"
+  ]
  },
  {
   "n": 2,
@@ -13,7 +16,8 @@
   "avantage": "Fini les devis du soir",
   "accroche": "Fini les devis à 22 h sur la table de la cuisine.",
   "images": "Table de cuisine la nuit, ordinateur fermé, puis plombier qui rentre à l'heure",
-  "fait": "2026-10-22 · 15"
+  "fait": "2026-10-22 · 15",
+  "captures": []
  },
  {
   "n": 3,
@@ -21,7 +25,11 @@
   "avantage": "Vos prestations enregistrées une fois",
   "accroche": "Vos tarifs, on les saisit une seule fois.",
   "images": "Liste de prestations qui défile, doigt qui en choisit trois",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:01-nouveau-devis",
+   "app:02-prestations"
+  ]
  },
  {
   "n": 4,
@@ -29,7 +37,10 @@
   "avantage": "Total calculé tout seul",
   "accroche": "Zéro calculette: HT, TVA, total, tout est calculé.",
   "images": "Calculette poussée du plan de travail, montant qui s'affiche",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:01-nouveau-devis"
+  ]
  },
  {
   "n": 5,
@@ -37,7 +48,10 @@
   "avantage": "Même présentation à chaque devis",
   "accroche": "Chaque devis a le même look sérieux, sans y penser.",
   "images": "Trois devis qui se superposent, identiques et propres",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:04-apercu-devis"
+  ]
  },
  {
   "n": 6,
@@ -45,15 +59,23 @@
   "avantage": "Le devis chez le client",
   "accroche": "Le devis se fait chez le client, pas au bureau.",
   "images": "Plombier accroupi sous un évier, téléphone posé sur la boîte à outils",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:01-nouveau-devis"
+  ]
  },
  {
   "n": 7,
   "theme": "Gagner du temps sur les devis",
   "avantage": "Client déjà connu, déjà rempli",
-  "accroche": "Client déjà connu? Ses infos sont déjà là.",
+  "accroche": "Client déjà connu ? Il est déjà dans votre liste.",
   "images": "Fiche client qui se pré- remplit, clé à molette en arrière-plan",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:01-nouveau-devis",
+   "app:03-client-prerempli"
+  ],
+  "note": "Pas de pré-remplissage détaillé de la fiche : seulement le choix du client dans la liste."
  },
  {
   "n": 8,
@@ -61,7 +83,10 @@
   "avantage": "Envoi en un clic",
   "accroche": "Un clic, et le devis part par mail.",
   "images": "Pouce qui appuie, enveloppe qui s'envole sur fond de chantier",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:05-envoyer-devis"
+  ]
  },
  {
   "n": 9,
@@ -69,7 +94,10 @@
   "avantage": "Le client ouvre sans rien installer",
   "accroche": "Votre client ouvre le devis sans rien installer.",
   "images": "Client sur son canapé qui ouvre le lien sur son téléphone",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:06-mail-puis-devis"
+  ]
  },
  {
   "n": 10,
@@ -77,7 +105,10 @@
   "avantage": "Tous les devis au même endroit",
   "accroche": "Tous vos devis au même endroit, retrouvés en 3 secondes.",
   "images": "Pile de papiers froissés dans la camionnette, puis liste nette à l'écran",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:11-liste-devis"
+  ]
  },
  {
   "n": 11,
@@ -85,7 +116,11 @@
   "avantage": "On crée votre site pour vous",
   "accroche": "Votre site de plombier, on le crée. Vous n'y touchez pas.",
   "images": "Plombier qui range ses clés, son site qui se construit sur un écran derrière lui",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi"
+  ]
  },
  {
   "n": 12,
@@ -93,7 +128,12 @@
   "avantage": "Votre logo, vos couleurs",
   "accroche": "Votre logo, vos couleurs, votre site.",
   "images": "Logo sur la camionnette qui glisse vers l'en-tête du site",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi",
+   "app:24-logo-couleurs"
+  ]
  },
  {
   "n": 13,
@@ -101,7 +141,11 @@
   "avantage": "Un site qui fait sérieux",
   "accroche": "Un site qui rassure avant même le premier appel.",
   "images": "Client qui hésite devant son téléphone, puis qui sourit en voyant le site",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi"
+  ]
  },
  {
   "n": 14,
@@ -109,7 +153,11 @@
   "avantage": "Trouvable sur Google",
   "accroche": "Quand on cherche un plombier chez vous, on vous trouve.",
   "images": "Recherche tapée sur téléphone, résultats qui défilent",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi"
+  ]
  },
  {
   "n": 15,
@@ -117,7 +165,11 @@
   "avantage": "Votre zone bien indiquée",
   "accroche": "Vos communes affichées, plus de déplacements pour rien.",
   "images": "Carte de la zone, camionnette qui roule dans les rues",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi"
+  ]
  },
  {
   "n": 16,
@@ -125,7 +177,11 @@
   "avantage": "Vos services classés",
   "accroche": "Dépannage, chauffe-eau, salle de bain: tout est clair.",
   "images": "Gros plans: robinet, chauffe- eau, douche, un par service",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi"
+  ]
  },
  {
   "n": 17,
@@ -133,7 +189,11 @@
   "avantage": "Le client vous écrit depuis le site",
   "accroche": "Le client remplit le formulaire, vous recevez la demande.",
   "images": "Doigt qui remplit un formulaire, notification sur le téléphone du plombier",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi"
+  ]
  },
  {
   "n": 18,
@@ -141,7 +201,11 @@
   "avantage": "Numéro cliquable",
   "accroche": "Un appui, et le client vous appelle.",
   "images": "Pouce sur le numéro, téléphone qui sonne dans la camionnette",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi"
+  ]
  },
  {
   "n": 19,
@@ -149,7 +213,11 @@
   "avantage": "Site rapide sur mobile",
   "accroche": "Il s'ouvre vite, même avec une seule barre de réseau.",
   "images": "Mur de parpaings, une barre de réseau, page qui s'affiche d'un coup",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi"
+  ]
  },
  {
   "n": 20,
@@ -157,7 +225,11 @@
   "avantage": "Une adresse web à votre nom",
   "accroche": "Une adresse web à votre nom, facile à donner.",
   "images": "Adresse inscrite sur la camionnette et sur une carte de visite",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi"
+  ]
  },
  {
   "n": 21,
@@ -165,7 +237,10 @@
   "avantage": "Signature au doigt sur téléphone",
   "accroche": "Votre client signe le devis avec son doigt.",
   "images": "Doigt qui trace une signature sur l'écran, salle de bain en chantier derrière",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:07-signature-doigt"
+  ]
  },
  {
   "n": 22,
@@ -173,7 +248,8 @@
   "avantage": "Plus d'impression ni de scan",
   "accroche": "Plus d'imprimante, plus de scan, plus de papier.",
   "images": "Imprimante en panne, bourrage papier, puis signature en ligne",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 23,
@@ -181,23 +257,34 @@
   "avantage": "PDF signé généré automatiquement",
   "accroche": "Le devis signé se fait tout seul en PDF.",
   "images": "Page PDF qui se tamponne « signé », classeur qui se remplit",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:08-pdf-signe"
+  ]
  },
  {
   "n": 24,
   "theme": "Signature et contrats",
   "avantage": "Vous êtes prévenu dès la signature",
-  "accroche": "Il signe, et votre téléphone vous prévient.",
+  "accroche": "Il signe, et un e-mail vous prévient.",
   "images": "Plombier sur une échelle, notification qui vibre dans sa poche",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:09-notification-signature"
+  ],
+  "note": "La notification est un e-mail (pas de notification dans l'appli)."
  },
  {
   "n": 25,
   "theme": "Signature et contrats",
   "avantage": "Date et heure conservées",
-  "accroche": "Qui a signé, quand, depuis quel appareil: c'est gardé.",
+  "accroche": "Qui a signé, quand, depuis quelle adresse IP : c'est gardé.",
   "images": "Ligne d'horodatage qui s'écrit sous la signature",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:08-pdf-signe"
+  ],
+  "note": "Pas de ligne « appareil » sur la preuve de signature."
  },
  {
   "n": 26,
@@ -205,7 +292,10 @@
   "avantage": "Signature depuis le canapé",
   "accroche": "Il signe depuis son canapé, vous commencez lundi.",
   "images": "Client en pantoufles sur son téléphone, calendrier qui marque lundi",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:07-signature-doigt"
+  ]
  },
  {
   "n": 27,
@@ -213,7 +303,10 @@
   "avantage": "Devis signés jamais perdus",
   "accroche": "Fini le devis signé introuvable au fond de la camionnette.",
   "images": "Fouille dans un tableau de bord encombré, puis document retrouvé à l'écran",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:11-liste-devis"
+  ]
  },
  {
   "n": 28,
@@ -221,7 +314,10 @@
   "avantage": "Contrats signés en ligne",
   "accroche": "Un contrat? Le client le signe en ligne aussi.",
   "images": "Chaudière en gros plan, contrat qui s'affiche et se signe",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:10-contrat-signe"
+  ]
  },
  {
   "n": 29,
@@ -229,7 +325,8 @@
   "avantage": "Un seul document pour tout le monde",
   "accroche": "Vous et votre client avez le même document.",
   "images": "Deux téléphones côte à côte qui affichent le même devis",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 30,
@@ -237,7 +334,8 @@
   "avantage": "Chantier lancé plus vite",
   "accroche": "Signature plus vite, chantier lancé plus vite.",
   "images": "Camionnette qui démarre, outils chargés, chrono qui s'accélère",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 31,
@@ -245,7 +343,10 @@
   "avantage": "Relance de devis automatique par mail",
   "accroche": "Le client n'a pas répondu? Le mail de relance part tout seul.",
   "images": "Boîte mail vide, mail de relance qui part, réponse qui arrive",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:14-relance-auto"
+  ]
  },
  {
   "n": 32,
@@ -253,7 +354,10 @@
   "avantage": "Liste des devis sans réponse",
   "accroche": "Voyez d'un coup d'œil les devis restés sans réponse.",
   "images": "Liste d'écran avec les devis en attente qui se surlignent",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:12-devis-sans-reponse"
+  ]
  },
  {
   "n": 33,
@@ -261,7 +365,10 @@
   "avantage": "Plus de gêne à relancer",
   "accroche": "Relancer un client, c'est gênant. Là, c'est fait pour vous.",
   "images": "Plombier qui hésite, téléphone en main, puis pose le téléphone, soulagé",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:14-relance-auto"
+  ]
  },
  {
   "n": 34,
@@ -269,7 +376,10 @@
   "avantage": "Aucun devis oublié",
   "accroche": "Un devis oublié, c'est un chantier perdu.",
   "images": "Devis qui s'empile dans un tiroir, puis tiré vers l'écran",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:12-devis-sans-reponse"
+  ]
  },
  {
   "n": 35,
@@ -277,7 +387,11 @@
   "avantage": "Montant en attente visible",
   "accroche": "Combien d'argent dort dans vos devis? Vous le voyez.",
   "images": "Chiffre qui monte à l'écran, tirelire de chantier",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:12-devis-sans-reponse",
+   "app:13-tableau-de-bord"
+  ]
  },
  {
   "n": 36,
@@ -285,7 +399,10 @@
   "avantage": "Tableau de bord clair",
   "accroche": "Un seul écran pour savoir où vous en êtes.",
   "images": "Accueil du portail, doigt qui fait défiler les chiffres",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:13-tableau-de-bord"
+  ]
  },
  {
   "n": 37,
@@ -293,7 +410,10 @@
   "avantage": "Voir ce qui est signé",
   "accroche": "Signé, en attente, refusé: tout est classé.",
   "images": "Trois piles de devis qui se rangent par statut",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:11-liste-devis"
+  ]
  },
  {
   "n": 38,
@@ -301,7 +421,10 @@
   "avantage": "Moins de devis sans suite",
   "accroche": "Plus de devis suivis, moins de devis perdus.",
   "images": "Courbe qui monte sur fond de chantier en cours",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:13-tableau-de-bord"
+  ]
  },
  {
   "n": 39,
@@ -309,7 +432,10 @@
   "avantage": "Relance faite pendant que vous travaillez",
   "accroche": "Vous êtes sur le chantier, la relance part quand même.",
   "images": "Plombier qui soude un tuyau, notification discrète dans le coin",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:14-relance-auto"
+  ]
  },
  {
   "n": 40,
@@ -317,7 +443,10 @@
   "avantage": "Le client répond plus vite",
   "accroche": "Un petit rappel, et le client se décide.",
   "images": "Client qui reprend le mail, relit le devis et signe",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:14-relance-auto"
+  ]
  },
  {
   "n": 41,
@@ -325,7 +454,10 @@
   "avantage": "Dictée vocale dans les devis",
   "accroche": "Dictez vos notes, le texte s'écrit tout seul.",
   "images": "Plombier qui parle à son téléphone, mots qui apparaissent à l'écran",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:15-dictee-vocale"
+  ]
  },
  {
   "n": 42,
@@ -333,7 +465,10 @@
   "avantage": "Mains mouillées, pas de souci",
   "accroche": "Les mains pleines de joint? Parlez, ne tapez pas.",
   "images": "Mains pleines de pâte à joint, téléphone posé à côté",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:15-dictee-vocale"
+  ]
  },
  {
   "n": 43,
@@ -341,7 +476,10 @@
   "avantage": "Dictée sur la fiche client",
   "accroche": "Une remarque sur le client? Dites-la, c'est noté.",
   "images": "Plombier qui sort de la maison et dicte, fiche client qui se complète",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:15-dictee-vocale"
+  ]
  },
  {
   "n": 44,
@@ -349,7 +487,9 @@
   "avantage": "Fonctionne sans réseau",
   "accroche": "Une cave sans réseau, et vous continuez quand même.",
   "images": "Escalier de cave, icône réseau barrée, devis qui continue de se remplir",
-  "fait": false
+  "fait": false,
+  "captures": [],
+  "bloque": "Bug : sans réseau, l'enregistrement reste en attente (à corriger avant d'en parler)."
  },
  {
   "n": 45,
@@ -357,7 +497,9 @@
   "avantage": "Devis envoyé au retour du réseau",
   "accroche": "Il part tout seul quand le réseau revient.",
   "images": "Plombier qui sort de la cave, le devis part dès qu'une barre réapparaît",
-  "fait": false
+  "fait": false,
+  "captures": [],
+  "bloque": "Bug : l'envoi automatique au retour du réseau ne fonctionne pas."
  },
  {
   "n": 46,
@@ -365,7 +507,10 @@
   "avantage": "Brouillon sauvegardé automatiquement",
   "accroche": "Le téléphone sonne en plein devis? Vous retrouvez tout.",
   "images": "Appel entrant, retour à l'écran, devis intact",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:17-brouillon-retrouve"
+  ]
  },
  {
   "n": 47,
@@ -373,7 +518,8 @@
   "avantage": "À l'écran d'accueil du téléphone",
   "accroche": "Un raccourci sur votre écran d'accueil, comme une appli.",
   "images": "Pouce qui ajoute l'icône, puis ouvre le portail",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 48,
@@ -381,7 +527,10 @@
   "avantage": "Gros boutons faciles à toucher",
   "accroche": "De vrais gros boutons, même avec des gants.",
   "images": "Gant de chantier qui appuie sur un bouton large",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:19-gros-boutons-erreur"
+  ]
  },
  {
   "n": 49,
@@ -389,7 +538,10 @@
   "avantage": "Messages d'erreur clairs",
   "accroche": "Un souci? On vous explique en français, sans jargon.",
   "images": "Message d'erreur technique barré, remplacé par une phrase simple",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:19-gros-boutons-erreur"
+  ]
  },
  {
   "n": 50,
@@ -397,7 +549,9 @@
   "avantage": "Interventions notées sur place",
   "accroche": "L'intervention est notée avant de remonter dans la camionnette.",
   "images": "Plombier qui ferme sa boîte à outils et valide sur téléphone",
-  "fait": false
+  "fait": false,
+  "captures": [],
+  "bloque": "La page Interventions n'est pas dans le menu de l'appli."
  },
  {
   "n": 51,
@@ -405,7 +559,11 @@
   "avantage": "Devis avec votre logo",
   "accroche": "Votre logo en haut de chaque devis.",
   "images": "Logo qui se place sur un devis, camionnette à votre nom en fond",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:04-apercu-devis",
+   "app:24-logo-couleurs"
+  ]
  },
  {
   "n": 52,
@@ -413,7 +571,9 @@
   "avantage": "Vos couleurs sur les documents",
   "accroche": "Vos couleurs, pas celles d'un logiciel générique.",
   "images": "Palette qui change la couleur d'un devis",
-  "fait": false
+  "fait": false,
+  "captures": [],
+  "bloque": "Les couleurs du PDF sont fixes : le plombier ne choisit pas la couleur des documents."
  },
  {
   "n": 53,
@@ -421,7 +581,10 @@
   "avantage": "Un devis lisible",
   "accroche": "Un devis que le client comprend du premier coup.",
   "images": "Client qui lit le devis, hoche la tête, lignes surlignées une à une",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:04-apercu-devis"
+  ]
  },
  {
   "n": 54,
@@ -429,7 +592,10 @@
   "avantage": "Mails soignés",
   "accroche": "Des mails propres, vos clients voient que vous êtes sérieux.",
   "images": "Boîte de réception, mail net et bien présenté",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:06-mail-puis-devis"
+  ]
  },
  {
   "n": 55,
@@ -437,7 +603,8 @@
   "avantage": "Répondre vite fait pro",
   "accroche": "Celui qui répond le premier a souvent le chantier.",
   "images": "Deux plombiers, deux téléphones, un seul répond à temps",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 56,
@@ -445,7 +612,11 @@
   "avantage": "Site et devis assortis",
   "accroche": "Un site et des devis qui se ressemblent: ça rassure.",
   "images": "Site à gauche, devis à droite, mêmes couleurs, même logo",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi"
+  ]
  },
  {
   "n": 57,
@@ -453,7 +624,8 @@
   "avantage": "Se démarquer du papier",
   "accroche": "Pendant que d'autres envoient du papier, vous envoyez du pro.",
   "images": "Devis manuscrit froissé contre devis propre sur téléphone",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 58,
@@ -461,7 +633,10 @@
   "avantage": "Le client sait ce qu'il signe",
   "accroche": "Le client voit tout avant de signer.",
   "images": "Défilement du devis ligne par ligne sur téléphone",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:04-apercu-devis"
+  ]
  },
  {
   "n": 59,
@@ -469,7 +644,10 @@
   "avantage": "Aperçu avant l'envoi",
   "accroche": "Vous voyez le devis comme votre client le verra.",
   "images": "Bascule entre l'écran plombier et l'écran client",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:04-apercu-devis"
+  ]
  },
  {
   "n": 60,
@@ -477,7 +655,11 @@
   "avantage": "Bonne impression dès le premier contact",
   "accroche": "La première impression se joue avant l'arrivée sur place.",
   "images": "Client qui regarde le site, puis ouvre sa porte au plombier",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:23-site-vitrine-mobile",
+   "app:23-site-vitrine-ordi"
+  ]
  },
  {
   "n": 61,
@@ -485,7 +667,10 @@
   "avantage": "39 € par mois",
   "accroche": "39 euros par mois, le prix est affiché.",
   "images": "Chiffre 39 qui s'affiche sur le tableau de bord de la camionnette",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:25-tarif"
+  ]
  },
  {
   "n": 62,
@@ -493,7 +678,8 @@
   "avantage": "Un seul outil au lieu de plusieurs",
   "accroche": "Site, devis, signature, relances: un seul outil.",
   "images": "Quatre icônes qui fusionnent en une seule",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 63,
@@ -501,7 +687,10 @@
   "avantage": "Paiement par virement programmé",
   "accroche": "Vous réglez par virement programmé, rien à penser.",
   "images": "Application bancaire, virement qui se programme une fois",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:25-tarif"
+  ]
  },
  {
   "n": 64,
@@ -509,7 +698,10 @@
   "avantage": "Pas de carte bancaire demandée",
   "accroche": "Pas de carte bancaire à donner.",
   "images": "Carte bancaire qui reste dans le portefeuille, portefeuille qui se ferme",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:25-tarif"
+  ]
  },
  {
   "n": 65,
@@ -517,7 +709,10 @@
   "avantage": "Pas de prélèvement surprise",
   "accroche": "Pas de prélèvement: vous gardez la main.",
   "images": "Relevé bancaire propre, sans ligne inconnue",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:25-tarif"
+  ]
  },
  {
   "n": 66,
@@ -525,7 +720,10 @@
   "avantage": "Résiliable à tout moment",
   "accroche": "Résiliable à tout moment, sans prise de tête.",
   "images": "Porte de la camionnette qui s'ouvre, personne ne vous retient",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:25-tarif"
+  ]
  },
  {
   "n": 67,
@@ -533,7 +731,8 @@
   "avantage": "Rien à installer sur l'ordinateur",
   "accroche": "Rien à installer: vous ouvrez, ça marche.",
   "images": "Ordinateur qui s'allume sur le portail directement",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 68,
@@ -541,7 +740,8 @@
   "avantage": "Prise en main rapide",
   "accroche": "Si vous savez envoyer un SMS, vous savez l'utiliser.",
   "images": "Plombier à la cinquantaine, à l'aise sur son téléphone",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 69,
@@ -549,7 +749,8 @@
   "avantage": "Tout en français, sans jargon",
   "accroche": "Du français simple, pas du langage d'informaticien.",
   "images": "Mot technique barré à l'écran, remplacé par un mot de plombier",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 70,
@@ -557,7 +758,10 @@
   "avantage": "Prix affiché clairement",
   "accroche": "Le prix est affiché. Pas de mauvaise surprise.",
   "images": "Page tarif avec une seule ligne, doigt qui la montre",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:25-tarif"
+  ]
  },
  {
   "n": 71,
@@ -565,7 +769,10 @@
   "avantage": "Une fiche par client",
   "accroche": "Chaque client a sa fiche, tout est dedans.",
   "images": "Fiches qui se classent comme des dossiers suspendus",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:21-fiches-clients"
+  ]
  },
  {
   "n": 72,
@@ -573,7 +780,10 @@
   "avantage": "Historique des devis par client",
   "accroche": "Ce qu'on a proposé à ce client, en un coup d'œil.",
   "images": "Frise de devis passés qui défile sous le doigt",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:21-fiches-clients"
+  ]
  },
  {
   "n": 73,
@@ -581,7 +791,11 @@
   "avantage": "Nouvelle demande: notification",
   "accroche": "Un client vous contacte, vous le savez tout de suite.",
   "images": "Notification « Nouvelle demande de devis » sur téléphone, plombier qui lit",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:22-nouvelle-demande"
+  ],
+  "note": "Notification = e-mail."
  },
  {
   "n": 74,
@@ -589,7 +803,10 @@
   "avantage": "La demande arrive aussi par mail",
   "accroche": "Et elle arrive aussi par mail, à votre bureau.",
   "images": "Mail qui tombe sur l'ordinateur du bureau",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:22-nouvelle-demande"
+  ]
  },
  {
   "n": 75,
@@ -597,7 +814,10 @@
   "avantage": "Contacts retrouvés vite",
   "accroche": "Le numéro du client? Trois secondes.",
   "images": "Barre de recherche qui trouve un nom en tapant deux lettres",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:21-fiches-clients"
+  ]
  },
  {
   "n": 76,
@@ -605,7 +825,9 @@
   "avantage": "Interventions classées",
   "accroche": "Toutes vos interventions, rangées par client.",
   "images": "Calendrier de chantiers qui se range tout seul",
-  "fait": false
+  "fait": false,
+  "captures": [],
+  "bloque": "La page Interventions n'est pas dans le menu de l'appli."
  },
  {
   "n": 77,
@@ -613,7 +835,10 @@
   "avantage": "Notes sur chaque client",
   "accroche": "Code du portail, chien méchant: tout est noté.",
   "images": "Note qui s'écrit sur une fiche, grille de portail en arrière-plan",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:21-fiches-clients"
+  ]
  },
  {
   "n": 78,
@@ -621,7 +846,10 @@
   "avantage": "Réponse rapide aux nouvelles demandes",
   "accroche": "Celui qui répond en premier décroche le chantier.",
   "images": "Chronomètre qui démarre à la notification, s'arrête à la réponse",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:22-nouvelle-demande"
+  ]
  },
  {
   "n": 79,
@@ -629,7 +857,10 @@
   "avantage": "Tarifs retrouvés sans effort",
   "accroche": "Votre barème, toujours sous la main.",
   "images": "Carnet papier perdu, puis liste de prestations propre",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:02-prestations"
+  ]
  },
  {
   "n": 80,
@@ -637,7 +868,10 @@
   "avantage": "Plus de carnet à recopier",
   "accroche": "Plus de carnet à recopier le soir.",
   "images": "Carnet posé dans le tiroir, téléphone à la place",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:21-fiches-clients"
+  ]
  },
  {
   "n": 81,
@@ -645,7 +879,8 @@
   "avantage": "Données hébergées en Europe",
   "accroche": "Vos données restent en Europe, pas de l'autre côté de l'océan.",
   "images": "Globe qui tourne et se fige sur l'Europe",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 82,
@@ -653,7 +888,8 @@
   "avantage": "Chacun ne voit que ses données",
   "accroche": "Vos clients sont à vous, personne d'autre ne les voit.",
   "images": "Porte de local technique qui se verrouille",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 83,
@@ -661,7 +897,10 @@
   "avantage": "Code d'accès sur chaque devis",
   "accroche": "Chaque devis est protégé par un code.",
   "images": "Cadenas, clavier de code, devis qui s'ouvre",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:06-mail-puis-devis"
+  ]
  },
  {
   "n": 84,
@@ -669,7 +908,8 @@
   "avantage": "Protégé contre les robots",
   "accroche": "Les robots, on les bloque à l'entrée.",
   "images": "Portail de chantier qui se ferme devant des silhouettes",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 85,
@@ -677,7 +917,10 @@
   "avantage": "Connexion sécurisée",
   "accroche": "Un mot de passe, une vérification, et vous êtes dedans.",
   "images": "Clavier qui tape, case à cocher, accès accordé",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:26-connexion"
+  ]
  },
  {
   "n": 86,
@@ -685,7 +928,10 @@
   "avantage": "Mot de passe oublié, réglé en une minute",
   "accroche": "Mot de passe oublié? Une minute et c'est réglé.",
   "images": "Plombier à la porte du local, mail de réinitialisation qui arrive",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:26-mot-de-passe-oublie"
+  ]
  },
  {
   "n": 87,
@@ -693,7 +939,10 @@
   "avantage": "Déconnexion qui nettoie le téléphone",
   "accroche": "Vous vous déconnectez, vos données partent du téléphone.",
   "images": "Bouton déconnexion, écran qui se vide",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:26-deconnexion"
+  ]
  },
  {
   "n": 88,
@@ -701,7 +950,10 @@
   "avantage": "Dictée respectueuse de la vie privée",
   "accroche": "La dictée vocale est facultative, c'est vous qui décidez.",
   "images": "Bouton micro qu'on active puis qu'on coupe",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:15-dictee-vocale"
+  ]
  },
  {
   "n": 89,
@@ -709,7 +961,8 @@
   "avantage": "Pages légales claires",
   "accroche": "Mentions légales, confidentialité: tout est lisible.",
   "images": "Pages légales qui défilent, mots clés surlignés",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 90,
@@ -717,7 +970,10 @@
   "avantage": "Devis signés conservés en lieu sûr",
   "accroche": "Vos devis signés sont gardés au chaud.",
   "images": "Coffre-fort numérique, documents qui s'y rangent",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:08-pdf-signe"
+  ]
  },
  {
   "n": 91,
@@ -725,7 +981,8 @@
   "avantage": "Un vrai numéro à appeler",
   "accroche": "Un souci? Appelez-nous, au 07 49 49 17 77.",
   "images": "Téléphone qui sonne, numéro affiché en grand",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 92,
@@ -733,7 +990,10 @@
   "avantage": "Support dans le portail",
   "accroche": "Une question? Elle part en un clic depuis le portail.",
   "images": "Bouton d'aide, message envoyé, réponse reçue",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:28-support"
+  ]
  },
  {
   "n": 93,
@@ -741,7 +1001,8 @@
   "avantage": "Pensé pour les plombiers",
   "accroche": "Un outil fait pour les plombiers, pas pour tout le monde.",
   "images": "Clé à molette qui devient le curseur d'un écran",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 94,
@@ -749,7 +1010,10 @@
   "avantage": "On vous recontacte très vite",
   "accroche": "Laissez vos coordonnées, on vous contacte très vite.",
   "images": "Formulaire de contact rempli, téléphone qui sonne ensuite",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:29-formulaire-contact"
+  ]
  },
  {
   "n": 95,
@@ -757,7 +1021,9 @@
   "avantage": "Démo en 90 secondes",
   "accroche": "Quatre-vingt-dix secondes pour tout comprendre.",
   "images": "Chrono qui avance sur fond de mini-démo du portail",
-  "fait": false
+  "fait": false,
+  "captures": [],
+  "bloque": "Aucune démo de 90 s n'existe."
  },
  {
   "n": 96,
@@ -765,7 +1031,8 @@
   "avantage": "L'outil évolue",
   "accroche": "L'outil s'améliore, sans que vous ayez rien à faire.",
   "images": "Écran qui gagne une nouvelle fonction, plombier qui ne s'en aperçoit qu'après",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 97,
@@ -773,7 +1040,10 @@
   "avantage": "Vos retours comptent",
   "accroche": "Dites-nous ce qui manque, on l'écoute.",
   "images": "Plombier qui dicte une remarque, message envoyé à l'équipe",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:28-support"
+  ]
  },
  {
   "n": 98,
@@ -781,7 +1051,8 @@
   "avantage": "Pas de jargon informatique",
   "accroche": "On parle chantier, pas informatique.",
   "images": "Tableau noir avec un schéma de plomberie, pas de termes techniques",
-  "fait": false
+  "fait": false,
+  "captures": []
  },
  {
   "n": 99,
@@ -789,7 +1060,10 @@
   "avantage": "Se lancer sans prise de tête",
   "accroche": "Se lancer, c'est simple: un formulaire et on s'occupe du reste.",
   "images": "Formulaire de contact court, pouce qui valide",
-  "fait": false
+  "fait": false,
+  "captures": [
+   "app:29-formulaire-contact"
+  ]
  },
  {
   "n": 100,
@@ -797,6 +1071,7 @@
   "avantage": "Le partenaire des plombiers",
   "accroche": "Prouessia, le partenaire des plombiers.",
   "images": "Montage rapide des 99 reels précédents en accéléré, logo final",
-  "fait": false
+  "fait": false,
+  "captures": []
  }
 ]

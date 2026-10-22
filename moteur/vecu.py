@@ -20,6 +20,35 @@ FIN = 'Prouessia, le partenaire des plombiers.'  # fin identique de chaque Reel 
 FIN_HTML = 'Prouessia, <b>le partenaire des plombiers</b><br><span style="font-size:60px;color:#fff">prouessia.fr</span>'
 PAUSE = 0.2  # pause entre deux phrases (les références : 0,1 à 0,3 s)
 
+APP = os.path.join(ROOT, 'videos', 'app')
+BOITE = (40, 420, 1000, 1000)  # x, y, largeur, hauteur de l'écran d'appli dans la vidéo
+def source(clip):
+    # « app:07-signature-doigt » = capture de l'application (videos/app/), sinon clip libre de droits (videos/clips/)
+    return f'{APP}/{clip[4:]}.mp4' if clip.startswith('app:') else f'{CLIPS}/{clip}.mp4'
+def zone_utile(chemin, debut=0.0, duree=3.0):
+    """Certaines captures vidéo n'occupent qu'un coin de l'image (le reste gris), et la taille peut changer en cours de vidéo :
+    on mesure la zone utile sur 5 images de la portion utilisée et on garde la plus fréquente (cache _zones.json)."""
+    import numpy as np
+    from PIL import Image
+    from collections import Counter
+    cache = os.path.join(APP, '_zones.json'); z = json.load(open(cache)) if os.path.exists(cache) else {}
+    k = f'{os.path.basename(chemin)}@{debut:.2f}+{duree:.2f}'
+    if k not in z:
+        tmp = os.path.join(APP, '_z.png'); vus = []
+        for j in range(5):
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{debut + duree * (j + .5) / 5:.2f}', '-i', chemin, '-frames:v', '1', tmp], check=True)
+            a = np.asarray(Image.open(tmp).convert('L')).astype(int); g = abs(a - 128) < 3
+            r = np.where(~g.all(1))[0]; c = np.where(~g.all(0))[0]
+            vus.append((int(c.max()) + 1 if len(c) else a.shape[1], int(r.max()) + 1 if len(r) else a.shape[0]))
+        os.remove(tmp); z[k] = list(Counter(vus).most_common(1)[0][0])
+        json.dump(z, open(cache, 'w'), indent=0)
+    return z[k]
+def masque():
+    from PIL import Image, ImageDraw
+    f = os.path.join(APP, '_masque.png')
+    if not os.path.exists(f):
+        im = Image.new('L', BOITE[2:], 0); ImageDraw.Draw(im).rounded_rectangle([0, 0, BOITE[2] - 1, BOITE[3] - 1], 42, fill=255); im.save(f)
+    return f
 def dit(html):
     t = re.sub(r'<br\s*/?>', ' ', html); t = re.sub(r'<[^>]+>', '', t).replace('&nbsp;', ' ')
     return re.sub(r'\s+', ' ', t).strip()
@@ -29,9 +58,9 @@ def charger(nn):
     assert len(set(clips)) == len(clips), 'règle 12 : un clip différent par phrase'
     u = json.load(open(os.path.join(CLIPS, 'utilises.json')))
     interdits = set(u.get('retires', [])) | {k for v in u['videos'][-10:] if v['video'] != f'{nn}/video.mp4' for k in v['clips']}
-    deja = interdits & set(clips)
+    deja = interdits & {k for k in clips if not k.startswith('app:')}
     assert not deja, f'règle 12 : clips déjà utilisés récemment {sorted(deja)}'
-    manquants = [k for k in clips if not os.path.exists(f'{CLIPS}/{k}.mp4')]
+    manquants = [k for k in clips if not os.path.exists(source(k))]
     assert not manquants, f'clips à télécharger d\'abord (videos/a_telecharger.txt) : {manquants}'
     lignes = [(FIN + ' prouessia.fr') if p['html'] == FIN_HTML else (dit(p['html']) or dit(c['titre'])) for p in ph]
     lignes = [l if l[-1] in '.?!…' else l + '.' for l in lignes]
@@ -79,20 +108,31 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
  text-shadow:0 0 3px #000,0 3px 0 #000,0 6px 22px rgba(0,0,0,.7);-webkit-text-stroke:2px #000;paint-order:stroke fill}}
 .titre{{top:250px;font-size:64px;line-height:1.08}} .ph{{top:760px;font-size:96px;line-height:1.05}} b{{color:{MUST}}}
 .logo{{position:absolute;left:0;right:0;bottom:250px;display:flex;justify-content:center;align-items:center;gap:14px;color:#fff;font-weight:800;font-size:34px;opacity:.9;text-shadow:0 2px 8px #000}}
-.logo img{{width:48px;height:48px;border-radius:12px}}"""
+.logo img{{width:48px;height:48px;border-radius:12px}}
+.ph.bas{{top:{BOITE[1]+BOITE[3]+30}px;font-size:70px}} .v.app{{background:linear-gradient(180deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 25%)}}"""
     cq = os.path.join(d, 'calques'); os.makedirs(cq, exist_ok=True)
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={'width': W, 'height': H})
         for i, ph in enumerate(P):
-            pg.set_content(f'<html><head><meta charset="utf-8"><style>{css}</style></head><body><div class="v"></div><div class="titre">{c["titre"]}</div>'
-                           f'<div class="ph">{ph["html"]}</div><div class="logo"><img src="data:image/png;base64,{ico}">prouessia</div></body></html>')
+            pg.set_content(f'<html><head><meta charset="utf-8"><style>{css}</style></head><body><div class="v{" app" if ph["clip"].startswith("app:") else ""}"></div><div class="titre">{c["titre"]}</div>'
+                           f'<div class="ph{" bas" if ph["clip"].startswith("app:") else ""}">{ph["html"]}</div><div class="logo"><img src="data:image/png;base64,{ico}">prouessia</div></body></html>')
             pg.wait_for_timeout(120); pg.screenshot(path=f'{cq}/{i}.png', omit_background=True)
         b.close()
     inp, fil, n = [], [], len(P)
     for i, ph in enumerate(P):
-        du = D[i]; inp += ['-ss', str(ph.get('debut', 0)), '-t', f'{du + .05:.2f}', '-i', f'{CLIPS}/{ph["clip"]}.mp4']
-        x = f"max(0\\,min(iw-{W}\\,iw*{ph.get('cx', .5)}-{W/2}+{ph.get('sens', 1)}*300*(t/{du:.2f}-0.5)))"
-        fil.append(f"[{i}:v]fps=30,scale=-2:{int(H*(1.18+.03*(i%3)))},crop={W}:{H}:{x}:(ih-{H})/2,setsar=1,trim=duration={du:.2f},setpts=PTS-STARTPTS[v{i}]")
+        du = D[i]; inp += ['-ss', str(ph.get('debut', 0)), '-t', f'{du + .05:.2f}', '-i', source(ph['clip'])]
+        if ph['clip'].startswith('app:'):
+            # écran d'appli net dans un cadre arrondi (zoom sur la zone utile : cy = centre vertical 0-1, zoom ≥ 1), fond = la même vidéo floutée et assombrie
+            bx, by, bw, bh = BOITE; z = float(ph.get('zoom', 1)); cy = float(ph.get('cy', .5))
+            cw = f"iw/{z}"; ch = f"iw/{z}*{bh}/{bw}"
+            zw, zh = zone_utile(source(ph['clip']), float(ph.get('debut', 0)), du)
+            fil.append(f"[{i}:v]crop={zw - zw % 2 - 4}:{zh - zh % 2 - 4}:0:0,fps=30,setsar=1,trim=duration={du:.2f},setpts=PTS-STARTPTS,split[a{i}][b{i}]")
+            fil.append(f"[a{i}]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=30:3,eq=brightness=-0.35:saturation=0.6[f{i}]")
+            fil.append(f"[b{i}]crop={cw}:{ch}:(iw-{cw})/2:max(0\\,min(ih-{ch}\\,ih*{cy}-{ch}/2)),scale={bw}:{bh}:flags=lanczos,format=rgba[g{i}]")
+            fil.append(f"movie={masque()}:loop=0,setpts=N/30/TB,format=gray,scale={bw}:{bh}[m{i}];[g{i}][m{i}]alphamerge[h{i}];[f{i}][h{i}]overlay={bx}:{by}:shortest=1,setsar=1[v{i}]")
+        else:
+            x = f"max(0\\,min(iw-{W}\\,iw*{ph.get('cx', .5)}-{W/2}+{ph.get('sens', 1)}*300*(t/{du:.2f}-0.5)))"
+            fil.append(f"[{i}:v]fps=30,scale=-2:{int(H*(1.18+.03*(i%3)))},crop={W}:{H}:{x}:(ih-{H})/2,setsar=1,trim=duration={du:.2f},setpts=PTS-STARTPTS[v{i}]")
     for i in range(n):
         inp += ['-loop', '1', '-t', f'{D[i]:.2f}', '-i', f'{cq}/{i}.png']
         fil += [f"[{n+i}:v]fps=30,format=rgba,trim=duration={D[i]:.2f},setpts=PTS-STARTPTS[c{i}]", f"[v{i}][c{i}]overlay=0:0:shortest=1[o{i}]"]
@@ -105,7 +145,7 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
     import build; build.HERE = d; ok = build.controle(out)
     assert ok, 'règle 6 : mouvement insuffisant, refaire'
     u = json.load(open(os.path.join(CLIPS, 'utilises.json')))
-    u['videos'] = [v for v in u['videos'] if v['video'] != f'{nn}/video.mp4'] + [{'video': f'{nn}/video.mp4', 'clips': [p['clip'] for p in P]}]
+    u['videos'] = [v for v in u['videos'] if v['video'] != f'{nn}/video.mp4'] + [{'video': f'{nn}/video.mp4', 'clips': [p['clip'] for p in P if not p['clip'].startswith('app:')]}]
     json.dump(u, open(os.path.join(CLIPS, 'utilises.json'), 'w'), ensure_ascii=False, indent=1)
     print(out, round(TOTAL, 1), 's')
 
