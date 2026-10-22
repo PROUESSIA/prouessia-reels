@@ -12,3 +12,10 @@ anim/st/
 anim/parts/
 anim/sous-titres.mov
 anim/fin.png
+anim/ep*/frames/
+anim/ep*/st/
+anim/ep*/parts/
+anim/ep*/calques.mov
+anim/ep*/*.wav
+anim/ep*/film.log
+anim/ep*/carte-*.png

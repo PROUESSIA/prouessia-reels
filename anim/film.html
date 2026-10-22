@@ -1,0 +1,263 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js"}}</script>
+</head><body>
+<script type="module">
+// Moteur des courts films « Sous pression » — personnages low-poly SANS yeux ni bouche.
+// Décors réutilisables (chacun dans sa zone de la scène), plans et événements lus dans le fichier de l'épisode.
+import * as THREE from 'three';
+const W = 1080, H = 1920;
+const renderer = new THREE.WebGLRenderer({antialias: true, preserveDrawingBuffer: true});
+renderer.setSize(W, H); renderer.setPixelRatio(1);
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+const cam = new THREE.PerspectiveCamera(44, W / H, 0.05, 80);
+let seed = 11; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const M = (c, o = {}) => new THREE.MeshStandardMaterial({color: c, flatShading: true, roughness: .85, metalness: 0, ...o});
+function box(w, h, d, mat, x = 0, y = 0, z = 0, parent) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), typeof mat === 'string' ? M(mat) : mat);
+  m.position.set(x, y, z); m.castShadow = true; m.receiveShadow = true; (parent || scene).add(m); return m;
+}
+function cyl(r1, r2, h, mat, x, y, z, parent, seg = 10) {
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(r1, r2, h, seg), typeof mat === 'string' ? M(mat) : mat);
+  m.position.set(x, y, z); m.castShadow = true; m.receiveShadow = true; parent.add(m); return m;
+}
+function texte(lignes, o = {}) {  // petite texture de texte (écrans de téléphone, panneaux)
+  const c = document.createElement('canvas'); c.width = o.w || 256; c.height = o.h || 512; const g = c.getContext('2d');
+  g.fillStyle = o.fond || '#0d0f14'; g.fillRect(0, 0, c.width, c.height);
+  for (const l of lignes) { g.fillStyle = l.c || '#fff'; g.font = `${l.g ? 'bold ' : ''}${l.s || 22}px sans-serif`; g.textAlign = l.a || 'center';
+    if (l.bulle) { g.fillStyle = l.bulle; const w = c.width - 40; g.beginPath(); g.roundRect(20, l.y - 30, w, l.hb || 90, 18); g.fill(); g.fillStyle = l.c || '#fff'; }
+    (l.t.split('\n')).forEach((tt, i) => g.fillText(tt, l.a === 'left' ? 34 : c.width / 2, l.y + i * ((l.s || 22) + 6))); }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+function ville(jour) {
+  const c = document.createElement('canvas'); c.width = 512; c.height = 512; const g = c.getContext('2d');
+  const gr = g.createLinearGradient(0, 0, 0, 512);
+  if (jour) { gr.addColorStop(0, '#9cc7ef'); gr.addColorStop(1, '#e8dcc0'); } else { gr.addColorStop(0, '#070b1e'); gr.addColorStop(1, '#22325e'); }
+  g.fillStyle = gr; g.fillRect(0, 0, 512, 512);
+  for (let i = 0; i < 14; i++) { const x = i * 40 - 10 + rnd() * 10, w = 34 + rnd() * 16, h = 160 + rnd() * 260;
+    g.fillStyle = jour ? ['#b9a993', '#c9b8a0', '#a8977f'][i % 3] : ['#141a33', '#1b2242', '#10152b'][i % 3]; g.fillRect(x, 512 - h, w, h);
+    for (let yy = 512 - h + 10; yy < 500; yy += 18) for (let xx = x + 5; xx < x + w - 8; xx += 11) if (rnd() < (jour ? .9 : .3)) { g.fillStyle = jour ? '#7f8fa6' : (rnd() < .5 ? '#ffd88a' : '#ffbe5c'); g.fillRect(xx, yy, 6, 9); } }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+
+// ---------- personnages ----------
+function perso(o, parent) {
+  const root = new THREE.Group(); parent.add(root);
+  const hips = new THREE.Group(); hips.position.y = .95; root.add(hips);
+  const torse = new THREE.Group(); hips.add(torse);
+  box(.42, .55, .24, o.haut, 0, .3, 0, torse); box(.44, .12, .26, o.haut, 0, .55, 0, torse);
+  if (o.col) box(.2, .06, .05, o.col, 0, .5, .125, torse);
+  if (o.robe) box(.46, .55, .28, o.haut, 0, -.2, 0, torse);                              // robe de chambre longue
+  box(.1, .08, .1, o.peau, 0, .64, 0, torse);
+  const tete = new THREE.Group(); tete.position.y = .68; torse.add(tete);
+  box(.24, .28, .25, o.peau, 0, .14, 0, tete); box(.045, .07, .03, o.peau, 0, .11, .135, tete);
+  box(.03, .07, .05, o.peau, -.13, .13, 0, tete); box(.03, .07, .05, o.peau, .13, .13, 0, tete);
+  if (o.chignon) { box(.26, .08, .27, o.cheveux, 0, .3, 0, tete); box(.13, .12, .12, o.cheveux, 0, .34, -.12, tete); box(.27, .16, .06, o.cheveux, 0, .22, -.12, tete); }
+  else { box(.27, .1, .28, o.cheveux, 0, .3, -.005, tete); box(.27, .2, .07, o.cheveux, 0, .2, -.115, tete); }
+  if (o.longs) { box(.28, .42, .09, o.cheveux, 0, .02, -.12, tete); box(.05, .3, .2, o.cheveux, -.135, .1, -.03, tete); box(.05, .3, .2, o.cheveux, .135, .1, -.03, tete); }
+  else if (!o.chignon) { box(.03, .1, .18, o.cheveux, -.13, .24, -.04, tete); box(.03, .1, .18, o.cheveux, .13, .24, -.04, tete); }
+  if (o.barbe) { box(.25, .09, .06, o.cheveux, 0, .03, .11, tete); box(.04, .12, .2, o.cheveux, -.12, .07, .02, tete); box(.04, .12, .2, o.cheveux, .12, .07, .02, tete); }
+  if (o.lunettes) { box(.08, .04, .01, M('#222'), -.06, .17, .13, tete); box(.08, .04, .01, M('#222'), .06, .17, .13, tete); }
+  const bras = s => { const ep = new THREE.Group(); ep.position.set(s * .27, .55, 0); torse.add(ep);
+    box(.12, .3, .13, o.haut, 0, -.15, 0, ep); const coude = new THREE.Group(); coude.position.y = -.3; coude.rotation.order = 'YXZ'; ep.add(coude);
+    box(.11, .28, .12, o.haut, 0, -.14, 0, coude); const main = box(.09, .09, .1, o.peau, 0, -.32, 0, coude); return {ep, coude, main}; };
+  const bg = bras(-1), bd = bras(1);
+  const jambe = s => { const h = new THREE.Group(); h.position.set(s * .11, 0, 0); hips.add(h);
+    box(.17, .45, .18, o.bas, 0, -.22, 0, h); const g = new THREE.Group(); g.position.y = -.45; h.add(g);
+    box(.15, .45, .16, o.bas, 0, -.22, 0, g); box(.16, .08, .26, o.chaussures, 0, -.47, .05, g); return {h, g}; };
+  const jg = jambe(-1), jd = jambe(1);
+  const p = {root, hips, torse, tete, bg, bd, jg, jd, o, base: {}};
+  pose(p, o.pose || 'debout'); return p;
+}
+function pose(p, nom) {
+  const {hips, bg, bd, jg, jd, root} = p;
+  const reset = g => g.rotation.set(0, 0, 0);
+  [bg.ep, bg.coude, bd.ep, bd.coude, jg.h, jg.g, jd.h, jd.g].forEach(reset); hips.position.y = .95; root.rotation.x = 0;
+  bg.coude.rotation.order = bd.coude.rotation.order = 'YXZ';
+  if (nom === 'assis' || nom === 'volant' || nom === 'assis_tasse') { hips.position.y = .5; for (const j of [jg, jd]) { j.h.rotation.x = -Math.PI / 2; j.g.rotation.x = Math.PI / 2; } }
+  if (nom === 'volant') { for (const [b, s] of [[bg, -1], [bd, 1]]) { b.ep.rotation.x = -1.15; b.ep.rotation.z = -s * .12; b.coude.rotation.x = -.35; } }
+  if (nom === 'assis_tasse') { bd.ep.rotation.x = -.9; bd.coude.rotation.x = -1.0; bg.ep.rotation.x = -.7; bg.coude.rotation.x = -.6; }
+  if (nom === 'bras_croises') for (const [b, s] of [[bg, -1], [bd, 1]]) { b.ep.rotation.x = -.2; b.ep.rotation.z = -s * .08; b.coude.rotation.x = -1.55; b.coude.rotation.y = -s * 1.15; }
+  if (nom === 'telephone') { bd.ep.rotation.x = -.5; bd.ep.rotation.z = .55; bd.coude.rotation.x = -2.4; bd.coude.rotation.y = -.5; }
+  if (nom === 'telephone_main') { bd.ep.rotation.x = -.7; bd.coude.rotation.x = -1.2; bd.coude.rotation.y = -.5; bg.ep.rotation.x = -.6; bg.coude.rotation.x = -1.1; bg.coude.rotation.y = .5; }
+  if (nom === 'mains_levees') for (const [b, s] of [[bg, -1], [bd, 1]]) { b.ep.rotation.x = -.9; b.ep.rotation.z = -s * .35; b.coude.rotation.x = -1.2; }
+  if (nom === 'accroupi') { hips.position.y = .42; jg.h.rotation.x = jd.h.rotation.x = -2.0; jg.g.rotation.x = jd.g.rotation.x = 2.2; for (const b of [bg, bd]) { b.ep.rotation.x = -1.3; b.coude.rotation.x = -.4; } p.torse.rotation.x = .35; }
+  if (nom === 'allonge') { root.rotation.x = -Math.PI / 2; }
+  if (nom === 'assis_lit') { hips.position.y = .62; for (const j of [jg, jd]) j.h.rotation.x = -Math.PI / 2; bd.ep.rotation.x = -.4; }
+  p.pose = nom;
+}
+
+// ---------- décors (chacun à son propre emplacement X) ----------
+const DECORS = {}; const PERSOS = {};
+const CAST = {
+  yanis:   {peau: '#c48a5e', cheveux: '#1d140e', haut: '#2c3e6b', col: '#f2b705', bas: '#3b3f47', chaussures: '#3a2a1c', barbe: true},
+  lea:     {peau: '#e2b28f', cheveux: '#6b3b1f', haut: '#3f7a6a', bas: '#3a4560', chaussures: '#e8e2d6', longs: true},
+  lefevre: {peau: '#e6c2a4', cheveux: '#d9d6cf', haut: '#c77a9b', bas: '#c77a9b', chaussures: '#f0e0d0', chignon: true, robe: true},
+};
+function lumieres(g, o) {
+  g.add(new THREE.HemisphereLight(o.ciel, o.sol, o.hemi));
+  for (const l of o.points || []) { const p = new THREE.PointLight(l.c, l.i, l.d || 5, 2); p.position.set(...l.p); if (l.ombre) { p.castShadow = true; p.shadow.mapSize.set(1024, 1024); p.shadow.bias = -.001; } g.add(p); }
+}
+function decorChambre(x0) {
+  const g = new THREE.Group(); g.position.x = x0; scene.add(g);
+  box(6, .1, 6, '#4a3a3a', 0, -.05, 0, g); box(6, 3, .1, '#2f3550', 0, 1.5, -2.2, g); box(.1, 3, 6, '#2a3048', -2.2, 1.5, 0, g);
+  const f = new THREE.Mesh(new THREE.PlaneGeometry(1.1, 1.3), new THREE.MeshBasicMaterial({map: ville(false)})); f.position.set(1.2, 1.7, -2.14); g.add(f);
+  box(1.3, .06, .1, '#d8d2c4', 1.2, 1.03, -2.12, g);
+  // lit double
+  box(1.7, .35, 2.1, '#5b4636', 0, .18, -.9, g); box(1.6, .18, 2.0, '#e7e2d8', 0, .44, -.9, g); box(1.7, .9, .1, '#5b4636', 0, .55, -1.95, g);
+  box(.55, .1, .35, '#f4f0e8', -.4, .58, -1.65, g); box(.55, .1, .35, '#f4f0e8', .4, .58, -1.65, g);
+  const couette = box(1.62, .22, 1.3, '#41507e', 0, .66, -.55, g);
+  // table de nuit + téléphone qui vibre
+  box(.45, .55, .4, '#6b5240', 1.15, .275, -1.6, g); box(.25, .3, .25, '#d9c9a8', 1.1, .7, -1.7, g);
+  const tel = new THREE.Group(); tel.position.set(1.15, .56, -1.45); g.add(tel);
+  box(.08, .012, .16, '#111', 0, 0, 0, tel);
+  const ecran = new THREE.Mesh(new THREE.PlaneGeometry(.07, .145), new THREE.MeshBasicMaterial({map: texte([{t: '03:12', y: 120, s: 70, g: 1}, {t: 'Mme Lefèvre', y: 260, s: 34}, {t: 'appel entrant…', y: 310, s: 24, c: '#9aa'}, {t: '●  ●', y: 460, s: 60, c: '#3c3'}], {fond: '#101826'})}));
+  ecran.rotation.x = -Math.PI / 2; ecran.position.y = .007; tel.add(ecran);
+  const halo = new THREE.PointLight('#9fc0ff', 0, 2.2, 2); halo.position.set(1.15, .8, -1.4); g.add(halo);
+  lumieres(g, {ciel: '#3a4c86', sol: '#2a2020', hemi: 1.15, points: [{c: '#7f96e6', i: 5, p: [1.0, 2.2, -1.2], d: 6}, {c: '#8aa0ff', i: 3, p: [-1, 2, .8], d: 6}]});
+  const chevet = new THREE.PointLight('#ffc27a', 0, 4, 2); chevet.position.set(1.1, 1.0, -1.5); g.add(chevet);
+  const yanis = perso({...CAST.yanis, pose: 'allonge'}, g); yanis.root.position.set(.4, .74, .12);
+  const lea = perso({...CAST.lea, pose: 'allonge'}, g); lea.root.position.set(-.4, .74, .12);
+  // les corps sont sous la couette : on ne garde que la tête et le torse visibles
+  return {g, persos: {yanis, lea}, update(t, ev) {
+    const sonne = ev.has('sonne'); chevet.intensity = ev.has('decroche') ? 5 : 0; halo.intensity = sonne ? 2.5 + Math.sin(t * 30) * 1.2 : (ev.has('decroche') ? 2 : 0);
+    tel.position.x = 1.15 + (sonne ? Math.sin(t * 90) * .004 : 0);
+    if (ev.has('reveil') && yanis.pose !== 'assis_lit') { pose(yanis, 'assis_lit'); yanis.root.rotation.y = Math.PI / 2 * 0; yanis.root.position.set(.4, 0, -1.25); }
+    if (ev.has('decroche') && yanis.pose !== 'telephone') { pose(yanis, 'telephone'); yanis.root.position.set(.4, 0, -1.25); yanis.hips.position.y = .62; for (const j of [yanis.jg, yanis.jd]) j.h.rotation.x = -Math.PI / 2; tel.visible = false; }
+    if (ev.has('decroche') && lea.pose !== 'assis_lit') { pose(lea, 'assis_lit'); lea.root.position.set(-.4, 0, -1.25); lea.root.rotation.y = .25; }
+    couette.position.z = yanis.pose === 'allonge' ? -.55 : -.35;
+  }};
+}
+function decorCamion(x0, pluie) {
+  const g = new THREE.Group(); g.position.x = x0; scene.add(g);
+  // habitacle
+  box(2.2, .1, 2.4, '#2a2a2a', 0, .3, 0, g); box(2.2, 1.6, .08, '#3b3b3b', 0, 1.1, 1.2, g); box(.08, 1.6, 2.4, '#454545', -1.1, 1.1, 0, g); box(.08, .6, 2.4, '#454545', 1.1, .7, 0, g);
+  box(2.2, .08, 2.4, '#3a3a3a', 0, 1.92, 0, g);
+  box(2.2, .45, .7, '#1f1f22', 0, .9, -1.05, g);                                          // tableau de bord
+  const volant = new THREE.Mesh(new THREE.TorusGeometry(.19, .025, 6, 16), M('#111')); volant.position.set(-.45, 1.2, -.55); volant.rotation.x = -.9; g.add(volant);
+  box(.42, .5, .45, '#26262b', -.45, .55, .25, g); box(.42, .6, .08, '#26262b', -.45, .95, .5, g);       // siège
+  // pare-brise : la rue la nuit, et la pluie
+  const rue = new THREE.Group(); rue.position.z = -3; g.add(rue);
+  box(14, .05, 60, '#1a1c22', 0, -.4, -20, rue);
+  const lampadaires = [];
+  for (let i = 0; i < 10; i++) { const l = new THREE.Group(); l.position.set(i % 2 ? 2.4 : -2.4, 0, -i * 6); rue.add(l); box(.08, 3, .08, '#444', 0, 1.1, 0, l);
+    const b = new THREE.Mesh(new THREE.SphereGeometry(.12, 8, 6), new THREE.MeshBasicMaterial({color: '#ffcf7a'})); b.position.y = 2.6; l.add(b); lampadaires.push(l); }
+  for (let i = 0; i < 8; i++) box(2 + rnd() * 2, 2 + rnd() * 5, 3, i % 2 ? '#1b2033' : '#22283d', (i % 2 ? 6 : -6), 1.5, -i * 7, rue);
+  let goutte = null, essuie = null;
+  if (pluie) {
+    const c = document.createElement('canvas'); c.width = 256; c.height = 256; const gg = c.getContext('2d'); gg.clearRect(0, 0, 256, 256);
+    for (let i = 0; i < 160; i++) { gg.fillStyle = `rgba(200,220,255,${.25 + rnd() * .4})`; const x = rnd() * 256, y = rnd() * 256, r = 1 + rnd() * 2.5; gg.beginPath(); gg.ellipse(x, y, r, r * 1.6, 0, 0, 7); gg.fill(); }
+    for (let i = 0; i < 25; i++) { gg.strokeStyle = 'rgba(200,220,255,.25)'; gg.lineWidth = 1; const x = rnd() * 256; gg.beginPath(); gg.moveTo(x, rnd() * 256); gg.lineTo(x + 2, rnd() * 256); gg.stroke(); }
+    goutte = new THREE.CanvasTexture(c); goutte.wrapS = goutte.wrapT = THREE.RepeatWrapping; goutte.repeat.set(3, 2);
+    const vitre = new THREE.Mesh(new THREE.PlaneGeometry(2.1, 1.0), new THREE.MeshBasicMaterial({map: goutte, transparent: true, opacity: .9})); vitre.position.set(0, 1.55, -1.25); vitre.rotation.x = -.35; g.add(vitre);
+    essuie = new THREE.Group(); essuie.position.set(-.6, 1.08, -1.38); g.add(essuie); box(.02, .9, .02, '#0b0b0b', 0, .45, 0, essuie);
+  }
+  lumieres(g, {ciel: '#3c4f86', sol: '#222', hemi: .9, points: [{c: '#ffc070', i: 1.6, p: [-.2, 1.1, -.7], d: 2}, {c: '#7f9cff', i: 2, p: [0, 2.5, -2.5], d: 6}]});
+  const tableau = new THREE.PointLight('#7ad8ff', 3.2, 2.2, 2); tableau.position.set(-.4, 1.25, -.55); g.add(tableau);
+  const yanis = perso({...CAST.yanis, pose: 'volant'}, g); yanis.root.position.set(-.45, .3, .25); yanis.root.rotation.y = Math.PI;
+  const tel = new THREE.Group(); g.add(tel); tel.visible = false;
+  box(.075, .15, .01, '#111', 0, 0, 0, tel);
+  const ecr = new THREE.Mesh(new THREE.PlaneGeometry(.068, .14), new THREE.MeshBasicMaterial({map: texte([{t: 'Numéro inconnu', y: 70, s: 26, g: 1}, {t: 'Occupe-toi de tes\nchantiers, Morel.', y: 200, s: 26, a: 'left', bulle: '#2b2f3a', hb: 110}], {fond: '#000'})}));
+  ecr.position.z = .006; tel.add(ecr);
+  const haloTel = new THREE.PointLight('#cfe0ff', 0, 1.2, 2); g.add(haloTel);
+  return {g, persos: {yanis}, update(t, ev) {
+    const roule = ev.has('roule');
+    rue.position.z = -3 + (roule ? (t * 9) % 12 : 0);
+    if (goutte) { goutte.offset.y = -t * .15; essuie.rotation.z = roule || ev.has('essuie') ? Math.sin(t * 3.2) * 1.0 - .2 : -1.1; }
+    volant.rotation.z = roule ? Math.sin(t * .8) * .08 : 0;
+    if (ev.has('sms')) { if (yanis.pose !== 'telephone_main') { pose(yanis, 'telephone_main'); yanis.hips.position.y = .5; for (const j of [yanis.jg, yanis.jd]) { j.h.rotation.x = -Math.PI / 2; j.g.rotation.x = Math.PI / 2; } }
+      tel.visible = true; tel.position.set(-.45, 1.12 + .3, -.05); tel.rotation.set(-.4, 0, 0); haloTel.intensity = .5; haloTel.position.set(-.45, 1.45, -.2);
+      yanis.tete.rotation.x = .55; }
+  }};
+}
+function decorCuisineLefevre(x0) {
+  const g = new THREE.Group(); g.position.x = x0; scene.add(g);
+  box(7, .1, 7, '#b9a27f', 0, -.05, 0, g);
+  for (let i = -3; i < 4; i++) for (let j = -3; j < 4; j++) if ((i + j) % 2 === 0) box(.98, .002, .98, '#d8c9a8', i + .5, .002, j + .5, g);
+  box(7, 3, .1, '#e3d3b5', 0, 1.5, -2.6, g); box(.1, 3, 7, '#d9c7a6', -2.6, 1.5, 0, g);
+  for (let i = 0; i < 9; i++) box(.06, 3, .02, '#cdb995', -2.4 + i * .55, 1.5, -2.54, g);          // papier peint rayé
+  const f = new THREE.Mesh(new THREE.PlaneGeometry(1.1, 1.0), new THREE.MeshBasicMaterial({map: ville(false)})); f.position.set(1.4, 1.75, -2.54); g.add(f);
+  // évier + meuble ouvert
+  box(2.2, .9, .6, '#8f6d4f', -.6, .45, -2.25, g); box(2.3, .05, .65, '#e9e3d8', -.6, .92, -2.22, g);
+  box(.6, .15, .45, '#cfd3d6', -.4, .86, -2.2, g); cyl(.02, .02, .3, '#bbb', -.4, 1.08, -2.38, g);
+  const porte1 = box(.42, .7, .03, '#9b7856', -.62, .42, -1.93, g); porte1.rotation.y = 1.1; porte1.position.x = -.85;
+  const porte2 = box(.42, .7, .03, '#9b7856', -.18, .42, -1.93, g); porte2.rotation.y = -1.1; porte2.position.x = .05;
+  cyl(.03, .03, .5, '#8a8f95', -.4, .45, -2.3, g);                                                // tuyau
+  const robinet = box(.07, .07, .07, '#c43', -.4, .3, -2.2, g);                                    // robinet d'arrêt
+  // l'eau : nappe au sol + jet sous l'évier
+  const geo = new THREE.PlaneGeometry(5, 5, 30, 30); geo.rotateX(-Math.PI / 2);
+  const eau = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({color: '#4f86c0', transparent: true, opacity: .62, roughness: .08, metalness: .25, flatShading: true}));
+  eau.position.set(-.3, .04, -.6); g.add(eau); const base = geo.attributes.position.array.slice();
+  const gouttes = []; for (let i = 0; i < 26; i++) { const s = new THREE.Mesh(new THREE.SphereGeometry(.025 + rnd() * .02, 6, 4), new THREE.MeshStandardMaterial({color: '#9cc6f0', transparent: true, opacity: .85, roughness: .05})); g.add(s); gouttes.push({s, ph: rnd()}); }
+  // table et chaise de cuisine, horloge
+  box(1.0, .06, .8, '#c9a77e', 1.3, .75, -.4, g); for (const [a, b] of [[.9, -.75], [1.7, -.75], [.9, -.05], [1.7, -.05]]) box(.05, .72, .05, '#a8865d', a, .36, b, g);
+  lumieres(g, {ciel: '#cfc3a6', sol: '#4a3a2a', hemi: .5, points: [{c: '#ffe0b0', i: 6, p: [0, 2.6, -.5], d: 6, ombre: true}]});
+  const lampe = new THREE.SpotLight('#ffffff', 0, 4, .35, .5, 1.5); g.add(lampe); g.add(lampe.target);       // lampe torche de Yanis
+  const lefevre = perso({...CAST.lefevre, pose: 'mains_levees'}, g); lefevre.root.position.set(.85, 0, -.7); lefevre.root.rotation.y = -.55;
+  const yanis = perso({...CAST.yanis, pose: 'accroupi'}, g); yanis.root.position.set(-.4, 0, -1.45); yanis.root.rotation.y = Math.PI;
+  return {g, persos: {lefevre, yanis}, update(t, ev) {
+    const jet = !ev.has('coupe'); const niveau = ev.has('coupe') ? .05 : .04 + Math.min(.08, t * .002);
+    const p = geo.attributes.position.array; for (let i = 0; i < p.length; i += 3) p[i + 1] = base[i + 1] + Math.sin(base[i] * 3 + t * 2.2) * .008 + Math.cos(base[i + 2] * 4 + t * 1.7) * .008;
+    geo.attributes.position.needsUpdate = true; eau.position.y = niveau;
+    for (const d of gouttes) { const u = (t * 1.6 + d.ph) % 1; d.s.visible = jet; d.s.position.set(-.4 + (d.ph - .5) * .12, .32 + u * .5 - u * u * .9, -2.15 + u * .9); }
+    if (ev.has('torche')) { lampe.intensity = 30; lampe.position.set(-.4, .9, -1.2); lampe.target.position.set(-.4, .3, -2.2); lampe.target.updateMatrixWorld(); } else lampe.intensity = 0;
+    if (ev.has('serre')) robinet.rotation.z = t * 6;
+    if (ev.has('telephone_lefevre') && lefevre.pose !== 'telephone') pose(lefevre, 'telephone');
+    if (ev.has('debout')) { if (yanis.pose !== 'debout') { pose(yanis, 'debout'); yanis.torse.rotation.x = 0; } yanis.root.rotation.y = 1.03; lefevre.root.rotation.y = -2.11; }
+    else if (yanis.pose !== 'accroupi') { pose(yanis, 'accroupi'); yanis.root.rotation.y = Math.PI; lefevre.root.rotation.y = -.55; }
+  }};
+}
+function decorCuisineJour(x0) {
+  const g = new THREE.Group(); g.position.x = x0; scene.add(g);
+  box(8, .1, 8, '#7a5a40', 0, -.05, 0, g); box(8, 3.2, .1, '#e6dcc8', 0, 1.6, -3, g); box(.1, 3.2, 8, '#ddd2bc', -3.4, 1.6, 0, g);
+  const f = new THREE.Mesh(new THREE.PlaneGeometry(1.8, 1.3), new THREE.MeshBasicMaterial({map: ville(true)})); f.position.set(.9, 1.85, -2.94); g.add(f);
+  box(2.6, .9, .65, '#3e5c58', -1.9, .45, -2.6, g); box(2.7, .05, .7, '#d9d2c4', -1.9, .92, -2.58, g); box(2.6, .75, .4, '#3e5c58', -1.9, 2.35, -2.78, g);
+  box(1.7, .07, 1.1, '#8a5a36', .2, .78, .2, g); for (const [x, z] of [[-.55, -.25], [.95, -.25], [-.55, .65], [.95, .65]]) box(.07, .75, .07, '#6e4628', x, .375, z, g);
+  cyl(.05, .045, .11, '#e3a32b', .45, .87, .55, g); box(.3, .02, .22, '#f4f0e8', -.1, .82, .3, g);
+  const soleil = new THREE.DirectionalLight('#fff1d6', 2.6); soleil.position.set(2, 4, -5); soleil.castShadow = true; soleil.shadow.mapSize.set(1024, 1024);
+  soleil.shadow.camera.left = soleil.shadow.camera.bottom = -4; soleil.shadow.camera.right = soleil.shadow.camera.top = 4; g.add(soleil); soleil.target.position.set(x0, 0, 0); scene.add(soleil.target);
+  lumieres(g, {ciel: '#dfe8f5', sol: '#7a5a40', hemi: 1.1});
+  const yanis = perso({...CAST.yanis, pose: 'assis_tasse'}, g); yanis.root.position.set(.35, 0, 1.0); yanis.root.rotation.y = Math.PI;
+  const lea = perso({...CAST.lea, pose: 'telephone_main'}, g); lea.root.position.set(-1.2, 0, -1.1); lea.root.rotation.y = .7;
+  const tel = new THREE.Group(); lea.bd.main.add(tel); box(.075, .15, .01, '#111', 0, -.05, .06, tel);
+  const ecr = new THREE.Mesh(new THREE.PlaneGeometry(.068, .14), new THREE.MeshBasicMaterial({map: texte([{t: 'Vasseur Dépannage', y: 90, s: 24, g: 1, c: '#111'}, {t: '★★★★★', y: 150, s: 40, c: '#f2b705'}, {t: '“Très gentil”', y: 220, s: 22, c: '#333'}, {t: '“Rapide !”', y: 260, s: 22, c: '#333'}], {fond: '#f5f5f5'})}));
+  ecr.position.set(0, -.05, .066); tel.add(ecr);
+  return {g, persos: {yanis, lea}, update(t, ev) {}};
+}
+DECORS.chambre = decorChambre(0); DECORS.camion = decorCamion(20, true); DECORS.cuisine_lefevre = decorCuisineLefevre(40);
+DECORS.cuisine_jour = decorCuisineJour(60); DECORS.parking = decorCamion(80, false);
+const FONDS = {chambre: '#0b0f1e', camion: '#05070f', cuisine_lefevre: '#1a1410', cuisine_jour: '#cfdcea', parking: '#05070f'};
+
+// ---------- lecture de l'épisode ----------
+let EP = null; window.setEpisode = e => { EP = e; };
+const ease = x => x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
+const V = a => new THREE.Vector3(...a); const c0 = new THREE.Vector3();
+window.render = t => {
+  const plans = EP.plans; let p = plans[0];
+  for (const q of plans) if (t >= q.debut) p = q;
+  const d = DECORS[p.decor]; const x0 = d.g.position.x;
+  for (const k in DECORS) DECORS[k].g.visible = k === p.decor;
+  scene.background = new THREE.Color(FONDS[p.decor]);
+  const u = ease(Math.min(1, Math.max(0, (t - p.debut) / Math.max(.5, p.fin - p.debut))));
+  cam.position.lerpVectors(V(p.cam[0]), V(p.cam[1]), u); cam.position.x += x0;
+  c0.lerpVectors(V(p.cible[0]), V(p.cible[1]), u); c0.x += x0; cam.lookAt(c0);
+  cam.fov = p.fov || 44; cam.updateProjectionMatrix();
+  const ev = new Set((EP.evenements || []).filter(e => e.decor === p.decor && t >= e.debut && t <= e.fin).map(e => e.nom));
+  d.update(t, ev);
+  // qui parle : petits mouvements de tête ; les autres respirent
+  const parle = EP.repliques.find(r => t >= r.debut && t <= r.fin);
+  for (const [nom, pp] of Object.entries(d.persos)) {
+    const actif = parle && parle.qui === nom;
+    const regard = (p.regards || {})[nom] || [0, 0];
+    pp.tete.rotation.y = regard[0] + (actif ? Math.sin(t * 4) * .06 : Math.sin(t * .7) * .02);
+    if (!ev.has('sms') || nom !== 'yanis') pp.tete.rotation.x = regard[1] + (actif ? Math.sin(t * 9) * .04 : 0);
+    pp.torse.position.y = Math.sin(t * 1.5 + nom.length) * .006;
+  }
+  renderer.render(scene, cam); return true;
+};
+window.pret = true;
+</script></body></html>

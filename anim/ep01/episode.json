@@ -1,0 +1,746 @@
+{
+ "serie": "Sous pression",
+ "numero": 1,
+ "titre": "La fuite de 3 h 12",
+ "voix": {
+  "yanis": "Orus",
+  "lea": "Aoede",
+  "lefevre": "Gacrux",
+  "narrateur": "Charon"
+ },
+ "segments": {
+  "lea": [
+   [
+    0.23,
+    2.5
+   ],
+   [
+    3.0,
+    6.05
+   ],
+   [
+    6.51,
+    7.11
+   ]
+  ],
+  "lefevre": [
+   [
+    0.2,
+    5.99
+   ],
+   [
+    6.2,
+    8.0
+   ],
+   [
+    8.49,
+    13.73
+   ],
+   [
+    14.23,
+    15.69
+   ]
+  ],
+  "narrateur": [
+   [
+    0.32,
+    4.84
+   ],
+   [
+    5.34,
+    7.71
+   ]
+  ]
+ },
+ "textes": {
+  "yanis": [
+   "Coupez le compteur. J'arrive.",
+   "Elle a quatre-vingts ans, Léa.",
+   "Le robinet d'arrêt… il tourne dans le vide.",
+   "Quelqu'un l'a changé récemment ?",
+   "Combien il vous a pris ?",
+   "Pour une pièce à dix euros…",
+   "Cinq étoiles… et des robinets qui lâchent en pleine nuit.",
+   "Je vais appeler ses autres clients.",
+   "Comment il a eu mon numéro ?"
+  ],
+  "lea": [
+   "Yanis… il est trois heures du matin.",
+   "Vasseur Dépannage… cinq étoiles partout.",
+   "Tu vas faire quoi ?"
+  ],
+  "lefevre": [
+   "Monsieur Morel ? C'est madame Lefèvre… L'eau… elle sort de partout !",
+   "Je n'arrive pas à fermer le robinet !",
+   "Oui, la semaine dernière. Un monsieur très gentil. Vasseur Dépannage.",
+   "Huit cent quatre-vingt-dix euros."
+  ],
+  "narrateur": [
+   "Sous pression. Une série présentée par Prouessia, le partenaire des plombiers.",
+   "Épisode deux, demain, dix-huit heures."
+  ]
+ },
+ "deroule": [
+  {
+   "plan": "tel",
+   "decor": "chambre",
+   "duree": 1.6,
+   "cam": [
+    [
+     1.38,
+     0.9,
+     -1.1
+    ],
+    [
+     1.3,
+     0.82,
+     -1.28
+    ]
+   ],
+   "cible": [
+    [
+     1.15,
+     0.56,
+     -1.45
+    ],
+    [
+     1.15,
+     0.56,
+     -1.45
+    ]
+   ],
+   "incrust": "03 h 12",
+   "ev": [
+    "sonne"
+   ]
+  },
+  {
+   "qui": "lefevre",
+   "n": 0,
+   "pause": 0.1,
+   "decor": "chambre",
+   "cam": [
+    [
+     1.05,
+     1.35,
+     0.75
+    ],
+    [
+     0.92,
+     1.3,
+     0.45
+    ]
+   ],
+   "cible": [
+    [
+     0.4,
+     1.3,
+     -1.2
+    ],
+    [
+     0.4,
+     1.32,
+     -1.2
+    ]
+   ],
+   "ev": [
+    "decroche"
+   ],
+   "gras": 4
+  },
+  {
+   "qui": "yanis",
+   "n": 0,
+   "pause": 0.25,
+   "decor": "chambre",
+   "cam": [
+    [
+     0.85,
+     1.4,
+     -0.25
+    ],
+    [
+     0.75,
+     1.38,
+     -0.4
+    ]
+   ],
+   "cible": [
+    [
+     0.4,
+     1.42,
+     -1.25
+    ],
+    [
+     0.4,
+     1.42,
+     -1.25
+    ]
+   ],
+   "ev": [
+    "decroche"
+   ],
+   "gras": 1
+  },
+  {
+   "qui": "lea",
+   "n": 0,
+   "pause": 0.3,
+   "decor": "chambre",
+   "cam": [
+    [
+     -0.1,
+     1.42,
+     -0.35
+    ],
+    [
+     -0.15,
+     1.4,
+     -0.5
+    ]
+   ],
+   "cible": [
+    [
+     -0.4,
+     1.42,
+     -1.25
+    ],
+    [
+     -0.4,
+     1.42,
+     -1.25
+    ]
+   ],
+   "ev": [
+    "decroche"
+   ],
+   "gras": 4
+  },
+  {
+   "qui": "yanis",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "chambre",
+   "cam": [
+    [
+     0.05,
+     1.45,
+     0.0
+    ],
+    [
+     0.15,
+     1.42,
+     -0.15
+    ]
+   ],
+   "cible": [
+    [
+     0.4,
+     1.4,
+     -1.25
+    ],
+    [
+     0.4,
+     1.4,
+     -1.25
+    ]
+   ],
+   "ev": [
+    "decroche"
+   ],
+   "gras": 2,
+   "regards": {
+    "yanis": [
+     0.8,
+     0
+    ]
+   }
+  },
+  {
+   "plan": "route",
+   "decor": "camion",
+   "duree": 2.6,
+   "cam": [
+    [
+     -0.25,
+     1.62,
+     -1.65
+    ],
+    [
+     -0.3,
+     1.6,
+     -1.55
+    ]
+   ],
+   "cible": [
+    [
+     -0.45,
+     1.58,
+     0.25
+    ],
+    [
+     -0.45,
+     1.58,
+     0.25
+    ]
+   ],
+   "incrust": "03 h 27",
+   "ev": [
+    "roule"
+   ]
+  },
+  {
+   "qui": "lefevre",
+   "n": 1,
+   "pause": 0.2,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     2.3,
+     1.65,
+     1.7
+    ],
+    [
+     2.0,
+     1.55,
+     1.35
+    ]
+   ],
+   "cible": [
+    [
+     -0.2,
+     0.6,
+     -1.5
+    ],
+    [
+     -0.2,
+     0.6,
+     -1.5
+    ]
+   ],
+   "gras": 3
+  },
+  {
+   "qui": "yanis",
+   "n": 2,
+   "pause": 0.3,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     0.1,
+     0.62,
+     -1.95
+    ],
+    [
+     -0.05,
+     0.6,
+     -1.98
+    ]
+   ],
+   "cible": [
+    [
+     -0.4,
+     0.35,
+     -2.15
+    ],
+    [
+     -0.4,
+     0.32,
+     -2.2
+    ]
+   ],
+   "ev": [
+    "torche",
+    "serre"
+   ],
+   "gras": 3
+  },
+  {
+   "qui": "yanis",
+   "n": 3,
+   "pause": 0.3,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     1.44,
+     1.64,
+     0.06
+    ],
+    [
+     1.36,
+     1.62,
+     -0.02
+    ]
+   ],
+   "cible": [
+    [
+     -0.4,
+     1.6,
+     -1.45
+    ],
+    [
+     -0.4,
+     1.58,
+     -1.45
+    ]
+   ],
+   "ev": [
+    "debout",
+    "torche"
+   ],
+   "gras": 2
+  },
+  {
+   "qui": "lefevre",
+   "n": 2,
+   "pause": 0.3,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     -1.35,
+     1.66,
+     -1.61
+    ],
+    [
+     -1.28,
+     1.64,
+     -1.56
+    ]
+   ],
+   "cible": [
+    [
+     0.85,
+     1.5,
+     -0.7
+    ],
+    [
+     0.85,
+     1.5,
+     -0.7
+    ]
+   ],
+   "ev": [
+    "debout"
+   ],
+   "gras": 2
+  },
+  {
+   "qui": "yanis",
+   "n": 4,
+   "pause": 0.3,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     1.44,
+     1.64,
+     0.06
+    ],
+    [
+     1.36,
+     1.62,
+     -0.02
+    ]
+   ],
+   "cible": [
+    [
+     -0.4,
+     1.6,
+     -1.45
+    ],
+    [
+     -0.4,
+     1.58,
+     -1.45
+    ]
+   ],
+   "ev": [
+    "debout",
+    "coupe"
+   ],
+   "gras": 2
+  },
+  {
+   "qui": "lefevre",
+   "n": 3,
+   "pause": 0.5,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     -1.35,
+     1.66,
+     -1.61
+    ],
+    [
+     -1.28,
+     1.64,
+     -1.56
+    ]
+   ],
+   "cible": [
+    [
+     0.85,
+     1.5,
+     -0.7
+    ],
+    [
+     0.85,
+     1.5,
+     -0.7
+    ]
+   ],
+   "ev": [
+    "debout",
+    "coupe"
+   ],
+   "gras": 5
+  },
+  {
+   "qui": "yanis",
+   "n": 5,
+   "pause": 0.6,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     1.44,
+     1.64,
+     0.06
+    ],
+    [
+     1.36,
+     1.62,
+     -0.02
+    ]
+   ],
+   "cible": [
+    [
+     -0.4,
+     1.6,
+     -1.45
+    ],
+    [
+     -0.4,
+     1.58,
+     -1.45
+    ]
+   ],
+   "ev": [
+    "debout",
+    "coupe"
+   ],
+   "gras": 3
+  },
+  {
+   "qui": "narrateur",
+   "n": 0,
+   "pause": 0.5,
+   "carte": "sponsor",
+   "gras": 0
+  },
+  {
+   "qui": "lea",
+   "n": 1,
+   "pause": 0.4,
+   "decor": "cuisine_jour",
+   "cam": [
+    [
+     -0.3,
+     1.5,
+     0.3
+    ],
+    [
+     -0.45,
+     1.5,
+     0.0
+    ]
+   ],
+   "cible": [
+    [
+     -1.2,
+     1.35,
+     -1.1
+    ],
+    [
+     -1.2,
+     1.35,
+     -1.1
+    ]
+   ],
+   "incrust": "Le lendemain",
+   "gras": 3
+  },
+  {
+   "qui": "yanis",
+   "n": 6,
+   "pause": 0.3,
+   "decor": "cuisine_jour",
+   "cam": [
+    [
+     0.1,
+     1.38,
+     -0.45
+    ],
+    [
+     0.16,
+     1.34,
+     -0.25
+    ]
+   ],
+   "cible": [
+    [
+     0.35,
+     1.28,
+     1.0
+    ],
+    [
+     0.35,
+     1.28,
+     1.0
+    ]
+   ],
+   "gras": 4
+  },
+  {
+   "qui": "lea",
+   "n": 2,
+   "pause": 0.3,
+   "decor": "cuisine_jour",
+   "cam": [
+    [
+     -0.6,
+     1.5,
+     0.6
+    ],
+    [
+     -0.7,
+     1.5,
+     0.4
+    ]
+   ],
+   "cible": [
+    [
+     -1.2,
+     1.45,
+     -1.1
+    ],
+    [
+     -1.2,
+     1.45,
+     -1.1
+    ]
+   ],
+   "gras": 0
+  },
+  {
+   "qui": "yanis",
+   "n": 7,
+   "pause": 0.3,
+   "decor": "cuisine_jour",
+   "cam": [
+    [
+     -0.35,
+     1.32,
+     -0.15
+    ],
+    [
+     -0.2,
+     1.3,
+     0
+    ]
+   ],
+   "cible": [
+    [
+     0.35,
+     1.24,
+     1.0
+    ],
+    [
+     0.35,
+     1.24,
+     1.0
+    ]
+   ],
+   "gras": 3
+  },
+  {
+   "plan": "sms",
+   "decor": "parking",
+   "duree": 3.4,
+   "cam": [
+    [
+     -0.42,
+     1.52,
+     0.16
+    ],
+    [
+     -0.44,
+     1.49,
+     0.1
+    ]
+   ],
+   "cible": [
+    [
+     -0.45,
+     1.42,
+     -0.05
+    ],
+    [
+     -0.45,
+     1.42,
+     -0.05
+    ]
+   ],
+   "incrust": "22 h 40",
+   "ev": [
+    "sms"
+   ],
+   "soustitre": "Numéro inconnu : « Occupe-toi de tes chantiers, Morel. »"
+  },
+  {
+   "qui": "yanis",
+   "n": 8,
+   "pause": 0.4,
+   "decor": "parking",
+   "cam": [
+    [
+     -0.3,
+     1.6,
+     -0.85
+    ],
+    [
+     -0.35,
+     1.58,
+     -0.7
+    ]
+   ],
+   "cible": [
+    [
+     -0.45,
+     1.6,
+     0.25
+    ],
+    [
+     -0.45,
+     1.6,
+     0.25
+    ]
+   ],
+   "ev": [
+    "sms"
+   ],
+   "gras": 2,
+   "regards": {
+    "yanis": [
+     0,
+     0.2
+    ]
+   }
+  },
+  {
+   "qui": "narrateur",
+   "n": 1,
+   "pause": 0.8,
+   "carte": "fin",
+   "gras": 0
+  }
+ ]
+}
