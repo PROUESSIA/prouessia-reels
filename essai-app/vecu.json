@@ -1,0 +1,112 @@
+{
+ "titre": "Le client qui dit <b>«&nbsp;je vais réfléchir&nbsp;»</b>",
+ "phrases": [
+  {
+   "html": "",
+   "clip": "7376",
+   "debut": 3.0,
+   "cx": 0.35,
+   "sens": 1
+  },
+  {
+   "html": "Vous vous <b>déplacez</b>",
+   "clip": "85349",
+   "debut": 1.0,
+   "cx": 0.2,
+   "sens": 1
+  },
+  {
+   "html": "Vous trouvez <b>la fuite</b>",
+   "clip": "9517",
+   "debut": 3.0,
+   "cx": 0.6,
+   "sens": -1
+  },
+  {
+   "html": "Vous faites le devis <b>sur place</b>",
+   "clip": "app:01-nouveau-devis",
+   "debut": 2,
+   "cx": 0.6,
+   "sens": 1,
+   "cy": 0.45
+  },
+  {
+   "html": "Et il vous dit&nbsp;: <b>«&nbsp;je vais réfléchir&nbsp;»</b>",
+   "clip": "109877",
+   "debut": 1.0,
+   "cx": 0.4,
+   "sens": -1
+  },
+  {
+   "html": "<b>Une semaine.</b><br>Rien.",
+   "clip": "115",
+   "debut": 2.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Vous n'osez pas <b>relancer</b>",
+   "clip": "2348",
+   "debut": 5.0,
+   "cx": 0.55,
+   "sens": -1
+  },
+  {
+   "html": "Vous ne voulez pas passer <b>pour un vendeur</b>",
+   "clip": "4729",
+   "debut": 2.0,
+   "cx": 0.45,
+   "sens": 1
+  },
+  {
+   "html": "<b>Trois semaines</b> plus tard…",
+   "clip": "147075",
+   "debut": 4.0,
+   "cx": 0.3,
+   "sens": -1
+  },
+  {
+   "html": "Il a signé <b>avec un autre</b>",
+   "clip": "4974",
+   "debut": 2.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Celui qui <b>a rappelé</b>",
+   "clip": "85350",
+   "debut": 1.0,
+   "cx": 0.6,
+   "sens": -1
+  },
+  {
+   "html": "Écrivez <b>«&nbsp;offre valable un&nbsp;mois&nbsp;»</b> sur le devis",
+   "clip": "87050",
+   "debut": 2.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Ça vous donne <b>une raison</b> de rappeler",
+   "clip": "app:14-relance-auto",
+   "debut": 6,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.4
+  },
+  {
+   "html": "Et vous, <b>vous relancez</b> ou vous attendez&nbsp;?",
+   "clip": "257093",
+   "debut": 4.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "109878",
+   "debut": 2.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ]
+}
