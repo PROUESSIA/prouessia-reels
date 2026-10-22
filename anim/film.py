@@ -177,7 +177,7 @@ def montage(items, total):
           f"[f][d1]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=300[fd];[d2][fd]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5[a]")
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', img, '-i', os.path.join(EPD, 'calques.mov'), '-i', os.path.join(EPD, 'dialogue.wav'), '-i', os.path.join(ICI, 'sons', fond + '.wav'),
                     '-filter_complex', '[0:v][1:v]overlay=0:0:shortest=1,format=yuv420p[v];' + af, '-map', '[v]', '-map', '[a]',
-                    '-t', f'{total:.3f}', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out], check=True)
+                    '-t', f'{total:.3f}', '-c:v', 'libx264', '-preset', 'medium', '-profile:v', 'main', '-level', '4.0', '-pix_fmt', 'yuv420p', '-crf', '23', '-maxrate', '1800k', '-bufsize', '3600k', '-g', '30', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', out], check=True)
     return out
 
 if __name__ == '__main__':

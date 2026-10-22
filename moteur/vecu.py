@@ -140,8 +140,7 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
     inp += ['-i', os.path.join(d, 'voix.wav')]  # règle 10 : la voix, rien d'autre
     fil.append(f"[{2*n}:a]apad,atrim=0:{TOTAL:.2f},loudnorm=I=-14:TP=-1.5[a]")
     out = os.path.join(d, 'video.mp4')
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', *inp, '-filter_complex', ';'.join(fil), '-map', '[v]', '-map', '[a]', '-c:v', 'libx264',
-                    '-preset', 'medium', '-crf', '20', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out], check=True)
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', *inp, '-filter_complex', ';'.join(fil), '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', 'medium', '-profile:v', 'main', '-level', '4.0', '-pix_fmt', 'yuv420p', '-crf', '23', '-maxrate', '1800k', '-bufsize', '3600k', '-g', '30', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', out], check=True)
     import build; build.HERE = d; ok = build.controle(out)
     assert ok, 'règle 6 : mouvement insuffisant, refaire'
     u = json.load(open(os.path.join(CLIPS, 'utilises.json')))
