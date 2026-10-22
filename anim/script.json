@@ -1,0 +1,15 @@
+{"repliques": [
+ {"qui": "ines", "texte": "Karim, il est vingt-deux heures.", "plan": "large", "pause_avant": 0.0},
+ {"qui": "karim", "texte": "Je finis le devis de madame Bernard.", "plan": "karim"},
+ {"qui": "ines", "texte": "La fuite sous l'évier ? C'était il y a dix jours.", "plan": "ines"},
+ {"qui": "karim", "texte": "Je l'avais noté sur un papier. Dans la camionnette.", "plan": "papiers"},
+ {"qui": "ines", "texte": "Elle a appelé cet après-midi.", "plan": "ines2"},
+ {"qui": "karim", "texte": "Elle attend toujours ?", "plan": "karim2"},
+ {"qui": "ines", "texte": "Non. Elle a signé avec un autre plombier.", "plan": "ines3"},
+ {"qui": "ines", "texte": "Il lui a envoyé son devis le jour même.", "plan": "deux", "pause_avant": 0.15},
+ {"qui": "karim", "texte": "Et moi, je l'ai même pas relancée.", "plan": "karim3", "pause_avant": 0.5},
+ {"qui": "narrateur", "texte": "Un devis fait sur place.", "plan": "app:01-nouveau-devis", "pause_avant": 0.4},
+ {"qui": "narrateur", "texte": "Envoyé en un clic.", "plan": "app:05-envoyer-devis", "pause_avant": 0.1},
+ {"qui": "narrateur", "texte": "Relancé tout seul.", "plan": "app:14-relance-auto", "pause_avant": 0.1},
+ {"qui": "narrateur", "texte": "Prouessia, le partenaire des plombiers. prouessia point f r.", "plan": "fin", "pause_avant": 0.15}
+]}
