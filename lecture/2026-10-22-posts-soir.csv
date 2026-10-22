@@ -1,0 +1,8 @@
+200
+id,status,scheduled_at,hook,video_path
+886c5d8e-45b0-4ebd-8483-0a71956761b5,en_attente,"2026-10-23 16:00:00+00","Fini les devis à 22 h sur la table de la cuisine.",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/15/video.mp4
+e63a5932-be3c-4d42-ae0b-784c7339a8f0,en_attente,"2026-10-23 07:00:00+00","Un devis en deux minutes, pas en deux heures.",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/14/video.mp4
+f8ab481f-ce9e-4688-8b2a-53ee6c3f9fca,publie,"2026-10-22 16:00:00+00","POV : votre devis est parti il y a 10 jours. Silence radio.",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/13/video.mp4
+51988e6d-2077-484b-9b42-7120a90dcd71,publie,"2026-10-22 07:00:00+00","22 h, une fuite chez un client. Avant la caisse à outils : le devis.",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/12/video.mp4
+a094a648-226c-4c75-b064-37846f3ba951,publie,"2026-10-21 07:00:00+00","Une ligne obligatoire sur votre devis de dépannage : sa durée de validité.",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/11/video.mp4
+6fe8f2d4-c053-4341-a1a2-166c522e8c1a,publie,"2026-10-20 07:00:00+00","Vrai ou faux : sans date sur le devis, vous avez tout votre temps.",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/10/video.mp4
