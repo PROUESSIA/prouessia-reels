@@ -23,9 +23,9 @@ REPLIQUES = [  # qui, n° de réplique du personnage, nb de mots en gras à la f
     ('ines', 0, 2, 'large', .15), ('karim', 0, 2, 'karim', .3), ('ines', 1, 2, 'ines', .3), ('karim', 1, 3, 'papiers', .3),
     ('ines', 2, 2, 'ines2', .3), ('karim', 2, 1, 'karim2', .25), ('ines', 3, 3, 'ines3', .3), ('ines', 4, 3, 'deux', .15),
     ('karim', 3, 3, 'karim3', .6),
-    ('narrateur', 0, 2, 'app:01-nouveau-devis', .6), ('narrateur', 1, 3, 'app:05-envoyer-devis', .15),
-    ('narrateur', 2, 2, 'app:14-relance-auto', .15), ('narrateur', 3, 0, 'fin', .25)]
-APP = {'app:01-nouveau-devis': 3.0, 'app:05-envoyer-devis': 4.5, 'app:14-relance-auto': 6.0}  # seconde où l'action commence
+    ('narrateur', 0, 2, 'app:01-nouveau-devis', .6), ('narrateur', 1, 3, 'app:05-envoyer-devis', .7),
+    ('narrateur', 2, 2, 'app:14-relance-auto', .7), ('narrateur', 3, 0, 'fin', .7)]
+APP = {'app:01-nouveau-devis': 3.0, 'app:05-envoyer-devis': 7.1, 'app:14-relance-auto': 0.2}  # seconde où l'action commence
 
 def voix():
     pistes = {k: sf.read(os.path.join(ICI, f'{k}-court.wav'))[0] for k in SEG}
@@ -47,7 +47,7 @@ def voix():
 
 CSS = f"""{FONTS}*{{margin:0;padding:0;box-sizing:border-box}}body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-serif}}
 .st{{position:absolute;left:70px;right:70px;top:TOPpx;text-align:center;color:#fff;font-weight:700;font-size:62px;line-height:1.15;letter-spacing:-.01em;
-text-shadow:0 0 4px rgba(0,0,0,.9),0 3px 14px rgba(0,0,0,.8)}} .st b{{font-weight:900;color:{MUST};display:block}} .st .x{{visibility:hidden}}"""
+text-shadow:0 0 4px rgba(0,0,0,.9),0 3px 14px rgba(0,0,0,.8)}} .st{{-webkit-text-stroke:3px #000;paint-order:stroke fill}} .st b{{font-weight:900;color:{MUST}}} .st .x{{visibility:hidden}}"""
 
 def sous_titres(tl, total):
     """Une image par mot (le texte apparaît mot à mot, comme les références) → piste RGBA."""
@@ -59,7 +59,7 @@ def sous_titres(tl, total):
         pg.set_content('<html><body></body></html>'); pg.screenshot(path=vide, omit_background=True)
         for r in tl:
             if not r['mots']: continue
-            top = 1290 if r['plan'].startswith('app:') else 1120
+            top = 1460 if r['plan'].startswith('app:') else 1120
             mots = [m for m, _, _ in r['mots']]; ng = r['gras']
             for j, (m, ms, me) in enumerate(r['mots']):
                 if ms > t:
@@ -67,11 +67,12 @@ def sous_titres(tl, total):
                 def span(i, w): return f'<span class="{"" if i <= j else "x"}">{w}</span>'
                 normal = ' '.join(span(i, w) for i, w in enumerate(mots[:len(mots) - ng]))
                 gras = ' '.join(span(i + len(mots) - ng, w) for i, w in enumerate(mots[len(mots) - ng:]))
-                html = f'<div class="st">{normal}{"<b>" + gras + "</b>" if ng else ""}</div>'
+                html = f'<div class="st"><span class="l">{normal} {"<b>" + gras + "</b>" if ng else ""}</span></div>'
                 f = os.path.join(d, f'{k:03d}.png'); k += 1
                 pg.set_content(f'<html><head><meta charset="utf-8"><style>{CSS.replace("TOP", str(top))}</style></head><body>{html}</body></html>')
                 pg.wait_for_timeout(60); pg.screenshot(path=f, omit_background=True)
-                fin = r['mots'][j + 1][1] if j + 1 < len(r['mots']) else r['fin'] + .35
+                suiv = next((x['mots'][0][1] for x in tl[tl.index(r) + 1:] if x['mots']), r['plan_fin'])
+                fin = r['mots'][j + 1][1] if j + 1 < len(r['mots']) else min(r['fin'] + .35, suiv, r['plan_fin'])
                 liste.append((f, fin - t)); t = fin
         b.close()
     liste.append((vide, max(.1, total - t)))
@@ -118,7 +119,7 @@ def montage(tl, total):
     der = sorted(os.listdir(os.path.join(ICI, 'frames')))[int(t3d * FPS) - 1]
     pf = os.path.join(d, '9-fin.mp4')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-loop', '1', '-t', f'{du:.3f}', '-i', os.path.join(ICI, 'frames', der), '-loop', '1', '-t', f'{du:.3f}', '-i', os.path.join(ICI, 'fin.png'),
-                    '-filter_complex', f"[0:v]boxblur=25:3,eq=brightness=-0.3,scale={int(W*1.12)}:-2,zoompan=z='1+0.0008*on':d=1:s={W}x{H}:fps={FPS}[b];[1:v]format=rgba,fps={FPS}[c];[b][c]overlay=0:0,format=yuv420p[v]",
+                    '-filter_complex', f"[0:v]boxblur=25:3,eq=brightness=-0.45:saturation=0.25,scale={int(W*1.12)}:-2,zoompan=z='1+0.0008*on':d=1:s={W}x{H}:fps={FPS}[b];[1:v]format=rgba,fps={FPS}[c];[b][c]overlay=0:0,format=yuv420p[v]",
                     '-map', '[v]', '-t', f'{du:.3f}', '-c:v', 'libx264', '-crf', '18', pf], check=True); parts.append(pf)
     with open(os.path.join(d, 'liste.txt'), 'w') as fh:
         for p in parts: fh.write(f"file '{p}'\n")

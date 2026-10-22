@@ -452,68 +452,68 @@
  {
   "qui": "narrateur",
   "plan": "app:05-envoyer-devis",
-  "debut": 19.52,
-  "fin": 20.4,
+  "debut": 20.07,
+  "fin": 20.95,
   "gras": 3,
   "mots": [
    [
     "Envoyé",
-    19.56,
-    19.86
+    20.11,
+    20.41
    ],
    [
     "en",
-    19.9,
-    19.96
+    20.45,
+    20.51
    ],
    [
     "un",
-    20.0,
-    20.06
+    20.55,
+    20.61
    ],
    [
     "clic.",
-    20.1,
-    20.32
+    20.65,
+    20.87
    ]
   ],
   "plan_debut": 19.37,
-  "plan_fin": 20.4
+  "plan_fin": 20.95
  },
  {
   "qui": "narrateur",
   "plan": "app:14-relance-auto",
-  "debut": 20.55,
-  "fin": 21.33,
+  "debut": 21.65,
+  "fin": 22.43,
   "gras": 2,
   "mots": [
    [
     "Relancé",
-    20.59,
-    20.91
+    21.69,
+    22.01
    ],
    [
     "tout",
-    20.93,
-    21.03
+    22.03,
+    22.13
    ],
    [
     "seul.",
-    21.07,
-    21.25
+    22.17,
+    22.35
    ]
   ],
-  "plan_debut": 20.4,
-  "plan_fin": 21.33
+  "plan_debut": 20.95,
+  "plan_fin": 22.43
  },
  {
   "qui": "narrateur",
   "plan": "fin",
-  "debut": 21.58,
-  "fin": 24.6,
+  "debut": 23.13,
+  "fin": 26.15,
   "gras": 0,
   "mots": [],
-  "plan_debut": 21.33,
-  "plan_fin": 25.6
+  "plan_debut": 22.43,
+  "plan_fin": 27.15
  }
 ]
