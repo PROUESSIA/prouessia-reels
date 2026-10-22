@@ -24,3 +24,21 @@ tc = t_(.18); clac = (np.sin(2 * np.pi * 160 * tc) * .8 + rng.normal(0, 1, len(t
 place(g, goutte(1700, 600, .12), 1.75, .8); place(g, goutte(1300, 450, .12), 2.05, .45)
 g /= np.abs(g).max() / .85; sf.write(f'{D}/generique.wav', g, SR)
 print('ok')
+
+# fond de tension (« musique sans instrument ») : battements de cœur, tic-tac, gouttes, souffle grave — 96 BPM, 70 s
+def coeur(g=1.0):
+    tb = t_(.16); f = 52 + 40 * np.exp(-tb * 30)
+    s = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-tb * 22); return s * g
+def tic():
+    tb = t_(.025); return rng.normal(0, 1, len(tb)) * np.exp(-tb * 260) * .6 + np.sin(2 * np.pi * 3200 * tb) * np.exp(-tb * 300) * .4
+L = 70; fond = np.zeros(int(L * SR)); beat = 60 / 96
+nb = int(L / beat)
+for k in range(nb):
+    tb = k * beat; mont = min(1.0, .45 + k / nb)                  # la tension monte doucement
+    place(fond, coeur(1.0 * mont), tb); place(fond, coeur(.6 * mont), tb + .2)
+    place(fond, tic(), tb + beat / 2, .35); place(fond, tic(), tb, .2)
+    if k % 8 == 5: place(fond, goutte(1500 + 300 * (k % 3), 500, .1), tb + beat * .75, .35)
+n = len(fond); br = np.cumsum(rng.normal(0, 1, n)); br -= np.convolve(br, np.ones(2400) / 2400, 'same')   # souffle grave (bruit brun)
+br = br / np.abs(br).max() * (.55 + .45 * np.sin(2 * np.pi * np.arange(n) / SR / 7.5)); fond += br * .35
+fond /= np.abs(fond).max() / .8; sf.write(f'{D}/tension.wav', fond, SR)
+print('tension ok')

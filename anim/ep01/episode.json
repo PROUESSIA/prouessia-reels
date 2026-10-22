@@ -726,5 +726,12 @@
    "son": "generique",
    "volume": 0.6
   }
- ]
+ ],
+ "rythme": {
+  "pauses": 0.4,
+  "silences": 0.55,
+  "vitesse": 1.12
+ },
+ "fond": "tension",
+ "volume_fond": 0.32
 }

@@ -41,16 +41,24 @@ def preparer():
         else:
             ch = chunks_de(wav); lignes[qui] = []
             for t, (a, b) in zip(EP['textes'][qui], EP['segments'][qui]): lignes[qui].append((a, b, mots_ligne(t, a, b, ch)))
+    R = EP.get('rythme', {}); fp, fs, v = R.get('pauses', 1), R.get('silences', 1), R.get('vitesse', 1)
+    if v != 1:   # voix accélérée sans changer la hauteur
+        for qui in list(pistes):
+            src = os.path.join(EPD, f'{qui}-court.wav'); dst = os.path.join(EPD, f'{qui}-v.wav')
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', src, '-af', f'atempo={v}', '-ar', str(SR), dst], check=True)
+            pistes[qui], _ = sf.read(dst)
+            lignes[qui] = [(a / v, b / v, [(w, x / v, y / v) for w, x, y in ms]) for a, b, ms in lignes[qui]]
     out, t, items = [], 0.0, []
     for it in EP['deroule']:
         if 'qui' in it:
             a, b, ms = lignes[it['qui']][it['n']]; seg = pistes[it['qui']][int((a - .04) * SR):int((b + .08) * SR)]
-            out.append(np.zeros(int(it.get('pause', .3) * SR))); t0 = t; t += it.get('pause', .3)
+            pz = it.get('pause', .3) * fp; out.append(np.zeros(int(pz * SR))); t0 = t; t += pz
             items.append({**it, 'debut': round(t0, 3), 'parole': [round(t, 3), round(t + len(seg) / SR, 3)], 'texte': EP['textes'][it['qui']][it['n']],
                           'mots': [(w, round(t + x - a + .04, 3), round(t + y - a + .04, 3)) for w, x, y in ms]})
             out.append(seg); t += len(seg) / SR
         else:
-            items.append({**it, 'debut': round(t, 3), 'parole': None, 'mots': []}); out.append(np.zeros(int(it['duree'] * SR))); t += it['duree']
+            du = it['duree'] * (fs if 'decor' in it else 1)
+            items.append({**it, 'debut': round(t, 3), 'parole': None, 'mots': []}); out.append(np.zeros(int(du * SR))); t += du
     out.append(np.zeros(int(1.2 * SR))); total = t + 1.2
     piste = np.concatenate(out + [np.zeros(SR * 3)])
     for it in items:                                   # signature sonore : sonnerie et générique (aucune musique)
@@ -149,7 +157,8 @@ def montage(items, total):
             while not os.path.exists(f'{fr}/{n:05d}.jpg'): n -= 1
             carte(it['carte'], f'{fr}/{n:05d}.jpg', du, out)
         else:
-            n0 = int(it['debut'] * FPS); nb = int(round(du * FPS))
+            src = json.load(open(os.path.join(EPD, 'items-rendu.json'))) if '--reutiliser' in sys.argv else None
+            n0 = int((src[i]['debut'] if src else it['debut']) * FPS); nb = int(round(du * FPS))
             subprocess.run(['ffmpeg', '-v', 'error', '-y', '-framerate', str(FPS), '-start_number', str(n0), '-i', f'{fr}/%05d.jpg', '-frames:v', str(nb),
                             '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', out], check=True)
         parts.append(out)
@@ -158,8 +167,12 @@ def montage(items, total):
     img = os.path.join(d, 'images.mp4')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', os.path.join(d, 'liste.txt'), '-c', 'copy', img], check=True)
     out = os.path.join(EPD, 'film.mp4')
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', img, '-i', os.path.join(EPD, 'calques.mov'), '-i', os.path.join(EPD, 'dialogue.wav'),
-                    '-filter_complex', '[0:v][1:v]overlay=0:0:shortest=1,format=yuv420p[v];[2:a]loudnorm=I=-14:TP=-1.5[a]', '-map', '[v]', '-map', '[a]',
+    fin_fond = next((it['debut'] for it in items if it.get('carte') == 'fin'), total)
+    fond = EP.get('fond', 'tension'); vol = EP.get('volume_fond', .32)
+    af = (f"[2:a]asplit=2[d1][d2];[3:a]atrim=0:{fin_fond:.2f},afade=t=in:d=0.4,afade=t=out:st={fin_fond - .6:.2f}:d=0.6,volume={vol}[f];"
+          f"[f][d1]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=300[fd];[d2][fd]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5[a]")
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', img, '-i', os.path.join(EPD, 'calques.mov'), '-i', os.path.join(EPD, 'dialogue.wav'), '-i', os.path.join(ICI, 'sons', fond + '.wav'),
+                    '-filter_complex', '[0:v][1:v]overlay=0:0:shortest=1,format=yuv420p[v];' + af, '-map', '[v]', '-map', '[a]',
                     '-t', f'{total:.3f}', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out], check=True)
     return out
 

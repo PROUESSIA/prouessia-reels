@@ -17,7 +17,8 @@ Décision de la fondatrice (22/10/2026) : les vidéos de l'après-midi deviennen
 3. Fin : carte muette « Épisode N+1, demain 18 h » + « Histoire et personnages fictifs » (3 s), avec le générique sonore. Toujours un cliffhanger juste avant.
 4. Fiction : aucun vrai nom d'entreprise ni de personne. Le concurrent s'appelle **Vasseur Dépannage** (inventé). Les chiffres dits par les personnages sont de la fiction, pas des faits (la règle 1 d'AUTOMATION.md ne s'applique pas aux dialogues de fiction, mais rien de dangereux ni de faux conseil technique présenté comme vrai).
 5. Vouvoiement non obligatoire entre personnages (c'est de la fiction) ; la voix de marque « on/nous » ne concerne que la carte sponsor.
-6. Pas de musique. Voix Gemini : une voix par personnage (voir ci-dessous).
+6. **Rythme rapide** (demande du 22/10) : `"rythme": {"pauses": 0.4, "silences": 0.55, "vitesse": 1.12}` dans episode.json (pauses courtes, plans muets courts, voix accélérées de 12 % sans changer la hauteur). Viser 40 à 55 s.
+7. **« Musique sans instrument »** (demande du 22/10) : fond de tension `anim/sons/tension.wav` (battements de cœur, tic-tac, gouttes, souffle grave, 96 BPM), baissé automatiquement sous les voix, coupé à la carte de fin où le générique prend le relais. Aucun instrument de musique. Voix Gemini : une voix par personnage.
 
 ## Personnages
 | Personnage | Rôle | Look | Voix Gemini |
