@@ -52,6 +52,11 @@ def preparer():
         else:
             items.append({**it, 'debut': round(t, 3), 'parole': None, 'mots': []}); out.append(np.zeros(int(it['duree'] * SR))); t += it['duree']
     out.append(np.zeros(int(1.2 * SR))); total = t + 1.2
+    piste = np.concatenate(out + [np.zeros(SR * 3)])
+    for it in items:                                   # signature sonore : sonnerie et générique (aucune musique)
+        if it.get('son'):
+            x, _ = sf.read(os.path.join(ICI, 'sons', it['son'] + '.wav')); i = int(it['debut'] * SR); piste[i:i + len(x)] += x * it.get('volume', .5)
+    out = [piste[:int(total * SR)]]
     for i, it in enumerate(items): it['fin'] = items[i + 1]['debut'] if i + 1 < len(items) else round(total, 3)
     sf.write(os.path.join(EPD, 'dialogue.wav'), np.concatenate(out), SR)
     # pour film.html : plans 3D + événements + répliques
@@ -118,7 +123,7 @@ def carte(nom, fond, du, out):
     from playwright.sync_api import sync_playwright
     ico = base64.b64encode(open(os.path.join(ROOT, 'email', 'icone-prouessia.png'), 'rb').read()).decode()
     if nom == 'sponsor':
-        corps = f"""<div class="t">{EP['serie'].upper()}</div><div class="s">une série présentée par</div><div class="m"><img src="data:image/png;base64,{ico}">Prouessia</div><div class="p">le partenaire des plombiers</div>"""
+        corps = f"""<div class="s" style="margin:0">présenté par</div><div class="m"><img src="data:image/png;base64,{ico}">Prouessia</div>"""
     else:
         corps = f"""<div class="t">{EP['serie'].upper()}</div><div class="e">Épisode {EP['numero'] + 1}<br><b>demain, 18 h</b></div><div class="s2">Abonnez-vous pour ne pas rater la suite</div>
 <div class="f">Histoire et personnages fictifs · avec <b>Prouessia</b>, le partenaire des plombiers</div>"""

@@ -3,15 +3,14 @@
  "numero": 1,
  "titre": "La fuite de 3 h 12",
  "voix": {
-  "yanis": "Orus",
+  "julien": "Orus",
   "lea": "Aoede",
-  "lefevre": "Gacrux",
-  "narrateur": "Charon"
+  "lefevre": "Gacrux"
  },
  "segments": {
   "lea": [
    [
-    0.23,
+    1.41,
     2.5
    ],
    [
@@ -40,20 +39,10 @@
     14.23,
     15.69
    ]
-  ],
-  "narrateur": [
-   [
-    0.32,
-    4.84
-   ],
-   [
-    5.34,
-    7.71
-   ]
   ]
  },
  "textes": {
-  "yanis": [
+  "julien": [
    "Coupez le compteur. J'arrive.",
    "Elle a quatre-vingts ans, Léa.",
    "Le robinet d'arrêt… il tourne dans le vide.",
@@ -65,7 +54,7 @@
    "Comment il a eu mon numéro ?"
   ],
   "lea": [
-   "Yanis… il est trois heures du matin.",
+   "Il est trois heures du matin…",
    "Vasseur Dépannage… cinq étoiles partout.",
    "Tu vas faire quoi ?"
   ],
@@ -74,17 +63,13 @@
    "Je n'arrive pas à fermer le robinet !",
    "Oui, la semaine dernière. Un monsieur très gentil. Vasseur Dépannage.",
    "Huit cent quatre-vingt-dix euros."
-  ],
-  "narrateur": [
-   "Sous pression. Une série présentée par Prouessia, le partenaire des plombiers.",
-   "Épisode deux, demain, dix-huit heures."
   ]
  },
  "deroule": [
   {
    "plan": "tel",
    "decor": "chambre",
-   "duree": 1.6,
+   "duree": 1.8,
    "cam": [
     [
      1.38,
@@ -112,7 +97,9 @@
    "incrust": "03 h 12",
    "ev": [
     "sonne"
-   ]
+   ],
+   "son": "sonnerie",
+   "volume": 0.55
   },
   {
    "qui": "lefevre",
@@ -149,7 +136,7 @@
    "gras": 4
   },
   {
-   "qui": "yanis",
+   "qui": "julien",
    "n": 0,
    "pause": 0.25,
    "decor": "chambre",
@@ -217,7 +204,7 @@
    "gras": 4
   },
   {
-   "qui": "yanis",
+   "qui": "julien",
    "n": 1,
    "pause": 0.3,
    "decor": "chambre",
@@ -250,7 +237,7 @@
    ],
    "gras": 2,
    "regards": {
-    "yanis": [
+    "julien": [
      0.8,
      0
     ]
@@ -321,7 +308,7 @@
    "gras": 3
   },
   {
-   "qui": "yanis",
+   "qui": "julien",
    "n": 2,
    "pause": 0.3,
    "decor": "cuisine_lefevre",
@@ -356,7 +343,7 @@
    "gras": 3
   },
   {
-   "qui": "yanis",
+   "qui": "julien",
    "n": 3,
    "pause": 0.3,
    "decor": "cuisine_lefevre",
@@ -425,7 +412,7 @@
    "gras": 2
   },
   {
-   "qui": "yanis",
+   "qui": "julien",
    "n": 4,
    "pause": 0.3,
    "decor": "cuisine_lefevre",
@@ -495,7 +482,7 @@
    "gras": 5
   },
   {
-   "qui": "yanis",
+   "qui": "julien",
    "n": 5,
    "pause": 0.6,
    "decor": "cuisine_lefevre",
@@ -530,11 +517,9 @@
    "gras": 3
   },
   {
-   "qui": "narrateur",
-   "n": 0,
-   "pause": 0.5,
    "carte": "sponsor",
-   "gras": 0
+   "duree": 1.8,
+   "pause": 0
   },
   {
    "qui": "lea",
@@ -569,7 +554,7 @@
    "gras": 3
   },
   {
-   "qui": "yanis",
+   "qui": "julien",
    "n": 6,
    "pause": 0.3,
    "decor": "cuisine_jour",
@@ -631,7 +616,7 @@
    "gras": 0
   },
   {
-   "qui": "yanis",
+   "qui": "julien",
    "n": 7,
    "pause": 0.3,
    "decor": "cuisine_jour",
@@ -696,7 +681,7 @@
    "soustitre": "Numéro inconnu : « Occupe-toi de tes chantiers, Morel. »"
   },
   {
-   "qui": "yanis",
+   "qui": "julien",
    "n": 8,
    "pause": 0.4,
    "decor": "parking",
@@ -729,18 +714,17 @@
    ],
    "gras": 2,
    "regards": {
-    "yanis": [
+    "julien": [
      0,
      0.2
     ]
    }
   },
   {
-   "qui": "narrateur",
-   "n": 1,
-   "pause": 0.8,
    "carte": "fin",
-   "gras": 0
+   "duree": 3.2,
+   "son": "generique",
+   "volume": 0.6
   }
  ]
 }

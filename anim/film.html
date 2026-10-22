@@ -61,6 +61,7 @@ function perso(o, parent) {
   if (o.longs) { box(.28, .42, .09, o.cheveux, 0, .02, -.12, tete); box(.05, .3, .2, o.cheveux, -.135, .1, -.03, tete); box(.05, .3, .2, o.cheveux, .135, .1, -.03, tete); }
   else if (!o.chignon) { box(.03, .1, .18, o.cheveux, -.13, .24, -.04, tete); box(.03, .1, .18, o.cheveux, .13, .24, -.04, tete); }
   if (o.barbe) { box(.25, .09, .06, o.cheveux, 0, .03, .11, tete); box(.04, .12, .2, o.cheveux, -.12, .07, .02, tete); box(.04, .12, .2, o.cheveux, .12, .07, .02, tete); }
+  if (o.casquette) { box(.29, .1, .29, o.casquette, 0, .32, 0, tete); box(.27, .025, .16, o.casquette, 0, .285, .2, tete); }
   if (o.lunettes) { box(.08, .04, .01, M('#222'), -.06, .17, .13, tete); box(.08, .04, .01, M('#222'), .06, .17, .13, tete); }
   const bras = s => { const ep = new THREE.Group(); ep.position.set(s * .27, .55, 0); torse.add(ep);
     box(.12, .3, .13, o.haut, 0, -.15, 0, ep); const coude = new THREE.Group(); coude.position.y = -.3; coude.rotation.order = 'YXZ'; ep.add(coude);
@@ -94,7 +95,7 @@ function pose(p, nom) {
 // ---------- décors (chacun à son propre emplacement X) ----------
 const DECORS = {}; const PERSOS = {};
 const CAST = {
-  yanis:   {peau: '#c48a5e', cheveux: '#1d140e', haut: '#2c3e6b', col: '#f2b705', bas: '#3b3f47', chaussures: '#3a2a1c', barbe: true},
+  julien:  {peau: '#d9a27a', cheveux: '#6d6a66', haut: '#3d4a5c', col: '#f2b705', bas: '#2f3238', chaussures: '#3a2a1c', casquette: '#8a2b2b'},
   lea:     {peau: '#e2b28f', cheveux: '#6b3b1f', haut: '#3f7a6a', bas: '#3a4560', chaussures: '#e8e2d6', longs: true},
   lefevre: {peau: '#e6c2a4', cheveux: '#d9d6cf', haut: '#c77a9b', bas: '#c77a9b', chaussures: '#f0e0d0', chignon: true, robe: true},
 };
@@ -120,16 +121,16 @@ function decorChambre(x0) {
   const halo = new THREE.PointLight('#9fc0ff', 0, 2.2, 2); halo.position.set(1.15, .8, -1.4); g.add(halo);
   lumieres(g, {ciel: '#3a4c86', sol: '#2a2020', hemi: 1.15, points: [{c: '#7f96e6', i: 5, p: [1.0, 2.2, -1.2], d: 6}, {c: '#8aa0ff', i: 3, p: [-1, 2, .8], d: 6}]});
   const chevet = new THREE.PointLight('#ffc27a', 0, 4, 2); chevet.position.set(1.1, 1.0, -1.5); g.add(chevet);
-  const yanis = perso({...CAST.yanis, pose: 'allonge'}, g); yanis.root.position.set(.4, .74, .12);
+  const julien = perso({...CAST.julien, pose: 'allonge'}, g); julien.root.position.set(.4, .74, .12);
   const lea = perso({...CAST.lea, pose: 'allonge'}, g); lea.root.position.set(-.4, .74, .12);
   // les corps sont sous la couette : on ne garde que la tête et le torse visibles
-  return {g, persos: {yanis, lea}, update(t, ev) {
+  return {g, persos: {julien, lea}, update(t, ev) {
     const sonne = ev.has('sonne'); chevet.intensity = ev.has('decroche') ? 5 : 0; halo.intensity = sonne ? 2.5 + Math.sin(t * 30) * 1.2 : (ev.has('decroche') ? 2 : 0);
     tel.position.x = 1.15 + (sonne ? Math.sin(t * 90) * .004 : 0);
-    if (ev.has('reveil') && yanis.pose !== 'assis_lit') { pose(yanis, 'assis_lit'); yanis.root.rotation.y = Math.PI / 2 * 0; yanis.root.position.set(.4, 0, -1.25); }
-    if (ev.has('decroche') && yanis.pose !== 'telephone') { pose(yanis, 'telephone'); yanis.root.position.set(.4, 0, -1.25); yanis.hips.position.y = .62; for (const j of [yanis.jg, yanis.jd]) j.h.rotation.x = -Math.PI / 2; tel.visible = false; }
+    if (ev.has('reveil') && julien.pose !== 'assis_lit') { pose(julien, 'assis_lit'); julien.root.rotation.y = Math.PI / 2 * 0; julien.root.position.set(.4, 0, -1.25); }
+    if (ev.has('decroche') && julien.pose !== 'telephone') { pose(julien, 'telephone'); julien.root.position.set(.4, 0, -1.25); julien.hips.position.y = .62; for (const j of [julien.jg, julien.jd]) j.h.rotation.x = -Math.PI / 2; tel.visible = false; }
     if (ev.has('decroche') && lea.pose !== 'assis_lit') { pose(lea, 'assis_lit'); lea.root.position.set(-.4, 0, -1.25); lea.root.rotation.y = .25; }
-    couette.position.z = yanis.pose === 'allonge' ? -.55 : -.35;
+    couette.position.z = julien.pose === 'allonge' ? -.55 : -.35;
   }};
 }
 function decorCamion(x0, pluie) {
@@ -158,20 +159,20 @@ function decorCamion(x0, pluie) {
   }
   lumieres(g, {ciel: '#3c4f86', sol: '#222', hemi: .9, points: [{c: '#ffc070', i: 1.6, p: [-.2, 1.1, -.7], d: 2}, {c: '#7f9cff', i: 2, p: [0, 2.5, -2.5], d: 6}]});
   const tableau = new THREE.PointLight('#7ad8ff', 3.2, 2.2, 2); tableau.position.set(-.4, 1.25, -.55); g.add(tableau);
-  const yanis = perso({...CAST.yanis, pose: 'volant'}, g); yanis.root.position.set(-.45, .3, .25); yanis.root.rotation.y = Math.PI;
+  const julien = perso({...CAST.julien, pose: 'volant'}, g); julien.root.position.set(-.45, .3, .25); julien.root.rotation.y = Math.PI;
   const tel = new THREE.Group(); g.add(tel); tel.visible = false;
   box(.075, .15, .01, '#111', 0, 0, 0, tel);
   const ecr = new THREE.Mesh(new THREE.PlaneGeometry(.068, .14), new THREE.MeshBasicMaterial({map: texte([{t: 'Numéro inconnu', y: 70, s: 26, g: 1}, {t: 'Occupe-toi de tes\nchantiers, Morel.', y: 200, s: 26, a: 'left', bulle: '#2b2f3a', hb: 110}], {fond: '#000'})}));
   ecr.position.z = .006; tel.add(ecr);
   const haloTel = new THREE.PointLight('#cfe0ff', 0, 1.2, 2); g.add(haloTel);
-  return {g, persos: {yanis}, update(t, ev) {
+  return {g, persos: {julien}, update(t, ev) {
     const roule = ev.has('roule');
     rue.position.z = -3 + (roule ? (t * 9) % 12 : 0);
     if (goutte) { goutte.offset.y = -t * .15; essuie.rotation.z = roule || ev.has('essuie') ? Math.sin(t * 3.2) * 1.0 - .2 : -1.1; }
     volant.rotation.z = roule ? Math.sin(t * .8) * .08 : 0;
-    if (ev.has('sms')) { if (yanis.pose !== 'telephone_main') { pose(yanis, 'telephone_main'); yanis.hips.position.y = .5; for (const j of [yanis.jg, yanis.jd]) { j.h.rotation.x = -Math.PI / 2; j.g.rotation.x = Math.PI / 2; } }
+    if (ev.has('sms')) { if (julien.pose !== 'telephone_main') { pose(julien, 'telephone_main'); julien.hips.position.y = .5; for (const j of [julien.jg, julien.jd]) { j.h.rotation.x = -Math.PI / 2; j.g.rotation.x = Math.PI / 2; } }
       tel.visible = true; tel.position.set(-.45, 1.12 + .3, -.05); tel.rotation.set(-.4, 0, 0); haloTel.intensity = .5; haloTel.position.set(-.45, 1.45, -.2);
-      yanis.tete.rotation.x = .55; }
+      julien.tete.rotation.x = .55; }
   }};
 }
 function decorCuisineLefevre(x0) {
@@ -196,10 +197,10 @@ function decorCuisineLefevre(x0) {
   // table et chaise de cuisine, horloge
   box(1.0, .06, .8, '#c9a77e', 1.3, .75, -.4, g); for (const [a, b] of [[.9, -.75], [1.7, -.75], [.9, -.05], [1.7, -.05]]) box(.05, .72, .05, '#a8865d', a, .36, b, g);
   lumieres(g, {ciel: '#cfc3a6', sol: '#4a3a2a', hemi: .5, points: [{c: '#ffe0b0', i: 6, p: [0, 2.6, -.5], d: 6, ombre: true}]});
-  const lampe = new THREE.SpotLight('#ffffff', 0, 4, .35, .5, 1.5); g.add(lampe); g.add(lampe.target);       // lampe torche de Yanis
+  const lampe = new THREE.SpotLight('#ffffff', 0, 4, .35, .5, 1.5); g.add(lampe); g.add(lampe.target);       // lampe torche de Julien
   const lefevre = perso({...CAST.lefevre, pose: 'mains_levees'}, g); lefevre.root.position.set(.85, 0, -.7); lefevre.root.rotation.y = -.55;
-  const yanis = perso({...CAST.yanis, pose: 'accroupi'}, g); yanis.root.position.set(-.4, 0, -1.45); yanis.root.rotation.y = Math.PI;
-  return {g, persos: {lefevre, yanis}, update(t, ev) {
+  const julien = perso({...CAST.julien, pose: 'accroupi'}, g); julien.root.position.set(-.4, 0, -1.45); julien.root.rotation.y = Math.PI;
+  return {g, persos: {lefevre, julien}, update(t, ev) {
     const jet = !ev.has('coupe'); const niveau = ev.has('coupe') ? .05 : .04 + Math.min(.08, t * .002);
     const p = geo.attributes.position.array; for (let i = 0; i < p.length; i += 3) p[i + 1] = base[i + 1] + Math.sin(base[i] * 3 + t * 2.2) * .008 + Math.cos(base[i + 2] * 4 + t * 1.7) * .008;
     geo.attributes.position.needsUpdate = true; eau.position.y = niveau;
@@ -207,8 +208,8 @@ function decorCuisineLefevre(x0) {
     if (ev.has('torche')) { lampe.intensity = 30; lampe.position.set(-.4, .9, -1.2); lampe.target.position.set(-.4, .3, -2.2); lampe.target.updateMatrixWorld(); } else lampe.intensity = 0;
     if (ev.has('serre')) robinet.rotation.z = t * 6;
     if (ev.has('telephone_lefevre') && lefevre.pose !== 'telephone') pose(lefevre, 'telephone');
-    if (ev.has('debout')) { if (yanis.pose !== 'debout') { pose(yanis, 'debout'); yanis.torse.rotation.x = 0; } yanis.root.rotation.y = 1.03; lefevre.root.rotation.y = -2.11; }
-    else if (yanis.pose !== 'accroupi') { pose(yanis, 'accroupi'); yanis.root.rotation.y = Math.PI; lefevre.root.rotation.y = -.55; }
+    if (ev.has('debout')) { if (julien.pose !== 'debout') { pose(julien, 'debout'); julien.torse.rotation.x = 0; } julien.root.rotation.y = 1.03; lefevre.root.rotation.y = -2.11; }
+    else if (julien.pose !== 'accroupi') { pose(julien, 'accroupi'); julien.root.rotation.y = Math.PI; lefevre.root.rotation.y = -.55; }
   }};
 }
 function decorCuisineJour(x0) {
@@ -221,12 +222,12 @@ function decorCuisineJour(x0) {
   const soleil = new THREE.DirectionalLight('#fff1d6', 2.6); soleil.position.set(2, 4, -5); soleil.castShadow = true; soleil.shadow.mapSize.set(1024, 1024);
   soleil.shadow.camera.left = soleil.shadow.camera.bottom = -4; soleil.shadow.camera.right = soleil.shadow.camera.top = 4; g.add(soleil); soleil.target.position.set(x0, 0, 0); scene.add(soleil.target);
   lumieres(g, {ciel: '#dfe8f5', sol: '#7a5a40', hemi: 1.1});
-  const yanis = perso({...CAST.yanis, pose: 'assis_tasse'}, g); yanis.root.position.set(.35, 0, 1.0); yanis.root.rotation.y = Math.PI;
+  const julien = perso({...CAST.julien, pose: 'assis_tasse'}, g); julien.root.position.set(.35, 0, 1.0); julien.root.rotation.y = Math.PI;
   const lea = perso({...CAST.lea, pose: 'telephone_main'}, g); lea.root.position.set(-1.2, 0, -1.1); lea.root.rotation.y = .7;
   const tel = new THREE.Group(); lea.bd.main.add(tel); box(.075, .15, .01, '#111', 0, -.05, .06, tel);
   const ecr = new THREE.Mesh(new THREE.PlaneGeometry(.068, .14), new THREE.MeshBasicMaterial({map: texte([{t: 'Vasseur Dépannage', y: 90, s: 24, g: 1, c: '#111'}, {t: '★★★★★', y: 150, s: 40, c: '#f2b705'}, {t: '“Très gentil”', y: 220, s: 22, c: '#333'}, {t: '“Rapide !”', y: 260, s: 22, c: '#333'}], {fond: '#f5f5f5'})}));
   ecr.position.set(0, -.05, .066); tel.add(ecr);
-  return {g, persos: {yanis, lea}, update(t, ev) {}};
+  return {g, persos: {julien, lea}, update(t, ev) {}};
 }
 DECORS.chambre = decorChambre(0); DECORS.camion = decorCamion(20, true); DECORS.cuisine_lefevre = decorCuisineLefevre(40);
 DECORS.cuisine_jour = decorCuisineJour(60); DECORS.parking = decorCamion(80, false);
@@ -254,7 +255,7 @@ window.render = t => {
     const actif = parle && parle.qui === nom;
     const regard = (p.regards || {})[nom] || [0, 0];
     pp.tete.rotation.y = regard[0] + (actif ? Math.sin(t * 4) * .06 : Math.sin(t * .7) * .02);
-    if (!ev.has('sms') || nom !== 'yanis') pp.tete.rotation.x = regard[1] + (actif ? Math.sin(t * 9) * .04 : 0);
+    if (!ev.has('sms') || nom !== 'julien') pp.tete.rotation.x = regard[1] + (actif ? Math.sin(t * 9) * .04 : 0);
     pp.torse.position.y = Math.sin(t * 1.5 + nom.length) * .006;
   }
   renderer.render(scene, cam); return true;

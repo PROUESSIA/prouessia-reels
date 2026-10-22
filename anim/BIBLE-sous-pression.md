@@ -12,8 +12,9 @@ Décision de la fondatrice (22/10/2026) : les vidéos de l'après-midi deviennen
 
 ## Règles fixes
 1. 50 à 80 s. Personnages low-poly **sans yeux ni bouche** (tête, nez, oreilles ; pas de lunettes : elles ressemblent à des yeux).
-2. Le sponsor : une carte de 4 à 5 s au milieu (`"carte": "sponsor"`), dite par le narrateur (voix Charon). Jamais d'autre mention de Prouessia, jamais de démo de l'appli dans le film.
-3. Fin : carte « Épisode N+1, demain 18 h » + « Histoire et personnages fictifs ». Toujours un cliffhanger juste avant.
+2. Le sponsor : une carte **muette de 1,8 s** au milieu (`{"carte": "sponsor", "duree": 1.8}`) : « présenté par Prouessia », sans voix. Jamais d'autre mention de Prouessia, jamais de démo de l'appli dans le film.
+2 bis. **Signature sonore** (sans musique, sons originaux de `anim/sons.py`) : la **sonnerie** de Julien (vibreur + trois « plic » de goutte) ouvre chaque épisode ou retentit dès qu'un téléphone sonne ; le **générique** (montée de pression, clac de vanne, goutte) accompagne la carte de fin. Champ `"son"` dans le déroulé.
+3. Fin : carte muette « Épisode N+1, demain 18 h » + « Histoire et personnages fictifs » (3 s), avec le générique sonore. Toujours un cliffhanger juste avant.
 4. Fiction : aucun vrai nom d'entreprise ni de personne. Le concurrent s'appelle **Vasseur Dépannage** (inventé). Les chiffres dits par les personnages sont de la fiction, pas des faits (la règle 1 d'AUTOMATION.md ne s'applique pas aux dialogues de fiction, mais rien de dangereux ni de faux conseil technique présenté comme vrai).
 5. Vouvoiement non obligatoire entre personnages (c'est de la fiction) ; la voix de marque « on/nous » ne concerne que la carte sponsor.
 6. Pas de musique. Voix Gemini : une voix par personnage (voir ci-dessous).
@@ -21,24 +22,25 @@ Décision de la fondatrice (22/10/2026) : les vidéos de l'après-midi deviennen
 ## Personnages
 | Personnage | Rôle | Look | Voix Gemini |
 |---|---|---|---|
-| **Yanis Morel** | plombier indépendant, 35 ans, droit, têtu | barbe, veste bleue, badge jaune | Orus |
+| **Julien Morel** | plombier indépendant, 44 ans, ancien pompier reconverti : calme, peu de mots, observe avant de parler, humour sec, ne lâche jamais une injustice | casquette bordeaux, tempes grises, veste gris-bleu, badge jaune, sans barbe | Orus |
 | **Léa** | sa compagne, infirmière, lucide et drôle | cheveux longs châtains, pull vert | Aoede |
 | **Mme Lefèvre** | cliente de 80 ans, adorable, un peu naïve | chignon blanc, robe de chambre rose | Gacrux |
 | **Bruno Vasseur** | patron de Vasseur Dépannage, charmeur, sans scrupules (apparaît ép. 3) | à créer : costume gris, cheveux gominés | Algenib |
 | **Théo** | apprenti de Yanis, 19 ans, comique (apparaît ép. 4) | à créer : casquette, sweat orange | Puck |
 | Narrateur | carte sponsor et fin | — | Charon |
 
-## Arc de la saison 1 (10 épisodes)
-1. **La fuite de 3 h 12** ✅ — Mme Lefèvre inondée ; robinet d'arrêt posé par Vasseur Dépannage, facturé 890 € ; menace par SMS.
-2. **Cinq étoiles** — Yanis appelle les autres clients de Vasseur : tous des personnes âgées, tous la même pièce. Léa découvre que les avis 5 étoiles sont tous écrits le même jour. Cliffhanger : une camionnette blanche suit Yanis.
-3. **La camionnette blanche** — face à face avec Bruno Vasseur sur un parking : charmant, menaçant. « Tu devrais penser à ta famille, Morel. » Cliffhanger : le lendemain, les pneus de Yanis sont crevés.
-4. **L'apprenti** — Théo arrive, maladroit mais malin ; il filme tout. Ils trouvent le fournisseur des pièces défectueuses. Cliffhanger : le fournisseur est… le beau-frère de Vasseur.
-5. **Le faux rendez-vous** — Théo se fait passer pour un client pour piéger Vasseur. Ça tourne mal. Cliffhanger : Théo ne répond plus.
-6. **Sous l'évier** — Théo retrouvé enfermé dans une cave inondée ; course contre l'eau. Cliffhanger : la vidéo de Théo est effacée.
-7. **La plainte** — Mme Lefèvre accepte de témoigner ; Vasseur lui rend visite avec des fleurs. Cliffhanger : elle retire son témoignage.
-8. **L'immeuble** — gros dégât des eaux dans un immeuble entier, toutes les pièces viennent de Vasseur ; Yanis doit tout couper seul la nuit. Cliffhanger : quelqu'un a fermé la porte de la chaufferie à clé derrière lui.
-9. **La preuve** — Léa a gardé le robinet de l'épisode 1 ; un expert confirme. Cliffhanger : Vasseur arrive chez Yanis.
-10. **Pression maximale** — confrontation finale devant les voisins ; Vasseur démasqué ; Mme Lefèvre récupère son argent. Dernière image : le téléphone de Yanis sonne à 3 h 12… « Saison 2 ? »
+## Arc de la saison 1 (10 épisodes) — version « suspense » du 22/10
+Chaque épisode finit sur un retournement : le spectateur doit se dire « non… » et revenir le lendemain.
+1. **La fuite de 3 h 12** ✅ — Mme Lefèvre inondée ; robinet d'arrêt posé par Vasseur Dépannage, facturé 890 € ; SMS : « Occupe-toi de tes chantiers, Morel. »
+2. **Elle ne répond plus** — Julien appelle les autres clients de Vasseur. Mme Rocher décroche en chuchotant : « Il est revenu… il est dans ma cuisine… » — la ligne coupe. Julien fonce sous la pluie. Porte entrouverte, eau qui coule sous la porte, cuisine inondée, personne. Sur la table : une facture Vasseur datée d'aujourd'hui, 23 h 10. Dans l'eau, le téléphone de Mme Rocher vibre : « appel entrant : Julien Morel ». Julien sort son propre téléphone : éteint. Une lampe s'allume derrière lui : « Vous êtes perdu, Monsieur Morel ? »
+3. **L'homme à la lampe** — c'est Bruno Vasseur, souriant. Mme Rocher arrive derrière lui en pantoufles : « Bruno est un ange, il est venu réparer. » Julien passe pour un fou. Sirènes : la police arrive… pour Julien, entré chez une vieille dame en pleine nuit. Cliffhanger : les menottes.
+4. **Garde à vue** — Léa vient le chercher, Mme Lefèvre témoigne pour lui. En sortant, Julien voit sur le bureau du policier un aimant « Vasseur Dépannage ». Cliffhanger : le policier est le beau-frère de Vasseur.
+5. **Le numéro cloné** — Théo, l'apprenti (19 ans, malin), comprend : quelqu'un a copié la carte SIM de Julien. Les clients reçoivent des SMS « de Julien » qui les insultent. Cliffhanger : Mme Lefèvre en a reçu un… et ne répond plus à Julien.
+6. **La cave** — Théo suit la camionnette blanche jusqu'à un entrepôt rempli de robinets défectueux. La porte se referme, la cave se remplit d'eau. Cliffhanger : le téléphone de Théo n'a plus de batterie.
+7. **Course contre l'eau** — Julien et Léa retrouvent Théo de justesse ; il a filmé l'entrepôt. Cliffhanger : la vidéo a disparu du téléphone.
+8. **L'immeuble** — un immeuble entier inondé en pleine nuit, toutes les pièces viennent de Vasseur ; Julien coupe tout seul dans la chaufferie. Cliffhanger : la porte se ferme à clé derrière lui.
+9. **La preuve** — Léa a gardé le robinet de l'épisode 1 ; Théo a sauvegardé la vidéo dans le cloud. Cliffhanger : Vasseur sonne chez Julien et Léa.
+10. **Pression maximale** — confrontation devant les voisins, Vasseur démasqué, Mme Lefèvre récupère son argent. Dernière image : le téléphone de Julien sonne à 3 h 12… « Saison 2 ? »
 
 ## Production (moteur `anim/`)
 - `anim/film.html` : décors (`chambre`, `camion` pluie, `cuisine_lefevre` inondée, `cuisine_jour`, `parking` nuit), personnages et poses (`debout`, `assis`, `volant`, `telephone`, `telephone_main`, `bras_croises`, `mains_levees`, `accroupi`, `allonge`, `assis_lit`), événements (`sonne`, `decroche`, `roule`, `torche`, `serre`, `coupe`, `debout`, `sms`). Ajouter un décor = une fonction `decorXxx(x0)` placée à un nouvel X (+20) et une couleur de fond dans `FONDS`.
