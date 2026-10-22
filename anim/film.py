@@ -108,7 +108,7 @@ def calques(items, total):
             pg.screenshot(path=f, omit_background=True); return f
         serie = f'<div class="serie">{EP["serie"].upper()} <span>· ÉP. {EP["numero"]}</span></div>'
         for it in items:
-            if it.get('carte'): seq.append((img(''), it['fin'] - it['debut'])); continue
+            if it.get('carte') and not it['mots']: seq.append((img(''), it['fin'] - it['debut'])); continue
             haut = serie if it['debut'] < 4 else ''
             inc = f'<div class="inc">{it["incrust"]}</div>' if it.get('incrust') else ''
             if not it['mots']:
@@ -132,6 +132,10 @@ def carte(nom, fond, du, out):
     ico = base64.b64encode(open(os.path.join(ROOT, 'email', 'icone-prouessia.png'), 'rb').read()).decode()
     if nom == 'sponsor':
         corps = f"""<div class="s" style="margin:0">présenté par</div><div class="m"><img src="data:image/png;base64,{ico}">Prouessia</div>"""
+    elif nom == 'tel_eteint':   # gros plan : le téléphone de Julien, écran noir
+        corps = """<div style="width:430px;height:880px;border-radius:64px;background:#0b0b0d;border:14px solid #2a2b30;box-shadow:0 30px 80px rgba(0,0,0,.8),inset 0 0 0 2px #444;
+position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(125deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,0) 38%)"></div>
+<div style="position:absolute;top:22px;left:50%;transform:translateX(-50%);width:120px;height:30px;border-radius:20px;background:#000"></div></div>"""
     else:
         corps = f"""<div class="t">{EP['serie'].upper()}</div><div class="e">Épisode {EP['numero'] + 1}<br><b>demain, 18 h</b></div><div class="s2">Abonnez-vous pour ne pas rater la suite</div>
 <div class="f">Histoire et personnages fictifs · avec <b>Prouessia</b>, le partenaire des plombiers</div>"""

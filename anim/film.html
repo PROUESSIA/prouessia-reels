@@ -97,6 +97,7 @@ const DECORS = {}; const PERSOS = {};
 const CAST = {
   julien:  {peau: '#d9a27a', cheveux: '#6d6a66', haut: '#3d4a5c', col: '#f2b705', bas: '#2f3238', chaussures: '#3a2a1c', casquette: '#8a2b2b'},
   lea:     {peau: '#e2b28f', cheveux: '#6b3b1f', haut: '#3f7a6a', bas: '#3a4560', chaussures: '#e8e2d6', longs: true},
+  vasseur: {peau: '#e0b090', cheveux: '#0e0c0b', haut: '#55595f', col: '#d9d9d9', bas: '#44474c', chaussures: '#1a1a1a'},
   lefevre: {peau: '#e6c2a4', cheveux: '#d9d6cf', haut: '#c77a9b', bas: '#c77a9b', chaussures: '#f0e0d0', chignon: true, robe: true},
 };
 function lumieres(g, o) {
@@ -170,6 +171,8 @@ function decorCamion(x0, pluie) {
     rue.position.z = -3 + (roule ? (t * 9) % 12 : 0);
     if (goutte) { goutte.offset.y = -t * .15; essuie.rotation.z = roule || ev.has('essuie') ? Math.sin(t * 3.2) * 1.0 - .2 : -1.1; }
     volant.rotation.z = roule ? Math.sin(t * .8) * .08 : 0;
+    if (ev.has('appel') && julien.pose !== 'telephone') { pose(julien, 'telephone'); julien.hips.position.y = .5; for (const j of [julien.jg, julien.jd]) { j.h.rotation.x = -Math.PI / 2; j.g.rotation.x = Math.PI / 2; } }
+    if (!ev.has('appel') && !ev.has('sms') && julien.pose !== 'volant') pose(julien, 'volant');
     if (ev.has('sms')) { if (julien.pose !== 'telephone_main') { pose(julien, 'telephone_main'); julien.hips.position.y = .5; for (const j of [julien.jg, julien.jd]) { j.h.rotation.x = -Math.PI / 2; j.g.rotation.x = Math.PI / 2; } }
       tel.visible = true; tel.position.set(-.45, 1.12 + .3, -.05); tel.rotation.set(-.4, 0, 0); haloTel.intensity = .5; haloTel.position.set(-.45, 1.45, -.2);
       julien.tete.rotation.x = .55; }
@@ -229,9 +232,47 @@ function decorCuisineJour(x0) {
   ecr.position.set(0, -.05, .066); tel.add(ecr);
   return {g, persos: {julien, lea}, update(t, ev) {}};
 }
+
+function decorMaisonRocher(x0) {
+  const g = new THREE.Group(); g.position.x = x0; scene.add(g);
+  box(7, .1, 7, '#5d5a52', 0, -.05, 0, g);
+  box(7, 3, .1, '#4c5866', 0, 1.5, -2.6, g); box(.1, 3, 7, '#46525f', -2.6, 1.5, 0, g); box(.1, 3, 7, '#46525f', 2.6, 1.5, 0, g);
+  const f = new THREE.Mesh(new THREE.PlaneGeometry(1.0, 1.1), new THREE.MeshBasicMaterial({map: ville(false)})); f.position.set(1.2, 1.75, -2.54); g.add(f);
+  box(2.4, .9, .6, '#3b3a3a', -.9, .45, -2.25, g); box(2.5, .05, .65, '#bdb8ad', -.9, .92, -2.22, g); cyl(.02, .02, .3, '#aaa', -.9, 1.08, -2.38, g);
+  // porte d'entrée entrouverte (côté gauche, au premier plan)
+  box(.1, 2.2, .1, '#2a2a2a', -1.95, 1.1, 1.55, g); box(.1, 2.2, .1, '#2a2a2a', -1.0, 1.1, 1.55, g); box(1.05, .1, .1, '#2a2a2a', -1.47, 2.2, 1.55, g);
+  const porte = box(.9, 2.1, .05, '#6a4b33', -1.5, 1.05, 1.55, g); porte.geometry.translate(.45, 0, 0); porte.position.x = -1.95; porte.rotation.y = -1.1;
+  // table et facture
+  box(1.0, .06, .8, '#7a5d40', .7, .75, -1.2, g); for (const [a, b] of [[.3, -1.55], [1.1, -1.55], [.3, -.85], [1.1, -.85]]) box(.05, .72, .05, '#5e4630', a, .36, b, g);
+  const fac = new THREE.Mesh(new THREE.PlaneGeometry(.21, .297), new THREE.MeshStandardMaterial({map: texte([{t: 'VASSEUR DÉPANNAGE', y: 70, s: 24, g: 1, c: '#a01818'}, {t: 'FACTURE', y: 130, s: 30, g: 1, c: '#111'}, {t: "Aujourd'hui · 23 h 10", y: 190, s: 22, c: '#111'}, {t: "Robinet d'arrêt", y: 260, s: 22, c: '#333', a: 'left'}, {t: '890,00 €', y: 300, s: 26, g: 1, c: '#111', a: 'left'}, {t: 'PAYÉ', y: 420, s: 60, g: 1, c: '#c22'}], {fond: '#f3efe6', w: 256, h: 362}), roughness: .9}));
+  fac.rotation.x = -Math.PI / 2; fac.rotation.z = .25; fac.position.set(.6, .785, -1.15); fac.receiveShadow = true; g.add(fac);
+  // l'eau au sol
+  const geo = new THREE.PlaneGeometry(5, 5, 26, 26); geo.rotateX(-Math.PI / 2); const base = geo.attributes.position.array.slice();
+  const eau = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({color: '#3d6a9a', transparent: true, opacity: .6, roughness: .06, metalness: .3, flatShading: true})); eau.position.set(-.3, .05, -.4); g.add(eau);
+  // le téléphone de Mme Rocher, dans l'eau
+  const tel = new THREE.Group(); tel.position.set(-.35, .06, -.85); tel.rotation.y = .5; g.add(tel); box(.08, .012, .16, '#111', 0, 0, 0, tel);
+  const ecran = new THREE.Mesh(new THREE.PlaneGeometry(.07, .145), new THREE.MeshBasicMaterial({map: texte([{t: 'appel entrant', y: 120, s: 26, c: '#9ab'}, {t: 'Julien', y: 230, s: 44, g: 1}, {t: 'Morel', y: 285, s: 44, g: 1}, {t: '●  ●', y: 460, s: 60, c: '#3c3'}], {fond: '#101826'})}));
+  ecran.rotation.x = -Math.PI / 2; ecran.position.y = .007; tel.add(ecran);
+  const halo = new THREE.PointLight('#9fc0ff', 0, 1.6, 2); halo.position.set(-.35, .35, -.85); g.add(halo);
+  lumieres(g, {ciel: '#34466e', sol: '#1a1a22', hemi: .8, points: [{c: '#7f96e6', i: 5, p: [1.2, 2.2, -1.8], d: 6}, {c: '#ffb070', i: 2.2, p: [-1.5, 2.0, 1.4], d: 4}]});
+  const torche = new THREE.SpotLight('#fff6dc', 0, 7, .32, .45, 1.2); torche.position.set(-1.5, 1.55, 1.75); g.add(torche); g.add(torche.target); torche.castShadow = true;
+  const flare = new THREE.Mesh(new THREE.SphereGeometry(.07, 10, 8), new THREE.MeshBasicMaterial({color: '#fffbe8'})); flare.position.set(-1.38, 1.5, 1.62); flare.visible = false; g.add(flare);
+  const julien = perso({...CAST.julien, pose: 'debout'}, g); julien.root.position.set(.05, 0, -.35); julien.root.rotation.y = Math.PI;
+  const vasseur = perso({...CAST.vasseur, pose: 'debout'}, g); vasseur.root.position.set(-1.5, 0, 1.75); vasseur.root.rotation.y = Math.PI * .85; vasseur.root.visible = false;
+  vasseur.bd.ep.rotation.x = -1.3; // il tient la lampe vers Julien
+  const telJ = new THREE.Group(); julien.bd.main.add(telJ); telJ.visible = false; box(.075, .15, .01, '#0a0a0a', 0, -.05, .06, telJ);
+  return {g, persos: {julien, vasseur}, update(t, ev) {
+    const p = geo.attributes.position.array; for (let i = 0; i < p.length; i += 3) p[i + 1] = base[i + 1] + Math.sin(base[i] * 3 + t * 2) * .007 + Math.cos(base[i + 2] * 4 + t * 1.6) * .007;
+    geo.attributes.position.needsUpdate = true;
+    const vib = ev.has('tel_eau'); ecran.visible = vib || ev.has('tel_eau_fixe'); halo.intensity = vib ? 1.4 + Math.sin(t * 30) * .6 : 0; tel.position.x = -.35 + (vib ? Math.sin(t * 90) * .004 : 0);
+    if (ev.has('tel_julien')) { if (julien.pose !== 'telephone_main') pose(julien, 'telephone_main'); telJ.visible = true; julien.tete.rotation.x = .45; } 
+    if (ev.has('lampe')) { vasseur.root.visible = true; torche.intensity = 16; flare.visible = true; torche.target.position.set(.05, 1.4, -.35); torche.target.updateMatrixWorld(); if (ev.has('retourne')) julien.root.rotation.y = -0.35; }
+    else { torche.intensity = 0; vasseur.root.visible = false; flare.visible = false; }
+  }};
+}
 DECORS.chambre = decorChambre(0); DECORS.camion = decorCamion(20, true); DECORS.cuisine_lefevre = decorCuisineLefevre(40);
-DECORS.cuisine_jour = decorCuisineJour(60); DECORS.parking = decorCamion(80, false);
-const FONDS = {chambre: '#0b0f1e', camion: '#05070f', cuisine_lefevre: '#1a1410', cuisine_jour: '#cfdcea', parking: '#05070f'};
+DECORS.cuisine_jour = decorCuisineJour(60); DECORS.parking = decorCamion(80, false); DECORS.maison_rocher = decorMaisonRocher(100);
+const FONDS = {chambre: '#0b0f1e', camion: '#05070f', cuisine_lefevre: '#1a1410', cuisine_jour: '#cfdcea', parking: '#05070f', maison_rocher: '#0a0d14'};
 
 // ---------- lecture de l'épisode ----------
 let EP = null; window.setEpisode = e => { EP = e; };
