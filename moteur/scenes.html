@@ -7,14 +7,14 @@ html,body{width:1080px;height:1920px;overflow:hidden}
 body{font-family:Inter,sans-serif;font-weight:800;color:#111}
 #scene{position:absolute;inset:0;overflow:hidden}
 /* ---------- style « plan » (explication monochrome) ---------- */
-.plan{background:#ececec radial-gradient(circle at 50% 40%,#f7f7f7 0,#e6e6e6 70%)}
-.plan:before{content:'';position:absolute;inset:0;background-image:linear-gradient(#0000000d 2px,transparent 2px),linear-gradient(90deg,#0000000d 2px,transparent 2px);background-size:90px 90px}
+.plan{background:#F7F5EF radial-gradient(circle at 50% 35%,#fffdf8 0,#efebe1 75%);color:#0B1B3A}
+.plan:before{content:'';position:absolute;inset:0;background-image:linear-gradient(#0B1B3A0a 2px,transparent 2px),linear-gradient(90deg,#0B1B3A0a 2px,transparent 2px);background-size:90px 90px}
 .carte{position:absolute;left:-540px;top:-480px;width:2160px;height:2880px;transform-origin:50% 50%}
-.pin{position:absolute;width:84px;height:84px;margin:-150px 0 0 -42px;transform:scale(1.35);transform-origin:50% 178%;background:#fff;border:3px solid #111;border-radius:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.18)}
-.pin:after{content:'';position:absolute;left:39px;top:84px;width:3px;height:60px;background:#111}
-.pin .l{position:absolute;right:-22px;top:-22px;width:40px;height:40px;border-radius:50%;background:#111;color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center}
+.pin{position:absolute;width:84px;height:84px;margin:-150px 0 0 -42px;transform:scale(1.35);transform-origin:50% 178%;background:#fff;border:4px solid #0B1B3A;border-radius:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.pin:after{content:'';position:absolute;left:39px;top:84px;width:4px;height:60px;background:#0B1B3A}
+.pin .l{position:absolute;right:-22px;top:-22px;width:40px;height:40px;border-radius:50%;background:#1E40AF;color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center}
 .pin .n{position:absolute;left:96px;top:24px;white-space:nowrap;font-size:30px;font-weight:800;background:#fff;padding:4px 12px;border-radius:10px}
-.cli{position:absolute;width:36px;height:36px;margin:-18px;border-radius:50%;background:#111;border:6px solid #fff;box-shadow:0 0 0 2px #111}
+.cli{position:absolute;width:44px;height:44px;margin:-22px;border-radius:50%;background:#F2B705;border:7px solid #fff;box-shadow:0 0 0 4px #0B1B3A}
 .halo{position:absolute;border-radius:50%;border:3px dashed #111;background:rgba(0,0,0,.04)}
 .carte2d{position:absolute;inset:0}
 .recherche{position:absolute;left:70px;right:70px;top:250px;height:110px;background:#fff;border-radius:56px;box-shadow:0 12px 30px rgba(0,0,0,.12);display:flex;align-items:center;gap:22px;padding:0 40px;font-size:40px;font-weight:700}
@@ -56,25 +56,26 @@ body{font-family:Inter,sans-serif;font-weight:800;color:#111}
 .dv .l{display:flex;justify-content:space-between;font-size:24px;font-weight:700;padding:10px 0;border-bottom:2px solid #f0f0f0}
 .dv .tot{display:flex;justify-content:space-between;font-size:32px;font-weight:900;margin-top:16px}
 .badge{display:inline-block;font-size:24px;font-weight:900;padding:8px 16px;border-radius:12px;margin-top:18px}
-.frise{position:absolute;left:90px;right:90px;top:820px;height:6px;background:#111;border-radius:3px}
+.frise{position:absolute;left:90px;right:90px;top:820px;height:8px;background:#0B1B3A;border-radius:4px}
 .jour{position:absolute;top:760px;width:140px;margin-left:-70px;text-align:center;font-size:28px;font-weight:800;color:#777}
-.jour:after{content:'';display:block;width:22px;height:22px;border-radius:50%;background:#ececec;border:5px solid #111;margin:18px auto 0}
+.jour:after{content:'';display:block;width:24px;height:24px;border-radius:50%;background:#F2B705;border:5px solid #0B1B3A;margin:18px auto 0}
 .envoi{position:absolute;top:880px;width:300px;margin-left:-150px;text-align:center;font-size:30px;font-weight:900;background:#fff;border-radius:20px;padding:18px;box-shadow:0 12px 30px rgba(0,0,0,.12)}
-.envoi.noir{background:#111;color:#fff}
+.envoi.noir{background:#0B1B3A;color:#fff}
 .tuile{position:absolute;left:90px;right:90px;height:190px;background:#fff;border-radius:32px;box-shadow:0 14px 34px rgba(0,0,0,.12);display:flex;align-items:center;gap:34px;padding:0 40px}
 .tuile .n{font-size:90px;font-weight:900;color:#ddd;width:90px}
 .tuile b{font-size:60px;font-weight:900}
 .tuile small{display:block;font-size:26px;color:#888;font-weight:700;margin-top:4px}
-.tuile.on{background:#111;color:#fff}.tuile.on .n{color:#555}.tuile.on small{color:#bbb}
+.tuile.on{background:#0B1B3A;color:#fff}.tuile.on .n{color:#F2B705}.tuile.on small{color:#aeb7cc}
 .chrono{position:absolute;left:340px;top:330px;width:400px;height:400px;border-radius:50%;border:14px solid #ddd}
 .mail{position:absolute;left:80px;right:80px;background:#fff;border-radius:30px;box-shadow:0 18px 44px rgba(0,0,0,.14);padding:34px;font-size:30px;font-weight:700;line-height:1.35}
 .mail small{display:block;font-size:22px;letter-spacing:.14em;color:#888;margin-bottom:12px}
-.punch{position:absolute;left:60px;right:60px;top:560px;text-align:center;font-weight:900;letter-spacing:-.04em;line-height:1}
-.punch .a{font-size:64px;color:#888;letter-spacing:-.02em}.punch .b{font-size:140px;margin-top:20px}
+.punch{position:absolute;left:60px;right:60px;top:600px;text-align:center;font-weight:900;letter-spacing:-.04em;line-height:1}
+.punch .a{font-size:64px;color:#aeb7cc;letter-spacing:-.02em}.punch .b{font-size:140px;margin-top:20px;color:#F2B705}
+.nuit{position:absolute;inset:0;background:#0B1B3A}
 /* sous-titres */
 .st{position:absolute;left:60px;right:60px;text-align:center;font-weight:900;font-size:64px;line-height:1.18;letter-spacing:-.01em}
 .st span{opacity:0}.st span.on{opacity:1}
-.plan .st b{background:#111;color:#fff;padding:0 .18em;border-radius:.16em;font-weight:900}
+.plan .st{color:#0B1B3A}.plan .st b{background:#F2B705;color:#0B1B3A;padding:0 .18em;border-radius:.16em;font-weight:900}
 /* ---------- style « croquis » (dessin au crayon + écrans) ---------- */
 .croquis{background:#f5f3ee}
 .croquis svg.d path,.croquis svg.d circle,.croquis svg.d rect,.croquis svg.d line{fill:none;stroke:#1a1a1a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
@@ -99,22 +100,30 @@ const out = (x) => 1 - Math.pow(1 - cl(x), 3);
 let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
 const LOGO = '<i><svg viewBox="0 0 24 24" width="96" height="96"><rect x="4" y="13" width="4" height="7" rx="2" fill="#fff"/><rect x="10" y="9" width="4" height="11" rx="2" fill="#fff"/><rect x="16" y="5" width="4" height="15" rx="2" fill="#F2B705"/></svg></i>prouessia';
 
-// ---------- carte de la ville (générée une fois) ----------
+// ---------- décor : réseau de tuyauterie vu de haut, l'eau circule dedans (généré une fois) ----------
 let CARTE = '';
 (function () {
-  let s = '<svg width="2160" height="2880" viewBox="0 0 2160 2880" style="position:absolute;inset:0"><rect width="2160" height="2880" fill="#f6f6f6"/>';
-  const rues = [];
-  for (let y = 0; y < 2880;) { const h = 180 + rnd() * 160; for (let x = 0; x < 2160;) { const w = 150 + rnd() * 220;
-    s += `<rect x="${x + 14}" y="${y + 14}" width="${w - 28}" height="${h - 28}" rx="6" fill="#dcdcdc"/>`;
-    const n = 1 + Math.floor(rnd() * 3); for (let k = 0; k < n; k++) { const bw = (w - 40) / n; s += `<rect x="${x + 20 + k * bw}" y="${y + 20}" width="${bw - 8}" height="${h - 40}" rx="4" fill="#e6e6e6" stroke="#cfcfcf" stroke-width="2"/>`; }
-    x += w; } y += h; }
+  const G = 180, chemins = [];
+  const fix = [[[1480, 1060], [1480, 1300], [1660, 1300]], [[1880, 1660], [1880, 1480], [1660, 1480], [1660, 1300]]];  // concurrent → client, vous → client
+  for (let k = 0; k < 26; k++) { let x = Math.floor(rnd() * 12) * G, y = Math.floor(rnd() * 16) * G; const pts = [[x, y]];
+    for (let n = 0; n < 4 + Math.floor(rnd() * 4); n++) { if (n % 2) x += (rnd() < .5 ? -1 : 1) * G * (1 + Math.floor(rnd() * 3)); else y += (rnd() < .5 ? -1 : 1) * G * (1 + Math.floor(rnd() * 3)); pts.push([x, y]); }
+    chemins.push(pts); }
+  const d = (pts) => 'M' + pts.map(p => p.join(' ')).join(' L');
+  let s = '<svg width="2160" height="2880" viewBox="0 0 2160 2880" style="position:absolute;inset:0">';
+  chemins.forEach(c => { s += `<path d="${d(c)}" fill="none" stroke="#0B1B3A" stroke-opacity=".10" stroke-width="30" stroke-linejoin="round" stroke-linecap="round"/>`; });
+  chemins.forEach(c => { s += `<path d="${d(c)}" fill="none" stroke="#1E40AF" stroke-opacity=".35" stroke-width="8" stroke-linecap="round" stroke-dasharray="26 48" style="stroke-dashoffset:var(--f)"/>`; });
+  chemins.forEach(c => c.forEach((p, i) => { if (i && i < c.length - 1) s += `<circle cx="${p[0]}" cy="${p[1]}" r="20" fill="#F7F5EF" stroke="#0B1B3A" stroke-opacity=".25" stroke-width="6"/>`; }));
+  for (let k = 0; k < 14; k++) { const c = chemins[k], p = c[1 + Math.floor(rnd() * (c.length - 2))];
+    s += `<rect x="${p[0] - 22}" y="${p[1] - 22}" width="44" height="44" rx="8" fill="#F2B705" fill-opacity=".55" stroke="#0B1B3A" stroke-opacity=".3" stroke-width="5" transform="rotate(45 ${p[0]} ${p[1]})"/>`; }
+  fix.forEach(c => { s += `<path d="${d(c)}" fill="none" stroke="#0B1B3A" stroke-opacity=".16" stroke-width="34" stroke-linejoin="round"/>`; });
   s += '</svg>'; CARTE = s;
+  window.TUYAUX = fix.map(d);
 })();
 const PA = [1480, 1060], PB = [1880, 1660], CL = [1660, 1300];  // positions sur la carte (px carte)
 function pin(p, l, n, op = 1, dy = 0) { return `<div class="pin" style="left:${p[0]}px;top:${p[1] - dy}px;opacity:${op}"><span>🔧</span><span class="l">${l}</span>${n ? `<span class="n">${n}</span>` : ''}</div>`; }
 function carte(o) {  // o: tilt, zoom, rot, cx, cy (centre visé en px carte), extra html dans la carte
   const tx = 1080 - o.cx, ty = 1440 - o.cy;
-  return `<div class="carte" style="transform:perspective(1600px) rotateX(${o.tilt}deg) rotateZ(${o.rot || 0}deg) scale(${o.zoom}) translate(${tx}px,${ty}px);filter:${o.flou ? `blur(${o.flou}px)` : 'none'};opacity:${o.op ?? 1}">${CARTE}${o.html || ''}</div>`;
+  return `<div class="carte" style="--f:${-(window.T || 0) * 140}px;transform:perspective(1600px) rotateX(${o.tilt}deg) rotateZ(${o.rot || 0}deg) scale(${o.zoom}) translate(${tx}px,${ty}px);filter:${o.flou ? `blur(${o.flou}px)` : 'none'};opacity:${o.op ?? 1}">${CARTE}${o.html || ''}</div>`;
 }
 function crit(n, nom, ic, y, op = 1, on = false) {
   return `<div class="carte-crit" style="top:${y}px;opacity:${op};transform:translateY(${(1 - op) * 40}px);${on ? 'box-shadow:0 0 0 5px #111,0 14px 34px rgba(0,0,0,.13)' : ''}"><div class="ic">${ic}</div><div><small>CRITÈRE 0${n} / 03</small><b>${nom}</b></div></div>`;
@@ -165,10 +174,10 @@ function devis(x, y, qui, tot, extra = '', op = 1, rot = 0) {
 }
 Object.assign(SC_PLAN, {
   duo_titre(s, u, sc) { const a = out(s / .5), b = out((s - .3) / .5);
-    return carte({tilt: 56 - 8 * u, zoom: 1.05 + .12 * u, rot: -20 + 10 * u, cx: 1680, cy: 1360, html: pin(PA, 'C', 'Concurrent') + pin(PB, 'V', 'Vous') + `<div class="cli" style="left:${CL[0]}px;top:${CL[1]}px"></div>`}) + devis(70, 900 + 60 * (1 - a), 'VOUS', '····· €', '', a, -4 + 2 * u) + devis(580, 940 + 60 * (1 - b), 'CONCURRENT', '····· €', '<div class="badge" style="background:#111;color:#fff">✓ SIGNÉ</div>', b, 4 - 2 * u) +
+    return carte({tilt: 56 - 8 * u, zoom: 1.05 + .12 * u, rot: -20 + 10 * u, cx: 1680, cy: 1360, html: pin(PA, 'C', 'Concurrent') + pin(PB, 'V', 'Vous') + `<div class="cli" style="left:${CL[0]}px;top:${CL[1]}px"></div>`}) + devis(70, 900 + 60 * (1 - a), 'VOUS', '····· €', '', a, -4 + 2 * u) + devis(580, 940 + 60 * (1 - b), 'CONCURRENT', '····· €', '<div class="badge" style="background:#F2B705;color:#0B1B3A">✓ SIGNÉ</div>', b, 4 - 2 * u) +
       `<div class="titre" style="top:250px;opacity:${out(s / .4)}"><small>${sc.serie}</small><p>${sc.l1}</p><p class="g" style="font-size:96px;transform:scale(${.85 + .15 * out((s - .5) / .5)})">${sc.l2}</p></div>`; },
   duo(s, u) { const a = out((s - .3) / .4), b = out((s - .7) / .4);
-    const bad = (x, y, op) => `<div style="position:absolute;left:${x}px;top:${y}px;background:#111;color:#fff;border-radius:16px;padding:12px 20px;font-size:28px;font-weight:900;white-space:nowrap;opacity:${op};transform:translateY(${(1 - op) * 20}px)">📄 Devis · même chantier</div>`;
+    const bad = (x, y, op) => `<div style="position:absolute;left:${x}px;top:${y}px;background:#0B1B3A;color:#fff;border-radius:16px;padding:12px 20px;font-size:28px;font-weight:900;white-space:nowrap;opacity:${op};transform:translateY(${(1 - op) * 20}px)">📄 Devis · même chantier</div>`;
     return carte({tilt: 30 * (1 - ease(u)), zoom: 1.1, cx: 1680, cy: 1330, html: pin(PA, 'C', 'Concurrent') + pin(PB, 'V', 'Vous') + `<div class="cli" style="left:${CL[0]}px;top:${CL[1]}px"></div>` + bad(PA[0] - 160, PA[1] + 40, a) + bad(PB[0] - 420, PB[1] - 300, b)}); },
   frise(s, u) { const J = ['LUN', 'MAR', 'MER', 'JEU']; let h = carte({tilt: 40, zoom: 1.2, rot: 8 * u, cx: 1600, cy: 1400, flou: 6, op: .4}) + '<div class="frise"></div>';
     J.forEach((j, i) => h += `<div class="jour" style="left:${160 + i * 253}px">${j}</div>`);
@@ -178,14 +187,14 @@ Object.assign(SC_PLAN, {
     return h; },
   attente(s, u) { const r = 360 * cl(s / 1.6);
     const d = out((s - .3) / 1.2), x = PA[0] + (CL[0] - PA[0]) * d, y = PA[1] + (CL[1] - PA[1]) * d;
-    return carte({tilt: 0, zoom: 1.2, cx: 1680, cy: 1250, html: pin(PA, 'C', 'Concurrent') + pin(PB, 'V', 'Vous', .45) + `<svg style="position:absolute;inset:0" width="2160" height="2880"><line x1="${PA[0]}" y1="${PA[1]}" x2="${x}" y2="${y}" stroke="#111" stroke-width="8" stroke-dasharray="16 12"/></svg><div class="cli" style="left:${CL[0]}px;top:${CL[1]}px"></div>
-      <div class="pin" style="left:${CL[0] + 40}px;top:${CL[1] + 40}px;width:auto;padding:0 18px;opacity:${out((s - 1.4) / .3)};font-size:28px;font-weight:900;background:#111;color:#fff">✓ SIGNÉ</div>`}) +
+    return carte({tilt: 0, zoom: 1.2, cx: 1680, cy: 1250, html: pin(PA, 'C', 'Concurrent') + pin(PB, 'V', 'Vous', .45) + `<svg style="position:absolute;inset:0" width="2160" height="2880"><path d="${window.TUYAUX[0]}" fill="none" stroke="#1E40AF" stroke-width="16" stroke-linejoin="round" stroke-dasharray="${420 * d} 2000"/></svg><div class="cli" style="left:${CL[0]}px;top:${CL[1]}px"></div>
+      <div class="pin" style="left:${CL[0] + 40}px;top:${CL[1] + 40}px;width:auto;padding:0 18px;opacity:${out((s - 1.4) / .3)};font-size:28px;font-weight:900;background:#F2B705;color:#0B1B3A">✓ SIGNÉ</div>`}) +
       `<div class="enorme" style="top:300px;font-size:120px;opacity:${out(s / .5)}">Il signe.</div><div class="enorme" style="top:440px;font-size:56px;color:#666;opacity:${out((s - .5) / .5)}">ailleurs.</div>`; },
   tuiles(s, u, sc) { return carte({tilt: 48, zoom: 1.15, rot: -12 + 6 * u, cx: 1600, cy: 1500, flou: 5, op: .45}) + SC_PLAN._tuiles(s, u, sc); },
   _tuiles(s, u, sc) { const T = [['Vitesse', 'envoyé tout de suite'], ['Clarté', 'chaque ligne lisible'], ['Suivi', 'jamais oublié']];
     return T.map((t, i) => { const o = out((s - (sc.t0 || .3) - i * .3) / .35); return `<div class="tuile ${sc.on === i ? 'on' : ''}" style="top:${330 + i * 230}px;opacity:${sc.on !== undefined ? (sc.on === i ? 1 : .35) : o};transform:translateX(${(1 - o) * 60}px)"><div class="n">0${i + 1}</div><div><b>${t[0]}</b><small>${t[1]}</small></div></div>`; }).join(''); },
   vitesse(s, u) { const p = out(s / 1.2);
-    return carte({tilt: 48, zoom: 1.15, rot: -6, cx: 1600, cy: 1500, flou: 6, op: .35}) + SC_PLAN._tuiles(9, 1, {on: 0}).replace(/top:(\d+)px/g, (m, y) => `top:${+y - 120}px`) + devis(325, 860, 'ENVOYÉ', '····· €', `<div class="badge" style="background:#111;color:#fff;opacity:${p}">➤ ENVOYÉ AVANT DE PARTIR</div>`, 1, 0); },
+    return carte({tilt: 48, zoom: 1.15, rot: -6, cx: 1600, cy: 1500, flou: 6, op: .35}) + SC_PLAN._tuiles(9, 1, {on: 0}).replace(/top:(\d+)px/g, (m, y) => `top:${+y - 120}px`) + devis(325, 860, 'ENVOYÉ', '····· €', `<div class="badge" style="background:#F2B705;color:#0B1B3A;opacity:${p}">➤ ENVOYÉ AVANT DE PARTIR</div>`, 1, 0); },
   clarte(s, u) { const n = Math.floor(cl(s / 1.6) * 4);
     const L = [['Dépose baignoire', 'forfait'], ['Receveur extra-plat', '1 u'], ['Paroi vitrée', '1 u'], ['Mitigeur thermostatique', '1 u']];
     return carte({tilt: 48, zoom: 1.15, rot: -3, cx: 1600, cy: 1500, flou: 6, op: .35}) + SC_PLAN._tuiles(9, 1, {on: 1}).replace(/top:(\d+)px/g, (m, y) => `top:${+y - 120}px`) +
@@ -193,7 +202,7 @@ Object.assign(SC_PLAN, {
   suivi(s, u) { const a = out((s - .3) / .4);
     return carte({tilt: 48, zoom: 1.15, rot: 0, cx: 1600, cy: 1500, flou: 6, op: .35}) + SC_PLAN._tuiles(9, 1, {on: 2}).replace(/top:(\d+)px/g, (m, y) => `top:${+y - 120}px`) +
       `<div class="mail" style="top:${880 + 40 * (1 - a)}px;opacity:${a}"><small>RELANCE AUTOMATIQUE · J+3</small>Bonjour, avez-vous pu regarder notre devis pour la salle de bain ?</div>`; },
-  punch(s, u, sc) { return carte({tilt: 60 - 10 * u, zoom: 1.3 + .2 * u, rot: 15 * u, cx: 1680, cy: 1360, op: .5, html: pin(PA, 'C') + pin(PB, 'V')}) + `<div class="punch"><div class="a" style="opacity:${out(s / .4)}">${sc.a}</div><div class="b" style="transform:scale(${.8 + .2 * out((s - .4) / .5)});opacity:${out((s - .4) / .4)}">${sc.b}</div></div>`; },
+  punch(s, u, sc) { return `<div class="nuit"></div>` + carte({tilt: 60 - 10 * u, zoom: 1.3 + .2 * u, rot: 15 * u, cx: 1680, cy: 1360, op: .18}) + `<div class="punch"><div class="a" style="opacity:${out(s / .4)}">${sc.a}</div><div class="b" style="transform:scale(${.8 + .2 * out((s - .4) / .5)});opacity:${out((s - .4) / .4)}">${sc.b}</div></div>`; },
 });
 
 // ---------- croquis au trait ----------
@@ -259,7 +268,7 @@ function st(ph, t, y) {
     return `<span class="${t >= a ? 'on' : ''}">${b ? `<b>${m}</b>` : m}</span>`; }).join(' ') + '</div>';
 }
 window.render = function (t) {
-  const S = window.S; let i = S.phrases.findIndex(p => t < p.fin); if (i < 0) i = S.phrases.length - 1;
+  window.T = t; const S = window.S; let i = S.phrases.findIndex(p => t < p.fin); if (i < 0) i = S.phrases.length - 1;
   const ph = S.phrases[i], dur = ph.fin - ph.debut, s = t - ph.debut, u = cl(s / dur), sc = ph.scene;
   const T = S.style === 'plan' ? SC_PLAN : SC_CROQUIS;
   document.getElementById('scene').className = S.style;
