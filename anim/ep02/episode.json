@@ -14,7 +14,38 @@
  },
  "fond": "tension",
  "volume_fond": 0.34,
- "segments": {},
+ "segments": {
+  "julien": [
+   [
+    0.05,
+    3.12
+   ],
+   [
+    3.67,
+    4.59
+   ],
+   [
+    5.1,
+    5.58
+   ],
+   [
+    6.13,
+    6.51
+   ]
+  ],
+  "rocher": [
+   [
+    0.05,
+    7.64
+   ]
+  ],
+  "vasseur": [
+   [
+    0.05,
+    1.73
+   ]
+  ]
+ },
  "textes": {
   "julien": [
    "Enfermez-vous dans votre chambre. J'appelle la police, j'arrive.",

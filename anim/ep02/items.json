@@ -1,20 +1,8 @@
 [
  {
-  "carte": "precedemment",
-  "duree": 2.2,
-  "pause": 0,
-  "son": "sonnerie",
-  "volume": 0.5,
-  "debut": 0.0,
-  "parole": null,
-  "mots": [],
-  "fin": 2.2
- },
- {
-  "qui": "julien",
-  "n": 0,
-  "pause": 0.1,
+  "plan": "sonne",
   "decor": "camion",
+  "duree": 2.6,
   "cam": [
    [
     -0.25,
@@ -40,85 +28,20 @@
    ]
   ],
   "ev": [
-   "appel",
    "essuie"
   ],
   "incrust": "23 h 12",
-  "gras": 4,
-  "debut": 2.2,
-  "parole": [
-   2.24,
-   5.842
-  ],
-  "texte": "Madame Rocher ? Julien Morel, plombier. Vasseur est passé chez vous ?",
-  "mots": [
-   [
-    "Madame",
-    2.283,
-    2.519
-   ],
-   [
-    "Rocher",
-    2.519,
-    2.755
-   ],
-   [
-    "?",
-    2.755,
-    2.823
-   ],
-   [
-    "Julien",
-    2.823,
-    3.517
-   ],
-   [
-    "Morel,",
-    3.517,
-    3.753
-   ],
-   [
-    "plombier.",
-    3.753,
-    4.304
-   ],
-   [
-    "Vasseur",
-    4.304,
-    5.021
-   ],
-   [
-    "est",
-    5.021,
-    5.156
-   ],
-   [
-    "passé",
-    5.156,
-    5.358
-   ],
-   [
-    "chez",
-    5.358,
-    5.526
-   ],
-   [
-    "vous",
-    5.526,
-    5.695
-   ],
-   [
-    "?",
-    5.695,
-    5.762
-   ]
-  ],
-  "fin": 5.842
+  "son": "sonnerie",
+  "volume": 0.6,
+  "debut": 0.0,
+  "parole": null,
+  "mots": [],
+  "fin": 1.43
  },
  {
   "qui": "rocher",
   "n": 0,
-  "pause": 0.3,
+  "pause": 0.1,
   "decor": "camion",
   "cam": [
    [
@@ -149,59 +72,114 @@
    "essuie"
   ],
   "gras": 3,
-  "debut": 5.842,
+  "debut": 1.43,
   "parole": [
-   5.962,
-   8.359
+   1.47,
+   8.367
   ],
-  "texte": "Il est revenu… Il est dans ma cuisine…",
+  "texte": "Monsieur Morel ? Madame Lefèvre m'a donné votre numéro… J'entends de l'eau couler dans ma cuisine… et quelqu'un marche.",
   "mots": [
    [
-    "Il",
-    6.002,
-    6.177
+    "Monsieur",
+    1.51,
+    1.917
    ],
    [
-    "est",
-    6.177,
-    6.411
+    "Morel",
+    1.917,
+    2.596
    ],
    [
-    "revenu…",
-    6.411,
-    6.878
+    "?",
+    2.596,
+    2.686
    ],
    [
-    "Il",
-    6.878,
-    7.053
+    "Madame",
+    2.686,
+    3.003
    ],
    [
-    "est",
-    7.053,
-    7.287
+    "Lefèvre",
+    3.003,
+    3.364
+   ],
+   [
+    "m'a",
+    3.364,
+    3.545
+   ],
+   [
+    "donné",
+    3.545,
+    3.816
+   ],
+   [
+    "votre",
+    3.816,
+    4.087
+   ],
+   [
+    "numéro…",
+    4.087,
+    4.448
+   ],
+   [
+    "J'entends",
+    4.448,
+    5.279
+   ],
+   [
+    "de",
+    5.279,
+    5.414
+   ],
+   [
+    "l'eau",
+    5.414,
+    5.685
+   ],
+   [
+    "couler",
+    5.685,
+    6.001
    ],
    [
     "dans",
-    7.287,
-    7.578
+    6.001,
+    6.227
    ],
    [
     "ma",
-    7.578,
-    7.754
+    6.227,
+    6.363
    ],
    [
     "cuisine…",
-    7.754,
-    8.279
+    6.363,
+    6.769
+   ],
+   [
+    "et",
+    6.769,
+    7.404
+   ],
+   [
+    "quelqu'un",
+    7.404,
+    7.856
+   ],
+   [
+    "marche.",
+    7.856,
+    8.217
    ]
   ],
-  "fin": 8.359
+  "fin": 8.367
  },
  {
   "qui": "julien",
-  "n": 1,
+  "n": 0,
   "pause": 0.3,
   "decor": "camion",
   "cam": [
@@ -232,46 +210,56 @@
    "appel",
    "essuie"
   ],
-  "gras": 2,
-  "debut": 8.359,
+  "gras": 1,
+  "debut": 8.367,
   "parole": [
-   8.479,
-   9.92
+   8.487,
+   11.348
   ],
-  "texte": "Madame Rocher ? Madame Rocher !",
+  "texte": "Enfermez-vous dans votre chambre. J'appelle la police, j'arrive.",
   "mots": [
    [
-    "Madame",
-    8.519,
-    8.708
+    "Enfermez-vous",
+    8.527,
+    8.932
    ],
    [
-    "Rocher",
-    8.708,
-    8.897
+    "dans",
+    8.932,
+    9.076
    ],
    [
-    "?",
-    8.897,
-    8.951
+    "votre",
+    9.076,
+    9.25
    ],
    [
-    "Madame",
-    8.951,
-    9.597
+    "chambre.",
+    9.25,
+    10.009
    ],
    [
-    "Rocher",
-    9.597,
-    9.786
+    "J'appelle",
+    10.009,
+    10.298
    ],
    [
-    "!",
-    9.786,
-    9.84
+    "la",
+    10.298,
+    10.385
+   ],
+   [
+    "police,",
+    10.385,
+    10.975
+   ],
+   [
+    "j'arrive.",
+    10.975,
+    11.264
    ]
   ],
-  "fin": 9.92
+  "fin": 11.348
  },
  {
   "plan": "route",
@@ -305,25 +293,24 @@
   "ev": [
    "roule"
   ],
-  "debut": 9.92,
+  "debut": 11.348,
   "parole": null,
   "mots": [],
-  "fin": 11.57
+  "fin": 12.998
  },
  {
   "carte": "sponsor",
   "duree": 1.8,
   "pause": 0,
-  "debut": 11.57,
+  "debut": 12.998,
   "parole": null,
   "mots": [],
-  "fin": 13.37
+  "fin": 14.798
  },
  {
-  "plan": "cle",
+  "plan": "pot",
   "decor": "maison_rocher",
-  "duree": 4.4,
-  "incrust": "23 h 26",
+  "duree": 3.0,
   "cam": [
    [
     -1.0,
@@ -331,9 +318,9 @@
     3.5
    ],
    [
-    -2.3,
-    1.0,
-    3.0
+    -1.1,
+    0.75,
+    3.35
    ]
   ],
   "cible": [
@@ -343,24 +330,97 @@
     2.35
    ],
    [
+    -0.8,
+    0.15,
+    2.35
+   ]
+  ],
+  "incrust": "23 h 26",
+  "ev": [
+   "dehors"
+  ],
+  "debut": 14.798,
+  "parole": null,
+  "mots": [],
+  "fin": 16.448
+ },
+ {
+  "qui": "julien",
+  "n": 1,
+  "pause": 0.1,
+  "decor": "maison_rocher",
+  "cam": [
+   [
+    -2.3,
+    1.0,
+    3.0
+   ],
+   [
+    -2.2,
+    1.0,
+    2.85
+   ]
+  ],
+  "cible": [
+   [
+    -1.59,
+    0.95,
+    2.26
+   ],
+   [
     -1.59,
     0.95,
     2.26
    ]
   ],
-  "soustitre": "La clé cachée sous le pot…<br><b>est dans la serrure.</b>",
   "ev": [
    "dehors"
   ],
-  "debut": 13.37,
-  "parole": null,
-  "mots": [],
-  "fin": 15.79
+  "gras": 2,
+  "debut": 16.448,
+  "parole": [
+   16.488,
+   17.429
+  ],
+  "texte": "La clé est sur la porte…",
+  "mots": [
+   [
+    "La",
+    16.531,
+    16.624
+   ],
+   [
+    "clé",
+    16.624,
+    16.747
+   ],
+   [
+    "est",
+    16.747,
+    16.871
+   ],
+   [
+    "sur",
+    16.871,
+    16.994
+   ],
+   [
+    "la",
+    16.994,
+    17.087
+   ],
+   [
+    "porte…",
+    17.087,
+    17.303
+   ]
+  ],
+  "fin": 17.429
  },
  {
   "plan": "entree",
   "decor": "maison_rocher",
-  "duree": 2.2,
+  "duree": 2.6,
   "cam": [
    [
     -1.25,
@@ -388,10 +448,10 @@
   "ev": [
    "dehors"
   ],
-  "debut": 15.79,
+  "debut": 17.429,
   "parole": null,
   "mots": [],
-  "fin": 17.0
+  "fin": 18.859
  },
  {
   "qui": "julien",
@@ -423,74 +483,118 @@
    ]
   ],
   "gras": 2,
-  "debut": 17.0,
+  "debut": 18.859,
   "parole": [
-   17.08,
-   17.602
+   18.939,
+   19.488
   ],
   "texte": "Il y a quelqu'un ?",
   "mots": [
    [
     "Il",
-    17.124,
-    17.187
+    18.979,
+    19.046
    ],
    [
     "y",
-    17.187,
-    17.229
+    19.046,
+    19.091
    ],
    [
     "a",
-    17.229,
-    17.271
+    19.091,
+    19.136
    ],
    [
     "quelqu'un",
-    17.271,
-    17.48
+    19.136,
+    19.359
    ],
    [
     "?",
-    17.48,
-    17.522
+    19.359,
+    19.403
    ]
   ],
-  "fin": 17.602
+  "fin": 19.488
  },
  {
-  "plan": "facture",
+  "plan": "caisse",
   "decor": "maison_rocher",
   "duree": 3.0,
   "cam": [
    [
-    0.62,
-    1.28,
-    -0.92
+    -1.0,
+    1.45,
+    -0.9
    ],
    [
-    0.6,
-    1.16,
-    -1.05
+    -1.3,
+    1.3,
+    -1.25
    ]
   ],
   "cible": [
    [
-    0.6,
-    0.78,
-    -1.15
+    -1.5,
+    0.98,
+    -2.1
    ],
    [
-    0.6,
-    0.78,
-    -1.15
+    -1.55,
+    1.02,
+    -2.12
    ]
   ],
-  "soustitre": "« aujourd'hui · 23 h 10 »",
-  "debut": 17.602,
+  "debut": 19.488,
   "parole": null,
   "mots": [],
-  "fin": 19.252
+  "fin": 21.138
+ },
+ {
+  "qui": "julien",
+  "n": 3,
+  "pause": 0.1,
+  "decor": "maison_rocher",
+  "cam": [
+   [
+    -1.35,
+    1.27,
+    -1.35
+   ],
+   [
+    -1.42,
+    1.24,
+    -1.45
+   ]
+  ],
+  "cible": [
+   [
+    -1.55,
+    1.02,
+    -2.12
+   ],
+   [
+    -1.55,
+    1.02,
+    -2.12
+   ]
+  ],
+  "gras": 1,
+  "debut": 21.138,
+  "parole": [
+   21.178,
+   21.637
+  ],
+  "texte": "Vasseur…",
+  "mots": [
+   [
+    "Vasseur…",
+    21.223,
+    21.535
+   ]
+  ],
+  "fin": 21.637
  },
  {
   "plan": "lampe",
@@ -523,15 +627,16 @@
   "ev": [
    "lampe"
   ],
-  "debut": 19.252,
+  "debut": 21.637,
   "parole": null,
   "mots": [],
-  "fin": 20.462
+  "fin": 22.847
  },
  {
-  "plan": "vasseur",
+  "qui": "vasseur",
+  "n": 0,
+  "pause": 0.3,
   "decor": "maison_rocher",
-  "duree": 3.6,
   "cam": [
    [
     -0.3,
@@ -560,20 +665,55 @@
    "lampe",
    "retourne"
   ],
-  "soustitre": "« Vous êtes perdu, Monsieur Morel ? »",
-  "debut": 20.462,
-  "parole": null,
-  "mots": [],
-  "fin": 22.442
+  "gras": 2,
+  "debut": 22.847,
+  "parole": [
+   22.967,
+   24.587
+  ],
+  "texte": "Vous êtes perdu, Monsieur Morel ?",
+  "mots": [
+   [
+    "Vous",
+    23.007,
+    23.158
+   ],
+   [
+    "êtes",
+    23.158,
+    23.309
+   ],
+   [
+    "perdu,",
+    23.309,
+    23.521
+   ],
+   [
+    "Monsieur",
+    23.521,
+    24.251
+   ],
+   [
+    "Morel",
+    24.251,
+    24.433
+   ],
+   [
+    "?",
+    24.433,
+    24.493
+   ]
+  ],
+  "fin": 24.587
  },
  {
   "carte": "fin",
   "duree": 3.2,
   "son": "generique",
   "volume": 0.6,
-  "debut": 22.442,
+  "debut": 24.587,
   "parole": null,
   "mots": [],
-  "fin": 26.842
+  "fin": 28.987
  }
 ]
