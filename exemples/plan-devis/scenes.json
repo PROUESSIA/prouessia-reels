@@ -1,0 +1,104 @@
+{
+ "style": "plan",
+ "phrases": [
+  {
+   "texte": "Pourquoi le devis de votre concurrent est signé… et pas le vôtre ?",
+   "scene": {
+    "type": "duo_titre",
+    "serie": "COMPRENDRE · ÉPISODE 01",
+    "l1": "Pourquoi le devis de votre concurrent est signé…",
+    "l2": "et pas le vôtre ?"
+   }
+  },
+  {
+   "texte": "Même chantier. Même prix, à peu près.",
+   "gras": [
+    "même chantier",
+    "même prix"
+   ],
+   "scene": {
+    "type": "duo"
+   }
+  },
+  {
+   "texte": "Lui l'envoie le soir même. Vous, trois jours après.",
+   "gras": [
+    "le soir même",
+    "trois jours après"
+   ],
+   "scene": {
+    "type": "frise"
+   }
+  },
+  {
+   "texte": "Pendant ce temps, le client attend… puis il signe ailleurs.",
+   "gras": [
+    "signe ailleurs"
+   ],
+   "scene": {
+    "type": "attente"
+   }
+  },
+  {
+   "texte": "Trois choses font la différence.",
+   "gras": [
+    "trois choses"
+   ],
+   "scene": {
+    "type": "tuiles",
+    "t0": 0.3
+   }
+  },
+  {
+   "texte": "Un : la vitesse. Le devis part avant de quitter le chantier.",
+   "gras": [
+    "vitesse"
+   ],
+   "scene": {
+    "type": "vitesse"
+   }
+  },
+  {
+   "texte": "Deux : la clarté. Chaque ligne se lit d'un coup d'œil.",
+   "gras": [
+    "clarté"
+   ],
+   "scene": {
+    "type": "clarte"
+   }
+  },
+  {
+   "texte": "Trois : le suivi. Sans réponse, une relance part toute seule.",
+   "gras": [
+    "suivi"
+   ],
+   "scene": {
+    "type": "suivi"
+   }
+  },
+  {
+   "texte": "Un bon devis ne sert à rien… s'il arrive trop tard.",
+   "scene": {
+    "type": "punch",
+    "a": "Un bon devis ne sert à rien…",
+    "b": "s'il arrive trop tard."
+   }
+  },
+  {
+   "texte": "Et vous, votre dernier devis, parti au bout de combien de temps ?",
+   "gras": [
+    "combien de temps"
+   ],
+   "scene": {
+    "type": "tuiles",
+    "on": 0
+   }
+  },
+  {
+   "texte": "Prouessia, le partenaire des plombiers.",
+   "scene": {
+    "type": "fin"
+   }
+  }
+ ]
+}
