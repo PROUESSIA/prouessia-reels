@@ -26,3 +26,4 @@ exemples/*/app/
 exemples/*/frames/
 exemples/*/voix-brute.wav
 exemples/*/voix-serree.wav
+anim/*/*.wav

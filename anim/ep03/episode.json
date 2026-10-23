@@ -1,0 +1,797 @@
+{
+ "serie": "Sous pression",
+ "numero": 3,
+ "titre": "Le piège",
+ "voix": {
+  "julien": "Orus",
+  "vasseur": "Algenib",
+  "rocher": "Vindemiatrix",
+  "policier": "Alnilam"
+ },
+ "rythme": {
+  "pauses": 0.4,
+  "silences": 0.55,
+  "vitesse": 1.12
+ },
+ "fond": "tension",
+ "volume_fond": 0.34,
+ "segments": {
+  "vasseur": [
+   [
+    0.05,
+    2.37
+   ],
+   [
+    3.51,
+    6.69
+   ],
+   [
+    7.44,
+    10.43
+   ],
+   [
+    11.62,
+    12.43
+   ],
+   [
+    13.2,
+    15.12
+   ]
+  ],
+  "julien": [
+   [
+    0.3,
+    2.47
+   ],
+   [
+    3.68,
+    5.38
+   ],
+   [
+    6.18,
+    8.35
+   ],
+   [
+    9.0,
+    10.3
+   ]
+  ],
+  "rocher": [
+   [
+    0.05,
+    3.81
+   ],
+   [
+    5.24,
+    9.07
+   ],
+   [
+    9.74,
+    12.28
+   ]
+  ],
+  "policier": [
+   [
+    0.05,
+    1.96
+   ],
+   [
+    3.03,
+    4.96
+   ],
+   [
+    6.27,
+    8.15
+   ]
+  ]
+ },
+ "textes": {
+  "vasseur": [
+   "Je pourrais vous poser la même question, Morel.",
+   "Je passais vérifier votre robinet, madame. Heureusement.",
+   "Messieurs, cet homme est entré chez ma cliente en pleine nuit.",
+   "Et je suis là, madame.",
+   "La prochaine, c'est madame Lefèvre."
+  ],
+  "julien": [
+   "Vasseur. Qu'est-ce que vous faites là ?",
+   "Il ment. C'est lui qui a ouvert l'eau.",
+   "Moi. Quelqu'un est entré chez madame.",
+   "Madame, c'est vous qui m'avez appelé !"
+  ],
+  "rocher": [
+   "Monsieur Vasseur ? Vous êtes venu pour la fuite ?",
+   "Monsieur Vasseur, oui. Lui… je ne l'ai jamais vu.",
+   "J'ai appelé… un plombier."
+  ],
+  "policier": [
+   "Police ! Qui nous a appelés ?",
+   "Madame, vous connaissez ces messieurs ?",
+   "Monsieur Morel, vous allez nous suivre."
+  ]
+ },
+ "deroule": [
+  {
+   "plan": "lampe",
+   "decor": "maison_rocher",
+   "duree": 2.6,
+   "cam": [
+    [
+     1.25,
+     1.3,
+     -1.25
+    ],
+    [
+     1.15,
+     1.3,
+     -1.15
+    ]
+   ],
+   "cible": [
+    [
+     -1.45,
+     1.5,
+     1.65
+    ],
+    [
+     -1.45,
+     1.5,
+     1.65
+    ]
+   ],
+   "ev": [
+    "lampe",
+    "retourne"
+   ],
+   "incrust": "23 h 27",
+   "son": "sonnerie",
+   "volume": 0.5
+  },
+  {
+   "qui": "julien",
+   "n": 0,
+   "pause": 0.1,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     -0.2,
+     1.72,
+     1.35
+    ],
+    [
+     -0.15,
+     1.7,
+     1.2
+    ]
+   ],
+   "cible": [
+    [
+     0.05,
+     1.55,
+     -0.35
+    ],
+    [
+     0.05,
+     1.55,
+     -0.35
+    ]
+   ],
+   "ev": [
+    "lampe",
+    "retourne"
+   ],
+   "gras": 1
+  },
+  {
+   "qui": "vasseur",
+   "n": 0,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     0.6,
+     1.62,
+     0.3
+    ],
+    [
+     0.5,
+     1.62,
+     0.45
+    ]
+   ],
+   "cible": [
+    [
+     -1.5,
+     1.55,
+     1.75
+    ],
+    [
+     -1.5,
+     1.55,
+     1.75
+    ]
+   ],
+   "ev": [
+    "lampe",
+    "retourne"
+   ],
+   "gras": 1
+  },
+  {
+   "qui": "rocher",
+   "n": 0,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     0.15,
+     1.5,
+     0.05
+    ],
+    [
+     0.25,
+     1.5,
+     -0.05
+    ]
+   ],
+   "cible": [
+    [
+     1.55,
+     1.45,
+     -0.95
+    ],
+    [
+     1.55,
+     1.45,
+     -0.95
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher"
+   ],
+   "gras": 2
+  },
+  {
+   "qui": "vasseur",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     0.35,
+     1.66,
+     -1.25
+    ],
+    [
+     0.3,
+     1.65,
+     -1.1
+    ]
+   ],
+   "cible": [
+    [
+     -0.75,
+     1.6,
+     0.55
+    ],
+    [
+     -0.75,
+     1.6,
+     0.55
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher"
+   ],
+   "gras": 1
+  },
+  {
+   "qui": "julien",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     -0.2,
+     1.72,
+     1.35
+    ],
+    [
+     -0.15,
+     1.7,
+     1.2
+    ]
+   ],
+   "cible": [
+    [
+     0.05,
+     1.55,
+     -0.35
+    ],
+    [
+     0.05,
+     1.55,
+     -0.35
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher"
+   ],
+   "gras": 4
+  },
+  {
+   "carte": "sponsor",
+   "duree": 1.8,
+   "pause": 0
+  },
+  {
+   "plan": "gyro",
+   "decor": "maison_rocher",
+   "duree": 3.0,
+   "cam": [
+    [
+     0.3,
+     1.5,
+     0.4
+    ],
+    [
+     0.35,
+     1.5,
+     0.2
+    ]
+   ],
+   "cible": [
+    [
+     1.2,
+     1.75,
+     -2.5
+    ],
+    [
+     1.2,
+     1.75,
+     -2.5
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro"
+   ],
+   "son": "sirene",
+   "volume": 0.7,
+   "incrust": "23 h 31"
+  },
+  {
+   "qui": "policier",
+   "n": 0,
+   "pause": 0.2,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     1.1,
+     1.6,
+     0.7
+    ],
+    [
+     1.0,
+     1.6,
+     0.6
+    ]
+   ],
+   "cible": [
+    [
+     -1.45,
+     1.55,
+     1.5
+    ],
+    [
+     -1.45,
+     1.55,
+     1.5
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police"
+   ],
+   "gras": 0
+  },
+  {
+   "qui": "julien",
+   "n": 2,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     -0.2,
+     1.72,
+     1.35
+    ],
+    [
+     -0.15,
+     1.7,
+     1.2
+    ]
+   ],
+   "cible": [
+    [
+     0.05,
+     1.55,
+     -0.35
+    ],
+    [
+     0.05,
+     1.55,
+     -0.35
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police"
+   ],
+   "gras": 1
+  },
+  {
+   "qui": "vasseur",
+   "n": 2,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     0.35,
+     1.66,
+     -1.25
+    ],
+    [
+     0.3,
+     1.65,
+     -1.1
+    ]
+   ],
+   "cible": [
+    [
+     -0.75,
+     1.6,
+     0.55
+    ],
+    [
+     -0.75,
+     1.6,
+     0.55
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police"
+   ],
+   "gras": 3
+  },
+  {
+   "qui": "policier",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     1.1,
+     1.6,
+     0.7
+    ],
+    [
+     1.0,
+     1.6,
+     0.6
+    ]
+   ],
+   "cible": [
+    [
+     -1.45,
+     1.55,
+     1.5
+    ],
+    [
+     -1.45,
+     1.55,
+     1.5
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police"
+   ],
+   "gras": 0
+  },
+  {
+   "qui": "rocher",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     0.15,
+     1.5,
+     0.05
+    ],
+    [
+     0.25,
+     1.5,
+     -0.05
+    ]
+   ],
+   "cible": [
+    [
+     1.55,
+     1.45,
+     -0.95
+    ],
+    [
+     1.55,
+     1.45,
+     -0.95
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police"
+   ],
+   "gras": 4
+  },
+  {
+   "qui": "julien",
+   "n": 3,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     -0.2,
+     1.72,
+     1.35
+    ],
+    [
+     -0.15,
+     1.7,
+     1.2
+    ]
+   ],
+   "cible": [
+    [
+     0.05,
+     1.55,
+     -0.35
+    ],
+    [
+     0.05,
+     1.55,
+     -0.35
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police"
+   ],
+   "gras": 1
+  },
+  {
+   "qui": "rocher",
+   "n": 2,
+   "pause": 0.4,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     0.15,
+     1.5,
+     0.05
+    ],
+    [
+     0.25,
+     1.5,
+     -0.05
+    ]
+   ],
+   "cible": [
+    [
+     1.55,
+     1.45,
+     -0.95
+    ],
+    [
+     1.55,
+     1.45,
+     -0.95
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police"
+   ],
+   "gras": 2
+  },
+  {
+   "qui": "vasseur",
+   "n": 3,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     0.35,
+     1.66,
+     -1.25
+    ],
+    [
+     0.3,
+     1.65,
+     -1.1
+    ]
+   ],
+   "cible": [
+    [
+     -0.75,
+     1.6,
+     0.55
+    ],
+    [
+     -0.75,
+     1.6,
+     0.55
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police"
+   ],
+   "gras": 2
+  },
+  {
+   "qui": "policier",
+   "n": 2,
+   "pause": 0.5,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     1.1,
+     1.6,
+     0.7
+    ],
+    [
+     1.0,
+     1.6,
+     0.6
+    ]
+   ],
+   "cible": [
+    [
+     -1.45,
+     1.55,
+     1.5
+    ],
+    [
+     -1.45,
+     1.55,
+     1.5
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police"
+   ],
+   "gras": 2
+  },
+  {
+   "plan": "emmene",
+   "decor": "maison_rocher",
+   "duree": 2.6,
+   "cam": [
+    [
+     1.0,
+     1.7,
+     -0.9
+    ],
+    [
+     0.9,
+     1.68,
+     -0.75
+    ]
+   ],
+   "cible": [
+    [
+     -0.9,
+     1.2,
+     1.0
+    ],
+    [
+     -0.9,
+     1.2,
+     1.0
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police",
+    "emmene"
+   ]
+  },
+  {
+   "qui": "vasseur",
+   "n": 4,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     -0.72,
+     1.6,
+     2.45
+    ],
+    [
+     -0.72,
+     1.6,
+     2.3
+    ]
+   ],
+   "cible": [
+    [
+     -0.72,
+     1.5,
+     1.0
+    ],
+    [
+     -0.72,
+     1.5,
+     1.0
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police",
+    "emmene",
+    "chuchote"
+   ],
+   "gras": 2
+  },
+  {
+   "carte": "fin",
+   "duree": 3.2,
+   "son": "generique",
+   "volume": 0.6
+  }
+ ]
+}

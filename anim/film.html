@@ -99,6 +99,8 @@ const CAST = {
   lea:     {peau: '#e2b28f', cheveux: '#6b3b1f', haut: '#3f7a6a', bas: '#3a4560', chaussures: '#e8e2d6', longs: true},
   vasseur: {peau: '#e0b090', cheveux: '#0e0c0b', haut: '#55595f', col: '#d9d9d9', bas: '#44474c', chaussures: '#1a1a1a'},
   lefevre: {peau: '#e6c2a4', cheveux: '#d9d6cf', haut: '#c77a9b', bas: '#c77a9b', chaussures: '#f0e0d0', chignon: true, robe: true},
+  rocher:  {peau: '#e8c6ab', cheveux: '#eeeeea', haut: '#c9b48e', bas: '#8b7f72', chaussures: '#b08a6a', robe: true},
+  policier: {peau: '#cf9a74', cheveux: '#2a201a', haut: '#1d2b4f', col: '#e8e8e8', bas: '#1d2b4f', chaussures: '#111', casquette: '#16213d'},
 };
 function lumieres(g, o) {
   g.add(new THREE.HemisphereLight(o.ciel, o.sol, o.hemi));
@@ -280,7 +282,13 @@ function decorMaisonRocher(x0) {
   const vasseur = perso({...CAST.vasseur, pose: 'debout'}, g); vasseur.root.position.set(-1.5, 0, 1.75); vasseur.root.rotation.y = Math.PI * .85; vasseur.root.visible = false;
   vasseur.bd.ep.rotation.x = -1.3; // il tient la lampe vers Julien
   const telJ = new THREE.Group(); julien.bd.main.add(telJ); telJ.visible = false; box(.075, .15, .01, '#0a0a0a', 0, -.05, .06, telJ);
-  return {g, persos: {julien, vasseur}, update(t, ev) {
+  // ép. 3 : Mme Rocher, le policier, la lumière de la cuisine, les gyrophares
+  const rocher = perso({...CAST.rocher, pose: 'debout'}, g); rocher.root.position.set(1.55, 0, -.95); rocher.root.visible = false;
+  const policier = perso({...CAST.policier, pose: 'debout'}, g); policier.root.position.set(-1.45, 0, 1.5); policier.root.visible = false;
+  const plafond = new THREE.PointLight('#ffe2b8', 0, 7, 1.4); plafond.position.set(0, 2.6, -.6); g.add(plafond); const plafond2 = new THREE.PointLight('#ffe9cc', 0, 5, 1.4); plafond2.position.set(-.3, 2.2, 1.0); g.add(plafond2);
+  const gyroB = new THREE.PointLight('#2f5bff', 0, 6, 1.3), gyroR = new THREE.PointLight('#ff2a2a', 0, 6, 1.3); gyroB.position.set(1.2, 1.8, -2.2); gyroR.position.set(-1.6, 1.6, 2.6); g.add(gyroB, gyroR);
+  const vers = (pp, x, z) => { pp.root.rotation.y = Math.atan2(x - pp.root.position.x, z - pp.root.position.z); };
+  return {g, persos: {julien, vasseur, rocher, policier}, update(t, ev) {
     const p = geo.attributes.position.array; for (let i = 0; i < p.length; i += 3) p[i + 1] = base[i + 1] + Math.sin(base[i] * 3 + t * 2) * .007 + Math.cos(base[i + 2] * 4 + t * 1.6) * .007;
     geo.attributes.position.needsUpdate = true;
     const vib = ev.has('tel_eau'); ecran.visible = vib || ev.has('tel_eau_fixe'); halo.intensity = vib ? 1.4 + Math.sin(t * 30) * .6 : 0; tel.position.x = -.35 + (vib ? Math.sin(t * 90) * .004 : 0);
@@ -288,6 +296,16 @@ function decorMaisonRocher(x0) {
     if (ev.has('tel_julien')) { if (julien.pose !== 'telephone_main') pose(julien, 'telephone_main'); telJ.visible = true; julien.tete.rotation.x = .45; } 
     if (ev.has('lampe')) { vasseur.root.visible = true; torche.intensity = 16; flare.visible = true; torche.target.position.set(.05, 1.4, -.35); torche.target.updateMatrixWorld(); if (ev.has('retourne')) julien.root.rotation.y = -0.35; }
     else { torche.intensity = 0; vasseur.root.visible = false; flare.visible = false; }
+    plafond.intensity = ev.has('lumiere') ? 7 : 0; plafond2.intensity = ev.has('lumiere') ? 4 : 0;
+    const gy = ev.has('gyro'); const ph = Math.floor(t * 4) % 2; gyroB.intensity = gy ? (ph ? 9 : 1) : 0; gyroR.intensity = gy ? (ph ? .6 : 5) : 0;
+    if (ev.has('v_dedans')) { vasseur.root.visible = true; vasseur.root.position.set(-.75, 0, .55); vasseur.bd.ep.rotation.x = -.15; vers(vasseur, .05, -.35); julien.root.rotation.y = Math.atan2(-.8, .9); }
+    if (ev.has('chuchote')) { vasseur.root.visible = true; vasseur.root.position.set(-.5, 0, .95); vasseur.bd.ep.rotation.x = -.15; vers(vasseur, -.95, 1.05); }
+    rocher.root.visible = ev.has('rocher'); if (ev.has('rocher')) vers(rocher, -.4, .2);
+    policier.root.visible = ev.has('police');
+    if (ev.has('police')) { if (ev.has('emmene')) { policier.root.position.set(-1.25, 0, 1.25); } else { policier.root.position.set(-1.45, 0, 1.5); vers(policier, .05, -.35); } }
+    if (ev.has('emmene')) { julien.root.position.set(-.95, 0, 1.05); vers(julien, -1.6, 2.2); vers(policier, -1.6, 2.2);
+      for (const [b, sg] of [[julien.bg, -1], [julien.bd, 1]]) { b.ep.rotation.x = .55; b.ep.rotation.z = sg * .1; b.coude.rotation.x = -.9; } }
+    else if (julien.pose === 'debout') { julien.root.position.set(.05, 0, -.35); }
   }};
 }
 DECORS.chambre = decorChambre(0); DECORS.camion = decorCamion(20, true); DECORS.cuisine_lefevre = decorCuisineLefevre(40);
