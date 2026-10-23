@@ -91,7 +91,8 @@
    "Je passais vérifier votre robinet, madame. Heureusement.",
    "Messieurs, cet homme est entré chez ma cliente en pleine nuit.",
    "Et je suis là, madame.",
-   "La prochaine, c'est madame Lefèvre."
+   "La prochaine, c'est madame Lefèvre.",
+   "Madame m'a confié sa clé, pour les urgences. C'est dans son contrat."
   ],
   "julien": [
    "Vasseur. Qu'est-ce que vous faites là ?",
@@ -102,12 +103,15 @@
   "rocher": [
    "Monsieur Vasseur ? Vous êtes venu pour la fuite ?",
    "Monsieur Vasseur, oui. Lui… je ne l'ai jamais vu.",
-   "J'ai appelé… un plombier."
+   "J'ai appelé… un plombier.",
+   "Monsieur Morel, oui, je l'ai appelé. Mais lui… je ne sais pas comment il est entré.",
+   "J'ai signé… ça ?"
   ],
   "policier": [
    "Police ! Qui nous a appelés ?",
    "Madame, vous connaissez ces messieurs ?",
-   "Monsieur Morel, vous allez nous suivre."
+   "Monsieur Morel, vous allez nous suivre.",
+   "C'est signé, madame. Monsieur est dans son droit."
   ]
  },
  "deroule": [
@@ -445,44 +449,6 @@
    "gras": 1
   },
   {
-   "qui": "vasseur",
-   "n": 2,
-   "pause": 0.3,
-   "decor": "maison_rocher",
-   "cam": [
-    [
-     0.35,
-     1.66,
-     -1.25
-    ],
-    [
-     0.3,
-     1.65,
-     -1.1
-    ]
-   ],
-   "cible": [
-    [
-     -0.75,
-     1.6,
-     0.55
-    ],
-    [
-     -0.75,
-     1.6,
-     0.55
-    ]
-   ],
-   "ev": [
-    "v_dedans",
-    "lumiere",
-    "rocher",
-    "gyro",
-    "police"
-   ],
-   "gras": 3
-  },
-  {
    "qui": "policier",
    "n": 1,
    "pause": 0.3,
@@ -522,87 +488,11 @@
   },
   {
    "qui": "rocher",
-   "n": 1,
-   "pause": 0.3,
-   "decor": "maison_rocher",
-   "cam": [
-    [
-     0.15,
-     1.5,
-     0.05
-    ],
-    [
-     0.25,
-     1.5,
-     -0.05
-    ]
-   ],
-   "cible": [
-    [
-     1.55,
-     1.45,
-     -0.95
-    ],
-    [
-     1.55,
-     1.45,
-     -0.95
-    ]
-   ],
-   "ev": [
-    "v_dedans",
-    "lumiere",
-    "rocher",
-    "gyro",
-    "police"
-   ],
-   "gras": 4
-  },
-  {
-   "qui": "julien",
    "n": 3,
    "pause": 0.3,
    "decor": "maison_rocher",
    "cam": [
     [
-     -0.2,
-     1.72,
-     1.35
-    ],
-    [
-     -0.15,
-     1.7,
-     1.2
-    ]
-   ],
-   "cible": [
-    [
-     0.05,
-     1.55,
-     -0.35
-    ],
-    [
-     0.05,
-     1.55,
-     -0.35
-    ]
-   ],
-   "ev": [
-    "v_dedans",
-    "lumiere",
-    "rocher",
-    "gyro",
-    "police"
-   ],
-   "gras": 1
-  },
-  {
-   "qui": "rocher",
-   "n": 2,
-   "pause": 0.4,
-   "decor": "maison_rocher",
-   "cam": [
-    [
      0.15,
      1.5,
      0.05
@@ -632,11 +522,11 @@
     "gyro",
     "police"
    ],
-   "gras": 2
+   "gras": 3
   },
   {
    "qui": "vasseur",
-   "n": 3,
+   "n": 5,
    "pause": 0.3,
    "decor": "maison_rocher",
    "cam": [
@@ -670,12 +560,57 @@
     "gyro",
     "police"
    ],
-   "gras": 2
+   "gras": 1
+  },
+  {
+   "carte": "contrat",
+   "duree": 2.6,
+   "pause": 0,
+   "son": "frisson",
+   "volume": 0.5
+  },
+  {
+   "qui": "rocher",
+   "n": 4,
+   "pause": 0.3,
+   "decor": "maison_rocher",
+   "cam": [
+    [
+     0.15,
+     1.5,
+     0.05
+    ],
+    [
+     0.25,
+     1.5,
+     -0.05
+    ]
+   ],
+   "cible": [
+    [
+     1.55,
+     1.45,
+     -0.95
+    ],
+    [
+     1.55,
+     1.45,
+     -0.95
+    ]
+   ],
+   "ev": [
+    "v_dedans",
+    "lumiere",
+    "rocher",
+    "gyro",
+    "police"
+   ],
+   "gras": 1
   },
   {
    "qui": "policier",
-   "n": 2,
-   "pause": 0.5,
+   "n": 3,
+   "pause": 0.3,
    "decor": "maison_rocher",
    "cam": [
     [
@@ -708,43 +643,41 @@
     "gyro",
     "police"
    ],
-   "gras": 2
+   "gras": 3
   },
   {
-   "plan": "emmene",
+   "plan": "depart",
    "decor": "maison_rocher",
-   "duree": 2.6,
+   "duree": 2.4,
    "cam": [
     [
-     1.0,
+     1.6,
      1.7,
-     -0.9
+     1.6
     ],
     [
-     0.9,
+     1.4,
      1.68,
-     -0.75
+     1.3
     ]
    ],
    "cible": [
     [
-     -0.9,
-     1.2,
-     1.0
+     -0.4,
+     1.3,
+     -0.1
     ],
     [
-     -0.9,
-     1.2,
-     1.0
+     -0.4,
+     1.3,
+     -0.1
     ]
    ],
    "ev": [
-    "v_dedans",
+    "proche",
     "lumiere",
     "rocher",
-    "gyro",
-    "police",
-    "emmene"
+    "gyro"
    ]
   },
   {
@@ -754,38 +687,36 @@
    "decor": "maison_rocher",
    "cam": [
     [
-     -0.72,
-     1.6,
-     2.45
+     1.45,
+     1.62,
+     0.95
     ],
     [
-     -0.72,
+     1.2,
      1.6,
-     2.3
+     0.75
     ]
    ],
    "cible": [
     [
-     -0.72,
-     1.5,
-     1.0
+     -0.14,
+     1.55,
+     0.0
     ],
     [
-     -0.72,
-     1.5,
-     1.0
+     -0.14,
+     1.55,
+     0.0
     ]
    ],
    "ev": [
-    "v_dedans",
+    "proche",
     "lumiere",
-    "rocher",
-    "gyro",
-    "police",
-    "emmene",
-    "chuchote"
+    "gyro"
    ],
-   "gras": 2
+   "gras": 2,
+   "son": "frisson",
+   "volume": 0.6
   },
   {
    "carte": "fin",

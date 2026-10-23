@@ -300,6 +300,7 @@ function decorMaisonRocher(x0) {
     const gy = ev.has('gyro'); const ph = Math.floor(t * 4) % 2; gyroB.intensity = gy ? (ph ? 9 : 1) : 0; gyroR.intensity = gy ? (ph ? .6 : 5) : 0;
     if (ev.has('v_dedans')) { vasseur.root.visible = true; vasseur.root.position.set(-.75, 0, .55); vasseur.bd.ep.rotation.x = -.15; vers(vasseur, .05, -.35); julien.root.rotation.y = Math.atan2(-.8, .9); }
     if (ev.has('chuchote')) { vasseur.root.visible = true; vasseur.root.position.set(-.5, 0, .95); vasseur.bd.ep.rotation.x = -.15; vers(vasseur, -.95, 1.05); }
+    if (ev.has('proche')) { vasseur.root.visible = true; vasseur.root.position.set(-.32, 0, .32); vasseur.bd.ep.rotation.x = -.15; vers(vasseur, .05, -.35); julien.root.rotation.y = Math.atan2(-.37, .67); }
     rocher.root.visible = ev.has('rocher'); if (ev.has('rocher')) vers(rocher, -.4, .2);
     policier.root.visible = ev.has('police');
     if (ev.has('police')) { if (ev.has('emmene')) { policier.root.position.set(-1.25, 0, 1.25); } else { policier.root.position.set(-1.45, 0, 1.5); vers(policier, .05, -.35); } }

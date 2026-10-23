@@ -4,7 +4,8 @@ import os, sys, json, base64, subprocess, re
 import numpy as np, soundfile as sf
 ICI = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(ICI)
 sys.path.insert(0, os.path.join(ROOT, 'moteur'))
-from commun import FONTS, MUST
+from commun import FONTS, MUST, _b64
+CAVEAT = "@font-face{font-family:'Caveat';font-weight:700;src:url(data:font/woff2;base64," + _b64('caveat-latin-700-normal.woff2') + ") format('woff2')}"
 W, H, FPS, SR = 1080, 1920, 30, 24000
 EPD = os.path.join(ICI, sys.argv[1]); EP = json.load(open(os.path.join(EPD, 'episode.json')))
 
@@ -135,6 +136,11 @@ def carte(nom, fond, du, out):
     elif nom == 'precedemment':   # rappel muet de 2 s en ouverture (pour ceux qui arrivent en cours de série)
         corps = f"""<div class="s" style="margin:0;color:{MUST};font-weight:900;letter-spacing:.12em">PRÉCÉDEMMENT</div>
 <div class="e" style="margin-top:40px;padding:0 90px">{EP.get('precedemment', '')}</div>"""
+    elif nom == 'contrat':   # gros plan : le « contrat d'entretien » que Vasseur montre (objet de l'histoire, pas un texte d'explication)
+        corps = """<div style="width:760px;background:#f4efe3;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.7);padding:60px 56px;color:#1a1a1a;text-align:left;text-shadow:none;transform:rotate(-3deg);font-family:Inter,sans-serif">
+<div style="font-weight:900;font-size:40px;color:#a01818;letter-spacing:.04em">VASSEUR DÉPANNAGE</div><div style="font-weight:900;font-size:50px;margin:18px 0 30px">CONTRAT D'ENTRETIEN</div>
+<div style="font-size:30px;font-weight:700;line-height:1.5">Cliente : Mme Rocher<br>Accès au logement en cas d'urgence,<br>de jour comme de nuit.<br>Clé confiée : sous le pot de fleurs.</div>
+<div style="margin-top:50px;font-size:26px;color:#666">Signature de la cliente :</div><div style="font-family:Caveat,cursive;font-size:80px;color:#1d2b6b;margin-top:6px">M. Rocher</div></div>"""
     elif nom == 'tel_eteint':   # gros plan : le téléphone de Julien, écran noir
         corps = """<div style="width:430px;height:880px;border-radius:64px;background:#0b0b0d;border:14px solid #2a2b30;box-shadow:0 30px 80px rgba(0,0,0,.8),inset 0 0 0 2px #444;
 position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(125deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,0) 38%)"></div>
@@ -142,7 +148,7 @@ position:relative;overflow:hidden"><div style="position:absolute;inset:0;backgro
     else:
         corps = f"""<div class="t">{EP['serie'].upper()}</div><div class="e">Épisode {EP['numero'] + 1}<br><b>demain, 18 h</b></div><div class="s2">Abonnez-vous pour ne pas rater la suite</div>
 <div class="f">Histoire et personnages fictifs · avec <b>Prouessia</b>, le partenaire des plombiers</div>"""
-    html = f"""<html><head><meta charset="utf-8"><style>{FONTS}*{{margin:0}}body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-serif;color:#fff;text-align:center;
+    html = f"""<html><head><meta charset="utf-8"><style>{FONTS}{CAVEAT}*{{margin:0}}body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-serif;color:#fff;text-align:center;
 display:flex;flex-direction:column;align-items:center;justify-content:center;text-shadow:0 4px 20px rgba(0,0,0,.7)}}
 .t{{font-weight:900;font-size:110px;letter-spacing:.06em;line-height:1}} .s{{margin-top:60px;font-size:44px;font-weight:600;opacity:.85}}
 .m{{margin-top:26px;display:flex;align-items:center;gap:22px;font-weight:900;font-size:84px}} .m img{{width:110px;height:110px;border-radius:26px}}
