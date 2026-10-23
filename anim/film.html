@@ -239,6 +239,13 @@ function decorMaisonRocher(x0) {
   box(7, 3, .1, '#4c5866', 0, 1.5, -2.6, g); box(.1, 3, 7, '#46525f', -2.6, 1.5, 0, g); box(.1, 3, 7, '#46525f', 2.6, 1.5, 0, g);
   const f = new THREE.Mesh(new THREE.PlaneGeometry(1.0, 1.1), new THREE.MeshBasicMaterial({map: ville(false)})); f.position.set(1.2, 1.75, -2.54); g.add(f);
   box(2.4, .9, .6, '#3b3a3a', -.9, .45, -2.25, g); box(2.5, .05, .65, '#bdb8ad', -.9, .92, -2.22, g); cyl(.02, .02, .3, '#aaa', -.9, 1.08, -2.38, g);
+  // caisse à outils ouverte de Vasseur, sur le plan de travail (indice de l'ép. 2)
+  const caisse = new THREE.Group(); caisse.position.set(-1.55, .95, -2.12); caisse.rotation.y = .25; g.add(caisse);
+  box(.5, .22, .26, '#c62828', 0, .11, 0, caisse); box(.5, .03, .26, '#a51f1f', 0, .32, -.2, caisse).rotation.x = -1.1;
+  box(.04, .08, .2, '#222', -.2, .25, 0, caisse); box(.04, .08, .2, '#222', .2, .25, 0, caisse); box(.44, .03, .03, '#222', 0, .29, 0, caisse);
+  box(.25, .03, .04, '#999', -.05, .23, .05, caisse); box(.06, .06, .06, '#d9a23a', .1, .23, -.05, caisse);
+  const etiq = new THREE.Mesh(new THREE.PlaneGeometry(.36, .12), new THREE.MeshBasicMaterial({map: texte([{t: 'VASSEUR', y: 58, s: 46, g: 1, c: '#fff'}, {t: 'DÉPANNAGE 24h/24', y: 104, s: 26, g: 1, c: '#ffd34d'}], {fond: '#1b1b1b', w: 360, h: 120})}));
+  etiq.position.set(0, .12, .132); caisse.add(etiq); const lc = new THREE.PointLight('#9fb4ff', 2.2, 2.2, 1.5); lc.position.set(-1.2, 1.7, -1.5); g.add(lc);
   // porte d'entrée entrouverte (côté gauche, au premier plan)
   box(.1, 2.2, .1, '#2a2a2a', -1.95, 1.1, 1.55, g); box(.1, 2.2, .1, '#2a2a2a', -1.0, 1.1, 1.55, g); box(1.05, .1, .1, '#2a2a2a', -1.47, 2.2, 1.55, g);
   const porte = box(.9, 2.1, .05, '#6a4b33', -1.5, 1.05, 1.55, g); porte.geometry.translate(.45, 0, 0); porte.position.x = -1.95; porte.rotation.y = -1.1;
@@ -257,12 +264,12 @@ function decorMaisonRocher(x0) {
   // table et facture
   box(1.0, .06, .8, '#7a5d40', .7, .75, -1.2, g); for (const [a, b] of [[.3, -1.55], [1.1, -1.55], [.3, -.85], [1.1, -.85]]) box(.05, .72, .05, '#5e4630', a, .36, b, g);
   const fac = new THREE.Mesh(new THREE.PlaneGeometry(.21, .297), new THREE.MeshStandardMaterial({map: texte([{t: 'VASSEUR DÉPANNAGE', y: 70, s: 24, g: 1, c: '#a01818'}, {t: 'FACTURE', y: 130, s: 30, g: 1, c: '#111'}, {t: "Aujourd'hui · 23 h 10", y: 190, s: 22, c: '#111'}, {t: "Robinet d'arrêt", y: 260, s: 22, c: '#333', a: 'left'}, {t: '890,00 €', y: 300, s: 26, g: 1, c: '#111', a: 'left'}, {t: 'PAYÉ', y: 420, s: 60, g: 1, c: '#c22'}], {fond: '#f3efe6', w: 256, h: 362}), roughness: .9}));
-  fac.rotation.x = -Math.PI / 2; fac.rotation.z = .25; fac.position.set(.6, .785, -1.15); fac.receiveShadow = true; g.add(fac);
+  fac.rotation.x = -Math.PI / 2; fac.rotation.z = .25; fac.position.set(.6, .785, -1.15); fac.receiveShadow = true; g.add(fac); fac.visible = false;   // plus de facture dans l'ép. 2 (version du 23/10)
   // l'eau au sol
   const geo = new THREE.PlaneGeometry(5, 5, 26, 26); geo.rotateX(-Math.PI / 2); const base = geo.attributes.position.array.slice();
   const eau = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({color: '#3d6a9a', transparent: true, opacity: .6, roughness: .06, metalness: .3, flatShading: true})); eau.position.set(-.3, .05, -.4); g.add(eau);
   // le téléphone de Mme Rocher, dans l'eau
-  const tel = new THREE.Group(); tel.position.set(-.35, .06, -.85); tel.rotation.y = .5; g.add(tel); box(.08, .012, .16, '#111', 0, 0, 0, tel);
+  const tel = new THREE.Group(); tel.position.set(-.35, .06, -.85); tel.rotation.y = .5; g.add(tel); tel.visible = false; box(.08, .012, .16, '#111', 0, 0, 0, tel);
   const ecran = new THREE.Mesh(new THREE.PlaneGeometry(.07, .145), new THREE.MeshBasicMaterial({map: texte([{t: 'appel entrant', y: 120, s: 26, c: '#9ab'}, {t: 'Julien', y: 230, s: 44, g: 1}, {t: 'Morel', y: 285, s: 44, g: 1}, {t: '●  ●', y: 460, s: 60, c: '#3c3'}], {fond: '#101826'})}));
   ecran.rotation.x = -Math.PI / 2; ecran.position.y = .007; tel.add(ecran);
   const halo = new THREE.PointLight('#9fc0ff', 0, 1.6, 2); halo.position.set(-.35, .35, -.85); g.add(halo);
