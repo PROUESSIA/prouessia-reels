@@ -1,0 +1,208 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style id="fonts"></style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{font-family:Inter,sans-serif;font-weight:800;color:#111}
+#scene{position:absolute;inset:0;overflow:hidden}
+/* ---------- style « plan » (explication monochrome) ---------- */
+.plan{background:#ececec}
+.carte{position:absolute;left:-540px;top:-480px;width:2160px;height:2880px;transform-origin:50% 50%}
+.pin{position:absolute;width:84px;height:84px;margin:-150px 0 0 -42px;transform:scale(1.35);transform-origin:50% 178%;background:#fff;border:3px solid #111;border-radius:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.pin:after{content:'';position:absolute;left:39px;top:84px;width:3px;height:60px;background:#111}
+.pin .l{position:absolute;right:-22px;top:-22px;width:40px;height:40px;border-radius:50%;background:#111;color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center}
+.pin .n{position:absolute;left:96px;top:24px;white-space:nowrap;font-size:30px;font-weight:800;background:#fff;padding:4px 12px;border-radius:10px}
+.cli{position:absolute;width:36px;height:36px;margin:-18px;border-radius:50%;background:#111;border:6px solid #fff;box-shadow:0 0 0 2px #111}
+.halo{position:absolute;border-radius:50%;border:3px dashed #111;background:rgba(0,0,0,.04)}
+.carte2d{position:absolute;inset:0}
+.recherche{position:absolute;left:70px;right:70px;top:250px;height:110px;background:#fff;border-radius:56px;box-shadow:0 12px 30px rgba(0,0,0,.12);display:flex;align-items:center;gap:22px;padding:0 40px;font-size:40px;font-weight:700}
+.recherche i{width:46px;height:46px;border:6px solid #111;border-radius:50%;position:relative;flex:none}
+.recherche i:after{content:'';position:absolute;right:-16px;bottom:-14px;width:18px;height:6px;background:#111;transform:rotate(45deg)}
+.curseur{display:inline-block;width:4px;height:44px;background:#111;margin-left:4px;vertical-align:middle}
+.panneau{position:absolute;left:50px;right:50px;background:#fff;border-radius:34px;box-shadow:0 20px 50px rgba(0,0,0,.16);padding:34px}
+.panneau h6{font-size:22px;letter-spacing:.14em;color:#888;font-weight:800;margin-bottom:20px}
+.ligne{display:flex;align-items:center;gap:20px;padding:18px 20px;border-radius:20px;margin:10px 0;font-size:36px}
+.ligne.on{background:#111;color:#fff}
+.ligne .ic{width:64px;height:64px;border-radius:16px;background:#e6e6e6;flex:none;display:flex;align-items:center;justify-content:center;font-size:30px;color:#111}
+.ligne.on .ic{background:#fff}
+.ligne small{display:block;font-size:24px;opacity:.6;font-weight:700}
+.vide{height:24px;border-radius:12px;background:#e9e9e9;margin:22px 10px}
+.carte-crit{position:absolute;left:70px;right:70px;height:150px;background:#fff;border-radius:30px;box-shadow:0 14px 34px rgba(0,0,0,.13);display:flex;align-items:center;gap:30px;padding:0 36px}
+.carte-crit .ic{width:86px;height:86px;border-radius:24px;background:#efefef;display:flex;align-items:center;justify-content:center;font-size:44px}
+.carte-crit small{display:block;font-size:22px;letter-spacing:.16em;color:#888;margin-bottom:6px}
+.carte-crit b{font-size:54px;font-weight:900}
+.chip{display:inline-block;background:#f0f0f0;border-radius:14px;padding:8px 18px;margin:6px 8px 6px 0;font-size:30px;font-weight:700}
+.chip.ok{background:#111;color:#fff}
+.champ{display:flex;align-items:center;gap:16px;margin:18px 0;font-size:24px;letter-spacing:.12em;color:#888}
+.champ .v{letter-spacing:0;color:#111;font-size:30px}
+.coche{margin-left:auto;width:46px;height:46px;border-radius:50%;border:3px solid #ccc;display:flex;align-items:center;justify-content:center;color:#fff;font-size:28px;flex:none}
+.coche.ok{background:#111;border-color:#111}
+.enorme{position:absolute;left:0;right:0;text-align:center;font-weight:900;letter-spacing:-.04em;color:#111}
+.titre{position:absolute;left:70px;right:70px;top:420px;text-align:center}
+.titre small{display:block;font-size:26px;letter-spacing:.2em;color:#666;margin-bottom:28px}
+.titre p{font-size:62px;line-height:1.12;font-weight:900;letter-spacing:-.02em}
+.titre p.g{font-size:110px;margin-top:10px}
+.etoiles{font-size:64px;letter-spacing:8px}
+.bulle{background:#f1f1f1;border-radius:26px;padding:24px 28px;font-size:32px;font-weight:700;margin:14px 0;line-height:1.3}
+.bulle.rep{background:#111;color:#fff;margin-left:90px}
+.bulle small{display:block;font-size:22px;opacity:.6;margin-bottom:6px;letter-spacing:.08em}
+/* sous-titres */
+.st{position:absolute;left:60px;right:60px;text-align:center;font-weight:900;font-size:64px;line-height:1.18;letter-spacing:-.01em}
+.st span{opacity:0}.st span.on{opacity:1}
+.plan .st b{background:#111;color:#fff;padding:0 .18em;border-radius:.16em;font-weight:900}
+/* ---------- style « croquis » (dessin au crayon + écrans) ---------- */
+.croquis{background:#f5f3ee}
+.croquis svg path,.croquis svg circle,.croquis svg rect,.croquis svg line{fill:none;stroke:#1a1a1a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.main{font-family:Caveat,cursive;font-weight:700;color:#1a1a1a;position:absolute}
+.tel{position:absolute;left:190px;top:250px;width:700px;height:1420px;border-radius:96px;background:#111;padding:26px;box-shadow:0 40px 90px rgba(0,0,0,.25)}
+.tel .ecran{width:100%;height:100%;border-radius:72px;overflow:hidden;background:#fff;position:relative}
+.tel img{position:absolute;left:0;top:0;width:100%}
+.croquis .st{color:#111}
+.croquis .st b{background:linear-gradient(180deg,transparent 55%,#F2B705 55%);font-weight:900;padding:0 .08em}
+.fin{position:absolute;left:0;right:0;top:640px;text-align:center}
+.fin .lg{display:inline-flex;align-items:center;gap:30px;font-size:120px;font-weight:900;letter-spacing:-.03em}
+.fin .lg i{width:150px;height:150px;border-radius:40px;background:#1E40AF;display:flex;align-items:center;justify-content:center}
+.fin p{font-size:58px;margin-top:40px;font-weight:800}
+.fin p.u{font-size:44px;color:#666;margin-top:22px}
+</style></head><body><div id="scene"></div>
+<script>
+// Moteur des styles « plan » (explication) et « croquis » (dessin + écrans d'appli). Lit window.S = {style, phrases:[{debut, fin, mots:[[mot, a, b]], gras:[...], scene:{type,...}}], total, apps:{i: [fichiers]}}
+const $ = (h) => { document.getElementById('scene').innerHTML = h; };
+const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const ease = (x) => { x = cl(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const out = (x) => 1 - Math.pow(1 - cl(x), 3);
+let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const LOGO = '<i><svg viewBox="0 0 24 24" width="96" height="96"><rect x="4" y="13" width="4" height="7" rx="2" fill="#fff"/><rect x="10" y="9" width="4" height="11" rx="2" fill="#fff"/><rect x="16" y="5" width="4" height="15" rx="2" fill="#F2B705"/></svg></i>prouessia';
+
+// ---------- carte de la ville (générée une fois) ----------
+let CARTE = '';
+(function () {
+  let s = '<svg width="2160" height="2880" viewBox="0 0 2160 2880" style="position:absolute;inset:0"><rect width="2160" height="2880" fill="#f6f6f6"/>';
+  const rues = [];
+  for (let y = 0; y < 2880;) { const h = 180 + rnd() * 160; for (let x = 0; x < 2160;) { const w = 150 + rnd() * 220;
+    s += `<rect x="${x + 14}" y="${y + 14}" width="${w - 28}" height="${h - 28}" rx="6" fill="#dcdcdc"/>`;
+    const n = 1 + Math.floor(rnd() * 3); for (let k = 0; k < n; k++) { const bw = (w - 40) / n; s += `<rect x="${x + 20 + k * bw}" y="${y + 20}" width="${bw - 8}" height="${h - 40}" rx="4" fill="#e6e6e6" stroke="#cfcfcf" stroke-width="2"/>`; }
+    x += w; } y += h; }
+  s += '</svg>'; CARTE = s;
+})();
+const PA = [1480, 1060], PB = [1880, 1660], CL = [1660, 1300];  // positions sur la carte (px carte)
+function pin(p, l, n, op = 1, dy = 0) { return `<div class="pin" style="left:${p[0]}px;top:${p[1] - dy}px;opacity:${op}"><span>🔧</span><span class="l">${l}</span>${n ? `<span class="n">${n}</span>` : ''}</div>`; }
+function carte(o) {  // o: tilt, zoom, rot, cx, cy (centre visé en px carte), extra html dans la carte
+  const tx = 1080 - o.cx, ty = 1440 - o.cy;
+  return `<div class="carte" style="transform:perspective(1600px) rotateX(${o.tilt}deg) rotateZ(${o.rot || 0}deg) scale(${o.zoom}) translate(${tx}px,${ty}px);filter:${o.flou ? `blur(${o.flou}px)` : 'none'};opacity:${o.op ?? 1}">${CARTE}${o.html || ''}</div>`;
+}
+function crit(n, nom, ic, y, op = 1, on = false) {
+  return `<div class="carte-crit" style="top:${y}px;opacity:${op};transform:translateY(${(1 - op) * 40}px);${on ? 'box-shadow:0 0 0 5px #111,0 14px 34px rgba(0,0,0,.13)' : ''}"><div class="ic">${ic}</div><div><small>CRITÈRE 0${n} / 03</small><b>${nom}</b></div></div>`;
+}
+const CRITS = [['Pertinence', '◎'], ['Distance', '⌖'], ['Notoriété', '☆']];
+function fiche(y, u, avec) {  // fiche d'établissement qui se remplit
+  const L = [['CATÉGORIE', ['Plombier']], ['HORAIRES', ['Lun – Sam · 8 h – 19 h']], ['ADRESSE', ['12 rue des Lilas']], ['SERVICES', ['Dépannage', 'Chauffe-eau']]];
+  let h = `<div class="panneau" style="top:${y}px"><div class="ligne" style="padding:0;margin:0 0 10px"><div class="ic">🔧</div><div>Votre fiche<small>FICHE D'ÉTABLISSEMENT</small></div></div>`;
+  L.forEach(([k, vs], i) => { const a = cl(u * L.length - i); h += `<div class="champ">${k}<span class="v" style="opacity:${avec ? a : 0}">${vs.map(v => `<span class="chip ${a >= 1 ? 'ok' : ''}">${v}</span>`).join('')}</span><span class="coche ${avec && a >= 1 ? 'ok' : ''}">✓</span></div>`; });
+  return h + '</div>';
+}
+const SC_PLAN = {
+  titre(s, u, sc) { return carte({tilt: 58 - 6 * u, zoom: 1.15 + .1 * u, rot: -18 + 8 * u, cx: 1500, cy: 1300}) +
+      `<div class="titre" style="opacity:${out(s / .4)}"><small>${sc.serie}</small><p>${sc.l1}</p><p class="g" style="transform:scale(${.85 + .15 * out((s - .5) / .5)})">${sc.l2}</p></div>`; },
+  pins(s, u) { const d = (k) => 220 * (1 - out((s - k) / .45));
+    return carte({tilt: 40 * (1 - ease(u)), zoom: 1.05 + .1 * u, cx: 1680, cy: 1360, html: pin(PA, 'A', 'Plombier A', out(s / .3), d(0)) + pin(PB, 'B', 'Plombier B', out((s - .35) / .3), d(.35))}); },
+  recherche(s, u, sc) { const n = Math.floor(cl((s - .25) / Math.max(.4, sc.dt || 1.2)) * sc.q.length);
+    return carte({tilt: 0, zoom: 1.15, cx: 1680, cy: 1360, html: pin(PA, 'A') + pin(PB, 'B') + `<div class="cli" style="left:${CL[0]}px;top:${CL[1]}px"></div><div class="halo" style="left:${CL[0] - 90 - 30 * Math.sin(s * 5)}px;top:${CL[1] - 90 - 30 * Math.sin(s * 5)}px;width:${180 + 60 * Math.sin(s * 5)}px;height:${180 + 60 * Math.sin(s * 5)}px"></div>`}) +
+      `<div class="recherche"><i></i><span>${sc.q.slice(0, n)}<span class="curseur" style="opacity:${Math.floor(s * 3) % 2}"></span></span></div>`; },
+  resultats(s, u, sc) { const p = out(s / .45), b = out((s - (sc.tb || 1.1)) / .4);
+    return carte({tilt: 0, zoom: 1.15, cx: 1680, cy: 1360, html: pin(PA, 'A') + pin(PB, 'B') + `<div class="cli" style="left:${CL[0]}px;top:${CL[1]}px"></div>`}) +
+      `<div class="recherche"><i></i><span>${sc.q}</span></div><div class="panneau" style="top:${640 + 600 * (1 - p)}px;opacity:${p}"><h6>RÉSULTATS À PROXIMITÉ</h6>
+      <div class="ligne on"><div class="ic">A</div><div>Plombier A<small>Plombier · Ouvert</small></div></div><div class="vide"></div><div class="vide" style="width:70%"></div><div class="vide" style="width:85%"></div>
+      <div class="ligne" style="opacity:${b};border:3px solid #111"><div class="ic">B</div><div>Plombier B<small>Plombier · Ouvert</small></div></div></div>`; },
+  pourquoi(s, u) { return carte({tilt: 30, zoom: 1.2, cx: 1680, cy: 1360, flou: 8, op: .5}) + `<div class="enorme" style="top:640px;font-size:${170 + 40 * out(s / .35)}px">Pourquoi ?</div>`; },
+  criteres(s, u, sc) { return carte({tilt: 45, zoom: 1.2, cx: 1500, cy: 1400, flou: 10, op: .35}) + CRITS.map((c, i) => crit(i + 1, c[0], c[1], 330 + i * 190, out((s - (sc.t0 || .3) - i * .35) / .35))).join(''); },
+  pertinence(s, u) { return crit(1, ...CRITS[0], 250, 1, true) + `<div class="recherche" style="top:440px"><i></i><span>plombier près de chez moi</span></div>` + fiche(600, 0, false); },
+  fiche(s, u) { return crit(1, ...CRITS[0], 250, 1, true) + `<div class="recherche" style="top:440px"><i></i><span>plombier près de chez moi</span></div>` + fiche(600, cl(u / .75), true); },
+  distance(s, u) { const r = 80 + 420 * out(s / 1.2), d = out((s - .8) / .6);
+    return carte({tilt: 0, zoom: 1.15, cx: 1680, cy: 1360, html: pin(PA, 'A') + pin(PB, 'B') + `<div class="halo" style="left:${CL[0] - r}px;top:${CL[1] - r}px;width:${2 * r}px;height:${2 * r}px"></div><div class="cli" style="left:${CL[0]}px;top:${CL[1]}px"></div>
+      <svg style="position:absolute;inset:0" width="2160" height="2880"><line x1="${CL[0]}" y1="${CL[1]}" x2="${CL[0] + (PA[0] - CL[0]) * d}" y2="${CL[1] + (PA[1] - CL[1]) * d}" stroke="#111" stroke-width="6" stroke-dasharray="14 12"/></svg>`}) + crit(2, ...CRITS[1], 250, 1, true); },
+  ville(s, u) { return carte({tilt: 50 - 10 * u, zoom: 1.0 + .15 * u, rot: 10 - 10 * u, cx: 1700, cy: 1400, html: pin(PA, 'A') + pin(PB, 'B')}) + crit(2, ...CRITS[1], 250, 1, true); },
+  notoriete(s, u) { const e = Math.floor(cl(s / 1.2) * 5);
+    return crit(3, ...CRITS[2], 250, 1, true) + `<div class="panneau" style="top:520px"><div class="ligne" style="padding:0;margin:0"><div class="ic">🔧</div><div>Votre fiche<small>AVIS CLIENTS</small></div></div>
+      <div class="etoiles" style="margin:30px 0 10px">${'★'.repeat(e)}<span style="color:#ccc">${'★'.repeat(5 - e)}</span></div><div class="vide"></div><div class="vide" style="width:60%"></div></div>`; },
+  avis(s, u) { const a = out(s / .4), b = out((s - .9) / .4);
+    return crit(3, ...CRITS[2], 250, 1, true) + `<div class="panneau" style="top:520px"><div class="bulle" style="opacity:${a}"><small>AVIS D'UN CLIENT</small>Intervention rapide, travail propre.</div>
+      <div class="bulle rep" style="opacity:${b};transform:translateY(${(1 - b) * 30}px)"><small>RÉPONSE DU PLOMBIER</small>Merci pour votre confiance !</div></div>`; },
+  question(s, u) { return carte({tilt: 35 + 10 * u, zoom: 1.1, rot: -8 * u, cx: 1500, cy: 1300, flou: 3, op: .6}) + fiche(420, 1, true); },
+  fin(s, u) { return `<div class="fin" style="opacity:${out(s / .4)}"><div class="lg">${LOGO}</div><p>Le partenaire des plombiers</p><p class="u">prouessia.fr</p></div>`; },
+};
+
+// ---------- croquis au trait ----------
+function trait(pts, j = 3) {  // ligne « à la main » légèrement tremblée
+  let d = `M${pts[0][0] + (rnd() - .5) * j} ${pts[0][1] + (rnd() - .5) * j}`;
+  for (let i = 1; i < pts.length; i++) { const [x0, y0] = pts[i - 1], [x1, y1] = pts[i]; const mx = (x0 + x1) / 2 + (rnd() - .5) * j * 2, my = (y0 + y1) / 2 + (rnd() - .5) * j * 2;
+    d += ` Q${mx} ${my} ${x1 + (rnd() - .5) * j} ${y1 + (rnd() - .5) * j}`; }
+  return d;
+}
+const cercle = (cx, cy, r, n = 18) => Array.from({length: n + 1}, (_, i) => [cx + r * Math.cos(i / n * 6.283 - 1.5), cy + r * Math.sin(i / n * 6.283 - 1.5)]);
+const rect = (x, y, w, h) => [[x, y], [x + w, y], [x + w, y + h], [x, y + h], [x, y]];
+function bonhomme(x, y, s = 1, casquette = true, assis = false) {  // x,y = pieds ; sans visage
+  const P = [], k = (a, b) => [x + a * s, y + b * s];
+  P.push(cercle(x, y - 330 * s, 42 * s));
+  if (casquette) P.push([k(-44, -350), k(-30, -385), k(30, -385), k(46, -350), k(80, -346)]);
+  P.push([k(0, -288), k(0, -270)]); P.push([k(-55, -268), k(55, -268), k(48, assis ? -130 : -120), k(-48, assis ? -130 : -120), k(-55, -268)]);
+  P.push([k(-55, -258), k(-80, -170), k(-70, -110)]); P.push([k(55, -258), k(80, -170), k(70, -110)]);
+  if (assis) { P.push([k(-30, -130), k(60, -130), k(60, 0)]); P.push([k(30, -130), k(110, -130), k(110, 0)]); }
+  else { P.push([k(-25, -120), k(-30, 0), k(-55, 0)]); P.push([k(25, -120), k(30, 0), k(55, 0)]); }
+  return P;
+}
+const DESSINS = {
+  arrivee() { const P = [];
+    P.push(rect(560, 760, 380, 300)); P.push([[540, 770], [750, 600], [960, 770]]); P.push(rect(700, 900, 80, 160)); P.push(rect(600, 820, 70, 60)); P.push(rect(830, 820, 70, 60));
+    P.push([[120, 1060], [120, 900], [300, 900], [360, 960], [400, 960], [400, 1060], [120, 1060]]); P.push(cercle(180, 1062, 26)); P.push(cercle(350, 1062, 26)); P.push([[300, 900], [300, 960], [360, 960]]);
+    P.push(...bonhomme(500, 1060, .62)); P.push(rect(530, 1010, 70, 46)); P.push([[50, 1062], [1030, 1062]]);
+    return {P, mots: [['Mme Martin', 640, 560, 52], ['salle de bain', 640, 1140, 44]]}; },
+  carnet() { const P = [rect(260, 440, 560, 760)]; for (let i = 0; i < 7; i++) P.push([[300, 560 + i * 90], [780, 560 + i * 90]]);
+    P.push([[840, 1150], [940, 1050], [960, 1070], [860, 1170], [840, 1150]]); P.push([[940, 1050], [990, 1000]]);
+    return {P, mots: [['Mme Martin — SdB', 310, 540, 62], ['baignoire → douche', 310, 630, 56], ['chauffe-eau 200 L', 310, 720, 56], ['mitigeur thermo', 310, 810, 56], ['faïence ≈ 8 m²', 310, 900, 56]]}; },
+  bureau() { const P = []; P.push([[140, 1060], [940, 1060]]); P.push([[200, 1060], [200, 1200]]); P.push([[880, 1060], [880, 1200]]);
+    P.push(...bonhomme(470, 1200, .7, true, true)); P.push([[700, 1060], [720, 900], [800, 860]]); P.push([[760, 840], [860, 820], [870, 880], [780, 900], [760, 840]]);
+    P.push(cercle(860, 520, 90, 24)); P.push([[860, 520], [860, 455]]); P.push([[860, 520], [810, 520]]); P.push(rect(380, 1000, 160, 60));
+    return {P, lampe: [820, 900], mots: [['22 h', 820, 680, 64]]}; },
+  famille() { const P = []; P.push([[160, 1080], [920, 1080]]); P.push([[220, 1080], [220, 1240]]); P.push([[860, 1080], [860, 1240]]);
+    P.push(...bonhomme(300, 1240, .62, true, true)); P.push(...bonhomme(780, 1240, .62, false, true)); P.push(...bonhomme(540, 1080, .42, false, false));
+    P.push([[540, 420], [540, 640]]); P.push([[460, 700], [540, 640], [620, 700], [460, 700]]); P.push(cercle(850, 520, 70, 24)); P.push([[850, 520], [850, 470]]); P.push([[850, 520], [880, 545]]);
+    P.push(rect(470, 1040, 60, 40)); P.push(rect(600, 1040, 60, 40));
+    return {P, lampe: [540, 760], mots: [['19 h', 820, 650, 60]]}; },
+};
+let CACHE = {};
+function croquis(nom, s, u, dur) {
+  if (!CACHE[nom]) { seed = nom.length * 97; CACHE[nom] = DESSINS[nom](); }
+  const D = CACHE[nom], n = D.P.length, k = cl(s / Math.min(dur * .75, 2.6)) * n;
+  let h = `<svg width="1080" height="1920" style="position:absolute;inset:0">`;
+  if (D.lampe) h += `<ellipse cx="${D.lampe[0]}" cy="${D.lampe[1] + 160}" rx="${330}" ry="${230}" style="fill:#f7b06a;stroke:none;opacity:${.32 * out((k - n + 3) / 3)}"/>`;
+  D.P.forEach((p, i) => { const a = cl(k - i); if (a <= 0) return; const L = 4000; h += `<path d="${trait(p)}" style="stroke-dasharray:${L};stroke-dashoffset:${L * (1 - a)}"/>`; });
+  h += '</svg>';
+  (D.mots || []).forEach(([m, x, y, f], i) => { const a = cl((k / n) * 1.4 - .4 - i * .12); h += `<div class="main" style="left:${x}px;top:${y - f}px;font-size:${f}px;clip-path:inset(0 ${100 - a * 100}% 0 0)">${m}</div>`; });
+  seed = nom.length * 97;
+  return h;
+}
+const SC_CROQUIS = {
+  dessin(s, u, sc, dur) { return croquis(sc.nom, s, u, dur); },
+  appli(s, u, sc, dur, i) { const f = window.S.apps[i]; const n = f ? f[Math.min(f.length - 1, Math.floor(s * 30))] : ''; const e = out(s / .35);
+    return `<div class="tel" style="transform:translateY(${(1 - e) * 500}px) rotate(${(1 - e) * 6}deg) scale(${1 + .03 * u})"><div class="ecran"><img src="${n}" style="top:${-(sc.dy || 0) * 700}px"></div></div>`; },
+  fin(s, u) { return SC_PLAN.fin(s, u); },
+};
+
+// ---------- sous-titres mot à mot ----------
+function st(ph, t, y) {
+  return `<div class="st" style="top:${y}px">` + ph.mots.map(([m, a, b]) => {
+    return `<span class="${t >= a ? 'on' : ''}">${b ? `<b>${m}</b>` : m}</span>`; }).join(' ') + '</div>';
+}
+window.render = function (t) {
+  const S = window.S; let i = S.phrases.findIndex(p => t < p.fin); if (i < 0) i = S.phrases.length - 1;
+  const ph = S.phrases[i], dur = ph.fin - ph.debut, s = t - ph.debut, u = cl(s / dur), sc = ph.scene;
+  const T = S.style === 'plan' ? SC_PLAN : SC_CROQUIS;
+  document.getElementById('scene').className = S.style;
+  let h = T[sc.type](s, u, sc, dur, i);
+  if (sc.type !== 'fin' && sc.type !== 'titre') h += st(ph, t, sc.st || (S.style === 'plan' ? 1420 : 1720));
+  $(h);
+};
+window.pret = true;
+</script></body></html>

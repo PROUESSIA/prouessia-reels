@@ -1,0 +1,95 @@
+{
+ "style": "croquis",
+ "phrases": [
+  {
+   "texte": "Mardi, dix heures. Une salle de bain à refaire.",
+   "scene": {
+    "type": "dessin",
+    "nom": "arrivee"
+   },
+   "gras": [
+    "salle de bain"
+   ]
+  },
+  {
+   "texte": "Vous notez tout sur un coin de papier.",
+   "scene": {
+    "type": "dessin",
+    "nom": "carnet"
+   },
+   "gras": [
+    "coin de papier"
+   ]
+  },
+  {
+   "texte": "Le soir, il reste le devis. Encore une heure.",
+   "scene": {
+    "type": "dessin",
+    "nom": "bureau"
+   },
+   "gras": [
+    "encore une heure"
+   ]
+  },
+  {
+   "texte": "Avec Prouessia, le devis se fait chez le client.",
+   "scene": {
+    "type": "appli",
+    "capture": "01-nouveau-devis",
+    "debut": 0.5
+   },
+   "gras": [
+    "chez le client"
+   ]
+  },
+  {
+   "texte": "Vos prestations sont déjà enregistrées.",
+   "scene": {
+    "type": "appli",
+    "capture": "01-nouveau-devis",
+    "debut": 3.0
+   },
+   "gras": [
+    "déjà enregistrées"
+   ]
+  },
+  {
+   "texte": "Le client signe au doigt, sur votre téléphone.",
+   "scene": {
+    "type": "appli",
+    "capture": "07-signature-doigt",
+    "debut": 4.0
+   },
+   "gras": [
+    "au doigt"
+   ]
+  },
+  {
+   "texte": "Vous êtes prévenu dès la signature.",
+   "scene": {
+    "type": "appli",
+    "capture": "09-notification-signature",
+    "debut": 0.2
+   },
+   "gras": [
+    "prévenu"
+   ]
+  },
+  {
+   "texte": "Et le soir, l'ordinateur reste fermé.",
+   "scene": {
+    "type": "dessin",
+    "nom": "famille"
+   },
+   "gras": [
+    "reste fermé"
+   ]
+  },
+  {
+   "texte": "Prouessia, le partenaire des plombiers.",
+   "scene": {
+    "type": "fin"
+   }
+  }
+ ]
+}

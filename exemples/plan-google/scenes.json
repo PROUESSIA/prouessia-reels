@@ -1,0 +1,134 @@
+{
+ "style": "plan",
+ "sources": [
+  "https://support.google.com/business/answer/7091?hl=fr-CA"
+ ],
+ "phrases": [
+  {
+   "texte": "Pourquoi votre concurrent plombier apparaît sur Google Maps… et pas vous ?",
+   "scene": {
+    "type": "titre",
+    "serie": "ÉPISODE 01 · GOOGLE MAPS",
+    "l1": "Pourquoi votre concurrent plombier apparaît sur Google Maps…",
+    "l2": "et pas vous ?"
+   }
+  },
+  {
+   "texte": "Deux plombiers. Le même quartier.",
+   "scene": {
+    "type": "pins"
+   },
+   "gras": [
+    "même quartier"
+   ]
+  },
+  {
+   "texte": "Un client tape : « plombier près de chez moi ».",
+   "scene": {
+    "type": "recherche",
+    "q": "plombier près de chez moi",
+    "dt": 1.3
+   },
+   "gras": [
+    "plombier près de chez moi"
+   ]
+  },
+  {
+   "texte": "L'un sort en premier. L'autre, tout en bas.",
+   "scene": {
+    "type": "resultats",
+    "q": "plombier près de chez moi",
+    "tb": 1.0
+   },
+   "gras": [
+    "en premier",
+    "tout en bas"
+   ]
+  },
+  {
+   "texte": "Pourquoi ?",
+   "scene": {
+    "type": "pourquoi"
+   }
+  },
+  {
+   "texte": "Google classe surtout sur trois critères.",
+   "scene": {
+    "type": "criteres",
+    "t0": 0.6
+   },
+   "gras": [
+    "trois critères"
+   ]
+  },
+  {
+   "texte": "Un : la pertinence. Votre fiche correspond-elle à la recherche ?",
+   "scene": {
+    "type": "pertinence"
+   },
+   "gras": [
+    "pertinence"
+   ]
+  },
+  {
+   "texte": "Catégorie, horaires, adresse : Google conseille une fiche complète.",
+   "scene": {
+    "type": "fiche"
+   },
+   "gras": [
+    "fiche complète"
+   ]
+  },
+  {
+   "texte": "Deux : la distance entre vous et le client.",
+   "scene": {
+    "type": "distance"
+   },
+   "gras": [
+    "distance"
+   ]
+  },
+  {
+   "texte": "La distance, vous n'y pouvez pas grand-chose.",
+   "scene": {
+    "type": "ville"
+   },
+   "gras": [
+    "grand-chose"
+   ]
+  },
+  {
+   "texte": "Trois : la notoriété. À quel point vous êtes connu.",
+   "scene": {
+    "type": "notoriete"
+   },
+   "gras": [
+    "notoriété"
+   ]
+  },
+  {
+   "texte": "Google conseille aussi de répondre à vos avis.",
+   "scene": {
+    "type": "avis"
+   },
+   "gras": [
+    "répondre à vos avis"
+   ]
+  },
+  {
+   "texte": "Et vous, votre fiche est complète ?",
+   "scene": {
+    "type": "question"
+   },
+   "gras": [
+    "complète"
+   ]
+  },
+  {
+   "texte": "Prouessia, le partenaire des plombiers.",
+   "scene": {
+    "type": "fin"
+   }
+  }
+ ]
+}
