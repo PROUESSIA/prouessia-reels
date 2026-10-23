@@ -139,10 +139,11 @@ N'importe quelle étape échoue deux fois : on s'arrête, on rallume 8031972 si 
 HTML généré par `prospects_lot` → `email_html()` (SQL `prospection/04-emails-design.sql`, issu de `email/generer_sql.py` et des maquettes `email/maquettes.py`) : expéditeur et réponses `contact@prouessia.fr`, aperçu animé de la vidéo de 45 s (`email/apercu-presentation.gif`) qui ouvre `https://www.prouessia.fr/#video`, boutons « Regarder la vidéo » et « Découvrir Prouessia », signature (logo, « L'équipe Prouessia », « Votre métier, en plus simple », site, e-mail, 07 49 49 17 77, Instagram/TikTok @prouessia.fr/YouTube), mentions SIRET, code invisible unique pour que Gmail ne replie pas la signature. Pour tester un e-mail : mode `test_mail` (`hook` = objet, `text` = HTML) : il part uniquement vers les deux boîtes de la fondatrice.
 
 
-## Page Facebook (depuis le 22/10/2026)
-- Module `facebook-pages:uploadAReel` v6 (connexion Make 12206314, Page Prouessia 1328493890355892) en fin des deux branches de publication, erreur ignorée.
-- Facebook ne permet pas la programmation par ce module : les deux Reels du jour partent sur la Page au passage de 9 h 05.
-- Ne pas utiliser facebook-pages v5 (droits obsolètes, aucune Page visible).
+## Instagram + Facebook = publiés À LA MAIN par la fondatrice dans Meta Business Suite (décision du 23/10/2026)
+- Raison : un Reel publié dans Meta Business Suite sur Facebook ET Instagram additionne les vues des deux (500 vues le 22/10) ; l'API ne sait pas faire ce partage, elle crée deux publications séparées.
+- Le hub ne publie plus que sur **TikTok et YouTube** (modules Instagram Reel, story Instagram et Page Facebook retirés le 23/10 ; stats Instagram retirées). Ne pas les remettre.
+- **Chaque jour**, l'e-mail « 💬 Vos 20 min réseaux » commence par une section **« 📲 À programmer sur Meta »** : les 2 vidéos du lendemain (9 h et 18 h), pour chacune l'heure, l'accroche, un bouton « Télécharger la vidéo » (lien `video_path`) et la légende complète prête à copier (`caption`), avec la consigne : Meta Business Suite → Créer un Reel → vidéo → légende → cocher Facebook ET Instagram → Programmer. À programmer après la validation du Plan du jour. Les légendes se lisent avec le mode `lire` (`social_posts?select=hook,caption,video_path,scheduled_at&scheduled_at=gte.<demain>T00:00:00Z&scheduled_at=lt.<après-demain>T00:00:00Z`).
+- Le `pinned_comment` est à épingler à la main sur Instagram et Facebook (rappel dans le même e-mail).
 
 ## Conseils YouTube Shorts appliqués (vidéo « If your shorts get under 1,000 views », 22/10)
 - Titre YouTube = l'accroche seule, **sans hashtag** (plus de « #Shorts » dans le titre) ; 3 à 5 hashtags dans la description.
