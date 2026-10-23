@@ -24,3 +24,5 @@ anim/*/*-v1.*
 anim/*/rendu.log
 exemples/*/app/
 exemples/*/frames/
+exemples/*/voix-brute.wav
+exemples/*/voix-serree.wav

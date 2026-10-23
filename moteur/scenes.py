@@ -64,6 +64,10 @@ def voix(d, fichier):
     else:
         open(wav + '.pcm', 'wb').write(brut)
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 's16le', '-ar', '24000', '-ac', '1', '-i', wav + '.pcm', wav], check=True); os.remove(wav + '.pcm')
+    # silences resserrés (0,22 s max) et débit +10 % sans changer la hauteur, puis calage phrase par phrase
+    serre = os.path.join(d, 'voix-serree.wav')
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', wav, '-af', 'silenceremove=start_periods=1:start_threshold=-40dB:stop_periods=-1:stop_duration=0.3:stop_threshold=-38dB:stop_silence=0.22,atempo=1.1', serre], check=True)
+    wav = serre
     x, sr = sf.read(wav); seg = aligner(wav, L); out, D, par = [], [], []
     for (a, b), ph in zip(seg, c['phrases']):
         s = x[int(max(0, a - .03) * sr):int((b + .05) * sr)]; ex = float(ph.get('scene', {}).get('pause', 0))
