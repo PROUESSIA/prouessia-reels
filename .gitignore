@@ -22,3 +22,5 @@ anim/ep*/carte-*.png
 anim/*/frames*/
 anim/*/*-v1.*
 anim/*/rendu.log
+exemples/*/app/
+exemples/*/frames/
