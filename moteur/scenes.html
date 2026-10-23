@@ -53,7 +53,7 @@ body{font-family:Inter,sans-serif;font-weight:800;color:#111}
 .plan .st b{background:#111;color:#fff;padding:0 .18em;border-radius:.16em;font-weight:900}
 /* ---------- style « croquis » (dessin au crayon + écrans) ---------- */
 .croquis{background:#f5f3ee}
-.croquis svg path,.croquis svg circle,.croquis svg rect,.croquis svg line{fill:none;stroke:#1a1a1a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.croquis svg.d path,.croquis svg.d circle,.croquis svg.d rect,.croquis svg.d line{fill:none;stroke:#1a1a1a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
 .main{font-family:Caveat,cursive;font-weight:700;color:#1a1a1a;position:absolute}
 .tel{position:absolute;left:190px;top:250px;width:700px;height:1420px;border-radius:96px;background:#111;padding:26px;box-shadow:0 40px 90px rgba(0,0,0,.25)}
 .tel .ecran{width:100%;height:100%;border-radius:72px;overflow:hidden;background:#fff;position:relative}
@@ -175,7 +175,7 @@ let CACHE = {};
 function croquis(nom, s, u, dur) {
   if (!CACHE[nom]) { seed = nom.length * 97; CACHE[nom] = DESSINS[nom](); }
   const D = CACHE[nom], n = D.P.length, k = cl(s / Math.min(dur * .75, 2.6)) * n;
-  let h = `<svg width="1080" height="1920" style="position:absolute;inset:0">`;
+  let h = `<svg class="d" width="1080" height="1920" style="position:absolute;inset:0">`;
   if (D.lampe) h += `<ellipse cx="${D.lampe[0]}" cy="${D.lampe[1] + 160}" rx="${330}" ry="${230}" style="fill:#f7b06a;stroke:none;opacity:${.32 * out((k - n + 3) / 3)}"/>`;
   D.P.forEach((p, i) => { const a = cl(k - i); if (a <= 0) return; const L = 4000; h += `<path d="${trait(p)}" style="stroke-dasharray:${L};stroke-dashoffset:${L * (1 - a)}"/>`; });
   h += '</svg>';
