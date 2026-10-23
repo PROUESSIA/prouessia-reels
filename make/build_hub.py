@@ -156,6 +156,20 @@ comptes = [
   "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
              "body": {"branch": "main", "message": "comptes zernio", "content": "{{base64(2.text)}}"}}}]
 
+# mode recus : commentaires reçus sous nos vidéos YouTube — NE MARCHE PAS (23/10 : commentThreads?allThreadsRelatedToChannelId renvoie 404 pour notre chaîne). Ne pas utiliser ; notifications natives des applis à la place.
+recus = [
+ {"id": 1, "module": "youtube:universal", "version": 4, "parameters": {"__IMTCONN__": YT},
+  "mapper": {"url": "/v3/videos", "method": "GET", "qs": [{"key": "part", "value": "snippet"}, {"key": "id", "value": "{{ifempty(var.input.video_url; \"9jlTfYTBLs8\")}}"}]}},   # une de nos vidéos → id de la chaîne (channels?mine ne renvoie rien : compte de marque)
+ {"id": 2, "module": "youtube:universal", "version": 4, "parameters": {"__IMTCONN__": YT},
+  "mapper": {"url": "/v3/commentThreads", "method": "GET", "qs": [{"key": "part", "value": "snippet"}, {"key": "allThreadsRelatedToChannelId", "value": "{{get(1.body.items; 1).snippet.channelId}}"},
+             {"key": "maxResults", "value": "{{ifempty(var.input.n; 30)}}"}, {"key": "order", "value": "time"}, {"key": "textFormat", "value": "plainText"}]}},
+ {"id": 3, "module": "builtin:BasicFeeder", "version": 1, "mapper": {"array": "{{2.body.items}}"}},
+ {"id": 4, "module": "util:TextAggregator", "version": 1, "parameters": {"feeder": 3, "rowSeparator": "\n"},
+  "mapper": {"value": "{{3.snippet.topLevelComment.snippet.publishedAt}} | {{3.snippet.topLevelComment.snippet.authorDisplayName}} | video {{3.snippet.videoId}} | reponses {{3.snippet.totalReplyCount}} | {{replace(3.snippet.topLevelComment.snippet.textOriginal; newline; \" \")}}"}},
+ {"id": 5, "module": "github:makeRestApiCall", "version": 4, "parameters": {"__IMTCONN__": GH},
+  "mapper": {"url": "/repos/PROUESSIA/prouessia-reels/contents/{{var.input.path}}", "method": "PUT",
+             "body": {"branch": "main", "message": "commentaires recus", "content": "{{base64(2.statusCode + newline + 4.text)}}"}}}]
+
 routes = [
  (with_filter(prospects_lot, sans_mode), 0),
  (with_filter(publication, sans_mode), 100),
@@ -178,6 +192,7 @@ routes = [
  (with_filter(copier, mode('copier')), 1800),
  (with_filter(comptes, mode('comptes')), 1900),
  (with_filter(pixabay, mode('pixabay')), 2000),
+ (with_filter(recus, mode('recus')), 2100),
 ]
 # les flows 7 et outils filtraient déjà sur var.input.mode (recherche/analyse/importer…) : on retire ce doublon
 def strip_old(flow):
