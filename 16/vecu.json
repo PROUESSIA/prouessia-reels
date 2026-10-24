@@ -1,0 +1,93 @@
+{
+ "titre": "Vos tarifs, on les saisit <b>une seule fois</b>",
+ "phrases": [
+  {
+   "html": "",
+   "clip": "257092",
+   "debut": 3.0,
+   "cx": 0.45,
+   "sens": 1
+  },
+  {
+   "html": "Chaque devis, <b>la même chose</b>",
+   "clip": "87050",
+   "debut": 2.0,
+   "cx": 0.6,
+   "sens": -1
+  },
+  {
+   "html": "Vous retapez <b>le déplacement</b>",
+   "clip": "3172",
+   "debut": 1.0,
+   "cx": 0.6,
+   "sens": 1
+  },
+  {
+   "html": "Vous retapez <b>la main-d'œuvre</b>",
+   "clip": "3180",
+   "debut": 2.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Vous cherchez <b>le prix du joint</b>",
+   "clip": "136297",
+   "debut": 3.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Et le client <b>attend</b>",
+   "clip": "163276",
+   "debut": 3.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Avec Prouessia, <b>vos prestations sont enregistrées une fois</b>",
+   "clip": "app:02-prestations",
+   "debut": 0.3,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.45,
+   "zoom": 1.0
+  },
+  {
+   "html": "Vos prix, <b>prêts à l'emploi</b>",
+   "clip": "65574",
+   "debut": 1.0,
+   "cx": 0.35,
+   "sens": -1
+  },
+  {
+   "html": "Sur le devis, vous les choisissez <b>au toucher</b>",
+   "clip": "app:01-nouveau-devis",
+   "debut": 4.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.45,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et vous repartez <b>sur le chantier</b>",
+   "clip": "37179",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Et vous, vos tarifs, <b>vous les retapez à chaque fois</b>&nbsp;?",
+   "clip": "73977",
+   "debut": 2.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "190323",
+   "debut": 2.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ]
+}

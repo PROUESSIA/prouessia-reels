@@ -109,13 +109,13 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
 .titre{{top:250px;font-size:64px;line-height:1.08}} .ph{{top:760px;font-size:96px;line-height:1.05}} b{{color:{MUST}}}
 .logo{{position:absolute;left:0;right:0;bottom:250px;display:flex;justify-content:center;align-items:center;gap:14px;color:#fff;font-weight:800;font-size:34px;opacity:.9;text-shadow:0 2px 8px #000}}
 .logo img{{width:48px;height:48px;border-radius:12px}}
-.ph.bas{{top:{BOITE[1]+BOITE[3]+30}px;font-size:70px}} .v.app{{background:linear-gradient(180deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 25%)}}"""
+.ph.bas{{top:{BOITE[1]+BOITE[3]+30}px;font-size:70px}} .ph.bas.long{{font-size:56px}} .v.app{{background:linear-gradient(180deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 25%)}}"""
     cq = os.path.join(d, 'calques'); os.makedirs(cq, exist_ok=True)
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={'width': W, 'height': H})
         for i, ph in enumerate(P):
             pg.set_content(f'<html><head><meta charset="utf-8"><style>{css}</style></head><body><div class="v{" app" if ph["clip"].startswith("app:") else ""}"></div><div class="titre">{c["titre"]}</div>'
-                           f'<div class="ph{" bas" if ph["clip"].startswith("app:") else ""}">{ph["html"]}</div><div class="logo"><img src="data:image/png;base64,{ico}">prouessia</div></body></html>')
+                           f'<div class="ph{(" bas long" if len(dit(ph["html"])) > 38 else " bas") if ph["clip"].startswith("app:") else ""}">{ph["html"]}</div><div class="logo"><img src="data:image/png;base64,{ico}">prouessia</div></body></html>')
             pg.wait_for_timeout(120); pg.screenshot(path=f'{cq}/{i}.png', omit_background=True)
         b.close()
     inp, fil, n = [], [], len(P)
@@ -140,7 +140,7 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
     inp += ['-i', os.path.join(d, 'voix.wav')]  # règle 10 : la voix, rien d'autre
     fil.append(f"[{2*n}:a]apad,atrim=0:{TOTAL:.2f},loudnorm=I=-14:TP=-1.5[a]")
     out = os.path.join(d, 'video.mp4')
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', *inp, '-filter_complex', ';'.join(fil), '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', 'medium', '-profile:v', 'main', '-level', '4.0', '-pix_fmt', 'yuv420p', '-crf', '23', '-maxrate', '1800k', '-bufsize', '3600k', '-g', '30', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', out], check=True)
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', *inp, '-filter_complex', ';'.join(fil), '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', 'medium', '-profile:v', 'main', '-level', '4.0', '-pix_fmt', 'yuv420p', '-crf', '23', '-maxrate', '1700k', '-bufsize', '3400k', '-g', '30', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', out], check=True)
     import build; build.HERE = d; ok = build.controle(out)
     assert ok, 'règle 6 : mouvement insuffisant, refaire'
     u = json.load(open(os.path.join(CLIPS, 'utilises.json')))

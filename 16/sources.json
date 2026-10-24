@@ -1,0 +1,93 @@
+{
+ "num": "16",
+ "titre": "Vos tarifs, on les saisit<br>une seule fois",
+ "date": "24.10.2026",
+ "affirmations": [
+  {
+   "dit": "Chaque devis, la même chose : vous retapez le déplacement, la main-d'œuvre, vous cherchez le prix du joint, et le client attend.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, vos prestations sont enregistrées une fois. Vos prix, prêts à l'emploi. Sur le devis, vous les choisissez au toucher.",
+   "ref": "avantage n° 3 « Vos prestations enregistrées une fois » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les prix visibles à l'écran sont ceux d'un compte de démonstration, pas ceux d'un vrai plombier."
+ ],
+ "avert": "Cette fiche décrit une mise en situation et une fonction de Prouessia. Elle ne remplace pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "257092",
+   "sujet": "eau",
+   "url": "https://pixabay.com/videos/id-257092/",
+   "auteur": "padrinan"
+  },
+  {
+   "id": "87050",
+   "sujet": "encrer",
+   "url": "https://pixabay.com/videos/id-87050/",
+   "auteur": "mootlak"
+  },
+  {
+   "id": "3172",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-3172/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "3180",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-3180/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "136297",
+   "sujet": "verrouiller",
+   "url": "https://pixabay.com/videos/id-136297/",
+   "auteur": "olenchic"
+  },
+  {
+   "id": "163276",
+   "sujet": "eau du robinet",
+   "url": "https://pixabay.com/videos/id-163276/",
+   "auteur": "livesmart"
+  },
+  {
+   "id": "65574",
+   "sujet": "travailler",
+   "url": "https://pixabay.com/videos/id-65574/",
+   "auteur": "ALLDI"
+  },
+  {
+   "id": "37179",
+   "sujet": "construction",
+   "url": "https://pixabay.com/videos/id-37179/",
+   "auteur": "thenickmurphy"
+  },
+  {
+   "id": "73977",
+   "sujet": "tube",
+   "url": "https://pixabay.com/videos/id-73977/",
+   "auteur": "TRAPHITHO"
+  },
+  {
+   "id": "190323",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-190323/",
+   "auteur": "MountainDweller"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}
