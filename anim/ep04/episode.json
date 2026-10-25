@@ -1,0 +1,53 @@
+{
+ "serie": "Sous pression",
+ "numero": 4,
+ "titre": "Le contrat",
+ "etat": "script écrit le 25/10 (crédits Make à 0) ; voix, calage, déroulé caméra et rendu à faire",
+ "voix": {"julien": "Orus", "lea": "Aoede", "rocher": "Vindemiatrix", "lefevre": "Gacrux"},
+ "rythme": {"pauses": 0.4, "silences": 0.55, "vitesse": 1.12},
+ "fond": "tension",
+ "volume_fond": 0.34,
+ "textes": {
+  "rocher": [
+   "Monsieur Morel ? Je n'ai pas dormi de la nuit.",
+   "J'ai retrouvé le contrat de monsieur Vasseur. Je vous l'envoie en photo."
+  ],
+  "lea": [
+   "Quatre cent cinquante euros par intervention d'urgence. De jour comme de nuit.",
+   "Prélevés automatiquement. La clé reste chez lui. Cinq ans.",
+   "Elle l'a signé le jour du robinet.",
+   "Deux prélèvements « intervention de nuit ». Vous vous en souvenez ?"
+  ],
+  "julien": [
+   "Lisez, Léa.",
+   "Il casse. Il répare. Il facture.",
+   "Madame Lefèvre, vous avez signé le même papier ?",
+   "Madame… comment Vasseur a eu mon numéro ?"
+  ],
+  "lefevre": [
+   "Le même, oui. Pour être tranquille.",
+   "La nuit ? Mais… personne n'est venu.",
+   "Il m'a demandé qui était venu pour la fuite… je lui ai donné votre carte.",
+   "Il m'a appelée ce matin. Il dit que vous êtes dangereux… Il vient ce soir changer ma serrure."
+  ]
+ },
+ "deroule_prevu": [
+  "cuisine_jour · 8 h 05 · sonnerie : le téléphone de Julien sonne (son sonnerie, incrust « 8 h 05 »)",
+  "rocher 0 (au téléphone, voix seule sur plan Julien qui décroche) ; rocher 1",
+  "sms : la photo arrive ; julien 0 « Lisez, Léa. »",
+  "carte contrat (gros plan du contrat, son frisson) ; lea 0 ; lea 1 ; lea 2",
+  "julien 1 (gros plan, gras 3 : casse / répare / facture)",
+  "carte sponsor 1,8 s (muette)",
+  "cuisine_lefevre de jour (sol sec, à adapter) · incrust « 10 h 20 » : julien 2 ; lefevre 0",
+  "relevé de banque en gros plan (nouvelle carte « releve » à créer dans film.html, sans légende) ; lea 3 ; lefevre 1",
+  "julien 3 ; lefevre 2",
+  "lefevre 3 (cliffhanger, gros plan, son frisson) ; carte fin « Épisode 5, demain 18 h » + générique"
+ ],
+ "controle_logique": [
+  "Rocher a le numéro de Julien (ép. 2, via Mme Lefèvre) et le contrat montré par Vasseur (ép. 3).",
+  "Le contrat : 450 €, prélèvement automatique, clé chez Vasseur, 5 ans (bible ép. 4) ; signé le jour du robinet (plan de Vasseur).",
+  "Léa est infirmière et connue de Mme Lefèvre (prépare l'ép. 5).",
+  "Le numéro de Julien explique le SMS anonyme de l'ép. 1.",
+  "Fin = menace de l'ép. 3 (« La prochaine, c'est madame Lefèvre ») qui se réalise ; prépare l'ép. 5 « La serrure »."
+ ]
+}
