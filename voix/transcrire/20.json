@@ -1,0 +1,387 @@
+[
+{
+"mot": "POV,",
+"debut": 0.0,
+"fin": 0.66
+},
+{
+"mot": "7h30",
+"debut": 0.8,
+"fin": 1.44
+},
+{
+"mot": "devant",
+"debut": 1.44,
+"fin": 1.7
+},
+{
+"mot": "le",
+"debut": 1.7,
+"fin": 1.84
+},
+{
+"mot": "portail.",
+"debut": 1.84,
+"fin": 2.16
+},
+{
+"mot": "Le",
+"debut": 2.44,
+"fin": 2.52
+},
+{
+"mot": "code,",
+"debut": 2.52,
+"fin": 2.68
+},
+{
+"mot": "c",
+"debut": 2.78,
+"fin": 2.82
+},
+{
+"mot": "'était",
+"debut": 2.82,
+"fin": 2.88
+},
+{
+"mot": "quoi",
+"debut": 2.88,
+"fin": 3.06
+},
+{
+"mot": "?",
+"debut": 3.06,
+"fin": 3.56
+},
+{
+"mot": "Vous",
+"debut": 3.56,
+"fin": 3.64
+},
+{
+"mot": "l",
+"debut": 3.64,
+"fin": 3.72
+},
+{
+"mot": "'aviez",
+"debut": 3.72,
+"fin": 3.78
+},
+{
+"mot": "noté",
+"debut": 3.78,
+"fin": 4.08
+},
+{
+"mot": "?",
+"debut": 4.08,
+"fin": 4.4
+},
+{
+"mot": "Sur",
+"debut": 4.4,
+"fin": 4.5
+},
+{
+"mot": "un",
+"debut": 4.5,
+"fin": 4.6
+},
+{
+"mot": "bout",
+"debut": 4.6,
+"fin": 4.66
+},
+{
+"mot": "de",
+"debut": 4.66,
+"fin": 4.72
+},
+{
+"mot": "carton,",
+"debut": 4.72,
+"fin": 5.02
+},
+{
+"mot": "le",
+"debut": 5.24,
+"fin": 5.34
+},
+{
+"mot": "carton",
+"debut": 5.34,
+"fin": 5.64
+},
+{
+"mot": "est",
+"debut": 5.64,
+"fin": 5.72
+},
+{
+"mot": "dans",
+"debut": 5.72,
+"fin": 5.84
+},
+{
+"mot": "l",
+"debut": 5.84,
+"fin": 5.96
+},
+{
+"mot": "'autre",
+"debut": 5.96,
+"fin": 6.06
+},
+{
+"mot": "veste.",
+"debut": 6.06,
+"fin": 6.46
+},
+{
+"mot": "Vous",
+"debut": 6.82,
+"fin": 7.06
+},
+{
+"mot": "appelez",
+"debut": 7.06,
+"fin": 7.3
+},
+{
+"mot": "la",
+"debut": 7.3,
+"fin": 7.42
+},
+{
+"mot": "cliente,",
+"debut": 7.42,
+"fin": 7.84
+},
+{
+"mot": "elle",
+"debut": 8.08,
+"fin": 8.2
+},
+{
+"mot": "est",
+"debut": 8.2,
+"fin": 8.28
+},
+{
+"mot": "au",
+"debut": 8.28,
+"fin": 8.34
+},
+{
+"mot": "travail,",
+"debut": 8.34,
+"fin": 8.62
+},
+{
+"mot": "et",
+"debut": 8.98,
+"fin": 9.32
+},
+{
+"mot": "le",
+"debut": 9.32,
+"fin": 9.44
+},
+{
+"mot": "chien",
+"debut": 9.44,
+"fin": 9.62
+},
+{
+"mot": "vous",
+"debut": 9.62,
+"fin": 9.74
+},
+{
+"mot": "regarde.",
+"debut": 9.74,
+"fin": 10.04
+},
+{
+"mot": "Avec",
+"debut": 10.7,
+"fin": 10.9
+},
+{
+"mot": "Provia,",
+"debut": 10.9,
+"fin": 11.26
+},
+{
+"mot": "tout",
+"debut": 11.56,
+"fin": 11.66
+},
+{
+"mot": "est",
+"debut": 11.66,
+"fin": 11.8
+},
+{
+"mot": "noté",
+"debut": 11.8,
+"fin": 12.04
+},
+{
+"mot": "sur",
+"debut": 12.04,
+"fin": 12.14
+},
+{
+"mot": "sa",
+"debut": 12.14,
+"fin": 12.26
+},
+{
+"mot": "fiche.",
+"debut": 12.26,
+"fin": 12.46
+},
+{
+"mot": "Code",
+"debut": 12.82,
+"fin": 12.94
+},
+{
+"mot": "du",
+"debut": 12.94,
+"fin": 13.06
+},
+{
+"mot": "portail,",
+"debut": 13.06,
+"fin": 13.5
+},
+{
+"mot": "chien",
+"debut": 13.68,
+"fin": 13.78
+},
+{
+"mot": "méchant,",
+"debut": 13.78,
+"fin": 14.12
+},
+{
+"mot": "vous",
+"debut": 14.6,
+"fin": 14.82
+},
+{
+"mot": "ouvrez",
+"debut": 14.82,
+"fin": 15.04
+},
+{
+"mot": "la",
+"debut": 15.04,
+"fin": 15.14
+},
+{
+"mot": "fiche,",
+"debut": 15.14,
+"fin": 15.42
+},
+{
+"mot": "c",
+"debut": 15.54,
+"fin": 15.66
+},
+{
+"mot": "'est",
+"debut": 15.66,
+"fin": 15.72
+},
+{
+"mot": "là.",
+"debut": 15.72,
+"fin": 15.82
+},
+{
+"mot": "Et",
+"debut": 16.4,
+"fin": 16.52
+},
+{
+"mot": "vous,",
+"debut": 16.52,
+"fin": 16.62
+},
+{
+"mot": "vos",
+"debut": 16.84,
+"fin": 16.94
+},
+{
+"mot": "codes,",
+"debut": 16.94,
+"fin": 17.18
+},
+{
+"mot": "vous",
+"debut": 17.38,
+"fin": 17.46
+},
+{
+"mot": "les",
+"debut": 17.46,
+"fin": 17.54
+},
+{
+"mot": "notez",
+"debut": 17.54,
+"fin": 17.8
+},
+{
+"mot": "où",
+"debut": 17.8,
+"fin": 17.88
+},
+{
+"mot": "?",
+"debut": 17.88,
+"fin": 18.36
+},
+{
+"mot": "Provia,",
+"debut": 18.36,
+"fin": 18.72
+},
+{
+"mot": "le",
+"debut": 19.04,
+"fin": 19.1
+},
+{
+"mot": "partenaire",
+"debut": 19.1,
+"fin": 19.52
+},
+{
+"mot": "des",
+"debut": 19.52,
+"fin": 19.56
+},
+{
+"mot": "planbiers.",
+"debut": 19.56,
+"fin": 19.84
+},
+{
+"mot": "Provia",
+"debut": 20.34,
+"fin": 20.64
+},
+{
+"mot": ".fr",
+"debut": 20.64,
+"fin": 21.0
+}
+]

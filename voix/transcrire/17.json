@@ -1,0 +1,412 @@
+[
+{
+"mot": "POV,",
+"debut": 0.0,
+"fin": 0.52
+},
+{
+"mot": "les",
+"debut": 1.02,
+"fin": 1.22
+},
+{
+"mot": "mains",
+"debut": 1.22,
+"fin": 1.32
+},
+{
+"mot": "pleines",
+"debut": 1.32,
+"fin": 1.56
+},
+{
+"mot": "de",
+"debut": 1.56,
+"fin": 1.7
+},
+{
+"mot": "joint,",
+"debut": 1.7,
+"fin": 1.86
+},
+{
+"mot": "et",
+"debut": 2.38,
+"fin": 2.52
+},
+{
+"mot": "le",
+"debut": 2.52,
+"fin": 2.62
+},
+{
+"mot": "client",
+"debut": 2.62,
+"fin": 2.88
+},
+{
+"mot": "veut",
+"debut": 2.88,
+"fin": 3.1
+},
+{
+"mot": "son",
+"debut": 3.1,
+"fin": 3.26
+},
+{
+"mot": "de",
+"debut": 3.26,
+"fin": 3.38
+},
+{
+"mot": "vie.",
+"debut": 3.38,
+"fin": 3.54
+},
+{
+"mot": "Vous",
+"debut": 4.2,
+"fin": 4.54
+},
+{
+"mot": "avez",
+"debut": 4.54,
+"fin": 4.68
+},
+{
+"mot": "les",
+"debut": 4.68,
+"fin": 4.78
+},
+{
+"mot": "mains",
+"debut": 4.78,
+"fin": 4.86
+},
+{
+"mot": "pleines,",
+"debut": 4.86,
+"fin": 5.18
+},
+{
+"mot": "le",
+"debut": 5.54,
+"fin": 5.7
+},
+{
+"mot": "client",
+"debut": 5.7,
+"fin": 5.96
+},
+{
+"mot": "attend",
+"debut": 5.96,
+"fin": 6.24
+},
+{
+"mot": "son",
+"debut": 6.24,
+"fin": 6.44
+},
+{
+"mot": "prix.",
+"debut": 6.44,
+"fin": 6.62
+},
+{
+"mot": "Vous",
+"debut": 7.44,
+"fin": 7.52
+},
+{
+"mot": "tapez",
+"debut": 7.52,
+"fin": 7.7
+},
+{
+"mot": "avec",
+"debut": 7.7,
+"fin": 7.82
+},
+{
+"mot": "le",
+"debut": 7.82,
+"fin": 7.98
+},
+{
+"mot": "petit",
+"debut": 7.98,
+"fin": 8.1
+},
+{
+"mot": "doigt,",
+"debut": 8.1,
+"fin": 8.3
+},
+{
+"mot": "le",
+"debut": 9.04,
+"fin": 9.16
+},
+{
+"mot": "téléphone",
+"debut": 9.16,
+"fin": 9.42
+},
+{
+"mot": "glisse",
+"debut": 9.42,
+"fin": 9.72
+},
+{
+"mot": "dans",
+"debut": 9.72,
+"fin": 9.84
+},
+{
+"mot": "les",
+"debut": 9.84,
+"fin": 9.94
+},
+{
+"mot": "vieilles.",
+"debut": 9.94,
+"fin": 10.16
+},
+{
+"mot": "Vous",
+"debut": 11.08,
+"fin": 11.18
+},
+{
+"mot": "les",
+"debut": 11.18,
+"fin": 11.28
+},
+{
+"mot": "suivez",
+"debut": 11.28,
+"fin": 11.54
+},
+{
+"mot": "sur",
+"debut": 11.54,
+"fin": 11.66
+},
+{
+"mot": "votre",
+"debut": 11.66,
+"fin": 11.76
+},
+{
+"mot": "pantalon,",
+"debut": 11.76,
+"fin": 12.06
+},
+{
+"mot": "et",
+"debut": 12.84,
+"fin": 12.98
+},
+{
+"mot": "ça",
+"debut": 12.98,
+"fin": 13.1
+},
+{
+"mot": "écrine",
+"debut": 13.1,
+"fin": 13.3
+},
+{
+"mot": "n",
+"debut": 13.3,
+"fin": 13.42
+},
+{
+"mot": "'importe",
+"debut": 13.42,
+"fin": 13.52
+},
+{
+"mot": "quoi.",
+"debut": 13.52,
+"fin": 13.76
+},
+{
+"mot": "Avec",
+"debut": 15.12,
+"fin": 15.5
+},
+{
+"mot": "Pro",
+"debut": 15.5,
+"fin": 15.7
+},
+{
+"mot": "-SIA,",
+"debut": 15.7,
+"fin": 15.92
+},
+{
+"mot": "vous",
+"debut": 16.4,
+"fin": 16.72
+},
+{
+"mot": "parlez.",
+"debut": 16.72,
+"fin": 17.04
+},
+{
+"mot": "Le",
+"debut": 17.84,
+"fin": 18.02
+},
+{
+"mot": "texte",
+"debut": 18.02,
+"fin": 18.38
+},
+{
+"mot": "s",
+"debut": 18.38,
+"fin": 18.48
+},
+{
+"mot": "'écrit",
+"debut": 18.48,
+"fin": 18.62
+},
+{
+"mot": "tout",
+"debut": 18.62,
+"fin": 18.76
+},
+{
+"mot": "seul.",
+"debut": 18.76,
+"fin": 18.92
+},
+{
+"mot": "Vos",
+"debut": 19.86,
+"fin": 19.98
+},
+{
+"mot": "mains",
+"debut": 19.98,
+"fin": 20.12
+},
+{
+"mot": "restent",
+"debut": 20.12,
+"fin": 20.48
+},
+{
+"mot": "sur",
+"debut": 20.48,
+"fin": 20.66
+},
+{
+"mot": "le",
+"debut": 20.66,
+"fin": 20.78
+},
+{
+"mot": "chantier.",
+"debut": 20.78,
+"fin": 21.08
+},
+{
+"mot": "Et",
+"debut": 22.16,
+"fin": 22.34
+},
+{
+"mot": "vous",
+"debut": 22.34,
+"fin": 22.46
+},
+{
+"mot": "?",
+"debut": 22.46,
+"fin": 23.22
+},
+{
+"mot": "Vous",
+"debut": 23.22,
+"fin": 23.46
+},
+{
+"mot": "tapez",
+"debut": 23.46,
+"fin": 23.68
+},
+{
+"mot": "avec",
+"debut": 23.68,
+"fin": 23.78
+},
+{
+"mot": "quelle",
+"debut": 23.78,
+"fin": 23.94
+},
+{
+"mot": "doigt",
+"debut": 23.94,
+"fin": 24.12
+},
+{
+"mot": "?",
+"debut": 24.12,
+"fin": 24.74
+},
+{
+"mot": "Pro",
+"debut": 24.74,
+"fin": 25.14
+},
+{
+"mot": "-SIA,",
+"debut": 25.14,
+"fin": 25.46
+},
+{
+"mot": "le",
+"debut": 26.14,
+"fin": 26.38
+},
+{
+"mot": "partenaire",
+"debut": 26.38,
+"fin": 26.76
+},
+{
+"mot": "des",
+"debut": 26.76,
+"fin": 26.86
+},
+{
+"mot": "plombiers.",
+"debut": 26.86,
+"fin": 27.12
+},
+{
+"mot": "Pro",
+"debut": 27.12,
+"fin": 28.08
+},
+{
+"mot": "-SIA",
+"debut": 28.08,
+"fin": 28.3
+},
+{
+"mot": ".fr",
+"debut": 28.3,
+"fin": 28.66
+}
+]

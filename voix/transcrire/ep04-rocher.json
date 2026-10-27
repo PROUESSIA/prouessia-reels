@@ -1,0 +1,122 @@
+[
+{
+"mot": "M.",
+"debut": 0.0,
+"fin": 0.32
+},
+{
+"mot": "Morel,",
+"debut": 0.62,
+"fin": 1.04
+},
+{
+"mot": "je",
+"debut": 1.8,
+"fin": 2.28
+},
+{
+"mot": "n",
+"debut": 2.28,
+"fin": 2.34
+},
+{
+"mot": "'ai",
+"debut": 2.34,
+"fin": 2.4
+},
+{
+"mot": "pas",
+"debut": 2.4,
+"fin": 2.54
+},
+{
+"mot": "dormi",
+"debut": 2.54,
+"fin": 2.86
+},
+{
+"mot": "de",
+"debut": 2.86,
+"fin": 2.94
+},
+{
+"mot": "la",
+"debut": 2.94,
+"fin": 3.08
+},
+{
+"mot": "nuit,",
+"debut": 3.08,
+"fin": 3.28
+},
+{
+"mot": "j",
+"debut": 4.5,
+"fin": 4.56
+},
+{
+"mot": "'ai",
+"debut": 4.56,
+"fin": 4.64
+},
+{
+"mot": "retrouvé",
+"debut": 4.64,
+"fin": 5.06
+},
+{
+"mot": "le",
+"debut": 5.06,
+"fin": 5.18
+},
+{
+"mot": "contrat",
+"debut": 5.18,
+"fin": 5.54
+},
+{
+"mot": "de",
+"debut": 5.54,
+"fin": 5.76
+},
+{
+"mot": "M.",
+"debut": 5.76,
+"fin": 5.88
+},
+{
+"mot": "Vasseur,",
+"debut": 6.14,
+"fin": 6.56
+},
+{
+"mot": "je",
+"debut": 7.5,
+"fin": 7.84
+},
+{
+"mot": "vous",
+"debut": 7.84,
+"fin": 7.98
+},
+{
+"mot": "l",
+"debut": 7.98,
+"fin": 8.08
+},
+{
+"mot": "'envoie",
+"debut": 8.08,
+"fin": 8.3
+},
+{
+"mot": "en",
+"debut": 8.3,
+"fin": 8.4
+},
+{
+"mot": "photo.",
+"debut": 8.4,
+"fin": 8.7
+}
+]

@@ -1,0 +1,292 @@
+[
+{
+"mot": "Zéro",
+"debut": 0.0,
+"fin": 0.52
+},
+{
+"mot": "calculette,",
+"debut": 0.52,
+"fin": 0.96
+},
+{
+"mot": "tout",
+"debut": 1.22,
+"fin": 1.3
+},
+{
+"mot": "est",
+"debut": 1.3,
+"fin": 1.42
+},
+{
+"mot": "calculé.",
+"debut": 1.42,
+"fin": 1.86
+},
+{
+"mot": "Le",
+"debut": 2.56,
+"fin": 2.88
+},
+{
+"mot": "devis",
+"debut": 2.88,
+"fin": 3.1
+},
+{
+"mot": "est",
+"debut": 3.1,
+"fin": 3.22
+},
+{
+"mot": "presque",
+"debut": 3.22,
+"fin": 3.4
+},
+{
+"mot": "fini.",
+"debut": 3.4,
+"fin": 3.7
+},
+{
+"mot": "Reste",
+"debut": 4.2,
+"fin": 4.32
+},
+{
+"mot": "le",
+"debut": 4.32,
+"fin": 4.48
+},
+{
+"mot": "total.",
+"debut": 4.48,
+"fin": 4.66
+},
+{
+"mot": "Vous",
+"debut": 5.4,
+"fin": 5.48
+},
+{
+"mot": "sortez",
+"debut": 5.48,
+"fin": 5.7
+},
+{
+"mot": "la",
+"debut": 5.7,
+"fin": 5.78
+},
+{
+"mot": "calculette.",
+"debut": 5.78,
+"fin": 6.24
+},
+{
+"mot": "Main",
+"debut": 6.66,
+"fin": 6.88
+},
+{
+"mot": "d",
+"debut": 6.88,
+"fin": 7.04
+},
+{
+"mot": "'œuvre,",
+"debut": 7.04,
+"fin": 7.2
+},
+{
+"mot": "pièce,",
+"debut": 7.5,
+"fin": 7.82
+},
+{
+"mot": "déplacement.",
+"debut": 8.16,
+"fin": 8.54
+},
+{
+"mot": "Puis",
+"debut": 9.08,
+"fin": 9.3
+},
+{
+"mot": "la",
+"debut": 9.3,
+"fin": 9.42
+},
+{
+"mot": "TVA.",
+"debut": 9.42,
+"fin": 9.74
+},
+{
+"mot": "Une",
+"debut": 10.46,
+"fin": 10.66
+},
+{
+"mot": "erreur,",
+"debut": 10.66,
+"fin": 10.96
+},
+{
+"mot": "vous",
+"debut": 11.44,
+"fin": 11.6
+},
+{
+"mot": "recommencez.",
+"debut": 11.6,
+"fin": 12.02
+},
+{
+"mot": "Avec",
+"debut": 12.96,
+"fin": 13.22
+},
+{
+"mot": "ProSIA,",
+"debut": 13.22,
+"fin": 13.62
+},
+{
+"mot": "achetez",
+"debut": 14.46,
+"fin": 15.06
+},
+{
+"mot": "TVA",
+"debut": 15.06,
+"fin": 15.66
+},
+{
+"mot": "total.",
+"debut": 15.66,
+"fin": 16.18
+},
+{
+"mot": "Tout",
+"debut": 16.96,
+"fin": 17.16
+},
+{
+"mot": "est",
+"debut": 17.16,
+"fin": 17.28
+},
+{
+"mot": "calculé.",
+"debut": 17.28,
+"fin": 17.6
+},
+{
+"mot": "Vous",
+"debut": 18.32,
+"fin": 18.44
+},
+{
+"mot": "vérifiez",
+"debut": 18.44,
+"fin": 18.86
+},
+{
+"mot": "et",
+"debut": 18.86,
+"fin": 19.12
+},
+{
+"mot": "c",
+"debut": 19.12,
+"fin": 19.22
+},
+{
+"mot": "'est",
+"debut": 19.22,
+"fin": 19.22
+},
+{
+"mot": "parti.",
+"debut": 19.22,
+"fin": 19.42
+},
+{
+"mot": "Et",
+"debut": 20.64,
+"fin": 20.88
+},
+{
+"mot": "vous,",
+"debut": 20.88,
+"fin": 21.04
+},
+{
+"mot": "la",
+"debut": 21.44,
+"fin": 21.54
+},
+{
+"mot": "calculette",
+"debut": 21.54,
+"fin": 21.9
+},
+{
+"mot": "est",
+"debut": 21.9,
+"fin": 21.98
+},
+{
+"mot": "de",
+"debut": 21.98,
+"fin": 22.02
+},
+{
+"mot": "où",
+"debut": 22.02,
+"fin": 22.14
+},
+{
+"mot": "?",
+"debut": 22.14,
+"fin": 23.02
+},
+{
+"mot": "ProSIA,",
+"debut": 23.02,
+"fin": 23.58
+},
+{
+"mot": "le",
+"debut": 23.8,
+"fin": 23.84
+},
+{
+"mot": "partenaire",
+"debut": 23.84,
+"fin": 24.22
+},
+{
+"mot": "des",
+"debut": 24.22,
+"fin": 24.3
+},
+{
+"mot": "plombiers.",
+"debut": 24.3,
+"fin": 24.56
+},
+{
+"mot": "ProSIA",
+"debut": 25.18,
+"fin": 25.64
+},
+{
+"mot": ".fr",
+"debut": 25.64,
+"fin": 26.0
+}
+]

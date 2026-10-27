@@ -1,0 +1,317 @@
+[
+{
+"mot": "Le",
+"debut": 0.0,
+"fin": 0.42
+},
+{
+"mot": "devis",
+"debut": 0.42,
+"fin": 0.7
+},
+{
+"mot": "est",
+"debut": 0.7,
+"fin": 0.8
+},
+{
+"mot": "signé,",
+"debut": 0.8,
+"fin": 1.18
+},
+{
+"mot": "mais",
+"debut": 1.6,
+"fin": 1.78
+},
+{
+"mot": "sans",
+"debut": 1.78,
+"fin": 1.96
+},
+{
+"mot": "date,",
+"debut": 1.96,
+"fin": 2.22
+},
+{
+"mot": "chez",
+"debut": 2.68,
+"fin": 2.82
+},
+{
+"mot": "un",
+"debut": 2.82,
+"fin": 2.98
+},
+{
+"mot": "particulier",
+"debut": 2.98,
+"fin": 3.38
+},
+{
+"mot": "sans",
+"debut": 3.38,
+"fin": 3.78
+},
+{
+"mot": "délai",
+"debut": 3.78,
+"fin": 4.04
+},
+{
+"mot": "indiqué.",
+"debut": 4.04,
+"fin": 4.42
+},
+{
+"mot": "Vous",
+"debut": 4.82,
+"fin": 5.12
+},
+{
+"mot": "devez",
+"debut": 5.12,
+"fin": 5.34
+},
+{
+"mot": "intervenir",
+"debut": 5.34,
+"fin": 5.84
+},
+{
+"mot": "au",
+"debut": 5.84,
+"fin": 5.94
+},
+{
+"mot": "plus",
+"debut": 5.94,
+"fin": 6.04
+},
+{
+"mot": "tard",
+"debut": 6.04,
+"fin": 6.2
+},
+{
+"mot": "30",
+"debut": 6.2,
+"fin": 6.54
+},
+{
+"mot": "jours",
+"debut": 6.54,
+"fin": 6.8
+},
+{
+"mot": "après",
+"debut": 6.8,
+"fin": 7.46
+},
+{
+"mot": "son",
+"debut": 7.46,
+"fin": 7.66
+},
+{
+"mot": "accord.",
+"debut": 7.66,
+"fin": 7.92
+},
+{
+"mot": "Le",
+"debut": 8.42,
+"fin": 8.52
+},
+{
+"mot": "plus",
+"debut": 8.52,
+"fin": 8.66
+},
+{
+"mot": "simple",
+"debut": 8.66,
+"fin": 8.86
+},
+{
+"mot": "est",
+"debut": 8.86,
+"fin": 9.36
+},
+{
+"mot": "créer",
+"debut": 9.36,
+"fin": 9.52
+},
+{
+"mot": "une",
+"debut": 9.52,
+"fin": 9.74
+},
+{
+"mot": "date",
+"debut": 9.74,
+"fin": 10.02
+},
+{
+"mot": "sur",
+"debut": 10.02,
+"fin": 10.74
+},
+{
+"mot": "le",
+"debut": 10.74,
+"fin": 10.84
+},
+{
+"mot": "devis,",
+"debut": 10.84,
+"fin": 11.08
+},
+{
+"mot": "noir",
+"debut": 11.62,
+"fin": 11.88
+},
+{
+"mot": "sur",
+"debut": 11.88,
+"fin": 12.04
+},
+{
+"mot": "blanc.",
+"debut": 12.04,
+"fin": 12.2
+},
+{
+"mot": "Avec",
+"debut": 12.98,
+"fin": 13.22
+},
+{
+"mot": "Prohécia,",
+"debut": 13.22,
+"fin": 13.66
+},
+{
+"mot": "le",
+"debut": 13.76,
+"fin": 13.84
+},
+{
+"mot": "client",
+"debut": 13.84,
+"fin": 14.02
+},
+{
+"mot": "signe",
+"debut": 14.02,
+"fin": 14.36
+},
+{
+"mot": "doigt",
+"debut": 14.36,
+"fin": 14.72
+},
+{
+"mot": "et",
+"debut": 14.72,
+"fin": 15.46
+},
+{
+"mot": "un",
+"debut": 15.46,
+"fin": 15.6
+},
+{
+"mot": "email",
+"debut": 15.6,
+"fin": 15.78
+},
+{
+"mot": "vous",
+"debut": 15.78,
+"fin": 15.94
+},
+{
+"mot": "prévient.",
+"debut": 15.94,
+"fin": 16.28
+},
+{
+"mot": "Et",
+"debut": 16.78,
+"fin": 16.86
+},
+{
+"mot": "vous,",
+"debut": 16.86,
+"fin": 17.0
+},
+{
+"mot": "vos",
+"debut": 17.34,
+"fin": 17.48
+},
+{
+"mot": "devis,",
+"debut": 17.48,
+"fin": 17.76
+},
+{
+"mot": "ils",
+"debut": 18.18,
+"fin": 18.28
+},
+{
+"mot": "ont",
+"debut": 18.28,
+"fin": 18.38
+},
+{
+"mot": "une",
+"debut": 18.38,
+"fin": 18.54
+},
+{
+"mot": "date,",
+"debut": 18.54,
+"fin": 18.76
+},
+{
+"mot": "Prohécia",
+"debut": 19.26,
+"fin": 19.7
+},
+{
+"mot": "le",
+"debut": 19.7,
+"fin": 19.86
+},
+{
+"mot": "partenaire",
+"debut": 19.86,
+"fin": 20.34
+},
+{
+"mot": "des",
+"debut": 20.34,
+"fin": 20.4
+},
+{
+"mot": "plombiers.",
+"debut": 20.4,
+"fin": 20.74
+},
+{
+"mot": "Prohécia",
+"debut": 21.24,
+"fin": 21.66
+},
+{
+"mot": ".fr",
+"debut": 21.66,
+"fin": 22.04
+}
+]

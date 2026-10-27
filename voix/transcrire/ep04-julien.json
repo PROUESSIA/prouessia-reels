@@ -1,0 +1,127 @@
+[
+{
+"mot": "Lisez,",
+"debut": 0.0,
+"fin": 0.74
+},
+{
+"mot": "Léa.",
+"debut": 0.76,
+"fin": 1.14
+},
+{
+"mot": "Il",
+"debut": 2.24,
+"fin": 2.36
+},
+{
+"mot": "casse,",
+"debut": 2.36,
+"fin": 2.88
+},
+{
+"mot": "il",
+"debut": 3.54,
+"fin": 3.7
+},
+{
+"mot": "répart,",
+"debut": 3.7,
+"fin": 4.1
+},
+{
+"mot": "il",
+"debut": 4.92,
+"fin": 5.1
+},
+{
+"mot": "facture.",
+"debut": 5.1,
+"fin": 5.54
+},
+{
+"mot": "Madame",
+"debut": 6.38,
+"fin": 6.8
+},
+{
+"mot": "Lefevre,",
+"debut": 6.8,
+"fin": 7.26
+},
+{
+"mot": "vous",
+"debut": 7.36,
+"fin": 7.44
+},
+{
+"mot": "avez",
+"debut": 7.44,
+"fin": 7.6
+},
+{
+"mot": "signé",
+"debut": 7.6,
+"fin": 7.9
+},
+{
+"mot": "le",
+"debut": 7.9,
+"fin": 8.0
+},
+{
+"mot": "même",
+"debut": 8.0,
+"fin": 8.12
+},
+{
+"mot": "papier",
+"debut": 8.12,
+"fin": 8.38
+},
+{
+"mot": "?",
+"debut": 8.38,
+"fin": 9.34
+},
+{
+"mot": "Madame,",
+"debut": 9.34,
+"fin": 9.68
+},
+{
+"mot": "comment",
+"debut": 10.6,
+"fin": 10.9
+},
+{
+"mot": "va",
+"debut": 10.9,
+"fin": 11.12
+},
+{
+"mot": "-ceur",
+"debut": 11.12,
+"fin": 11.36
+},
+{
+"mot": "un",
+"debut": 11.36,
+"fin": 11.44
+},
+{
+"mot": "humour",
+"debut": 11.44,
+"fin": 11.6
+},
+{
+"mot": "numéro",
+"debut": 11.6,
+"fin": 11.92
+},
+{
+"mot": "?",
+"debut": 11.92,
+"fin": 12.22
+}
+]

@@ -1,0 +1,412 @@
+[
+{
+"mot": "Un",
+"debut": 0.0,
+"fin": 0.36
+},
+{
+"mot": "ballon",
+"debut": 0.36,
+"fin": 0.56
+},
+{
+"mot": "posé",
+"debut": 0.56,
+"fin": 0.86
+},
+{
+"mot": "il",
+"debut": 0.86,
+"fin": 0.96
+},
+{
+"mot": "y",
+"debut": 0.96,
+"fin": 1.0
+},
+{
+"mot": "a",
+"debut": 1.0,
+"fin": 1.0
+},
+{
+"mot": "dix",
+"debut": 1.0,
+"fin": 1.1
+},
+{
+"mot": "-huit",
+"debut": 1.1,
+"fin": 1.24
+},
+{
+"mot": "mois.",
+"debut": 1.24,
+"fin": 1.4
+},
+{
+"mot": "Il",
+"debut": 1.88,
+"fin": 2.04
+},
+{
+"mot": "ne",
+"debut": 2.04,
+"fin": 2.14
+},
+{
+"mot": "chauffe",
+"debut": 2.14,
+"fin": 2.36
+},
+{
+"mot": "plus.",
+"debut": 2.36,
+"fin": 2.5
+},
+{
+"mot": "Des",
+"debut": 3.04,
+"fin": 3.24
+},
+{
+"mot": "sénales.",
+"debut": 3.24,
+"fin": 3.58
+},
+{
+"mot": "Non",
+"debut": 4.04,
+"fin": 4.18
+},
+{
+"mot": "!",
+"debut": 4.18,
+"fin": 5.14
+},
+{
+"mot": "Un",
+"debut": 5.14,
+"fin": 5.4
+},
+{
+"mot": "ballon",
+"debut": 5.4,
+"fin": 5.6
+},
+{
+"mot": "se",
+"debut": 5.6,
+"fin": 5.72
+},
+{
+"mot": "retire",
+"debut": 5.72,
+"fin": 5.9
+},
+{
+"mot": "sans",
+"debut": 5.9,
+"fin": 6.1
+},
+{
+"mot": "abîmer",
+"debut": 6.1,
+"fin": 6.36
+},
+{
+"mot": "le",
+"debut": 6.36,
+"fin": 6.5
+},
+{
+"mot": "bâti.",
+"debut": 6.5,
+"fin": 6.7
+},
+{
+"mot": "C",
+"debut": 7.16,
+"fin": 7.24
+},
+{
+"mot": "'est",
+"debut": 7.24,
+"fin": 7.26
+},
+{
+"mot": "la",
+"debut": 7.26,
+"fin": 7.38
+},
+{
+"mot": "garantie",
+"debut": 7.38,
+"fin": 7.76
+},
+{
+"mot": "de",
+"debut": 7.76,
+"fin": 7.86
+},
+{
+"mot": "bon",
+"debut": 7.86,
+"fin": 8.04
+},
+{
+"mot": "fonctionnement.",
+"debut": 8.04,
+"fin": 8.52
+},
+{
+"mot": "Deux",
+"debut": 8.94,
+"fin": 9.24
+},
+{
+"mot": "ans",
+"debut": 9.24,
+"fin": 9.36
+},
+{
+"mot": "à",
+"debut": 9.36,
+"fin": 9.62
+},
+{
+"mot": "partir",
+"debut": 9.62,
+"fin": 9.82
+},
+{
+"mot": "de",
+"debut": 9.82,
+"fin": 9.96
+},
+{
+"mot": "la",
+"debut": 9.96,
+"fin": 10.02
+},
+{
+"mot": "réception",
+"debut": 10.02,
+"fin": 10.28
+},
+{
+"mot": "des",
+"debut": 10.28,
+"fin": 10.48
+},
+{
+"mot": "travaux.",
+"debut": 10.48,
+"fin": 10.78
+},
+{
+"mot": "Encore",
+"debut": 11.7,
+"fin": 12.04
+},
+{
+"mot": "faut",
+"debut": 12.04,
+"fin": 12.16
+},
+{
+"mot": "-il",
+"debut": 12.16,
+"fin": 12.26
+},
+{
+"mot": "retrouver",
+"debut": 12.26,
+"fin": 12.52
+},
+{
+"mot": "la",
+"debut": 12.52,
+"fin": 12.72
+},
+{
+"mot": "date.",
+"debut": 12.72,
+"fin": 12.88
+},
+{
+"mot": "Avec",
+"debut": 14.14,
+"fin": 14.52
+},
+{
+"mot": "Proécia,",
+"debut": 14.52,
+"fin": 14.9
+},
+{
+"mot": "chaque",
+"debut": 15.24,
+"fin": 15.42
+},
+{
+"mot": "ayant",
+"debut": 15.42,
+"fin": 15.7
+},
+{
+"mot": "a",
+"debut": 15.7,
+"fin": 15.78
+},
+{
+"mot": "sa",
+"debut": 15.78,
+"fin": 15.88
+},
+{
+"mot": "fiche.",
+"debut": 15.88,
+"fin": 16.2
+},
+{
+"mot": "Ce",
+"debut": 16.64,
+"fin": 16.92
+},
+{
+"mot": "que",
+"debut": 16.92,
+"fin": 17.0
+},
+{
+"mot": "vous",
+"debut": 17.0,
+"fin": 17.08
+},
+{
+"mot": "lui",
+"debut": 17.08,
+"fin": 17.16
+},
+{
+"mot": "avez",
+"debut": 17.16,
+"fin": 17.26
+},
+{
+"mot": "proposé",
+"debut": 17.26,
+"fin": 17.74
+},
+{
+"mot": "en",
+"debut": 17.74,
+"fin": 18.02
+},
+{
+"mot": "un",
+"debut": 18.02,
+"fin": 18.24
+},
+{
+"mot": "coup",
+"debut": 18.24,
+"fin": 18.34
+},
+{
+"mot": "d",
+"debut": 18.34,
+"fin": 18.44
+},
+{
+"mot": "'œil.",
+"debut": 18.44,
+"fin": 18.56
+},
+{
+"mot": "Et",
+"debut": 19.42,
+"fin": 19.58
+},
+{
+"mot": "vous,",
+"debut": 19.58,
+"fin": 19.72
+},
+{
+"mot": "vos",
+"debut": 20.0,
+"fin": 20.08
+},
+{
+"mot": "dates",
+"debut": 20.08,
+"fin": 20.22
+},
+{
+"mot": "de",
+"debut": 20.22,
+"fin": 20.34
+},
+{
+"mot": "pause,",
+"debut": 20.34,
+"fin": 20.54
+},
+{
+"mot": "vous",
+"debut": 20.92,
+"fin": 21.0
+},
+{
+"mot": "les",
+"debut": 21.0,
+"fin": 21.08
+},
+{
+"mot": "retrouvez",
+"debut": 21.08,
+"fin": 21.4
+},
+{
+"mot": "?",
+"debut": 21.4,
+"fin": 22.16
+},
+{
+"mot": "Proécia.",
+"debut": 22.84,
+"fin": 23.24
+},
+{
+"mot": "Le",
+"debut": 23.9,
+"fin": 24.16
+},
+{
+"mot": "partenaire",
+"debut": 24.16,
+"fin": 24.64
+},
+{
+"mot": "des",
+"debut": 24.64,
+"fin": 24.72
+},
+{
+"mot": "plombiers.",
+"debut": 24.72,
+"fin": 25.0
+},
+{
+"mot": "Proécia",
+"debut": 25.88,
+"fin": 26.28
+},
+{
+"mot": ".fr",
+"debut": 26.28,
+"fin": 26.68
+}
+]
