@@ -5,35 +5,35 @@
  "phrases": [
   {
    "html": "",
-   "clip": "?",
+   "clip": "257088",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Vous avez <b>tout vu</b>",
-   "clip": "?",
+   "clip": "5629",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Vous dites <b>«&nbsp;je vous envoie ça&nbsp;»</b>",
-   "clip": "?",
+   "clip": "40816",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Le soir, <b>vous oubliez un détail</b>",
-   "clip": "?",
+   "clip": "4593",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Le lendemain, <b>il a un autre devis</b>",
-   "clip": "?",
+   "clip": "211432",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
@@ -49,14 +49,14 @@
   },
   {
    "html": "Accroupi <b>sous l'évier</b>",
-   "clip": "?",
+   "clip": "109879",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Le téléphone <b>sur la caisse à outils</b>",
-   "clip": "?",
+   "clip": "12543",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
@@ -72,14 +72,14 @@
   },
   {
    "html": "Et vous, vos devis, <b>vous les faites où</b>&nbsp;?",
-   "clip": "?",
+   "clip": "3140",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
-   "clip": "?",
+   "clip": "181541",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1

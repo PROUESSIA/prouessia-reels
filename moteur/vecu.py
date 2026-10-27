@@ -90,7 +90,16 @@ def voix(nn, fichier):
     else:
         open(wav + '.pcm', 'wb').write(brut)
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 's16le', '-ar', '24000', '-ac', '1', '-i', wav + '.pcm', wav], check=True); os.remove(wav + '.pcm')
-    x, sr = sf.read(wav); seg = aligner(wav, lignes); out, D = [], []
+    x, sr = sf.read(wav)
+    mots = os.path.join(ROOT, 'voix', 'transcrire', f'{nn}.json')
+    if os.path.exists(mots):
+        from aligner_mots import caler
+        seg, manq = caler(mots, lignes); print('calage par les mots, phrases non reconnues :', manq)
+    else:
+        seg = aligner(wav, lignes)
+        os.makedirs(os.path.dirname(mots), exist_ok=True); import shutil; shutil.copy(wav, mots[:-5] + '.wav')
+        print('calage provisoire (silences) ; voix envoyée à la transcription : pousser voix/transcrire/ puis relancer')
+    out, D = [], []
     for a, b in seg:
         s = x[int(max(0, a - .03) * sr):int((b + .05) * sr)]; out += [s, np.zeros(int(PAUSE * sr))]; D.append(round(len(s) / sr + PAUSE, 3))
     D[-1] += .8

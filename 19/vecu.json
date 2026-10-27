@@ -5,49 +5,49 @@
  "phrases": [
   {
    "html": "",
-   "clip": "?",
+   "clip": "80355",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Le devis est <b>presque fini</b>",
-   "clip": "?",
+   "clip": "366322",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Reste <b>le total</b>",
-   "clip": "?",
+   "clip": "131161",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Vous sortez <b>la calculette</b>",
-   "clip": "?",
+   "clip": "366323",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Main-d'œuvre, <b>pièces, déplacement</b>",
-   "clip": "?",
+   "clip": "133643",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Puis <b>la TVA</b>",
-   "clip": "?",
+   "clip": "202987",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Une erreur, <b>vous recommencez</b>",
-   "clip": "?",
+   "clip": "3142",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
@@ -72,21 +72,21 @@
   },
   {
    "html": "Vous vérifiez, <b>et c'est parti</b>",
-   "clip": "?",
+   "clip": "30",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Et vous, la calculette, <b>elle est où</b>&nbsp;?",
-   "clip": "?",
+   "clip": "39",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
-   "clip": "?",
+   "clip": "109877",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
