@@ -1,0 +1,106 @@
+{
+ "num": "24",
+ "titre": "Le client demande : pourquoi 10 % de TVA ?",
+ "date": "30.10.2026",
+ "affirmations": [
+  {
+   "dit": "Un client demande pourquoi 10 % de TVA.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Entretien ou amélioration, dans un logement achevé depuis plus de deux ans : 10 %. Rénovation énergétique : 5,5 %. Chaudière gaz ou fioul, fournie et posée : 20 %.",
+   "ref": "taux intermédiaire de 10 % pour ces travaux dans les locaux d'habitation achevés depuis plus de deux ans (hors gros équipements et cas exclus) ; 5,5 % pour la rénovation énergétique (CGI, art. 278-0 bis A) ; depuis le 1er mars 2025, fourniture et pose d'une chaudière à combustible fossile au taux normal de 20 %, son entretien restant au taux réduit.",
+   "liens": [
+    [
+     "impots.gouv.fr : Quel taux de TVA pour les travaux dans les logements ?",
+     "https://www.impots.gouv.fr/professionnel/questions/quel-taux-de-tva-appliquer-pour-les-travaux-realises-dans-les-logements"
+    ],
+    [
+     "economie.gouv.fr : TVA à taux réduit, pour quels travaux ?",
+     "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/tva-taux-reduit-pour-quels-travaux"
+    ],
+    [
+     "entreprendre.service-public.gouv.fr : Taux de TVA pour les travaux de rénovation",
+     "https://entreprendre.service-public.gouv.fr/vosdroits/F23568"
+    ]
+   ],
+   "label": "Ce que dit le texte :"
+  },
+  {
+   "dit": "Avec Prouessia, un devis lisible, que le client comprend du premier coup.",
+   "ref": "avantage n° 53 « Un devis lisible » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Les conditions exactes du taux réduit (attestation, gros équipements exclus, cas particuliers).",
+  "Les règles hors métropole."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé. Pour une situation précise, voyez un juriste, votre assureur ou votre chambre de métiers.",
+ "videos": [
+  {
+   "id": "67460",
+   "sujet": "ouvrier",
+   "url": "https://pixabay.com/videos/id-67460/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "91377",
+   "sujet": "charpente",
+   "url": "https://pixabay.com/videos/id-91377/",
+   "auteur": "AliceSilver"
+  },
+  {
+   "id": "214661",
+   "sujet": "construction",
+   "url": "https://pixabay.com/videos/id-214661/",
+   "auteur": "LadislavBur"
+  },
+  {
+   "id": "85351",
+   "sujet": "constructeur",
+   "url": "https://pixabay.com/videos/id-85351/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "72544",
+   "sujet": "soudage",
+   "url": "https://pixabay.com/videos/id-72544/",
+   "auteur": "Emrevonal"
+  },
+  {
+   "id": "154950",
+   "sujet": "employé",
+   "url": "https://pixabay.com/videos/id-154950/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "200276",
+   "sujet": "garage",
+   "url": "https://pixabay.com/videos/id-200276/",
+   "auteur": "LadislavBur"
+  },
+  {
+   "id": "80356",
+   "sujet": "percer",
+   "url": "https://pixabay.com/videos/id-80356/",
+   "auteur": "PrakashChavda"
+  },
+  {
+   "id": "166809",
+   "sujet": "charpentier",
+   "url": "https://pixabay.com/videos/id-166809/",
+   "auteur": "AndyWolares"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

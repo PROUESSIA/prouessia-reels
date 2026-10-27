@@ -52,10 +52,10 @@ def preparer():
     out, t, items = [], 0.0, []
     for it in EP['deroule']:
         if 'qui' in it:
-            a, b, ms = lignes[it['qui']][it['n']]; seg = pistes[it['qui']][int((a - .04) * SR):int((b + .08) * SR)]
+            a, b, ms = lignes[it['qui']][it['n']]; seg = pistes[it['qui']][max(0, int((a - .04) * SR)):int((b + .08) * SR)]
             pz = it.get('pause', .3) * fp; out.append(np.zeros(int(pz * SR))); t0 = t; t += pz
             items.append({**it, 'debut': round(t0, 3), 'parole': [round(t, 3), round(t + len(seg) / SR, 3)], 'texte': EP['textes'][it['qui']][it['n']],
-                          'mots': [(w, round(t + x - a + .04, 3), round(t + y - a + .04, 3)) for w, x, y in ms]})
+                          'mots': [(w, round(t + x - a + min(a, .04), 3), round(t + y - a + min(a, .04), 3)) for w, x, y in ms]})
             out.append(seg); t += len(seg) / SR
         else:
             du = it['duree'] * (fs if 'decor' in it else 1)
@@ -147,6 +147,14 @@ def carte(nom, fond, du, out):
         corps = f"""<div style="width:860px;background:#fff;border-radius:8px;box-shadow:0 30px 80px rgba(0,0,0,.7);padding:50px 44px;color:#1a1a1a;text-align:left;text-shadow:none;transform:rotate(2deg);font-family:Inter,sans-serif">
 <div style="font-weight:900;font-size:38px;color:#1d3b6b">BANQUE · RELEVÉ DE COMPTE</div><div style="font-size:28px;color:#555;margin:10px 0 26px">Mme Lefèvre · octobre</div>
 <table style="width:100%;border-collapse:collapse;font-size:27px">{lignes}</table></div>"""
+    elif nom == 'enregistrement':   # gros plan : le téléphone de Léa, dans sa poche, qui enregistre (objet de l'histoire)
+        barres = ''.join(f'<div style="width:14px;height:{30 + (i * 37) % 120}px;background:#ff4d4d;border-radius:7px"></div>' for i in range(14))
+        corps = f"""<div style="width:430px;height:880px;border-radius:64px;background:#0b0b0d;border:14px solid #2a2b30;box-shadow:0 30px 80px rgba(0,0,0,.8);position:relative;overflow:hidden;transform:rotate(-8deg)">
+<div style="position:absolute;top:22px;left:50%;transform:translateX(-50%);width:120px;height:30px;border-radius:20px;background:#000"></div>
+<div style="position:absolute;top:300px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:10px">{barres}</div>
+<div style="position:absolute;top:520px;left:0;right:0;font-size:64px;font-weight:800;color:#fff;font-family:Inter,sans-serif">● 01:47</div>
+<div style="position:absolute;bottom:90px;left:50%;transform:translateX(-50%);width:110px;height:110px;border-radius:55px;border:8px solid #fff;display:flex;align-items:center;justify-content:center"><div style="width:44px;height:44px;border-radius:8px;background:#ff3b30"></div></div></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:820px;background:linear-gradient(180deg,rgba(63,122,106,0) 0,rgba(63,122,106,.96) 22%);"></div>"""
     elif nom == 'tel_eteint':   # gros plan : le téléphone de Julien, écran noir
         corps = """<div style="width:430px;height:880px;border-radius:64px;background:#0b0b0d;border:14px solid #2a2b30;box-shadow:0 30px 80px rgba(0,0,0,.8),inset 0 0 0 2px #444;
 position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(125deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,0) 38%)"></div>

@@ -1,0 +1,96 @@
+{
+ "num": "18",
+ "titre": "Un ballon posé il y a 18 mois. Il ne chauffe plus.",
+ "date": "28.10.2026",
+ "affirmations": [
+  {
+   "dit": "Un ballon posé il y a 18 mois, qui ne chauffe plus.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Décennale ? Non. Un ballon se retire sans abîmer le bâti : c'est la garantie de bon fonctionnement, deux ans, à partir de la réception des travaux.",
+   "ref": "garantie de bon fonctionnement (« biennale ») : 2 ans à compter de la réception, pour les équipements dissociables ; le ballon d'eau chaude est l'exemple donné. Code civil, art. 1792-3. La décennale vise les éléments indissociables (art. 1792-2).",
+   "liens": [
+    [
+     "service-public.gouv.fr : Garanties après la réception des travaux",
+     "https://www.service-public.gouv.fr/particuliers/vosdroits/F2958"
+    ],
+    [
+     "service-public.gouv.fr : Garantie décennale des constructeurs",
+     "https://www.service-public.gouv.fr/particuliers/vosdroits/F2034"
+    ]
+   ],
+   "label": "Ce que dit le texte :"
+  },
+  {
+   "dit": "Avec Prouessia, chaque client a sa fiche. Ce que vous lui avez proposé, en un coup d'œil.",
+   "ref": "avantage n° 71 « Une fiche par client » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives. Voir aussi n° 72 « Historique des devis par client ».",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Les conditions détaillées de la garantie (exclusions, usure, entretien).",
+  "Les autres garanties (parfait achèvement, assurance dommages-ouvrage)."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé. Pour une situation précise, voyez un juriste, votre assureur ou votre chambre de métiers.",
+ "videos": [
+  {
+   "id": "9517",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-9517/",
+   "auteur": "Luiz-Jorge-Artista"
+  },
+  {
+   "id": "1927",
+   "sujet": "salle de bain",
+   "url": "https://pixabay.com/videos/id-1927/",
+   "auteur": "Maria_Briones"
+  },
+  {
+   "id": "67463",
+   "sujet": "ouvrier",
+   "url": "https://pixabay.com/videos/id-67463/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "235528",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-235528/",
+   "auteur": "useche360"
+  },
+  {
+   "id": "40813",
+   "sujet": "work",
+   "url": "https://pixabay.com/videos/id-40813/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "348444",
+   "sujet": "texte",
+   "url": "https://pixabay.com/videos/id-348444/",
+   "auteur": "JonathanSlatterMusic"
+  },
+  {
+   "id": "257094",
+   "sujet": "eau",
+   "url": "https://pixabay.com/videos/id-257094/",
+   "auteur": "padrinan"
+  },
+  {
+   "id": "147074",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-147074/",
+   "auteur": "mariya_m"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

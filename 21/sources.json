@@ -1,0 +1,98 @@
+{
+ "num": "21",
+ "titre": "Le devis est signé. Mais sans date.",
+ "date": "29.10.2026",
+ "affirmations": [
+  {
+   "dit": "Le devis est signé, mais sans date.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Chez un particulier, sans délai indiqué, vous devez intervenir au plus tard 30 jours après son accord.",
+   "ref": "à défaut de date ou de délai indiqué, le professionnel exécute la prestation sans retard injustifié et au plus tard 30 jours après la conclusion du contrat. Code de la consommation, art. L216-1.",
+   "liens": [
+    [
+     "economie.gouv.fr : Devis obligatoire, comment ça marche ?",
+     "https://www.economie.gouv.fr/entreprises/gerer-sa-comptabilite-et-ses-demarches/devis-obligatoire-comment-ca-marche"
+    ]
+   ],
+   "label": "Ce que dit le texte :"
+  },
+  {
+   "dit": "Le plus simple : écrire une date sur le devis.",
+   "ref": "une bonne pratique, pas une obligation légale.",
+   "liens": [],
+   "label": "Notre conseil :"
+  },
+  {
+   "dit": "Avec Prouessia, le client signe au doigt, et un e-mail vous prévient.",
+   "ref": "avantage n° 21 « Signature au doigt sur téléphone » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives. Voir aussi n° 24 « Vous êtes prévenu dès la signature ».",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Les cas où un délai précis a été convenu avec le client.",
+  "Les sanctions en cas de retard."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé. Pour une situation précise, voyez un juriste, votre assureur ou votre chambre de métiers.",
+ "videos": [
+  {
+   "id": "4906",
+   "sujet": "lavage",
+   "url": "https://pixabay.com/videos/id-4906/",
+   "auteur": "klimkin"
+  },
+  {
+   "id": "9631",
+   "sujet": "grand-mère",
+   "url": "https://pixabay.com/videos/id-9631/",
+   "auteur": "chayka1270"
+  },
+  {
+   "id": "166807",
+   "sujet": "charpentier",
+   "url": "https://pixabay.com/videos/id-166807/",
+   "auteur": "AndyWolares"
+  },
+  {
+   "id": "9520",
+   "sujet": "vue d'en-haut",
+   "url": "https://pixabay.com/videos/id-9520/",
+   "auteur": "chayka1270"
+  },
+  {
+   "id": "125458",
+   "sujet": "conseil",
+   "url": "https://pixabay.com/videos/id-125458/",
+   "auteur": "romyrwood"
+  },
+  {
+   "id": "91376",
+   "sujet": "bois",
+   "url": "https://pixabay.com/videos/id-91376/",
+   "auteur": "AliceSilver"
+  },
+  {
+   "id": "197654",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-197654/",
+   "auteur": "TRAPHITHO"
+  },
+  {
+   "id": "115",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-115/",
+   "auteur": "Coverr-Free-Footage"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

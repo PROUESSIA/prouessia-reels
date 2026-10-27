@@ -1,0 +1,99 @@
+{
+ "num": "17",
+ "titre": "POV : les mains pleines de joint… et le client veut son devis",
+ "date": "28.10.2026",
+ "affirmations": [
+  {
+   "dit": "Les mains pleines de joint, le client attend son prix, le téléphone glisse dans l'évier.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, vous parlez : le texte s'écrit tout seul.",
+   "ref": "avantage n° 42 « Mains mouillées, pas de souci » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives. Voir aussi n° 41 « Dictée vocale dans les devis » ; la dictée est facultative (n° 88).",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "25310",
+   "sujet": "mains",
+   "url": "https://pixabay.com/videos/id-25310/",
+   "auteur": "Irving_Agui"
+  },
+  {
+   "id": "2234",
+   "sujet": "mains",
+   "url": "https://pixabay.com/videos/id-2234/",
+   "auteur": "Maria_Briones"
+  },
+  {
+   "id": "366324",
+   "sujet": "salon",
+   "url": "https://pixabay.com/videos/id-366324/",
+   "auteur": "GIUSEPPE-DE-BERGOLIS"
+  },
+  {
+   "id": "169446",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-169446/",
+   "auteur": "magicmore"
+  },
+  {
+   "id": "271",
+   "sujet": "lavabo",
+   "url": "https://pixabay.com/videos/id-271/",
+   "auteur": "Life-Of-Vids"
+  },
+  {
+   "id": "33742",
+   "sujet": "lavez-vous les mains",
+   "url": "https://pixabay.com/videos/id-33742/",
+   "auteur": "wollschu"
+  },
+  {
+   "id": "53701",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-53701/",
+   "auteur": "wonderlandwoo"
+  },
+  {
+   "id": "3168",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-3168/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "166808",
+   "sujet": "charpentier",
+   "url": "https://pixabay.com/videos/id-166808/",
+   "auteur": "AndyWolares"
+  },
+  {
+   "id": "8283",
+   "sujet": "mains",
+   "url": "https://pixabay.com/videos/id-8283/",
+   "auteur": "Lademenorca"
+  },
+  {
+   "id": "107696",
+   "sujet": "salle de bains",
+   "url": "https://pixabay.com/videos/id-107696/",
+   "auteur": "madhu1005"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

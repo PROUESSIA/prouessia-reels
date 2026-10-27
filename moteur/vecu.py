@@ -24,7 +24,10 @@ APP = os.path.join(ROOT, 'videos', 'app')
 BOITE = (40, 420, 1000, 1000)  # x, y, largeur, hauteur de l'écran d'appli dans la vidéo
 def source(clip):
     # « app:07-signature-doigt » = capture de l'application (videos/app/), sinon clip libre de droits (videos/clips/)
-    return f'{APP}/{clip[4:]}.mp4' if clip.startswith('app:') else f'{CLIPS}/{clip}.mp4'
+    if clip.startswith('app:'):
+        n = f'{APP}/norm/{clip[4:]}.mp4'   # version recadrée image par image (moteur/normaliser_app.py)
+        return n if os.path.exists(n) else f'{APP}/{clip[4:]}.mp4'
+    return f'{CLIPS}/{clip}.mp4'
 def zone_utile(chemin, debut=0.0, duree=3.0):
     """Certaines captures vidéo n'occupent qu'un coin de l'image (le reste gris), et la taille peut changer en cours de vidéo :
     on mesure la zone utile sur 5 images de la portion utilisée et on garde la plus fréquente (cache _zones.json)."""
@@ -101,7 +104,7 @@ def voix(nn, fichier):
         print('calage provisoire (silences) ; voix envoyée à la transcription : pousser voix/transcrire/ puis relancer')
     out, D = [], []
     for a, b in seg:
-        s = x[int(max(0, a - .03) * sr):int((b + .05) * sr)]; out += [s, np.zeros(int(PAUSE * sr))]; D.append(round(len(s) / sr + PAUSE, 3))
+        s = x[int(max(0, a - .06) * sr):int((b + .12) * sr)]; out += [s, np.zeros(int(PAUSE * sr))]; D.append(round(len(s) / sr + PAUSE, 3))
     D[-1] += .8
     sf.write(os.path.join(d, 'voix.wav'), np.concatenate(out), sr); json.dump(D, open(os.path.join(d, 'durees.json'), 'w'))
     mots = sum(len(l.split()) for l in lignes); tot = sum(D)

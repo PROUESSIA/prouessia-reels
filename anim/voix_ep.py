@@ -15,7 +15,7 @@ if sys.argv[2] == 'decoder':
         else:
             open(w + '.pcm', 'wb').write(brut)
             subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 's16le', '-ar', '24000', '-ac', '1', '-i', w + '.pcm', w], check=True); os.remove(w + '.pcm')
-        shutil.copy(w, os.path.join(D, f'{qui}-court.wav')); shutil.copy(w, os.path.join(TR, f'{ep}-{qui}.wav')); print(qui, 'ok')
+        shutil.copy(w, os.path.join(D, f'{qui}-court.wav'))  # (un -court.wav retouché à la main est écrasé : relancer seulement « mots »); shutil.copy(w, os.path.join(TR, f'{ep}-{qui}.wav')); print(qui, 'ok')
 else:
     from aligner_mots import norm, caler
     for qui, lignes in EP['textes'].items():

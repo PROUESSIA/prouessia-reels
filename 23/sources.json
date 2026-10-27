@@ -1,0 +1,93 @@
+{
+ "num": "23",
+ "titre": "POV : vous êtes en plein devis… et le téléphone sonne",
+ "date": "30.10.2026",
+ "affirmations": [
+  {
+   "dit": "En plein devis, le téléphone sonne, et le devis a disparu.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, le brouillon est gardé : vous retrouvez tout.",
+   "ref": "avantage n° 46 « Brouillon sauvegardé automatiquement » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "366165",
+   "sujet": "homme",
+   "url": "https://pixabay.com/videos/id-366165/",
+   "auteur": "GIUSEPPE-DE-BERGOLIS"
+  },
+  {
+   "id": "230088",
+   "sujet": "pompier",
+   "url": "https://pixabay.com/videos/id-230088/",
+   "auteur": "u_bziv55ajln"
+  },
+  {
+   "id": "95458",
+   "sujet": "industriel",
+   "url": "https://pixabay.com/videos/id-95458/",
+   "auteur": "Fronbondi_Skegs"
+  },
+  {
+   "id": "3833",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-3833/",
+   "auteur": "kaigraphick"
+  },
+  {
+   "id": "4344",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-4344/",
+   "auteur": "2427999"
+  },
+  {
+   "id": "67461",
+   "sujet": "ouvrier",
+   "url": "https://pixabay.com/videos/id-67461/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "83178",
+   "sujet": "homme",
+   "url": "https://pixabay.com/videos/id-83178/",
+   "auteur": "Kmeel_com"
+  },
+  {
+   "id": "10460",
+   "sujet": "profil en aluminium",
+   "url": "https://pixabay.com/videos/id-10460/",
+   "auteur": "chayka1270"
+  },
+  {
+   "id": "4905",
+   "sujet": "assiette",
+   "url": "https://pixabay.com/videos/id-4905/",
+   "auteur": "klimkin"
+  },
+  {
+   "id": "145",
+   "sujet": "tuyau",
+   "url": "https://pixabay.com/videos/id-145/",
+   "auteur": "Coverr-Free-Footage"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

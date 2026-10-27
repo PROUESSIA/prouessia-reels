@@ -65,128 +65,103 @@
 "fin": 6.54
 },
 {
-"mot": "la",
-"debut": 7.54,
-"fin": 7.82
-},
-{
-"mot": "clé",
-"debut": 7.82,
-"fin": 7.98
-},
-{
-"mot": "reste",
-"debut": 7.98,
-"fin": 8.2
-},
-{
-"mot": "chez",
-"debut": 8.2,
-"fin": 8.38
-},
-{
-"mot": "lui.",
-"debut": 8.38,
-"fin": 8.52
-},
-{
 "mot": "Cinq",
-"debut": 9.48,
-"fin": 9.8
+"debut": 7.13,
+"fin": 7.45
 },
 {
 "mot": "ans.",
-"debut": 9.8,
-"fin": 9.94
+"debut": 7.45,
+"fin": 7.59
 },
 {
 "mot": "Elle",
-"debut": 10.82,
-"fin": 11.0
+"debut": 8.47,
+"fin": 8.65
 },
 {
 "mot": "l",
-"debut": 11.0,
-"fin": 11.12
+"debut": 8.65,
+"fin": 8.77
 },
 {
 "mot": "'a",
-"debut": 11.12,
-"fin": 11.12
+"debut": 8.77,
+"fin": 8.77
 },
 {
 "mot": "signé",
-"debut": 11.12,
-"fin": 11.4
+"debut": 8.77,
+"fin": 9.05
 },
 {
 "mot": "le",
-"debut": 11.4,
-"fin": 11.5
+"debut": 9.05,
+"fin": 9.15
 },
 {
 "mot": "jour",
-"debut": 11.5,
-"fin": 11.64
+"debut": 9.15,
+"fin": 9.29
 },
 {
 "mot": "du",
-"debut": 11.64,
-"fin": 11.76
+"debut": 9.29,
+"fin": 9.41
 },
 {
 "mot": "robinet.",
-"debut": 11.76,
-"fin": 12.08
+"debut": 9.41,
+"fin": 9.73
 },
 {
 "mot": "Deux",
-"debut": 13.08,
-"fin": 13.46
+"debut": 10.73,
+"fin": 11.11
 },
 {
 "mot": "prélèvements,",
-"debut": 13.46,
-"fin": 13.94
+"debut": 11.11,
+"fin": 11.59
 },
 {
 "mot": "interventions",
-"debut": 14.46,
-"fin": 14.84
+"debut": 12.11,
+"fin": 12.49
 },
 {
 "mot": "de",
-"debut": 14.84,
-"fin": 15.16
+"debut": 12.49,
+"fin": 12.81
 },
 {
 "mot": "nuit.",
-"debut": 15.16,
-"fin": 15.34
+"debut": 12.81,
+"fin": 12.99
 },
 {
 "mot": "Vous",
-"debut": 16.28,
-"fin": 16.56
+"debut": 13.93,
+"fin": 14.21
 },
 {
 "mot": "vous",
-"debut": 16.56,
-"fin": 16.66
+"debut": 14.21,
+"fin": 14.31
 },
 {
 "mot": "en",
-"debut": 16.66,
-"fin": 16.76
+"debut": 14.31,
+"fin": 14.41
 },
 {
 "mot": "souvenez",
-"debut": 16.76,
-"fin": 17.06
+"debut": 14.41,
+"fin": 14.71
 },
 {
 "mot": "?",
-"debut": 17.06,
-"fin": 17.38
+"debut": 14.71,
+"fin": 15.03
 }
 ]

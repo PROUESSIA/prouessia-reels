@@ -101,6 +101,8 @@ const CAST = {
   vasseur: {peau: '#e0b090', cheveux: '#0e0c0b', haut: '#55595f', col: '#d9d9d9', bas: '#44474c', chaussures: '#1a1a1a'},
   lefevre: {peau: '#e6c2a4', cheveux: '#d9d6cf', haut: '#c77a9b', bas: '#c77a9b', chaussures: '#f0e0d0', chignon: true, robe: true},
   rocher:  {peau: '#e8c6ab', cheveux: '#eeeeea', haut: '#c9b48e', bas: '#8b7f72', chaussures: '#b08a6a', robe: true},
+  theo:    {peau: '#d8a27c', cheveux: '#2b1d14', haut: '#e8742a', col: '#f4f0e8', bas: '#2c3442', chaussures: '#f0f0f0', casquette: '#1c1c1c'},
+  imper:   {peau: '#dcb69a', cheveux: '#8d8a84', haut: '#c8b48a', bas: '#c8b48a', chaussures: '#3a2a1c', robe: true, casquette: '#6f6656'},
   policier: {peau: '#cf9a74', cheveux: '#2a201a', haut: '#1d2b4f', col: '#e8e8e8', bas: '#1d2b4f', chaussures: '#111', casquette: '#16213d'},
 };
 function lumieres(g, o) {
@@ -169,7 +171,16 @@ function decorCamion(x0, pluie) {
   const ecr = new THREE.Mesh(new THREE.PlaneGeometry(.068, .14), new THREE.MeshBasicMaterial({map: texte([{t: 'Numéro inconnu', y: 70, s: 26, g: 1}, {t: 'Occupe-toi de tes\nchantiers, Morel.', y: 200, s: 26, a: 'left', bulle: '#2b2f3a', hb: 110}], {fond: '#000'})}));
   ecr.position.z = .006; tel.add(ecr);
   const haloTel = new THREE.PointLight('#cfe0ff', 0, 1.2, 2); g.add(haloTel);
-  return {g, persos: {julien}, update(t, ev) {
+  box(.42, .5, .45, '#26262b', .45, .55, .25, g); box(.42, .6, .08, '#26262b', .45, .95, .5, g);       // siège passager
+  const theo = perso({...CAST.theo, pose: 'assis'}, g); theo.root.position.set(.45, .3, .25); theo.root.rotation.y = Math.PI; theo.root.visible = false;
+  const lea = perso({...CAST.lea, pose: 'assis'}, g); lea.root.position.set(0, .3, .95); lea.root.rotation.y = Math.PI; lea.root.visible = false;
+  const telT = new THREE.Group(); theo.bd.main.add(telT); box(.075, .15, .012, '#111', 0, -.04, .05, telT);
+  const photo = new THREE.Mesh(new THREE.PlaneGeometry(.068, .14), new THREE.MeshBasicMaterial({map: texte([{t: '▮▮▮▮', y: 300, s: 60, c: '#556'}, {t: '◢', y: 200, s: 90, c: '#c8b48a'}], {fond: '#141a26'})}));
+  photo.position.set(0, -.04, .057); telT.add(photo); telT.visible = false;
+  return {g, persos: {julien, theo, lea}, update(t, ev) {
+    theo.root.visible = ev.has('theo'); lea.root.visible = ev.has('lea_arriere');
+    if (ev.has('photo_theo')) { if (theo.pose !== 'telephone_main') { pose(theo, 'telephone_main'); theo.hips.position.y = .5; for (const j of [theo.jg, theo.jd]) { j.h.rotation.x = -Math.PI / 2; j.g.rotation.x = Math.PI / 2; } } telT.visible = true; theo.root.rotation.y = Math.PI * .8; }
+    else { if (theo.pose !== 'assis') pose(theo, 'assis'); telT.visible = false; theo.root.rotation.y = Math.PI; }
     const roule = ev.has('roule');
     rue.position.z = -3 + (roule ? (t * 9) % 12 : 0);
     if (goutte) { goutte.offset.y = -t * .15; essuie.rotation.z = roule || ev.has('essuie') ? Math.sin(t * 3.2) * 1.0 - .2 : -1.1; }
@@ -188,6 +199,7 @@ function decorCuisineLefevre(x0) {
   box(7, 3, .1, '#e3d3b5', 0, 1.5, -2.6, g); box(.1, 3, 7, '#d9c7a6', -2.6, 1.5, 0, g);
   for (let i = 0; i < 9; i++) box(.06, 3, .02, '#cdb995', -2.4 + i * .55, 1.5, -2.54, g);          // papier peint rayé
   const f = new THREE.Mesh(new THREE.PlaneGeometry(1.1, 1.0), new THREE.MeshBasicMaterial({map: ville(false)})); f.position.set(1.4, 1.75, -2.54); g.add(f);
+  const villeNuit = f.material.map, villeJour = ville(true);
   // évier + meuble ouvert
   box(2.2, .9, .6, '#8f6d4f', -.6, .45, -2.25, g); box(2.3, .05, .65, '#e9e3d8', -.6, .92, -2.22, g);
   box(.6, .15, .45, '#cfd3d6', -.4, .86, -2.2, g); cyl(.02, .02, .3, '#bbb', -.4, 1.08, -2.38, g);
@@ -208,18 +220,33 @@ function decorCuisineLefevre(x0) {
   const julien = perso({...CAST.julien, pose: 'accroupi'}, g); julien.root.position.set(-.4, 0, -1.45); julien.root.rotation.y = Math.PI;
   const lea = perso({...CAST.lea, pose: 'debout'}, g); lea.root.visible = false;
   const lumJour = new THREE.DirectionalLight('#fff4e0', 0); lumJour.position.set(3, 4, 2); g.add(lumJour); lumJour.target.position.set(0, 0, -1); g.add(lumJour.target);
-  return {g, persos: {lefevre, julien, lea}, update(t, ev) {
+  const vasseur = perso({...CAST.vasseur, pose: 'debout'}, g); vasseur.root.visible = false;
+  const papier = box(.21, .3, .005, '#f4efe3', 0, -.06, .06, vasseur.bd.main); papier.visible = false;
+  return {g, persos: {lefevre, julien, lea, vasseur}, update(t, ev) {
+    vasseur.root.visible = false;
+    if (ev.has('soir')) {   // le soir : sol sec, lampe, Léa et Mme Lefèvre ; Vasseur arrive
+      eau.visible = false; for (const d of gouttes) d.s.visible = false; lumJour.intensity = 0; f.material.map = villeNuit;
+      julien.root.visible = false;
+      if (lefevre.pose !== 'debout') pose(lefevre, 'debout'); lefevre.root.position.set(.85, 0, -.7);
+      lea.root.visible = true; lea.root.position.set(-.95, 0, -.45); if (lea.pose !== 'debout') pose(lea, 'debout');
+      if (ev.has('vasseur')) { vasseur.root.visible = true; vasseur.root.position.set(-.3, 0, .75); vers(vasseur, .85, -.7); vers(lefevre, -.3, .75); vers(lea, -.3, .75);
+        const pp = ev.has('papier'); papier.visible = pp; if (vasseur.pose !== (pp ? 'telephone_main' : 'debout')) pose(vasseur, pp ? 'telephone_main' : 'debout');
+        if (ev.has('vers_lea')) { vasseur.root.position.set(-.55, 0, .3); vers(vasseur, -.95, -.45); } }
+      else { vers(lefevre, -.95, -.45); vers(lea, .85, -.7); }
+      return;
+    }
+    julien.root.visible = true;
     if (ev.has('jour')) {   // le lendemain : sol sec, plein jour, Julien et Léa debout face à Mme Lefèvre
-      eau.visible = false; for (const d of gouttes) d.s.visible = false; lumJour.intensity = 2.2;
+      eau.visible = false; for (const d of gouttes) d.s.visible = false; lumJour.intensity = 2.2; f.material.map = villeJour;
       if (julien.pose !== 'debout') { pose(julien, 'debout'); julien.torse.rotation.x = 0; }
       julien.root.position.set(-.55, 0, .35); vers(julien, .85, -.7);
-      if (lefevre.pose !== (ev.has('inquiete') ? 'mains_levees' : 'debout')) pose(lefevre, ev.has('inquiete') ? 'mains_levees' : 'debout');
+      if (lefevre.pose !== 'debout') pose(lefevre, 'debout');
       lefevre.root.position.set(.85, 0, -.7); vers(lefevre, -.3, .3);
-      lea.root.visible = ev.has('lea'); lea.root.position.set(.05, 0, .75); vers(lea, .85, -.7);
+      lea.root.visible = ev.has('lea'); lea.root.position.set(-.95, 0, -.45); vers(lea, .85, -.7);
       if (ev.has('releve_main') && lea.pose !== 'telephone_main') pose(lea, 'telephone_main');
       return;
     }
-    eau.visible = true; lumJour.intensity = 0; lea.root.visible = false;
+    eau.visible = true; lumJour.intensity = 0; lea.root.visible = false; f.material.map = villeNuit;
     const jet = !ev.has('coupe'); const niveau = ev.has('coupe') ? .05 : .04 + Math.min(.08, t * .002);
     const p = geo.attributes.position.array; for (let i = 0; i < p.length; i += 3) p[i + 1] = base[i + 1] + Math.sin(base[i] * 3 + t * 2.2) * .008 + Math.cos(base[i + 2] * 4 + t * 1.7) * .008;
     geo.attributes.position.needsUpdate = true; eau.position.y = niveau;
@@ -332,7 +359,45 @@ function decorMaisonRocher(x0) {
 }
 DECORS.chambre = decorChambre(0); DECORS.camion = decorCamion(20, true); DECORS.cuisine_lefevre = decorCuisineLefevre(40);
 DECORS.cuisine_jour = decorCuisineJour(60); DECORS.parking = decorCamion(80, false); DECORS.maison_rocher = decorMaisonRocher(100);
-const FONDS = {chambre: '#0b0f1e', camion: '#05070f', cuisine_lefevre: '#1a1410', cuisine_jour: '#cfdcea', parking: '#05070f', maison_rocher: '#0a0d14'};
+function decorRue(x0) {
+  const g = new THREE.Group(); g.position.x = x0; scene.add(g);
+  box(12, .1, 12, '#23262d', 0, -.05, 0, g); box(12, .12, 2.2, '#4a4b50', 0, .06, -1.4, g);                 // chaussée, trottoir
+  box(12, 3.4, .2, '#6e665c', 0, 1.7, -2.6, g);                                                             // façade
+  for (const x of [-3, 3]) { box(1.0, 1.4, .05, '#1a2233', x, 1.9, -2.48, g); box(1.0, 1.4, .02, '#ffd98a', x, 1.9, -2.46, g).material.transparent = true; }
+  const noms = ['Dumas', 'Germaine Garnier', 'Kevin & Laura', 'Marcel Petit'];
+  noms.forEach((n, i) => { const x = -1.05 + i * .7;
+    box(.6, .45, .25, i === 0 ? '#3d5a7a' : '#5a5f66', x, 1.25, -2.37, g); box(.4, .03, .02, '#111', x, 1.37, -2.24, g);
+    const plaque = new THREE.Mesh(new THREE.PlaneGeometry(.36, .1), new THREE.MeshBasicMaterial({map: texte([{t: n, y: 105, s: n.length > 6 ? 58 : 100, g: 1, c: '#111'}], {fond: '#e8e2d0', w: 512, h: 160})}));
+    plaque.position.set(x, 1.16, -2.24); g.add(plaque); });
+  const aimant = box(.08, .1, .02, '#f2b705', -1.05, 1.32, -2.23, g); aimant.visible = false;
+  const lamp = new THREE.Group(); lamp.position.set(1.8, 0, -1.9); g.add(lamp); box(.08, 3, .08, '#333', 0, 1.5, 0, lamp);
+  const b = new THREE.Mesh(new THREE.SphereGeometry(.13, 8, 6), new THREE.MeshBasicMaterial({color: '#ffcf7a'})); b.position.y = 3.0; lamp.add(b);
+  lumieres(g, {ciel: '#4a5a90', sol: '#222', hemi: 1.3, points: [{c: '#ffcf7a', i: 12, p: [1.8, 2.9, -1.6], d: 8, ombre: true}, {c: '#ffe2b0', i: 7, p: [-0.9, 2.5, -1.0], d: 4.5}, {c: '#ffd98a', i: 2, p: [-3, 1.9, -2.2], d: 3}]});
+  const imper = perso({...CAST.imper, pose: 'debout'}, g); imper.root.position.set(-1.05, 0, -1.65); imper.root.rotation.y = Math.PI;
+  // terrasse du café (à droite) : store rayé, table, deux chaises ; Vasseur y attend (ép. 6)
+  const cafe = new THREE.Group(); cafe.position.set(3.4, 0, -1.2); g.add(cafe);
+  for (let i = 0; i < 6; i++) box(.4, .06, 1.2, i % 2 ? '#f4efe3' : '#a01818', -1.0 + i * .4, 2.6, -.4, cafe);
+  const enseigne = new THREE.Mesh(new THREE.PlaneGeometry(1.6, .3), new THREE.MeshBasicMaterial({map: texte([{t: 'CAFÉ DU MARCHÉ', y: 100, s: 70, g: 1, c: '#f4efe3'}], {fond: '#2b1d14', w: 640, h: 160})})); enseigne.position.set(0, 2.85, -1.29); cafe.add(enseigne);
+  cyl(.35, .35, .04, '#d9d2c4', 0, .75, .1, cafe); cyl(.04, .04, .73, '#333', 0, .37, .1, cafe);
+  const vass = perso({...CAST.vasseur, pose: 'assis'}, cafe); vass.root.position.set(.45, 0, .1); vers(vass, -.2, .1); vass.root.rotation.y = -Math.PI / 2;
+  const env = box(.22, .12, .01, '#e9dcc0', 0, -.05, .07, vass.bd.main); env.visible = false;
+  cafe.visible = false; vass.root.visible = false;
+  const soleil = new THREE.DirectionalLight('#fff1d6', 0); soleil.position.set(3, 6, 4); g.add(soleil); soleil.target.position.set(0, 0, -2); g.add(soleil.target);
+  const hemiJour = new THREE.HemisphereLight('#cfe2ff', '#6b6458', 0); g.add(hemiJour);
+  return {g, persos: {imper, vass}, update(t, ev) {
+    const jour = ev.has('jour'); soleil.intensity = jour ? 2.4 : 0; hemiJour.intensity = jour ? 1.2 : 0; b.visible = !jour;
+    cafe.visible = ev.has('cafe'); vass.root.visible = ev.has('cafe');
+    if (ev.has('au_cafe')) { imper.root.position.set(2.75, 0, -1.1); imper.root.rotation.y = Math.PI / 2; }
+    else { const bx = ev.has('boite1') ? -.35 : -1.05; imper.root.position.set(bx, 0, -1.65); aimant.position.x = bx; }
+    env.visible = ev.has('enveloppe'); if (ev.has('enveloppe') && vass.pose !== 'telephone_main') { pose(vass, 'telephone_main'); vass.hips.position.y = .5; for (const j of [vass.jg, vass.jd]) { j.h.rotation.x = -Math.PI / 2; j.g.rotation.x = Math.PI / 2; } }
+    if (ev.has('au_cafe')) { if (ev.has('retourne_imper')) imper.root.rotation.y = 0; return; }
+    const pose_ = ev.has('glisse') && !ev.has('retourne_imper');
+    if (pose_) { imper.bd.ep.rotation.x = -1.2; imper.bd.coude.rotation.x = -.3; aimant.visible = t % 3 > 1.2; } else { imper.bd.ep.rotation.x = 0; imper.bd.coude.rotation.x = 0; aimant.visible = ev.has('glisse'); }
+    imper.root.rotation.y = ev.has('retourne_imper') ? 0 : Math.PI;
+  }};
+}
+DECORS.rue = decorRue(120);
+const FONDS = {rue: '#06080e', chambre: '#0b0f1e', camion: '#05070f', cuisine_lefevre: '#1a1410', cuisine_jour: '#cfdcea', parking: '#05070f', maison_rocher: '#0a0d14'};
 
 // ---------- lecture de l'épisode ----------
 let EP = null; window.setEpisode = e => { EP = e; };

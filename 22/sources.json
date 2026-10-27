@@ -1,0 +1,87 @@
+{
+ "num": "22",
+ "titre": "Le devis se fait chez le client, pas au bureau",
+ "date": "30.10.2026",
+ "affirmations": [
+  {
+   "dit": "« Je vous envoie ça », un détail oublié le soir, un autre devis le lendemain.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, le devis se fait sur place, et part par mail en un clic.",
+   "ref": "avantage n° 6 « Le devis chez le client » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives. Voir aussi n° 8 « Envoi en un clic ».",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "257088",
+   "sujet": "eau",
+   "url": "https://pixabay.com/videos/id-257088/",
+   "auteur": "padrinan"
+  },
+  {
+   "id": "5629",
+   "sujet": "de la vaisselle",
+   "url": "https://pixabay.com/videos/id-5629/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "40816",
+   "sujet": "worker",
+   "url": "https://pixabay.com/videos/id-40816/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "4593",
+   "sujet": "tuyau d'égout",
+   "url": "https://pixabay.com/videos/id-4593/",
+   "auteur": "daniseeh"
+  },
+  {
+   "id": "211432",
+   "sujet": "pluie",
+   "url": "https://pixabay.com/videos/id-211432/",
+   "auteur": "TAMGRA"
+  },
+  {
+   "id": "109879",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-109879/",
+   "auteur": "Martin_Grabo"
+  },
+  {
+   "id": "12543",
+   "sujet": "scintille",
+   "url": "https://pixabay.com/videos/id-12543/",
+   "auteur": "wastedgeneration"
+  },
+  {
+   "id": "3140",
+   "sujet": "ouvrier du batiment",
+   "url": "https://pixabay.com/videos/id-3140/",
+   "auteur": "Life-Of-Vids"
+  },
+  {
+   "id": "181541",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-181541/",
+   "auteur": "NickyPe"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

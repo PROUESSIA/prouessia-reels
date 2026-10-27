@@ -13,13 +13,19 @@ def caler(fichier_mots, phrases):
     for i, p in enumerate(phrases):
         for x in norm(p): pw.append(x); pi.append(i)
     sm = difflib.SequenceMatcher(None, pw, tw, autojunk=False)
-    vus = {}
+    vus = {}; pt = {}   # pt : jeton de phrase → mot transcrit
     for a, b, n in sm.get_matching_blocks():
-        for j in range(n): vus.setdefault(pi[a + j], []).append(tm[b + j])
+        for j in range(n): vus.setdefault(pi[a + j], []).append(tm[b + j]); pt[a + j] = tm[b + j]
+    prem = {i: pi.index(i) for i in set(pi)}; dern = {i: len(pi) - 1 - pi[::-1].index(i) for i in set(pi)}
     seg = []
     for i in range(len(phrases)):
-        if i in vus: seg.append([M[min(vus[i])]['debut'], M[max(vus[i])]['fin']])
-        else: seg.append(None)
+        if i not in vus: seg.append(None); continue
+        k0, k1 = min(vus[i]), max(vus[i])
+        if prem[i] not in pt:   # début non reconnu (chiffres, noms) : on reprend les mots transcrits juste avant
+            avant = max([max(vus[j]) for j in vus if j < i], default=-1); k0 = avant + 1
+        if dern[i] not in pt:
+            apres = min([min(vus[j]) for j in vus if j > i], default=len(M)); k1 = apres - 1
+        seg.append([M[k0]['debut'], M[k1]['fin']])
     # phrases non reconnues : entre la précédente et la suivante
     for i, s in enumerate(seg):
         if s is None:

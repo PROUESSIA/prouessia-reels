@@ -1,0 +1,671 @@
+{
+ "serie": "Sous pression",
+ "numero": 5,
+ "titre": "La serrure",
+ "voix": {
+  "theo": "Puck",
+  "julien": "Orus",
+  "lea": "Aoede",
+  "lefevre": "Gacrux",
+  "vasseur": "Algenib"
+ },
+ "rythme": {
+  "pauses": 0.4,
+  "silences": 0.55,
+  "vitesse": 1.12
+ },
+ "fond": "tension",
+ "volume_fond": 0.34,
+ "textes": {
+  "theo": [
+   "Donc mon premier jour, c'est surveiller une mamie ?",
+   "Regardez. Le type en imperméable, tout à l'heure. Il a glissé ça dans une boîte aux lettres.",
+   "Le numéro douze. C'est écrit Dumas."
+  ],
+  "julien": [
+   "Tu voulais du concret, Théo. Ouvre l'œil.",
+   "Quelle boîte, Théo ?"
+  ],
+  "lea": [
+   "Bonsoir, madame Lefèvre. Je passe pour votre tension, comme promis.",
+   "Ça coûte combien ?",
+   "Il a tout dit. Et j'ai tout enregistré.",
+   "Dumas… c'est ma mère."
+  ],
+  "lefevre": [
+   "Entrez, ma petite. Monsieur Vasseur ne va pas tarder."
+  ],
+  "vasseur": [
+   "Bonsoir, mesdames. Une serrure toute neuve, pour votre sécurité.",
+   "Une petite signature, là. C'est pour votre tranquillité.",
+   "Ne vous occupez pas de ça. C'est prélevé tout seul.",
+   "Vous saluerez monsieur Morel de ma part."
+  ]
+ },
+ "contrat_html": "Cliente : Mme Lefèvre<br>AVENANT : remplacement de la serrure.<br>Un double des clés est conservé<br>par Vasseur Dépannage.<br>Prélèvement automatique.",
+ "deroule": [
+  {
+   "plan": "attente",
+   "decor": "parking",
+   "duree": 1.8,
+   "ev": [
+    "theo"
+   ],
+   "incrust": "19 h 40",
+   "cam": [
+    [
+     -0.3,
+     1.6,
+     -0.85
+    ],
+    [
+     -0.35,
+     1.58,
+     -0.7
+    ]
+   ],
+   "cible": [
+    [
+     -0.45,
+     1.6,
+     0.25
+    ],
+    [
+     -0.45,
+     1.6,
+     0.25
+    ]
+   ]
+  },
+  {
+   "qui": "theo",
+   "n": 0,
+   "pause": 0.2,
+   "decor": "parking",
+   "ev": [
+    "theo"
+   ],
+   "gras": 6,
+   "cam": [
+    [
+     0.3,
+     1.6,
+     -0.9
+    ],
+    [
+     0.35,
+     1.58,
+     -0.75
+    ]
+   ],
+   "cible": [
+    [
+     0.45,
+     1.6,
+     0.25
+    ],
+    [
+     0.45,
+     1.6,
+     0.25
+    ]
+   ]
+  },
+  {
+   "qui": "julien",
+   "n": 0,
+   "pause": 0.3,
+   "decor": "parking",
+   "ev": [
+    "theo"
+   ],
+   "gras": 5,
+   "cam": [
+    [
+     -0.3,
+     1.6,
+     -0.85
+    ],
+    [
+     -0.35,
+     1.58,
+     -0.7
+    ]
+   ],
+   "cible": [
+    [
+     -0.45,
+     1.6,
+     0.25
+    ],
+    [
+     -0.45,
+     1.6,
+     0.25
+    ]
+   ]
+  },
+  {
+   "plan": "cuisine",
+   "decor": "cuisine_lefevre",
+   "duree": 1.6,
+   "ev": [
+    "soir"
+   ],
+   "cam": [
+    [
+     1.9,
+     1.9,
+     2.6
+    ],
+    [
+     1.75,
+     1.85,
+     2.35
+    ]
+   ],
+   "cible": [
+    [
+     0.0,
+     1.1,
+     -0.2
+    ],
+    [
+     0.0,
+     1.1,
+     -0.2
+    ]
+   ]
+  },
+  {
+   "qui": "lea",
+   "n": 0,
+   "pause": 0.2,
+   "decor": "cuisine_lefevre",
+   "ev": [
+    "soir"
+   ],
+   "gras": 7,
+   "cam": [
+    [
+     0.5,
+     1.55,
+     0.3
+    ],
+    [
+     0.4,
+     1.55,
+     0.22
+    ]
+   ],
+   "cible": [
+    [
+     -0.95,
+     1.45,
+     -0.45
+    ],
+    [
+     -0.95,
+     1.45,
+     -0.45
+    ]
+   ]
+  },
+  {
+   "qui": "lefevre",
+   "n": 0,
+   "pause": 0.3,
+   "decor": "cuisine_lefevre",
+   "ev": [
+    "soir"
+   ],
+   "gras": 4,
+   "cam": [
+    [
+     -0.35,
+     1.5,
+     0.25
+    ],
+    [
+     -0.25,
+     1.5,
+     0.15
+    ]
+   ],
+   "cible": [
+    [
+     0.85,
+     1.42,
+     -0.7
+    ],
+    [
+     0.85,
+     1.42,
+     -0.7
+    ]
+   ]
+  },
+  {
+   "qui": "vasseur",
+   "n": 0,
+   "pause": 0.4,
+   "decor": "cuisine_lefevre",
+   "ev": [
+    "soir",
+    "vasseur"
+   ],
+   "gras": 4,
+   "son": "frisson",
+   "volume": 0.35,
+   "cam": [
+    [
+     0.6,
+     1.6,
+     -0.4
+    ],
+    [
+     0.5,
+     1.6,
+     -0.3
+    ]
+   ],
+   "cible": [
+    [
+     -0.3,
+     1.6,
+     0.75
+    ],
+    [
+     -0.3,
+     1.6,
+     0.75
+    ]
+   ]
+  },
+  {
+   "qui": "vasseur",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "cuisine_lefevre",
+   "ev": [
+    "soir",
+    "vasseur",
+    "papier"
+   ],
+   "gras": 3,
+   "cam": [
+    [
+     0.6,
+     1.6,
+     -0.4
+    ],
+    [
+     0.5,
+     1.6,
+     -0.3
+    ]
+   ],
+   "cible": [
+    [
+     -0.3,
+     1.6,
+     0.75
+    ],
+    [
+     -0.3,
+     1.6,
+     0.75
+    ]
+   ]
+  },
+  {
+   "carte": "contrat",
+   "duree": 1.8,
+   "pause": 0
+  },
+  {
+   "qui": "lea",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "cuisine_lefevre",
+   "ev": [
+    "soir",
+    "vasseur",
+    "papier"
+   ],
+   "gras": 2,
+   "cam": [
+    [
+     0.5,
+     1.55,
+     0.3
+    ],
+    [
+     0.4,
+     1.55,
+     0.22
+    ]
+   ],
+   "cible": [
+    [
+     -0.95,
+     1.45,
+     -0.45
+    ],
+    [
+     -0.95,
+     1.45,
+     -0.45
+    ]
+   ]
+  },
+  {
+   "qui": "vasseur",
+   "n": 2,
+   "pause": 0.3,
+   "decor": "cuisine_lefevre",
+   "ev": [
+    "soir",
+    "vasseur",
+    "papier"
+   ],
+   "gras": 8,
+   "cam": [
+    [
+     0.6,
+     1.6,
+     -0.4
+    ],
+    [
+     0.5,
+     1.6,
+     -0.3
+    ]
+   ],
+   "cible": [
+    [
+     -0.3,
+     1.6,
+     0.75
+    ],
+    [
+     -0.3,
+     1.6,
+     0.75
+    ]
+   ]
+  },
+  {
+   "carte": "enregistrement",
+   "duree": 1.6,
+   "pause": 0
+  },
+  {
+   "carte": "sponsor",
+   "duree": 1.8,
+   "pause": 0
+  },
+  {
+   "qui": "vasseur",
+   "n": 3,
+   "pause": 0.4,
+   "decor": "cuisine_lefevre",
+   "ev": [
+    "soir",
+    "vasseur",
+    "vers_lea"
+   ],
+   "gras": 4,
+   "son": "frisson",
+   "volume": 0.45,
+   "cam": [
+    [
+     -1.35,
+     1.75,
+     -0.55
+    ],
+    [
+     -1.22,
+     1.72,
+     -0.42
+    ]
+   ],
+   "cible": [
+    [
+     -0.55,
+     1.6,
+     0.3
+    ],
+    [
+     -0.55,
+     1.6,
+     0.3
+    ]
+   ]
+  },
+  {
+   "qui": "lea",
+   "n": 2,
+   "pause": 0.6,
+   "decor": "parking",
+   "ev": [
+    "theo",
+    "lea_arriere"
+   ],
+   "gras": 6,
+   "cam": [
+    [
+     0.0,
+     1.5,
+     0.0
+    ],
+    [
+     0.0,
+     1.5,
+     0.18
+    ]
+   ],
+   "cible": [
+    [
+     0.0,
+     1.42,
+     0.95
+    ],
+    [
+     0.0,
+     1.42,
+     0.95
+    ]
+   ]
+  },
+  {
+   "qui": "theo",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "parking",
+   "ev": [
+    "theo",
+    "lea_arriere",
+    "photo_theo"
+   ],
+   "gras": 11,
+   "cam": [
+    [
+     0.25,
+     1.55,
+     -0.95
+    ],
+    [
+     0.3,
+     1.52,
+     -0.78
+    ]
+   ],
+   "cible": [
+    [
+     0.4,
+     1.35,
+     0.2
+    ],
+    [
+     0.4,
+     1.35,
+     0.2
+    ]
+   ]
+  },
+  {
+   "plan": "photo",
+   "decor": "rue",
+   "duree": 2.6,
+   "ev": [
+    "glisse"
+   ],
+   "son": "frisson",
+   "volume": 0.4,
+   "cam": [
+    [
+     0.9,
+     1.55,
+     0.6
+    ],
+    [
+     0.6,
+     1.5,
+     0.2
+    ]
+   ],
+   "cible": [
+    [
+     -1.05,
+     1.35,
+     -2.0
+    ],
+    [
+     -1.05,
+     1.35,
+     -2.0
+    ]
+   ]
+  },
+  {
+   "qui": "julien",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "parking",
+   "ev": [
+    "theo",
+    "lea_arriere",
+    "photo_theo"
+   ],
+   "gras": 2,
+   "cam": [
+    [
+     -0.3,
+     1.6,
+     -0.85
+    ],
+    [
+     -0.35,
+     1.58,
+     -0.7
+    ]
+   ],
+   "cible": [
+    [
+     -0.45,
+     1.6,
+     0.25
+    ],
+    [
+     -0.45,
+     1.6,
+     0.25
+    ]
+   ]
+  },
+  {
+   "qui": "theo",
+   "n": 2,
+   "pause": 0.3,
+   "decor": "rue",
+   "ev": [
+    "glisse"
+   ],
+   "gras": 5,
+   "cam": [
+    [
+     -0.2,
+     1.55,
+     -0.2
+    ],
+    [
+     -0.45,
+     1.55,
+     -0.55
+    ]
+   ],
+   "cible": [
+    [
+     -1.05,
+     1.55,
+     -1.65
+    ],
+    [
+     -1.05,
+     1.55,
+     -1.65
+    ]
+   ]
+  },
+  {
+   "qui": "lea",
+   "n": 3,
+   "pause": 0.6,
+   "decor": "parking",
+   "ev": [
+    "theo",
+    "lea_arriere"
+   ],
+   "gras": 3,
+   "son": "frisson",
+   "volume": 0.5,
+   "cam": [
+    [
+     0.0,
+     1.5,
+     0.0
+    ],
+    [
+     0.0,
+     1.5,
+     0.18
+    ]
+   ],
+   "cible": [
+    [
+     0.0,
+     1.42,
+     0.95
+    ],
+    [
+     0.0,
+     1.42,
+     0.95
+    ]
+   ]
+  },
+  {
+   "carte": "fin",
+   "duree": 3.2,
+   "son": "generique",
+   "volume": 0.6
+  }
+ ],
+ "controle_logique": [
+  "Mme Lefèvre a dit à Julien (ép. 4) que Vasseur vient ce soir : Julien attend dehors, Léa entre (Mme Lefèvre la connaît depuis l'ép. 4 ; elle se méfie de Julien depuis que Vasseur l'a traité de dangereux).",
+  "Le nouveau papier = avenant : nouvelle serrure, double des clés gardé par Vasseur (suite logique de la clé sous le pot).",
+  "Vasseur connaît Julien (ép. 2-3) et devine que Léa vient de sa part.",
+  "Théo a pris la photo dans la rue pendant l'attente ; la boîte « Dumas » (n° 12) est celle de la mère de Léa : elle habite le quartier, d'où la confiance de Mme Lefèvre. Prépare l'ép. 6 (l'aimant) et l'ép. 7 (chez maman)."
+ ]
+}

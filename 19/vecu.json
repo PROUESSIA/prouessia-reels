@@ -91,5 +91,29 @@
    "cx": 0.5,
    "sens": -1
   }
- ]
+ ],
+ "affirmations": [
+  {
+   "dit": "Le devis presque fini, la calculette, la TVA, une erreur et on recommence.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, HT, TVA, total : tout est calculé.",
+   "ref": "avantage n° 4 « Total calculé tout seul » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "29.10.2026"
 }

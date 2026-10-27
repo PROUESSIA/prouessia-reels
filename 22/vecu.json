@@ -84,5 +84,29 @@
    "cx": 0.5,
    "sens": 1
   }
- ]
+ ],
+ "affirmations": [
+  {
+   "dit": "« Je vous envoie ça », un détail oublié le soir, un autre devis le lendemain.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, le devis se fait sur place, et part par mail en un clic.",
+   "ref": "avantage n° 6 « Le devis chez le client » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives. Voir aussi n° 8 « Envoi en un clic ».",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "30.10.2026"
 }

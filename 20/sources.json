@@ -1,0 +1,93 @@
+{
+ "num": "20",
+ "titre": "POV : 7 h 30, devant le portail. Le code, c'était quoi ?",
+ "date": "29.10.2026",
+ "affirmations": [
+  {
+   "dit": "7 h 30 devant le portail, le code noté sur un carton resté dans l'autre veste.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, tout est noté sur la fiche du client : code du portail, chien méchant.",
+   "ref": "avantage n° 77 « Notes sur chaque client » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "8419",
+   "sujet": "marteau piqueur",
+   "url": "https://pixabay.com/videos/id-8419/",
+   "auteur": "dpchristianson"
+  },
+  {
+   "id": "295383",
+   "sujet": "main",
+   "url": "https://pixabay.com/videos/id-295383/",
+   "auteur": "Natures_Embrace"
+  },
+  {
+   "id": "65577",
+   "sujet": "charpentier",
+   "url": "https://pixabay.com/videos/id-65577/",
+   "auteur": "SamMSandoval"
+  },
+  {
+   "id": "41499",
+   "sujet": "worker",
+   "url": "https://pixabay.com/videos/id-41499/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "366164",
+   "sujet": "homme",
+   "url": "https://pixabay.com/videos/id-366164/",
+   "auteur": "GIUSEPPE-DE-BERGOLIS"
+  },
+  {
+   "id": "38084",
+   "sujet": "femme",
+   "url": "https://pixabay.com/videos/id-38084/",
+   "auteur": "mephala1980"
+  },
+  {
+   "id": "147075",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-147075/",
+   "auteur": "mariya_m"
+  },
+  {
+   "id": "11288",
+   "sujet": "iphone",
+   "url": "https://pixabay.com/videos/id-11288/",
+   "auteur": "GreenCardShow"
+  },
+  {
+   "id": "85632",
+   "sujet": "fontaine",
+   "url": "https://pixabay.com/videos/id-85632/",
+   "auteur": "My_movie"
+  },
+  {
+   "id": "180728",
+   "sujet": "goutte",
+   "url": "https://pixabay.com/videos/id-180728/",
+   "auteur": "E_S_Mayorga"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

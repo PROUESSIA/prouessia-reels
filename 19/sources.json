@@ -1,0 +1,93 @@
+{
+ "num": "19",
+ "titre": "Zéro calculette : tout est calculé",
+ "date": "29.10.2026",
+ "affirmations": [
+  {
+   "dit": "Le devis presque fini, la calculette, la TVA, une erreur et on recommence.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, HT, TVA, total : tout est calculé.",
+   "ref": "avantage n° 4 « Total calculé tout seul » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "80355",
+   "sujet": "machine",
+   "url": "https://pixabay.com/videos/id-80355/",
+   "auteur": "PrakashChavda"
+  },
+  {
+   "id": "366322",
+   "sujet": "salon",
+   "url": "https://pixabay.com/videos/id-366322/",
+   "auteur": "GIUSEPPE-DE-BERGOLIS"
+  },
+  {
+   "id": "131161",
+   "sujet": "mobile",
+   "url": "https://pixabay.com/videos/id-131161/",
+   "auteur": "Dx21"
+  },
+  {
+   "id": "366323",
+   "sujet": "salon",
+   "url": "https://pixabay.com/videos/id-366323/",
+   "auteur": "GIUSEPPE-DE-BERGOLIS"
+  },
+  {
+   "id": "133643",
+   "sujet": "van",
+   "url": "https://pixabay.com/videos/id-133643/",
+   "auteur": "Marsel_beijing"
+  },
+  {
+   "id": "202987",
+   "sujet": "téléphoner",
+   "url": "https://pixabay.com/videos/id-202987/",
+   "auteur": "Natures_Embrace"
+  },
+  {
+   "id": "3142",
+   "sujet": "mousse",
+   "url": "https://pixabay.com/videos/id-3142/",
+   "auteur": "Life-Of-Vids"
+  },
+  {
+   "id": "30",
+   "sujet": "voitures",
+   "url": "https://pixabay.com/videos/id-30/",
+   "auteur": "DistillVideos"
+  },
+  {
+   "id": "39",
+   "sujet": "percer",
+   "url": "https://pixabay.com/videos/id-39/",
+   "auteur": "DistillVideos"
+  },
+  {
+   "id": "109877",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-109877/",
+   "auteur": "Martin_Grabo"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}
