@@ -1,0 +1,88 @@
+{
+ "titre": "Le devis se fait <b>chez le client</b>, pas au bureau",
+ "sorte": "vecu",
+ "idee": 6,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Vous avez <b>tout vu</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Vous dites <b>«&nbsp;je vous envoie ça&nbsp;»</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Le soir, <b>vous oubliez un détail</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Le lendemain, <b>il a un autre devis</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Avec Prouessia, <b>vous le faites sur place</b>",
+   "clip": "app:01-nouveau-devis",
+   "debut": 0.3,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.45,
+   "zoom": 1.0
+  },
+  {
+   "html": "Accroupi <b>sous l'évier</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Le téléphone <b>sur la caisse à outils</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Un clic, <b>et il part par mail</b>",
+   "clip": "app:05-envoyer-devis",
+   "debut": 0.3,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.45,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et vous, vos devis, <b>vous les faites où</b>&nbsp;?",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+name: Transcrire une voix (mots horodatés)
+# Pour chaque voix/transcrire/<nom>.wav poussé : écrit voix/transcrire/<nom>.json (mots + début/fin), avec faster-whisper (local au runner, rien d'envoyé ailleurs).
+on:
+  push:
+    paths: ['voix/transcrire/*.wav']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  mots:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q faster-whisper
+      - name: Transcrire
+        run: |
+          python3 - <<'PY'
+          import glob, json, os
+          from faster_whisper import WhisperModel
+          m = WhisperModel('small', device='cpu', compute_type='int8')
+          for w in sorted(glob.glob('voix/transcrire/*.wav')):
+              j = w[:-4] + '.json'
+              if os.path.exists(j): continue
+              segs, _ = m.transcribe(w, language='fr', word_timestamps=True, vad_filter=False)
+              mots = [{'mot': x.word.strip(), 'debut': round(x.start, 3), 'fin': round(x.end, 3)} for s in segs for x in s.words]
+              json.dump(mots, open(j, 'w'), ensure_ascii=False, indent=0)
+          PY
+      - name: Pousser
+        run: |
+          git config user.name "machine-reels"; git config user.email "machine-reels@users.noreply.github.com"
+          git add voix/transcrire && git commit -m "mots horodatés" || exit 0
+          git pull --rebase -q && git push

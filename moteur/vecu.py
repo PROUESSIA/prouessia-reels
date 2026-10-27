@@ -52,8 +52,11 @@ def masque():
 def dit(html):
     t = re.sub(r'<br\s*/?>', ' ', html); t = re.sub(r'<[^>]+>', '', t).replace('&nbsp;', ' ')
     return re.sub(r'\s+', ' ', t).strip()
-def charger(nn):
+def charger(nn, verifier=True):
     c = json.load(open(os.path.join(ROOT, nn, 'vecu.json')))
+    if not verifier:
+        ph = c['phrases']; l = [(FIN + ' prouessia.fr') if p['html'] == FIN_HTML else (dit(p['html']) or dit(c['titre'])) for p in ph]
+        return c, [x if x[-1] in '.?!…' else x + '.' for x in l]
     ph = c['phrases']; clips = [p['clip'] for p in ph]
     assert len(set(clips)) == len(clips), 'règle 12 : un clip différent par phrase'
     u = json.load(open(os.path.join(CLIPS, 'utilises.json')))
@@ -69,15 +72,16 @@ def charger(nn):
     return c, lignes
 
 def texte(nn):
-    _, l = charger(nn)
+    _, l = charger(nn, False)
     # prononciation : « Prouèssia », « prouessia point fr »
-    t = ' '.join(l).replace('prouessia.fr', 'prouessia point f r').replace('Prouessia', 'Prouèssia').replace('prouessia', 'prouèssia')
+    t = ' '.join(l).replace('prouessia.fr', 'prouessia point f r').replace('Prouessia', 'Prouèssia').replace('prouessia', 'prouèssia').replace('POV :', 'Pé O Vé :')
+    t = re.sub(r'(\d+) h (\d+)', r'\1 heures \2', t)
     print(t)
 
 def voix(nn, fichier):
     import numpy as np, soundfile as sf
     from aligner import aligner
-    c, lignes = charger(nn); d = os.path.join(ROOT, nn)
+    c, lignes = charger(nn, False); d = os.path.join(ROOT, nn)
     t = open(fichier).read()
     m = re.search(r'"data":"([A-Za-z0-9+/=]+)"', t)
     brut = base64.b64decode(m.group(1)) if m else base64.b64decode(t.rsplit('|', 1)[0])
@@ -110,12 +114,31 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
 .logo{{position:absolute;left:0;right:0;bottom:250px;display:flex;justify-content:center;align-items:center;gap:14px;color:#fff;font-weight:800;font-size:34px;opacity:.9;text-shadow:0 2px 8px #000}}
 .logo img{{width:48px;height:48px;border-radius:12px}}
 .ph.bas{{top:{BOITE[1]+BOITE[3]+30}px;font-size:70px}} .ph.bas.long{{font-size:56px}} .v.app{{background:linear-gradient(180deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 25%)}}"""
+    carte = c.get('gabarit') == 'carte'
+    if carte:
+        css += f""".voile{{position:absolute;left:0;top:0;width:100%;height:1250px;background:linear-gradient(180deg,rgba(11,27,58,.88) 0%,rgba(11,27,58,.72) 45%,rgba(11,27,58,0) 100%)}}
+.voile.app{{height:100%;background:linear-gradient(180deg,rgba(11,27,58,.5) 0,rgba(11,27,58,0) 22%,rgba(11,27,58,0) 66%,rgba(11,27,58,.9) 80%)}}
+.lg{{position:absolute;left:70px;top:130px;display:flex;align-items:center;gap:18px;color:#fff;font-weight:800;font-size:40px}} .lg img{{width:64px;height:64px;border-radius:16px}}
+.t{{position:absolute;left:70px;right:110px;top:300px;color:#fff;font-weight:900;font-size:92px;line-height:1.08;letter-spacing:-.03em;text-shadow:0 4px 18px rgba(0,0,0,.35)}}
+.t.bas{{top:1460px;font-size:66px}} .t.apres{{top:600px}}
+.t b{{background:{MUST};color:#0B1B3A;padding:0 14px;border-radius:14px;box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:none}}
+.appel{{position:absolute;left:70px;right:110px;top:280px;display:flex;align-items:center;gap:28px;background:#fff;border-radius:36px;padding:26px 34px;box-shadow:0 18px 40px rgba(0,0,0,.35);color:#0B1B3A}}
+.tel{{width:110px;height:110px;border-radius:55px;background:#22A45D;color:#fff;font-size:64px;display:flex;align-items:center;justify-content:center;flex:none}}
+.qui{{font-size:38px;font-weight:700;color:#5B6577}} .msg{{font-size:52px;font-weight:900;letter-spacing:-.02em}}"""
+    def calque(i, ph):
+        app = ph['clip'].startswith('app:')
+        if not carte:
+            return (f'<div class="v{" app" if app else ""}"></div><div class="titre">{c["titre"]}</div>'
+                    f'<div class="ph{(" bas long" if len(dit(ph["html"])) > 38 else " bas") if app else ""}">{ph["html"]}</div><div class="logo"><img src="data:image/png;base64,{ico}">prouessia</div>')
+        h = ph['html'] or c['titre']; a = ph.get('appel')
+        carteh = (f'<div class="appel"><div class="tel">&#9742;</div><div><div class="qui">{a[0]}</div><div class="msg">{a[1]}</div></div></div>') if a else ''
+        return (f'<div class="voile{" app" if app else ""}"></div><div class="lg"><img src="data:image/png;base64,{ico}">prouessia</div>{carteh}'
+                f'<div class="t{" bas" if app else (" apres" if a else "")}">{h}</div>')
     cq = os.path.join(d, 'calques'); os.makedirs(cq, exist_ok=True)
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={'width': W, 'height': H})
         for i, ph in enumerate(P):
-            pg.set_content(f'<html><head><meta charset="utf-8"><style>{css}</style></head><body><div class="v{" app" if ph["clip"].startswith("app:") else ""}"></div><div class="titre">{c["titre"]}</div>'
-                           f'<div class="ph{(" bas long" if len(dit(ph["html"])) > 38 else " bas") if ph["clip"].startswith("app:") else ""}">{ph["html"]}</div><div class="logo"><img src="data:image/png;base64,{ico}">prouessia</div></body></html>')
+            pg.set_content(f'<html><head><meta charset="utf-8"><style>{css}</style></head><body>{calque(i, ph)}</body></html>')
             pg.wait_for_timeout(120); pg.screenshot(path=f'{cq}/{i}.png', omit_background=True)
         b.close()
     inp, fil, n = [], [], len(P)

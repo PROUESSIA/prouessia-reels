@@ -1,0 +1,95 @@
+{
+ "titre": "Zéro calculette&nbsp;: <b>tout est calculé</b>",
+ "sorte": "vecu",
+ "idee": 4,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Le devis est <b>presque fini</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Reste <b>le total</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Vous sortez <b>la calculette</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Main-d'œuvre, <b>pièces, déplacement</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Puis <b>la TVA</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Une erreur, <b>vous recommencez</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Avec Prouessia, <b>HT, TVA, total</b>",
+   "clip": "app:01-nouveau-devis",
+   "debut": 0.3,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.45,
+   "zoom": 1.0
+  },
+  {
+   "html": "<b>Tout est calculé</b>",
+   "clip": "app:04-apercu-devis",
+   "debut": 0.3,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.45,
+   "zoom": 1.0
+  },
+  {
+   "html": "Vous vérifiez, <b>et c'est parti</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Et vous, la calculette, <b>elle est où</b>&nbsp;?",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ]
+}

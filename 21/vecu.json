@@ -1,0 +1,86 @@
+{
+ "titre": "Le devis est signé. <b>Mais sans date.</b>",
+ "sorte": "carte",
+ "idee": 21,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "appel": [
+    "Client · 8&nbsp;h&nbsp;47",
+    "« Vous passez quand&nbsp;? »"
+   ]
+  },
+  {
+   "html": "Chez un particulier, <b>sans délai indiqué</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Vous devez intervenir <b>au plus tard 30&nbsp;jours</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Après <b>son accord</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Le plus simple&nbsp;: <b>écrire une date</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Sur le devis, <b>noir sur blanc</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Avec Prouessia, <b>le client signe au doigt</b>",
+   "clip": "app:07-signature-doigt",
+   "debut": 0.3,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.45,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et <b>un e-mail vous prévient</b>",
+   "clip": "app:09-notification-signature",
+   "debut": 0.3,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.45,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et vous, vos devis, <b>ils ont une date</b>&nbsp;?",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ],
+ "gabarit": "carte"
+}

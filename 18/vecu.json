@@ -1,0 +1,86 @@
+{
+ "titre": "Un ballon posé il y a 18&nbsp;mois. <b>Il ne chauffe plus.</b>",
+ "sorte": "carte",
+ "idee": 71,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "appel": [
+    "Client · 18&nbsp;h&nbsp;12",
+    "« Plus d'eau chaude&nbsp;! »"
+   ]
+  },
+  {
+   "html": "Décennale&nbsp;? <b>Non.</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Un ballon se retire <b>sans abîmer le bâti</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "C'est la garantie <b>de bon fonctionnement</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "<b>Deux ans</b>, à partir de la réception des travaux",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Encore faut-il <b>retrouver la date</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Avec Prouessia, <b>chaque client a sa fiche</b>",
+   "clip": "app:21-fiches-clients",
+   "debut": 0.3,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.45,
+   "zoom": 1.0
+  },
+  {
+   "html": "Ce que vous lui avez proposé, <b>en un coup d'œil</b>",
+   "clip": "app:11-liste-devis",
+   "debut": 0.3,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.45,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et vous, vos dates de pose, <b>vous les retrouvez</b>&nbsp;?",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ],
+ "gabarit": "carte"
+}

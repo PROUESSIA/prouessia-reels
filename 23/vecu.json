@@ -1,0 +1,93 @@
+{
+ "titre": "POV&nbsp;: vous êtes en plein devis… <b>et le téléphone sonne</b>",
+ "sorte": "pov",
+ "idee": 46,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Un client, <b>une urgence</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Vous décrochez",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "<b>Vingt minutes</b> plus tard",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Le devis&nbsp;? <b>Disparu</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Vous recommencez <b>tout</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Et le téléphone <b>sonne encore</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Avec Prouessia, <b>le brouillon est gardé</b>",
+   "clip": "app:17-brouillon-retrouve",
+   "debut": 0.3,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.45,
+   "zoom": 1.0
+  },
+  {
+   "html": "Vous revenez, <b>tout est là</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Vous finissez <b>là où vous étiez</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Et vous, un devis perdu, <b>ça vous est arrivé</b>&nbsp;?",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ]
+}
