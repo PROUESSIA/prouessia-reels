@@ -2,9 +2,17 @@
  "serie": "Sous pression",
  "numero": 4,
  "titre": "Le contrat",
- "etat": "script écrit le 25/10 (crédits Make à 0) ; voix, calage, déroulé caméra et rendu à faire",
- "voix": {"julien": "Orus", "lea": "Aoede", "rocher": "Vindemiatrix", "lefevre": "Gacrux"},
- "rythme": {"pauses": 0.4, "silences": 0.55, "vitesse": 1.12},
+ "voix": {
+  "julien": "Orus",
+  "lea": "Aoede",
+  "rocher": "Vindemiatrix",
+  "lefevre": "Gacrux"
+ },
+ "rythme": {
+  "pauses": 0.4,
+  "silences": 0.55,
+  "vitesse": 1.12
+ },
  "fond": "tension",
  "volume_fond": 0.34,
  "textes": {
@@ -14,7 +22,7 @@
   ],
   "lea": [
    "Quatre cent cinquante euros par intervention d'urgence. De jour comme de nuit.",
-   "Prélevés automatiquement. La clé reste chez lui. Cinq ans.",
+   "Prélevés automatiquement. Cinq ans.",
    "Elle l'a signé le jour du robinet.",
    "Deux prélèvements « intervention de nuit ». Vous vous en souvenez ?"
   ],
@@ -49,5 +57,617 @@
   "Léa est infirmière et connue de Mme Lefèvre (prépare l'ép. 5).",
   "Le numéro de Julien explique le SMS anonyme de l'ép. 1.",
   "Fin = menace de l'ép. 3 (« La prochaine, c'est madame Lefèvre ») qui se réalise ; prépare l'ép. 5 « La serrure »."
+ ],
+ "deroule": [
+  {
+   "plan": "matin",
+   "decor": "cuisine_jour",
+   "duree": 2.2,
+   "cam": [
+    [
+     1.6,
+     1.7,
+     -1.2
+    ],
+    [
+     1.4,
+     1.65,
+     -1.0
+    ]
+   ],
+   "cible": [
+    [
+     -0.4,
+     1.1,
+     0.2
+    ],
+    [
+     -0.4,
+     1.1,
+     0.2
+    ]
+   ],
+   "incrust": "8 h 05",
+   "son": "sonnerie",
+   "volume": 0.5
+  },
+  {
+   "qui": "rocher",
+   "n": 0,
+   "pause": 0.2,
+   "decor": "cuisine_jour",
+   "cam": [
+    [
+     0.1,
+     1.38,
+     -0.45
+    ],
+    [
+     0.16,
+     1.34,
+     -0.25
+    ]
+   ],
+   "cible": [
+    [
+     0.35,
+     1.28,
+     1.0
+    ],
+    [
+     0.35,
+     1.28,
+     1.0
+    ]
+   ],
+   "ev": [
+    "appel"
+   ],
+   "gras": 3
+  },
+  {
+   "qui": "rocher",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "cuisine_jour",
+   "cam": [
+    [
+     -0.35,
+     1.32,
+     -0.15
+    ],
+    [
+     -0.2,
+     1.3,
+     0
+    ]
+   ],
+   "cible": [
+    [
+     0.35,
+     1.24,
+     1.0
+    ],
+    [
+     0.35,
+     1.24,
+     1.0
+    ]
+   ],
+   "ev": [
+    "appel"
+   ],
+   "gras": 3
+  },
+  {
+   "qui": "julien",
+   "n": 0,
+   "pause": 0.4,
+   "decor": "cuisine_jour",
+   "cam": [
+    [
+     0.1,
+     1.38,
+     -0.45
+    ],
+    [
+     0.16,
+     1.34,
+     -0.25
+    ]
+   ],
+   "cible": [
+    [
+     0.35,
+     1.28,
+     1.0
+    ],
+    [
+     0.35,
+     1.28,
+     1.0
+    ]
+   ],
+   "ev": [
+    "photo"
+   ],
+   "gras": 0
+  },
+  {
+   "carte": "contrat",
+   "duree": 2.0,
+   "pause": 0,
+   "son": "frisson",
+   "volume": 0.5
+  },
+  {
+   "qui": "lea",
+   "n": 0,
+   "pause": 0.2,
+   "decor": "cuisine_jour",
+   "cam": [
+    [
+     -0.3,
+     1.5,
+     0.3
+    ],
+    [
+     -0.45,
+     1.5,
+     0.0
+    ]
+   ],
+   "cible": [
+    [
+     -1.2,
+     1.35,
+     -1.1
+    ],
+    [
+     -1.2,
+     1.35,
+     -1.1
+    ]
+   ],
+   "ev": [
+    "photo"
+   ],
+   "gras": 2
+  },
+  {
+   "qui": "lea",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "cuisine_jour",
+   "cam": [
+    [
+     -0.6,
+     1.5,
+     0.6
+    ],
+    [
+     -0.7,
+     1.5,
+     0.4
+    ]
+   ],
+   "cible": [
+    [
+     -1.2,
+     1.45,
+     -1.1
+    ],
+    [
+     -1.2,
+     1.45,
+     -1.1
+    ]
+   ],
+   "ev": [
+    "photo"
+   ],
+   "gras": 1
+  },
+  {
+   "qui": "lea",
+   "n": 2,
+   "pause": 0.4,
+   "decor": "cuisine_jour",
+   "cam": [
+    [
+     -0.3,
+     1.5,
+     0.3
+    ],
+    [
+     -0.45,
+     1.5,
+     0.0
+    ]
+   ],
+   "cible": [
+    [
+     -1.2,
+     1.35,
+     -1.1
+    ],
+    [
+     -1.2,
+     1.35,
+     -1.1
+    ]
+   ],
+   "ev": [
+    "photo"
+   ],
+   "gras": 5
+  },
+  {
+   "qui": "julien",
+   "n": 1,
+   "pause": 0.5,
+   "decor": "cuisine_jour",
+   "cam": [
+    [
+     0.25,
+     1.36,
+     0.1
+    ],
+    [
+     0.3,
+     1.34,
+     0.3
+    ]
+   ],
+   "cible": [
+    [
+     0.35,
+     1.28,
+     1.0
+    ],
+    [
+     0.35,
+     1.28,
+     1.0
+    ]
+   ],
+   "ev": [
+    "photo"
+   ],
+   "gras": 3
+  },
+  {
+   "carte": "sponsor",
+   "duree": 1.8,
+   "pause": 0
+  },
+  {
+   "plan": "chez_lefevre",
+   "decor": "cuisine_lefevre",
+   "duree": 2.0,
+   "cam": [
+    [
+     2.4,
+     1.85,
+     1.9
+    ],
+    [
+     2.15,
+     1.78,
+     1.6
+    ]
+   ],
+   "cible": [
+    [
+     0.1,
+     1.0,
+     -0.4
+    ],
+    [
+     0.1,
+     1.0,
+     -0.4
+    ]
+   ],
+   "ev": [
+    "jour",
+    "lea"
+   ],
+   "incrust": "10 h 20"
+  },
+  {
+   "qui": "julien",
+   "n": 2,
+   "pause": 0.2,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     1.55,
+     1.62,
+     -1.25
+    ],
+    [
+     1.45,
+     1.6,
+     -1.12
+    ]
+   ],
+   "cible": [
+    [
+     -0.55,
+     1.55,
+     0.35
+    ],
+    [
+     -0.55,
+     1.55,
+     0.35
+    ]
+   ],
+   "ev": [
+    "jour",
+    "lea"
+   ],
+   "gras": 5
+  },
+  {
+   "qui": "lefevre",
+   "n": 0,
+   "pause": 0.3,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     -1.05,
+     1.6,
+     1.05
+    ],
+    [
+     -0.92,
+     1.58,
+     0.9
+    ]
+   ],
+   "cible": [
+    [
+     0.85,
+     1.42,
+     -0.7
+    ],
+    [
+     0.85,
+     1.42,
+     -0.7
+    ]
+   ],
+   "ev": [
+    "jour",
+    "lea"
+   ],
+   "gras": 1
+  },
+  {
+   "carte": "releve",
+   "duree": 2.4,
+   "pause": 0
+  },
+  {
+   "qui": "lea",
+   "n": 3,
+   "pause": 0.2,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     1.0,
+     1.55,
+     -0.15
+    ],
+    [
+     0.9,
+     1.55,
+     -0.05
+    ]
+   ],
+   "cible": [
+    [
+     0.05,
+     1.45,
+     0.75
+    ],
+    [
+     0.05,
+     1.45,
+     0.75
+    ]
+   ],
+   "ev": [
+    "jour",
+    "lea",
+    "releve_main"
+   ],
+   "gras": 0
+  },
+  {
+   "qui": "lefevre",
+   "n": 1,
+   "pause": 0.3,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     -1.05,
+     1.6,
+     1.05
+    ],
+    [
+     -0.92,
+     1.58,
+     0.9
+    ]
+   ],
+   "cible": [
+    [
+     0.85,
+     1.42,
+     -0.7
+    ],
+    [
+     0.85,
+     1.42,
+     -0.7
+    ]
+   ],
+   "ev": [
+    "jour",
+    "lea",
+    "releve_main"
+   ],
+   "gras": 4
+  },
+  {
+   "qui": "julien",
+   "n": 3,
+   "pause": 0.5,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     1.55,
+     1.62,
+     -1.25
+    ],
+    [
+     1.45,
+     1.6,
+     -1.12
+    ]
+   ],
+   "cible": [
+    [
+     -0.55,
+     1.55,
+     0.35
+    ],
+    [
+     -0.55,
+     1.55,
+     0.35
+    ]
+   ],
+   "ev": [
+    "jour",
+    "lea"
+   ],
+   "gras": 4
+  },
+  {
+   "qui": "lefevre",
+   "n": 2,
+   "pause": 0.3,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     -1.05,
+     1.6,
+     1.05
+    ],
+    [
+     -0.92,
+     1.58,
+     0.9
+    ]
+   ],
+   "cible": [
+    [
+     0.85,
+     1.42,
+     -0.7
+    ],
+    [
+     0.85,
+     1.42,
+     -0.7
+    ]
+   ],
+   "ev": [
+    "jour",
+    "lea"
+   ],
+   "gras": 10
+  },
+  {
+   "qui": "lefevre",
+   "n": 3,
+   "pause": 0.6,
+   "decor": "cuisine_lefevre",
+   "cam": [
+    [
+     -0.25,
+     1.52,
+     0.1
+    ],
+    [
+     0.12,
+     1.48,
+     -0.2
+    ]
+   ],
+   "cible": [
+    [
+     0.85,
+     1.42,
+     -0.7
+    ],
+    [
+     0.85,
+     1.42,
+     -0.7
+    ]
+   ],
+   "ev": [
+    "jour",
+    "lea",
+    "inquiete"
+   ],
+   "gras": 15,
+   "son": "frisson",
+   "volume": 0.45
+  },
+  {
+   "carte": "fin",
+   "duree": 3.2,
+   "son": "generique",
+   "volume": 0.6
+  }
+ ],
+ "contrat_html": "Cliente : Mme Rocher<br>Intervention d'urgence : 450 €,<br>de jour comme de nuit.<br>Prélèvement automatique.<br>Clé confiée : sous le pot de fleurs.<br>Durée : 5 ans.",
+ "releve": [
+  [
+   "01/10",
+   "Pension de retraite",
+   "+ 1 286,40",
+   0
+  ],
+  [
+   "02/10",
+   "Pharmacie du marché",
+   "− 12,80",
+   0
+  ],
+  [
+   "09/10",
+   "PRLV VASSEUR DÉPANNAGE · intervention de nuit",
+   "− 450,00",
+   1
+  ],
+  [
+   "14/10",
+   "Électricité",
+   "− 64,20",
+   0
+  ],
+  [
+   "21/10",
+   "PRLV VASSEUR DÉPANNAGE · intervention de nuit",
+   "− 450,00",
+   1
+  ]
  ]
 }

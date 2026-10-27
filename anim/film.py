@@ -137,10 +137,16 @@ def carte(nom, fond, du, out):
         corps = f"""<div class="s" style="margin:0;color:{MUST};font-weight:900;letter-spacing:.12em">PRÉCÉDEMMENT</div>
 <div class="e" style="margin-top:40px;padding:0 90px">{EP.get('precedemment', '')}</div>"""
     elif nom == 'contrat':   # gros plan : le « contrat d'entretien » que Vasseur montre (objet de l'histoire, pas un texte d'explication)
-        corps = """<div style="width:760px;background:#f4efe3;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.7);padding:60px 56px;color:#1a1a1a;text-align:left;text-shadow:none;transform:rotate(-3deg);font-family:Inter,sans-serif">
+        corps = f"""<div style="width:760px;background:#f4efe3;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.7);padding:60px 56px;color:#1a1a1a;text-align:left;text-shadow:none;transform:rotate(-3deg);font-family:Inter,sans-serif">
 <div style="font-weight:900;font-size:40px;color:#a01818;letter-spacing:.04em">VASSEUR DÉPANNAGE</div><div style="font-weight:900;font-size:50px;margin:18px 0 30px">CONTRAT D'ENTRETIEN</div>
-<div style="font-size:30px;font-weight:700;line-height:1.5">Cliente : Mme Rocher<br>Accès au logement en cas d'urgence,<br>de jour comme de nuit.<br>Clé confiée : sous le pot de fleurs.</div>
+<div style="font-size:30px;font-weight:700;line-height:1.5">{EP.get('contrat_html', "Cliente : Mme Rocher<br>Accès au logement en cas d'urgence,<br>de jour comme de nuit.<br>Clé confiée : sous le pot de fleurs.")}</div>
 <div style="margin-top:50px;font-size:26px;color:#666">Signature de la cliente :</div><div style="font-family:Caveat,cursive;font-size:80px;color:#1d2b6b;margin-top:6px">M. Rocher</div></div>"""
+    elif nom == 'releve':   # gros plan : le relevé de banque de Mme Lefèvre (objet de l'histoire, sans légende)
+        L = EP.get('releve', [])
+        lignes = ''.join(f'<tr style="{"background:#fde8e8;color:#a01818;font-weight:900" if r[3] else ""}"><td style="padding:14px 10px">{r[0]}</td><td style="padding:14px 10px">{r[1]}</td><td style="padding:14px 10px;text-align:right">{r[2]}</td></tr>' for r in L)
+        corps = f"""<div style="width:860px;background:#fff;border-radius:8px;box-shadow:0 30px 80px rgba(0,0,0,.7);padding:50px 44px;color:#1a1a1a;text-align:left;text-shadow:none;transform:rotate(2deg);font-family:Inter,sans-serif">
+<div style="font-weight:900;font-size:38px;color:#1d3b6b">BANQUE · RELEVÉ DE COMPTE</div><div style="font-size:28px;color:#555;margin:10px 0 26px">Mme Lefèvre · octobre</div>
+<table style="width:100%;border-collapse:collapse;font-size:27px">{lignes}</table></div>"""
     elif nom == 'tel_eteint':   # gros plan : le téléphone de Julien, écran noir
         corps = """<div style="width:430px;height:880px;border-radius:64px;background:#0b0b0d;border:14px solid #2a2b30;box-shadow:0 30px 80px rgba(0,0,0,.8),inset 0 0 0 2px #444;
 position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(125deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,0) 38%)"></div>

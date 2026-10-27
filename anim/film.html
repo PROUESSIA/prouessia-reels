@@ -74,6 +74,7 @@ function perso(o, parent) {
   const p = {root, hips, torse, tete, bg, bd, jg, jd, o, base: {}};
   pose(p, o.pose || 'debout'); return p;
 }
+function vers(pp, x, z) { pp.root.rotation.y = Math.atan2(x - pp.root.position.x, z - pp.root.position.z); }
 function pose(p, nom) {
   const {hips, bg, bd, jg, jd, root} = p;
   const reset = g => g.rotation.set(0, 0, 0);
@@ -205,7 +206,20 @@ function decorCuisineLefevre(x0) {
   const lampe = new THREE.SpotLight('#ffffff', 0, 4, .35, .5, 1.5); g.add(lampe); g.add(lampe.target);       // lampe torche de Julien
   const lefevre = perso({...CAST.lefevre, pose: 'mains_levees'}, g); lefevre.root.position.set(.85, 0, -.7); lefevre.root.rotation.y = -.55;
   const julien = perso({...CAST.julien, pose: 'accroupi'}, g); julien.root.position.set(-.4, 0, -1.45); julien.root.rotation.y = Math.PI;
-  return {g, persos: {lefevre, julien}, update(t, ev) {
+  const lea = perso({...CAST.lea, pose: 'debout'}, g); lea.root.visible = false;
+  const lumJour = new THREE.DirectionalLight('#fff4e0', 0); lumJour.position.set(3, 4, 2); g.add(lumJour); lumJour.target.position.set(0, 0, -1); g.add(lumJour.target);
+  return {g, persos: {lefevre, julien, lea}, update(t, ev) {
+    if (ev.has('jour')) {   // le lendemain : sol sec, plein jour, Julien et Léa debout face à Mme Lefèvre
+      eau.visible = false; for (const d of gouttes) d.s.visible = false; lumJour.intensity = 2.2;
+      if (julien.pose !== 'debout') { pose(julien, 'debout'); julien.torse.rotation.x = 0; }
+      julien.root.position.set(-.55, 0, .35); vers(julien, .85, -.7);
+      if (lefevre.pose !== (ev.has('inquiete') ? 'mains_levees' : 'debout')) pose(lefevre, ev.has('inquiete') ? 'mains_levees' : 'debout');
+      lefevre.root.position.set(.85, 0, -.7); vers(lefevre, -.3, .3);
+      lea.root.visible = ev.has('lea'); lea.root.position.set(.05, 0, .75); vers(lea, .85, -.7);
+      if (ev.has('releve_main') && lea.pose !== 'telephone_main') pose(lea, 'telephone_main');
+      return;
+    }
+    eau.visible = true; lumJour.intensity = 0; lea.root.visible = false;
     const jet = !ev.has('coupe'); const niveau = ev.has('coupe') ? .05 : .04 + Math.min(.08, t * .002);
     const p = geo.attributes.position.array; for (let i = 0; i < p.length; i += 3) p[i + 1] = base[i + 1] + Math.sin(base[i] * 3 + t * 2.2) * .008 + Math.cos(base[i + 2] * 4 + t * 1.7) * .008;
     geo.attributes.position.needsUpdate = true; eau.position.y = niveau;
@@ -232,7 +246,14 @@ function decorCuisineJour(x0) {
   const tel = new THREE.Group(); lea.bd.main.add(tel); box(.075, .15, .01, '#111', 0, -.05, .06, tel);
   const ecr = new THREE.Mesh(new THREE.PlaneGeometry(.068, .14), new THREE.MeshBasicMaterial({map: texte([{t: 'Vasseur Dépannage', y: 90, s: 24, g: 1, c: '#111'}, {t: '★★★★★', y: 150, s: 40, c: '#f2b705'}, {t: '“Très gentil”', y: 220, s: 22, c: '#333'}, {t: '“Rapide !”', y: 260, s: 22, c: '#333'}], {fond: '#f5f5f5'})}));
   ecr.position.set(0, -.05, .066); tel.add(ecr);
-  return {g, persos: {julien, lea}, update(t, ev) {}};
+  const doc = new THREE.Mesh(new THREE.PlaneGeometry(.068, .14), new THREE.MeshBasicMaterial({map: texte([{t: 'CONTRAT', y: 70, s: 30, g: 1, c: '#a01818'}, {t: '450 €', y: 140, s: 34, g: 1, c: '#111'}, {t: '— — — — —', y: 200, s: 22, c: '#777'}, {t: '— — — —', y: 240, s: 22, c: '#777'}, {t: '— — — — —', y: 280, s: 22, c: '#777'}], {fond: '#f4efe3'})}));
+  doc.position.set(0, -.05, .067); tel.add(doc); doc.visible = false;
+  const telJ = new THREE.Group(); julien.bd.main.add(telJ); box(.075, .15, .012, '#111', 0, -.04, .05, telJ); telJ.visible = false;
+  return {g, persos: {julien, lea}, update(t, ev) {
+    doc.visible = ev.has('photo'); ecr.visible = !ev.has('photo');
+    if (ev.has('appel')) { if (julien.pose !== 'telephone') { pose(julien, 'telephone'); julien.hips.position.y = .5; for (const j of [julien.jg, julien.jd]) { j.h.rotation.x = -Math.PI / 2; j.g.rotation.x = Math.PI / 2; } } telJ.visible = true; }
+    else { if (julien.pose !== 'assis_tasse') pose(julien, 'assis_tasse'); telJ.visible = false; }
+  }};
 }
 
 function decorMaisonRocher(x0) {
