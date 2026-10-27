@@ -1,0 +1,47 @@
+name: Voix Gemini (sans Make)
+# Chaque fichier voix/demandes/*.json = {"voice": "Charon", "style": "...", "text": "...", "path": "dossier/voix-gemini.txt", "model": "gemini-3.8-flash-tts"}
+# → appelle Gemini TTS avec la clé du secret GEMINI_API_KEY et écrit la réponse (même format que le hub Make : JSON|statut) dans "path".
+on:
+  push:
+    paths: ['voix/demandes/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: voix
+jobs:
+  voix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Générer
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python3 - <<'PY'
+          import json, os, glob, urllib.request, time
+          key = os.environ['GEMINI_API_KEY']
+          for f in sorted(glob.glob('voix/demandes/*.json')):
+              d = json.load(open(f))
+              if os.path.exists(d['path']):
+                  os.remove(f); continue
+              txt = "### DIRECTOR'S NOTES (do not read aloud)\n" + d.get('style', '') + "\n\n### TRANSCRIPT (read only this, in French)\n" + d['text']
+              body = {"contents": [{"parts": [{"text": txt}]}], "generationConfig": {"responseModalities": ["AUDIO"],
+                      "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": d.get('voice', 'Charon')}}}}}
+              url = f"https://generativelanguage.googleapis.com/v1beta/models/{d.get('model', 'gemini-3.8-flash-tts')}:generateContent"
+              req = urllib.request.Request(url, json.dumps(body).encode(), {'Content-Type': 'application/json', 'x-goog-api-key': key})
+              try:
+                  r = urllib.request.urlopen(req, timeout=300); out = r.read().decode(); code = r.status
+              except urllib.error.HTTPError as e:
+                  out = e.read().decode(); code = e.code
+              os.makedirs(os.path.dirname(d['path']) or '.', exist_ok=True)
+              if code == 200:
+                  open(d['path'], 'w').write(out + '|200'); os.remove(f)
+              else:
+                  open(f.replace('.json', '.erreur.txt'), 'w').write(f'{code}\n{out[:2000]}')
+              print(f, code); time.sleep(3)
+          PY
+      - name: Pousser
+        run: |
+          git config user.name "machine-reels"; git config user.email "machine-reels@users.noreply.github.com"
+          git add -A voix . && git commit -m "voix Gemini (action GitHub)" || exit 0
+          git pull --rebase && git push

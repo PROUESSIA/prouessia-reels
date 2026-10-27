@@ -1,0 +1,1 @@
+Déposer ici des demandes de voix (JSON) : l'action GitHub « Voix Gemini » les génère sans Make (secret GEMINI_API_KEY).
