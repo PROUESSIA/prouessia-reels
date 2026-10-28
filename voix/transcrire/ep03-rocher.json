@@ -1,0 +1,117 @@
+[
+{
+"mot": "Monsieur",
+"debut": 0.0,
+"fin": 1.02
+},
+{
+"mot": "Vasseur,",
+"debut": 1.02,
+"fin": 1.6
+},
+{
+"mot": "vous",
+"debut": 2.3,
+"fin": 2.74
+},
+{
+"mot": "êtes",
+"debut": 2.74,
+"fin": 2.92
+},
+{
+"mot": "venu",
+"debut": 2.92,
+"fin": 3.22
+},
+{
+"mot": "pour",
+"debut": 3.22,
+"fin": 3.38
+},
+{
+"mot": "la",
+"debut": 3.38,
+"fin": 3.5
+},
+{
+"mot": "fuite",
+"debut": 3.5,
+"fin": 3.92
+},
+{
+"mot": "?",
+"debut": 3.92,
+"fin": 4.92
+},
+{
+"mot": "Monsieur",
+"debut": 4.92,
+"fin": 5.5
+},
+{
+"mot": "Morel,",
+"debut": 5.5,
+"fin": 6.02
+},
+{
+"mot": "oui,",
+"debut": 6.1,
+"fin": 6.26
+},
+{
+"mot": "je",
+"debut": 6.5,
+"fin": 6.66
+},
+{
+"mot": "l",
+"debut": 6.66,
+"fin": 6.78
+},
+{
+"mot": "'ai",
+"debut": 6.78,
+"fin": 6.8
+},
+{
+"mot": "appelé.",
+"debut": 6.8,
+"fin": 7.28
+},
+{
+"mot": "Et",
+"debut": 8.08,
+"fin": 8.14
+},
+{
+"mot": "Monsieur",
+"debut": 8.14,
+"fin": 8.34
+},
+{
+"mot": "Vasseur,",
+"debut": 8.34,
+"fin": 8.9
+},
+{
+"mot": "c",
+"debut": 9.22,
+"fin": 9.46
+},
+{
+"mot": "'est",
+"debut": 9.46,
+"fin": 9.54
+},
+{
+"mot": "mon",
+"debut": 9.54,
+"fin": 9.64
+},
+{
+"mot": "plombier.",
+"debut": 9.64,
+"fin": 10.08
+}
+]
