@@ -55,10 +55,10 @@
   {
    "html": "Avec Prouessia, <b>vous parlez</b>",
    "clip": "app:15-dictee-vocale",
-   "debut": 0.3,
+   "debut": 1.0,
    "cx": 0.5,
    "sens": -1,
-   "cy": 0.45,
+   "cy": 0.42,
    "zoom": 1.0
   },
   {

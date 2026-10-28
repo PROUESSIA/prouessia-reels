@@ -52,10 +52,10 @@
   {
    "html": "Avec Prouessia, <b>le client signe au doigt</b>",
    "clip": "app:07-signature-doigt",
-   "debut": 0.3,
+   "debut": 5.5,
    "cx": 0.5,
    "sens": 1,
-   "cy": 0.45,
+   "cy": 0.42,
    "zoom": 1.0
   },
   {
@@ -64,7 +64,7 @@
    "debut": 0.3,
    "cx": 0.5,
    "sens": -1,
-   "cy": 0.45,
+   "cy": 0.42,
    "zoom": 1.0
   },
   {

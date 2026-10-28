@@ -44,7 +44,7 @@
    "debut": 0.3,
    "cx": 0.5,
    "sens": -1,
-   "cy": 0.45,
+   "cy": 0.42,
    "zoom": 1.0
   },
   {
@@ -64,10 +64,10 @@
   {
    "html": "Un clic, <b>et il part par mail</b>",
    "clip": "app:05-envoyer-devis",
-   "debut": 0.3,
+   "debut": 8.0,
    "cx": 0.5,
    "sens": 1,
-   "cy": 0.45,
+   "cy": 0.42,
    "zoom": 1.0
   },
   {

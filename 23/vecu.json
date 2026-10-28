@@ -55,19 +55,19 @@
   {
    "html": "Avec Prouessia, <b>le brouillon est gardé</b>",
    "clip": "app:17-brouillon-retrouve",
-   "debut": 0.3,
+   "debut": 9.3,
    "cx": 0.5,
    "sens": -1,
-   "cy": 0.45,
+   "cy": 0.42,
    "zoom": 1.0
   },
   {
    "html": "Vous revenez, <b>tout est là</b>",
    "clip": "app:01-nouveau-devis",
-   "debut": 0.3,
+   "debut": 8.3,
    "cx": 0.5,
    "sens": 1,
-   "cy": 0.45,
+   "cy": 0.42,
    "zoom": 1.0
   },
   {
