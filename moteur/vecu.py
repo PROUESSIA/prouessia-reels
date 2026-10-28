@@ -21,7 +21,7 @@ FIN_HTML = 'Prouessia, <b>le partenaire des plombiers</b><br><span style="font-s
 PAUSE = 0.2  # pause entre deux phrases (les références : 0,1 à 0,3 s)
 
 APP = os.path.join(ROOT, 'videos', 'app')
-BOITE = (40, 420, 1000, 1000)  # x, y, largeur, hauteur de l'écran d'appli dans la vidéo
+BOITE = (286, 500, 508, 1100)  # x, y, largeur, hauteur de l'écran d'appli : l'écran du téléphone ENTIER (pas de zoom), proportions 1170×2532
 def source(clip):
     # « app:07-signature-doigt » = capture de l'application (videos/app/), sinon clip libre de droits (videos/clips/)
     if clip.startswith('app:'):
@@ -35,7 +35,7 @@ def zone_utile(chemin, debut=0.0, duree=3.0):
     from PIL import Image
     from collections import Counter
     cache = os.path.join(APP, '_zones.json'); z = json.load(open(cache)) if os.path.exists(cache) else {}
-    k = f'{os.path.basename(chemin)}@{debut:.2f}+{duree:.2f}'
+    k = f'{os.path.relpath(chemin, APP)}@{debut:.2f}+{duree:.2f}'
     if k not in z:
         tmp = os.path.join(APP, '_z.png'); vus = []
         for j in range(5):
@@ -104,7 +104,9 @@ def voix(nn, fichier):
         print('calage provisoire (silences) ; voix envoyée à la transcription : pousser voix/transcrire/ puis relancer')
     out, D = [], []
     for a, b in seg:
-        s = x[int(max(0, a - .06) * sr):int((b + .12) * sr)]; out += [s, np.zeros(int(PAUSE * sr))]; D.append(round(len(s) / sr + PAUSE, 3))
+        # marges larges (la fin des mots est souvent sous-estimée) sans mordre sur la phrase voisine
+        i = len(D); deb = max(0.0, a - .15, (seg[i - 1][1] + .02) if i else 0.0); fin = min(b + .4, (seg[i + 1][0] - .05) if i + 1 < len(seg) else len(x) / sr)
+        s = x[int(deb * sr):int(max(fin, b) * sr)]; out += [s, np.zeros(int(PAUSE * sr))]; D.append(round(len(s) / sr + PAUSE, 3))
     D[-1] += .8
     sf.write(os.path.join(d, 'voix.wav'), np.concatenate(out), sr); json.dump(D, open(os.path.join(d, 'durees.json'), 'w'))
     mots = sum(len(l.split()) for l in lignes); tot = sum(D)
@@ -125,14 +127,14 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
 .titre{{top:250px;font-size:64px;line-height:1.08}} .ph{{top:760px;font-size:96px;line-height:1.05}} b{{color:{MUST}}}
 .logo{{position:absolute;left:0;right:0;bottom:250px;display:flex;justify-content:center;align-items:center;gap:14px;color:#fff;font-weight:800;font-size:34px;opacity:.9;text-shadow:0 2px 8px #000}}
 .logo img{{width:48px;height:48px;border-radius:12px}}
-.ph.bas{{top:{BOITE[1]+BOITE[3]+30}px;font-size:70px}} .ph.bas.long{{font-size:56px}} .v.app{{background:linear-gradient(180deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 25%)}}"""
+.ph.bas{{top:{BOITE[1]+BOITE[3]+30}px;font-size:62px}} .ph.bas.long{{font-size:52px}} .v.app{{background:linear-gradient(180deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 25%)}}"""
     carte = c.get('gabarit') == 'carte'
     if carte:
         css += f""".voile{{position:absolute;left:0;top:0;width:100%;height:1250px;background:linear-gradient(180deg,rgba(11,27,58,.88) 0%,rgba(11,27,58,.72) 45%,rgba(11,27,58,0) 100%)}}
 .voile.app{{height:100%;background:linear-gradient(180deg,rgba(11,27,58,.5) 0,rgba(11,27,58,0) 22%,rgba(11,27,58,0) 66%,rgba(11,27,58,.9) 80%)}}
 .lg{{position:absolute;left:70px;top:130px;display:flex;align-items:center;gap:18px;color:#fff;font-weight:800;font-size:40px}} .lg img{{width:64px;height:64px;border-radius:16px}}
 .t{{position:absolute;left:70px;right:110px;top:300px;color:#fff;font-weight:900;font-size:92px;line-height:1.08;letter-spacing:-.03em;text-shadow:0 4px 18px rgba(0,0,0,.35)}}
-.t.bas{{top:1460px;font-size:66px}} .t.apres{{top:600px}}
+.t.bas{{top:1640px;font-size:58px;right:70px}} .t.apres{{top:600px}}
 .t b{{background:{MUST};color:#0B1B3A;padding:0 14px;border-radius:14px;box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:none}}
 .appel{{position:absolute;left:70px;right:110px;top:280px;display:flex;align-items:center;gap:28px;background:#fff;border-radius:36px;padding:26px 34px;box-shadow:0 18px 40px rgba(0,0,0,.35);color:#0B1B3A}}
 .tel{{width:110px;height:110px;border-radius:55px;background:#22A45D;color:#fff;font-size:64px;display:flex;align-items:center;justify-content:center;flex:none}}
@@ -141,7 +143,7 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
         app = ph['clip'].startswith('app:')
         if not carte:
             return (f'<div class="v{" app" if app else ""}"></div><div class="titre">{c["titre"]}</div>'
-                    f'<div class="ph{(" bas long" if len(dit(ph["html"])) > 38 else " bas") if app else ""}">{ph["html"]}</div><div class="logo"><img src="data:image/png;base64,{ico}">prouessia</div>')
+                    f'<div class="ph{(" bas long" if len(dit(ph["html"])) > 38 else " bas") if app else ""}">{ph["html"]}</div><div class="logo"{' style="bottom:auto;top:170px"' if app else ''}><img src="data:image/png;base64,{ico}">prouessia</div>')
         h = ph['html'] or c['titre']; a = ph.get('appel')
         carteh = (f'<div class="appel"><div class="tel">&#9742;</div><div><div class="qui">{a[0]}</div><div class="msg">{a[1]}</div></div></div>') if a else ''
         return (f'<div class="voile{" app" if app else ""}"></div><div class="lg"><img src="data:image/png;base64,{ico}">prouessia</div>{carteh}'
@@ -159,7 +161,7 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
         if ph['clip'].startswith('app:'):
             # écran d'appli net dans un cadre arrondi (zoom sur la zone utile : cy = centre vertical 0-1, zoom ≥ 1), fond = la même vidéo floutée et assombrie
             bx, by, bw, bh = BOITE; z = float(ph.get('zoom', 1)); cy = float(ph.get('cy', .5))
-            cw = f"iw/{z}"; ch = f"iw/{z}*{bh}/{bw}"
+            cw = f"min(iw\\,ih*{bw}/{bh})/{z}"; ch = f"min(iw\\,ih*{bw}/{bh})/{z}*{bh}/{bw}"
             zw, zh = zone_utile(source(ph['clip']), float(ph.get('debut', 0)), du)
             fil.append(f"[{i}:v]crop={zw - zw % 2 - 4}:{zh - zh % 2 - 4}:0:0,fps=30,setsar=1,trim=duration={du:.2f},setpts=PTS-STARTPTS,split[a{i}][b{i}]")
             fil.append(f"[a{i}]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=30:3,eq=brightness=-0.35:saturation=0.6[f{i}]")
