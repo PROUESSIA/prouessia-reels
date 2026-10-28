@@ -667,5 +667,73 @@
   "Le nouveau papier = avenant : nouvelle serrure, double des clés gardé par Vasseur (suite logique de la clé sous le pot).",
   "Vasseur connaît Julien (ép. 2-3) et devine que Léa vient de sa part.",
   "Théo a pris la photo dans la rue pendant l'attente ; la boîte « Dumas » (n° 12) est celle de la mère de Léa : elle habite le quartier, d'où la confiance de Mme Lefèvre. Prépare l'ép. 6 (l'aimant) et l'ép. 7 (chez maman)."
- ]
+ ],
+ "segments": {
+  "theo": [
+   [
+    0.52,
+    2.36
+   ],
+   [
+    4.02,
+    9.14
+   ],
+   [
+    10.2,
+    12.6
+   ]
+  ],
+  "julien": [
+   [
+    0.0,
+    2.64
+   ],
+   [
+    3.66,
+    4.54
+   ]
+  ],
+  "lea": [
+   [
+    0.0,
+    3.26
+   ],
+   [
+    4.08,
+    4.68
+   ],
+   [
+    5.54,
+    7.86
+   ],
+   [
+    8.84,
+    10.68
+   ]
+  ],
+  "lefevre": [
+   [
+    0.0,
+    4.22
+   ]
+  ],
+  "vasseur": [
+   [
+    14.9,
+    19.04
+   ],
+   [
+    20.32,
+    23.76
+   ],
+   [
+    24.52,
+    26.96
+   ],
+   [
+    27.84,
+    29.58
+   ]
+  ]
+ }
 }
