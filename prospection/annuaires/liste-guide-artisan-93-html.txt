@@ -1,0 +1,1336 @@
+=== https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier [200]
+<!DOCTYPE html><html lang="fr">
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business# place: http://ogp.me/ns/place# article: http://ogp.me/ns/article#">
+    <title>Trouver un artisan plombier en Seine-Saint-Denis | Guide Artisan</title><meta property="og:image" content="https://www.guide-artisan.fr/static/1781773884/css/img/logo.png">
+<meta property="og:type" content="place">
+<meta property="place:location:latitude" content="48.9">
+<meta property="place:location:longitude" content="2.4833">
+<meta name="description" content="Vous recherchez un artisan plombier en Seine-Saint-Denis ? Trouvez près de chez-vous l&#039;artisan qu&#039;il vous faut et obtenez un devis gratuit ! ">
+<meta property="og:description" content="Vous recherchez un artisan plombier en Seine-Saint-Denis ? Trouvez près de chez-vous l&#039;artisan qu&#039;il vous faut et obtenez un devis gratuit ! ">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="og:site_name" content="Guide Artisan Île-de-France">
+<meta name="og:locale" content="fr_FR">
+<meta name="og:url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier">
+<meta name="og:title" content="Trouver un artisan plombier en Seine-Saint-Denis | Guide Artisan">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="Guide Artisan Île-de-France">
+<meta name="twitter:title" content="Trouver un artisan plombier en Seine-Saint-Denis | Guide Artisan">
+<meta name="twitter:creator" content="@guideartisan"><link href="/static/1781773884/css/aos.css" media="all" rel="stylesheet" type="text/css">
+<link href="/static/1781773884/css/foundation.css" media="all" rel="stylesheet" type="text/css">
+<link href="/static/1781773884/css/styles.css" media="all" rel="stylesheet" type="text/css">
+<link href="/static/1781773884/css/print.css" media="print" rel="stylesheet" type="text/css">
+<link href="/static/1781773884/css/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+<link href="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" rel="canonical"><script type="text/javascript" src="/static/1785426185/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/aos.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/picturefill.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/tweenmax.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/what-input.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/underscore.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/foundation.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/foundation.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/privacy-cookies.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/dropdown.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/placeholder.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/app.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/menu.min.js"></script>
+<script type="text/javascript">
+    //<!--
+    window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({"analytics_storage":true,"ad_storage":false,"ad_user_data":false,"ad_personalization":false,"event":"Cookie Consent"});
+    //-->
+</script>
+<script type="text/javascript">
+    //<!--
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+"https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,"script","dataLayer","GTM-MLGFJCN");var currentUriState = "\u00CEle\x2Dde\x2DFrance"
+    //-->
+</script>
+<script type="text/javascript" src="/static/1785426185/js/search.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/slick.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/news-carousel.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/top-search.min.js"></script></head>
+    <body>
+                            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLGFJCN" height="0" width="0" style="display: none;visibility: hidden;"></iframe>
+            </noscript>
+                <div class="reveal cookie-modal" id="cookie-modal" data-close-on-esc="false" data-close-on-click="false" data-reveal data-multiple-opened="true">
+    <div id="cookie-modal-create" class="cookie-modal-create opened">
+        <p>Nous utilisons des cookies pour assurer le bon fonctionnement et mesurer l'audience du site internet Guide Artisan. Vous avez évidemment la possibilité de modifier les paramètres afin d'activer ou de désactiver en tout temps chaque catégorie de cookies.</p>
+        <p>Pour en savoir plus <a href="/information/politique-de-confidentialite">à propos des cookies</a>.</p>
+        <div class="cookie-buttons">
+            <input class="button red privacy-cookie-accept" type="button" value="Tout accepter" />
+            <input class="button grey-border privacy-cookie-options" type="button" value="Personnaliser" />
+            <input class="button grey-border privacy-cookie-refuse" type="button" value="Tout refuser" />
+        </div>
+    </div>
+        <div id="cookie-modal-edit" class="cookie-modal-edit">
+        <button class="close-button" aria-label="Fermer les opions" title="Fermer les options" type="button"></button>
+        <h2 class="cookie-modal-title">Personnaliser mes choix</h2>
+        <p>Cochez afin d’activer ou désactiver l’utilisation des cookies.</p>
+        <ul class="cookie-modal-options">
+                            <li>
+                                        <label class="label  checked padlock" for="privacy-control-necessary">
+                        Cookies strictement nécessaires                        <input class="privacy-control" name="necessary" id="privacy-control-necessary" type="checkbox" checked="checked" disabled="disabled" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                        <span class="cookies-accordion-item" >
+                        Il s&#039;agit des cookies qui sont nécessaires pour le fonctionnement du site Web et qui permettent que vous soyez en mesure de compléter les services que vous demandez.                    </span>
+                </li>
+                            <li>
+                                        <label class="label  checked padlock" for="privacy-control-cookie_social">
+                        Cookies de médias sociaux                        <input class="privacy-control" name="cookie_social" id="privacy-control-cookie_social" type="checkbox" checked="checked" disabled="disabled" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                        <span class="cookies-accordion-item" >
+                        Ces cookies vous permettent de partager le contenu du Site Web avec des plateformes de médias sociaux (par ex. Facebook, Twitter, Instagram). Nous n’avons aucun contrôle sur ces cookies étant donné qu’ils sont installés par les plateformes elles-même.                    </span>
+                </li>
+                            <li>
+                                        <label class="label  checked padlock" for="privacy-control-analytics_storage">
+                        Cookies de performance                        <input class="privacy-control" name="analytics_storage" id="privacy-control-analytics_storage" type="checkbox" data-write-data-layer checked="checked" disabled="disabled" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                        <span class="cookies-accordion-item" >
+                        Ces cookies nous permettent de recueillir des informations sur la façon dont les visiteurs utilisent le site, par exemple pour compter les visiteurs et cartographier comment les visiteurs se déplacent dans le site. Ils enregistrent votre visite sur le site, les pages que vous avez visitées et les liens que vous avez suivis.                    </span>
+                </li>
+                            <li>
+                                        <label class="label  checkbox-label" for="privacy-control-ad_storage">
+                        Cookies publicitaires                        <input class="privacy-control" name="ad_storage" id="privacy-control-ad_storage" type="checkbox" data-write-data-layer data-children="ad_user_data,ad_personalization" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                            <span class="accordion-icon right"></span>
+                                        <span class="cookies-accordion-item" style="display:none;">
+                        Ces cookies nous permettent de vous montrer des publicités sur mesure sur des sites tiers, sur la base de l&#039;intérêt pour nos produits et services que vous avez manifesté pendant votre visite sur notre Site Web.                    </span>
+                </li>
+                    </ul>
+        <div class="cookie-buttons">
+            <input class="button grey-border privacy-cookie-save" type="button" value="Enregistrer et continuer" />
+            <input class="button red privacy-cookie-accept" type="button" value="Tout accepter et continuer" />
+        </div>
+    </div>
+</div>
+        <div>
+            <header class="header">
+    <div class="header-top">
+        <div class="header-top-logo">
+            <a href="/ile-de-france">
+                <img src="/static/1781773884/css/img/logo.svg" alt="Logo de Guide&#x20;Artisan" />
+                <div>
+                    <span>Guide Artisan</span>
+                                            Île-de-France                                    </div>
+            </a>
+        </div>
+        <div class="header-top-aubade show-for-full">
+            <a href="https://www.espace-aubade.fr/" target="_blank">
+                <img src="/static/1781773884/css/img/logo-aubade-blue.svg" alt="Espace Aubade spécialiste de la salle de bains" />
+            </a>
+        </div>
+        <ul class="header-top-links&#x20;show-for-xxxlarge">
+    <li>
+        <a href="&#x2F;actualites">Actualités</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;qui-sommes-nous">Qui sommes-nous ?</a>
+    </li>
+    <li>
+        <a href="&#x2F;vous-etes-un-pro">Vous êtes un pro ?</a>
+    </li>
+</ul>        <div class="header-top-choose-project show-for-xxxlarge" style="width: 318px;">
+            <a href="https://www.espace-aubade.fr/demande-de-devis" class="header-top-choose-project-link" target="_blank" rel="noopener noreferrer">
+                Demander un devis
+            </a>
+        </div>
+                    <div id="header-top-crafter-job" class="header-top-crafter job show-for-xxxlarge">
+                <button id="job-btn">Métiers</button>
+            </div>
+                <button id="menu-btn" class="menu-mobile hide-for-xxxlarge">
+            <span class="icon-burger"></span>
+        </button>
+    </div>
+    <div class="header-navigation hide-for-xxxlarge" id="header-navigation">
+                    <div class="find-crafter">
+                <button id="btn-open-job" class="hide-for-xxxlarge">
+                    <span>Choisir un métier</span>
+                </button>
+                <div id="find-crafter-list" class="find-crafter-list">
+                    <div class="hide-for-xxxlarge">
+                        <button class="mobile-menu-back-button" aria-label="Retour au menu précédent"><span>Choisir un métier</span></button>
+                    </div>
+                    <ul class="navigation">
+    <li>
+        <a href="&#x2F;ile-de-france&#x2F;carreleur">Carreleurs</a>
+    </li>
+    <li>
+        <a href="&#x2F;ile-de-france&#x2F;chauffagiste">Chauffagistes</a>
+    </li>
+    <li>
+        <a href="&#x2F;ile-de-france&#x2F;climatisation">Climatisation</a>
+    </li>
+    <li>
+        <a href="&#x2F;ile-de-france&#x2F;electricien">Électriciens</a>
+    </li>
+    <li>
+        <a href="&#x2F;ile-de-france&#x2F;installateur-photovoltaique">Installateurs Photovoltaïque</a>
+    </li>
+    <li>
+        <a href="&#x2F;ile-de-france&#x2F;plombier">Plombiers</a>
+    </li>
+    <li>
+        <a href="&#x2F;ile-de-france&#x2F;renovation-installation-sdb">Rénovation / installation salle de bains</a>
+    </li>
+</ul>                </div>
+            </div>
+                <div class="header-navigation-category">
+            <ul class="level0">
+                <li class="level0">
+                    <a href="https://www.espace-aubade.fr/demande-de-devis" class="quote-external-link" target="_blank" rel="noopener noreferrer">Demander un devis</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-navigation-links hide-for-xxxlarge">
+            <ul class="level0">
+    <li>
+        <a href="&#x2F;actualites">Actualités</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;qui-sommes-nous">Qui sommes-nous ?</a>
+    </li>
+    <li>
+        <a href="&#x2F;vous-etes-un-pro">Vous êtes un pro ?</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;faq">Foire aux questions</a>
+    </li>
+    <li>
+        <a href="&#x2F;contact">Contact</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;charte-qualite-guide-artisan">Charte Qualité Guide Artisan</a>
+    </li>
+</ul>        </div>
+    </div>
+    <div class="menu-overlay"></div>
+    <span class="hidden" aria-hidden="true" id="page-top"></span>
+</header>
+<div
+    class="top-search-form full-container bg-blue"
+    id="top-search-form"
+    data-aos="fade-up">
+    <div class="grid-container">
+        <div class="full-container-wrapper">
+            <div class="btn-wrapper">
+                <div class="top-search-form-btn" id="top-search-btn">
+                    Trouver un artisan
+                </div>
+            </div>
+            <div class="content-wrapper" data-aos="fade-up" style="opacity: 0;">
+                <div class="top-search-form-content" id="top-search-content">
+                    <button class="close-button" type="button" id="top-search-close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                    <form method="get" name="search_form" id="search-form" action="&#x2F;recherche" class="form">                    <label class="search-label" for="job-id">
+                        Je recherche                    </label>
+                    <div class="search-fields">
+                        <div class="job select-wrapper">
+                            <select name="metier" id="job-id"><option value="">Sélectionner un métier</option>
+<option value="plombier" selected="selected">Plombiers</option>
+<option value="climatisation">Climatisation</option>
+<option value="carreleur">Carreleurs</option>
+<option value="renovation-installation-sdb">Rénovation / installation salle de bains</option>
+<option value="---">──────────</option>
+<option value="chauffagiste">Chauffagistes</option>
+<option value="electricien">Électriciens</option>
+<option value="installateur-photovoltaique">Installateurs Photovoltaïque</option></select>                            <div class="select-fake">
+                                <span class="selected">
+                                    Plombiers                                </span>
+                                <ul>
+                                                                                                                        <li class="selected" data-slug="plombier">Plombiers</li>
+                                                                                                                                                                <li class="" data-slug="climatisation">Climatisation</li>
+                                                                                                                                                                <li class="" data-slug="carreleur">Carreleurs</li>
+                                                                                                                                                                <li class="" data-slug="renovation-installation-sdb">Rénovation / installation salle de bains</li>
+                                                                                                                                                                <li class="select-separator">──────────</li>
+                                                                                                                                                                <li class="" data-slug="chauffagiste">Chauffagistes</li>
+                                                                                                                                                                <li class="" data-slug="electricien">Électriciens</li>
+                                                                                                                                                                <li class="" data-slug="installateur-photovoltaique">Installateurs Photovoltaïque</li>
+                                                                                                            </ul>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <input type="text" name="localite" id="locality" placeholder="Ville&#x20;ou&#x20;code&#x20;postal&#x2A;" autocomplete="off" value="">                            <ul class="city-list" id="city-list"></ul>
+                        </div>
+                                                <input type="submit" class="button" value="Valider" />
+                    </div>
+                    </form>                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="grid-container" id="breadcrumbs" itemscope itemtype="http://schema.org/WebPage" data-aos="fade-up">
+        <meta itemprop="name" content="Trouver un artisan plombier en Seine-Saint-Denis | Guide Artisan" />
+        <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+        <ol class="breadcrumb " itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li><a href="&#x2F;ile-de-france">Accueil</a></li> <li> &sol; </li> <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="&#x2F;ile-de-france&#x2F;plombier"><span itemprop="name">Plombiers</span></a><meta itemprop="position" content="1" /></li> <li> &sol; </li> <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">Seine-Saint-Denis</span><meta itemprop="item" content="https://www.guide-artisan.fr&#x2F;ile-de-france&#x2F;seine-saint-denis&#x2F;plombier" /><meta itemprop="position" content="2" /></li>        </ol>
+    </div>
+            <section id="main-section">
+                <div class="job-page grid-container">
+    <div class="grid-x map-svg" id="home-job-map">
+        <div class="map-wrapper small-12 medium-7" data-aos="fade-up">
+            <div class="map state">
+                <!--[if gte IE 9]> -->
+    <svg viewBox="0,0,507,537">
+        <g>
+                                                <a xlink:title="Paris" data-id="34" xlink:href="/ile-de-france/paris/plombier" class="">
+                        <path d="M 226.630640506931,175.414758891089 L 211.005456285149,175.6076624 L 204.060929964356,178.694118542574 L 201.167377330693,182.552188720792 L 194.801561536634,182.937995738614 L 189.014456269307,189.496715041584 L 189.207359778218,193.161881710891 L 190.557684340594,197.405758906931 L 200.202859786139,200.106408031683 L 211.969973829703,206.086416807921 L 219.493210677228,206.472223825743 L 224.508701908911,205.121899263366 L 229.717096649505,201.456732594059 L 231.453228229703,202.999960665347 L 242.641631746535,204.543188736634 L 244.570666835644,200.492215049505 L 244.570666835644,196.441241362376 L 242.641631746535,195.669627326733 L 234.925491390099,196.055434344554 L 235.504201916832,197.984469433663 L 234.153877354455,199.141890487129 L 231.646131738614,199.141890487129 L 232.610649283168,196.634144871287 L 232.99645630099,193.933495746535 L 232.610649283168,193.933495746535 L 231.646131738614,183.130899247525 L 226.630640506931,175.414758891089 z" />                    </a>
+                                                                <a xlink:title="Seine-et-Marne" data-id="35" xlink:href="/ile-de-france/seine-et-marne/plombier" class="">
+                        <path d="M 394.649596768317,97.8675483089109 L 387.319263429703,101.532714978218 L 375.359245877228,111.177890423762 L 363.399228324752,107.512723754455 L 342.758552871287,116.000478146535 L 325.97594759604,106.35530270099 L 318.645614257426,116.000478146535 L 307.843017758416,117.1578992 L 300.512684419802,111.177890423762 L 288.552666867327,104.040460594059 L 274.08490369901,113.685636039604 L 273.506193172277,113.106925512871 L 268.297798431683,146.479232554455 L 275.435228261386,188.918004514851 L 275.435228261386,217.274820324752 L 265.982956324752,241.001951920792 L 268.297798431683,257.398750178218 L 257.688105441584,265.693601061386 L 263.475210708911,297.715583540594 L 258.845526495049,304.660109861386 L 255.373263334653,336.682092340594 L 263.475210708911,347.291785330693 L 236.468719461386,365.038908150495 L 236.468719461386,389.344750273267 L 243.991956308911,400.533153790099 L 258.459719477228,407.863487128713 L 259.617140530693,428.311259073267 L 240.326789639604,441.621601188119 L 251.129386138614,451.266776633663 L 264.439728253465,442.779022241584 L 297.040421259406,443.936443295049 L 309.000438811881,441.621601188119 L 312.665605481188,431.976425742574 L 325.97594759604,433.13384679604 L 328.29078970297,442.779022241584 L 358.383737093069,425.803513457426 L 369.37923710099,412.686074851485 L 383.847000269307,395.710566067327 L 374.201824823762,384.907969568317 L 382.689579215842,366.775039730693 L 404.294772213861,355.972443231683 L 451.363228388119,358.287285338614 L 462.165824887129,349.992434455446 L 463.130342431683,350.956952 L 465.830991556436,330.702083564356 L 470.653579279208,306.589144950495 L 479.141333671287,295.593644942574 L 480.298754724752,281.125881774257 L 497.08136,273.988451944554 L 497.08136,264.34327649901 L 479.141333671287,265.500697552475 L 475.47616700198,257.012943160396 L 481.456175778218,246.210346661386 L 476.633588055446,228.077416823762 L 466.988412609901,222.097408047525 L 469.496158225743,205.314802772277 L 479.141333671287,199.141890487129 L 477.791009108911,192.004460657426 L 481.263272269307,187.760583461386 L 461.008403833663,183.516706265347 L 454.835491548515,169.04894309703 L 444.032895049505,165.383776427723 L 411.625105552475,134.133407984158 L 407.959938883168,107.512723754455 L 394.649596768317,97.8675483089109 z" />                    </a>
+                                                                <a xlink:title="Yvelines" data-id="36" xlink:href="/ile-de-france/yvelines/plombier" class="">
+                        <path d="M 48.9665088,108.091434281188 L 48.5807017821782,108.863048316832 L 14.8225877227723,118.508223762376 L 9.99999999999997,124.488232538614 L 16.1729122851485,134.133407984158 L 16.1729122851485,143.778583429703 L 26.9755087841584,146.093425536634 L 20.8025964990099,152.266337821782 L 21.3813070257426,157.667636071287 L 22.1529210613861,157.088925544554 L 34.1129386138614,169.04894309703 L 37.7781052831683,183.516706265347 L 47.4232807287129,193.161881710891 L 42.6006930059406,206.472223825743 L 42.6006930059406,218.432241378218 L 51.0884473980198,228.077416823762 L 42.6006930059406,242.545179992079 L 51.0884473980198,263.185855445545 L 67.8710526732673,275.14587299802 L 70.3787982891089,288.456215112871 L 84.8465614574257,290.771057219802 L 88.3188246178218,317.391741449505 L 99.3143246257426,330.702083564356 L 118.797579025743,334.367250233663 L 121.691131659406,315.269802851485 L 129.985982542574,305.817530914851 L 123.041456221782,295.207837924752 L 140.595675532673,295.207837924752 L 152.555693085149,278.811039667327 L 144.26084220198,264.536180007921 L 146.575684308911,251.611644910891 L 164.322807128713,243.316794027723 L 166.637649235644,230.199355421782 L 178.404763279208,225.569671207921 L 189.207359778218,220.747083485148 L 191.329298376238,222.097408047525 L 191.329298376238,220.747083485148 L 180.526701877228,208.594162423762 L 173.775079065347,190.268329077228 L 184.577675564356,166.734100990099 L 179.176377314851,148.986978170297 L 158.149894843564,136.255346582178 L 128.442754471287,134.905022019802 L 100.664649188119,117.1578992 L 78.2878421544554,121.208872887129 L 48.9665088,108.091434281188 z" />                    </a>
+                                                                <a xlink:title="Essonne" data-id="37" xlink:href="/ile-de-france/essonne/plombier" class="">
+                        <path d="M 189.207359778218,220.747083485148 L 178.404763279208,225.569671207921 L 166.637649235644,230.199355421782 L 164.322807128713,243.316794027723 L 146.575684308911,251.611644910891 L 144.26084220198,264.536180007921 L 152.555693085149,278.811039667327 L 140.595675532673,295.207837924752 L 123.041456221782,295.207837924752 L 129.985982542574,305.817530914851 L 121.691131659406,315.269802851485 L 118.797579025743,334.367250233663 L 124.584684293069,335.524671287129 L 126.8995264,351.149855508911 L 129.407272015842,354.815022178218 L 131.915017631683,387.222811675247 L 170.495719413861,383.750548514852 L 186.120903635644,369.282785346535 L 199.431245750495,380.085381845545 L 231.839035247525,382.400223952475 L 236.468719461386,389.344750273267 L 236.468719461386,365.038908150495 L 263.475210708911,347.291785330693 L 255.373263334653,336.682092340594 L 258.845526495049,304.660109861386 L 263.475210708911,297.715583540594 L 257.688105441584,265.693601061386 L 268.297798431683,257.398750178218 L 266.175859833663,242.352276483168 L 252.865517718812,236.17936419802 L 230.488710685148,236.17936419802 L 217.564175588119,229.041934368317 L 208.111903651485,233.864522091089 L 189.207359778218,220.747083485148 z" />                    </a>
+                                                                <a xlink:title="Hauts-de-Seine" data-id="38" xlink:href="/ile-de-france/hauts-de-seine/plombier" class="">
+                        <path d="M 208.304807160396,155.159890455446 L 186.699614162376,166.734100990099 L 184.384772055446,167.119908007921 L 173.775079065347,190.268329077228 L 180.526701877228,208.594162423762 L 191.329298376238,220.747083485148 L 191.329298376238,222.097408047525 L 208.111903651485,233.864522091089 L 212.162877338614,231.742583493069 L 209.07642119604,225.955478225743 L 212.162877338614,216.889013306931 L 210.233842249505,213.609653655446 L 212.355780847525,206.086416807921 L 211.969973829703,206.086416807921 L 200.202859786139,200.106408031683 L 190.557684340594,197.405758906931 L 189.207359778218,193.161881710891 L 189.014456269307,189.496715041584 L 194.801561536634,182.937995738614 L 201.167377330693,182.552188720792 L 204.060929964356,178.694118542574 L 211.005456285149,175.6076624 L 208.690614178218,170.013460641584 L 211.969973829703,169.434750114851 L 214.477719445544,164.033451865347 L 211.969973829703,160.175381687129 L 209.26932470495,159.596671160396 L 208.304807160396,155.159890455446 z" />                    </a>
+                                                                <a xlink:title="Seine-Saint-Denis" data-id="39" xlink:href="/ile-de-france/seine-saint-denis/plombier" class="active">
+                        <path d="M 269.84102650297,136.834057108911 L 258.459719477228,144.936004483168 L 240.712596657426,153.037951857426 L 208.304807160396,155.159890455446 L 209.26932470495,159.596671160396 L 211.969973829703,160.175381687129 L 214.477719445544,164.033451865347 L 211.969973829703,169.434750114851 L 208.690614178218,170.013460641584 L 211.005456285149,175.6076624 L 226.630640506931,175.414758891089 L 231.646131738614,183.130899247525 L 232.610649283168,193.933495746535 L 238.011947532673,193.161881710891 L 243.027438764356,189.110908023762 L 250.550675611881,189.496715041584 L 260.002947548515,194.898013291089 L 265.40424579802,200.878022067327 L 267.911991413861,202.035443120792 L 269.455219485148,204.928995754455 L 275.435228261386,206.472223825743 L 275.435228261386,188.918004514851 L 268.297798431683,146.479232554455 L 269.84102650297,136.834057108911 z" />                    </a>
+                                                                <a xlink:title="Val-de-Marne" data-id="40" xlink:href="/ile-de-france/val-de-marne/plombier" class="">
+                        <path d="M 243.027438764356,189.110908023762 L 238.011947532673,193.161881710891 L 232.99645630099,193.933495746535 L 232.610649283168,196.634144871287 L 231.646131738614,199.141890487129 L 234.153877354455,199.141890487129 L 235.504201916832,197.984469433663 L 234.925491390099,196.055434344554 L 242.641631746535,195.669627326733 L 244.570666835644,196.441241362376 L 244.570666835644,200.492215049505 L 242.641631746535,204.543188736634 L 231.453228229703,202.999960665347 L 229.717096649505,201.456732594059 L 224.508701908911,205.121899263366 L 219.493210677228,206.472223825743 L 212.355780847525,206.086416807921 L 210.233842249505,213.609653655446 L 212.162877338614,216.889013306931 L 209.07642119604,225.955478225743 L 212.162877338614,231.742583493069 L 217.564175588119,229.041934368317 L 230.488710685148,236.17936419802 L 252.865517718812,236.17936419802 L 266.175859833663,242.352276483168 L 265.982956324752,241.001951920792 L 275.435228261386,217.274820324752 L 275.435228261386,206.472223825743 L 269.455219485148,204.928995754455 L 267.911991413861,202.035443120792 L 265.40424579802,200.878022067327 L 260.002947548515,194.898013291089 L 250.550675611881,189.496715041584 L 243.027438764356,189.110908023762 z" />                    </a>
+                                                                <a xlink:title="Val&#x20;d&#x27;Oise" data-id="41" xlink:href="/ile-de-france/val-d-oise/plombier" class="">
+                        <path d="M 74.0439649584158,55.8145833663366 L 64.3987895128713,67.7746009188119 L 57.0684561742574,94.3952851485148 L 48.9665088,108.091434281188 L 78.2878421544554,121.208872887129 L 100.664649188119,117.1578992 L 128.442754471287,134.905022019802 L 158.149894843564,136.255346582178 L 179.176377314851,148.986978170297 L 184.577675564356,166.734100990099 L 184.384772055446,167.119908007921 L 186.699614162376,166.734100990099 L 208.304807160396,155.159890455446 L 240.712596657426,153.037951857426 L 258.459719477228,144.936004483168 L 269.84102650297,136.834057108911 L 273.506193172277,113.106925512871 L 265.597149306931,105.197881647525 L 239.169368586139,89.5726974257426 L 213.706105409901,76.2623553108911 L 200.58866680396,82.2423640871287 L 186.120903635644,85.9075307564356 L 176.475728190099,78.5771974178218 L 157.18537729901,66.6171798653465 L 141.560193077228,78.5771974178218 L 118.604675516832,81.0849430336634 L 86.0039825108911,78.5771974178218 L 78.6736491722772,66.6171798653465 L 74.0439649584158,55.8145833663366 z" />                    </a>
+                                                </g>
+    </svg>
+<!-- <![endif]-->
+            </div>
+        </div>
+        <div class="listing small-12 medium-5" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="normal-strong">
+                Plombiers Seine-Saint-Denis            </h1>
+            D&eacute;pannages et interventions sur plomberie, sanitaires... toutes ces prestations sont accessibles aux particuliers via l'annuaire Guide Artisan Seine-Saint-Denis (93). Prenez contact avec l'un des plombiers professionnels qui figure dans liste suivante. Ce dernier vous proposera un devis adapt&eacute; &agrave; vos besoins.        </div>
+    </div>
+</div>
+<!--
+    CMS Block
+    ID: 116    Label: Réassurance métier Seine-Saint-Denis-->
+<div class="grid-container"><div class=" block-bg-blue"><div class="bg-blue aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"><div class="content-wrapper"><p class="content">Guide Artisan vous accompagne dans votre recherche d'un artisan dans la Seine-Saint-Denis. Ce dernier pourra effectuer tous les travaux que vous souhaitez dans votre salle de bains, tant en matière de plomberie et de carrelage, que de chauffage ou électricité.</p></div></div></div></div><div class="grid-container search">
+    <div class="search-list-header">
+        <div class="map-title" data-aos="fade-up">
+            <p>
+                <span>Seine-Saint-Denis&nbsp;:</span>
+                <strong class="red">Plombiers</strong>
+            </p>
+        </div>
+        <div class="list-action" data-aos="fade-up" data-aos-delay="100">
+            <div id="print-list" class="print-list">
+                <span class="show-image print" title="Imprimer la liste"></span>
+                <span class="show-for-xlarge show-text">Imprimer la liste</span>
+            </div>
+                        <a class="email-list" href="mailto:?subject=Plombiers%20vers%20Seine-Saint-Denis%20%28www.guide-artisan.fr%29&amp;body=Voici%20la%20s%C3%A9lection%20des%20Plombiers%20proches%20de%20Seine-Saint-Denis%20sur%20Guide%20Artisan%0A%0Awww.guide-artisan.fr%2File-de-france%2Fseine-saint-denis%2Fplombier" id="mail-list" title="Envoyer la liste par e-mail">
+                <span class="show-image mail"></span>
+                <span class="show-for-xlarge show-text">Envoyer la liste par e-mail</span>
+            </a>
+        </div>
+    </div>
+    <div class="border-bottom">
+        <ul class="tabs" data-tabs id="map-list-tab">
+            <li class="tabs-title picto-list is-active"><a href="#list" aria-selected="true">Liste</a></li>
+            <li class="tabs-title picto-map"><a href="#map">Carte</a></li>
+        </ul>
+        <div class="tabs-content full-width" data-tabs-content="map-list-tab">
+            <div class="search-results county-result tabs-panel is-active" id="list">
+                                    <ul class="county-list" data-aos="fade-up">
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Le&#x20;Bourget" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9333" />
+                                    <meta itemprop="longitude" content="2.41667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93350" />
+                                    <meta itemprop="addressLocality" content="Le&#x20;Bourget" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93350-le-bourget/plombier">
+                                        Le Bourget                                        (93350)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Bagnolet" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.8667" />
+                                    <meta itemprop="longitude" content="2.41667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93170" />
+                                    <meta itemprop="addressLocality" content="Bagnolet" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93170-bagnolet/plombier">
+                                        Bagnolet                                        (93170)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="La&#x20;Courneuve" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9167" />
+                                    <meta itemprop="longitude" content="2.38333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93120" />
+                                    <meta itemprop="addressLocality" content="La&#x20;Courneuve" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93120-la-courneuve/plombier">
+                                        La Courneuve                                        (93120)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Les&#x20;Pavillons-sous-Bois" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9" />
+                                    <meta itemprop="longitude" content="2.51667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93320" />
+                                    <meta itemprop="addressLocality" content="Les&#x20;Pavillons-sous-Bois" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93320-pavillons-sous-bois/plombier">
+                                        Les Pavillons-sous-Bois                                        (93320)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Sevran" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9333" />
+                                    <meta itemprop="longitude" content="2.53333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93270" />
+                                    <meta itemprop="addressLocality" content="Sevran" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93270-sevran/plombier">
+                                        Sevran                                        (93270)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Villemomble" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.8833" />
+                                    <meta itemprop="longitude" content="2.5" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93250" />
+                                    <meta itemprop="addressLocality" content="Villemomble" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93250-villemomble/plombier">
+                                        Villemomble                                        (93250)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Montreuil" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.8667" />
+                                    <meta itemprop="longitude" content="2.43333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93100" />
+                                    <meta itemprop="addressLocality" content="Montreuil" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93100-montreuil/plombier">
+                                        Montreuil                                        (93100)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Livry-Gargan" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9167" />
+                                    <meta itemprop="longitude" content="2.55" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93190" />
+                                    <meta itemprop="addressLocality" content="Livry-Gargan" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93190-livry-gargan/plombier">
+                                        Livry-Gargan                                        (93190)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Aulnay-sous-Bois" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.95" />
+                                    <meta itemprop="longitude" content="2.51667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93600" />
+                                    <meta itemprop="addressLocality" content="Aulnay-sous-Bois" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93600-aulnay-sous-bois/plombier">
+                                        Aulnay-sous-Bois                                        (93600)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Dugny" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.95" />
+                                    <meta itemprop="longitude" content="2.41667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93440" />
+                                    <meta itemprop="addressLocality" content="Dugny" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93440-dugny/plombier">
+                                        Dugny                                        (93440)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Coubron" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9167" />
+                                    <meta itemprop="longitude" content="2.58333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93470" />
+                                    <meta itemprop="addressLocality" content="Coubron" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93470-coubron/plombier">
+                                        Coubron                                        (93470)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Villetaneuse" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9583" />
+                                    <meta itemprop="longitude" content="2.34167" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93430" />
+                                    <meta itemprop="addressLocality" content="Villetaneuse" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93430-villetaneuse/plombier">
+                                        Villetaneuse                                        (93430)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Le&#x20;Raincy" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9" />
+                                    <meta itemprop="longitude" content="2.51667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93340" />
+                                    <meta itemprop="addressLocality" content="Le&#x20;Raincy" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93340-le-raincy/plombier">
+                                        Le Raincy                                        (93340)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Saint-Denis" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9333" />
+                                    <meta itemprop="longitude" content="2.35833" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93200" />
+                                    <meta itemprop="addressLocality" content="Saint-Denis" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93200-saint-denis/plombier">
+                                        Saint-Denis                                        (93200)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Lilas" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.8833" />
+                                    <meta itemprop="longitude" content="2.43333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93260" />
+                                    <meta itemprop="addressLocality" content="Lilas" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93260-lilas/plombier">
+                                        Lilas                                        (93260)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Clichy-sous-Bois" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9167" />
+                                    <meta itemprop="longitude" content="2.55" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93390" />
+                                    <meta itemprop="addressLocality" content="Clichy-sous-Bois" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93390-clichy-sous-bois/plombier">
+                                        Clichy-sous-Bois                                        (93390)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Noisy-le-Grand" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.85" />
+                                    <meta itemprop="longitude" content="2.56667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93160" />
+                                    <meta itemprop="addressLocality" content="Noisy-le-Grand" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93160-noisy-le-grand/plombier">
+                                        Noisy-le-Grand                                        (93160)
+                                    </a>
+                                                                <ul>
+                                                                            <li>
+                                                                                        <a href="/ile-de-france/etpr-eur">
+                                                ETPR EUR                                            </a>
+                                        </li>
+                                                                                                            </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Romainville" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.8833" />
+                                    <meta itemprop="longitude" content="2.43333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93230" />
+                                    <meta itemprop="addressLocality" content="Romainville" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93230-romainville/plombier">
+                                        Romainville                                        (93230)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Aubervilliers" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9167" />
+                                    <meta itemprop="longitude" content="2.38333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93300" />
+                                    <meta itemprop="addressLocality" content="Aubervilliers" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93300-aubervilliers/plombier">
+                                        Aubervilliers                                        (93300)
+                                    </a>
+                                                                <ul>
+                                                                            <li>
+                                                                                        <a href="/ile-de-france/panorama-deco">
+                                                Panorama Deco                                            </a>
+                                        </li>
+                                                                                                            </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Noisy-le-Sec" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.8833" />
+                                    <meta itemprop="longitude" content="2.46667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93130" />
+                                    <meta itemprop="addressLocality" content="Noisy-le-Sec" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93130-noisy-le-sec/plombier">
+                                        Noisy-le-Sec                                        (93130)
+                                    </a>
+                                                                <ul>
+                                                                            <li>
+                                                                                        <a href="/ile-de-france/renovation-moderne">
+                                                Renovation Moderne                                            </a>
+                                        </li>
+                                                                                                            </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Villepinte" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9667" />
+                                    <meta itemprop="longitude" content="2.53333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93420" />
+                                    <meta itemprop="addressLocality" content="Villepinte" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93420-villepinte/plombier">
+                                        Villepinte                                        (93420)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Bobigny" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9" />
+                                    <meta itemprop="longitude" content="2.45" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93000" />
+                                    <meta itemprop="addressLocality" content="Bobigny" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93000-bobigny/plombier">
+                                        Bobigny                                        (93000)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Pierrefitte-sur-Seine" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9667" />
+                                    <meta itemprop="longitude" content="2.36667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93380" />
+                                    <meta itemprop="addressLocality" content="Pierrefitte-sur-Seine" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93380-pierrefitte-sur-seine/plombier">
+                                        Pierrefitte-sur-Seine                                        (93380)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Tremblay-en-France" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9562" />
+                                    <meta itemprop="longitude" content="2.57639" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93290" />
+                                    <meta itemprop="addressLocality" content="Tremblay-en-France" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93290-tremblay-en-france/plombier">
+                                        Tremblay-en-France                                        (93290)
+                                    </a>
+                                                                <ul>
+                                                                            <li>
+                                                                                        <a href="/ile-de-france/sas-inacio">
+                                                SAS INACIO                                            </a>
+                                        </li>
+                                                                                                            </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Vaujours" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9333" />
+                                    <meta itemprop="longitude" content="2.56667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93410" />
+                                    <meta itemprop="addressLocality" content="Vaujours" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93410-vaujours/plombier">
+                                        Vaujours                                        (93410)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Montfermeil" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9" />
+                                    <meta itemprop="longitude" content="2.56667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93370" />
+                                    <meta itemprop="addressLocality" content="Montfermeil" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93370-montfermeil/plombier">
+                                        Montfermeil                                        (93370)
+                                    </a>
+                                                                <ul>
+                                                                            <li>
+                                                                                        <a href="/ile-de-france/atelier-d3">
+                                                Atelier D3                                            </a>
+                                        </li>
+                                                                                                                    <li>
+                                                                                        <a href="/ile-de-france/batimez">
+                                                Batimez                                            </a>
+                                        </li>
+                                                                                                            </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Stains" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.95" />
+                                    <meta itemprop="longitude" content="2.38333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93240" />
+                                    <meta itemprop="addressLocality" content="Stains" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93240-stains/plombier">
+                                        Stains                                        (93240)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Pantin" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9" />
+                                    <meta itemprop="longitude" content="2.4" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93500" />
+                                    <meta itemprop="addressLocality" content="Pantin" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93500-pantin/plombier">
+                                        Pantin                                        (93500)
+                                    </a>
+                                                                <ul>
+                                                                            <li>
+                                                                                        <a href="/ile-de-france/avenir-deco">
+                                                AVENIR DECO                                            </a>
+                                        </li>
+                                                                                                            </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Neuilly-Plaisance" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.8667" />
+                                    <meta itemprop="longitude" content="2.51667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93360" />
+                                    <meta itemprop="addressLocality" content="Neuilly-Plaisance" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93360-neuilly-plaisance/plombier">
+                                        Neuilly-Plaisance                                        (93360)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Rosny-sous-Bois" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.8667" />
+                                    <meta itemprop="longitude" content="2.48333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93110" />
+                                    <meta itemprop="addressLocality" content="Rosny-sous-Bois" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93110-rosny-sous-bois/plombier">
+                                        Rosny-sous-Bois                                        (93110)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Saint-Ouen-sur-Seine" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9" />
+                                    <meta itemprop="longitude" content="2.33333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93400" />
+                                    <meta itemprop="addressLocality" content="Saint-Ouen-sur-Seine" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93400-saint-ouen-sur-seine/plombier">
+                                        Saint-Ouen-sur-Seine                                        (93400)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Gournay-sur-Marne" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.8667" />
+                                    <meta itemprop="longitude" content="2.56667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93460" />
+                                    <meta itemprop="addressLocality" content="Gournay-sur-Marne" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93460-gournay-sur-marne/plombier">
+                                        Gournay-sur-Marne                                        (93460)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Bondy" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9" />
+                                    <meta itemprop="longitude" content="2.46667" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93140" />
+                                    <meta itemprop="addressLocality" content="Bondy" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93140-bondy/plombier">
+                                        Bondy                                        (93140)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="&#xC9;pinay-sur-Seine" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.95" />
+                                    <meta itemprop="longitude" content="2.30833" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93800" />
+                                    <meta itemprop="addressLocality" content="&#xC9;pinay-sur-Seine" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93800-epinay-sur-seine/plombier">
+                                        Épinay-sur-Seine                                        (93800)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Neuilly-sur-Marne" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.85" />
+                                    <meta itemprop="longitude" content="2.53333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93330" />
+                                    <meta itemprop="addressLocality" content="Neuilly-sur-Marne" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93330-neuilly-sur-marne/plombier">
+                                        Neuilly-sur-Marne                                        (93330)
+                                    </a>
+                                                                <ul>
+                                                                            <li>
+                                                                                        <a href="/ile-de-france/parten-air">
+                                                PARTEN&#039;AIR                                            </a>
+                                        </li>
+                                                                                                                    <li>
+                                                                                        <a href="/ile-de-france/simian-pere-et-fils">
+                                                SIMIAN PERE ET FILS                                            </a>
+                                        </li>
+                                                                                                            </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Drancy" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9333" />
+                                    <meta itemprop="longitude" content="2.45" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93700" />
+                                    <meta itemprop="addressLocality" content="Drancy" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93700-drancy/plombier">
+                                        Drancy                                        (93700)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Le&#x20;Blanc-Mesnil" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.9333" />
+                                    <meta itemprop="longitude" content="2.45" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93150" />
+                                    <meta itemprop="addressLocality" content="Le&#x20;Blanc-Mesnil" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93150-le-blanc-mesnil/plombier">
+                                        Le Blanc-Mesnil                                        (93150)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Gagny" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.8833" />
+                                    <meta itemprop="longitude" content="2.53333" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93220" />
+                                    <meta itemprop="addressLocality" content="Gagny" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93220-gagny/plombier">
+                                        Gagny                                        (93220)
+                                    </a>
+                                                                <ul>
+                                                                            <li>
+                                                                                        <a href="/ile-de-france/ets-demerger">
+                                                Ets Demerger                                            </a>
+                                        </li>
+                                                                                                                    <li>
+                                                                                        <a href="/ile-de-france/gpc-concept">
+                                                GPC Concept                                            </a>
+                                        </li>
+                                                                                                                    <li>
+                                                                                        <a href="/ile-de-france/julien-entreprise">
+                                                Julien entreprise                                            </a>
+                                        </li>
+                                                                                                            </ul>
+                            </li>
+                                                    <li itemscope itemtype="http://schema.org/City">
+                                <meta itemprop="name" content="Le&#x20;Pr&#xE9;-Saint-Gervais" />
+                                <meta itemprop="url" content="https://www.guide-artisan.fr/ile-de-france/seine-saint-denis/plombier" />
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="48.8833" />
+                                    <meta itemprop="longitude" content="2.4" />
+                                </span>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="postalCode" content="93310" />
+                                    <meta itemprop="addressLocality" content="Le&#x20;Pr&#xE9;-Saint-Gervais" />
+                                    <meta itemprop="addressRegion" content="&#xCE;le-de-France" />
+                                    <meta itemprop="addressCountry" content="FR" />
+                                </span>
+                                                                                                        <a class="city-link" href="/ile-de-france/seine-saint-denis/93310-le-pre-saint-gervais/plombier">
+                                        Le Pré-Saint-Gervais                                        (93310)
+                                    </a>
+                                                                <ul>
+                                                                    </ul>
+                            </li>
+                                            </ul>
+                            </div>
+            <div id="map" data-icon="icon-key" class="tabs-panel map" data-aos="fade-up" data-aos-delay="100"></div>
+        </div>
+    </div>
+</div>
+    <div class="grid-container">
+        <section class="news-listing">
+            <p class="title-h2 center" data-aos="fade-up">
+                Derniers articles            </p>
+            <div class="news-listing-carousel slick" id="news-listing-carousel">
+                                                                        <article class="news-listing-item nofollow" data-aos="fade-up" data-aos-delay="100">
+                        <div class="image">
+                            <picture ><source srcset="&#x2F;img&#x2F;actualites&#x2F;960x640&#x2F;guide-complet-pour-linstallation-de-la-plomberie-dans-une-cuisine-evier-robinet-lave-vaisselle.jpg" media="&#x28;min-width&#x3A;&#x20;769px&#x29;" /><source srcset="&#x2F;img&#x2F;actualites&#x2F;768x522&#x2F;guide-complet-pour-linstallation-de-la-plomberie-dans-une-cuisine-evier-robinet-lave-vaisselle.jpg" media="&#x28;min-width&#x3A;&#x20;641px&#x29;" /><source srcset="&#x2F;img&#x2F;actualites&#x2F;540x360&#x2F;guide-complet-pour-linstallation-de-la-plomberie-dans-une-cuisine-evier-robinet-lave-vaisselle.jpg" /><img srcset="&#x2F;img&#x2F;actualites&#x2F;960x640&#x2F;guide-complet-pour-linstallation-de-la-plomberie-dans-une-cuisine-evier-robinet-lave-vaisselle.jpg" src="&#x2F;img&#x2F;actualites&#x2F;960x640&#x2F;guide-complet-pour-linstallation-de-la-plomberie-dans-une-cuisine-evier-robinet-lave-vaisselle.jpg" alt="&#xE9;vier&#x20;sur&#x20;un&#x20;&#xEE;lot&#x20;de&#x20;cuisine" /></picture>                        </div>
+                        <div class="news-listing-item-content">
+                            <p class="date">
+                                19 octobre 2026                            </p>
+                            <a href="/actualites/plombier/cuisine/guide-complet-pour-linstallation-de-la-plomberie-dans-une-cuisine-evier-robinet-lave-vaisselle" class="title">
+                                Guide complet pour l&#039;installation de la plomberie dans une cuisine : évier, robinet, lave-vaisselle...                            </a>
+                            <p>
+                                <p>Réussissez l'installation de votre plomberie de cuisine, en particulier en ce qui concerne l'évier et son évacuation pour une cuisine pleinement opérationnelle.</p>                            </p>
+                            <button class="news-listing-item-link">
+                                <span class="icon"></span>
+                                <span>Lire l'article</span>
+                            </button>
+                        </div>
+                    </article>
+                                                        <article class="news-listing-item nofollow" data-aos="fade-up" data-aos-delay="200">
+                        <div class="image">
+                            <picture ><source srcset="&#x2F;img&#x2F;actualites&#x2F;960x640&#x2F;07-10-26-guide-complet-chasse-deau-mecanismes-pannes-reparations.jpg" media="&#x28;min-width&#x3A;&#x20;769px&#x29;" /><source srcset="&#x2F;img&#x2F;actualites&#x2F;768x522&#x2F;07-10-26-guide-complet-chasse-deau-mecanismes-pannes-reparations.jpg" media="&#x28;min-width&#x3A;&#x20;641px&#x29;" /><source srcset="&#x2F;img&#x2F;actualites&#x2F;540x360&#x2F;07-10-26-guide-complet-chasse-deau-mecanismes-pannes-reparations.jpg" /><img srcset="&#x2F;img&#x2F;actualites&#x2F;960x640&#x2F;07-10-26-guide-complet-chasse-deau-mecanismes-pannes-reparations.jpg" src="&#x2F;img&#x2F;actualites&#x2F;960x640&#x2F;07-10-26-guide-complet-chasse-deau-mecanismes-pannes-reparations.jpg" alt="WC&#x20;avec&#x20;plaque&#x20;de&#x20;commande&#x20;de&#x20;chasse&#x20;d&#x27;eau" /></picture>                        </div>
+                        <div class="news-listing-item-content">
+                            <p class="date">
+                                7 octobre 2026                            </p>
+                            <a href="/actualites/plombier/wc/mecanisme-de-chasse-deau-guide-complet-fonctionnement-pannes-et-reparations" class="title">
+                                Mécanisme de chasse d&#039;eau : guide complet  fonctionnement, pannes et réparations                            </a>
+                            <p>
+                                <p>Comment résoudre une panne de chasse d’eau ? Identifiez le mécanisme WC en cause et découvrez comment réparer les problèmes courants de plomberie.</p>                            </p>
+                            <button class="news-listing-item-link">
+                                <span class="icon"></span>
+                                <span>Lire l'article</span>
+                            </button>
+                        </div>
+                    </article>
+                                                        <article class="news-listing-item nofollow" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image">
+                            <picture ><source srcset="&#x2F;img&#x2F;actualites&#x2F;960x640&#x2F;comment-choisir-son-wc-a-poser-ou-suspendu.jpg" media="&#x28;min-width&#x3A;&#x20;769px&#x29;" /><source srcset="&#x2F;img&#x2F;actualites&#x2F;768x522&#x2F;comment-choisir-son-wc-a-poser-ou-suspendu.jpg" media="&#x28;min-width&#x3A;&#x20;641px&#x29;" /><source srcset="&#x2F;img&#x2F;actualites&#x2F;540x360&#x2F;comment-choisir-son-wc-a-poser-ou-suspendu.jpg" /><img srcset="&#x2F;img&#x2F;actualites&#x2F;960x640&#x2F;comment-choisir-son-wc-a-poser-ou-suspendu.jpg" src="&#x2F;img&#x2F;actualites&#x2F;960x640&#x2F;comment-choisir-son-wc-a-poser-ou-suspendu.jpg" alt="pose&#x20;d&#x27;un&#x20;wc&#x20;par&#x20;un&#x20;artisan" /></picture>                        </div>
+                        <div class="news-listing-item-content">
+                            <p class="date">
+                                2 septembre 2026                            </p>
+                            <a href="/actualites/plombier/wc/comment-choisir-son-wc-a-poser-ou-suspendu" class="title">
+                                Comment choisir son WC à poser ou suspendu ?                            </a>
+                            <p>
+                                <p>WC à poser ou WC suspendu ? Découvrez nos conseils pour choisir vos toilettes : installation, fixation, abattant, sans bride, sortie horizontale ou verticale.</p>                            </p>
+                            <button class="news-listing-item-link">
+                                <span class="icon"></span>
+                                <span>Lire l'article</span>
+                            </button>
+                        </div>
+                    </article>
+                            </div>
+        </section>
+    </div>
+<div class="grid-container">
+    <div class="join-us" data-aos="fade-up">
+        <p class="title-h2 center">Rejoignez-nous sur les réseaux sociaux</p>
+        <a href="/information/reseaux-sociaux" class="join-us-links">
+            <span class="social-btn fb"></span>
+            <span class="social-btn instagram"></span>
+        </a>
+    </div>
+</div>
+            </section>
+        </div>
+        <footer class="main-footer">
+    <div class="upper-footer-block">
+        <div class="upper-footer">
+            <div class="upper-footer-title">
+                                    <a class="upper-footer-title-xxxlarge" href="/actualites">Dernières actualités</a>
+                                <div class="upper-footer-title-xxxlarge show-for-xxxlarge">Artisans à la une</div>
+            </div>
+            <div class="upper-footer-container" data-aos="fade-up">
+                                                    <div class="upper-footer-content nofollow">
+                                                <div class="date" data-aos="fade-up" data-aos-delay="100">
+                            29 avril 2026                        </div>
+                        <a href="/actualites/facadiers/bardage-exterieur-moderne-quel-materiau-choisir-pour-votre-habitation" class="content">
+                            Bardage extérieur moderne : quel matériau choisir pour votre habitation ?                        </a>
+                    </div>
+                                    <div class="upper-footer-content nofollow">
+                                                <div class="date" data-aos="fade-up" data-aos-delay="200">
+                            9 septembre 2026                        </div>
+                        <a href="/actualites/charpentiers/realiser-un-diagnostic-charpente-a-quelle-frequence-et-par-qui" class="content">
+                            Réaliser un diagnostic charpente : à quelle fréquence et par qui ?                        </a>
+                    </div>
+                                                    <div class="upper-footer-gap"></div>
+                                <div class="upper-footer-title hide-for-xxxlarge">Artisans à la une</div>
+                                                    <div class="upper-footer-content nofollow">
+                        <div class="crafter-container">
+                            <div class="more">
+                                <img src="/static/1781773884/css/img/latest-crafter-default.png" alt="Hetier&#x20;Plomberie&#x20;Chauffage" />
+                            </div>
+                            <div class="crafter-block" data-aos="fade-up" data-aos-delay="100">
+                                <span class="crafter-name">
+                                    <a href="/ile-de-france/hetier-plomberie-chauffage">
+                                        Hetier Plomberie Chauffage                                    </a>
+                                </span>
+                                <span class="crafter-address">
+                                    10, Cité des Lilas                                    <br />
+                                    95870                                    Bezons                                </span>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="upper-footer-content nofollow">
+                        <div class="crafter-container">
+                            <div class="more">
+                                <img src="https://media.espace-aubade.fr/crafter/100x100/crafters/SP/S/V/SP_SV003/logo/SP_SV003.jpg" alt="SV&#x20;TRAVAUX" />
+                            </div>
+                            <div class="crafter-block" data-aos="fade-up" data-aos-delay="200">
+                                <span class="crafter-name">
+                                    <a href="/ile-de-france/sv-travaux">
+                                        SV TRAVAUX                                    </a>
+                                </span>
+                                <span class="crafter-address">
+                                    18 avenue du Maréchal Juin                                    <br />
+                                    78420                                    Carrières-sur-Seine                                </span>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <div class="lower-footer-block">
+        <div class="lower-footer-menu">
+            <ul class="navigation">
+    <li>
+        <a href="&#x2F;blog">Blog</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;faq">Foire aux questions</a>
+    </li>
+    <li>
+        <a href="&#x2F;contact">Contact</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;charte-qualite-guide-artisan">Charte Qualité Guide Artisan</a>
+    </li>
+</ul>            <a href="https://www.espace-aubade.fr/catalogue.html" target="_blank" class="footer-link-catalog">Recevez le catalogue Espace Aubade</a>
+        </div>
+        <div class="footer-crafter-appear">
+                <p class="crafter-appear-title">Apparaître sur Guide Artisan</p>
+                <p class="crafter-appear-text">Vous êtes plombier, chauffagiste, climaticien, électricien, carreleur ou artisan clé en main et souhaitez apparaître sur Guide Artisan&nbsp;?</p>
+                <a href="/vous-etes-un-pro">
+                    <div class="button">En savoir plus</div>
+                </a>
+        </div>
+        <div class="logos">
+            <div class="footer-logos-container">
+                <div class="footer-social">
+                    <div class="footer-social-title">Suivez Guide Artisan</div>
+                    <div class="footer-social-logos">
+                        <a href="https://www.instagram.com/guideartisan" target="_blank" rel="noopener noreferrer">
+                            <span id="instagram-footer-logo" class="social-btn instagram"></span>
+                        </a>
+                        <a href="https://www.facebook.com/GuideArtisan" target="_blank" rel="noopener noreferrer">
+                            <span id="facebook-footer-logo" class="social-btn fb"></span>
+                        </a>
+                    </div>
+                </div>
+                <a class="footer-logos" href="https://www.espace-aubade.fr" target="_blank">
+                    <img src="/static/1781773884/css/img/logo-aubade-blue.svg" alt="Espace Aubade spécialiste de la salle de bains" />
+                </a>
+                <a class="footer-logos" href="https://www.lesmateriaux.fr/" target="_blank">
+                    <img src="/static/1781773884/css/img/logo-materiaux.svg" alt="Les Matériaux, aménagement extérieur et intérieur" />
+                </a>
+            </div>
+        </div>
+        <div class="footer-legal-links">
+            <ul class="navigation">
+    <li>
+        <a class="footer-link-separator" href="&#x2F;plan-du-site">Plan du site</a>
+    </li>
+    <li>
+        <a class="footer-link-separator" href="&#x2F;information&#x2F;mentions-legales">Mentions légales</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;politique-de-confidentialite">Politique de confidentialité</a>
+    </li>
+</ul>        </div>
+    </div>
+    <a href="#page-top" class="return-top-btn" data-smooth-scroll></a>
+</footer>
+<script type="text/javascript">
+    //<!--
+    AOS.init({once: true});
+    //-->
+</script>
+<script type="text/javascript">
+    //<!--
+    var city = {"id":"39","slug":"seine-saint-denis","label":"Seine-Saint-Denis","code":"93","coordinates":{"latitude":"48.9","longitude":"2.4833"},"state":{"id":"9","slug":"ile-de-france","label":"\u00cele-de-France","coordinates":{"latitude":"48.5","longitude":"2.5"}}};
+    var job = {"id":"1","slug":"plombier","label":"Plombier","label_plural":"Plombiers"};
+    var allJobs = "0";
+    var crafters = [{"id":"SP_ET013","slug":"etpr-eur","label":"ETPR EUR","company":{"label":"ETPR EUR"},"address":{"street":"1B rue des Ormes","street2":null,"zip":"93160","city":"Noisy-le-Grand","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"06 23 70 39 44","fax":null,"cell":null},"coordinates":{"latitude":48.8468664,"longitude":2.5264764},"corporation":{"label":"Espace Aubade"}},{"id":"CR_PA160","slug":"panorama-deco","label":"Panorama Deco","company":{"label":"Panorama Deco"},"address":{"street":"29 Rue du Pilier","street2":null,"zip":"93300","city":"Aubervilliers","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"07 64 84 03 74","fax":null,"cell":null},"coordinates":{"latitude":48.90765851876,"longitude":2.3677666001333},"corporation":{"label":"Espace Aubade"}},{"id":"BM_RE032","slug":"renovation-moderne","label":"Renovation Moderne","company":{"label":"Renovation Moderne"},"address":{"street":"32 Rue Simone de Beauvoir","street2":null,"zip":"93130","city":"Noisy-le-Sec","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"07 83 74 66 51","fax":null,"cell":null},"coordinates":{"latitude":48.8809299,"longitude":2.4644515},"corporation":{"label":"Espace Aubade"}},{"id":"BM_SA155","slug":"sas-inacio","label":"SAS INACIO","company":{"label":"SAS INACIO"},"address":{"street":"39 Onzi\u00e8me Avenue","street2":null,"zip":"93290","city":"Tremblay-en-France","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"07 68 55 83 93","fax":null,"cell":null},"coordinates":{"latitude":48.9653735,"longitude":2.5727319},"corporation":{"label":"Espace Aubade"}},{"id":"CR_BA226","slug":"atelier-d3","label":"Atelier D3","company":{"label":"Atelier D3"},"address":{"street":"25-27 Avenue Marcel Dassault","street2":null,"zip":"93370","city":"Montfermeil","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"06 62 55 71 11","fax":null,"cell":"06 43 06 77 78"},"coordinates":{"latitude":48.9016327,"longitude":2.5820067},"corporation":{"label":"Espace Aubade"}},{"id":"NS_BA121","slug":"batimez","label":"Batimez","company":{"label":"Batimez"},"address":{"street":"Chemin de l'Abime Batiment G3","street2":"RESIDENCE CHATEAU DES PERRIERS","zip":"93370","city":"Montfermeil","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"06 17 54 66 24","fax":null,"cell":null},"coordinates":{"latitude":48.8993849,"longitude":2.5652404},"corporation":{"label":"Espace Aubade"}},{"id":"BM_AV008","slug":"avenir-deco","label":"AVENIR DECO","company":{"label":"AVENIR DECO"},"address":{"street":"6 Rue Berthier","street2":null,"zip":"93500","city":"Pantin","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"06 11 05 18 03","fax":null,"cell":null},"coordinates":{"latitude":48.9009678,"longitude":2.3921707},"corporation":{"label":"Espace Aubade"}},{"id":"BM_PA050","slug":"parten-air","label":"PARTEN'AIR","company":{"label":"PARTEN'AIR"},"address":{"street":"13 Allee d'Anjou","street2":null,"zip":"93330","city":"Neuilly-sur-Marne","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"06 68 77 01 02","fax":null,"cell":null},"coordinates":{"latitude":48.8672617,"longitude":2.5378429},"corporation":{"label":"Espace Aubade"}},{"id":"SP_SI124","slug":"simian-pere-et-fils","label":"SIMIAN PERE ET FILS","company":{"label":"SIMIAN PERE ET FILS"},"address":{"street":"36 rue Paul et Camille Thomoux","street2":null,"zip":"93330","city":"Neuilly-sur-Marne","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"01 43 08 10 11","fax":null,"cell":null},"coordinates":{"latitude":48.8590183,"longitude":2.5311036},"corporation":{"label":"Espace Aubade"}},{"id":"SP_DE184","slug":"ets-demerger","label":"Ets Demerger","company":{"label":"Ets Demerger"},"address":{"street":"21 Rue Florian","street2":null,"zip":"93220","city":"Gagny","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"01 43 81 22 27","fax":"01 43 81 61 16","cell":null},"coordinates":{"latitude":48.8837724,"longitude":2.5385301},"corporation":{"label":"Espace Aubade"}},{"id":"SP_GP007","slug":"gpc-concept","label":"GPC Concept","company":{"label":"GPC Concept"},"address":{"street":"43 rue Aristide Briand","street2":null,"zip":"93220","city":"Gagny","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"06 15 09 33 88","fax":null,"cell":null},"coordinates":{"latitude":48.879702,"longitude":2.5340906},"corporation":{"label":"Espace Aubade"}},{"id":"CH_JU006","slug":"julien-entreprise","label":"Julien entreprise","company":{"label":"Julien entreprise"},"address":{"street":"15 rue de Lille","street2":null,"zip":"93220","city":"Gagny","state":{"label":"\u00cele-de-France","slug":"ile-de-france"}},"phones":{"main":"06 09 79 69 46","fax":null,"cell":null},"coordinates":{"latitude":48.8672499,"longitude":2.5640414},"corporation":{"label":"Espace Aubade"}}];
+    var googleMapsApiKey = "AIzaSyD7h-161hkjNKqEWkozRMWmWJPgIwpVPfE";
+    //-->
+</script>    </body>
+</html>
