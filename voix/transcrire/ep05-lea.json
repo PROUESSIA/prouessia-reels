@@ -1,0 +1,142 @@
+[
+{
+"mot": "Bonsoir,",
+"debut": 0.0,
+"fin": 0.66
+},
+{
+"mot": "madame",
+"debut": 0.68,
+"fin": 0.88
+},
+{
+"mot": "Lefebvre.",
+"debut": 0.88,
+"fin": 1.38
+},
+{
+"mot": "Je",
+"debut": 1.76,
+"fin": 1.88
+},
+{
+"mot": "passe",
+"debut": 1.88,
+"fin": 2.02
+},
+{
+"mot": "pour",
+"debut": 2.02,
+"fin": 2.18
+},
+{
+"mot": "votre",
+"debut": 2.18,
+"fin": 2.32
+},
+{
+"mot": "tension,",
+"debut": 2.32,
+"fin": 2.7
+},
+{
+"mot": "comme",
+"debut": 2.86,
+"fin": 2.92
+},
+{
+"mot": "promis.",
+"debut": 2.92,
+"fin": 3.26
+},
+{
+"mot": "Ça",
+"debut": 4.08,
+"fin": 4.2
+},
+{
+"mot": "coûte",
+"debut": 4.2,
+"fin": 4.4
+},
+{
+"mot": "combien",
+"debut": 4.4,
+"fin": 4.68
+},
+{
+"mot": "?",
+"debut": 4.68,
+"fin": 5.54
+},
+{
+"mot": "Il",
+"debut": 5.54,
+"fin": 5.82
+},
+{
+"mot": "a",
+"debut": 5.82,
+"fin": 5.94
+},
+{
+"mot": "tout",
+"debut": 5.94,
+"fin": 6.06
+},
+{
+"mot": "dit,",
+"debut": 6.06,
+"fin": 6.26
+},
+{
+"mot": "et",
+"debut": 6.96,
+"fin": 7.04
+},
+{
+"mot": "j",
+"debut": 7.04,
+"fin": 7.14
+},
+{
+"mot": "'ai",
+"debut": 7.14,
+"fin": 7.2
+},
+{
+"mot": "tout",
+"debut": 7.2,
+"fin": 7.3
+},
+{
+"mot": "enregistré.",
+"debut": 7.3,
+"fin": 7.86
+},
+{
+"mot": "Dumas,",
+"debut": 8.84,
+"fin": 9.24
+},
+{
+"mot": "c",
+"debut": 10.06,
+"fin": 10.06
+},
+{
+"mot": "'est",
+"debut": 10.06,
+"fin": 10.38
+},
+{
+"mot": "ma",
+"debut": 10.38,
+"fin": 10.48
+},
+{
+"mot": "mère.",
+"debut": 10.48,
+"fin": 10.68
+}
+]

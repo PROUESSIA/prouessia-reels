@@ -1,10 +1,9 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-voix/transcrire/17.wav 82
-voix/transcrire/18.wav 82
-voix/transcrire/19.wav 58
-voix/transcrire/20.wav 77
-voix/transcrire/21.wav 63
-voix/transcrire/ep04-julien.wav 25
-voix/transcrire/ep04-lea.wav 38
-voix/transcrire/ep04-lefevre.wav 50
-voix/transcrire/ep04-rocher.wav 24
+voix/transcrire/22.wav 71
+voix/transcrire/23.wav 66
+voix/transcrire/24.wav 65
+voix/transcrire/ep05-julien.wav 14
+voix/transcrire/ep05-lea.wav 28
+voix/transcrire/ep05-lefevre.wav 9
+voix/transcrire/ep05-theo.wav 37
+voix/transcrire/ep05-vasseur.wav 65

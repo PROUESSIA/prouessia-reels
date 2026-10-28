@@ -1,0 +1,357 @@
+[
+{
+"mot": "Le",
+"debut": 0.0,
+"fin": 0.44
+},
+{
+"mot": "devis",
+"debut": 0.44,
+"fin": 0.68
+},
+{
+"mot": "fait",
+"debut": 0.68,
+"fin": 0.84
+},
+{
+"mot": "chez",
+"debut": 0.84,
+"fin": 0.94
+},
+{
+"mot": "le",
+"debut": 0.94,
+"fin": 1.0
+},
+{
+"mot": "client,",
+"debut": 1.0,
+"fin": 1.22
+},
+{
+"mot": "pas",
+"debut": 1.44,
+"fin": 1.52
+},
+{
+"mot": "au",
+"debut": 1.52,
+"fin": 1.6
+},
+{
+"mot": "bureau.",
+"debut": 1.6,
+"fin": 1.76
+},
+{
+"mot": "Vous",
+"debut": 2.52,
+"fin": 2.7
+},
+{
+"mot": "avez",
+"debut": 2.7,
+"fin": 2.86
+},
+{
+"mot": "tout",
+"debut": 2.86,
+"fin": 3.02
+},
+{
+"mot": "vu,",
+"debut": 3.02,
+"fin": 3.26
+},
+{
+"mot": "vous",
+"debut": 3.56,
+"fin": 3.66
+},
+{
+"mot": "dites,",
+"debut": 3.66,
+"fin": 3.88
+},
+{
+"mot": "je",
+"debut": 4.06,
+"fin": 4.32
+},
+{
+"mot": "vous",
+"debut": 4.32,
+"fin": 4.44
+},
+{
+"mot": "envoie",
+"debut": 4.44,
+"fin": 4.66
+},
+{
+"mot": "ça.",
+"debut": 4.66,
+"fin": 4.86
+},
+{
+"mot": "Le",
+"debut": 5.32,
+"fin": 5.48
+},
+{
+"mot": "soir,",
+"debut": 5.48,
+"fin": 5.68
+},
+{
+"mot": "vous",
+"debut": 5.84,
+"fin": 5.92
+},
+{
+"mot": "oubliez",
+"debut": 5.92,
+"fin": 6.16
+},
+{
+"mot": "un",
+"debut": 6.16,
+"fin": 6.24
+},
+{
+"mot": "détail.",
+"debut": 6.24,
+"fin": 6.56
+},
+{
+"mot": "Le",
+"debut": 7.2,
+"fin": 7.48
+},
+{
+"mot": "lendemain,",
+"debut": 7.48,
+"fin": 7.82
+},
+{
+"mot": "il",
+"debut": 8.02,
+"fin": 8.14
+},
+{
+"mot": "a",
+"debut": 8.14,
+"fin": 8.22
+},
+{
+"mot": "un",
+"debut": 8.22,
+"fin": 8.32
+},
+{
+"mot": "autre",
+"debut": 8.32,
+"fin": 8.42
+},
+{
+"mot": "devis.",
+"debut": 8.42,
+"fin": 8.68
+},
+{
+"mot": "Avec",
+"debut": 9.48,
+"fin": 9.64
+},
+{
+"mot": "Prohécia,",
+"debut": 9.64,
+"fin": 9.98
+},
+{
+"mot": "vous",
+"debut": 10.06,
+"fin": 10.14
+},
+{
+"mot": "le",
+"debut": 10.14,
+"fin": 10.18
+},
+{
+"mot": "faites",
+"debut": 10.18,
+"fin": 10.26
+},
+{
+"mot": "sur",
+"debut": 10.26,
+"fin": 10.4
+},
+{
+"mot": "place.",
+"debut": 10.4,
+"fin": 10.62
+},
+{
+"mot": "Accroupis",
+"debut": 11.2,
+"fin": 11.5
+},
+{
+"mot": "sous",
+"debut": 11.5,
+"fin": 11.62
+},
+{
+"mot": "les",
+"debut": 11.62,
+"fin": 11.7
+},
+{
+"mot": "vieilles.",
+"debut": 11.7,
+"fin": 11.94
+},
+{
+"mot": "Le",
+"debut": 12.32,
+"fin": 12.4
+},
+{
+"mot": "téléphone",
+"debut": 12.4,
+"fin": 12.68
+},
+{
+"mot": "sur",
+"debut": 12.68,
+"fin": 12.86
+},
+{
+"mot": "la",
+"debut": 12.86,
+"fin": 12.96
+},
+{
+"mot": "caissauti.",
+"debut": 12.96,
+"fin": 13.36
+},
+{
+"mot": "Un",
+"debut": 14.02,
+"fin": 14.2
+},
+{
+"mot": "clic",
+"debut": 14.2,
+"fin": 14.34
+},
+{
+"mot": "et",
+"debut": 14.34,
+"fin": 14.9
+},
+{
+"mot": "il",
+"debut": 14.9,
+"fin": 14.96
+},
+{
+"mot": "part",
+"debut": 14.96,
+"fin": 15.06
+},
+{
+"mot": "par",
+"debut": 15.06,
+"fin": 15.2
+},
+{
+"mot": "mail.",
+"debut": 15.2,
+"fin": 15.38
+},
+{
+"mot": "Et",
+"debut": 16.3,
+"fin": 16.38
+},
+{
+"mot": "vous,",
+"debut": 16.38,
+"fin": 16.5
+},
+{
+"mot": "vos",
+"debut": 16.62,
+"fin": 16.7
+},
+{
+"mot": "devis,",
+"debut": 16.7,
+"fin": 16.88
+},
+{
+"mot": "vous",
+"debut": 16.96,
+"fin": 16.98
+},
+{
+"mot": "les",
+"debut": 16.98,
+"fin": 17.06
+},
+{
+"mot": "faites",
+"debut": 17.06,
+"fin": 17.18
+},
+{
+"mot": "où",
+"debut": 17.18,
+"fin": 17.38
+},
+{
+"mot": "?",
+"debut": 17.38,
+"fin": 17.88
+},
+{
+"mot": "Prohécia,",
+"debut": 17.88,
+"fin": 18.42
+},
+{
+"mot": "le",
+"debut": 18.5,
+"fin": 18.52
+},
+{
+"mot": "partenaire",
+"debut": 18.52,
+"fin": 18.84
+},
+{
+"mot": "des",
+"debut": 18.84,
+"fin": 18.9
+},
+{
+"mot": "plombiers.",
+"debut": 18.9,
+"fin": 19.18
+},
+{
+"mot": "Prohécia",
+"debut": 19.56,
+"fin": 19.9
+},
+{
+"mot": ".fr",
+"debut": 19.9,
+"fin": 20.2
+}
+]

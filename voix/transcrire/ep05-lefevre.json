@@ -1,0 +1,47 @@
+[
+{
+"mot": "Entrez,",
+"debut": 0.0,
+"fin": 0.94
+},
+{
+"mot": "ma",
+"debut": 1.04,
+"fin": 1.18
+},
+{
+"mot": "petite.",
+"debut": 1.18,
+"fin": 1.7
+},
+{
+"mot": "Monsieur",
+"debut": 2.38,
+"fin": 2.86
+},
+{
+"mot": "Vasseur",
+"debut": 2.86,
+"fin": 3.34
+},
+{
+"mot": "ne",
+"debut": 3.34,
+"fin": 3.46
+},
+{
+"mot": "va",
+"debut": 3.46,
+"fin": 3.6
+},
+{
+"mot": "pas",
+"debut": 3.6,
+"fin": 3.76
+},
+{
+"mot": "tarder.",
+"debut": 3.76,
+"fin": 4.22
+}
+]

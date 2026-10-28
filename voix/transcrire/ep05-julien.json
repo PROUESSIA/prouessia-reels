@@ -1,0 +1,72 @@
+[
+{
+"mot": "Tu",
+"debut": 0.0,
+"fin": 0.42
+},
+{
+"mot": "voulais",
+"debut": 0.42,
+"fin": 0.58
+},
+{
+"mot": "du",
+"debut": 0.58,
+"fin": 0.72
+},
+{
+"mot": "concret,",
+"debut": 0.72,
+"fin": 1.06
+},
+{
+"mot": "Théo.",
+"debut": 1.2,
+"fin": 1.44
+},
+{
+"mot": "Ouvre",
+"debut": 2.14,
+"fin": 2.36
+},
+{
+"mot": "l",
+"debut": 2.36,
+"fin": 2.48
+},
+{
+"mot": "'œil.",
+"debut": 2.48,
+"fin": 2.64
+},
+{
+"mot": "Quelle",
+"debut": 3.66,
+"fin": 4.0
+},
+{
+"mot": "boîte,",
+"debut": 4.0,
+"fin": 4.28
+},
+{
+"mot": "Théo.",
+"debut": 4.34,
+"fin": 4.54
+},
+{
+"mot": "Quelle",
+"debut": 5.38,
+"fin": 5.82
+},
+{
+"mot": "boîte,",
+"debut": 5.82,
+"fin": 6.12
+},
+{
+"mot": "Théo.",
+"debut": 6.22,
+"fin": 6.44
+}
+]

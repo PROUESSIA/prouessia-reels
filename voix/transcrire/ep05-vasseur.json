@@ -1,0 +1,327 @@
+[
+{
+"mot": "Bonsoir,",
+"debut": 0.0,
+"fin": 0.8
+},
+{
+"mot": "mesdames.",
+"debut": 0.86,
+"fin": 1.16
+},
+{
+"mot": "Une",
+"debut": 2.24,
+"fin": 2.42
+},
+{
+"mot": "serrure",
+"debut": 2.42,
+"fin": 2.78
+},
+{
+"mot": "toute",
+"debut": 2.78,
+"fin": 2.98
+},
+{
+"mot": "neuve",
+"debut": 2.98,
+"fin": 3.42
+},
+{
+"mot": "pour",
+"debut": 3.42,
+"fin": 3.94
+},
+{
+"mot": "votre",
+"debut": 3.94,
+"fin": 4.16
+},
+{
+"mot": "sécurité.",
+"debut": 4.16,
+"fin": 4.64
+},
+{
+"mot": "À",
+"debut": 5.6,
+"fin": 5.88
+},
+{
+"mot": "la",
+"debut": 5.88,
+"fin": 5.96
+},
+{
+"mot": "dernière",
+"debut": 5.96,
+"fin": 6.18
+},
+{
+"mot": "réplique,",
+"debut": 6.18,
+"fin": 6.62
+},
+{
+"mot": "une",
+"debut": 7.08,
+"fin": 7.26
+},
+{
+"mot": "menace",
+"debut": 7.26,
+"fin": 7.54
+},
+{
+"mot": "douce,",
+"debut": 7.54,
+"fin": 8.1
+},
+{
+"mot": "lente,",
+"debut": 8.7,
+"fin": 8.92
+},
+{
+"mot": "presque",
+"debut": 9.66,
+"fin": 9.84
+},
+{
+"mot": "souriante.",
+"debut": 9.84,
+"fin": 10.4
+},
+{
+"mot": "Une",
+"debut": 11.44,
+"fin": 11.6
+},
+{
+"mot": "vraie",
+"debut": 11.6,
+"fin": 11.82
+},
+{
+"mot": "pose",
+"debut": 11.82,
+"fin": 12.04
+},
+{
+"mot": "d",
+"debut": 12.04,
+"fin": 12.18
+},
+{
+"mot": "'une",
+"debut": 12.18,
+"fin": 12.24
+},
+{
+"mot": "seconde",
+"debut": 12.24,
+"fin": 12.58
+},
+{
+"mot": "entre",
+"debut": 12.58,
+"fin": 12.74
+},
+{
+"mot": "chaque",
+"debut": 12.74,
+"fin": 12.94
+},
+{
+"mot": "réplique.",
+"debut": 12.94,
+"fin": 13.26
+},
+{
+"mot": "Bonsoir,",
+"debut": 14.9,
+"fin": 15.48
+},
+{
+"mot": "mesdames.",
+"debut": 15.52,
+"fin": 15.84
+},
+{
+"mot": "Une",
+"debut": 16.62,
+"fin": 16.76
+},
+{
+"mot": "serrure",
+"debut": 16.76,
+"fin": 17.16
+},
+{
+"mot": "toute",
+"debut": 17.16,
+"fin": 17.38
+},
+{
+"mot": "neuve",
+"debut": 17.38,
+"fin": 17.8
+},
+{
+"mot": "pour",
+"debut": 17.8,
+"fin": 18.32
+},
+{
+"mot": "votre",
+"debut": 18.32,
+"fin": 18.54
+},
+{
+"mot": "sécurité.",
+"debut": 18.54,
+"fin": 19.04
+},
+{
+"mot": "Une",
+"debut": 20.32,
+"fin": 20.74
+},
+{
+"mot": "petite",
+"debut": 20.74,
+"fin": 20.94
+},
+{
+"mot": "signature",
+"debut": 20.94,
+"fin": 21.24
+},
+{
+"mot": "là",
+"debut": 21.24,
+"fin": 21.58
+},
+{
+"mot": "?",
+"debut": 21.58,
+"fin": 22.3
+},
+{
+"mot": "C",
+"debut": 22.3,
+"fin": 22.84
+},
+{
+"mot": "'est",
+"debut": 22.84,
+"fin": 22.88
+},
+{
+"mot": "pour",
+"debut": 22.88,
+"fin": 23.0
+},
+{
+"mot": "votre",
+"debut": 23.0,
+"fin": 23.2
+},
+{
+"mot": "tranquillité.",
+"debut": 23.2,
+"fin": 23.76
+},
+{
+"mot": "Ne",
+"debut": 24.52,
+"fin": 25.1
+},
+{
+"mot": "vous",
+"debut": 25.1,
+"fin": 25.22
+},
+{
+"mot": "occupez",
+"debut": 25.22,
+"fin": 25.46
+},
+{
+"mot": "pas",
+"debut": 25.46,
+"fin": 25.64
+},
+{
+"mot": "de",
+"debut": 25.64,
+"fin": 25.7
+},
+{
+"mot": "ça,",
+"debut": 25.7,
+"fin": 25.82
+},
+{
+"mot": "c",
+"debut": 26.26,
+"fin": 26.36
+},
+{
+"mot": "'est",
+"debut": 26.36,
+"fin": 26.4
+},
+{
+"mot": "prélevé",
+"debut": 26.4,
+"fin": 26.64
+},
+{
+"mot": "tout",
+"debut": 26.64,
+"fin": 26.78
+},
+{
+"mot": "seul.",
+"debut": 26.78,
+"fin": 26.96
+},
+{
+"mot": "Vous",
+"debut": 27.84,
+"fin": 28.3
+},
+{
+"mot": "saluerez",
+"debut": 28.3,
+"fin": 28.66
+},
+{
+"mot": "Monsieur",
+"debut": 28.66,
+"fin": 28.88
+},
+{
+"mot": "Moral",
+"debut": 28.88,
+"fin": 29.14
+},
+{
+"mot": "de",
+"debut": 29.14,
+"fin": 29.24
+},
+{
+"mot": "ma",
+"debut": 29.24,
+"fin": 29.34
+},
+{
+"mot": "part.",
+"debut": 29.34,
+"fin": 29.58
+}
+]

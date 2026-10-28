@@ -1,0 +1,332 @@
+[
+{
+"mot": "POV,",
+"debut": 0.0,
+"fin": 0.76
+},
+{
+"mot": "vous",
+"debut": 1.0,
+"fin": 1.16
+},
+{
+"mot": "êtes",
+"debut": 1.16,
+"fin": 1.32
+},
+{
+"mot": "en",
+"debut": 1.32,
+"fin": 1.42
+},
+{
+"mot": "plein",
+"debut": 1.42,
+"fin": 1.66
+},
+{
+"mot": "de",
+"debut": 1.66,
+"fin": 1.82
+},
+{
+"mot": "vie,",
+"debut": 1.82,
+"fin": 2.02
+},
+{
+"mot": "et",
+"debut": 2.38,
+"fin": 2.56
+},
+{
+"mot": "le",
+"debut": 2.56,
+"fin": 2.66
+},
+{
+"mot": "téléphone",
+"debut": 2.66,
+"fin": 2.9
+},
+{
+"mot": "sonne.",
+"debut": 2.9,
+"fin": 3.58
+},
+{
+"mot": "Un",
+"debut": 3.78,
+"fin": 3.9
+},
+{
+"mot": "client,",
+"debut": 3.9,
+"fin": 4.1
+},
+{
+"mot": "une",
+"debut": 4.52,
+"fin": 4.64
+},
+{
+"mot": "urgence,",
+"debut": 4.64,
+"fin": 5.08
+},
+{
+"mot": "vous",
+"debut": 5.52,
+"fin": 5.72
+},
+{
+"mot": "décrochez.",
+"debut": 5.72,
+"fin": 6.12
+},
+{
+"mot": "20",
+"debut": 6.82,
+"fin": 7.12
+},
+{
+"mot": "000",
+"debut": 7.12,
+"fin": 7.28
+},
+{
+"mot": "plus",
+"debut": 7.28,
+"fin": 7.44
+},
+{
+"mot": "tard,",
+"debut": 7.44,
+"fin": 7.7
+},
+{
+"mot": "le",
+"debut": 8.12,
+"fin": 8.22
+},
+{
+"mot": "devis,",
+"debut": 8.22,
+"fin": 8.44
+},
+{
+"mot": "disparu.",
+"debut": 8.92,
+"fin": 9.38
+},
+{
+"mot": "Vous",
+"debut": 10.02,
+"fin": 10.2
+},
+{
+"mot": "recommencez",
+"debut": 10.2,
+"fin": 10.64
+},
+{
+"mot": "tout.",
+"debut": 10.64,
+"fin": 10.8
+},
+{
+"mot": "Et",
+"debut": 11.36,
+"fin": 11.58
+},
+{
+"mot": "le",
+"debut": 11.58,
+"fin": 11.8
+},
+{
+"mot": "téléphone",
+"debut": 11.8,
+"fin": 12.08
+},
+{
+"mot": "sonne",
+"debut": 12.08,
+"fin": 12.36
+},
+{
+"mot": "encore.",
+"debut": 12.36,
+"fin": 12.52
+},
+{
+"mot": "Avec",
+"debut": 13.32,
+"fin": 13.52
+},
+{
+"mot": "Prohécia,",
+"debut": 13.52,
+"fin": 13.94
+},
+{
+"mot": "le",
+"debut": 14.38,
+"fin": 14.58
+},
+{
+"mot": "brouillon",
+"debut": 14.58,
+"fin": 14.82
+},
+{
+"mot": "est",
+"debut": 14.82,
+"fin": 14.92
+},
+{
+"mot": "gardé.",
+"debut": 14.92,
+"fin": 15.22
+},
+{
+"mot": "Vous",
+"debut": 15.76,
+"fin": 15.94
+},
+{
+"mot": "revenez,",
+"debut": 15.94,
+"fin": 16.24
+},
+{
+"mot": "tout",
+"debut": 16.56,
+"fin": 16.64
+},
+{
+"mot": "est",
+"debut": 16.64,
+"fin": 16.78
+},
+{
+"mot": "là.",
+"debut": 16.78,
+"fin": 16.88
+},
+{
+"mot": "Vous",
+"debut": 17.36,
+"fin": 17.44
+},
+{
+"mot": "finissez",
+"debut": 17.44,
+"fin": 17.84
+},
+{
+"mot": "là",
+"debut": 17.84,
+"fin": 18.22
+},
+{
+"mot": "où",
+"debut": 18.22,
+"fin": 18.28
+},
+{
+"mot": "vous",
+"debut": 18.28,
+"fin": 18.42
+},
+{
+"mot": "étiez.",
+"debut": 18.42,
+"fin": 18.62
+},
+{
+"mot": "Et",
+"debut": 19.48,
+"fin": 19.58
+},
+{
+"mot": "vous,",
+"debut": 19.58,
+"fin": 19.68
+},
+{
+"mot": "un",
+"debut": 20.14,
+"fin": 20.22
+},
+{
+"mot": "devis",
+"debut": 20.22,
+"fin": 20.42
+},
+{
+"mot": "perdu,",
+"debut": 20.42,
+"fin": 20.62
+},
+{
+"mot": "ça",
+"debut": 20.96,
+"fin": 21.04
+},
+{
+"mot": "vous",
+"debut": 21.04,
+"fin": 21.14
+},
+{
+"mot": "est",
+"debut": 21.14,
+"fin": 21.22
+},
+{
+"mot": "arrivé",
+"debut": 21.22,
+"fin": 21.42
+},
+{
+"mot": "?",
+"debut": 21.42,
+"fin": 22.04
+},
+{
+"mot": "Prohécia,",
+"debut": 22.04,
+"fin": 22.66
+},
+{
+"mot": "le",
+"debut": 22.94,
+"fin": 23.02
+},
+{
+"mot": "partenaire",
+"debut": 23.02,
+"fin": 23.44
+},
+{
+"mot": "des",
+"debut": 23.44,
+"fin": 23.52
+},
+{
+"mot": "plombiers.",
+"debut": 23.52,
+"fin": 23.8
+},
+{
+"mot": "Prohécia",
+"debut": 24.38,
+"fin": 24.82
+},
+{
+"mot": ".fr",
+"debut": 24.82,
+"fin": 25.26
+}
+]

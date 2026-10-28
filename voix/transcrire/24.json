@@ -1,0 +1,327 @@
+[
+{
+"mot": "Les",
+"debut": 0.0,
+"fin": 0.34
+},
+{
+"mot": "clients",
+"debut": 0.34,
+"fin": 0.56
+},
+{
+"mot": "demandent",
+"debut": 0.56,
+"fin": 0.94
+},
+{
+"mot": "pourquoi",
+"debut": 0.94,
+"fin": 1.3
+},
+{
+"mot": "10",
+"debut": 1.3,
+"fin": 1.64
+},
+{
+"mot": "%",
+"debut": 1.64,
+"fin": 1.9
+},
+{
+"mot": "de",
+"debut": 1.9,
+"fin": 2.06
+},
+{
+"mot": "TVA",
+"debut": 2.06,
+"fin": 2.42
+},
+{
+"mot": "?",
+"debut": 2.42,
+"fin": 3.28
+},
+{
+"mot": "Entretien",
+"debut": 3.28,
+"fin": 3.7
+},
+{
+"mot": "ou",
+"debut": 3.7,
+"fin": 3.84
+},
+{
+"mot": "amélioration",
+"debut": 3.84,
+"fin": 4.42
+},
+{
+"mot": "?",
+"debut": 4.42,
+"fin": 4.84
+},
+{
+"mot": "Dans",
+"debut": 4.84,
+"fin": 5.08
+},
+{
+"mot": "un",
+"debut": 5.08,
+"fin": 5.22
+},
+{
+"mot": "logement",
+"debut": 5.22,
+"fin": 5.42
+},
+{
+"mot": "achevé",
+"debut": 5.42,
+"fin": 5.78
+},
+{
+"mot": "depuis",
+"debut": 5.78,
+"fin": 5.94
+},
+{
+"mot": "plus",
+"debut": 5.94,
+"fin": 6.18
+},
+{
+"mot": "de",
+"debut": 6.18,
+"fin": 6.3
+},
+{
+"mot": "2",
+"debut": 6.3,
+"fin": 6.5
+},
+{
+"mot": "ans,",
+"debut": 6.5,
+"fin": 6.64
+},
+{
+"mot": "c",
+"debut": 7.02,
+"fin": 7.1
+},
+{
+"mot": "'est",
+"debut": 7.1,
+"fin": 7.12
+},
+{
+"mot": "10%.",
+"debut": 7.12,
+"fin": 7.68
+},
+{
+"mot": "Rénovation",
+"debut": 7.68,
+"fin": 8.5
+},
+{
+"mot": "énergétique,",
+"debut": 8.5,
+"fin": 8.94
+},
+{
+"mot": "5",
+"debut": 9.3,
+"fin": 9.58
+},
+{
+"mot": ",5%.",
+"debut": 9.58,
+"fin": 10.64
+},
+{
+"mot": "Chaudière,",
+"debut": 10.64,
+"fin": 11.28
+},
+{
+"mot": "gaz",
+"debut": 11.44,
+"fin": 11.5
+},
+{
+"mot": "ou",
+"debut": 11.5,
+"fin": 11.74
+},
+{
+"mot": "fiole,",
+"debut": 11.74,
+"fin": 12.06
+},
+{
+"mot": "fournie",
+"debut": 12.18,
+"fin": 12.36
+},
+{
+"mot": "et",
+"debut": 12.36,
+"fin": 12.44
+},
+{
+"mot": "posée,",
+"debut": 12.44,
+"fin": 12.72
+},
+{
+"mot": "20%.",
+"debut": 13.0,
+"fin": 14.08
+},
+{
+"mot": "Avec",
+"debut": 14.08,
+"fin": 14.6
+},
+{
+"mot": "Proacia,",
+"debut": 14.6,
+"fin": 14.92
+},
+{
+"mot": "un",
+"debut": 15.12,
+"fin": 15.18
+},
+{
+"mot": "devis",
+"debut": 15.18,
+"fin": 15.34
+},
+{
+"mot": "lisible,",
+"debut": 15.34,
+"fin": 15.68
+},
+{
+"mot": "que",
+"debut": 16.0,
+"fin": 16.14
+},
+{
+"mot": "le",
+"debut": 16.14,
+"fin": 16.24
+},
+{
+"mot": "client",
+"debut": 16.24,
+"fin": 16.42
+},
+{
+"mot": "comprend",
+"debut": 16.42,
+"fin": 16.7
+},
+{
+"mot": "du",
+"debut": 16.7,
+"fin": 16.82
+},
+{
+"mot": "premier",
+"debut": 16.82,
+"fin": 17.02
+},
+{
+"mot": "coup.",
+"debut": 17.02,
+"fin": 17.18
+},
+{
+"mot": "Et",
+"debut": 18.02,
+"fin": 18.14
+},
+{
+"mot": "vous,",
+"debut": 18.14,
+"fin": 18.26
+},
+{
+"mot": "vos",
+"debut": 18.64,
+"fin": 18.76
+},
+{
+"mot": "clients,",
+"debut": 18.76,
+"fin": 19.0
+},
+{
+"mot": "ils",
+"debut": 19.16,
+"fin": 19.18
+},
+{
+"mot": "posent",
+"debut": 19.18,
+"fin": 19.34
+},
+{
+"mot": "la",
+"debut": 19.34,
+"fin": 19.42
+},
+{
+"mot": "question",
+"debut": 19.42,
+"fin": 19.58
+},
+{
+"mot": "?",
+"debut": 19.58,
+"fin": 20.32
+},
+{
+"mot": "Proacia,",
+"debut": 20.32,
+"fin": 20.8
+},
+{
+"mot": "le",
+"debut": 21.24,
+"fin": 21.32
+},
+{
+"mot": "partenaire",
+"debut": 21.32,
+"fin": 21.68
+},
+{
+"mot": "des",
+"debut": 21.68,
+"fin": 21.74
+},
+{
+"mot": "plombiers.",
+"debut": 21.74,
+"fin": 22.02
+},
+{
+"mot": "Proacia",
+"debut": 22.88,
+"fin": 23.28
+},
+{
+"mot": ".fr",
+"debut": 23.28,
+"fin": 23.74
+}
+]
