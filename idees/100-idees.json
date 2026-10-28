@@ -25,7 +25,7 @@
   "avantage": "Vos prestations enregistrées une fois",
   "accroche": "Vos tarifs, on les saisit une seule fois.",
   "images": "Liste de prestations qui défile, doigt qui en choisit trois",
-  "fait": false,
+  "fait": "2026-10-28 · 16",
   "captures": [
    "app:01-nouveau-devis",
    "app:02-prestations"
@@ -465,7 +465,7 @@
   "avantage": "Mains mouillées, pas de souci",
   "accroche": "Les mains pleines de joint? Parlez, ne tapez pas.",
   "images": "Mains pleines de pâte à joint, téléphone posé à côté",
-  "fait": false,
+  "fait": "2026-10-28 · 17",
   "captures": [
    "app:15-dictee-vocale"
   ]
@@ -769,7 +769,7 @@
   "avantage": "Une fiche par client",
   "accroche": "Chaque client a sa fiche, tout est dedans.",
   "images": "Fiches qui se classent comme des dossiers suspendus",
-  "fait": false,
+  "fait": "2026-10-28 · 18",
   "captures": [
    "app:21-fiches-clients"
   ]
