@@ -106,7 +106,12 @@ def voix(nn, fichier):
     for a, b in seg:
         # marges larges (la fin des mots est souvent sous-estimée) sans mordre sur la phrase voisine
         i = len(D); deb = max(0.0, a - .15, (seg[i - 1][1] + .02) if i else 0.0); fin = min(b + .4, (seg[i + 1][0] - .05) if i + 1 < len(seg) else len(x) / sr)
-        s = x[int(deb * sr):int(max(fin, b) * sr)]; out += [s, np.zeros(int(PAUSE * sr))]; D.append(round(len(s) / sr + PAUSE, 3))
+        s = x[int(deb * sr):int(max(fin, b) * sr)]
+        # on retire le silence au début et à la fin du morceau (seuil d'énergie), en gardant 60 ms d'air
+        w = int(.01 * sr); e = np.array([np.sqrt(np.mean(s[k:k + w] ** 2)) for k in range(0, len(s) - w, w)]) if len(s) > w else np.array([1.0])
+        voix_ = np.where(e > max(.012, e.max() * .04))[0]
+        if len(voix_): s = s[max(0, voix_[0] * w - int(.04 * sr)):min(len(s), (voix_[-1] + 1) * w + int(.06 * sr))]
+        out += [s, np.zeros(int(PAUSE * sr))]; D.append(round(len(s) / sr + PAUSE, 3))
     D[-1] += .8
     sf.write(os.path.join(d, 'voix.wav'), np.concatenate(out), sr); json.dump(D, open(os.path.join(d, 'durees.json'), 'w'))
     mots = sum(len(l.split()) for l in lignes); tot = sum(D)
