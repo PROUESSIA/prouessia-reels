@@ -194,6 +194,36 @@
    "sujet": "Sous pression · Épisode 4 — Le contrat",
    "ton": "Gemini Orus / Aoede / Vindemiatrix / Gacrux",
    "note": "Rendu le 28/10 (55,6 s, 7,6 Mo), ajouté pour 17:00Z, à valider"
+  },
+  {
+   "n": "reel-19",
+   "reel": "19",
+   "style": "vécu",
+   "date": "2026-10-29",
+   "heure": "09:00",
+   "sujet": "Idée 4 · Total calculé tout seul",
+   "ton": "Charon",
+   "note": "Ajouté le 28/10, à valider"
+  },
+  {
+   "n": "reel-20",
+   "reel": "20",
+   "style": "POV",
+   "date": "2026-10-29",
+   "heure": "12:30",
+   "sujet": "Idée 77 · Notes sur chaque client (code du portail)",
+   "ton": "Charon",
+   "note": "Ajouté le 28/10, à valider"
+  },
+  {
+   "n": "reel-21",
+   "reel": "21",
+   "style": "carte",
+   "date": "2026-10-29",
+   "heure": "20:30",
+   "sujet": "Délai d'intervention : sans date, 30 jours maximum · idée 21",
+   "ton": "Charon",
+   "note": "Ajouté le 28/10, à valider"
   }
  ],
  "prochain_numero_dossier": 25,

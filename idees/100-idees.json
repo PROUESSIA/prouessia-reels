@@ -37,7 +37,7 @@
   "avantage": "Total calculé tout seul",
   "accroche": "Zéro calculette: HT, TVA, total, tout est calculé.",
   "images": "Calculette poussée du plan de travail, montant qui s'affiche",
-  "fait": false,
+  "fait": "2026-10-29 · 19",
   "captures": [
    "app:01-nouveau-devis"
   ]
@@ -237,7 +237,7 @@
   "avantage": "Signature au doigt sur téléphone",
   "accroche": "Votre client signe le devis avec son doigt.",
   "images": "Doigt qui trace une signature sur l'écran, salle de bain en chantier derrière",
-  "fait": false,
+  "fait": "2026-10-29 · 21",
   "captures": [
    "app:07-signature-doigt"
   ]
@@ -835,7 +835,7 @@
   "avantage": "Notes sur chaque client",
   "accroche": "Code du portail, chien méchant: tout est noté.",
   "images": "Note qui s'écrit sur une fiche, grille de portail en arrière-plan",
-  "fait": false,
+  "fait": "2026-10-29 · 20",
   "captures": [
    "app:21-fiches-clients"
   ]
