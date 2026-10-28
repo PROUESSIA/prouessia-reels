@@ -16,32 +16,6 @@
  "fond": "tension",
  "volume_fond": 0.34,
  "segments": {
-  "vasseur": [
-   [
-    0.05,
-    2.37
-   ],
-   [
-    3.51,
-    6.69
-   ],
-   [
-    7.44,
-    10.43
-   ],
-   [
-    11.62,
-    12.43
-   ],
-   [
-    13.2,
-    15.12
-   ],
-   [
-    15.94,
-    22.66
-   ]
-  ],
   "julien": [
    [
     0.3,
@@ -54,80 +28,28 @@
    [
     6.18,
     8.35
-   ],
-   [
-    9.0,
-    10.3
-   ]
-  ],
-  "rocher": [
-   [
-    0.05,
-    3.81
-   ],
-   [
-    5.24,
-    9.07
-   ],
-   [
-    9.74,
-    12.28
-   ],
-   [
-    12.7,
-    19.23
-   ],
-   [
-    19.41,
-    20.79
-   ]
-  ],
-  "policier": [
-   [
-    0.05,
-    1.96
-   ],
-   [
-    3.03,
-    4.96
-   ],
-   [
-    6.27,
-    8.15
-   ],
-   [
-    8.9,
-    21.14
    ]
   ]
  },
  "textes": {
-  "vasseur": [
-   "Je pourrais vous poser la même question, Morel.",
-   "Je passais vérifier votre robinet, madame. Heureusement.",
-   "Messieurs, cet homme est entré chez ma cliente en pleine nuit.",
-   "Et je suis là, madame.",
-   "La prochaine, c'est madame Lefèvre.",
-   "Madame m'a confié sa clé, pour les urgences. C'est dans son contrat."
-  ],
   "julien": [
    "Vasseur. Qu'est-ce que vous faites là ?",
    "Il ment. C'est lui qui a ouvert l'eau.",
-   "Moi. Quelqu'un est entré chez madame.",
-   "Madame, c'est vous qui m'avez appelé !"
+   "Moi. Quelqu'un est entré chez madame."
+  ],
+  "vasseur": [
+   "Je pourrais vous poser la même question, Morel.",
+   "Votre voisine a appelé mon numéro d'urgence, madame : l'eau passait sous votre porte. La clé était sur la serrure. Je suis entré couper l'eau.",
+   "La prochaine, c'est madame Lefèvre."
   ],
   "rocher": [
    "Monsieur Vasseur ? Vous êtes venu pour la fuite ?",
-   "Monsieur Vasseur, oui. Lui… je ne l'ai jamais vu.",
-   "J'ai appelé… un plombier.",
-   "Monsieur Morel, oui, je l'ai appelé. Mais lui… je ne sais pas comment il est entré.",
-   "J'ai signé… ça ?"
+   "Monsieur Morel, oui, je l'ai appelé. Et monsieur Vasseur… c'est mon plombier."
   ],
   "policier": [
    "Police ! Qui nous a appelés ?",
    "Madame, vous connaissez ces messieurs ?",
-   "Monsieur Morel, vous allez nous suivre.",
-   "Pas d'effraction, un contrat signé : c'est un litige, pas un délit. Madame, si vous contestez, venez porter plainte demain. Messieurs, tout le monde dehors."
+   "Une fuite, la clé sur la porte, pas d'effraction. Monsieur Vasseur, vous avez fini ici : vous partez. Madame, si vous voulez, venez porter plainte demain."
   ]
  },
  "deroule": [
@@ -504,7 +426,7 @@
   },
   {
    "qui": "rocher",
-   "n": 3,
+   "n": 1,
    "pause": 0.3,
    "decor": "maison_rocher",
    "cam": [
@@ -541,91 +463,8 @@
    "gras": 3
   },
   {
-   "qui": "vasseur",
-   "n": 5,
-   "pause": 0.3,
-   "decor": "maison_rocher",
-   "cam": [
-    [
-     0.35,
-     1.66,
-     -1.25
-    ],
-    [
-     0.3,
-     1.65,
-     -1.1
-    ]
-   ],
-   "cible": [
-    [
-     -0.75,
-     1.6,
-     0.55
-    ],
-    [
-     -0.75,
-     1.6,
-     0.55
-    ]
-   ],
-   "ev": [
-    "v_dedans",
-    "lumiere",
-    "rocher",
-    "gyro",
-    "police"
-   ],
-   "gras": 1
-  },
-  {
-   "carte": "contrat",
-   "duree": 2.6,
-   "pause": 0,
-   "son": "frisson",
-   "volume": 0.5
-  },
-  {
-   "qui": "rocher",
-   "n": 4,
-   "pause": 0.3,
-   "decor": "maison_rocher",
-   "cam": [
-    [
-     0.15,
-     1.5,
-     0.05
-    ],
-    [
-     0.25,
-     1.5,
-     -0.05
-    ]
-   ],
-   "cible": [
-    [
-     1.55,
-     1.45,
-     -0.95
-    ],
-    [
-     1.55,
-     1.45,
-     -0.95
-    ]
-   ],
-   "ev": [
-    "v_dedans",
-    "lumiere",
-    "rocher",
-    "gyro",
-    "police"
-   ],
-   "gras": 1
-  },
-  {
    "qui": "policier",
-   "n": 3,
+   "n": 2,
    "pause": 0.3,
    "decor": "maison_rocher",
    "cam": [
@@ -698,7 +537,7 @@
   },
   {
    "qui": "vasseur",
-   "n": 4,
+   "n": 2,
    "pause": 0.3,
    "decor": "maison_rocher",
    "cam": [
