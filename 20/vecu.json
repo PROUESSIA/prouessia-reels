@@ -54,7 +54,7 @@
   },
   {
    "html": "Avec Prouessia, <b>tout est noté sur sa fiche</b>",
-   "clip": "app:21-fiches-clients",
+   "clip": "img:21-fiches-clients",
    "debut": 7.3,
    "cx": 0.5,
    "sens": -1,
@@ -70,7 +70,7 @@
   },
   {
    "html": "Vous ouvrez la fiche, <b>c'est là</b>",
-   "clip": "app:03-client-prerempli",
+   "clip": "img:extras/21-recherche-clients",
    "debut": 1.5,
    "cx": 0.5,
    "sens": -1,

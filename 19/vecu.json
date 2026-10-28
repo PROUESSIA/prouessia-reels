@@ -54,7 +54,7 @@
   },
   {
    "html": "Avec Prouessia, <b>HT, TVA, total</b>",
-   "clip": "app:07-signature-doigt",
+   "clip": "img:01-nouveau-devis",
    "debut": 0.3,
    "cx": 0.5,
    "sens": -1,
@@ -63,7 +63,7 @@
   },
   {
    "html": "<b>Tout est calculé</b>",
-   "clip": "app:04-apercu-devis",
+   "clip": "img:04-apercu-devis",
    "debut": 4.5,
    "cx": 0.5,
    "sens": 1,

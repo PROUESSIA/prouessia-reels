@@ -51,7 +51,7 @@
   },
   {
    "html": "Avec Prouessia, <b>chaque client a sa fiche</b>",
-   "clip": "app:03-client-prerempli",
+   "clip": "img:extras/21-liste-clients",
    "debut": 0.5,
    "cx": 0.5,
    "sens": 1,
@@ -60,7 +60,7 @@
   },
   {
    "html": "Ce que vous lui avez proposé, <b>en un coup d'œil</b>",
-   "clip": "app:21-fiches-clients",
+   "clip": "img:21-fiches-clients",
    "debut": 7.3,
    "cx": 0.5,
    "sens": -1,

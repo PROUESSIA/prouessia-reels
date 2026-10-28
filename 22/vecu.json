@@ -40,7 +40,7 @@
   },
   {
    "html": "Avec Prouessia, <b>vous le faites sur place</b>",
-   "clip": "app:01-nouveau-devis",
+   "clip": "img:01-nouveau-devis",
    "debut": 0.3,
    "cx": 0.5,
    "sens": -1,
@@ -63,7 +63,7 @@
   },
   {
    "html": "Un clic, <b>et il part par mail</b>",
-   "clip": "app:05-envoyer-devis",
+   "clip": "img:05-envoyer-devis",
    "debut": 8.0,
    "cx": 0.5,
    "sens": 1,

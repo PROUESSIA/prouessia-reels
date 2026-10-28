@@ -51,7 +51,7 @@
   },
   {
    "html": "Avec Prouessia, <b>le client signe au doigt</b>",
-   "clip": "app:07-signature-doigt",
+   "clip": "img:07-signature-doigt",
    "debut": 5.5,
    "cx": 0.5,
    "sens": 1,
@@ -60,7 +60,7 @@
   },
   {
    "html": "Et <b>un e-mail vous prévient</b>",
-   "clip": "app:09-notification-signature",
+   "clip": "img:09-notification-signature",
    "debut": 0.3,
    "cx": 0.5,
    "sens": -1,

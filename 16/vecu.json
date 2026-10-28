@@ -45,7 +45,7 @@
   },
   {
    "html": "Avec Prouessia, <b>vos prestations sont enregistrées une fois</b>",
-   "clip": "app:02-prestations",
+   "clip": "img:02-prestations",
    "debut": 0.3,
    "cx": 0.5,
    "sens": 1,
@@ -61,7 +61,7 @@
   },
   {
    "html": "Sur le devis, vous les choisissez <b>au toucher</b>",
-   "clip": "app:01-nouveau-devis",
+   "clip": "img:01-nouveau-devis",
    "debut": 4.0,
    "cx": 0.5,
    "sens": 1,
