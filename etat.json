@@ -234,6 +234,36 @@
    "sujet": "Sous pression · Épisode 5 — La serrure",
    "ton": "Gemini Puck / Orus / Aoede / Gacrux / Algenib",
    "note": "Rendu le 28/10 (49 s, 7,2 Mo, H.264 Main), ajouté pour le 29/10 17:00Z, à valider"
+  },
+  {
+   "n": "reel-22",
+   "reel": "22",
+   "style": "vécu",
+   "date": "2026-10-30",
+   "heure": "09:00",
+   "sujet": "Idée 6 · Le devis chez le client",
+   "ton": "Charon",
+   "note": "Ajouté le 29/10 (plan 5 remplacé : classeurs 221506), à valider"
+  },
+  {
+   "n": "reel-23",
+   "reel": "23",
+   "style": "POV",
+   "date": "2026-10-30",
+   "heure": "12:30",
+   "sujet": "Idée 46 · Brouillon sauvegardé",
+   "ton": "Charon",
+   "note": "Ajouté le 29/10 (plan 11 remplacé : étau 72544), à valider"
+  },
+  {
+   "n": "reel-24",
+   "reel": "24",
+   "style": "carte",
+   "date": "2026-10-30",
+   "heure": "20:30",
+   "sujet": "TVA 10 % / 5,5 % / 20 % · idée 53",
+   "ton": "Charon",
+   "note": "Ajouté le 29/10, à valider"
   }
  ],
  "prochain_numero_dossier": 25,

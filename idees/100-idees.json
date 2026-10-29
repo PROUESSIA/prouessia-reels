@@ -59,7 +59,7 @@
   "avantage": "Le devis chez le client",
   "accroche": "Le devis se fait chez le client, pas au bureau.",
   "images": "Plombier accroupi sous un évier, téléphone posé sur la boîte à outils",
-  "fait": false,
+  "fait": "2026-10-30 · 22",
   "captures": [
    "app:01-nouveau-devis"
   ]
@@ -507,7 +507,7 @@
   "avantage": "Brouillon sauvegardé automatiquement",
   "accroche": "Le téléphone sonne en plein devis? Vous retrouvez tout.",
   "images": "Appel entrant, retour à l'écran, devis intact",
-  "fait": false,
+  "fait": "2026-10-30 · 23",
   "captures": [
    "app:17-brouillon-retrouve"
   ]
@@ -581,7 +581,7 @@
   "avantage": "Un devis lisible",
   "accroche": "Un devis que le client comprend du premier coup.",
   "images": "Client qui lit le devis, hoche la tête, lignes surlignées une à une",
-  "fait": false,
+  "fait": "2026-10-30 · 24",
   "captures": [
    "app:04-apercu-devis"
   ]
