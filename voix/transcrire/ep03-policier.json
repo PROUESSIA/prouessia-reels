@@ -1,0 +1,187 @@
+[
+{
+"mot": "Police,",
+"debut": 0.0,
+"fin": 0.52
+},
+{
+"mot": "qui",
+"debut": 1.22,
+"fin": 1.7
+},
+{
+"mot": "nous",
+"debut": 1.7,
+"fin": 1.8
+},
+{
+"mot": "a",
+"debut": 1.8,
+"fin": 1.94
+},
+{
+"mot": "appelés.",
+"debut": 1.94,
+"fin": 2.18
+},
+{
+"mot": "Madame,",
+"debut": 3.14,
+"fin": 3.62
+},
+{
+"mot": "vous",
+"debut": 4.08,
+"fin": 4.18
+},
+{
+"mot": "connaissez",
+"debut": 4.18,
+"fin": 4.5
+},
+{
+"mot": "ces",
+"debut": 4.5,
+"fin": 4.64
+},
+{
+"mot": "messieurs",
+"debut": 4.64,
+"fin": 4.88
+},
+{
+"mot": "?",
+"debut": 4.88,
+"fin": 5.12
+},
+{
+"mot": "Une",
+"debut": 5.82,
+"fin": 6.04
+},
+{
+"mot": "fuite,",
+"debut": 6.04,
+"fin": 6.5
+},
+{
+"mot": "la",
+"debut": 7.02,
+"fin": 7.12
+},
+{
+"mot": "clé",
+"debut": 7.12,
+"fin": 7.3
+},
+{
+"mot": "sur",
+"debut": 7.3,
+"fin": 7.46
+},
+{
+"mot": "la",
+"debut": 7.46,
+"fin": 7.56
+},
+{
+"mot": "porte,",
+"debut": 7.56,
+"fin": 7.94
+},
+{
+"mot": "pas",
+"debut": 8.56,
+"fin": 8.66
+},
+{
+"mot": "des",
+"debut": 8.66,
+"fin": 8.78
+},
+{
+"mot": "fractions.",
+"debut": 8.78,
+"fin": 9.04
+},
+{
+"mot": "Monsieur",
+"debut": 10.14,
+"fin": 10.38
+},
+{
+"mot": "Vasseur,",
+"debut": 10.38,
+"fin": 10.72
+},
+{
+"mot": "vous",
+"debut": 11.52,
+"fin": 11.6
+},
+{
+"mot": "avez",
+"debut": 11.6,
+"fin": 11.7
+},
+{
+"mot": "fini",
+"debut": 11.7,
+"fin": 11.88
+},
+{
+"mot": "ici,",
+"debut": 11.88,
+"fin": 12.2
+},
+{
+"mot": "vous",
+"debut": 12.82,
+"fin": 12.9
+},
+{
+"mot": "partez.",
+"debut": 12.9,
+"fin": 13.2
+},
+{
+"mot": "Madame,",
+"debut": 14.12,
+"fin": 14.48
+},
+{
+"mot": "si",
+"debut": 14.64,
+"fin": 14.7
+},
+{
+"mot": "vous",
+"debut": 14.7,
+"fin": 14.8
+},
+{
+"mot": "voulez,",
+"debut": 14.8,
+"fin": 15.0
+},
+{
+"mot": "venez",
+"debut": 15.64,
+"fin": 15.82
+},
+{
+"mot": "porter",
+"debut": 15.82,
+"fin": 16.0
+},
+{
+"mot": "plainte",
+"debut": 16.0,
+"fin": 16.28
+},
+{
+"mot": "demain.",
+"debut": 16.28,
+"fin": 16.4
+}
+]
