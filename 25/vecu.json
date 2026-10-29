@@ -1,0 +1,109 @@
+{
+ "titre": "Offre flash&nbsp;: <b>la maquette de votre site, gratuite</b>",
+ "sorte": "flash",
+ "idee": 11,
+ "cta": false,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Pas de site&nbsp;? <b>Ou un vieux site</b>&nbsp;?",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Le client cherche <b>un plombier près de chez lui</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Et il appelle <b>celui qui a un site</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Cette semaine, <b>on crée votre maquette</b>",
+   "clip": "img:23-site-vitrine-mobile",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Avec votre logo, <b>vos couleurs</b>",
+   "clip": "img:24-logo-couleurs",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Vos services, <b>votre zone</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "C'est <b>gratuit</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Pour <b>les 10 premiers commentaires</b>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Écrivez <b>«&nbsp;SITE&nbsp;»</b> en commentaire",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "?",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  }
+ ],
+ "date": "",
+ "affirmations": [
+  {
+   "dit": "Pas de site, ou un vieux site : le client appelle celui qui a un site.",
+   "ref": "une mise en situation, pas une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "On crée la maquette de votre site, avec votre logo et vos couleurs, gratuitement, pour les 10 premiers commentaires « SITE ».",
+   "ref": "offre de Prouessia, limitée aux 10 premières personnes qui écrivent « SITE » en commentaire sous ce Reel . Avantages n° 11 « On crée votre site pour vous » et n° 12 « Votre logo, vos couleurs » de la liste des 100 avantages.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre offre :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo."
+ ],
+ "avert": "Offre limitée aux 10 premiers commentaires « SITE » sous ce Reel."
+}

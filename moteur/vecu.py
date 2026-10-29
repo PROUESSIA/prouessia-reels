@@ -18,6 +18,10 @@ STYLE = ("Voix d'homme française, naturelle, comme un artisan qui parle à un c
          "avec des micro-pauses très brèves. Seule la question finale monte légèrement.")
 FIN = 'Prouessia, le partenaire des plombiers.'  # fin identique de chaque Reel (idees/100-idees-reels.pdf)
 FIN_HTML = 'Prouessia, <b>le partenaire des plombiers</b><br><span style="font-size:60px;color:#fff">prouessia.fr</span>'
+# phrase d'appel à la fin de chaque Reel (demande de la fondatrice, 29/10) : même prise de voix pour tous les Reels
+CTA = 'Vous voulez en savoir plus ? Écrivez « DEVIS » en commentaire.'
+CTA_HTML = '<span style="display:block;margin-top:40px;font-size:62px">Vous voulez en savoir plus&nbsp;?<br>Écrivez <b>«&nbsp;DEVIS&nbsp;»</b> en commentaire</span>'
+CTA_WAV = os.path.join(ROOT, 'voix', 'cta-devis.wav')
 PAUSE = 0.2  # pause entre deux phrases (les références : 0,1 à 0,3 s)
 
 APP = os.path.join(ROOT, 'videos', 'app')
@@ -116,6 +120,10 @@ def voix(nn, fichier):
         voix_ = np.where(e > max(.012, e.max() * .04))[0]
         if len(voix_): s = s[max(0, voix_[0] * w - int(.04 * sr)):min(len(s), (voix_[-1] + 1) * w + int(.06 * sr))]
         out += [s, np.zeros(int(PAUSE * sr))]; D.append(round(len(s) / sr + PAUSE, 3))
+    if c.get('cta', True):   # la phrase d'appel, dite après « Prouessia, le partenaire des plombiers »
+        assert os.path.exists(CTA_WAV), 'voix/cta-devis.wav manquante'
+        y, sry = sf.read(CTA_WAV); assert sry == sr
+        out += [np.zeros(int(.25 * sr)), y]; D[-1] = round(D[-1] + .25 + len(y) / sr, 3)
     D[-1] += .8
     sf.write(os.path.join(d, 'voix.wav'), np.concatenate(out), sr); json.dump(D, open(os.path.join(d, 'durees.json'), 'w'))
     mots = sum(len(l.split()) for l in lignes); tot = sum(D)
@@ -158,6 +166,7 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
 .tel{{width:110px;height:110px;border-radius:55px;background:#22A45D;color:#fff;font-size:64px;display:flex;align-items:center;justify-content:center;flex:none}}
 .qui{{font-size:38px;font-weight:700;color:#5B6577}} .msg{{font-size:52px;font-weight:900;letter-spacing:-.02em}}"""
     def calque(i, ph):
+        if i == len(P) - 1 and c.get('cta', True): ph = dict(ph, html=ph['html'] + CTA_HTML)
         app = est_app(ph['clip'])
         if not carte:
             return (f'<div class="v{" app" if app else ""}"></div><div class="titre">{c["titre"]}</div>'
