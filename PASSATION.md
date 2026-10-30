@@ -85,6 +85,7 @@ Les 5 créneaux vidéo : **9 h** vécu · **12 h 30** POV (ou offre flash) · **
 4. **Série** : épisodes 7 à 10 à écrire (décors à créer : chez la mère de Léa, entrepôt, maison de Mme Garnier) en respectant la bible et la logique.
 5. **Prospection** : 2 prospects en réserve (adresse de domiciliation) ; département suivant à choisir (78, 92, 91, 94, 95, 93, 75, 77 déjà faits).
 6. LinkedIn proposé (page entreprise à créer par la fondatrice), sans réponse.
+7. **Relevé des vues (hub mode `stats`) en erreur le 30/10 au soir** : `getPostById` → `[400] Invalid post ID format` (exécution d45807fe…). Probablement un Reel lu sans identifiant TikTok valide (23 et 24 du 30/10, `platform_ids` vide). Le bilan du soir n'a donc pas de vues. À corriger dans une session avec la fondatrice (filtre « identifiant TikTok présent » dans la route stats de `make/build_hub.py`) ; les tâches de contrôle ne modifient pas les scénarios.
 
 ## 8. Décisions de la fondatrice (dans l'ordre)
 
