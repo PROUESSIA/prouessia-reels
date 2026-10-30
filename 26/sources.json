@@ -1,0 +1,104 @@
+{
+ "num": "26",
+ "titre": "Chaque devis a le même look sérieux",
+ "date": "31.10.2026",
+ "affirmations": [
+  {
+   "dit": "Un devis sur l'ordinateur, un autre à la main, un troisième sur un carnet : jamais la même tête.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, même présentation à chaque devis : le même look sérieux, sans y penser.",
+   "ref": "avantage n° 5 « Même présentation à chaque devis » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "257093",
+   "sujet": "eau",
+   "url": "https://pixabay.com/videos/id-257093/",
+   "auteur": "padrinan"
+  },
+  {
+   "id": "159030",
+   "sujet": "mains",
+   "url": "https://pixabay.com/videos/id-159030/",
+   "auteur": "eloguers"
+  },
+  {
+   "id": "41146",
+   "sujet": "texte",
+   "url": "https://pixabay.com/videos/id-41146/",
+   "auteur": "MonitorFantasma"
+  },
+  {
+   "id": "4974",
+   "sujet": "percer",
+   "url": "https://pixabay.com/videos/id-4974/",
+   "auteur": "klimkin"
+  },
+  {
+   "id": "349087",
+   "sujet": "fichier",
+   "url": "https://pixabay.com/videos/id-349087/",
+   "auteur": "MuhammadAhmad10"
+  },
+  {
+   "id": "130652",
+   "sujet": "femme",
+   "url": "https://pixabay.com/videos/id-130652/",
+   "auteur": "SYG_Anime"
+  },
+  {
+   "id": "12041",
+   "sujet": "gants",
+   "url": "https://pixabay.com/videos/id-12041/",
+   "auteur": "chayka1270"
+  },
+  {
+   "id": "img:04-apercu-devis",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:04-apercu-devis/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "4729",
+   "sujet": "tournevis",
+   "url": "https://pixabay.com/videos/id-4729/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "85351",
+   "sujet": "constructeur",
+   "url": "https://pixabay.com/videos/id-85351/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "109878",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-109878/",
+   "auteur": "Martin_Grabo"
+  },
+  {
+   "id": "42926",
+   "sujet": "chantier de construction",
+   "url": "https://pixabay.com/videos/id-42926/",
+   "auteur": "chuduyen215"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

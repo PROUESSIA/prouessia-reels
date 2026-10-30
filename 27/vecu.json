@@ -6,7 +6,7 @@
  "phrases": [
   {
    "html": "",
-   "clip": "?",
+   "clip": "304045",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1,
@@ -17,49 +17,49 @@
   },
   {
    "html": "En principe, <b>le devis est gratuit</b>",
-   "clip": "?",
+   "clip": "212508",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Mais il peut être <b>payant</b>",
-   "clip": "?",
+   "clip": "212509",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "À une condition&nbsp;: <b>le client le sait avant</b>",
-   "clip": "?",
+   "clip": "260456",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Pas <b>après coup</b>",
-   "clip": "?",
+   "clip": "211432",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Alors dites-le <b>dès le premier appel</b>",
-   "clip": "?",
+   "clip": "47743",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Et notez-le <b>noir sur blanc</b>",
-   "clip": "?",
+   "clip": "265250",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Avec Prouessia, <b>un clic</b>",
-   "clip": "img:extras/05-envoyer-devis-avant",
+   "clip": "img:05-envoyer-devis",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1,
@@ -68,7 +68,7 @@
   },
   {
    "html": "Et le devis <b>part par mail</b>",
-   "clip": "img:05-envoyer-devis",
+   "clip": "img:06-mail-puis-devis",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1,
@@ -77,14 +77,14 @@
   },
   {
    "html": "Et vous, <b>votre devis est payant</b>&nbsp;?",
-   "clip": "?",
+   "clip": "4504",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
-   "clip": "?",
+   "clip": "42923",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1

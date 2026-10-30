@@ -1,0 +1,98 @@
+{
+ "num": "25",
+ "titre": "Offre flash : la maquette de votre site, gratuite",
+ "date": "31.10.2026",
+ "affirmations": [
+  {
+   "dit": "Pas de site, ou un vieux site : le client appelle celui qui a un site.",
+   "ref": "une mise en situation, pas une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "On crée la maquette de votre site, avec votre logo et vos couleurs, gratuitement, pour les 10 premiers commentaires « SITE ».",
+   "ref": "offre de Prouessia, limitée aux 10 premières personnes qui écrivent « SITE » en commentaire sous ce Reel . Avantages n° 11 « On crée votre site pour vous » et n° 12 « Votre logo, vos couleurs » de la liste des 100 avantages.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre offre :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo."
+ ],
+ "avert": "Offre limitée aux 10 premiers commentaires « SITE » sous ce Reel.",
+ "videos": [
+  {
+   "id": "3176",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-3176/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "44859",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-44859/",
+   "auteur": "FlorenceCdeM"
+  },
+  {
+   "id": "260354",
+   "sujet": "l'internet",
+   "url": "https://pixabay.com/videos/id-260354/",
+   "auteur": "Frank_Rietsch"
+  },
+  {
+   "id": "83870",
+   "sujet": "femme",
+   "url": "https://pixabay.com/videos/id-83870/",
+   "auteur": "SYG_Anime"
+  },
+  {
+   "id": "img:23-site-vitrine-mobile",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:23-site-vitrine-mobile/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:24-logo-couleurs",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:24-logo-couleurs/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "116117",
+   "sujet": "douche",
+   "url": "https://pixabay.com/videos/id-116117/",
+   "auteur": "zephylwer0"
+  },
+  {
+   "id": "2348",
+   "sujet": "égoutter",
+   "url": "https://pixabay.com/videos/id-2348/",
+   "auteur": "Life-Of-Vids"
+  },
+  {
+   "id": "79336",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-79336/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "3188",
+   "sujet": "clavier d'ordinateur",
+   "url": "https://pixabay.com/videos/id-3188/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "67460",
+   "sujet": "ouvrier",
+   "url": "https://pixabay.com/videos/id-67460/",
+   "auteur": "AlexKopeykin"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

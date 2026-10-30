@@ -1,0 +1,120 @@
+{
+ "num": "27",
+ "titre": "Le client demande : le devis est payant ?",
+ "date": "31.10.2026",
+ "affirmations": [
+  {
+   "dit": "Un client demande si le devis est payant.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "En principe, le devis est gratuit. Il peut être payant, à une condition : le client le sait avant.",
+   "ref": "le devis est en principe gratuit ; il peut être payant quand aucun texte n'impose la gratuité, avec l'obligation d'en informer le client en amont. Pour le dépannage : arrêté du 24 janvier 2017, art. 2.",
+   "liens": [
+    [
+     "economie.gouv.fr : Devis obligatoire, comment ça marche ?",
+     "https://www.economie.gouv.fr/entreprises/gerer-sa-comptabilite-et-ses-demarches/devis-obligatoire-comment-ca-marche"
+    ],
+    [
+     "Légifrance : arrêté du 24 janvier 2017",
+     "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033935513"
+    ]
+   ],
+   "label": "Ce que dit le texte :"
+  },
+  {
+   "dit": "Dites-le dès le premier appel, et notez-le noir sur blanc.",
+   "ref": "une bonne pratique pour pouvoir prouver que le client a été informé, pas une formule imposée par le texte.",
+   "liens": [],
+   "label": "Notre conseil :"
+  },
+  {
+   "dit": "Avec Prouessia, un clic, et le devis part par mail.",
+   "ref": "avantage n° 8 « Envoi en un clic » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Les cas où le devis doit être gratuit.",
+  "Le montant d'un devis payant (libre, à annoncer avant)."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé. Pour une situation précise, voyez un juriste ou votre chambre de métiers.",
+ "videos": [
+  {
+   "id": "304045",
+   "sujet": "téléphoner",
+   "url": "https://pixabay.com/videos/id-304045/",
+   "auteur": "VirtualZero"
+  },
+  {
+   "id": "212508",
+   "sujet": "documents",
+   "url": "https://pixabay.com/videos/id-212508/",
+   "auteur": "MaxMedyk"
+  },
+  {
+   "id": "212509",
+   "sujet": "documents",
+   "url": "https://pixabay.com/videos/id-212509/",
+   "auteur": "MaxMedyk"
+  },
+  {
+   "id": "260456",
+   "sujet": "smartphone",
+   "url": "https://pixabay.com/videos/id-260456/",
+   "auteur": "Frank_Rietsch"
+  },
+  {
+   "id": "211432",
+   "sujet": "pluie",
+   "url": "https://pixabay.com/videos/id-211432/",
+   "auteur": "TAMGRA"
+  },
+  {
+   "id": "47743",
+   "sujet": "téléphoner",
+   "url": "https://pixabay.com/videos/id-47743/",
+   "auteur": "crew_jak"
+  },
+  {
+   "id": "265250",
+   "sujet": "travailler",
+   "url": "https://pixabay.com/videos/id-265250/",
+   "auteur": "Graphitage1"
+  },
+  {
+   "id": "img:05-envoyer-devis",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:05-envoyer-devis/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:06-mail-puis-devis",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:06-mail-puis-devis/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "4504",
+   "sujet": "artisanat",
+   "url": "https://pixabay.com/videos/id-4504/",
+   "auteur": "faxtastic"
+  },
+  {
+   "id": "42923",
+   "sujet": "chantier de construction",
+   "url": "https://pixabay.com/videos/id-42923/",
+   "auteur": "chuduyen215"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

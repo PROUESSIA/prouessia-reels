@@ -5,49 +5,49 @@
  "phrases": [
   {
    "html": "",
-   "clip": "?",
+   "clip": "257093",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Un devis <b>sur l'ordinateur</b>",
-   "clip": "?",
+   "clip": "159030",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Un autre <b>écrit à la main</b>",
-   "clip": "?",
+   "clip": "41146",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Un troisième <b>sur un coin de carnet</b>",
-   "clip": "?",
+   "clip": "4974",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Jamais <b>la même tête</b>",
-   "clip": "?",
+   "clip": "349087",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Le client <b>compare</b>",
-   "clip": "?",
+   "clip": "130652",
    "debut": 1.0,
-   "cx": 0.5,
+   "cx": 0.3,
    "sens": -1
   },
   {
    "html": "Et le vôtre <b>fait bricolé</b>",
-   "clip": "?",
+   "clip": "12041",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
@@ -63,30 +63,28 @@
   },
   {
    "html": "Sérieux, <b>sans y penser</b>",
-   "clip": "img:extras/04-apercu-pdf-page",
+   "clip": "4729",
    "debut": 1.0,
-   "cx": 0.5,
-   "sens": 1,
-   "cy": 0.42,
-   "zoom": 1.0
+   "cx": 0.3,
+   "sens": 1
   },
   {
    "html": "Vous, <b>vous restez sur le chantier</b>",
-   "clip": "?",
+   "clip": "85351",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Et vous, <b>vos devis se ressemblent</b>&nbsp;?",
-   "clip": "?",
+   "clip": "109878",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
-   "clip": "?",
+   "clip": "42926",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1

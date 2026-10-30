@@ -6,28 +6,28 @@
  "phrases": [
   {
    "html": "",
-   "clip": "?",
+   "clip": "3176",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Pas de site&nbsp;? <b>Ou un vieux site</b>&nbsp;?",
-   "clip": "?",
+   "clip": "44859",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Le client cherche <b>un plombier près de chez lui</b>",
-   "clip": "?",
+   "clip": "260354",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Et il appelle <b>celui qui a un site</b>",
-   "clip": "?",
+   "clip": "83870",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
@@ -48,41 +48,41 @@
   },
   {
    "html": "Vos services, <b>votre zone</b>",
-   "clip": "?",
+   "clip": "116117",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "C'est <b>gratuit</b>",
-   "clip": "?",
+   "clip": "2348",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Pour <b>les 10 premiers commentaires</b>",
-   "clip": "?",
+   "clip": "79336",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
    "html": "Écrivez <b>«&nbsp;SITE&nbsp;»</b> en commentaire",
-   "clip": "?",
+   "clip": "3188",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
    "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
-   "clip": "?",
+   "clip": "67460",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   }
  ],
- "date": "",
+ "date": "31.10.2026",
  "affirmations": [
   {
    "dit": "Pas de site, ou un vieux site : le client appelle celui qui a un site.",
