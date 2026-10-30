@@ -1,0 +1,18 @@
+200
+id,hook,status,scheduled_at,platform_ids
+d80c8d5d-5294-4ea0-b4a5-1ec2698ad160,"Zéro calculette : HT, TVA, total, tout est calculé.",refuse,"2026-10-29 08:00:00+00",
+0b697518-29ed-4afb-aea0-f7b10e33911c,"Zéro calculette : HT, TVA, total, tout est calculé.",publie,"2026-10-29 08:00:00+00","""{\\""tiktok\\"":\\""6ae2fec6dd162fceee803eb1\\"",\\""youtube\\"":\\""nt_7vnERt4A\\""}"""
+cf09005f-e4ca-4d1b-bc7a-398310046f6e,"POV : 7 h 30, devant le portail. Le code, c'était quoi ?",refuse,"2026-10-29 11:30:00+00",
+7e8232e0-ef02-4fcc-be4a-b70ac6db6520,"POV : 7 h 30, devant le portail. Le code, c'était quoi ?",publie,"2026-10-29 11:30:00+00","""{\\""tiktok\\"":\\""6ae2fecbdd162fceee803eea\\"",\\""youtube\\"":\\""VwiiLsOh-mk\\""}"""
+e0994afe-5b00-42c4-95c2-0b519e34b9f8,"Sous pression · Épisode 5 — La serrure",refuse,"2026-10-29 17:00:00+00",
+185dedfa-352c-48e5-8173-1f944d644645,"Sous pression · Épisode 2 — Elle ne répond plus",publie,"2026-10-29 17:00:00+00","""{\\""tiktok\\"":\\""6ae2fed5dd162fceee803f37\\"",\\""youtube\\"":\\""8cP7v4m1_uM\\""}"""
+228d491c-39ce-4ef4-8fe9-cf03c714e28e,"Le devis est signé. Mais sans date.",publie,"2026-10-29 19:30:00+00","""{\\""tiktok\\"":\\""6ae2fed0dd162fceee803f0c\\"",\\""youtube\\"":\\""Cp-WWWLsvNU\\""}"""
+5cd47d2c-e75c-46c0-a1bd-61dfdce254c9,"Le devis est signé. Mais sans date.",refuse,"2026-10-29 19:30:00+00",
+c3b26215-8cdd-4558-8091-c3dce8ccfc96,"Le devis se fait chez le client, pas au bureau.",valide,"2026-10-30 08:00:00+00",
+c1e9dab6-470e-4f43-ad65-43f94800961e,"POV : vous êtes en plein devis… et le téléphone sonne.",valide,"2026-10-30 11:30:00+00",
+5ae8b2aa-b984-4f5e-823c-76b65d65fd5d,"Sous pression · Épisode 3 — Le piège",valide,"2026-10-30 17:00:00+00",
+bfe567a7-ba15-4dab-9ac4-27da98a31b39,"Le client demande : pourquoi 10 % de TVA ?",valide,"2026-10-30 19:30:00+00",
+26c02d35-53f3-410a-bbc2-79914fedf07c,"Chaque devis a le même look sérieux.",valide,"2026-10-31 08:00:00+00",
+2f146cc5-3a2a-4f66-b1a3-ac90cba5d14c,"Offre flash : la maquette de votre site, gratuite.",valide,"2026-10-31 11:30:00+00",
+fbf52bfc-b93d-47fe-b885-a42558755fae,"Sous pression · Épisode 4 — Le contrat",valide,"2026-10-31 17:00:00+00",
+683513a4-7b33-4013-9f7b-daa586acf25b,"Le client demande : le devis est payant ?",valide,"2026-10-31 19:30:00+00",
