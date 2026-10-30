@@ -48,7 +48,7 @@
   "avantage": "Même présentation à chaque devis",
   "accroche": "Chaque devis a le même look sérieux, sans y penser.",
   "images": "Trois devis qui se superposent, identiques et propres",
-  "fait": false,
+  "fait": "2026-10-30 · 26",
   "captures": [
    "app:04-apercu-devis"
   ]
@@ -83,7 +83,7 @@
   "avantage": "Envoi en un clic",
   "accroche": "Un clic, et le devis part par mail.",
   "images": "Pouce qui appuie, enveloppe qui s'envole sur fond de chantier",
-  "fait": false,
+  "fait": "2026-10-30 · 27",
   "captures": [
    "app:05-envoyer-devis"
   ]

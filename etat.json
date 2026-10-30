@@ -264,9 +264,49 @@
    "sujet": "TVA 10 % / 5,5 % / 20 % · idée 53",
    "ton": "Charon",
    "note": "Ajouté le 29/10, à valider"
+  },
+  {
+   "n": "reel-26",
+   "reel": "26",
+   "style": "vécu",
+   "date": "2026-10-31",
+   "heure": "09:00",
+   "sujet": "Idée 5 · Même présentation à chaque devis",
+   "ton": "Charon",
+   "note": "Ajouté le 30/10, à valider"
+  },
+  {
+   "n": "reel-25",
+   "reel": "25",
+   "style": "offre flash",
+   "date": "2026-10-31",
+   "heure": "12:30",
+   "sujet": "Offre flash · maquette de site gratuite (10 premiers « SITE »)",
+   "ton": "Charon",
+   "note": "Ajouté le 30/10, à valider ; prochaine offre flash le 10/11"
+  },
+  {
+   "n": "ep-4",
+   "reel": "anim/ep04",
+   "style": "série Sous pression",
+   "date": "2026-10-31",
+   "heure": "18:00",
+   "sujet": "Sous pression · Épisode 4 — Le contrat",
+   "ton": "Gemini",
+   "note": "Film rendu le 28/10, ajouté le 30/10 pour 17:00Z, à valider"
+  },
+  {
+   "n": "reel-27",
+   "reel": "27",
+   "style": "carte",
+   "date": "2026-10-31",
+   "heure": "20:30",
+   "sujet": "Devis payant : possible si le client le sait avant · idée 8",
+   "ton": "Charon",
+   "note": "Ajouté le 30/10, à valider"
   }
  ],
- "prochain_numero_dossier": 25,
+ "prochain_numero_dossier": 28,
  "prospection": {
   "departement_semaine": "78",
   "derniere_page_importee": 2,
