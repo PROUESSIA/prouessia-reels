@@ -20,7 +20,7 @@ Ce fichier est lu par la tâche programmée de Claude, chaque jour. Il décrit t
 
 ## Make : un seul scénario à lancer (équipe 3236251, zone eu1)
 
-Tout passe par le **hub 8032025** « Prouessia · hub », toujours actif. **Ne jamais éteindre ni allumer de scénario** (l'offre gratuite n'a que 2 créneaux actifs : le hub et le 8031972 des liens de validation, qui doivent rester actifs). On lance le hub avec `scenarios_run` (responsive) et `data.mode` :
+Tout passe par le **hub 8032025** « Prouessia · hub », toujours actif. **Ne jamais éteindre ni allumer de scénario.** Scénarios actifs : le hub, le 8031972 (liens de validation) et, depuis le 30/10, le **8273226 « publier (sans e-mails) »** (toutes les 30 min de 09:15 à 20:45 : publie les vidéos validées après le passage de 09:05 ; on peut aussi le lancer avec `scenarios_run` sans données). On lance le hub avec `scenarios_run` (responsive) et `data.mode` :
 
 | mode | Ancien scénario | Champs |
 |---|---|---|
