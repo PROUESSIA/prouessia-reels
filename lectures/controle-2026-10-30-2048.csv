@@ -1,0 +1,11 @@
+200
+id,hook,status,scheduled_at,platform_ids
+c3b26215-8cdd-4558-8091-c3dce8ccfc96,"Le devis se fait chez le client, pas au bureau.",publie,"2026-10-30 08:00:00+00","""{\\""tiktok\\"":\\""6ae478d408b4ecda576b507b\\"",\\""youtube\\"":\\""6D3b59y7zbo\\""}"""
+c1e9dab6-470e-4f43-ad65-43f94800961e,"POV : vous êtes en plein devis… et le téléphone sonne.",en_publication,"2026-10-30 11:30:00+00",
+5ae8b2aa-b984-4f5e-823c-76b65d65fd5d,"Sous pression · Épisode 3 — Le piège",publie,"2026-10-30 17:00:00+00","""{\\""tiktok\\"":\\""6ae478c806d1cd38f02bd6b5\\"",\\""youtube\\"":\\""pcBG98tCFmg\\""}"""
+bfe567a7-ba15-4dab-9ac4-27da98a31b39,"Le client demande : pourquoi 10 % de TVA ?",en_publication,"2026-10-30 19:30:00+00",
+e1a38656-b654-4946-8ce3-7b0631bf271c,"La relance part toute seule.",publie,"2026-10-30 21:00:00+00","""{\\""tiktok\\"":\\""6ae48addc6f648099a9aa4ce\\"",\\""youtube\\"":\\""HFRAd2YOfV8\\""}"""
+26c02d35-53f3-410a-bbc2-79914fedf07c,"Chaque devis a le même look sérieux.",valide,"2026-10-31 08:00:00+00",
+2f146cc5-3a2a-4f66-b1a3-ac90cba5d14c,"Offre flash : la maquette de votre site, gratuite.",valide,"2026-10-31 11:30:00+00",
+fbf52bfc-b93d-47fe-b885-a42558755fae,"Sous pression · Épisode 4 — Le contrat",valide,"2026-10-31 17:00:00+00",
+683513a4-7b33-4013-9f7b-daa586acf25b,"Le client demande : le devis est payant ?",valide,"2026-10-31 19:30:00+00",
