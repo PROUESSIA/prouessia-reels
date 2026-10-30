@@ -1,0 +1,222 @@
+[
+{
+"mot": "Le",
+"debut": 0.0,
+"fin": 0.3
+},
+{
+"mot": "devis",
+"debut": 0.3,
+"fin": 0.48
+},
+{
+"mot": "est",
+"debut": 0.48,
+"fin": 0.56
+},
+{
+"mot": "parti",
+"debut": 0.56,
+"fin": 0.7
+},
+{
+"mot": "lundi.",
+"debut": 0.7,
+"fin": 1.06
+},
+{
+"mot": "Jeudi,",
+"debut": 1.48,
+"fin": 1.84
+},
+{
+"mot": "toujours",
+"debut": 2.1,
+"fin": 2.28
+},
+{
+"mot": "rien.",
+"debut": 2.28,
+"fin": 2.54
+},
+{
+"mot": "Relancer,",
+"debut": 3.02,
+"fin": 3.4
+},
+{
+"mot": "ça",
+"debut": 3.92,
+"fin": 4.16
+},
+{
+"mot": "vous",
+"debut": 4.16,
+"fin": 4.28
+},
+{
+"mot": "gêne.",
+"debut": 4.28,
+"fin": 4.5
+},
+{
+"mot": "Avec",
+"debut": 5.02,
+"fin": 5.22
+},
+{
+"mot": "Prohacia,",
+"debut": 5.22,
+"fin": 5.66
+},
+{
+"mot": "la",
+"debut": 5.88,
+"fin": 6.0
+},
+{
+"mot": "relance",
+"debut": 6.0,
+"fin": 6.24
+},
+{
+"mot": "part",
+"debut": 6.24,
+"fin": 6.38
+},
+{
+"mot": "toute",
+"debut": 6.38,
+"fin": 6.52
+},
+{
+"mot": "seule.",
+"debut": 6.52,
+"fin": 6.72
+},
+{
+"mot": "Par",
+"debut": 7.04,
+"fin": 7.26
+},
+{
+"mot": "email",
+"debut": 7.26,
+"fin": 7.46
+},
+{
+"mot": "à",
+"debut": 7.46,
+"fin": 7.74
+},
+{
+"mot": "la",
+"debut": 7.74,
+"fin": 7.8
+},
+{
+"mot": "date",
+"debut": 7.8,
+"fin": 7.9
+},
+{
+"mot": "prévue,",
+"debut": 7.9,
+"fin": 8.28
+},
+{
+"mot": "même",
+"debut": 8.48,
+"fin": 8.72
+},
+{
+"mot": "quand",
+"debut": 8.72,
+"fin": 8.88
+},
+{
+"mot": "vous",
+"debut": 8.88,
+"fin": 9.0
+},
+{
+"mot": "êtes",
+"debut": 9.0,
+"fin": 9.08
+},
+{
+"mot": "sur",
+"debut": 9.08,
+"fin": 9.2
+},
+{
+"mot": "le",
+"debut": 9.2,
+"fin": 9.28
+},
+{
+"mot": "chantier.",
+"debut": 9.28,
+"fin": 9.56
+},
+{
+"mot": "Et",
+"debut": 10.04,
+"fin": 10.1
+},
+{
+"mot": "vous,",
+"debut": 10.1,
+"fin": 10.24
+},
+{
+"mot": "vous",
+"debut": 10.6,
+"fin": 10.72
+},
+{
+"mot": "relancez",
+"debut": 10.72,
+"fin": 10.98
+},
+{
+"mot": "votre",
+"debut": 10.98,
+"fin": 11.06
+},
+{
+"mot": "devis",
+"debut": 11.06,
+"fin": 11.26
+},
+{
+"mot": "?",
+"debut": 11.26,
+"fin": 11.76
+},
+{
+"mot": "Prohacia,",
+"debut": 11.76,
+"fin": 12.32
+},
+{
+"mot": "le",
+"debut": 12.62,
+"fin": 12.68
+},
+{
+"mot": "partenaire",
+"debut": 12.68,
+"fin": 13.04
+},
+{
+"mot": "des",
+"debut": 13.04,
+"fin": 13.1
+},
+{
+"mot": "planbiers.",
+"debut": 13.1,
+"fin": 13.38
+}
+]
