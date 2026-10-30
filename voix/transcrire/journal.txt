@@ -1,2 +1,4 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-voix/transcrire/ep03-policier.wav 37
+voix/transcrire/25.wav 67
+voix/transcrire/26.wav 68
+voix/transcrire/27.wav 70

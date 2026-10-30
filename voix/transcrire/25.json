@@ -1,0 +1,337 @@
+[
+{
+"mot": "Offre",
+"debut": 0.0,
+"fin": 0.46
+},
+{
+"mot": "flash",
+"debut": 0.46,
+"fin": 0.82
+},
+{
+"mot": "la",
+"debut": 0.82,
+"fin": 1.24
+},
+{
+"mot": "maquette",
+"debut": 1.24,
+"fin": 1.54
+},
+{
+"mot": "de",
+"debut": 1.54,
+"fin": 1.66
+},
+{
+"mot": "votre",
+"debut": 1.66,
+"fin": 1.76
+},
+{
+"mot": "site",
+"debut": 1.76,
+"fin": 2.16
+},
+{
+"mot": "gratuite.",
+"debut": 2.16,
+"fin": 3.1
+},
+{
+"mot": "Pas",
+"debut": 3.42,
+"fin": 3.54
+},
+{
+"mot": "de",
+"debut": 3.54,
+"fin": 3.64
+},
+{
+"mot": "site",
+"debut": 3.64,
+"fin": 3.76
+},
+{
+"mot": "?",
+"debut": 3.76,
+"fin": 4.3
+},
+{
+"mot": "Ouais,",
+"debut": 4.3,
+"fin": 4.34
+},
+{
+"mot": "un",
+"debut": 4.46,
+"fin": 4.6
+},
+{
+"mot": "vieux",
+"debut": 4.6,
+"fin": 4.76
+},
+{
+"mot": "site.",
+"debut": 4.76,
+"fin": 4.96
+},
+{
+"mot": "Le",
+"debut": 5.5,
+"fin": 5.6
+},
+{
+"mot": "client",
+"debut": 5.6,
+"fin": 5.82
+},
+{
+"mot": "cherche",
+"debut": 5.82,
+"fin": 6.04
+},
+{
+"mot": "un",
+"debut": 6.04,
+"fin": 6.18
+},
+{
+"mot": "plombier",
+"debut": 6.18,
+"fin": 6.48
+},
+{
+"mot": "près",
+"debut": 6.48,
+"fin": 6.64
+},
+{
+"mot": "de",
+"debut": 6.64,
+"fin": 6.72
+},
+{
+"mot": "chez",
+"debut": 6.72,
+"fin": 6.82
+},
+{
+"mot": "lui",
+"debut": 6.82,
+"fin": 6.98
+},
+{
+"mot": "et",
+"debut": 6.98,
+"fin": 7.44
+},
+{
+"mot": "il",
+"debut": 7.44,
+"fin": 7.56
+},
+{
+"mot": "appelle",
+"debut": 7.56,
+"fin": 7.8
+},
+{
+"mot": "celui",
+"debut": 7.8,
+"fin": 8.1
+},
+{
+"mot": "qui",
+"debut": 8.1,
+"fin": 8.28
+},
+{
+"mot": "a",
+"debut": 8.28,
+"fin": 8.38
+},
+{
+"mot": "un",
+"debut": 8.38,
+"fin": 8.48
+},
+{
+"mot": "site.",
+"debut": 8.48,
+"fin": 8.64
+},
+{
+"mot": "Cette",
+"debut": 9.1,
+"fin": 9.28
+},
+{
+"mot": "semaine,",
+"debut": 9.28,
+"fin": 9.52
+},
+{
+"mot": "on",
+"debut": 9.78,
+"fin": 9.94
+},
+{
+"mot": "crée",
+"debut": 9.94,
+"fin": 10.14
+},
+{
+"mot": "votre",
+"debut": 10.14,
+"fin": 10.26
+},
+{
+"mot": "maquette",
+"debut": 10.26,
+"fin": 10.74
+},
+{
+"mot": "avec",
+"debut": 10.74,
+"fin": 11.46
+},
+{
+"mot": "votre",
+"debut": 11.46,
+"fin": 11.66
+},
+{
+"mot": "logo,",
+"debut": 11.66,
+"fin": 11.96
+},
+{
+"mot": "vos",
+"debut": 12.26,
+"fin": 12.34
+},
+{
+"mot": "couleurs,",
+"debut": 12.34,
+"fin": 13.0
+},
+{
+"mot": "vos",
+"debut": 13.16,
+"fin": 13.22
+},
+{
+"mot": "services,",
+"debut": 13.22,
+"fin": 13.54
+},
+{
+"mot": "votre",
+"debut": 13.74,
+"fin": 13.84
+},
+{
+"mot": "zone.",
+"debut": 13.84,
+"fin": 14.2
+},
+{
+"mot": "C",
+"debut": 14.56,
+"fin": 14.74
+},
+{
+"mot": "'est",
+"debut": 14.74,
+"fin": 14.78
+},
+{
+"mot": "gratuit",
+"debut": 14.78,
+"fin": 15.02
+},
+{
+"mot": "pour",
+"debut": 15.02,
+"fin": 15.4
+},
+{
+"mot": "les",
+"debut": 15.4,
+"fin": 15.52
+},
+{
+"mot": "10",
+"debut": 15.52,
+"fin": 15.72
+},
+{
+"mot": "premiers",
+"debut": 15.72,
+"fin": 15.94
+},
+{
+"mot": "commentaires.",
+"debut": 15.94,
+"fin": 16.28
+},
+{
+"mot": "Écrivez",
+"debut": 16.86,
+"fin": 17.2
+},
+{
+"mot": "site",
+"debut": 17.2,
+"fin": 17.54
+},
+{
+"mot": "en",
+"debut": 17.54,
+"fin": 17.82
+},
+{
+"mot": "commentaire.",
+"debut": 17.82,
+"fin": 18.44
+},
+{
+"mot": "Procia,",
+"debut": 19.02,
+"fin": 19.3
+},
+{
+"mot": "le",
+"debut": 19.72,
+"fin": 19.86
+},
+{
+"mot": "partenaire",
+"debut": 19.86,
+"fin": 20.28
+},
+{
+"mot": "des",
+"debut": 20.28,
+"fin": 20.32
+},
+{
+"mot": "plombiers.",
+"debut": 20.32,
+"fin": 20.64
+},
+{
+"mot": "Procia",
+"debut": 21.18,
+"fin": 21.58
+},
+{
+"mot": ".fr",
+"debut": 21.58,
+"fin": 22.02
+}
+]

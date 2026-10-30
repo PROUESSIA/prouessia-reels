@@ -1,0 +1,342 @@
+[
+{
+"mot": "Chaque",
+"debut": 0.0,
+"fin": 0.56
+},
+{
+"mot": "devis",
+"debut": 0.56,
+"fin": 0.82
+},
+{
+"mot": "a",
+"debut": 0.82,
+"fin": 0.92
+},
+{
+"mot": "le",
+"debut": 0.92,
+"fin": 1.0
+},
+{
+"mot": "même",
+"debut": 1.0,
+"fin": 1.14
+},
+{
+"mot": "look",
+"debut": 1.14,
+"fin": 1.32
+},
+{
+"mot": "sérieux.",
+"debut": 1.32,
+"fin": 2.0
+},
+{
+"mot": "Un",
+"debut": 2.3,
+"fin": 2.44
+},
+{
+"mot": "devis",
+"debut": 2.44,
+"fin": 2.66
+},
+{
+"mot": "sur",
+"debut": 2.66,
+"fin": 2.76
+},
+{
+"mot": "l",
+"debut": 2.76,
+"fin": 2.86
+},
+{
+"mot": "'ordinateur,",
+"debut": 2.86,
+"fin": 3.32
+},
+{
+"mot": "un",
+"debut": 3.64,
+"fin": 3.72
+},
+{
+"mot": "autre",
+"debut": 3.72,
+"fin": 3.92
+},
+{
+"mot": "écrit",
+"debut": 3.92,
+"fin": 4.12
+},
+{
+"mot": "à",
+"debut": 4.12,
+"fin": 4.26
+},
+{
+"mot": "la",
+"debut": 4.26,
+"fin": 4.34
+},
+{
+"mot": "main,",
+"debut": 4.34,
+"fin": 4.52
+},
+{
+"mot": "un",
+"debut": 4.74,
+"fin": 4.8
+},
+{
+"mot": "troisième",
+"debut": 4.8,
+"fin": 5.12
+},
+{
+"mot": "sur",
+"debut": 5.12,
+"fin": 5.36
+},
+{
+"mot": "un",
+"debut": 5.36,
+"fin": 5.48
+},
+{
+"mot": "coin",
+"debut": 5.48,
+"fin": 5.58
+},
+{
+"mot": "de",
+"debut": 5.58,
+"fin": 5.66
+},
+{
+"mot": "carnets.",
+"debut": 5.66,
+"fin": 5.92
+},
+{
+"mot": "Jamais",
+"debut": 6.3,
+"fin": 6.68
+},
+{
+"mot": "la",
+"debut": 6.68,
+"fin": 6.78
+},
+{
+"mot": "même",
+"debut": 6.78,
+"fin": 6.88
+},
+{
+"mot": "tête.",
+"debut": 6.88,
+"fin": 7.1
+},
+{
+"mot": "Le",
+"debut": 7.7,
+"fin": 7.76
+},
+{
+"mot": "client",
+"debut": 7.76,
+"fin": 7.98
+},
+{
+"mot": "compare.",
+"debut": 7.98,
+"fin": 8.32
+},
+{
+"mot": "Et",
+"debut": 8.86,
+"fin": 9.04
+},
+{
+"mot": "le",
+"debut": 9.04,
+"fin": 9.12
+},
+{
+"mot": "vôtre",
+"debut": 9.12,
+"fin": 9.34
+},
+{
+"mot": "fait",
+"debut": 9.34,
+"fin": 9.68
+},
+{
+"mot": "bricoler.",
+"debut": 9.68,
+"fin": 10.02
+},
+{
+"mot": "Avec",
+"debut": 10.94,
+"fin": 11.16
+},
+{
+"mot": "Prohécia,",
+"debut": 11.16,
+"fin": 11.62
+},
+{
+"mot": "même",
+"debut": 11.92,
+"fin": 12.02
+},
+{
+"mot": "présentation",
+"debut": 12.02,
+"fin": 12.58
+},
+{
+"mot": "à",
+"debut": 12.58,
+"fin": 12.7
+},
+{
+"mot": "chaque",
+"debut": 12.7,
+"fin": 12.8
+},
+{
+"mot": "devis.",
+"debut": 12.8,
+"fin": 13.14
+},
+{
+"mot": "Sérieux,",
+"debut": 13.66,
+"fin": 14.1
+},
+{
+"mot": "sans",
+"debut": 14.26,
+"fin": 14.36
+},
+{
+"mot": "y",
+"debut": 14.36,
+"fin": 14.5
+},
+{
+"mot": "penser.",
+"debut": 14.5,
+"fin": 14.72
+},
+{
+"mot": "Vous,",
+"debut": 15.46,
+"fin": 15.6
+},
+{
+"mot": "vous",
+"debut": 15.7,
+"fin": 15.76
+},
+{
+"mot": "restez",
+"debut": 15.76,
+"fin": 16.0
+},
+{
+"mot": "sur",
+"debut": 16.0,
+"fin": 16.12
+},
+{
+"mot": "le",
+"debut": 16.12,
+"fin": 16.2
+},
+{
+"mot": "chantier.",
+"debut": 16.2,
+"fin": 16.44
+},
+{
+"mot": "Et",
+"debut": 17.32,
+"fin": 17.44
+},
+{
+"mot": "vous,",
+"debut": 17.44,
+"fin": 17.58
+},
+{
+"mot": "vos",
+"debut": 17.86,
+"fin": 17.94
+},
+{
+"mot": "devis",
+"debut": 17.94,
+"fin": 18.16
+},
+{
+"mot": "se",
+"debut": 18.16,
+"fin": 18.26
+},
+{
+"mot": "ressemblent",
+"debut": 18.26,
+"fin": 18.56
+},
+{
+"mot": "?",
+"debut": 18.56,
+"fin": 19.08
+},
+{
+"mot": "Prohécia,",
+"debut": 19.08,
+"fin": 19.58
+},
+{
+"mot": "le",
+"debut": 19.82,
+"fin": 19.84
+},
+{
+"mot": "partenaire",
+"debut": 19.84,
+"fin": 20.24
+},
+{
+"mot": "des",
+"debut": 20.24,
+"fin": 20.32
+},
+{
+"mot": "plombiers.",
+"debut": 20.32,
+"fin": 20.62
+},
+{
+"mot": "Prohécia",
+"debut": 21.14,
+"fin": 21.48
+},
+{
+"mot": ".fr",
+"debut": 21.48,
+"fin": 21.82
+}
+]

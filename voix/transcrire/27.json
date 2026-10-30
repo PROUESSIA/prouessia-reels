@@ -1,0 +1,352 @@
+[
+{
+"mot": "Le",
+"debut": 0.0,
+"fin": 0.34
+},
+{
+"mot": "client",
+"debut": 0.34,
+"fin": 0.54
+},
+{
+"mot": "demande",
+"debut": 0.54,
+"fin": 0.8
+},
+{
+"mot": "«",
+"debut": 0.8,
+"fin": 1.22
+},
+{
+"mot": "Le",
+"debut": 1.22,
+"fin": 1.38
+},
+{
+"mot": "devis",
+"debut": 1.38,
+"fin": 1.62
+},
+{
+"mot": "est",
+"debut": 1.62,
+"fin": 1.74
+},
+{
+"mot": "payant",
+"debut": 1.74,
+"fin": 2.0
+},
+{
+"mot": "»",
+"debut": 2.0,
+"fin": 2.5
+},
+{
+"mot": "en",
+"debut": 2.5,
+"fin": 2.6
+},
+{
+"mot": "principe",
+"debut": 2.6,
+"fin": 2.88
+},
+{
+"mot": "le",
+"debut": 2.88,
+"fin": 3.06
+},
+{
+"mot": "devis",
+"debut": 3.06,
+"fin": 3.22
+},
+{
+"mot": "est",
+"debut": 3.22,
+"fin": 3.26
+},
+{
+"mot": "gratuit,",
+"debut": 3.26,
+"fin": 3.5
+},
+{
+"mot": "mais",
+"debut": 3.94,
+"fin": 4.14
+},
+{
+"mot": "il",
+"debut": 4.14,
+"fin": 4.24
+},
+{
+"mot": "peut",
+"debut": 4.24,
+"fin": 4.38
+},
+{
+"mot": "être",
+"debut": 4.38,
+"fin": 4.48
+},
+{
+"mot": "payant",
+"debut": 4.48,
+"fin": 4.76
+},
+{
+"mot": "à",
+"debut": 4.76,
+"fin": 5.22
+},
+{
+"mot": "une",
+"debut": 5.22,
+"fin": 5.3
+},
+{
+"mot": "condition",
+"debut": 5.3,
+"fin": 5.62
+},
+{
+"mot": "«",
+"debut": 5.62,
+"fin": 5.82
+},
+{
+"mot": "Le",
+"debut": 5.82,
+"fin": 5.88
+},
+{
+"mot": "client",
+"debut": 5.88,
+"fin": 6.2
+},
+{
+"mot": "le",
+"debut": 6.2,
+"fin": 6.36
+},
+{
+"mot": "sait",
+"debut": 6.36,
+"fin": 6.6
+},
+{
+"mot": "avant,",
+"debut": 6.6,
+"fin": 7.02
+},
+{
+"mot": "pas",
+"debut": 7.4,
+"fin": 7.58
+},
+{
+"mot": "après",
+"debut": 7.58,
+"fin": 7.76
+},
+{
+"mot": "-coup.",
+"debut": 7.76,
+"fin": 7.9
+},
+{
+"mot": "»",
+"debut": 8.5,
+"fin": 8.58
+},
+{
+"mot": "Alors",
+"debut": 8.58,
+"fin": 8.6
+},
+{
+"mot": "dites",
+"debut": 8.6,
+"fin": 8.76
+},
+{
+"mot": "-le",
+"debut": 8.76,
+"fin": 8.88
+},
+{
+"mot": "dès",
+"debut": 8.88,
+"fin": 9.02
+},
+{
+"mot": "le",
+"debut": 9.02,
+"fin": 9.06
+},
+{
+"mot": "premier",
+"debut": 9.06,
+"fin": 9.26
+},
+{
+"mot": "rappel,",
+"debut": 9.26,
+"fin": 9.58
+},
+{
+"mot": "il",
+"debut": 10.02,
+"fin": 10.1
+},
+{
+"mot": "notez",
+"debut": 10.1,
+"fin": 10.42
+},
+{
+"mot": "-le",
+"debut": 10.42,
+"fin": 10.44
+},
+{
+"mot": "noir",
+"debut": 10.44,
+"fin": 10.7
+},
+{
+"mot": "sur",
+"debut": 10.7,
+"fin": 10.88
+},
+{
+"mot": "blanc,",
+"debut": 10.88,
+"fin": 11.04
+},
+{
+"mot": "avec",
+"debut": 11.34,
+"fin": 11.86
+},
+{
+"mot": "Prohessia",
+"debut": 11.86,
+"fin": 12.28
+},
+{
+"mot": "un",
+"debut": 12.28,
+"fin": 12.54
+},
+{
+"mot": "clic",
+"debut": 12.54,
+"fin": 12.7
+},
+{
+"mot": "et",
+"debut": 12.7,
+"fin": 13.14
+},
+{
+"mot": "le",
+"debut": 13.14,
+"fin": 13.22
+},
+{
+"mot": "devis",
+"debut": 13.22,
+"fin": 13.36
+},
+{
+"mot": "par",
+"debut": 13.36,
+"fin": 13.48
+},
+{
+"mot": "par",
+"debut": 13.48,
+"fin": 13.62
+},
+{
+"mot": "mail.",
+"debut": 13.62,
+"fin": 13.82
+},
+{
+"mot": "Et",
+"debut": 14.42,
+"fin": 14.56
+},
+{
+"mot": "vous,",
+"debut": 14.56,
+"fin": 14.7
+},
+{
+"mot": "votre",
+"debut": 14.78,
+"fin": 14.88
+},
+{
+"mot": "devis",
+"debut": 14.88,
+"fin": 15.2
+},
+{
+"mot": "est",
+"debut": 15.2,
+"fin": 15.4
+},
+{
+"mot": "payant",
+"debut": 15.4,
+"fin": 15.64
+},
+{
+"mot": "?",
+"debut": 15.64,
+"fin": 16.14
+},
+{
+"mot": "Prohessia,",
+"debut": 16.14,
+"fin": 16.64
+},
+{
+"mot": "le",
+"debut": 16.92,
+"fin": 16.96
+},
+{
+"mot": "partenaire",
+"debut": 16.96,
+"fin": 17.34
+},
+{
+"mot": "des",
+"debut": 17.34,
+"fin": 17.4
+},
+{
+"mot": "plombiers.",
+"debut": 17.4,
+"fin": 17.7
+},
+{
+"mot": "Prohessia",
+"debut": 18.22,
+"fin": 18.56
+},
+{
+"mot": ".fr",
+"debut": 18.56,
+"fin": 18.88
+}
+]
