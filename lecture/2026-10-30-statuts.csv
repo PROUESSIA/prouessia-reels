@@ -1,0 +1,10 @@
+200
+hook,scheduled_at,status
+"Le devis se fait chez le client, pas au bureau.","2026-10-30 08:00:00+00",valide
+"POV : vous êtes en plein devis… et le téléphone sonne.","2026-10-30 11:30:00+00",valide
+"Sous pression · Épisode 3 — Le piège","2026-10-30 17:00:00+00",valide
+"Le client demande : pourquoi 10 % de TVA ?","2026-10-30 19:30:00+00",valide
+"Chaque devis a le même look sérieux.","2026-10-31 08:00:00+00",a_valider
+"Offre flash : la maquette de votre site, gratuite.","2026-10-31 11:30:00+00",a_valider
+"Sous pression · Épisode 4 — Le contrat","2026-10-31 17:00:00+00",a_valider
+"Le client demande : le devis est payant ?","2026-10-31 19:30:00+00",a_valider
