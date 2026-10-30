@@ -123,7 +123,8 @@ def voix(nn, fichier):
     if c.get('cta', True):   # la phrase d'appel, dite après « Prouessia, le partenaire des plombiers »
         assert os.path.exists(CTA_WAV), 'voix/cta-devis.wav manquante'
         y, sry = sf.read(CTA_WAV); assert sry == sr
-        out += [np.zeros(int(.25 * sr)), y]; D[-1] = round(D[-1] + .25 + len(y) / sr, 3)
+        # décision du 30/10 : la phrase d'appel a SON PROPRE PLAN (durees.json a alors une durée de plus que de phrases)
+        out += [np.zeros(int(.25 * sr)), y]; D.append(round(.25 + len(y) / sr, 3))
     D[-1] += .8
     sf.write(os.path.join(d, 'voix.wav'), np.concatenate(out), sr); json.dump(D, open(os.path.join(d, 'durees.json'), 'w'))
     mots = sum(len(l.split()) for l in lignes); tot = sum(D)
@@ -133,16 +134,19 @@ def voix(nn, fichier):
 def video(nn):
     from commun import FONTS, MUST
     from playwright.sync_api import sync_playwright
-    c, lignes = charger(nn); d = os.path.join(ROOT, nn); P = c['phrases']
-    D = json.load(open(os.path.join(d, 'durees.json'))); assert len(D) == len(P); TOTAL = sum(D)
+    c, lignes = charger(nn); d = os.path.join(ROOT, nn); P = list(c['phrases'])
+    D = json.load(open(os.path.join(d, 'durees.json'))); assert len(D) in (len(P), len(P) + 1); TOTAL = sum(D)
+    # plan à part pour la phrase d'appel (décision du 30/10) : le dernier plan continue, flouté sous un voile marine, prouessia.fr en bas
+    SEUL = len(D) == len(P) + 1
+    if SEUL: P.append({'html': CTA_HTML, 'clip': P[-1]['clip'], 'debut': float(P[-1].get('debut', 0)) + D[-2], 'cta_seul': True})
     # contrôle obligatoire : chaque phrase a bien du son (pas de phrase muette)
     import numpy as np, soundfile as sf
     xa, sra = sf.read(os.path.join(d, 'voix.wav')); t0 = 0.0
     for k, du in enumerate(D):
         sg = xa[int(t0 * sra):int((t0 + du) * sra)]; w = int(.01 * sra)
         parle = sum(1 for j in range(0, max(0, len(sg) - w), w) if np.sqrt(np.mean(sg[j:j + w] ** 2)) > .02) * .01
-        mots = len(dit(P[k]['html'] or c['titre']).split())
-        assert parle >= max(.25, .08 * mots), f'phrase {k} presque muette ({parle:.2f} s de voix) : {dit(P[k]["html"] or c["titre"])}'
+        mots = len(dit((P[k]['html'] if k < len(P) else CTA_HTML) or c['titre']).split())
+        assert parle >= max(.25, .08 * mots), f'phrase {k} presque muette ({parle:.2f} s de voix) : {dit((P[k]["html"] if k < len(P) else CTA_HTML) or c["titre"])}'
         t0 += du
     ico = base64.b64encode(open(os.path.join(ROOT, 'email', 'icone-prouessia.png'), 'rb').read()).decode()
     css = f"""{FONTS}*{{margin:0;padding:0;box-sizing:border-box}}
@@ -166,7 +170,10 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
 .tel{{width:110px;height:110px;border-radius:55px;background:#22A45D;color:#fff;font-size:64px;display:flex;align-items:center;justify-content:center;flex:none}}
 .qui{{font-size:38px;font-weight:700;color:#5B6577}} .msg{{font-size:52px;font-weight:900;letter-spacing:-.02em}}"""
     def calque(i, ph):
-        if i == len(P) - 1 and c.get('cta', True): ph = dict(ph, html=ph['html'] + CTA_HTML)
+        if ph.get('cta_seul'):
+            return (f'<div class="voile-cta"></div><div class="lg2"><img src="data:image/png;base64,{ico}">prouessia</div>'
+                    f'<div class="ctaq">Vous voulez<br>en savoir plus&nbsp;?<br>Écrivez <b>«&nbsp;DEVIS&nbsp;»</b><br>en commentaire</div><div class="site">prouessia.fr</div>')
+        if i == len(P) - 1 and c.get('cta', True) and not SEUL: ph = dict(ph, html=ph['html'] + CTA_HTML)
         app = est_app(ph['clip'])
         if not carte:
             return (f'<div class="v{" app" if app else ""}"></div><div class="titre">{c["titre"]}</div>'
@@ -184,7 +191,12 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
 @keyframes sweep{{from{{background-size:0% 100%}}to{{background-size:100% 100%}}}}
 .w{{display:inline-block;animation:motIn .5s cubic-bezier(.34,1.56,.64,1) both}}
 .appel{{animation:pop .55s cubic-bezier(.34,1.56,.64,1) both}} .cta{{animation:up .5s cubic-bezier(.34,1.4,.64,1) both}}
-.t b{{background:linear-gradient({MUST},{MUST}) no-repeat left center/0% 100%;animation:sweep .45s cubic-bezier(.2,.8,.2,1) both}}"""
+.t b{{background:linear-gradient({MUST},{MUST}) no-repeat left center/0% 100%;animation:sweep .45s cubic-bezier(.2,.8,.2,1) both}}
+.voile-cta{{position:absolute;inset:0;background:rgba(11,27,58,.78)}}
+.lg2{{position:absolute;left:0;right:0;top:300px;display:flex;justify-content:center;align-items:center;gap:20px;color:#fff;font-weight:800;font-size:52px;animation:pop .55s cubic-bezier(.34,1.56,.64,1) both}} .lg2 img{{width:88px;height:88px;border-radius:22px}}
+.ctaq{{position:absolute;left:70px;right:70px;top:720px;text-align:center;color:#fff;font-weight:900;font-size:88px;line-height:1.18;letter-spacing:-.02em;text-shadow:0 4px 18px rgba(0,0,0,.35)}}
+.ctaq b{{display:inline-block;background:{MUST};color:#0B1B3A;padding:0 22px;border-radius:18px;margin:10px 0;text-shadow:none;animation:pop .5s cubic-bezier(.34,1.56,.64,1) both}}
+.site{{position:absolute;left:0;right:0;bottom:220px;text-align:center;color:#fff;font-weight:800;font-size:64px;letter-spacing:.01em;animation:up .5s cubic-bezier(.34,1.4,.64,1) .9s both}}"""
     ANIM = r"""(premiere) => {
       let k = 0; const S = 0.07; const t0 = document.querySelector('.appel') ? 0.35 : 0.05;
       const wrap = (el) => { for (const n of [...el.childNodes]) {
@@ -197,7 +209,7 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
           if (n.tagName === 'B') n.style.animationDelay = (t0 + k * S + 0.12) + 's';
           wrap(n);
         } } };
-      document.querySelectorAll(premiere ? '.titre,.ph,.t' : '.ph,.t').forEach(wrap);
+      document.querySelectorAll(premiere ? '.titre,.ph,.t,.ctaq' : '.ph,.t,.ctaq').forEach(wrap);
       const c = document.querySelector('.cta'); if (c) c.style.animationDelay = (t0 + k * S + 0.25) + 's';
       const as = document.getAnimations(); as.forEach((a) => a.pause());
       return Math.max(0, ...as.map((a) => a.effect.getComputedTiming().endTime));
@@ -228,6 +240,9 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
             fil.append(f"movie={masque()}:loop=0,setpts=N/30/TB,format=gray,scale={bw}:{bh}[m{i}];[g{i}][m{i}]alphamerge[h{i}];[f{i}][h{i}]overlay={bx}:{by}:shortest=1,setsar=1[v{i}]")
             continue
         inp += ['-ss', str(ph.get('debut', 0)), '-t', f'{du + .05:.2f}', '-i', source(ph['clip'])]
+        if ph.get('cta_seul'):
+            fil.append(f"[{i}:v]fps=30,scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=18:2,eq=brightness=-0.15:saturation=0.7,setsar=1,trim=duration={du:.2f},setpts=PTS-STARTPTS[v{i}]")
+            continue
         if ph['clip'].startswith('app:'):
             # écran d'appli net dans un cadre arrondi (zoom sur la zone utile : cy = centre vertical 0-1, zoom ≥ 1), fond = la même vidéo floutée et assombrie
             bx, by, bw, bh = BOITE; z = float(ph.get('zoom', 1)); cy = float(ph.get('cy', .5))

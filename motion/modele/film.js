@@ -155,31 +155,36 @@ function sFin(ctx, u, i, IMG) {
     ctx.restore();
     text(ctx, 'prouessia', s.x + 170, ly + 22, font(64, 900, DISPLAY), C.white);
   }
-  const ty = CTA ? ly + 330 : H * 0.45;
-  kinetic(ctx, 'Le partenaire', s.x, ty, 120, C.white, a + 0.2);
-  kinetic(ctx, 'des plombiers', s.x, ty + 135, 120, C.accent, a + 0.45);
-  if (CTA) {
-    const k2 = springU(u, CTA.a - 0.1, SPRING.snappy);
-    if (k2 > 0) {
-      const y = ty + 300 + (1 - k2) * 260, bw = W - 2 * s.x;
-      ctx.save(); ctx.globalAlpha = Math.min(1, k2 * 1.5);
-      rrect(ctx, s.x - 10, y, bw + 20, 470, 44); ctx.fillStyle = C.paper; ctx.fill();
-      text(ctx, 'Vous voulez en savoir plus ?', s.x + 40, y + 95, font(54, 800, UI), C.ink);
-      const fW = font(100, 900, DISPLAY);
-      text(ctx, 'Écrivez', s.x + 40, y + 235, fW, C.ink);
-      ctx.font = fW; const ew = ctx.measureText('Écrivez').width;
-      const kd = springU(u, CTA.a + 0.9, SPRING.bouncy);
-      if (kd > 0) {
-        ctx.save(); ctx.translate(s.x + 40 + ew + 230, y + 200); ctx.rotate(-0.05); ctx.scale(kd, kd);
-        rrect(ctx, -190, -78, 380, 135, 26); ctx.fillStyle = C.accent; ctx.fill();
-        text(ctx, S.mot || 'DEVIS', 0, 34, fW, C.ink, 'center');
-        ctx.restore();
-      }
-      text(ctx, 'en commentaire', s.x + 40, y + 380, font(84, 900, DISPLAY), C.ink);
-      ctx.restore();
-    }
+  kinetic(ctx, 'Le partenaire', s.x, H * 0.45, 120, C.white, a + 0.2);
+  kinetic(ctx, 'des plombiers', s.x, H * 0.45 + 135, 120, C.accent, a + 0.45);
+  if (!CTA) text(ctx, 'prouessia.fr', W / 2, H - s.y * 0.5 - 40, font(46, 700, UI), C.mute, 'center');
+}
+// plan à part pour la phrase d'appel (décision de la fondatrice, 30/10) : fond jaune, appel DEVIS, prouessia.fr en bas
+function sCta(ctx, u, IMG) {
+  fill(ctx, C.accent);
+  const s = FORMAT.safe, a = CTA.a;
+  const k = springU(u, a - 0.1, SPRING.bouncy);
+  if (IMG.logo && k > 0) {
+    ctx.save(); ctx.translate(W / 2 - 150, s.y + 120); ctx.scale(k, k);
+    ctx.save(); rrect(ctx, -60, -60, 120, 120, 28); ctx.clip(); ctx.drawImage(IMG.logo, -60, -60, 120, 120); ctx.restore();
+    ctx.restore();
+    ctx.globalAlpha = Math.min(1, k); text(ctx, 'prouessia', W / 2 - 70, s.y + 142, font(60, 900, DISPLAY), C.ink); ctx.globalAlpha = 1;
   }
-  text(ctx, 'prouessia.fr', W / 2, H - s.y * 0.5 - 40, font(46, 700, UI), C.mute, 'center');
+  const z = fit(ctx, ['Vous voulez', 'en savoir plus ?', 'en commentaire'], 120);
+  kinetic(ctx, 'Vous voulez', s.x, H * 0.36, z, C.ink, a);
+  kinetic(ctx, 'en savoir plus ?', s.x, H * 0.36 + z * 1.08, z, C.ink, a + 0.2);
+  kinetic(ctx, 'Écrivez', s.x, H * 0.36 + 330, 130, C.ink, a + 0.6);
+  const kd = springU(u, a + 0.9, SPRING.bouncy);
+  if (kd > 0) {
+    const fW = font(130, 900, DISPLAY);
+    ctx.save(); ctx.translate(s.x + 230, H * 0.36 + 500); ctx.rotate(-0.04); ctx.scale(kd, kd);
+    rrect(ctx, -230, -110, 460, 160, 30); ctx.fillStyle = C.ink; ctx.fill();
+    text(ctx, S.mot || 'DEVIS', 0, 28, fW, C.accent, 'center');
+    ctx.restore();
+  }
+  kinetic(ctx, 'en commentaire', s.x, H * 0.36 + 680, z, C.ink, a + 1.1);
+  const ks = springU(u, a + 1.3, SPRING.gentle);
+  if (ks > 0) { ctx.globalAlpha = Math.min(1, ks); text(ctx, 'prouessia.fr', W / 2, H - s.y * 0.5 - 40 + (1 - ks) * 80, font(64, 900, DISPLAY), C.ink, 'center'); ctx.globalAlpha = 1; }
 }
 
 M.film({
@@ -203,7 +208,8 @@ M.film({
     let i = 0;
     for (let k = 0; k < T.length; k++) if (u >= T[k].a - (k ? 0.08 : 99)) i = k;
     const ph = S.phrases[i];
-    if (ph.scene === 'texte') sTexte(ctx, u, i, ph);
+    if (CTA && u >= CTA.a - 0.08) sCta(ctx, u, IMG);
+    else if (ph.scene === 'texte') sTexte(ctx, u, i, ph);
     else if (ph.scene === 'surligne') sSurligne(ctx, u, i, ph);
     else if (ph.scene === 'app') sApp(ctx, u, i, IMG);
     else if (ph.scene === 'question') sQuestion(ctx, u, i, ph);
