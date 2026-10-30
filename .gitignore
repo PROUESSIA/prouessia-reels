@@ -28,3 +28,5 @@ exemples/*/voix-brute.wav
 exemples/*/voix-serree.wav
 anim/*/*.wav
 [0-9][0-9]/voix-brute.wav
+*/out/
+*/motion/_c.png

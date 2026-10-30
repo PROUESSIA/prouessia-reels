@@ -1,0 +1,113 @@
+{
+ "titre": "La relance part toute seule",
+ "idees": [
+  31,
+  39
+ ],
+ "cta": true,
+ "date": "30.10.2026",
+ "phrases": [
+  {
+   "dit": "Le devis est parti lundi.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Le devis",
+    "est parti",
+    "lundi."
+   ],
+   "jaune": [
+    2
+   ],
+   "badge": [
+    "LUN.",
+    "26"
+   ]
+  },
+  {
+   "dit": "Jeudi, toujours rien.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Jeudi,",
+    "toujours",
+    "rien."
+   ],
+   "jaune": [
+    2
+   ],
+   "bulle": true
+  },
+  {
+   "dit": "Relancer ? Ça vous gêne.",
+   "scene": "surligne",
+   "fond": "ink",
+   "ligne": "Relancer ?",
+   "surligne": "Ça vous gêne."
+  },
+  {
+   "dit": "Avec Prouessia, la relance part toute seule.",
+   "scene": "app",
+   "haut": [
+    "La relance",
+    "part toute seule"
+   ],
+   "capture": "extras/14-reglage-relance",
+   "pastille": "Activée ✓"
+  },
+  {
+   "dit": "Par e-mail, à la date prévue.",
+   "scene": "app",
+   "haut": [
+    "Par e-mail,",
+    "à la date prévue"
+   ],
+   "capture": "14-relance-auto"
+  },
+  {
+   "dit": "Même quand vous êtes sur le chantier.",
+   "scene": "app",
+   "haut": [
+    "Même sur",
+    "le chantier"
+   ],
+   "capture": "12-devis-sans-reponse"
+  },
+  {
+   "dit": "Et vous, vous relancez vos devis ?",
+   "scene": "question",
+   "lignes": [
+    "Et vous,",
+    "vous relancez",
+    "vos devis ?"
+   ]
+  },
+  {
+   "dit": "Prouessia, le partenaire des plombiers.",
+   "scene": "fin"
+  }
+ ],
+ "affirmations": [
+  {
+   "dit": "Le devis est parti lundi, jeudi toujours rien, et relancer, ça gêne.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, la relance part toute seule, par e-mail, à la date prévue, même quand vous êtes sur le chantier.",
+   "ref": "avantages n° 31 « Relance de devis automatique par mail » et n° 39 « Relance faite pendant que vous travaillez » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui). Écrans montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ]
+}

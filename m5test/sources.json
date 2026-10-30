@@ -1,0 +1,32 @@
+{
+ "num": "m5test",
+ "titre": "La relance part toute seule",
+ "date": "30.10.2026",
+ "affirmations": [
+  {
+   "dit": "Le devis est parti lundi, jeudi toujours rien, et relancer, ça gêne.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, la relance part toute seule, par e-mail, à la date prévue, même quand vous êtes sur le chantier.",
+   "ref": "avantages n° 31 « Relance de devis automatique par mail » et n° 39 « Relance faite pendant que vous travaillez » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui). Écrans montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [],
+ "licence_videos": "Animation réalisée par Prouessia (aucune vidéo extérieure ; écrans : compte de démonstration)",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon » ; aucune musique"
+}

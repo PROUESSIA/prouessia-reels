@@ -8,7 +8,7 @@ Le texte dit = le texte affiché (balises retirées). Un clip différent par phr
   python3 moteur/vecu.py NN voix FICHIER   → FICHIER = le .txt écrit par le hub (JSON Gemini) : extrait la voix, la cale phrase par phrase
   python3 moteur/vecu.py NN video          → NN/video.mp4 (+ contrôle mouvement, + videos/clips/utilises.json)
 """
-import os, sys, re, json, base64, subprocess
+import os, sys, re, json, base64, shutil, subprocess
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'moteur')); sys.path.insert(0, os.path.join(ROOT, 'essai'))
 CLIPS = os.path.join(ROOT, 'videos', 'clips'); W, H = 1080, 1920
@@ -20,7 +20,7 @@ FIN = 'Prouessia, le partenaire des plombiers.'  # fin identique de chaque Reel 
 FIN_HTML = 'Prouessia, <b>le partenaire des plombiers</b><br><span style="font-size:60px;color:#fff">prouessia.fr</span>'
 # phrase d'appel à la fin de chaque Reel (demande de la fondatrice, 29/10) : même prise de voix pour tous les Reels
 CTA = 'Vous voulez en savoir plus ? Écrivez « DEVIS » en commentaire.'
-CTA_HTML = '<span style="display:block;margin-top:40px;font-size:62px">Vous voulez en savoir plus&nbsp;?<br>Écrivez <b>«&nbsp;DEVIS&nbsp;»</b> en commentaire</span>'
+CTA_HTML = '<span class="cta" style="display:block;margin-top:40px;font-size:62px">Vous voulez en savoir plus&nbsp;?<br>Écrivez <b>«&nbsp;DEVIS&nbsp;»</b> en commentaire</span>'
 CTA_WAV = os.path.join(ROOT, 'voix', 'cta-devis.wav')
 PAUSE = 0.2  # pause entre deux phrases (les références : 0,1 à 0,3 s)
 
@@ -175,12 +175,45 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
         carteh = (f'<div class="appel"><div class="tel">&#9742;</div><div><div class="qui">{a[0]}</div><div class="msg">{a[1]}</div></div></div>') if a else ''
         return (f'<div class="voile{" app" if app else ""}"></div><div class="lg"><img src="data:image/png;base64,{ico}">prouessia</div>{carteh}'
                 f'<div class="t{" bas" if app else (" apres" if a else "")}">{h}</div>')
-    cq = os.path.join(d, 'calques'); os.makedirs(cq, exist_ok=True)
+    # MOTION (décision du 30/10/2026) : même habillage, mais chaque élément ENTRE en mouvement
+    # (mots qui montent avec rebond, surlignage jaune qui se trace, carte d'appel qui claque, appel DEVIS qui monte).
+    # On capture les ~1,5 premières secondes de chaque calque image par image (30 i/s), puis la dernière image est tenue.
+    css += f"""@keyframes motIn{{0%{{opacity:0;transform:translateY(80px) scale(.55)}}55%{{opacity:1}}100%{{opacity:1;transform:none}}}}
+@keyframes pop{{0%{{opacity:0;transform:translateY(-70px) scale(.7) rotate(-2deg)}}100%{{opacity:1;transform:none}}}}
+@keyframes up{{0%{{opacity:0;transform:translateY(120px)}}100%{{opacity:1;transform:none}}}}
+@keyframes sweep{{from{{background-size:0% 100%}}to{{background-size:100% 100%}}}}
+.w{{display:inline-block;animation:motIn .5s cubic-bezier(.34,1.56,.64,1) both}}
+.appel{{animation:pop .55s cubic-bezier(.34,1.56,.64,1) both}} .cta{{animation:up .5s cubic-bezier(.34,1.4,.64,1) both}}
+.t b{{background:linear-gradient({MUST},{MUST}) no-repeat left center/0% 100%;animation:sweep .45s cubic-bezier(.2,.8,.2,1) both}}"""
+    ANIM = r"""(premiere) => {
+      let k = 0; const S = 0.07; const t0 = document.querySelector('.appel') ? 0.35 : 0.05;
+      const wrap = (el) => { for (const n of [...el.childNodes]) {
+        if (n.nodeType === 3) { const f = document.createDocumentFragment();
+          for (const p of n.textContent.split(/([ \n\t]+)/)) { if (!p) continue;
+            if (/^[ \n\t]+$/.test(p)) { f.appendChild(document.createTextNode(p)); continue; }
+            const s = document.createElement('span'); s.className = 'w'; s.textContent = p; s.style.animationDelay = (t0 + k++ * S) + 's'; f.appendChild(s); }
+          n.replaceWith(f);
+        } else if (n.nodeType === 1 && n.tagName !== 'BR' && !n.classList.contains('cta')) {
+          if (n.tagName === 'B') n.style.animationDelay = (t0 + k * S + 0.12) + 's';
+          wrap(n);
+        } } };
+      document.querySelectorAll(premiere ? '.titre,.ph,.t' : '.ph,.t').forEach(wrap);
+      const c = document.querySelector('.cta'); if (c) c.style.animationDelay = (t0 + k * S + 0.25) + 's';
+      const as = document.getAnimations(); as.forEach((a) => a.pause());
+      return Math.max(0, ...as.map((a) => a.effect.getComputedTiming().endTime));
+    }"""
+    cq = os.path.join(d, 'calques'); shutil.rmtree(cq, ignore_errors=True); os.makedirs(cq)
+    NI = []
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={'width': W, 'height': H})
         for i, ph in enumerate(P):
             pg.set_content(f'<html><head><meta charset="utf-8"><style>{css}</style></head><body>{calque(i, ph)}</body></html>')
-            pg.wait_for_timeout(120); pg.screenshot(path=f'{cq}/{i}.png', omit_background=True)
+            pg.evaluate('document.fonts.ready'); fin = pg.evaluate(ANIM, i == 0)
+            nf = max(1, min(int(D[i] * 30) - 1, int(fin * 30) + 2)); os.makedirs(f'{cq}/{i}')
+            for f in range(nf):
+                pg.evaluate('(t) => document.getAnimations().forEach((a) => { a.currentTime = t; })', f * 1000 / 30)
+                pg.screenshot(path=f'{cq}/{i}/{f:03d}.png', omit_background=True)
+            NI.append(nf)
         b.close()
     inp, fil, n = [], [], len(P)
     for i, ph in enumerate(P):
@@ -208,8 +241,8 @@ body{{width:{W}px;height:{H}px;background:transparent;font-family:Inter,sans-ser
             x = f"max(0\\,min(iw-{W}\\,iw*{ph.get('cx', .5)}-{W/2}+{ph.get('sens', 1)}*300*(t/{du:.2f}-0.5)))"
             fil.append(f"[{i}:v]fps=30,scale=-2:{int(H*(1.18+.03*(i%3)))},crop={W}:{H}:{x}:(ih-{H})/2,setsar=1,trim=duration={du:.2f},setpts=PTS-STARTPTS[v{i}]")
     for i in range(n):
-        inp += ['-loop', '1', '-t', f'{D[i]:.2f}', '-i', f'{cq}/{i}.png']
-        fil += [f"[{n+i}:v]fps=30,format=rgba,trim=duration={D[i]:.2f},setpts=PTS-STARTPTS[c{i}]", f"[v{i}][c{i}]overlay=0:0:shortest=1[o{i}]"]
+        inp += ['-framerate', '30', '-i', f'{cq}/{i}/%03d.png']
+        fil += [f"[{n+i}:v]format=rgba,tpad=stop_mode=clone:stop_duration={D[i] + 1:.2f},trim=duration={D[i]:.2f},setpts=PTS-STARTPTS[c{i}]", f"[v{i}][c{i}]overlay=0:0:shortest=1[o{i}]"]
     fil.append(''.join(f'[o{i}]' for i in range(n)) + f'concat=n={n}:v=1:a=0,format=yuv420p[v]')
     inp += ['-i', os.path.join(d, 'voix.wav')]  # règle 10 : la voix, rien d'autre
     fil.append(f"[{2*n}:a]apad,atrim=0:{TOTAL:.2f},loudnorm=I=-14:TP=-1.5[a]")

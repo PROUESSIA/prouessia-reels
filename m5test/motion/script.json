@@ -1,0 +1,86 @@
+{
+ "titre": "La relance part toute seule",
+ "phrases": [
+  {
+   "dit": "Le devis est parti lundi.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Le devis",
+    "est parti",
+    "lundi."
+   ],
+   "jaune": [
+    2
+   ],
+   "badge": [
+    "LUN.",
+    "26"
+   ]
+  },
+  {
+   "dit": "Jeudi, toujours rien.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Jeudi,",
+    "toujours",
+    "rien."
+   ],
+   "jaune": [
+    2
+   ],
+   "bulle": true
+  },
+  {
+   "dit": "Relancer ? Ça vous gêne.",
+   "scene": "surligne",
+   "fond": "ink",
+   "ligne": "Relancer ?",
+   "surligne": "Ça vous gêne."
+  },
+  {
+   "dit": "Avec Prouessia, la relance part toute seule.",
+   "scene": "app",
+   "haut": [
+    "La relance",
+    "part toute seule"
+   ],
+   "capture": "extras/14-reglage-relance",
+   "pastille": "Activée ✓"
+  },
+  {
+   "dit": "Par e-mail, à la date prévue.",
+   "scene": "app",
+   "haut": [
+    "Par e-mail,",
+    "à la date prévue"
+   ],
+   "capture": "14-relance-auto"
+  },
+  {
+   "dit": "Même quand vous êtes sur le chantier.",
+   "scene": "app",
+   "haut": [
+    "Même sur",
+    "le chantier"
+   ],
+   "capture": "12-devis-sans-reponse"
+  },
+  {
+   "dit": "Et vous, vous relancez vos devis ?",
+   "scene": "question",
+   "lignes": [
+    "Et vous,",
+    "vous relancez",
+    "vos devis ?"
+   ]
+  },
+  {
+   "dit": "Prouessia, le partenaire des plombiers.",
+   "scene": "fin"
+  }
+ ],
+ "cta": true,
+ "mot": "DEVIS"
+}

@@ -14,7 +14,7 @@ Rédigé le 30/10/2026 par l'équipe qui a monté la machine, pour l'équipe Cla
 
 ## 2. La mission
 
-1. **Faire connaître Prouessia aux plombiers** avec 4 vidéos par jour (YouTube Shorts + TikTok automatiques, Instagram + Facebook à la main).
+1. **Faire connaître Prouessia aux plombiers** avec 5 vidéos par jour (YouTube Shorts + TikTok automatiques, Instagram + Facebook à la main).
 2. **Créer des contacts** : appel « Écrivez DEVIS en commentaire » sur chaque Reel ; offre flash « maquette de site gratuite » tous les 10 jours.
 3. **Prospecter** : jusqu'à 15 e-mails par jour à des plombiers sans site, vérifiés au registre officiel, envoyés seulement après validation.
 4. **Fidéliser l'audience** avec la série animée « Sous pression » (un épisode par jour à 18 h, suspense, cliffhanger).
@@ -25,13 +25,13 @@ Rédigé le 30/10/2026 par l'équipe qui a monté la machine, pour l'équipe Cla
 | Heure | Qui | Quoi |
 |---|---|---|
 | 09:05 | Make, hub 8032025 (planifié) | Publie les vidéos validées du jour (TikTok + YouTube, chacune à son heure) **et** envoie les e-mails de prospection validés + relances J+5 |
-| 09:10 | Claude Code, tâche « Machine à Reels Prouessia » | Fabrique les 4 vidéos du **lendemain**, prépare la prospection, envoie le **Plan du jour** (à valider) et l'e-mail **« 💬 Vos 20 min réseaux »** (section « 📲 À programmer sur Meta » en tête) |
+| 09:10 | Claude Code, tâche « Machine à Reels Prouessia » | Fabrique les 5 vidéos du **lendemain**, prépare la prospection, envoie le **Plan du jour** (à valider) et l'e-mail **« 💬 Vos 20 min réseaux »** (section « 📲 À programmer sur Meta » en tête) |
 | dans la journée | La fondatrice | Clique « Tout valider » ; programme Instagram/Facebook dans Meta Business Suite |
 | toutes les 30 min, 09:15-20:45 | Make, scénario 8273226 « publier (sans e-mails) » | Publie les vidéos validées tardivement (après 09:05) : tout de suite si l'heure est passée, sinon programmées à leur heure. Ne touche jamais aux e-mails |
 | 09:45, 12:45, 18:45 | Claude Code, tâche « Contrôle des publications » | Vérifie que chaque vidéo prévue est bien partie ; relance si possible ; sinon e-mail court à la fondatrice |
 | 20:45 | même tâche | Contrôle + **bilan du soir** par e-mail |
 
-Les 4 créneaux vidéo : **9 h** vécu · **12 h 30** POV (ou offre flash) · **18 h** épisode de la série · **20 h 30** carte (règle officielle).
+Les 5 créneaux vidéo : **9 h** vécu · **12 h 30** POV (ou offre flash) · **18 h** épisode de la série · **20 h 30** carte (règle officielle) · **22 h** style 5 « motion ».
 
 **Règle « seulement le lendemain »** : on n'ajoute jamais au plan une vidéo ou un e-mail pour plus loin que le lendemain (préparer à l'avance des fichiers est permis).
 
@@ -40,6 +40,8 @@ Les 4 créneaux vidéo : **9 h** vécu · **12 h 30** POV (ou offre flash) · **
 - **Vécu (9 h)** : idée suivante des 100 idées (`idees/100-idees.json`, champ `fait`), titre fixe = l'accroche, 10 à 16 phrases courtes lues mot pour mot (voix Gemini « Charon »), un plan différent par phrase, captures de l'appli nettes, question de débat, fin « Prouessia, le partenaire des plombiers ». Modèles : `16/`, `19/`, `22/`.
 - **POV (12 h 30)** : « POV : … » en titre, scène à la 1re personne qui tourne mal (chute drôle), puis l'avantage. Modèles : `17/`, `20/`, `23/`.
 - **Carte (20 h 30)** : carte d'appel client en ouverture, une règle officielle tirée de `faits/` avec sa source, puis un avantage. Gabarit `"gabarit": "carte"`. Modèles : `18/`, `21/`, `24/`.
+- **Style 5 « motion » (22 h)**, validé le 30/10 : animation dessinée (grands mots qui rebondissent, fonds marine/jaune, vrais écrans de l'appli en carrousel, question, fin + DEVIS animé), aucun clip. `motion/faire.py`, modèle `m5test/motion.json`, publié pour la 1re fois : `28/` le 30/10 à 22 h.
+- **Motion sur vécu, POV et carte** (30/10) : même style qu'avant, mais textes, surlignages, carte d'appel et appel DEVIS entrent en mouvement (automatique dans `moteur/vecu.py`). Pas dans la série.
 - **Phrase de fin, sur tous les Reels sauf la série** : « Vous voulez en savoir plus ? Écrivez « DEVIS » en commentaire. » (automatique dans `moteur/vecu.py`, voix commune `voix/cta-devis.wav`), et dans la légende : « 👉 Écrivez DEVIS en commentaire : on vous envoie notre fiche à imprimer en message privé. » Sur Instagram, « DEVIS » déclenche l'envoi automatique de la fiche (Zernio).
 - **Offre flash, tous les 10 jours** (31/10, 10/11, 20/11, 30/11…) à 12 h 30 : « la maquette de votre site, gratuite, pour les 10 premiers commentaires « SITE » ». Modèle `25/` (`"cta": false`). La fondatrice répond elle-même.
 - **Série « Sous pression » (18 h)** : bible `anim/BIBLE-sous-pression.md` (arc de 10 épisodes, personnages, logique de l'arnaque). Personnages sans yeux ni bouche, aucun texte d'explication à l'écran, carte sponsor muette de 1,8 s au milieu, histoire **logique et cohérente** avec les épisodes précédents, cliffhanger, pas de phrase DEVIS. Moteur `anim/film.py` + `anim/film.html`.
@@ -66,11 +68,11 @@ Les 4 créneaux vidéo : **9 h** vécu · **12 h 30** POV (ou offre flash) · **
 
 ## 6. Calendrier en cours
 
-| Date | 9 h | 12 h 30 | 18 h | 20 h 30 |
-|---|---|---|---|---|
-| ven. 30/10 | 22 vécu (publié) | 23 POV (TikTok seul) | ép. 3 « Le piège » v2 | 24 carte TVA (TikTok seul) |
-| sam. 31/10 | 26 vécu idée 5 | **25 offre flash** | ép. 4 « Le contrat » | 27 carte devis payant |
-| dim. 1/11 | idée suivante | POV | ép. 5 « La serrure » (déjà rendu) | carte |
+| Date | 9 h | 12 h 30 | 18 h | 20 h 30 | 22 h |
+|---|---|---|---|---|---|
+| ven. 30/10 | 22 vécu (publié) | 23 POV (TikTok seul) | ép. 3 « Le piège » v2 | 24 carte TVA (TikTok seul) | 28 motion « La relance » |
+| sam. 31/10 | 26 vécu idée 5 | **25 offre flash** | ép. 4 « Le contrat » | 27 carte devis payant | — (le style 5 commence le 1/11) |
+| dim. 1/11 | idée suivante | POV | ép. 5 « La serrure » (déjà rendu) | carte | style 5 |
 | lun. 2/11 | … | … | ép. 6 « L'aimant » (`anim/ep06/A-FAIRE.md`) | … |
 | ensuite | | offre flash le 10/11, 20/11, 30/11 | ép. 7+ selon la bible (décors à créer) | |
 
@@ -93,6 +95,7 @@ Les 4 créneaux vidéo : **9 h** vécu · **12 h 30** POV (ou offre flash) · **
 - 28/10 : captures nettes non zoomées et aucune phrase muette, à vérifier avant chaque envoi ; ép. 2 : Mme Rocher en panique ; ép. 3 : Vasseur a une excuse logique, seul Vasseur est renvoyé, il murmure la menace.
 - 28/10 soir : série relancée depuis l'épisode 2.
 - 29/10 : phrase « Écrivez DEVIS » à la fin de chaque prochaine vidéo, sauf la série ; offre flash maquette gratuite tous les 10 jours.
+- 30/10 : style 5 « motion » validé (5e vidéo, 22 h) ; motion aussi sur vécu/POV/carte en gardant leur style.
 - 30/10 : publication même si la validation arrive après 09:05 ; contrôles dans la journée ; bilan du soir ; **la communication passe sous la responsabilité de Claude Code**.
 
 ## 9. Comment rendre compte à la fondatrice

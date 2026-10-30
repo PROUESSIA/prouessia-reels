@@ -1,0 +1,48 @@
+{
+ "phrases": [
+  {
+   "a": 0.35,
+   "b": 1.32,
+   "text": "Le devis est parti lundi."
+  },
+  {
+   "a": 1.57,
+   "b": 2.75,
+   "text": "Jeudi, toujours rien."
+  },
+  {
+   "a": 3.2,
+   "b": 4.79,
+   "text": "Relancer ? Ça vous gêne."
+  },
+  {
+   "a": 5.24,
+   "b": 6.99,
+   "text": "Avec Prouessia, la relance part toute seule."
+  },
+  {
+   "a": 7.24,
+   "b": 8.46,
+   "text": "Par e-mail, à la date prévue."
+  },
+  {
+   "a": 8.71,
+   "b": 9.82,
+   "text": "Même quand vous êtes sur le chantier."
+  },
+  {
+   "a": 10.27,
+   "b": 11.53,
+   "text": "Et vous, vous relancez vos devis ?"
+  },
+  {
+   "a": 11.98,
+   "b": 13.83,
+   "text": "Prouessia, le partenaire des plombiers."
+  }
+ ],
+ "cta": {
+  "a": 14.28,
+  "b": 17.23
+ }
+}
