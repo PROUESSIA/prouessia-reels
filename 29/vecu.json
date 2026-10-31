@@ -1,0 +1,120 @@
+{
+ "titre": "Client déjà connu&nbsp;? <b>Il est déjà dans votre liste</b>",
+ "sorte": "vecu",
+ "idee": 7,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "366324",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Un ancien client <b>vous rappelle</b>",
+   "clip": "16360",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Nouvelle fuite, <b>nouveau devis</b>",
+   "clip": "2805",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Et vous retapez <b>son nom</b>",
+   "clip": "169446",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "<b>Son adresse</b>",
+   "clip": "155023",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "<b>Son téléphone</b>",
+   "clip": "3168",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "<b>Encore une fois</b>",
+   "clip": "215751",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Avec Prouessia, <b>il est déjà dans votre liste</b>",
+   "clip": "img:extras/21-recherche-clients",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Vous le choisissez, <b>c'est déjà rempli</b>",
+   "clip": "img:03-client-prerempli",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et vous passez <b>au chantier</b>",
+   "clip": "85349",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Et vous, vous retapez <b>vos clients</b>&nbsp;?",
+   "clip": "37179",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "257091",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ],
+ "affirmations": [
+  {
+   "dit": "Un ancien client rappelle, et vous retapez son nom, son adresse, son téléphone, encore une fois.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, le client déjà connu est dans votre liste : vous le choisissez, c'est déjà rempli.",
+   "ref": "avantage n° 7 « Client déjà connu, déjà rempli » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "01.11.2026",
+ "avert": "Information générale, pas un conseil personnalisé."
+}

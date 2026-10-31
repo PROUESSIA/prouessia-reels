@@ -1,0 +1,120 @@
+{
+ "titre": "POV&nbsp;: le client doit <b>installer un truc</b> pour lire votre devis",
+ "sorte": "pov",
+ "idee": 9,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "3172",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Le devis <b>est parti</b>",
+   "clip": "3180",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Le client <b>vous rappelle</b>",
+   "clip": "83866",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "«&nbsp;Il faut télécharger <b>quoi</b>&nbsp;?&nbsp;»",
+   "clip": "314073",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Vous expliquez <b>au téléphone</b>",
+   "clip": "1110",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Il cherche <b>ses lunettes</b>",
+   "clip": "39887",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Et il appelle <b>un autre plombier</b>",
+   "clip": "143745",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Avec Prouessia, <b>il ouvre le devis sans rien installer</b>",
+   "clip": "img:06-mail-puis-devis",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Un lien, <b>un code</b>, c'est ouvert",
+   "clip": "img:extras/06-code-acces",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Même <b>depuis son canapé</b>",
+   "clip": "79337",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Et vous, vos clients, <b>ils s'en sortent</b>&nbsp;?",
+   "clip": "41500",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "257092",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ],
+ "affirmations": [
+  {
+   "dit": "Le client doit télécharger quelque chose pour lire le devis, cherche ses lunettes et appelle un autre plombier.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, votre client ouvre le devis sans rien installer : un lien, un code, c'est ouvert.",
+   "ref": "avantage n° 9 « Le client ouvre sans rien installer » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "01.11.2026",
+ "avert": "Information générale, pas un conseil personnalisé."
+}
