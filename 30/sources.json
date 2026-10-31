@@ -1,0 +1,105 @@
+{
+ "num": "30",
+ "titre": "POV : le client doit installer un truc pour lire votre devis",
+ "date": "01.11.2026",
+ "affirmations": [
+  {
+   "dit": "Le client doit télécharger quelque chose pour lire le devis, cherche ses lunettes et appelle un autre plombier.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, votre client ouvre le devis sans rien installer : un lien, un code, c'est ouvert.",
+   "ref": "avantage n° 9 « Le client ouvre sans rien installer » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "3172",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-3172/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "3180",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-3180/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "83866",
+   "sujet": "femme",
+   "url": "https://pixabay.com/videos/id-83866/",
+   "auteur": "SYG_Anime"
+  },
+  {
+   "id": "314073",
+   "sujet": "mobile",
+   "url": "https://pixabay.com/videos/id-314073/",
+   "auteur": "AdisResic"
+  },
+  {
+   "id": "1110",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-1110/",
+   "auteur": "DistillVideos"
+  },
+  {
+   "id": "39887",
+   "sujet": "oldman",
+   "url": "https://pixabay.com/videos/id-39887/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "143745",
+   "sujet": "autoroute",
+   "url": "https://pixabay.com/videos/id-143745/",
+   "auteur": "traindroner"
+  },
+  {
+   "id": "img:06-mail-puis-devis",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:06-mail-puis-devis/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:extras/06-code-acces",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:extras/06-code-acces/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "79337",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-79337/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "41500",
+   "sujet": "hard work",
+   "url": "https://pixabay.com/videos/id-41500/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "257092",
+   "sujet": "eau",
+   "url": "https://pixabay.com/videos/id-257092/",
+   "auteur": "padrinan"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

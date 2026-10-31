@@ -1,0 +1,32 @@
+{
+ "num": "32",
+ "titre": "Votre site, on le crée",
+ "date": "01.11.2026",
+ "affirmations": [
+  {
+   "dit": "Un site internet : pas le temps, et pas l'envie de s'y mettre.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, votre site de plombier, on le crée : vous n'y touchez pas.",
+   "ref": "avantage n° 11 « On crée votre site pour vous » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui). Écran montré : site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un site de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [],
+ "licence_videos": "Animation réalisée par Prouessia (aucune vidéo extérieure ; écrans : compte de démonstration)",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon » ; aucune musique"
+}

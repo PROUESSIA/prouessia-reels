@@ -1,0 +1,105 @@
+{
+ "num": "29",
+ "titre": "Client déjà connu ? Il est déjà dans votre liste",
+ "date": "01.11.2026",
+ "affirmations": [
+  {
+   "dit": "Un ancien client rappelle, et vous retapez son nom, son adresse, son téléphone, encore une fois.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Avec Prouessia, le client déjà connu est dans votre liste : vous le choisissez, c'est déjà rempli.",
+   "ref": "avantage n° 7 « Client déjà connu, déjà rempli » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "366324",
+   "sujet": "salon",
+   "url": "https://pixabay.com/videos/id-366324/",
+   "auteur": "GIUSEPPE-DE-BERGOLIS"
+  },
+  {
+   "id": "16360",
+   "sujet": "téléphoner",
+   "url": "https://pixabay.com/videos/id-16360/",
+   "auteur": "StefWithAnF"
+  },
+  {
+   "id": "2805",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-2805/",
+   "auteur": "Luiz-Jorge-Artista"
+  },
+  {
+   "id": "169446",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-169446/",
+   "auteur": "magicmore"
+  },
+  {
+   "id": "155023",
+   "sujet": "écrire",
+   "url": "https://pixabay.com/videos/id-155023/",
+   "auteur": "32472866"
+  },
+  {
+   "id": "3168",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-3168/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "215751",
+   "sujet": "homme",
+   "url": "https://pixabay.com/videos/id-215751/",
+   "auteur": "G3Remote"
+  },
+  {
+   "id": "img:extras/21-recherche-clients",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:extras/21-recherche-clients/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:03-client-prerempli",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:03-client-prerempli/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "85349",
+   "sujet": "constructeur",
+   "url": "https://pixabay.com/videos/id-85349/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "37179",
+   "sujet": "construction",
+   "url": "https://pixabay.com/videos/id-37179/",
+   "auteur": "thenickmurphy"
+  },
+  {
+   "id": "257091",
+   "sujet": "eau",
+   "url": "https://pixabay.com/videos/id-257091/",
+   "auteur": "padrinan"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

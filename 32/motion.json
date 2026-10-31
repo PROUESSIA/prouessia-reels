@@ -40,15 +40,20 @@
     "Votre site,",
     "on le crée"
    ],
-   "capture": "23-site-vitrine-mobile",
-   "pastille": "En ligne ✓"
+   "capture": "23-site-vitrine-mobile"
   },
   {
    "dit": "Vous n'y touchez pas.",
-   "scene": "surligne",
+   "scene": "texte",
    "fond": "ink",
-   "ligne": "Vous",
-   "surligne": "n'y touchez pas."
+   "lignes": [
+    "Vous n'y",
+    "touchez",
+    "pas."
+   ],
+   "jaune": [
+    2
+   ]
   },
   {
    "dit": "Vous, vous restez sur le chantier.",

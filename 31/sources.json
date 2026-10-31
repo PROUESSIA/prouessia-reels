@@ -1,0 +1,136 @@
+{
+ "num": "31",
+ "titre": "Le client dit : « on verra le prix après »",
+ "date": "01.11.2026",
+ "affirmations": [
+  {
+   "dit": "Un client demande de venir vite et de voir le prix après.",
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :"
+  },
+  {
+   "dit": "Chez un particulier, un dépannage, c'est un devis écrit avant d'intervenir, dès le premier euro.",
+   "ref": "arrêté du 24 janvier 2017, art. 4 : le devis détaillé est remis avant l'exécution de la prestation, sans seuil de montant (art. 1 et annexe 1 : la plomberie et le génie climatique sont concernés). La DGCCRF parle d'un « contrat écrit et formalisé dès le 1er euro ».",
+   "liens": [
+    [
+     "Légifrance : arrêté du 24 janvier 2017",
+     "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033935513"
+    ],
+    [
+     "economie.gouv.fr (DGCCRF) : fiche « Dépannage à domicile »",
+     "https://www.economie.gouv.fr/dgccrf/publications/vie-pratique/fiches-pratiques/depannage-a-domicile"
+    ],
+    [
+     "inc-conso.fr (Institut national de la consommation) : devis quel que soit le montant",
+     "https://www.inc-conso.fr/content/vous-contestez-labsence-de-remise-dun-devis-loccasion-dun-depannage-domicile-compter-du-1er"
+    ]
+   ],
+   "label": "Ce que dit le texte :"
+  },
+  {
+   "dit": "Avec le prix et le déplacement : le prix et les frais de déplacement font partie des mentions du devis de dépannage.",
+   "ref": "arrêté du 24 janvier 2017, art. 4-I (liste des mentions du devis détaillé), reprise par la DGCCRF. Le devis comporte aussi le nom et l'adresse de l'entreprise. Signé chez le client, il prend la forme du contrat hors établissement (art. 4-II).",
+   "liens": [
+    [
+     "Légifrance : arrêté du 24 janvier 2017",
+     "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033935513"
+    ]
+   ],
+   "label": "Ce que dit le texte :"
+  },
+  {
+   "dit": "Et ce devis, gardez-le, pour le jour où le client en reparle.",
+   "ref": "un conseil pratique, pas une obligation légale.",
+   "liens": [],
+   "label": "Notre conseil :"
+  },
+  {
+   "dit": "Avec Prouessia, tous vos devis au même endroit, retrouvés en 3 secondes.",
+   "ref": "avantage n° 10 « Tous les devis au même endroit » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Le détail complet des mentions obligatoires du devis de dépannage (voir les sources).",
+  "Les règles pour les clients professionnels.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "109880",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-109880/",
+   "auteur": "Martin_Grabo"
+  },
+  {
+   "id": "271",
+   "sujet": "lavabo",
+   "url": "https://pixabay.com/videos/id-271/",
+   "auteur": "Life-Of-Vids"
+  },
+  {
+   "id": "87050",
+   "sujet": "encrer",
+   "url": "https://pixabay.com/videos/id-87050/",
+   "auteur": "mootlak"
+  },
+  {
+   "id": "107696",
+   "sujet": "salle de bains",
+   "url": "https://pixabay.com/videos/id-107696/",
+   "auteur": "madhu1005"
+  },
+  {
+   "id": "73977",
+   "sujet": "tube",
+   "url": "https://pixabay.com/videos/id-73977/",
+   "auteur": "TRAPHITHO"
+  },
+  {
+   "id": "4737",
+   "sujet": "formalités administratives",
+   "url": "https://pixabay.com/videos/id-4737/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "257351",
+   "sujet": "téléphone",
+   "url": "https://pixabay.com/videos/id-257351/",
+   "auteur": "adriennicolasmettler"
+  },
+  {
+   "id": "img:11-liste-devis",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:11-liste-devis/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:extras/11-recherche",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:extras/11-recherche/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "65574",
+   "sujet": "travailler",
+   "url": "https://pixabay.com/videos/id-65574/",
+   "auteur": "ALLDI"
+  },
+  {
+   "id": "85350",
+   "sujet": "constructeur",
+   "url": "https://pixabay.com/videos/id-85350/",
+   "auteur": "AlexKopeykin"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}
