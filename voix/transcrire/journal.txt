@@ -1,2 +1,5 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-voix/transcrire/motion-relance.wav 44
+voix/transcrire/29.wav 65
+voix/transcrire/30.wav 75
+voix/transcrire/31.wav 69
+voix/transcrire/32.wav 47

@@ -1,0 +1,347 @@
+[
+{
+"mot": "Le",
+"debut": 0.0,
+"fin": 0.26
+},
+{
+"mot": "client",
+"debut": 0.26,
+"fin": 0.48
+},
+{
+"mot": "dit,",
+"debut": 0.48,
+"fin": 0.68
+},
+{
+"mot": "on",
+"debut": 0.8,
+"fin": 0.94
+},
+{
+"mot": "verra",
+"debut": 0.94,
+"fin": 1.16
+},
+{
+"mot": "le",
+"debut": 1.16,
+"fin": 1.22
+},
+{
+"mot": "prix",
+"debut": 1.22,
+"fin": 1.32
+},
+{
+"mot": "après,",
+"debut": 1.32,
+"fin": 1.5
+},
+{
+"mot": "chez",
+"debut": 1.94,
+"fin": 2.2
+},
+{
+"mot": "un",
+"debut": 2.2,
+"fin": 2.34
+},
+{
+"mot": "particulier,",
+"debut": 2.34,
+"fin": 2.8
+},
+{
+"mot": "un",
+"debut": 2.94,
+"fin": 3.02
+},
+{
+"mot": "dépannage.",
+"debut": 3.02,
+"fin": 3.42
+},
+{
+"mot": "C",
+"debut": 3.96,
+"fin": 4.22
+},
+{
+"mot": "'est",
+"debut": 4.22,
+"fin": 4.44
+},
+{
+"mot": "un",
+"debut": 4.44,
+"fin": 4.78
+},
+{
+"mot": "devis",
+"debut": 4.78,
+"fin": 5.12
+},
+{
+"mot": "écrit",
+"debut": 5.12,
+"fin": 5.5
+},
+{
+"mot": "avant",
+"debut": 5.5,
+"fin": 6.02
+},
+{
+"mot": "d",
+"debut": 6.02,
+"fin": 6.18
+},
+{
+"mot": "'intervenir",
+"debut": 6.18,
+"fin": 6.56
+},
+{
+"mot": "dès",
+"debut": 6.56,
+"fin": 7.06
+},
+{
+"mot": "le",
+"debut": 7.06,
+"fin": 7.18
+},
+{
+"mot": "1er",
+"debut": 7.18,
+"fin": 7.44
+},
+{
+"mot": "euro,",
+"debut": 7.44,
+"fin": 7.6
+},
+{
+"mot": "avec",
+"debut": 7.94,
+"fin": 8.3
+},
+{
+"mot": "le",
+"debut": 8.3,
+"fin": 8.58
+},
+{
+"mot": "prix",
+"debut": 8.58,
+"fin": 8.78
+},
+{
+"mot": "et",
+"debut": 8.78,
+"fin": 9.16
+},
+{
+"mot": "le",
+"debut": 9.16,
+"fin": 9.22
+},
+{
+"mot": "déplacement.",
+"debut": 9.22,
+"fin": 9.54
+},
+{
+"mot": "Et",
+"debut": 10.24,
+"fin": 10.32
+},
+{
+"mot": "ce",
+"debut": 10.32,
+"fin": 10.44
+},
+{
+"mot": "devis,",
+"debut": 10.44,
+"fin": 10.7
+},
+{
+"mot": "gardez",
+"debut": 11.04,
+"fin": 11.4
+},
+{
+"mot": "-le,",
+"debut": 11.4,
+"fin": 11.48
+},
+{
+"mot": "le",
+"debut": 11.96,
+"fin": 12.12
+},
+{
+"mot": "jour",
+"debut": 12.12,
+"fin": 12.3
+},
+{
+"mot": "où",
+"debut": 12.3,
+"fin": 12.42
+},
+{
+"mot": "il",
+"debut": 12.42,
+"fin": 12.5
+},
+{
+"mot": "en",
+"debut": 12.5,
+"fin": 12.6
+},
+{
+"mot": "reparle.",
+"debut": 12.6,
+"fin": 13.0
+},
+{
+"mot": "Avec",
+"debut": 13.58,
+"fin": 13.78
+},
+{
+"mot": "Proécia,",
+"debut": 13.78,
+"fin": 14.22
+},
+{
+"mot": "tous",
+"debut": 14.66,
+"fin": 14.78
+},
+{
+"mot": "vos",
+"debut": 14.78,
+"fin": 14.92
+},
+{
+"mot": "devis",
+"debut": 14.92,
+"fin": 15.18
+},
+{
+"mot": "au",
+"debut": 15.18,
+"fin": 15.34
+},
+{
+"mot": "même",
+"debut": 15.34,
+"fin": 15.44
+},
+{
+"mot": "endroit,",
+"debut": 15.44,
+"fin": 15.72
+},
+{
+"mot": "retrouvés",
+"debut": 16.0,
+"fin": 16.28
+},
+{
+"mot": "en",
+"debut": 16.28,
+"fin": 16.36
+},
+{
+"mot": "3",
+"debut": 16.36,
+"fin": 16.52
+},
+{
+"mot": "secondes.",
+"debut": 16.52,
+"fin": 16.9
+},
+{
+"mot": "Et",
+"debut": 17.42,
+"fin": 17.5
+},
+{
+"mot": "vous,",
+"debut": 17.5,
+"fin": 17.62
+},
+{
+"mot": "vos",
+"debut": 18.04,
+"fin": 18.18
+},
+{
+"mot": "vieux",
+"debut": 18.18,
+"fin": 18.3
+},
+{
+"mot": "devis,",
+"debut": 18.3,
+"fin": 18.56
+},
+{
+"mot": "vous",
+"debut": 18.66,
+"fin": 18.68
+},
+{
+"mot": "les",
+"debut": 18.68,
+"fin": 18.76
+},
+{
+"mot": "retrouvez.",
+"debut": 18.76,
+"fin": 19.08
+},
+{
+"mot": "Proécia,",
+"debut": 19.66,
+"fin": 20.16
+},
+{
+"mot": "le",
+"debut": 20.46,
+"fin": 20.5
+},
+{
+"mot": "partenaire",
+"debut": 20.5,
+"fin": 20.98
+},
+{
+"mot": "des",
+"debut": 20.98,
+"fin": 21.06
+},
+{
+"mot": "plombiers.",
+"debut": 21.06,
+"fin": 21.34
+},
+{
+"mot": "Proécia",
+"debut": 21.72,
+"fin": 22.0
+},
+{
+"mot": ".fr",
+"debut": 22.0,
+"fin": 22.36
+}
+]

@@ -1,0 +1,327 @@
+[
+{
+"mot": "Client",
+"debut": 0.0,
+"fin": 0.38
+},
+{
+"mot": "déjà",
+"debut": 0.38,
+"fin": 0.56
+},
+{
+"mot": "connu,",
+"debut": 0.56,
+"fin": 0.9
+},
+{
+"mot": "il",
+"debut": 1.14,
+"fin": 1.18
+},
+{
+"mot": "est",
+"debut": 1.18,
+"fin": 1.24
+},
+{
+"mot": "déjà",
+"debut": 1.24,
+"fin": 1.44
+},
+{
+"mot": "dans",
+"debut": 1.44,
+"fin": 1.54
+},
+{
+"mot": "votre",
+"debut": 1.54,
+"fin": 1.66
+},
+{
+"mot": "liste.",
+"debut": 1.66,
+"fin": 2.0
+},
+{
+"mot": "Un",
+"debut": 2.54,
+"fin": 2.8
+},
+{
+"mot": "ancien",
+"debut": 2.8,
+"fin": 3.04
+},
+{
+"mot": "client",
+"debut": 3.04,
+"fin": 3.24
+},
+{
+"mot": "vous",
+"debut": 3.24,
+"fin": 3.4
+},
+{
+"mot": "rappelle",
+"debut": 3.4,
+"fin": 3.66
+},
+{
+"mot": "nouvelle",
+"debut": 3.66,
+"fin": 4.3
+},
+{
+"mot": "fuite,",
+"debut": 4.3,
+"fin": 4.64
+},
+{
+"mot": "nouveau",
+"debut": 4.72,
+"fin": 4.78
+},
+{
+"mot": "de",
+"debut": 4.78,
+"fin": 4.96
+},
+{
+"mot": "vie,",
+"debut": 4.96,
+"fin": 5.08
+},
+{
+"mot": "et",
+"debut": 5.76,
+"fin": 5.96
+},
+{
+"mot": "vous",
+"debut": 5.96,
+"fin": 6.1
+},
+{
+"mot": "retapez",
+"debut": 6.1,
+"fin": 6.44
+},
+{
+"mot": "son",
+"debut": 6.44,
+"fin": 6.56
+},
+{
+"mot": "nom,",
+"debut": 6.56,
+"fin": 6.72
+},
+{
+"mot": "son",
+"debut": 7.18,
+"fin": 7.4
+},
+{
+"mot": "adresse,",
+"debut": 7.4,
+"fin": 7.76
+},
+{
+"mot": "son",
+"debut": 8.02,
+"fin": 8.1
+},
+{
+"mot": "téléphone",
+"debut": 8.1,
+"fin": 8.44
+},
+{
+"mot": "encore",
+"debut": 8.44,
+"fin": 8.82
+},
+{
+"mot": "une",
+"debut": 8.82,
+"fin": 9.02
+},
+{
+"mot": "fois.",
+"debut": 9.02,
+"fin": 9.22
+},
+{
+"mot": "Avec",
+"debut": 9.92,
+"fin": 10.06
+},
+{
+"mot": "ProHesia,",
+"debut": 10.06,
+"fin": 10.52
+},
+{
+"mot": "il",
+"debut": 10.72,
+"fin": 10.78
+},
+{
+"mot": "est",
+"debut": 10.78,
+"fin": 10.88
+},
+{
+"mot": "déjà",
+"debut": 10.88,
+"fin": 11.12
+},
+{
+"mot": "dans",
+"debut": 11.12,
+"fin": 11.26
+},
+{
+"mot": "votre",
+"debut": 11.26,
+"fin": 11.38
+},
+{
+"mot": "liste.",
+"debut": 11.38,
+"fin": 11.76
+},
+{
+"mot": "Vous",
+"debut": 12.18,
+"fin": 12.28
+},
+{
+"mot": "le",
+"debut": 12.28,
+"fin": 12.4
+},
+{
+"mot": "choisissez,",
+"debut": 12.4,
+"fin": 12.84
+},
+{
+"mot": "c",
+"debut": 13.2,
+"fin": 13.26
+},
+{
+"mot": "'est",
+"debut": 13.26,
+"fin": 13.32
+},
+{
+"mot": "déjà",
+"debut": 13.32,
+"fin": 13.52
+},
+{
+"mot": "rempli",
+"debut": 13.52,
+"fin": 13.86
+},
+{
+"mot": "et",
+"debut": 13.86,
+"fin": 14.4
+},
+{
+"mot": "vous",
+"debut": 14.4,
+"fin": 14.5
+},
+{
+"mot": "passez",
+"debut": 14.5,
+"fin": 14.74
+},
+{
+"mot": "au",
+"debut": 14.74,
+"fin": 14.78
+},
+{
+"mot": "chantier.",
+"debut": 14.78,
+"fin": 15.06
+},
+{
+"mot": "Et",
+"debut": 15.62,
+"fin": 15.72
+},
+{
+"mot": "vous,",
+"debut": 15.72,
+"fin": 15.88
+},
+{
+"mot": "vous",
+"debut": 16.08,
+"fin": 16.24
+},
+{
+"mot": "retapez",
+"debut": 16.24,
+"fin": 16.58
+},
+{
+"mot": "vos",
+"debut": 16.58,
+"fin": 16.66
+},
+{
+"mot": "clients",
+"debut": 16.66,
+"fin": 16.86
+},
+{
+"mot": "?",
+"debut": 16.86,
+"fin": 17.48
+},
+{
+"mot": "ProHesia,",
+"debut": 17.48,
+"fin": 17.96
+},
+{
+"mot": "le",
+"debut": 18.28,
+"fin": 18.36
+},
+{
+"mot": "partenaire",
+"debut": 18.36,
+"fin": 18.7
+},
+{
+"mot": "des",
+"debut": 18.7,
+"fin": 18.76
+},
+{
+"mot": "plombiers.",
+"debut": 18.76,
+"fin": 19.04
+},
+{
+"mot": "ProHesia",
+"debut": 19.64,
+"fin": 20.04
+},
+{
+"mot": ".fr",
+"debut": 20.04,
+"fin": 20.36
+}
+]

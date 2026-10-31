@@ -1,0 +1,377 @@
+[
+{
+"mot": "POV,",
+"debut": 0.0,
+"fin": 0.56
+},
+{
+"mot": "le",
+"debut": 0.78,
+"fin": 1.02
+},
+{
+"mot": "client",
+"debut": 1.02,
+"fin": 1.24
+},
+{
+"mot": "doit",
+"debut": 1.24,
+"fin": 1.44
+},
+{
+"mot": "installer",
+"debut": 1.44,
+"fin": 1.76
+},
+{
+"mot": "un",
+"debut": 1.76,
+"fin": 1.92
+},
+{
+"mot": "truc",
+"debut": 1.92,
+"fin": 2.04
+},
+{
+"mot": "pour",
+"debut": 2.04,
+"fin": 2.22
+},
+{
+"mot": "lire",
+"debut": 2.22,
+"fin": 2.36
+},
+{
+"mot": "votre",
+"debut": 2.36,
+"fin": 2.52
+},
+{
+"mot": "devis.",
+"debut": 2.52,
+"fin": 2.84
+},
+{
+"mot": "Le",
+"debut": 3.44,
+"fin": 3.72
+},
+{
+"mot": "devis",
+"debut": 3.72,
+"fin": 3.94
+},
+{
+"mot": "est",
+"debut": 3.94,
+"fin": 4.02
+},
+{
+"mot": "parti,",
+"debut": 4.02,
+"fin": 4.24
+},
+{
+"mot": "le",
+"debut": 4.82,
+"fin": 4.94
+},
+{
+"mot": "client",
+"debut": 4.94,
+"fin": 5.16
+},
+{
+"mot": "vous",
+"debut": 5.16,
+"fin": 5.3
+},
+{
+"mot": "rappelle,",
+"debut": 5.3,
+"fin": 5.54
+},
+{
+"mot": "il",
+"debut": 6.16,
+"fin": 6.34
+},
+{
+"mot": "faut",
+"debut": 6.34,
+"fin": 6.48
+},
+{
+"mot": "télécharger",
+"debut": 6.48,
+"fin": 6.84
+},
+{
+"mot": "quoi",
+"debut": 6.84,
+"fin": 7.08
+},
+{
+"mot": "?",
+"debut": 7.08,
+"fin": 7.68
+},
+{
+"mot": "Vous",
+"debut": 7.68,
+"fin": 7.78
+},
+{
+"mot": "expliquez",
+"debut": 7.78,
+"fin": 8.22
+},
+{
+"mot": "au",
+"debut": 8.22,
+"fin": 8.26
+},
+{
+"mot": "téléphone,",
+"debut": 8.26,
+"fin": 8.5
+},
+{
+"mot": "il",
+"debut": 9.2,
+"fin": 9.34
+},
+{
+"mot": "cherche",
+"debut": 9.34,
+"fin": 9.52
+},
+{
+"mot": "sur",
+"debut": 9.52,
+"fin": 9.7
+},
+{
+"mot": "l",
+"debut": 9.7,
+"fin": 9.76
+},
+{
+"mot": "'unette",
+"debut": 9.76,
+"fin": 10.0
+},
+{
+"mot": "et",
+"debut": 10.0,
+"fin": 10.6
+},
+{
+"mot": "il",
+"debut": 10.6,
+"fin": 10.76
+},
+{
+"mot": "appelle",
+"debut": 10.76,
+"fin": 10.92
+},
+{
+"mot": "un",
+"debut": 10.92,
+"fin": 11.04
+},
+{
+"mot": "autre",
+"debut": 11.04,
+"fin": 11.14
+},
+{
+"mot": "plombier.",
+"debut": 11.14,
+"fin": 11.5
+},
+{
+"mot": "Avec",
+"debut": 12.34,
+"fin": 12.62
+},
+{
+"mot": "Proacia,",
+"debut": 12.62,
+"fin": 12.98
+},
+{
+"mot": "il",
+"debut": 13.44,
+"fin": 13.54
+},
+{
+"mot": "ouvre",
+"debut": 13.54,
+"fin": 13.64
+},
+{
+"mot": "le",
+"debut": 13.64,
+"fin": 13.76
+},
+{
+"mot": "devis",
+"debut": 13.76,
+"fin": 14.04
+},
+{
+"mot": "sans",
+"debut": 14.04,
+"fin": 14.28
+},
+{
+"mot": "rien",
+"debut": 14.28,
+"fin": 14.46
+},
+{
+"mot": "installer.",
+"debut": 14.46,
+"fin": 14.74
+},
+{
+"mot": "Un",
+"debut": 15.12,
+"fin": 15.24
+},
+{
+"mot": "lien,",
+"debut": 15.24,
+"fin": 15.4
+},
+{
+"mot": "un",
+"debut": 15.72,
+"fin": 15.82
+},
+{
+"mot": "code,",
+"debut": 15.82,
+"fin": 16.02
+},
+{
+"mot": "c",
+"debut": 16.32,
+"fin": 16.4
+},
+{
+"mot": "'est",
+"debut": 16.4,
+"fin": 16.46
+},
+{
+"mot": "ouvert.",
+"debut": 16.46,
+"fin": 16.66
+},
+{
+"mot": "Même",
+"debut": 17.1,
+"fin": 17.36
+},
+{
+"mot": "depuis",
+"debut": 17.36,
+"fin": 17.54
+},
+{
+"mot": "son",
+"debut": 17.54,
+"fin": 17.7
+},
+{
+"mot": "canapé.",
+"debut": 17.7,
+"fin": 18.02
+},
+{
+"mot": "Et",
+"debut": 18.86,
+"fin": 19.08
+},
+{
+"mot": "vous,",
+"debut": 19.08,
+"fin": 19.2
+},
+{
+"mot": "vos",
+"debut": 19.44,
+"fin": 19.52
+},
+{
+"mot": "clients,",
+"debut": 19.52,
+"fin": 19.74
+},
+{
+"mot": "ils",
+"debut": 19.96,
+"fin": 20.1
+},
+{
+"mot": "s",
+"debut": 20.1,
+"fin": 20.16
+},
+{
+"mot": "'en",
+"debut": 20.16,
+"fin": 20.2
+},
+{
+"mot": "sortent",
+"debut": 20.2,
+"fin": 20.48
+},
+{
+"mot": "?",
+"debut": 20.48,
+"fin": 21.04
+},
+{
+"mot": "Proacia,",
+"debut": 21.04,
+"fin": 21.5
+},
+{
+"mot": "le",
+"debut": 21.8,
+"fin": 21.88
+},
+{
+"mot": "partenaire",
+"debut": 21.88,
+"fin": 22.26
+},
+{
+"mot": "des",
+"debut": 22.26,
+"fin": 22.34
+},
+{
+"mot": "plombiers.",
+"debut": 22.34,
+"fin": 22.6
+},
+{
+"mot": "Proacia",
+"debut": 22.96,
+"fin": 23.3
+},
+{
+"mot": ".fr",
+"debut": 23.3,
+"fin": 23.58
+}
+]
