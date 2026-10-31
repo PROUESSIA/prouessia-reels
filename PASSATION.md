@@ -89,6 +89,8 @@ Les 5 créneaux vidéo : **9 h** vécu · **12 h 30** POV (ou offre flash) · **
 
 8. **Week-end et prospection (31/10)** : 13 prospects validés (`pret`) le 30/10 étaient encore `pret` à 09:50 le samedi 31/10 (prospection prévue du lundi au vendredi : à confirmer au contrôle). Aucun nouveau prospect proposé le samedi pour ne pas dépasser 15 envois par jour ; reprendre le lundi 2/11 (2 en réserve : CAREN, ABC PI ; département suivant à choisir).
 
+9. **Instagram + Facebook automatiques arrêtés le 31/10 vers 09:40** (contrôle de 18 h 46) : Make a éteint le scénario 8274397 après 3 erreurs Zernio `[409] already scheduled`. Cause : la Story échoue, son gestionnaire `Ignore` coupe la branche avant l'écriture de `instagram` dans `platform_ids`, donc le Reel est renvoyé à chaque passage. Correction à faire en session avec la fondatrice : `Resume` au lieu d'`Ignore` sur la Story (et sur le 409 du Reel), marquer `instagram` sur les 4 Reels du 31/10, puis réactiver. Facebook 12 h 30 / 18 h / 20 h 30 du 31/10 non publiés (fondatrice prévenue par e-mail). Détails : `controles/2026-10-31.md`.
+
 ## 8. Décisions de la fondatrice (dans l'ordre)
 
 - 20/10 : vraies images de plomberie, mouvement dès la 1re image, écran rempli.
