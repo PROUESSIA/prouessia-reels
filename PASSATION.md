@@ -73,19 +73,21 @@ Les 5 créneaux vidéo : **9 h** vécu · **12 h 30** POV (ou offre flash) · **
 |---|---|---|---|---|---|
 | ven. 30/10 | 22 vécu (publié) | 23 POV (TikTok seul) | ép. 3 « Le piège » v2 | 24 carte TVA (TikTok seul) | 28 motion « La relance » |
 | sam. 31/10 | 26 vécu idée 5 | **25 offre flash** | ép. 4 « Le contrat » | 27 carte devis payant | — (le style 5 commence le 1/11) |
-| dim. 1/11 | idée suivante | POV | ép. 5 « La serrure » (déjà rendu) | carte | style 5 |
-| lun. 2/11 | … | … | ép. 6 « L'aimant » (`anim/ep06/A-FAIRE.md`) | … |
+| dim. 1/11 | 29 vécu idée 7 | 30 POV idée 9 | ép. 5 « La serrure » | 31 carte dépannage (idée 10) | 32 motion « Votre site, on le crée » (idée 11) |
+| lun. 2/11 | idée suivante (12) | POV | ép. 6 « L'aimant » (`anim/ep06/A-FAIRE.md` : voix + rendu ≈ 25 min à faire) | carte | style 5 |
 | ensuite | | offre flash le 10/11, 20/11, 30/11 | ép. 7+ selon la bible (décors à créer) | |
 
 ## 7. Points ouverts à la passation (à traiter en priorité)
 
-1. **YouTube refuse les envois (403) depuis le 30/10 vers 12 h** : très probablement le quota quotidien de l'API YouTube (10 000 unités ; un envoi = 1 600, une recherche de la veille = 100). Les Reels 23 et 24 du 30/10 sont partis sur TikTok mais pas sur YouTube (statut `en_publication`). À surveiller le 31/10 au matin ; limiter la veille YouTube à 2 recherches par jour ; ne jamais relancer une publication déjà partie sur TikTok (doublon).
+1. **YouTube refuse les envois (403) depuis le 30/10 vers 12 h** (31/10 : les envois YouTube refonctionnent, la vidéo de 9 h du 31/10 est sur YouTube ; 23 et 24 du 30/10 restent sans YouTube) : très probablement le quota quotidien de l'API YouTube (10 000 unités ; un envoi = 1 600, une recherche de la veille = 100). Les Reels 23 et 24 du 30/10 sont partis sur TikTok mais pas sur YouTube (statut `en_publication`). À surveiller le 31/10 au matin ; limiter la veille YouTube à 2 recherches par jour ; ne jamais relancer une publication déjà partie sur TikTok (doublon).
 2. **« unknown » en description** : la fondatrice a vu le 30/10 deux vidéos publiées en même temps avec une description « unknown » (plateforme à confirmer avec elle). Les légendes en base sont complètes. À éclaircir avec sa capture.
 3. **Lecture des commentaires reçus** : le mode `recus` renvoie 404 (YouTube). Le bilan du soir ne peut pas encore lister les commentaires : à réparer (YouTube `commentThreads` par vidéo, avec les `platform_ids`).
 4. **Série** : épisodes 7 à 10 à écrire (décors à créer : chez la mère de Léa, entrepôt, maison de Mme Garnier) en respectant la bible et la logique.
 5. **Prospection** : 2 prospects en réserve (adresse de domiciliation) ; département suivant à choisir (78, 92, 91, 94, 95, 93, 75, 77 déjà faits).
 6. LinkedIn proposé (page entreprise à créer par la fondatrice), sans réponse.
 7. **Relevé des vues (hub mode `stats`) en erreur le 30/10 au soir** : `getPostById` → `[400] Invalid post ID format` (exécution d45807fe…). Probablement un Reel lu sans identifiant TikTok valide (23 et 24 du 30/10, `platform_ids` vide). Le bilan du soir n'a donc pas de vues. À corriger dans une session avec la fondatrice (filtre « identifiant TikTok présent » dans la route stats de `make/build_hub.py`) ; les tâches de contrôle ne modifient pas les scénarios.
+
+8. **Week-end et prospection (31/10)** : 13 prospects validés (`pret`) le 30/10 étaient encore `pret` à 09:50 le samedi 31/10 (prospection prévue du lundi au vendredi : à confirmer au contrôle). Aucun nouveau prospect proposé le samedi pour ne pas dépasser 15 envois par jour ; reprendre le lundi 2/11 (2 en réserve : CAREN, ABC PI ; département suivant à choisir).
 
 ## 8. Décisions de la fondatrice (dans l'ordre)
 

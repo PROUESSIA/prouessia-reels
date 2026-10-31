@@ -70,7 +70,7 @@
   "avantage": "Client déjà connu, déjà rempli",
   "accroche": "Client déjà connu ? Il est déjà dans votre liste.",
   "images": "Fiche client qui se pré- remplit, clé à molette en arrière-plan",
-  "fait": false,
+  "fait": "2026-10-31 · 29",
   "captures": [
    "app:01-nouveau-devis",
    "app:03-client-prerempli"
@@ -94,7 +94,7 @@
   "avantage": "Le client ouvre sans rien installer",
   "accroche": "Votre client ouvre le devis sans rien installer.",
   "images": "Client sur son canapé qui ouvre le lien sur son téléphone",
-  "fait": false,
+  "fait": "2026-10-31 · 30",
   "captures": [
    "app:06-mail-puis-devis"
   ]
@@ -105,7 +105,7 @@
   "avantage": "Tous les devis au même endroit",
   "accroche": "Tous vos devis au même endroit, retrouvés en 3 secondes.",
   "images": "Pile de papiers froissés dans la camionnette, puis liste nette à l'écran",
-  "fait": false,
+  "fait": "2026-10-31 · 31",
   "captures": [
    "app:11-liste-devis"
   ]
@@ -116,7 +116,7 @@
   "avantage": "On crée votre site pour vous",
   "accroche": "Votre site de plombier, on le crée. Vous n'y touchez pas.",
   "images": "Plombier qui range ses clés, son site qui se construit sur un écran derrière lui",
-  "fait": false,
+  "fait": "2026-10-31 · 32",
   "captures": [
    "app:23-site-vitrine-mobile",
    "app:23-site-vitrine-ordi"
@@ -343,7 +343,7 @@
   "avantage": "Relance de devis automatique par mail",
   "accroche": "Le client n'a pas répondu? Le mail de relance part tout seul.",
   "images": "Boîte mail vide, mail de relance qui part, réponse qui arrive",
-  "fait": false,
+  "fait": "2026-10-30 · 28",
   "captures": [
    "app:14-relance-auto"
   ]
@@ -432,7 +432,7 @@
   "avantage": "Relance faite pendant que vous travaillez",
   "accroche": "Vous êtes sur le chantier, la relance part quand même.",
   "images": "Plombier qui soude un tuyau, notification discrète dans le coin",
-  "fait": false,
+  "fait": "2026-10-30 · 28",
   "captures": [
    "app:14-relance-auto"
   ]

@@ -304,9 +304,59 @@
    "sujet": "Devis payant : possible si le client le sait avant · idée 8",
    "ton": "Charon",
    "note": "Ajouté le 30/10, à valider"
+  },
+  {
+   "n": "reel-29",
+   "reel": "29",
+   "style": "vécu",
+   "date": "2026-11-01",
+   "heure": "09:00",
+   "sujet": "Idée 7 · Client déjà connu, déjà rempli",
+   "ton": "Charon",
+   "note": "Ajouté le 31/10, à valider"
+  },
+  {
+   "n": "reel-30",
+   "reel": "30",
+   "style": "POV",
+   "date": "2026-11-01",
+   "heure": "12:30",
+   "sujet": "Idée 9 · Le client ouvre sans rien installer",
+   "ton": "Charon",
+   "note": "Ajouté le 31/10, à valider"
+  },
+  {
+   "n": "ep-5",
+   "reel": "anim/ep05",
+   "style": "série Sous pression",
+   "date": "2026-11-01",
+   "heure": "18:00",
+   "sujet": "Sous pression · Épisode 5 — La serrure",
+   "ton": "Gemini Puck / Orus / Aoede / Gacrux / Algenib",
+   "note": "Ajouté le 31/10, à valider (film rendu le 28/10)"
+  },
+  {
+   "n": "reel-31",
+   "reel": "31",
+   "style": "carte",
+   "date": "2026-11-01",
+   "heure": "20:30",
+   "sujet": "Dépannage : devis écrit avant, dès le premier euro · idée 10",
+   "ton": "Charon",
+   "note": "Ajouté le 31/10, à valider"
+  },
+  {
+   "n": "reel-32",
+   "reel": "32",
+   "style": "motion",
+   "date": "2026-11-01",
+   "heure": "22:00",
+   "sujet": "Idée 11 · On crée votre site pour vous",
+   "ton": "Charon",
+   "note": "Ajouté le 31/10, à valider"
   }
  ],
- "prochain_numero_dossier": 28,
+ "prochain_numero_dossier": 33,
  "prospection": {
   "departement_semaine": "78",
   "derniere_page_importee": 2,
