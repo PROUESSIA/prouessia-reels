@@ -1,0 +1,82 @@
+{
+ "titre": "Votre site, on le crée",
+ "phrases": [
+  {
+   "dit": "Un site internet ? Pas le temps.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Un site ?",
+    "Pas le",
+    "temps."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Et pas l'envie de s'y mettre.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Et pas",
+    "l'envie",
+    "de s'y mettre."
+   ],
+   "jaune": [
+    2
+   ],
+   "bulle": true
+  },
+  {
+   "dit": "Avec Prouessia, votre site de plombier, on le crée.",
+   "scene": "app",
+   "haut": [
+    "Votre site,",
+    "on le crée"
+   ],
+   "capture": "23-site-vitrine-mobile"
+  },
+  {
+   "dit": "Vous n'y touchez pas.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Vous n'y",
+    "touchez",
+    "pas."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Vous, vous restez sur le chantier.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Vous, vous",
+    "restez sur",
+    "le chantier."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Et vous, vous avez déjà un site ?",
+   "scene": "question",
+   "lignes": [
+    "Et vous,",
+    "vous avez",
+    "déjà un site ?"
+   ]
+  },
+  {
+   "dit": "Prouessia, le partenaire des plombiers.",
+   "scene": "fin"
+  }
+ ],
+ "cta": true,
+ "mot": "DEVIS"
+}
