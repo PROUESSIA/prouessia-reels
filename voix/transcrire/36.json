@@ -1,0 +1,247 @@
+[
+{
+"mot": "Un",
+"debut": 0.0,
+"fin": 0.5
+},
+{
+"mot": "client",
+"debut": 0.5,
+"fin": 0.68
+},
+{
+"mot": "vous",
+"debut": 0.68,
+"fin": 0.8
+},
+{
+"mot": "appelle,",
+"debut": 0.8,
+"fin": 1.08
+},
+{
+"mot": "il",
+"debut": 1.48,
+"fin": 1.58
+},
+{
+"mot": "habite",
+"debut": 1.58,
+"fin": 1.76
+},
+{
+"mot": "trop",
+"debut": 1.76,
+"fin": 1.96
+},
+{
+"mot": "loin.",
+"debut": 1.96,
+"fin": 2.18
+},
+{
+"mot": "Encore",
+"debut": 2.54,
+"fin": 2.86
+},
+{
+"mot": "un",
+"debut": 2.86,
+"fin": 2.98
+},
+{
+"mot": "déplacement",
+"debut": 2.98,
+"fin": 3.32
+},
+{
+"mot": "pour",
+"debut": 3.32,
+"fin": 3.54
+},
+{
+"mot": "rien.",
+"debut": 3.54,
+"fin": 3.66
+},
+{
+"mot": "Avec",
+"debut": 4.32,
+"fin": 4.48
+},
+{
+"mot": "Prohessia,",
+"debut": 4.48,
+"fin": 4.94
+},
+{
+"mot": "vos",
+"debut": 5.12,
+"fin": 5.18
+},
+{
+"mot": "communes",
+"debut": 5.18,
+"fin": 5.48
+},
+{
+"mot": "sont",
+"debut": 5.48,
+"fin": 5.58
+},
+{
+"mot": "affichées",
+"debut": 5.58,
+"fin": 6.1
+},
+{
+"mot": "sur",
+"debut": 6.1,
+"fin": 6.24
+},
+{
+"mot": "votre",
+"debut": 6.24,
+"fin": 6.38
+},
+{
+"mot": "site.",
+"debut": 6.38,
+"fin": 6.7
+},
+{
+"mot": "Le",
+"debut": 7.18,
+"fin": 7.24
+},
+{
+"mot": "client",
+"debut": 7.24,
+"fin": 7.44
+},
+{
+"mot": "voit",
+"debut": 7.44,
+"fin": 7.58
+},
+{
+"mot": "tout",
+"debut": 7.58,
+"fin": 7.72
+},
+{
+"mot": "de",
+"debut": 7.72,
+"fin": 7.78
+},
+{
+"mot": "suite",
+"debut": 7.78,
+"fin": 7.88
+},
+{
+"mot": "votre",
+"debut": 7.88,
+"fin": 8.02
+},
+{
+"mot": "zone,",
+"debut": 8.02,
+"fin": 8.26
+},
+{
+"mot": "plus",
+"debut": 8.6,
+"fin": 8.76
+},
+{
+"mot": "de",
+"debut": 8.76,
+"fin": 8.84
+},
+{
+"mot": "déplacement",
+"debut": 8.84,
+"fin": 9.14
+},
+{
+"mot": "pour",
+"debut": 9.14,
+"fin": 9.32
+},
+{
+"mot": "rien.",
+"debut": 9.32,
+"fin": 9.46
+},
+{
+"mot": "Et",
+"debut": 10.16,
+"fin": 10.3
+},
+{
+"mot": "vous,",
+"debut": 10.3,
+"fin": 10.44
+},
+{
+"mot": "votre",
+"debut": 10.68,
+"fin": 10.78
+},
+{
+"mot": "zone,",
+"debut": 10.78,
+"fin": 11.02
+},
+{
+"mot": "elle",
+"debut": 11.32,
+"fin": 11.4
+},
+{
+"mot": "s",
+"debut": 11.4,
+"fin": 11.5
+},
+{
+"mot": "'arrête",
+"debut": 11.5,
+"fin": 11.66
+},
+{
+"mot": "où",
+"debut": 11.66,
+"fin": 11.76
+},
+{
+"mot": "?",
+"debut": 11.76,
+"fin": 12.26
+},
+{
+"mot": "Prohessia,",
+"debut": 12.26,
+"fin": 12.76
+},
+{
+"mot": "le",
+"debut": 13.1,
+"fin": 13.16
+},
+{
+"mot": "partenaire",
+"debut": 13.16,
+"fin": 13.6
+},
+{
+"mot": "des",
+"debut": 13.6,
+"fin": 13.66
+},
+{
+"mot": "plombiers.",
+"debut": 13.66,
+"fin": 13.96
+}
+]

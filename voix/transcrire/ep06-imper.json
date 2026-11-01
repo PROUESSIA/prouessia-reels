@@ -1,0 +1,67 @@
+[
+{
+"mot": "Si",
+"debut": 0.0,
+"fin": 0.62
+},
+{
+"mot": "boite",
+"debut": 0.62,
+"fin": 1.08
+},
+{
+"mot": "ce",
+"debut": 1.08,
+"fin": 1.48
+},
+{
+"mot": "matin,",
+"debut": 1.48,
+"fin": 1.78
+},
+{
+"mot": "que",
+"debut": 2.62,
+"fin": 3.26
+},
+{
+"mot": "des",
+"debut": 3.26,
+"fin": 3.4
+},
+{
+"mot": "personnes",
+"debut": 3.4,
+"fin": 3.7
+},
+{
+"mot": "seules,",
+"debut": 3.7,
+"fin": 4.14
+},
+{
+"mot": "on",
+"debut": 5.32,
+"fin": 6.46
+},
+{
+"mot": "a",
+"debut": 6.46,
+"fin": 6.58
+},
+{
+"mot": "de",
+"debut": 6.58,
+"fin": 6.64
+},
+{
+"mot": "la",
+"debut": 6.64,
+"fin": 6.72
+},
+{
+"mot": "compagnie.",
+"debut": 6.72,
+"fin": 7.18
+}
+]

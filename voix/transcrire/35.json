@@ -1,0 +1,347 @@
+[
+{
+"mot": "Le",
+"debut": 0.0,
+"fin": 0.38
+},
+{
+"mot": "client",
+"debut": 0.38,
+"fin": 0.56
+},
+{
+"mot": "demande.",
+"debut": 0.56,
+"fin": 0.8
+},
+{
+"mot": "Vous",
+"debut": 1.14,
+"fin": 1.32
+},
+{
+"mot": "avez",
+"debut": 1.32,
+"fin": 1.46
+},
+{
+"mot": "un",
+"debut": 1.46,
+"fin": 1.6
+},
+{
+"mot": "site",
+"debut": 1.6,
+"fin": 1.72
+},
+{
+"mot": "chez",
+"debut": 1.72,
+"fin": 2.82
+},
+{
+"mot": "un",
+"debut": 2.82,
+"fin": 2.94
+},
+{
+"mot": "particulier,",
+"debut": 2.94,
+"fin": 3.2
+},
+{
+"mot": "une",
+"debut": 3.54,
+"fin": 3.7
+},
+{
+"mot": "règle",
+"debut": 3.7,
+"fin": 3.84
+},
+{
+"mot": "à",
+"debut": 3.84,
+"fin": 3.96
+},
+{
+"mot": "connaître.",
+"debut": 3.96,
+"fin": 4.24
+},
+{
+"mot": "Vous",
+"debut": 4.68,
+"fin": 4.76
+},
+{
+"mot": "devez",
+"debut": 4.76,
+"fin": 4.9
+},
+{
+"mot": "lui",
+"debut": 4.9,
+"fin": 5.0
+},
+{
+"mot": "donner",
+"debut": 5.0,
+"fin": 5.14
+},
+{
+"mot": "accès",
+"debut": 5.14,
+"fin": 5.54
+},
+{
+"mot": "à",
+"debut": 5.54,
+"fin": 5.66
+},
+{
+"mot": "un",
+"debut": 5.66,
+"fin": 5.76
+},
+{
+"mot": "médiateur,",
+"debut": 5.76,
+"fin": 6.1
+},
+{
+"mot": "son",
+"debut": 6.4,
+"fin": 6.62
+},
+{
+"mot": "nom",
+"debut": 6.62,
+"fin": 6.86
+},
+{
+"mot": "et",
+"debut": 6.86,
+"fin": 6.98
+},
+{
+"mot": "ses",
+"debut": 6.98,
+"fin": 7.08
+},
+{
+"mot": "coordonnées.",
+"debut": 7.08,
+"fin": 7.46
+},
+{
+"mot": "Sur",
+"debut": 8.18,
+"fin": 8.54
+},
+{
+"mot": "votre",
+"debut": 8.54,
+"fin": 8.64
+},
+{
+"mot": "site,",
+"debut": 8.64,
+"fin": 8.82
+},
+{
+"mot": "par",
+"debut": 8.92,
+"fin": 8.94
+},
+{
+"mot": "exemple.",
+"debut": 8.94,
+"fin": 9.18
+},
+{
+"mot": "Ou",
+"debut": 9.94,
+"fin": 10.14
+},
+{
+"mot": "sur",
+"debut": 10.14,
+"fin": 10.28
+},
+{
+"mot": "vos",
+"debut": 10.28,
+"fin": 10.4
+},
+{
+"mot": "conditions",
+"debut": 10.4,
+"fin": 10.58
+},
+{
+"mot": "de",
+"debut": 10.58,
+"fin": 10.76
+},
+{
+"mot": "vente.",
+"debut": 10.76,
+"fin": 10.88
+},
+{
+"mot": "Avec",
+"debut": 11.8,
+"fin": 12.0
+},
+{
+"mot": "Procia,",
+"debut": 12.0,
+"fin": 12.3
+},
+{
+"mot": "vous",
+"debut": 12.74,
+"fin": 12.86
+},
+{
+"mot": "avez",
+"debut": 12.86,
+"fin": 12.98
+},
+{
+"mot": "votre",
+"debut": 12.98,
+"fin": 13.1
+},
+{
+"mot": "site.",
+"debut": 13.1,
+"fin": 13.28
+},
+{
+"mot": "Quand",
+"debut": 14.04,
+"fin": 14.22
+},
+{
+"mot": "on",
+"debut": 14.22,
+"fin": 14.3
+},
+{
+"mot": "cherche",
+"debut": 14.3,
+"fin": 14.44
+},
+{
+"mot": "un",
+"debut": 14.44,
+"fin": 14.58
+},
+{
+"mot": "plombier",
+"debut": 14.58,
+"fin": 14.82
+},
+{
+"mot": "chez",
+"debut": 14.82,
+"fin": 14.96
+},
+{
+"mot": "vous,",
+"debut": 14.96,
+"fin": 15.14
+},
+{
+"mot": "on",
+"debut": 15.26,
+"fin": 15.32
+},
+{
+"mot": "vous",
+"debut": 15.32,
+"fin": 15.44
+},
+{
+"mot": "trouve.",
+"debut": 15.44,
+"fin": 15.62
+},
+{
+"mot": "Et",
+"debut": 16.6,
+"fin": 16.8
+},
+{
+"mot": "vous,",
+"debut": 16.8,
+"fin": 16.92
+},
+{
+"mot": "on",
+"debut": 17.34,
+"fin": 17.46
+},
+{
+"mot": "vous",
+"debut": 17.46,
+"fin": 17.54
+},
+{
+"mot": "trouve",
+"debut": 17.54,
+"fin": 17.66
+},
+{
+"mot": "sur",
+"debut": 17.66,
+"fin": 17.8
+},
+{
+"mot": "Google",
+"debut": 17.8,
+"fin": 17.94
+},
+{
+"mot": "?",
+"debut": 17.94,
+"fin": 19.12
+},
+{
+"mot": "Procia,",
+"debut": 19.12,
+"fin": 19.62
+},
+{
+"mot": "le",
+"debut": 20.0,
+"fin": 20.18
+},
+{
+"mot": "partenaire",
+"debut": 20.18,
+"fin": 20.54
+},
+{
+"mot": "des",
+"debut": 20.54,
+"fin": 20.58
+},
+{
+"mot": "plombiers.",
+"debut": 20.58,
+"fin": 20.82
+},
+{
+"mot": "Procia",
+"debut": 21.48,
+"fin": 21.8
+},
+{
+"mot": ".fr",
+"debut": 21.8,
+"fin": 22.1
+}
+]

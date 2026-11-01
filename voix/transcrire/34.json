@@ -1,0 +1,352 @@
+[
+{
+"mot": "POV,",
+"debut": 0.0,
+"fin": 0.68
+},
+{
+"mot": "le",
+"debut": 1.02,
+"fin": 1.26
+},
+{
+"mot": "client",
+"debut": 1.26,
+"fin": 1.5
+},
+{
+"mot": "tape",
+"debut": 1.5,
+"fin": 1.7
+},
+{
+"mot": "votre",
+"debut": 1.7,
+"fin": 1.84
+},
+{
+"mot": "nom",
+"debut": 1.84,
+"fin": 2.04
+},
+{
+"mot": "sur",
+"debut": 2.04,
+"fin": 2.16
+},
+{
+"mot": "internet,",
+"debut": 2.16,
+"fin": 2.46
+},
+{
+"mot": "il",
+"debut": 2.8,
+"fin": 3.04
+},
+{
+"mot": "a",
+"debut": 3.04,
+"fin": 3.1
+},
+{
+"mot": "une",
+"debut": 3.1,
+"fin": 3.2
+},
+{
+"mot": "fuite,",
+"debut": 3.2,
+"fin": 3.46
+},
+{
+"mot": "il",
+"debut": 3.84,
+"fin": 4.16
+},
+{
+"mot": "hésite",
+"debut": 4.16,
+"fin": 4.4
+},
+{
+"mot": "entre",
+"debut": 4.4,
+"fin": 4.58
+},
+{
+"mot": "trois",
+"debut": 4.58,
+"fin": 4.84
+},
+{
+"mot": "plombiers,",
+"debut": 4.84,
+"fin": 5.14
+},
+{
+"mot": "il",
+"debut": 5.58,
+"fin": 5.76
+},
+{
+"mot": "regarde",
+"debut": 5.76,
+"fin": 5.98
+},
+{
+"mot": "leur",
+"debut": 5.98,
+"fin": 6.14
+},
+{
+"mot": "site,",
+"debut": 6.14,
+"fin": 6.34
+},
+{
+"mot": "vous,",
+"debut": 6.82,
+"fin": 7.02
+},
+{
+"mot": "pas",
+"debut": 7.48,
+"fin": 7.6
+},
+{
+"mot": "de",
+"debut": 7.6,
+"fin": 7.7
+},
+{
+"mot": "site,",
+"debut": 7.7,
+"fin": 7.84
+},
+{
+"mot": "il",
+"debut": 8.48,
+"fin": 8.56
+},
+{
+"mot": "appelle",
+"debut": 8.56,
+"fin": 8.72
+},
+{
+"mot": "celui",
+"debut": 8.72,
+"fin": 8.94
+},
+{
+"mot": "qui",
+"debut": 8.94,
+"fin": 9.12
+},
+{
+"mot": "a",
+"debut": 9.12,
+"fin": 9.2
+},
+{
+"mot": "l",
+"debut": 9.2,
+"fin": 9.24
+},
+{
+"mot": "'air",
+"debut": 9.24,
+"fin": 9.28
+},
+{
+"mot": "sérieux,",
+"debut": 9.28,
+"fin": 9.62
+},
+{
+"mot": "pas",
+"debut": 10.02,
+"fin": 10.26
+},
+{
+"mot": "vous.",
+"debut": 10.26,
+"fin": 10.4
+},
+{
+"mot": "Avec",
+"debut": 11.26,
+"fin": 11.5
+},
+{
+"mot": "Prohecia,",
+"debut": 11.5,
+"fin": 11.88
+},
+{
+"mot": "un",
+"debut": 12.34,
+"fin": 12.56
+},
+{
+"mot": "site",
+"debut": 12.56,
+"fin": 12.7
+},
+{
+"mot": "qui",
+"debut": 12.7,
+"fin": 12.84
+},
+{
+"mot": "a",
+"debut": 12.84,
+"fin": 12.9
+},
+{
+"mot": "rassure,",
+"debut": 12.9,
+"fin": 13.18
+},
+{
+"mot": "avant",
+"debut": 13.56,
+"fin": 13.82
+},
+{
+"mot": "même",
+"debut": 13.82,
+"fin": 14.0
+},
+{
+"mot": "le",
+"debut": 14.0,
+"fin": 14.12
+},
+{
+"mot": "premier",
+"debut": 14.12,
+"fin": 14.28
+},
+{
+"mot": "appel.",
+"debut": 14.28,
+"fin": 14.56
+},
+{
+"mot": "Et",
+"debut": 15.7,
+"fin": 15.8
+},
+{
+"mot": "c",
+"debut": 15.8,
+"fin": 15.86
+},
+{
+"mot": "'est",
+"debut": 15.86,
+"fin": 15.92
+},
+{
+"mot": "vous",
+"debut": 15.92,
+"fin": 16.02
+},
+{
+"mot": "qui",
+"debut": 16.02,
+"fin": 16.12
+},
+{
+"mot": "l",
+"debut": 16.12,
+"fin": 16.22
+},
+{
+"mot": "'appellent.",
+"debut": 16.22,
+"fin": 16.44
+},
+{
+"mot": "Et",
+"debut": 17.48,
+"fin": 17.76
+},
+{
+"mot": "vous,",
+"debut": 17.76,
+"fin": 17.86
+},
+{
+"mot": "vos",
+"debut": 17.94,
+"fin": 17.96
+},
+{
+"mot": "clients,",
+"debut": 17.96,
+"fin": 18.18
+},
+{
+"mot": "ils",
+"debut": 18.42,
+"fin": 18.48
+},
+{
+"mot": "vous",
+"debut": 18.48,
+"fin": 18.56
+},
+{
+"mot": "trouvent",
+"debut": 18.56,
+"fin": 18.72
+},
+{
+"mot": "comment",
+"debut": 18.72,
+"fin": 18.86
+},
+{
+"mot": "?",
+"debut": 18.86,
+"fin": 19.08
+},
+{
+"mot": "Prohecia,",
+"debut": 19.76,
+"fin": 20.2
+},
+{
+"mot": "le",
+"debut": 20.74,
+"fin": 20.8
+},
+{
+"mot": "partenaire",
+"debut": 20.8,
+"fin": 21.24
+},
+{
+"mot": "des",
+"debut": 21.24,
+"fin": 21.32
+},
+{
+"mot": "plombiers,",
+"debut": 21.32,
+"fin": 21.6
+},
+{
+"mot": "Prohecia",
+"debut": 22.24,
+"fin": 22.58
+},
+{
+"mot": ".fr",
+"debut": 22.58,
+"fin": 22.88
+}
+]

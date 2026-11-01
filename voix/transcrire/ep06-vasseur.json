@@ -1,0 +1,42 @@
+[
+{
+"mot": "Parfait.",
+"debut": 0.0,
+"fin": 0.64
+},
+{
+"mot": "Comme",
+"debut": 1.42,
+"fin": 1.68
+},
+{
+"mot": "d",
+"debut": 1.68,
+"fin": 1.82
+},
+{
+"mot": "'habitude,",
+"debut": 1.82,
+"fin": 2.22
+},
+{
+"mot": "une",
+"debut": 2.92,
+"fin": 3.12
+},
+{
+"mot": "enveloppe",
+"debut": 3.12,
+"fin": 3.52
+},
+{
+"mot": "par",
+"debut": 3.52,
+"fin": 3.64
+},
+{
+"mot": "signature.",
+"debut": 3.64,
+"fin": 3.92
+}
+]

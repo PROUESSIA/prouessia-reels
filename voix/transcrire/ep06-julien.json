@@ -1,0 +1,72 @@
+[
+{
+"mot": "Et",
+"debut": 0.0,
+"fin": 0.32
+},
+{
+"mot": "il",
+"debut": 0.32,
+"fin": 0.4
+},
+{
+"mot": "fait",
+"debut": 0.4,
+"fin": 0.5
+},
+{
+"mot": "quoi",
+"debut": 0.5,
+"fin": 0.68
+},
+{
+"mot": "?",
+"debut": 0.68,
+"fin": 2.14
+},
+{
+"mot": "Ne",
+"debut": 2.14,
+"fin": 2.52
+},
+{
+"mot": "t",
+"debut": 2.52,
+"fin": 2.64
+},
+{
+"mot": "'approche",
+"debut": 2.64,
+"fin": 2.9
+},
+{
+"mot": "pas,",
+"debut": 2.9,
+"fin": 3.08
+},
+{
+"mot": "tu",
+"debut": 3.48,
+"fin": 3.68
+},
+{
+"mot": "filmes",
+"debut": 3.68,
+"fin": 4.44
+},
+{
+"mot": "et",
+"debut": 4.44,
+"fin": 4.46
+},
+{
+"mot": "tu",
+"debut": 4.46,
+"fin": 4.58
+},
+{
+"mot": "pars.",
+"debut": 4.58,
+"fin": 4.8
+}
+]
