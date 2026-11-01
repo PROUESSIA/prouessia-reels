@@ -1,0 +1,95 @@
+{
+ "titre": "Vos communes, affichées",
+ "phrases": [
+  {
+   "dit": "Un client vous appelle.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Un client",
+    "vous",
+    "appelle."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Il habite trop loin.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Il habite",
+    "trop",
+    "loin."
+   ],
+   "jaune": [
+    2
+   ],
+   "bulle": true
+  },
+  {
+   "dit": "Encore un déplacement pour rien.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Encore un",
+    "déplacement",
+    "pour rien."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Avec Prouessia, vos communes sont affichées sur votre site.",
+   "scene": "app",
+   "haut": [
+    "Vos communes,",
+    "affichées"
+   ],
+   "capture": "23-site-vitrine-mobile"
+  },
+  {
+   "dit": "Le client voit tout de suite votre zone.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Le client voit",
+    "tout de suite",
+    "votre zone."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Plus de déplacements pour rien.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Plus de",
+    "déplacements",
+    "pour rien."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Et vous, votre zone, elle s'arrête où ?",
+   "scene": "question",
+   "lignes": [
+    "Et vous,",
+    "votre zone,",
+    "elle s'arrête où ?"
+   ]
+  },
+  {
+   "dit": "Prouessia, le partenaire des plombiers.",
+   "scene": "fin"
+  }
+ ],
+ "cta": true,
+ "mot": "DEVIS"
+}

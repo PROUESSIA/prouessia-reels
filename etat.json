@@ -354,9 +354,59 @@
    "sujet": "Idée 11 · On crée votre site pour vous",
    "ton": "Charon",
    "note": "Ajouté le 31/10, à valider"
+  },
+  {
+   "n": "reel-33",
+   "reel": "33",
+   "style": "vécu",
+   "date": "2026-11-02",
+   "heure": "09:00",
+   "sujet": "Idée 12 · Votre logo, vos couleurs",
+   "ton": "Charon",
+   "note": "Ajouté le 1/11, à valider"
+  },
+  {
+   "n": "reel-34",
+   "reel": "34",
+   "style": "POV",
+   "date": "2026-11-02",
+   "heure": "12:30",
+   "sujet": "Idée 13 · Un site qui fait sérieux",
+   "ton": "Charon",
+   "note": "Ajouté le 1/11, à valider"
+  },
+  {
+   "n": "ep-6",
+   "reel": "anim/ep06",
+   "style": "série Sous pression",
+   "date": "2026-11-02",
+   "heure": "18:00",
+   "sujet": "Sous pression · Épisode 6 — L'aimant",
+   "ton": "Gemini Puck / Orus / Charon / Algenib",
+   "note": "Ajouté le 1/11, à valider"
+  },
+  {
+   "n": "reel-35",
+   "reel": "35",
+   "style": "carte",
+   "date": "2026-11-02",
+   "heure": "20:30",
+   "sujet": "Médiateur de la consommation (faits : mediateur-conso) · idée 14",
+   "ton": "Charon",
+   "note": "Ajouté le 1/11, à valider"
+  },
+  {
+   "n": "reel-36",
+   "reel": "36",
+   "style": "motion",
+   "date": "2026-11-02",
+   "heure": "22:00",
+   "sujet": "Idée 15 · Votre zone bien indiquée",
+   "ton": "Charon",
+   "note": "Ajouté le 1/11, à valider"
   }
  ],
- "prochain_numero_dossier": 33,
+ "prochain_numero_dossier": 37,
  "prospection": {
   "departement_semaine": "78",
   "derniere_page_importee": 2,

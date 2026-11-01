@@ -1,0 +1,48 @@
+{
+ "phrases": [
+  {
+   "a": 0.35,
+   "b": 1.31,
+   "text": "Un client vous appelle."
+  },
+  {
+   "a": 1.76,
+   "b": 2.63,
+   "text": "Il habite trop loin."
+  },
+  {
+   "a": 3.08,
+   "b": 4.38,
+   "text": "Encore un déplacement pour rien."
+  },
+  {
+   "a": 4.83,
+   "b": 7.35,
+   "text": "Avec Prouessia, vos communes sont affichées sur votre site."
+  },
+  {
+   "a": 7.6,
+   "b": 8.86,
+   "text": "Le client voit tout de suite votre zone."
+  },
+  {
+   "a": 9.31,
+   "b": 10.21,
+   "text": "Plus de déplacements pour rien."
+  },
+  {
+   "a": 10.66,
+   "b": 12.24,
+   "text": "Et vous, votre zone, elle s'arrête où ?"
+  },
+  {
+   "a": 12.69,
+   "b": 14.4,
+   "text": "Prouessia, le partenaire des plombiers."
+  }
+ ],
+ "cta": {
+  "a": 14.85,
+  "b": 17.8
+ }
+}
