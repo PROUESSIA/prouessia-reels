@@ -1,0 +1,122 @@
+{
+ "titre": "Votre logo, vos couleurs, <b>votre site</b>",
+ "sorte": "vecu",
+ "idee": 12,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "133643",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Votre camionnette <b>porte votre nom</b>",
+   "clip": "3517",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Vos clients <b>le connaissent</b>",
+   "clip": "366164",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Puis ils vous cherchent <b>sur internet</b>",
+   "clip": "202987",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Et là, <b>rien</b>",
+   "clip": "295383",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "<b>Pas de site</b>",
+   "clip": "197",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Avec Prouessia, <b>vous créez votre logo</b>",
+   "clip": "img:extras/24-logo-depart",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "<b>Vos couleurs</b>, votre modèle",
+   "clip": "img:24-logo-couleurs",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et il arrive <b>sur votre site</b>",
+   "clip": "img:23-site-vitrine-mobile",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Le client <b>vous reconnaît</b>",
+   "clip": "366322",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Et vous, votre logo, <b>il est où</b>&nbsp;?",
+   "clip": "41499",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "40813",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ],
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Votre camionnette porte votre nom, vos clients le connaissent, puis ils vous cherchent sur internet : pas de site."
+  },
+  {
+   "dit": "Avec Prouessia, vous créez votre logo, avec vos couleurs, et il arrive sur votre site.",
+   "ref": "avantage n° 12 « Votre logo, vos couleurs » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "02.11.2026",
+ "avert": "Information générale, pas un conseil personnalisé."
+}

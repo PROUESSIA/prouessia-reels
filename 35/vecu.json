@@ -1,0 +1,122 @@
+{
+ "titre": "Le client demande&nbsp;: <b>«&nbsp;vous avez un site&nbsp;?&nbsp;»</b>",
+ "sorte": "carte",
+ "gabarit": "carte",
+ "idee": 14,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "109877",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "appel": [
+    "Client · 19&nbsp;h&nbsp;40",
+    "« Vous avez un site&nbsp;? »"
+   ]
+  },
+  {
+   "html": "Chez un particulier, <b>une règle à connaître</b>",
+   "clip": "1926",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Vous devez lui donner accès <b>à un médiateur</b>",
+   "clip": "163276",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "<b>Son nom et ses coordonnées</b>",
+   "clip": "10822",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Sur votre site, <b>par exemple</b>",
+   "clip": "190323",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Ou sur vos <b>conditions de vente</b>",
+   "clip": "180728",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Avec Prouessia, <b>vous avez votre site</b>",
+   "clip": "img:23-site-vitrine-mobile",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Quand on cherche un plombier chez vous, <b>on vous trouve</b>",
+   "clip": "img:22-nouvelle-demande",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et vous, on vous trouve <b>sur Google</b>&nbsp;?",
+   "clip": "8283",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "2234",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ],
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Un client demande si vous avez un site."
+  },
+  {
+   "dit": "Chez un particulier, vous devez lui donner accès à un médiateur de la consommation : son nom et ses coordonnées, sur votre site par exemple, ou sur vos conditions de vente.",
+   "ref": "tout professionnel doit permettre à tout client consommateur l'accès à un dispositif de médiation de la consommation ; il indique le nom, les coordonnées et le site du médiateur, de manière visible et lisible, sur son site internet, ses conditions générales de vente ou de service, ses bons de commande, ou par tout autre moyen approprié (Code de la consommation, art. L612-1 et L616-1, résumé par la DGCCRF ; vérifié le 17/10/2026, faits/supplementaires.json « mediateur-conso »).",
+   "liens": [
+    [
+     "economie.gouv.fr : Médiation de la consommation, vos principales obligations",
+     "https://www.economie.gouv.fr/mediation-conso/vous-etes-un-professionnel/vos-principales-obligations-0"
+    ]
+   ],
+   "label": "Ce que dit le texte :"
+  },
+  {
+   "dit": "Avec Prouessia, vous avez votre site : quand on cherche un plombier chez vous, on vous trouve.",
+   "ref": "avantage n° 14 « Trouvable sur Google » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun montant d'amende n'est cité. Le choix du médiateur (liste officielle) n'est pas traité.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "02.11.2026",
+ "avert": "Information générale, pas un conseil personnalisé."
+}

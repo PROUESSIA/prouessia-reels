@@ -1,0 +1,121 @@
+{
+ "titre": "Vos communes, affichées",
+ "idees": [
+  15
+ ],
+ "cta": true,
+ "date": "02.11.2026",
+ "phrases": [
+  {
+   "dit": "Un client vous appelle.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Un client",
+    "vous",
+    "appelle."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Il habite trop loin.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Il habite",
+    "trop",
+    "loin."
+   ],
+   "jaune": [
+    2
+   ],
+   "bulle": true
+  },
+  {
+   "dit": "Encore un déplacement pour rien.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Encore un",
+    "déplacement",
+    "pour rien."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Avec Prouessia, vos communes sont affichées sur votre site.",
+   "scene": "app",
+   "haut": [
+    "Vos communes,",
+    "affichées"
+   ],
+   "capture": "23-site-vitrine-mobile"
+  },
+  {
+   "dit": "Le client voit tout de suite votre zone.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Le client voit",
+    "tout de suite",
+    "votre zone."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Plus de déplacements pour rien.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Plus de",
+    "déplacements",
+    "pour rien."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Et vous, votre zone, elle s'arrête où ?",
+   "scene": "question",
+   "lignes": [
+    "Et vous,",
+    "votre zone,",
+    "elle s'arrête où ?"
+   ]
+  },
+  {
+   "dit": "Prouessia, le partenaire des plombiers.",
+   "scene": "fin"
+  }
+ ],
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Un client vous appelle, il habite trop loin : encore un déplacement pour rien."
+  },
+  {
+   "dit": "Avec Prouessia, vos communes sont affichées sur votre site : le client voit tout de suite votre zone, plus de déplacements pour rien.",
+   "ref": "avantage n° 15 « Votre zone bien indiquée » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui). Écran montré : site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un site de démonstration."
+ ]
+}

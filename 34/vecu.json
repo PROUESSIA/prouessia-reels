@@ -1,0 +1,120 @@
+{
+ "titre": "POV&nbsp;: le client <b>tape votre nom sur internet</b>",
+ "sorte": "pov",
+ "idee": 13,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "348444",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Il a <b>une fuite</b>",
+   "clip": "9517",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Il hésite <b>entre trois plombiers</b>",
+   "clip": "38084",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Il regarde <b>leurs sites</b>",
+   "clip": "131161",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Vous, <b>pas de site</b>",
+   "clip": "53701",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Il appelle <b>celui qui a l'air sérieux</b>",
+   "clip": "366323",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "<b>Pas vous</b>",
+   "clip": "235528",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Avec Prouessia, <b>un site qui rassure</b>",
+   "clip": "img:23-site-vitrine-mobile",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "<b>Avant même le premier appel</b>",
+   "clip": "img:extras/22-formulaire-visiteur",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et c'est <b>vous qu'il appelle</b>",
+   "clip": "67463",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Et vous, vos clients, <b>ils vous trouvent comment</b>&nbsp;?",
+   "clip": "25310",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "7376",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ],
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Le client a une fuite, hésite entre trois plombiers, regarde leurs sites et appelle celui qui a l'air sérieux."
+  },
+  {
+   "dit": "Avec Prouessia, un site qui rassure avant même le premier appel.",
+   "ref": "avantage n° 13 « Un site qui fait sérieux » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "02.11.2026",
+ "avert": "Information générale, pas un conseil personnalisé."
+}
