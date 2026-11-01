@@ -1,0 +1,99 @@
+{
+ "num": "33",
+ "titre": "Votre logo, vos couleurs, votre site",
+ "date": "02.11.2026",
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Votre camionnette porte votre nom, vos clients le connaissent, puis ils vous cherchent sur internet : pas de site."
+  },
+  {
+   "dit": "Avec Prouessia, vous créez votre logo, avec vos couleurs, et il arrive sur votre site.",
+   "ref": "avantage n° 12 « Votre logo, vos couleurs » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "133643",
+   "sujet": "van",
+   "url": "https://pixabay.com/videos/id-133643/",
+   "auteur": "Marsel_beijing"
+  },
+  {
+   "id": "3517",
+   "sujet": "circulation",
+   "url": "https://pixabay.com/videos/id-3517/",
+   "auteur": "josemdelaa"
+  },
+  {
+   "id": "366164",
+   "sujet": "homme",
+   "url": "https://pixabay.com/videos/id-366164/",
+   "auteur": "GIUSEPPE-DE-BERGOLIS"
+  },
+  {
+   "id": "202987",
+   "sujet": "téléphoner",
+   "url": "https://pixabay.com/videos/id-202987/",
+   "auteur": "Natures_Embrace"
+  },
+  {
+   "id": "295383",
+   "sujet": "main",
+   "url": "https://pixabay.com/videos/id-295383/",
+   "auteur": "Natures_Embrace"
+  },
+  {
+   "id": "img:extras/24-logo-depart",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:extras/24-logo-depart/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:24-logo-couleurs",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:24-logo-couleurs/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:23-site-vitrine-mobile",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:23-site-vitrine-mobile/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "366322",
+   "sujet": "salon",
+   "url": "https://pixabay.com/videos/id-366322/",
+   "auteur": "GIUSEPPE-DE-BERGOLIS"
+  },
+  {
+   "id": "41499",
+   "sujet": "worker",
+   "url": "https://pixabay.com/videos/id-41499/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "40813",
+   "sujet": "work",
+   "url": "https://pixabay.com/videos/id-40813/",
+   "auteur": "AlexKopeykin"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

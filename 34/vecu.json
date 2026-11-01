@@ -39,25 +39,18 @@
    "sens": 1
   },
   {
-   "html": "Il appelle <b>celui qui a l'air sérieux</b>",
+   "html": "Il appelle celui qui a l'air sérieux. <b>Pas vous</b>",
    "clip": "366323",
    "debut": 1.0,
    "cx": 0.5,
    "sens": -1
   },
   {
-   "html": "<b>Pas vous</b>",
-   "clip": "235528",
-   "debut": 1.0,
-   "cx": 0.5,
-   "sens": 1
-  },
-  {
    "html": "Avec Prouessia, <b>un site qui rassure</b>",
    "clip": "img:23-site-vitrine-mobile",
    "debut": 1.0,
    "cx": 0.5,
-   "sens": -1,
+   "sens": 1,
    "cy": 0.42,
    "zoom": 1.0
   },
@@ -66,7 +59,7 @@
    "clip": "img:extras/22-formulaire-visiteur",
    "debut": 1.0,
    "cx": 0.5,
-   "sens": 1,
+   "sens": -1,
    "cy": 0.42,
    "zoom": 1.0
   },
@@ -75,21 +68,21 @@
    "clip": "67463",
    "debut": 1.0,
    "cx": 0.5,
-   "sens": -1
+   "sens": 1
   },
   {
    "html": "Et vous, vos clients, <b>ils vous trouvent comment</b>&nbsp;?",
    "clip": "25310",
    "debut": 1.0,
    "cx": 0.5,
-   "sens": 1
+   "sens": -1
   },
   {
    "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
    "clip": "7376",
    "debut": 1.0,
    "cx": 0.5,
-   "sens": -1
+   "sens": 1
   }
  ],
  "affirmations": [

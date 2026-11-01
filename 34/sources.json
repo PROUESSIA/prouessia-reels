@@ -1,0 +1,99 @@
+{
+ "num": "34",
+ "titre": "POV : le client tape votre nom sur internet",
+ "date": "02.11.2026",
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Le client a une fuite, hésite entre trois plombiers, regarde leurs sites et appelle celui qui a l'air sérieux."
+  },
+  {
+   "dit": "Avec Prouessia, un site qui rassure avant même le premier appel.",
+   "ref": "avantage n° 13 « Un site qui fait sérieux » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "348444",
+   "sujet": "texte",
+   "url": "https://pixabay.com/videos/id-348444/",
+   "auteur": "JonathanSlatterMusic"
+  },
+  {
+   "id": "9517",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-9517/",
+   "auteur": "Luiz-Jorge-Artista"
+  },
+  {
+   "id": "38084",
+   "sujet": "femme",
+   "url": "https://pixabay.com/videos/id-38084/",
+   "auteur": "mephala1980"
+  },
+  {
+   "id": "131161",
+   "sujet": "mobile",
+   "url": "https://pixabay.com/videos/id-131161/",
+   "auteur": "Dx21"
+  },
+  {
+   "id": "53701",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-53701/",
+   "auteur": "wonderlandwoo"
+  },
+  {
+   "id": "366323",
+   "sujet": "salon",
+   "url": "https://pixabay.com/videos/id-366323/",
+   "auteur": "GIUSEPPE-DE-BERGOLIS"
+  },
+  {
+   "id": "img:23-site-vitrine-mobile",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:23-site-vitrine-mobile/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:extras/22-formulaire-visiteur",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:extras/22-formulaire-visiteur/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "67463",
+   "sujet": "ouvrier",
+   "url": "https://pixabay.com/videos/id-67463/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "25310",
+   "sujet": "mains",
+   "url": "https://pixabay.com/videos/id-25310/",
+   "auteur": "Irving_Agui"
+  },
+  {
+   "id": "7376",
+   "sujet": "construction",
+   "url": "https://pixabay.com/videos/id-7376/",
+   "auteur": "Luiz-Jorge-Artista"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

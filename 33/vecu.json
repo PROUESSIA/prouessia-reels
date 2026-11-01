@@ -32,25 +32,18 @@
    "sens": -1
   },
   {
-   "html": "Et là, <b>rien</b>",
+   "html": "Et là, rien. <b>Pas de site</b>",
    "clip": "295383",
    "debut": 1.0,
    "cx": 0.5,
    "sens": 1
   },
   {
-   "html": "<b>Pas de site</b>",
-   "clip": "197",
-   "debut": 1.0,
-   "cx": 0.5,
-   "sens": -1
-  },
-  {
    "html": "Avec Prouessia, <b>vous créez votre logo</b>",
    "clip": "img:extras/24-logo-depart",
    "debut": 1.0,
    "cx": 0.5,
-   "sens": 1,
+   "sens": -1,
    "cy": 0.42,
    "zoom": 1.0
   },
@@ -59,7 +52,7 @@
    "clip": "img:24-logo-couleurs",
    "debut": 1.0,
    "cx": 0.5,
-   "sens": -1,
+   "sens": 1,
    "cy": 0.42,
    "zoom": 1.0
   },
@@ -68,7 +61,7 @@
    "clip": "img:23-site-vitrine-mobile",
    "debut": 1.0,
    "cx": 0.5,
-   "sens": 1,
+   "sens": -1,
    "cy": 0.42,
    "zoom": 1.0
   },
@@ -77,21 +70,21 @@
    "clip": "366322",
    "debut": 1.0,
    "cx": 0.5,
-   "sens": -1
+   "sens": 1
   },
   {
    "html": "Et vous, votre logo, <b>il est où</b>&nbsp;?",
    "clip": "41499",
    "debut": 1.0,
    "cx": 0.5,
-   "sens": 1
+   "sens": -1
   },
   {
    "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
    "clip": "40813",
    "debut": 1.0,
    "cx": 0.5,
-   "sens": -1
+   "sens": 1
   }
  ],
  "affirmations": [
