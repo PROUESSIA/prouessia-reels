@@ -103,6 +103,7 @@ const CAST = {
   rocher:  {peau: '#e8c6ab', cheveux: '#eeeeea', haut: '#c9b48e', bas: '#8b7f72', chaussures: '#b08a6a', robe: true},
   theo:    {peau: '#d8a27c', cheveux: '#2b1d14', haut: '#e8742a', col: '#f4f0e8', bas: '#2c3442', chaussures: '#f0f0f0', casquette: '#1c1c1c'},
   imper:   {peau: '#dcb69a', cheveux: '#8d8a84', haut: '#c8b48a', bas: '#c8b48a', chaussures: '#3a2a1c', robe: true, casquette: '#6f6656'},
+  dumas:   {peau: '#e9c4a6', cheveux: '#c9c4bc', haut: '#8b6a9e', bas: '#5a5560', chaussures: '#d8c8b8', chignon: true},
   policier: {peau: '#cf9a74', cheveux: '#2a201a', haut: '#1d2b4f', col: '#e8e8e8', bas: '#1d2b4f', chaussures: '#111', casquette: '#16213d'},
 };
 function lumieres(g, o) {
@@ -278,6 +279,8 @@ function decorCuisineJour(x0) {
   const telJ = new THREE.Group(); julien.bd.main.add(telJ); box(.075, .15, .012, '#111', 0, -.04, .05, telJ); telJ.visible = false;
   return {g, persos: {julien, lea}, update(t, ev) {
     doc.visible = ev.has('photo'); ecr.visible = !ev.has('photo');
+    if (ev.has('lea_appel')) { if (lea.pose !== 'telephone') pose(lea, 'telephone'); tel.visible = false; }   // ép. 7 : Léa au téléphone avec sa mère
+    else { if (lea.pose !== 'telephone_main') pose(lea, 'telephone_main'); tel.visible = true; }
     if (ev.has('appel')) { if (julien.pose !== 'telephone') { pose(julien, 'telephone'); julien.hips.position.y = .5; for (const j of [julien.jg, julien.jd]) { j.h.rotation.x = -Math.PI / 2; j.g.rotation.x = Math.PI / 2; } } telJ.visible = true; }
     else { if (julien.pose !== 'assis_tasse') pose(julien, 'assis_tasse'); telJ.visible = false; }
   }};
@@ -397,7 +400,118 @@ function decorRue(x0) {
   }};
 }
 DECORS.rue = decorRue(120);
-const FONDS = {rue: '#06080e', chambre: '#0b0f1e', camion: '#05070f', cuisine_lefevre: '#1a1410', cuisine_jour: '#cfdcea', parking: '#05070f', maison_rocher: '#0a0d14'};
+
+// ép. 7 « Chez maman » : la cuisine de Mme Dumas (mère de Léa), en plein jour
+function decorCuisineDumas(x0) {
+  const g = new THREE.Group(); g.position.x = x0; scene.add(g);
+  box(7, .1, 7, '#9a8a74', 0, -.05, 0, g);
+  for (let i = -3; i < 4; i++) for (let j = -3; j < 4; j++) if ((i + j) % 2 === 0) box(.98, .002, .98, '#b8a98f', i + .5, .002, j + .5, g);
+  box(7, 3, .1, '#d7e0d2', 0, 1.5, -2.6, g); box(.1, 3, 7, '#cdd8c8', -2.6, 1.5, 0, g); box(.1, 3, 7, '#cdd8c8', 2.6, 1.5, 0, g);
+  for (let i = 0; i < 12; i++) box(.3, .3, .02, i % 2 ? '#f2f2ec' : '#9fb8c9', -2.2 + (i % 6) * .3, 1.12 + Math.floor(i / 6) * .3, -2.54, g);   // faïence derrière l'évier
+  const f = new THREE.Mesh(new THREE.PlaneGeometry(1.2, 1.1), new THREE.MeshBasicMaterial({map: ville(true)})); f.position.set(1.2, 1.75, -2.54); g.add(f);
+  box(1.3, .06, .1, '#f4f0e8', 1.2, 1.17, -2.52, g); for (const x of [.55, 1.85]) box(.18, 1.3, .04, '#c96a6a', x, 1.75, -2.5, g);            // rideaux
+  // évier + meuble ouvert, le joint qui goutte
+  // meuble sous l'évier, ouvert (creux) : on voit le joint qui goutte
+  box(2.2, .9, .05, '#d8d1c2', -1.2, .45, -2.53, g); box(.05, .9, .6, '#e8e2d4', -2.28, .45, -2.25, g); box(.05, .9, .6, '#e8e2d4', -.12, .45, -2.25, g);
+  box(2.2, .05, .6, '#cfc7b6', -1.2, .03, -2.25, g); box(.8, .9, .04, '#e8e2d4', -1.9, .45, -1.96, g); box(.62, .9, .04, '#e8e2d4', -.43, .45, -1.96, g);
+  box(2.3, .05, .65, '#8a7a66', -1.2, .92, -2.22, g);
+  box(.6, .15, .45, '#cfd3d6', -1.3, .86, -2.2, g); cyl(.02, .02, .3, '#bbb', -1.3, 1.08, -2.38, g);
+  const p1 = box(.42, .7, .03, '#ded6c4', -1.52, .42, -1.93, g); p1.rotation.y = 1.1; p1.position.x = -1.75;
+  cyl(.03, .03, .5, '#8a8f95', -1.3, .45, -2.3, g); const joint = new THREE.Mesh(new THREE.TorusGeometry(.035, .012, 6, 12), M('#f2f2f2')); joint.position.set(-1.3, .55, -2.3); joint.rotation.x = Math.PI / 2; g.add(joint);
+  const bassine = cyl(.16, .12, .1, '#4f7fb0', -1.3, .05, -2.15, g, 12);
+  const gouttes = []; for (let i = 0; i < 4; i++) { const d = new THREE.Mesh(new THREE.SphereGeometry(.018, 6, 4), new THREE.MeshStandardMaterial({color: '#9cc6f0', transparent: true, opacity: .9, roughness: .05})); g.add(d); gouttes.push({d, ph: i / 4}); }
+  // l'aimant jaune sur le frigo
+  box(.7, 1.8, .65, '#f0efe9', -2.1, .9, -1.2, g);
+  const aim = new THREE.Mesh(new THREE.PlaneGeometry(.16, .2), new THREE.MeshBasicMaterial({map: texte([{t: 'URGENCE', y: 90, s: 44, g: 1, c: '#111'}, {t: 'PLOMBERIE', y: 140, s: 34, g: 1, c: '#111'}, {t: '24h/24', y: 200, s: 40, g: 1, c: '#a01818'}], {fond: '#f2b705', w: 256, h: 256})}));
+  aim.position.set(-1.74, 1.35, -1.2); aim.rotation.y = Math.PI / 2; g.add(aim);
+  // table, deux chaises, le contrat et le stylo
+  box(1.1, .06, .8, '#b98f62', .7, .75, -.6, g); for (const [a, b] of [[.22, -.95], [1.18, -.95], [.22, -.25], [1.18, -.25]]) box(.05, .72, .05, '#946c45', a, .36, b, g);
+  box(.42, .05, .42, '#946c45', 1.45, .45, -.6, g); box(.05, .5, .42, '#946c45', 1.66, .72, -.6, g);
+  const CT = [{t: 'VASSEUR', y: 60, s: 30, g: 1, c: '#a01818'}, {t: 'CONTRAT', y: 110, s: 34, g: 1, c: '#111'}, {t: "D'ENTRETIEN", y: 150, s: 26, g: 1, c: '#111'}, {t: '450 € / intervention', y: 215, s: 20, g: 1, c: '#111'}, {t: '— — — — — —', y: 260, s: 20, c: '#777'}, {t: '— — — — —', y: 295, s: 20, c: '#777'}, {t: 'Signature :', y: 345, s: 18, c: '#555'}];
+  const tex = texte(CT, {fond: '#f4efe3', w: 256, h: 362});
+  const moitie = (gauche) => { const t2 = tex.clone(); t2.needsUpdate = true; t2.repeat.set(.5, 1); t2.offset.set(gauche ? 0 : .5, 0);
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(.105, .297), new THREE.MeshStandardMaterial({map: t2, roughness: .9, side: THREE.DoubleSide})); m.castShadow = true; g.add(m); return m; };
+  const cg = moitie(true), cd = moitie(false);
+  const stylo = new THREE.Group(); box(.012, .012, .14, '#1d2b6b', 0, 0, 0, stylo); g.add(stylo);
+  const morceaux = []; for (let i = 0; i < 6; i++) { const m = box(.06 + rnd() * .04, .002, .08 + rnd() * .05, '#f4efe3', .4 + rnd() * .7, .785, -.9 + rnd() * .55, g); m.rotation.y = rnd() * 3; m.visible = false; morceaux.push(m); }
+  const soleil = new THREE.DirectionalLight('#fff1d6', 2.4); soleil.position.set(2.5, 4, -4); soleil.castShadow = true; soleil.shadow.mapSize.set(1024, 1024);
+  soleil.shadow.camera.left = soleil.shadow.camera.bottom = -4; soleil.shadow.camera.right = soleil.shadow.camera.top = 4; g.add(soleil); soleil.target.position.set(0, 0, -.5); g.add(soleil.target);
+  lumieres(g, {ciel: '#eef3f8', sol: '#8a7a66', hemi: 1.15, points: [{c: '#fff2dc', i: 3, p: [0, 2.6, .5], d: 6}]});
+  const dumas = perso({...CAST.dumas, pose: 'telephone'}, g);
+  const vasseur = perso({...CAST.vasseur, pose: 'debout'}, g); vasseur.root.visible = false;
+  const lea = perso({...CAST.lea, pose: 'debout'}, g); lea.root.visible = false;
+  const julien = perso({...CAST.julien, pose: 'debout'}, g); julien.root.visible = false;
+  const telD = new THREE.Group(); dumas.bd.main.add(telD); box(.075, .15, .012, '#111', 0, -.04, .05, telD);
+  const papierMain = (pp) => { const t = new THREE.Group(); pp.add(t); return t; };
+  const asseoir = pp => { pp.hips.position.y = .5; for (const j of [pp.jg, pp.jd]) { j.h.rotation.x = -Math.PI / 2; j.g.rotation.x = Math.PI / 2; } };
+  return {g, persos: {dumas, vasseur, lea, julien}, update(t, ev) {
+    for (const o of gouttes) { const u = (t * 1.1 + o.ph) % 1; o.d.position.set(-1.3, .53 - u * .45, -2.3 + u * .12); o.d.visible = true; }
+    morceaux.forEach(m => m.visible = ev.has('dechire_fini'));
+    if (ev.has('appel_maman')) {   // Mme Dumas au téléphone, près de l'évier qui goutte
+      vasseur.root.visible = lea.root.visible = julien.root.visible = false; telD.visible = true;
+      if (dumas.pose !== 'telephone') pose(dumas, 'telephone'); dumas.root.position.set(-.55, 0, -1.55); vers(dumas, .6, .8);
+      cg.visible = cd.visible = stylo.visible = false; return;
+    }
+    // la signature : Mme Dumas assise, le stylo à la main, Vasseur debout ; Léa et Julien entrent
+    telD.visible = false; vasseur.root.visible = true;
+    if (dumas.pose !== 'assis_tasse') { pose(dumas, 'assis_tasse'); } dumas.root.position.set(1.45, 0, -.6); dumas.root.rotation.y = -Math.PI / 2;
+    lea.root.visible = julien.root.visible = ev.has('entrent');
+    vasseur.root.position.set(.75, 0, -1.3); vers(vasseur, 1.35, -.6);
+    lea.root.position.set(-.35, 0, .55); julien.root.position.set(-.95, 0, .85); vers(lea, 1.1, -.6); vers(julien, .75, -1.1);
+    if (lea.pose !== 'debout') pose(lea, 'debout');
+    const tient = ev.has('dechire') || ev.has('dechire_fini');
+    if (!tient) {   // le contrat sur la table, le stylo dans la main de Mme Dumas
+      cg.visible = cd.visible = true; for (const [m, dx] of [[cg, -.0525], [cd, .0525]]) { m.rotation.set(-Math.PI / 2, 0, 1.4); m.position.set(1.05, .785, -.6 + dx); }
+      g.updateMatrixWorld(true); stylo.visible = !ev.has('stylo_pose'); const mm = new THREE.Vector3(); dumas.bd.main.getWorldPosition(mm); g.worldToLocal(mm); stylo.position.copy(mm); stylo.rotation.set(-.5, .4, 0);
+      if (ev.has('stylo_pose')) { stylo.visible = true; stylo.position.set(.95, .79, -.35); stylo.rotation.set(0, .7, 0); }
+    } else {        // Léa a pris le contrat et le déchire
+      lea.root.position.set(.25, 0, -.15); vers(lea, 1.2, .8);
+      const pl = ev.has('dechire_fini') ? 'debout' : 'mains_levees'; if (lea.pose !== pl) pose(lea, pl);
+      stylo.visible = true; stylo.position.set(.95, .79, -.35); stylo.rotation.set(0, .7, 0);
+      const ecart = .35; g.updateMatrixWorld(true);
+      const mg = new THREE.Vector3(), md = new THREE.Vector3(); lea.bg.main.getWorldPosition(mg); lea.bd.main.getWorldPosition(md); g.worldToLocal(mg); g.worldToLocal(md);
+      cg.visible = cd.visible = !ev.has('dechire_fini');
+      cg.position.copy(mg); cd.position.copy(md); cg.position.y += .1; cd.position.y += .1; cg.rotation.set(0, lea.root.rotation.y, -.15 - ecart * .6); cd.rotation.set(0, lea.root.rotation.y, .15 + ecart * .6);
+    }
+    if (ev.has('vers_lea')) { vasseur.root.position.set(.35, 0, -.95); vers(vasseur, .25, -.15); }
+    if (ev.has('vers_julien')) { vasseur.root.position.set(-.45, 0, .2); vers(vasseur, -.95, .85); vers(julien, -.45, .2); }
+  }};
+}
+// ép. 7 : la rue devant chez Mme Dumas, la camionnette de Julien
+function decorRueDumas(x0) {
+  const g = new THREE.Group(); g.position.x = x0; scene.add(g);
+  box(14, .1, 14, '#2c2f35', 0, -.05, 0, g); box(14, .14, 2.4, '#8a8a86', 0, .07, -2.0, g);
+  box(14, 3.6, .2, '#cbb79a', 0, 1.8, -3.3, g);
+  box(1.0, 2.1, .06, '#5a3b2a', -1.6, 1.05, -3.18, g); const num = new THREE.Mesh(new THREE.PlaneGeometry(.26, .2), new THREE.MeshBasicMaterial({map: texte([{t: '12', y: 120, s: 120, g: 1, c: '#fff'}], {fond: '#1d3b6b', w: 256, h: 180})})); num.position.set(-.9, 2.0, -3.18); g.add(num);
+  for (const x of [-3.4, .2, 2.8]) { box(1.1, 1.2, .05, '#24324a', x, 2.0, -3.17, g); box(1.2, .06, .1, '#eee', x, 1.37, -3.14, g); }
+  box(.5, .4, .25, '#3d5a7a', -.6, 1.1, -3.05, g); const pl = new THREE.Mesh(new THREE.PlaneGeometry(.34, .09), new THREE.MeshBasicMaterial({map: texte([{t: 'Dumas', y: 105, s: 100, g: 1, c: '#111'}], {fond: '#e8e2d0', w: 512, h: 140})})); pl.position.set(-.6, 1.0, -2.92); g.add(pl);
+  // la camionnette blanche de Julien
+  const van = new THREE.Group(); van.position.set(.6, 0, -.2); van.rotation.y = -.25; g.add(van);
+  const caisse = new THREE.Group(); van.add(caisse);
+  box(1.8, 1.5, 3.4, '#f2f2ee', 0, 1.15, -.3, caisse); box(1.8, 1.0, 1.0, '#f2f2ee', 0, .9, 1.85, caisse); box(1.82, .14, 4.4, '#8a2b2b', 0, .55, .2, caisse);
+  const pb = box(1.6, .6, .05, '#22324a', 0, 1.45, 2.38, caisse); pb.rotation.x = -.45;
+  for (const s of [-1, 1]) box(.05, .45, .7, '#22324a', s * .91, 1.25, 1.9, caisse);
+  const lbl = new THREE.Mesh(new THREE.PlaneGeometry(2.4, .5), new THREE.MeshBasicMaterial({map: texte([{t: 'MOREL PLOMBERIE', y: 95, s: 64, g: 1, c: '#8a2b2b'}], {fond: '#f2f2ee', w: 640, h: 140})}));
+  lbl.position.set(.915, 1.3, -.3); lbl.rotation.y = Math.PI / 2; caisse.add(lbl);
+  const mot = new THREE.Mesh(new THREE.PlaneGeometry(.42, .3), new THREE.MeshBasicMaterial({map: texte([{t: 'Dernier', y: 150, s: 90, g: 1, c: '#111'}, {t: 'avertissement.', y: 260, s: 70, g: 1, c: '#111'}], {fond: '#f4f0e6', w: 512, h: 360}), side: THREE.DoubleSide}));
+  mot.position.set(-.3, -.04, .04); pb.add(mot);   // le mot, collé sur le pare-brise
+  const roues = []; for (const [x, z] of [[-.85, -1.4], [.85, -1.4], [-.85, 1.6], [.85, 1.6]]) { const r = cyl(.36, .36, .26, '#151515', x, .36, z, van, 16); r.rotation.z = Math.PI / 2; roues.push(r); const j = cyl(.18, .18, .27, '#9aa0a6', x, .36, z, van, 10); j.rotation.z = Math.PI / 2; roues.push(j); }
+  const plats = []; for (const [x, z] of [[-.85, -1.4], [.85, -1.4], [-.85, 1.6], [.85, 1.6]]) plats.push(box(.3, .06, .95, '#111', x, .03, z, van));   // le caoutchouc écrasé au sol
+  const soleil = new THREE.DirectionalLight('#fff1d6', 2.6); soleil.position.set(3, 6, 4); soleil.castShadow = true; soleil.shadow.mapSize.set(1024, 1024);
+  soleil.shadow.camera.left = soleil.shadow.camera.bottom = -5; soleil.shadow.camera.right = soleil.shadow.camera.top = 5; g.add(soleil); soleil.target.position.set(0, 0, -1); g.add(soleil.target);
+  lumieres(g, {ciel: '#cfe2ff', sol: '#6b6458', hemi: 1.2});
+  const julien = perso({...CAST.julien, pose: 'debout'}, g); const lea = perso({...CAST.lea, pose: 'debout'}, g);
+  return {g, persos: {julien, lea}, update(t, ev) {
+    const cr = ev.has('creve'); mot.visible = cr;
+    roues.forEach((r, i) => { r.scale.set(cr ? .5 : 1, 1, cr ? 1.12 : 1); r.position.y = cr ? .19 : .36; });   // pneus à plat
+    plats.forEach(b => b.visible = cr);
+    caisse.position.y = cr ? -.13 : 0;
+    julien.root.visible = lea.root.visible = cr;
+    julien.root.position.set(2.2, 0, 1.6); lea.root.position.set(1.6, 0, 2.6); vers(julien, .6, -.2); vers(lea, .2, 2.0);
+  }};
+}
+DECORS.cuisine_dumas = decorCuisineDumas(140); DECORS.rue_dumas = decorRueDumas(160);
+const FONDS = {rue: '#06080e', chambre: '#0b0f1e', camion: '#05070f', cuisine_lefevre: '#1a1410', cuisine_jour: '#cfdcea', parking: '#05070f', maison_rocher: '#0a0d14', cuisine_dumas: '#dfe8f0', rue_dumas: '#bcd4ee'};
 
 // ---------- lecture de l'épisode ----------
 let EP = null; window.setEpisode = e => { EP = e; };

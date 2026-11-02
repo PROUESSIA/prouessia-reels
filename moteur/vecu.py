@@ -126,7 +126,12 @@ def voix(nn, fichier):
         # décision du 30/10 : la phrase d'appel a SON PROPRE PLAN (durees.json a alors une durée de plus que de phrases)
         out += [np.zeros(int(.25 * sr)), y]; D.append(round(.25 + len(y) / sr, 3))
     D[-1] += .8
-    sf.write(os.path.join(d, 'voix.wav'), np.concatenate(out), sr); json.dump(D, open(os.path.join(d, 'durees.json'), 'w'))
+    sf.write(os.path.join(d, 'voix.wav'), np.concatenate(out), sr)
+    v = float(c.get('vitesse', 1))   # option (2/11) : voix trop lente → accélérée sans changer la hauteur (ex. 1.1), durées ramenées d'autant
+    if v != 1:
+        tmp = os.path.join(d, 'voix-v.wav'); subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(d, 'voix.wav'), '-af', f'atempo={v}', '-ar', str(sr), tmp], check=True)
+        os.replace(tmp, os.path.join(d, 'voix.wav')); D = [round(x / v, 3) for x in D]
+    json.dump(D, open(os.path.join(d, 'durees.json'), 'w'))
     mots = sum(len(l.split()) for l in lignes); tot = sum(D)
     print('voix calée :', round(tot, 1), 's,', round(mots / (tot - .8), 1), 'mots/s')
     for l, (a, b) in zip(lignes, seg): print(f'  {a:5.2f}-{b:5.2f} {l}')
