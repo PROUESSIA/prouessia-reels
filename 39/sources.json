@@ -1,0 +1,104 @@
+{
+ "num": "39",
+ "titre": "Le client rappelle : « c'est vous qui avez posé ça ? »",
+ "date": "03.11.2026",
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Un client rappelle : c'est vous qui avez refait mes tuyaux ?"
+  },
+  {
+   "dit": "La garantie décennale dure dix ans, à partir de la réception des travaux. Les canalisations peuvent être concernées.",
+   "ref": "le délai de la garantie décennale démarre le lendemain de la signature du procès-verbal de réception (Code civil, art. 1792-4-1) ; parmi les éléments d'équipement indissociables cités par service-public : canalisation, chauffage central (Code civil, art. 1792-2). Vérifié le 12/10/2026, faits/r03.json.",
+   "liens": [
+    [
+     "service-public.gouv.fr : Garantie décennale des constructeurs",
+     "https://www.service-public.gouv.fr/particuliers/vosdroits/F2034"
+    ]
+   ],
+   "label": "Ce que dit le texte :"
+  },
+  {
+   "dit": "Avec Prouessia, votre numéro est cliquable sur votre site : un appui, et le client vous appelle.",
+   "ref": "avantage n° 18 « Numéro cliquable » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Les conditions précises de mise en jeu de la garantie (dommages couverts, exclusions) ne sont pas traitées ; aucun montant n'est cité.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "147075",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-147075/",
+   "auteur": "mariya_m"
+  },
+  {
+   "id": "39",
+   "sujet": "percer",
+   "url": "https://pixabay.com/videos/id-39/",
+   "auteur": "DistillVideos"
+  },
+  {
+   "id": "87146",
+   "sujet": "fichier",
+   "url": "https://pixabay.com/videos/id-87146/",
+   "auteur": "tolomedia43"
+  },
+  {
+   "id": "41121",
+   "sujet": "livre",
+   "url": "https://pixabay.com/videos/id-41121/",
+   "auteur": "wonderlandwoo"
+  },
+  {
+   "id": "3833",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-3833/",
+   "auteur": "kaigraphick"
+  },
+  {
+   "id": "37379",
+   "sujet": "camions",
+   "url": "https://pixabay.com/videos/id-37379/",
+   "auteur": "antoinedes"
+  },
+  {
+   "id": "img:23-site-vitrine-mobile",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:23-site-vitrine-mobile/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:extras/22-formulaire-visiteur",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:extras/22-formulaire-visiteur/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "154950",
+   "sujet": "employé",
+   "url": "https://pixabay.com/videos/id-154950/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "200276",
+   "sujet": "garage",
+   "url": "https://pixabay.com/videos/id-200276/",
+   "auteur": "LadislavBur"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

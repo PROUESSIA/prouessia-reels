@@ -1,0 +1,99 @@
+{
+ "num": "37",
+ "titre": "Dépannage, chauffe-eau, salle de bain : tout est clair",
+ "date": "03.11.2026",
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Un client a une fuite, un autre veut refaire sa douche : ils tombent sur votre nom sans savoir ce que vous faites, et appellent quelqu'un d'autre."
+  },
+  {
+   "dit": "Avec Prouessia, vos services sont classés sur votre site : le client sait quoi vous demander.",
+   "ref": "avantage n° 16 « Vos services classés » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "115",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-115/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "235528",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-235528/",
+   "auteur": "useche360"
+  },
+  {
+   "id": "116118",
+   "sujet": "douche",
+   "url": "https://pixabay.com/videos/id-116118/",
+   "auteur": "zephylwer0"
+  },
+  {
+   "id": "293084",
+   "sujet": "comptable",
+   "url": "https://pixabay.com/videos/id-293084/",
+   "auteur": "RainMeditateHub"
+  },
+  {
+   "id": "6772",
+   "sujet": "toilette",
+   "url": "https://pixabay.com/videos/id-6772/",
+   "auteur": "KlausHausmann"
+  },
+  {
+   "id": "1927",
+   "sujet": "salle de bain",
+   "url": "https://pixabay.com/videos/id-1927/",
+   "auteur": "Maria_Briones"
+  },
+  {
+   "id": "img:23-site-vitrine-mobile",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:23-site-vitrine-mobile/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:extras/22-formulaire-visiteur",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:extras/22-formulaire-visiteur/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "33742",
+   "sujet": "lavez-vous les mains",
+   "url": "https://pixabay.com/videos/id-33742/",
+   "auteur": "wollschu"
+  },
+  {
+   "id": "4344",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-4344/",
+   "auteur": "2427999"
+  },
+  {
+   "id": "257094",
+   "sujet": "eau",
+   "url": "https://pixabay.com/videos/id-257094/",
+   "auteur": "padrinan"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

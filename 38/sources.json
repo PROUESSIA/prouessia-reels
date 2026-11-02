@@ -1,0 +1,99 @@
+{
+ "num": "38",
+ "titre": "POV : un client veut vous écrire le soir",
+ "date": "03.11.2026",
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Un client veut vous écrire le soir, ne trouve qu'un numéro, n'ose pas appeler, vous oublie, et c'est un autre plombier qui a le chantier."
+  },
+  {
+   "dit": "Avec Prouessia, le client remplit le formulaire de votre site, c'est envoyé même le soir, et vous recevez la demande.",
+   "ref": "avantage n° 17 « Le client vous écrit depuis le site » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "197",
+   "sujet": "carnet",
+   "url": "https://pixabay.com/videos/id-197/",
+   "auteur": "Life-Of-Vids"
+  },
+  {
+   "id": "197654",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-197654/",
+   "auteur": "TRAPHITHO"
+  },
+  {
+   "id": "366165",
+   "sujet": "homme",
+   "url": "https://pixabay.com/videos/id-366165/",
+   "auteur": "GIUSEPPE-DE-BERGOLIS"
+  },
+  {
+   "id": "147074",
+   "sujet": "robinet",
+   "url": "https://pixabay.com/videos/id-147074/",
+   "auteur": "mariya_m"
+  },
+  {
+   "id": "3514",
+   "sujet": "circulation",
+   "url": "https://pixabay.com/videos/id-3514/",
+   "auteur": "josemdelaa"
+  },
+  {
+   "id": "214661",
+   "sujet": "construction",
+   "url": "https://pixabay.com/videos/id-214661/",
+   "auteur": "LadislavBur"
+  },
+  {
+   "id": "img:extras/22-formulaire-visiteur",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:extras/22-formulaire-visiteur/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:extras/22-demande-envoyee",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:extras/22-demande-envoyee/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:22-nouvelle-demande",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:22-nouvelle-demande/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "1958",
+   "sujet": "pommeau de douche",
+   "url": "https://pixabay.com/videos/id-1958/",
+   "auteur": "mirada2833"
+  },
+  {
+   "id": "4906",
+   "sujet": "lavage",
+   "url": "https://pixabay.com/videos/id-4906/",
+   "auteur": "klimkin"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}
