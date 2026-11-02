@@ -1,0 +1,381 @@
+=== https://www.guide-artisan.fr/hauts-de-france/oise/plombier [404]
+<!DOCTYPE html><html lang="fr">
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business# place: http://ogp.me/ns/place# article: http://ogp.me/ns/article#">
+    <title>Erreur 404 | Guide Artisan</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="og:site_name" content="Guide Artisan">
+<meta name="og:locale" content="fr_FR">
+<meta name="og:url" content="https://www.guide-artisan.fr/hauts-de-france/oise/plombier">
+<meta name="og:title" content="Erreur 404 | Guide Artisan">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="Guide Artisan">
+<meta name="twitter:title" content="Erreur 404 | Guide Artisan">
+<meta name="twitter:creator" content="@guideartisan"><link href="/static/1781773884/css/aos.css" media="all" rel="stylesheet" type="text/css">
+<link href="/static/1781773884/css/foundation.css" media="all" rel="stylesheet" type="text/css">
+<link href="/static/1781773884/css/styles.css" media="all" rel="stylesheet" type="text/css">
+<link href="/static/1781773884/css/print.css" media="print" rel="stylesheet" type="text/css">
+<link href="/static/1781773884/css/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+<link href="https://www.guide-artisan.fr/hauts-de-france/oise/plombier" rel="canonical"><script type="text/javascript" src="/static/1785426185/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/aos.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/picturefill.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/tweenmax.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/what-input.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/underscore.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/lib/foundation.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/foundation.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/privacy-cookies.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/dropdown.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/placeholder.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/app.min.js"></script>
+<script type="text/javascript" src="/static/1785426185/js/menu.min.js"></script>
+<script type="text/javascript">
+    //<!--
+    window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({"analytics_storage":true,"ad_storage":false,"ad_user_data":false,"ad_personalization":false,"event":"Cookie Consent"});
+    //-->
+</script>
+<script type="text/javascript">
+    //<!--
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+"https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,"script","dataLayer","GTM-MLGFJCN");var currentUriState = "National"
+    //-->
+</script></head>
+    <body>
+                            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLGFJCN" height="0" width="0" style="display: none;visibility: hidden;"></iframe>
+            </noscript>
+                <div class="reveal cookie-modal" id="cookie-modal" data-close-on-esc="false" data-close-on-click="false" data-reveal data-multiple-opened="true">
+    <div id="cookie-modal-create" class="cookie-modal-create opened">
+        <p>Nous utilisons des cookies pour assurer le bon fonctionnement et mesurer l'audience du site internet Guide Artisan. Vous avez évidemment la possibilité de modifier les paramètres afin d'activer ou de désactiver en tout temps chaque catégorie de cookies.</p>
+        <p>Pour en savoir plus <a href="/information/politique-de-confidentialite">à propos des cookies</a>.</p>
+        <div class="cookie-buttons">
+            <input class="button red privacy-cookie-accept" type="button" value="Tout accepter" />
+            <input class="button grey-border privacy-cookie-options" type="button" value="Personnaliser" />
+            <input class="button grey-border privacy-cookie-refuse" type="button" value="Tout refuser" />
+        </div>
+    </div>
+        <div id="cookie-modal-edit" class="cookie-modal-edit">
+        <button class="close-button" aria-label="Fermer les opions" title="Fermer les options" type="button"></button>
+        <h2 class="cookie-modal-title">Personnaliser mes choix</h2>
+        <p>Cochez afin d’activer ou désactiver l’utilisation des cookies.</p>
+        <ul class="cookie-modal-options">
+                            <li>
+                                        <label class="label  checked padlock" for="privacy-control-necessary">
+                        Cookies strictement nécessaires                        <input class="privacy-control" name="necessary" id="privacy-control-necessary" type="checkbox" checked="checked" disabled="disabled" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                        <span class="cookies-accordion-item" >
+                        Il s&#039;agit des cookies qui sont nécessaires pour le fonctionnement du site Web et qui permettent que vous soyez en mesure de compléter les services que vous demandez.                    </span>
+                </li>
+                            <li>
+                                        <label class="label  checked padlock" for="privacy-control-cookie_social">
+                        Cookies de médias sociaux                        <input class="privacy-control" name="cookie_social" id="privacy-control-cookie_social" type="checkbox" checked="checked" disabled="disabled" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                        <span class="cookies-accordion-item" >
+                        Ces cookies vous permettent de partager le contenu du Site Web avec des plateformes de médias sociaux (par ex. Facebook, Twitter, Instagram). Nous n’avons aucun contrôle sur ces cookies étant donné qu’ils sont installés par les plateformes elles-même.                    </span>
+                </li>
+                            <li>
+                                        <label class="label  checked padlock" for="privacy-control-analytics_storage">
+                        Cookies de performance                        <input class="privacy-control" name="analytics_storage" id="privacy-control-analytics_storage" type="checkbox" data-write-data-layer checked="checked" disabled="disabled" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                        <span class="cookies-accordion-item" >
+                        Ces cookies nous permettent de recueillir des informations sur la façon dont les visiteurs utilisent le site, par exemple pour compter les visiteurs et cartographier comment les visiteurs se déplacent dans le site. Ils enregistrent votre visite sur le site, les pages que vous avez visitées et les liens que vous avez suivis.                    </span>
+                </li>
+                            <li>
+                                        <label class="label  checkbox-label" for="privacy-control-ad_storage">
+                        Cookies publicitaires                        <input class="privacy-control" name="ad_storage" id="privacy-control-ad_storage" type="checkbox" data-write-data-layer data-children="ad_user_data,ad_personalization" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                            <span class="accordion-icon right"></span>
+                                        <span class="cookies-accordion-item" style="display:none;">
+                        Ces cookies nous permettent de vous montrer des publicités sur mesure sur des sites tiers, sur la base de l&#039;intérêt pour nos produits et services que vous avez manifesté pendant votre visite sur notre Site Web.                    </span>
+                </li>
+                    </ul>
+        <div class="cookie-buttons">
+            <input class="button grey-border privacy-cookie-save" type="button" value="Enregistrer et continuer" />
+            <input class="button red privacy-cookie-accept" type="button" value="Tout accepter et continuer" />
+        </div>
+    </div>
+</div>
+        <div>
+            <header class="header">
+    <div class="header-top">
+        <div class="header-top-logo">
+            <a href="/">
+                <img src="/static/1781773884/css/img/logo.svg" alt="Logo de Guide&#x20;Artisan" />
+                <div>
+                    <span>Guide Artisan</span>
+                                            par Espace Aubade
+                                    </div>
+            </a>
+        </div>
+        <div class="header-top-aubade show-for-full">
+            <a href="https://www.espace-aubade.fr/" target="_blank">
+                <img src="/static/1781773884/css/img/logo-aubade-blue.svg" alt="Espace Aubade spécialiste de la salle de bains" />
+            </a>
+        </div>
+        <ul class="header-top-links&#x20;show-for-xxxlarge">
+    <li>
+        <a href="&#x2F;actualites">Actualités</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;qui-sommes-nous">Qui sommes-nous ?</a>
+    </li>
+    <li>
+        <a href="&#x2F;vous-etes-un-pro">Vous êtes un pro ?</a>
+    </li>
+</ul>        <div class="header-top-choose-project show-for-xxxlarge" style="width: 318px;">
+            <a href="https://www.espace-aubade.fr/demande-de-devis" class="header-top-choose-project-link" target="_blank" rel="noopener noreferrer">
+                Demander un devis
+            </a>
+        </div>
+                    <div class="header-top-crafter hide-for-small-only">
+                <a href="/trouver-un-artisan">Trouver un artisan</a>
+            </div>
+                <button id="menu-btn" class="menu-mobile hide-for-xxxlarge">
+            <span class="icon-burger"></span>
+        </button>
+    </div>
+    <div class="header-navigation hide-for-xxxlarge" id="header-navigation">
+                    <div class="find-crafter show-for-small-only">
+                <a href="/trouver-un-artisan">
+                    <span class="icon-search"></span>
+                    <span>Trouver un artisan</span>
+                </a>
+            </div>
+                <div class="header-navigation-category">
+            <ul class="level0">
+                <li class="level0">
+                    <a href="https://www.espace-aubade.fr/demande-de-devis" class="quote-external-link" target="_blank" rel="noopener noreferrer">Demander un devis</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-navigation-links hide-for-xxxlarge">
+            <ul class="level0">
+    <li>
+        <a href="&#x2F;actualites">Actualités</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;qui-sommes-nous">Qui sommes-nous ?</a>
+    </li>
+    <li>
+        <a href="&#x2F;vous-etes-un-pro">Vous êtes un pro ?</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;faq">Foire aux questions</a>
+    </li>
+    <li>
+        <a href="&#x2F;contact">Contact</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;charte-qualite-guide-artisan">Charte Qualité Guide Artisan</a>
+    </li>
+</ul>        </div>
+    </div>
+    <div class="menu-overlay"></div>
+    <span class="hidden" aria-hidden="true" id="page-top"></span>
+</header>
+            <section id="main-section">
+                <div class="error-container">
+    <div class="error-wrapper">
+        <div class="error-header grid-container">
+            <div class="grid-container">
+                <picture>
+                    <source srcset="/img/1025x1708/error.jpg" media="(min-width: 960px)">
+                    <source srcset="/img/960x1229/error-crop.jpg" media="(min-width: 769px)">
+                    <source srcset="/img/768x983/error-crop.jpg" media="(min-width: 641px)">
+                    <source srcset="/img/640x819/error-crop.jpg">
+                    <img srcset="/img/1025x1708/error.jpg" src="/img/1025x1708/error.jpg" alt="Artisan">
+                </picture>
+            </div>
+        </div>
+        <div class="error-content">
+            <div class="error-text grid-container">
+                <h1>Cette page n'est malheureusement pas disponible.</h1>
+                <p>Le lien que vous avez suivi peut être incorrect ou la page peut avoir été supprimée.</p>
+                <a href="/" class="button red">Retour à l'accueil</a>
+            </div>
+            <div class="search-container grid-container">
+                <div class="search-form-content">
+                    <form method="get" name="search_form" id="search-form" action="&#x2F;recherche" class="form"><label for="job-id">Je recherche</label>                    <div class="job select-wrapper">
+                        <select name="metier" id="job-id"><option value="">Sélectionner un métier</option>
+<option value="plombier">Plombiers</option>
+<option value="climatisation">Climatisation</option>
+<option value="carreleur">Carreleurs</option>
+<option value="renovation-installation-sdb">Rénovation / installation salle de bains</option>
+<option value="---">──────────</option>
+<option value="chauffagiste">Chauffagistes</option>
+<option value="electricien">Électriciens</option>
+<option value="menuisier">Menuisiers</option>
+<option value="paysagiste">Paysagistes</option>
+<option value="plaquiste-platrier">Plaquistes / Plâtriers</option>
+<option value="macon">Maçons</option>
+<option value="couvreur-zingueur">Couvreurs / Zingueurs</option>
+<option value="charpentier">Charpentiers</option>
+<option value="facadier">Façadiers</option>
+<option value="entreprise-renovation">Entreprises de rénovation</option>
+<option value="installateur-photovoltaique">Installateurs Photovoltaïque</option></select>                        <div class="select-fake">
+                            <span>Métiers</span>
+                            <ul>
+                                                                    <li data-slug="plombier">Plombiers</li>
+                                                                    <li data-slug="climatisation">Climatisation</li>
+                                                                    <li data-slug="carreleur">Carreleurs</li>
+                                                                    <li data-slug="renovation-installation-sdb">Rénovation / installation salle de bains</li>
+                                                                    <li data-slug="---">──────────</li>
+                                                                    <li data-slug="chauffagiste">Chauffagistes</li>
+                                                                    <li data-slug="electricien">Électriciens</li>
+                                                                    <li data-slug="menuisier">Menuisiers</li>
+                                                                    <li data-slug="paysagiste">Paysagistes</li>
+                                                                    <li data-slug="plaquiste-platrier">Plaquistes / Plâtriers</li>
+                                                                    <li data-slug="macon">Maçons</li>
+                                                                    <li data-slug="couvreur-zingueur">Couvreurs / Zingueurs</li>
+                                                                    <li data-slug="charpentier">Charpentiers</li>
+                                                                    <li data-slug="facadier">Façadiers</li>
+                                                                    <li data-slug="entreprise-renovation">Entreprises de rénovation</li>
+                                                                    <li data-slug="installateur-photovoltaique">Installateurs Photovoltaïque</li>
+                                                            </ul>
+                        </div>
+                    </div>
+                    <div class="locality">
+                        <input type="text" name="localite" id="locality" placeholder="Ville&#x20;ou&#x20;code&#x20;postal&#x2A;" autocomplete="off" value="">                        <ul class="city-list" id="city-list"></ul>
+                    </div>
+                    <input type="submit" class="button" value="Valider" />
+                    </form>                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </section>
+        </div>
+        <footer class="main-footer">
+    <div class="upper-footer-block">
+        <div class="upper-footer">
+            <div class="upper-footer-title">
+                                    <a class="upper-footer-title-xxxlarge" href="/actualites">Dernières actualités</a>
+                                <div class="upper-footer-title-xxxlarge show-for-xxxlarge">Artisans à la une</div>
+            </div>
+            <div class="upper-footer-container" data-aos="fade-up">
+                                                    <div class="upper-footer-content nofollow">
+                                                <div class="date" data-aos="fade-up" data-aos-delay="100">
+                            10 août 2026                        </div>
+                        <a href="/actualites/menuisier/les-aides-financieres-et-credit-dimpot-pour-le-changement-de-fenetres-en-2026" class="content">
+                            Les aides financières et crédit d&#039;impôt pour le changement de fenêtres en 2026                        </a>
+                    </div>
+                                    <div class="upper-footer-content nofollow">
+                                                <div class="date" data-aos="fade-up" data-aos-delay="200">
+                            30 septembre 2026                        </div>
+                        <a href="/actualites/chauffagiste/energies-renouvelable/les-aides-pour-un-systeme-de-chauffage-a-energie-renouvelable-en-2026" class="content">
+                            Les aides pour un système de chauffage à énergie renouvelable en 2026                        </a>
+                    </div>
+                                                    <div class="upper-footer-gap"></div>
+                                <div class="upper-footer-title hide-for-xxxlarge">Artisans à la une</div>
+                                                    <div class="upper-footer-content nofollow">
+                        <div class="crafter-container">
+                            <div class="more">
+                                <img src="/static/1781773884/css/img/latest-crafter-default.png" alt="Sarl&#x20;Inal&#x20;Renovation" />
+                            </div>
+                            <div class="crafter-block" data-aos="fade-up" data-aos-delay="100">
+                                <span class="crafter-name">
+                                    <a href="/lorraine/sarl-inal-renovation">
+                                        Sarl Inal Renovation                                    </a>
+                                </span>
+                                <span class="crafter-address">
+                                    9 rue de la Moselle                                    <br />
+                                    88190                                    Golbey                                </span>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="upper-footer-content nofollow">
+                        <div class="crafter-container">
+                            <div class="more">
+                                <img src="https://media.espace-aubade.fr/crafter/100x100/crafters/ML/R/E/ML_RE071/logo/ML_RE071.jpg" alt="SARL&#x20;Regor" />
+                            </div>
+                            <div class="crafter-block" data-aos="fade-up" data-aos-delay="200">
+                                <span class="crafter-name">
+                                    <a href="/midi-pyrenees/sarl-regor">
+                                        SARL Regor                                    </a>
+                                </span>
+                                <span class="crafter-address">
+                                    2 Place Du Foirail                                    <br />
+                                    81340                                    Valence-d&#039;Albigeois                                </span>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <div class="lower-footer-block">
+        <div class="lower-footer-menu">
+            <ul class="navigation">
+    <li>
+        <a href="&#x2F;trouver-un-artisan">Trouver un artisan</a>
+    </li>
+    <li>
+        <a href="&#x2F;blog">Blog</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;faq">Foire aux questions</a>
+    </li>
+    <li>
+        <a href="&#x2F;contact">Contact</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;charte-qualite-guide-artisan">Charte Qualité Guide Artisan</a>
+    </li>
+</ul>            <a href="https://www.espace-aubade.fr/catalogue.html" target="_blank" class="footer-link-catalog">Recevez le catalogue Espace Aubade</a>
+        </div>
+        <div class="footer-crafter-appear">
+                <p class="crafter-appear-title">Apparaître sur Guide Artisan</p>
+                <p class="crafter-appear-text">Vous êtes plombier, chauffagiste, climaticien, électricien, carreleur ou artisan clé en main et souhaitez apparaître sur Guide Artisan&nbsp;?</p>
+                <a href="/vous-etes-un-pro">
+                    <div class="button">En savoir plus</div>
+                </a>
+        </div>
+        <div class="logos">
+            <div class="footer-logos-container">
+                <div class="footer-social">
+                    <div class="footer-social-title">Suivez Guide Artisan</div>
+                    <div class="footer-social-logos">
+                        <a href="https://www.instagram.com/guideartisan" target="_blank" rel="noopener noreferrer">
+                            <span id="instagram-footer-logo" class="social-btn instagram"></span>
+                        </a>
+                        <a href="https://www.facebook.com/GuideArtisan" target="_blank" rel="noopener noreferrer">
+                            <span id="facebook-footer-logo" class="social-btn fb"></span>
+                        </a>
+                    </div>
+                </div>
+                <a class="footer-logos" href="https://www.espace-aubade.fr" target="_blank">
+                    <img src="/static/1781773884/css/img/logo-aubade-blue.svg" alt="Espace Aubade spécialiste de la salle de bains" />
+                </a>
+                <a class="footer-logos" href="https://www.lesmateriaux.fr/" target="_blank">
+                    <img src="/static/1781773884/css/img/logo-materiaux.svg" alt="Les Matériaux, aménagement extérieur et intérieur" />
+                </a>
+            </div>
+        </div>
+        <div class="footer-legal-links">
+            <ul class="navigation">
+    <li>
+        <a class="footer-link-separator" href="&#x2F;plan-du-site">Plan du site</a>
+    </li>
+    <li>
+        <a class="footer-link-separator" href="&#x2F;information&#x2F;mentions-legales">Mentions légales</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;politique-de-confidentialite">Politique de confidentialité</a>
+    </li>
+</ul>        </div>
+    </div>
+    <a href="#page-top" class="return-top-btn" data-smooth-scroll></a>
+</footer>
+<script type="text/javascript">
+    //<!--
+    AOS.init({once: true});
+    //-->
+</script>    </body>
+</html>
