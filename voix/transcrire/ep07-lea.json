@@ -1,0 +1,132 @@
+[
+{
+"mot": "Maman,",
+"debut": 0.0,
+"fin": 0.52
+},
+{
+"mot": "tu",
+"debut": 0.88,
+"fin": 0.96
+},
+{
+"mot": "n",
+"debut": 0.96,
+"fin": 1.06
+},
+{
+"mot": "'appelles",
+"debut": 1.06,
+"fin": 1.18
+},
+{
+"mot": "personne,",
+"debut": 1.18,
+"fin": 1.52
+},
+{
+"mot": "on",
+"debut": 1.84,
+"fin": 1.92
+},
+{
+"mot": "arrive.",
+"debut": 1.92,
+"fin": 2.14
+},
+{
+"mot": "Maman,",
+"debut": 3.04,
+"fin": 3.48
+},
+{
+"mot": "pose",
+"debut": 3.96,
+"fin": 4.12
+},
+{
+"mot": "ce",
+"debut": 4.12,
+"fin": 4.34
+},
+{
+"mot": "stylo.",
+"debut": 4.34,
+"fin": 4.64
+},
+{
+"mot": "450",
+"debut": 5.76,
+"fin": 6.2
+},
+{
+"mot": "euros",
+"debut": 6.2,
+"fin": 6.64
+},
+{
+"mot": "à",
+"debut": 6.64,
+"fin": 6.76
+},
+{
+"mot": "chaque",
+"debut": 6.76,
+"fin": 6.86
+},
+{
+"mot": "fuite,",
+"debut": 6.86,
+"fin": 7.12
+},
+{
+"mot": "voilà",
+"debut": 7.3,
+"fin": 7.42
+},
+{
+"mot": "ce",
+"debut": 7.42,
+"fin": 7.64
+},
+{
+"mot": "que",
+"debut": 7.64,
+"fin": 7.74
+},
+{
+"mot": "j",
+"debut": 7.74,
+"fin": 7.8
+},
+{
+"mot": "'en",
+"debut": 7.8,
+"fin": 7.86
+},
+{
+"mot": "fais.",
+"debut": 7.86,
+"fin": 8.0
+},
+{
+"mot": "Julien,",
+"debut": 9.5,
+"fin": 9.94
+},
+{
+"mot": "le",
+"debut": 10.58,
+"fin": 10.8
+},
+{
+"mot": "par",
+"debut": 10.8,
+"fin": 10.96
+},
+{
+"mot": "brise.",
+"debut": 10.96,
+"fin": 11.26
+}
+]

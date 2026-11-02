@@ -1,0 +1,97 @@
+[
+{
+"mot": "Une",
+"debut": 0.0,
+"fin": 0.52
+},
+{
+"mot": "petite",
+"debut": 0.52,
+"fin": 0.82
+},
+{
+"mot": "signature,",
+"debut": 0.82,
+"fin": 1.4
+},
+{
+"mot": "madame",
+"debut": 1.62,
+"fin": 1.88
+},
+{
+"mot": "Dumas.",
+"debut": 1.88,
+"fin": 2.24
+},
+{
+"mot": "Et",
+"debut": 2.9,
+"fin": 2.9
+},
+{
+"mot": "vous",
+"debut": 2.9,
+"fin": 3.1
+},
+{
+"mot": "êtes",
+"debut": 3.1,
+"fin": 3.24
+},
+{
+"mot": "protégé.",
+"debut": 3.24,
+"fin": 3.84
+},
+{
+"mot": "Votre",
+"debut": 5.36,
+"fin": 6.04
+},
+{
+"mot": "mère",
+"debut": 6.04,
+"fin": 6.3
+},
+{
+"mot": "?",
+"debut": 6.3,
+"fin": 7.04
+},
+{
+"mot": "Que",
+"debut": 7.04,
+"fin": 7.28
+},
+{
+"mot": "l",
+"debut": 7.28,
+"fin": 7.42
+},
+{
+"mot": "'azard.",
+"debut": 7.42,
+"fin": 7.76
+},
+{
+"mot": "Bonne",
+"debut": 8.6,
+"fin": 9.02
+},
+{
+"mot": "route,",
+"debut": 9.02,
+"fin": 9.14
+},
+{
+"mot": "monsieur",
+"debut": 9.48,
+"fin": 9.7
+},
+{
+"mot": "Morel.",
+"debut": 9.7,
+"fin": 10.14
+}
+]

@@ -1,0 +1,42 @@
+[
+{
+"mot": "Les",
+"debut": 0.0,
+"fin": 0.46
+},
+{
+"mot": "mains,",
+"debut": 0.46,
+"fin": 0.64
+},
+{
+"mot": "on",
+"debut": 1.4,
+"fin": 1.8
+},
+{
+"mot": "y",
+"debut": 1.8,
+"fin": 1.9
+},
+{
+"mot": "va.",
+"debut": 1.9,
+"fin": 2.04
+},
+{
+"mot": "Les",
+"debut": 2.6,
+"fin": 3.36
+},
+{
+"mot": "quatre",
+"debut": 3.36,
+"fin": 3.5
+},
+{
+"mot": "pneus.",
+"debut": 3.5,
+"fin": 3.88
+}
+]

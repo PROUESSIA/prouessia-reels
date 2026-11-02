@@ -1,9 +1,5 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-voix/transcrire/33.wav 62
-voix/transcrire/34.wav 70
-voix/transcrire/35.wav 69
-voix/transcrire/36.wav 49
-voix/transcrire/ep06-imper.wav 13
-voix/transcrire/ep06-julien.wav 14
-voix/transcrire/ep06-theo.wav 50
-voix/transcrire/ep06-vasseur.wav 8
+voix/transcrire/ep07-dumas.wav 36
+voix/transcrire/ep07-julien.wav 8
+voix/transcrire/ep07-lea.wav 26
+voix/transcrire/ep07-vasseur.wav 19
