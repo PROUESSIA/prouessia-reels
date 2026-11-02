@@ -1,0 +1,48 @@
+{
+ "phrases": [
+  {
+   "a": 0.35,
+   "b": 1.48,
+   "text": "Votre client est dans sa cave."
+  },
+  {
+   "a": 1.93,
+   "b": 2.91,
+   "text": "Une seule barre de réseau."
+  },
+  {
+   "a": 3.36,
+   "b": 5.25,
+   "text": "Il cherche un plombier. La page tourne."
+  },
+  {
+   "a": 5.7,
+   "b": 8.08,
+   "text": "Avec Prouessia, votre site s'ouvre vite sur mobile."
+  },
+  {
+   "a": 8.33,
+   "b": 9.59,
+   "text": "Même avec une seule barre de réseau."
+  },
+  {
+   "a": 10.04,
+   "b": 10.99,
+   "text": "Le client vous voit tout de suite."
+  },
+  {
+   "a": 11.44,
+   "b": 12.99,
+   "text": "Et vous, votre site, il s'ouvre vite ?"
+  },
+  {
+   "a": 13.44,
+   "b": 14.78,
+   "text": "Prouessia, le partenaire des plombiers."
+  }
+ ],
+ "cta": {
+  "a": 15.23,
+  "b": 18.18
+ }
+}

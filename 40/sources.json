@@ -1,0 +1,32 @@
+{
+ "num": "40",
+ "titre": "Votre site, rapide même sans réseau",
+ "date": "03.11.2026",
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Votre client est dans sa cave, avec une seule barre de réseau : il cherche un plombier et la page tourne."
+  },
+  {
+   "dit": "Avec Prouessia, votre site s'ouvre vite sur mobile, même avec une seule barre de réseau.",
+   "ref": "avantage n° 19 « Site rapide sur mobile » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui). Écran montré : site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo ; aucune durée de chargement n'est promise.",
+  "Les données visibles à l'écran sont celles d'un site de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [],
+ "licence_videos": "Animation réalisée par Prouessia (aucune vidéo extérieure ; écrans : compte de démonstration)",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon » ; aucune musique"
+}
