@@ -404,9 +404,59 @@
    "sujet": "Idée 15 · Votre zone bien indiquée",
    "ton": "Charon",
    "note": "Ajouté le 1/11, à valider"
+  },
+  {
+   "n": "reel-37",
+   "reel": "37",
+   "style": "vécu",
+   "date": "2026-11-03",
+   "heure": "09:00",
+   "sujet": "Idée 16 · Vos services classés",
+   "ton": "Charon",
+   "note": "Ajouté le 2/11, à valider"
+  },
+  {
+   "n": "reel-38",
+   "reel": "38",
+   "style": "POV",
+   "date": "2026-11-03",
+   "heure": "12:30",
+   "sujet": "Idée 17 · Le client vous écrit depuis le site",
+   "ton": "Charon",
+   "note": "Ajouté le 2/11, à valider"
+  },
+  {
+   "n": "ep-7",
+   "reel": "anim/ep07",
+   "style": "série Sous pression",
+   "date": "2026-11-03",
+   "heure": "18:00",
+   "sujet": "Sous pression · Épisode 7 — Chez maman",
+   "ton": "Gemini Sulafat / Aoede / Orus / Algenib",
+   "note": "Ajouté le 2/11, à valider"
+  },
+  {
+   "n": "reel-39",
+   "reel": "39",
+   "style": "carte",
+   "date": "2026-11-03",
+   "heure": "20:30",
+   "sujet": "Garantie décennale (faits : r03) · idée 18",
+   "ton": "Charon",
+   "note": "Ajouté le 2/11, à valider"
+  },
+  {
+   "n": "reel-40",
+   "reel": "40",
+   "style": "motion",
+   "date": "2026-11-03",
+   "heure": "22:00",
+   "sujet": "Idée 19 · Site rapide sur mobile",
+   "ton": "Charon",
+   "note": "Ajouté le 2/11, à valider"
   }
  ],
- "prochain_numero_dossier": 37,
+ "prochain_numero_dossier": 41,
  "prospection": {
   "departement_semaine": "78",
   "derniere_page_importee": 2,
@@ -416,7 +466,8 @@
    "92 (20/10)",
    "91 (20/10)",
    "94 (22/10)",
-   "95 partiel (22/10 : 20 fiches sur 45)"
+   "95 partiel (22/10 : 20 fiches sur 45)",
+   "60 Oise + 28 Eure-et-Loir (02/11 : 15 proposés, 6 en réserve)"
   ]
  }
 }
