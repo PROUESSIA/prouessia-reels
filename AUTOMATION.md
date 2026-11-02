@@ -146,6 +146,7 @@ HTML généré par `prospects_lot` → `email_html()` (SQL `prospection/04-email
   - **Page Facebook « Prouessia (Paris) »** (1328493890355892, connexion Make 12206314, module Reels de Facebook) : le Reel est publié quand son heure est arrivée (Facebook ne se programme pas par l'API), donc 0 à 25 min après l'heure ; marque `facebook` dans `platform_ids`.
 - Rien à faire à la main dans Meta Business Suite (plus de section « À programmer sur Meta » dans l'e-mail réseaux). Ne pas activer le partage automatique Instagram → Facebook (doublon sur la Page).
 - Le `pinned_comment` reste à épingler à la main sur Instagram et Facebook (rappel dans l'e-mail réseaux).
+- **Panne du 31/10 au 2/11 (corrigée le 2/11)** : le module Zernio « Instagram Reel » ne renvoie rien, donc le marquage `instagram` ne se faisait jamais ; au passage suivant, Zernio refusait le doublon (409) et Make a mis le scénario en pause après 3 erreurs. Maintenant : Reel, Story et marquage (`"instagram":"zernio"`) sont trois routes séparées, et les refus Zernio/Facebook sont ignorés (le scénario ne se met plus en pause). Rattrapage non fait : les vidéos du 31/10 (sauf 9 h) et du 1/11 ne sont pas sur Instagram/Facebook.
 - Si `platform_ids` d'un Reel publié n'a pas `instagram` ou `facebook` après sa fenêtre : regarder les exécutions du 8274397 (`executions_list`, puis `executions_get-detail`).
 
 ## Conseils YouTube Shorts appliqués (vidéo « If your shorts get under 1,000 views », 22/10)
