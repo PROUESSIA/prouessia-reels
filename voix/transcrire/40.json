@@ -1,0 +1,277 @@
+[
+{
+"mot": "Votre",
+"debut": 0.0,
+"fin": 0.62
+},
+{
+"mot": "client",
+"debut": 0.62,
+"fin": 0.8
+},
+{
+"mot": "est",
+"debut": 0.8,
+"fin": 0.92
+},
+{
+"mot": "dans",
+"debut": 0.92,
+"fin": 1.02
+},
+{
+"mot": "sa",
+"debut": 1.02,
+"fin": 1.16
+},
+{
+"mot": "cave,",
+"debut": 1.16,
+"fin": 1.4
+},
+{
+"mot": "une",
+"debut": 1.76,
+"fin": 2.04
+},
+{
+"mot": "seule",
+"debut": 2.04,
+"fin": 2.2
+},
+{
+"mot": "barre",
+"debut": 2.2,
+"fin": 2.36
+},
+{
+"mot": "de",
+"debut": 2.36,
+"fin": 2.5
+},
+{
+"mot": "réseau.",
+"debut": 2.5,
+"fin": 2.82
+},
+{
+"mot": "Il",
+"debut": 3.1,
+"fin": 3.3
+},
+{
+"mot": "cherche",
+"debut": 3.3,
+"fin": 3.46
+},
+{
+"mot": "un",
+"debut": 3.46,
+"fin": 3.6
+},
+{
+"mot": "plombier,",
+"debut": 3.6,
+"fin": 3.96
+},
+{
+"mot": "la",
+"debut": 4.34,
+"fin": 4.46
+},
+{
+"mot": "page",
+"debut": 4.46,
+"fin": 4.62
+},
+{
+"mot": "tourne.",
+"debut": 4.62,
+"fin": 5.02
+},
+{
+"mot": "Avec",
+"debut": 5.84,
+"fin": 6.04
+},
+{
+"mot": "Prohessia,",
+"debut": 6.04,
+"fin": 6.48
+},
+{
+"mot": "votre",
+"debut": 6.54,
+"fin": 6.66
+},
+{
+"mot": "site",
+"debut": 6.66,
+"fin": 6.92
+},
+{
+"mot": "s",
+"debut": 6.92,
+"fin": 7.1
+},
+{
+"mot": "'ouvre",
+"debut": 7.1,
+"fin": 7.24
+},
+{
+"mot": "vite",
+"debut": 7.24,
+"fin": 7.5
+},
+{
+"mot": "sur",
+"debut": 7.5,
+"fin": 7.8
+},
+{
+"mot": "mobile,",
+"debut": 7.8,
+"fin": 8.04
+},
+{
+"mot": "même",
+"debut": 8.44,
+"fin": 8.6
+},
+{
+"mot": "avec",
+"debut": 8.6,
+"fin": 8.8
+},
+{
+"mot": "une",
+"debut": 8.8,
+"fin": 8.98
+},
+{
+"mot": "seule",
+"debut": 8.98,
+"fin": 9.08
+},
+{
+"mot": "barre",
+"debut": 9.08,
+"fin": 9.22
+},
+{
+"mot": "de",
+"debut": 9.22,
+"fin": 9.34
+},
+{
+"mot": "réseau.",
+"debut": 9.34,
+"fin": 9.66
+},
+{
+"mot": "Le",
+"debut": 10.4,
+"fin": 10.5
+},
+{
+"mot": "client",
+"debut": 10.5,
+"fin": 10.7
+},
+{
+"mot": "vous",
+"debut": 10.7,
+"fin": 10.84
+},
+{
+"mot": "voit",
+"debut": 10.84,
+"fin": 11.0
+},
+{
+"mot": "tout",
+"debut": 11.0,
+"fin": 11.1
+},
+{
+"mot": "de",
+"debut": 11.1,
+"fin": 11.14
+},
+{
+"mot": "suite.",
+"debut": 11.14,
+"fin": 11.34
+},
+{
+"mot": "Et",
+"debut": 12.34,
+"fin": 12.5
+},
+{
+"mot": "vous,",
+"debut": 12.5,
+"fin": 12.62
+},
+{
+"mot": "votre",
+"debut": 12.7,
+"fin": 12.82
+},
+{
+"mot": "site,",
+"debut": 12.82,
+"fin": 13.12
+},
+{
+"mot": "il",
+"debut": 13.52,
+"fin": 13.6
+},
+{
+"mot": "s",
+"debut": 13.6,
+"fin": 13.68
+},
+{
+"mot": "'ouvre",
+"debut": 13.68,
+"fin": 13.8
+},
+{
+"mot": "vite",
+"debut": 13.8,
+"fin": 13.96
+},
+{
+"mot": "?",
+"debut": 13.96,
+"fin": 14.14
+},
+{
+"mot": "Prohessia,",
+"debut": 14.8,
+"fin": 15.16
+},
+{
+"mot": "le",
+"debut": 15.22,
+"fin": 15.28
+},
+{
+"mot": "partenaire",
+"debut": 15.28,
+"fin": 15.66
+},
+{
+"mot": "des",
+"debut": 15.66,
+"fin": 15.72
+},
+{
+"mot": "plombiers.",
+"debut": 15.72,
+"fin": 16.02
+}
+]
