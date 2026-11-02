@@ -1,0 +1,417 @@
+[
+{
+"mot": "Des",
+"debut": 0.0,
+"fin": 0.5
+},
+{
+"mot": "panages,",
+"debut": 0.5,
+"fin": 1.08
+},
+{
+"mot": "chauffots,",
+"debut": 1.26,
+"fin": 1.58
+},
+{
+"mot": "salles",
+"debut": 1.8,
+"fin": 1.92
+},
+{
+"mot": "de",
+"debut": 1.92,
+"fin": 2.06
+},
+{
+"mot": "bain,",
+"debut": 2.06,
+"fin": 2.28
+},
+{
+"mot": "tout",
+"debut": 2.56,
+"fin": 2.66
+},
+{
+"mot": "est",
+"debut": 2.66,
+"fin": 2.78
+},
+{
+"mot": "clair.",
+"debut": 2.78,
+"fin": 2.96
+},
+{
+"mot": "Un",
+"debut": 3.52,
+"fin": 3.92
+},
+{
+"mot": "client",
+"debut": 3.92,
+"fin": 4.14
+},
+{
+"mot": "a",
+"debut": 4.14,
+"fin": 4.3
+},
+{
+"mot": "une",
+"debut": 4.3,
+"fin": 4.4
+},
+{
+"mot": "fuite",
+"debut": 4.4,
+"fin": 4.58
+},
+{
+"mot": "sous",
+"debut": 4.58,
+"fin": 4.74
+},
+{
+"mot": "l",
+"debut": 4.74,
+"fin": 4.8
+},
+{
+"mot": "'évier.",
+"debut": 4.8,
+"fin": 5.0
+},
+{
+"mot": "Un",
+"debut": 5.44,
+"fin": 5.58
+},
+{
+"mot": "autre",
+"debut": 5.58,
+"fin": 5.84
+},
+{
+"mot": "veut",
+"debut": 5.84,
+"fin": 6.08
+},
+{
+"mot": "refaire",
+"debut": 6.08,
+"fin": 6.32
+},
+{
+"mot": "sa",
+"debut": 6.32,
+"fin": 6.46
+},
+{
+"mot": "douche.",
+"debut": 6.46,
+"fin": 6.72
+},
+{
+"mot": "Il",
+"debut": 7.28,
+"fin": 7.38
+},
+{
+"mot": "tombe",
+"debut": 7.38,
+"fin": 7.5
+},
+{
+"mot": "sur",
+"debut": 7.5,
+"fin": 7.64
+},
+{
+"mot": "votre",
+"debut": 7.64,
+"fin": 7.8
+},
+{
+"mot": "nom,",
+"debut": 7.8,
+"fin": 8.02
+},
+{
+"mot": "sans",
+"debut": 8.32,
+"fin": 8.54
+},
+{
+"mot": "plus",
+"debut": 8.54,
+"fin": 8.7
+},
+{
+"mot": "d",
+"debut": 8.7,
+"fin": 8.82
+},
+{
+"mot": "'infos.",
+"debut": 8.82,
+"fin": 9.02
+},
+{
+"mot": "Vous",
+"debut": 9.96,
+"fin": 10.14
+},
+{
+"mot": "faites",
+"debut": 10.14,
+"fin": 10.26
+},
+{
+"mot": "quoi",
+"debut": 10.26,
+"fin": 10.42
+},
+{
+"mot": "?",
+"debut": 10.42,
+"fin": 11.2
+},
+{
+"mot": "Ils",
+"debut": 11.2,
+"fin": 11.34
+},
+{
+"mot": "ne",
+"debut": 11.34,
+"fin": 11.42
+},
+{
+"mot": "savent",
+"debut": 11.42,
+"fin": 11.54
+},
+{
+"mot": "pas.",
+"debut": 11.54,
+"fin": 11.7
+},
+{
+"mot": "Alors",
+"debut": 12.28,
+"fin": 12.48
+},
+{
+"mot": "ils",
+"debut": 12.48,
+"fin": 12.66
+},
+{
+"mot": "appellent",
+"debut": 12.66,
+"fin": 12.88
+},
+{
+"mot": "quelqu",
+"debut": 12.88,
+"fin": 13.02
+},
+{
+"mot": "'un",
+"debut": 13.02,
+"fin": 13.16
+},
+{
+"mot": "d",
+"debut": 13.16,
+"fin": 13.2
+},
+{
+"mot": "'autre.",
+"debut": 13.2,
+"fin": 13.34
+},
+{
+"mot": "Avec",
+"debut": 14.26,
+"fin": 14.46
+},
+{
+"mot": "Proacia,",
+"debut": 14.46,
+"fin": 14.98
+},
+{
+"mot": "vos",
+"debut": 15.54,
+"fin": 15.72
+},
+{
+"mot": "services",
+"debut": 15.72,
+"fin": 15.96
+},
+{
+"mot": "sont",
+"debut": 15.96,
+"fin": 16.18
+},
+{
+"mot": "classés.",
+"debut": 16.18,
+"fin": 16.52
+},
+{
+"mot": "Le",
+"debut": 17.2,
+"fin": 17.36
+},
+{
+"mot": "client",
+"debut": 17.36,
+"fin": 17.58
+},
+{
+"mot": "sait",
+"debut": 17.58,
+"fin": 17.84
+},
+{
+"mot": "quoi",
+"debut": 17.84,
+"fin": 18.06
+},
+{
+"mot": "vous",
+"debut": 18.06,
+"fin": 18.18
+},
+{
+"mot": "demander.",
+"debut": 18.18,
+"fin": 18.48
+},
+{
+"mot": "Il",
+"debut": 19.02,
+"fin": 19.18
+},
+{
+"mot": "vous",
+"debut": 19.18,
+"fin": 19.3
+},
+{
+"mot": "contacte",
+"debut": 19.3,
+"fin": 19.68
+},
+{
+"mot": "pour",
+"debut": 19.68,
+"fin": 19.8
+},
+{
+"mot": "le",
+"debut": 19.8,
+"fin": 19.92
+},
+{
+"mot": "bon",
+"debut": 19.92,
+"fin": 20.02
+},
+{
+"mot": "travail.",
+"debut": 20.02,
+"fin": 20.26
+},
+{
+"mot": "Et",
+"debut": 21.02,
+"fin": 21.14
+},
+{
+"mot": "vous",
+"debut": 21.14,
+"fin": 21.26
+},
+{
+"mot": "?",
+"debut": 21.26,
+"fin": 21.86
+},
+{
+"mot": "Vos",
+"debut": 21.86,
+"fin": 21.94
+},
+{
+"mot": "services",
+"debut": 21.94,
+"fin": 22.2
+},
+{
+"mot": "?",
+"debut": 22.2,
+"fin": 22.54
+},
+{
+"mot": "Ils",
+"debut": 22.54,
+"fin": 22.56
+},
+{
+"mot": "sont",
+"debut": 22.56,
+"fin": 22.68
+},
+{
+"mot": "où",
+"debut": 22.68,
+"fin": 22.8
+},
+{
+"mot": "?",
+"debut": 22.8,
+"fin": 23.0
+},
+{
+"mot": "Proacia,",
+"debut": 24.06,
+"fin": 24.46
+},
+{
+"mot": "le",
+"debut": 24.8,
+"fin": 24.98
+},
+{
+"mot": "partenaire",
+"debut": 24.98,
+"fin": 25.4
+},
+{
+"mot": "des",
+"debut": 25.4,
+"fin": 25.48
+},
+{
+"mot": "plombiers.",
+"debut": 25.48,
+"fin": 25.76
+},
+{
+"mot": "proacia",
+"debut": 26.64,
+"fin": 27.04
+},
+{
+"mot": ".fr",
+"debut": 27.04,
+"fin": 27.44
+}
+]

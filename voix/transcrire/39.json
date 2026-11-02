@@ -1,0 +1,387 @@
+[
+{
+"mot": "Le",
+"debut": 0.0,
+"fin": 0.3
+},
+{
+"mot": "client",
+"debut": 0.3,
+"fin": 0.5
+},
+{
+"mot": "rappelle,",
+"debut": 0.5,
+"fin": 0.76
+},
+{
+"mot": "c",
+"debut": 1.1,
+"fin": 1.24
+},
+{
+"mot": "'est",
+"debut": 1.24,
+"fin": 1.28
+},
+{
+"mot": "vous",
+"debut": 1.28,
+"fin": 1.36
+},
+{
+"mot": "qui",
+"debut": 1.36,
+"fin": 1.48
+},
+{
+"mot": "avez",
+"debut": 1.48,
+"fin": 1.54
+},
+{
+"mot": "posé",
+"debut": 1.54,
+"fin": 1.82
+},
+{
+"mot": "ça",
+"debut": 1.82,
+"fin": 1.96
+},
+{
+"mot": "?",
+"debut": 1.96,
+"fin": 2.86
+},
+{
+"mot": "Des",
+"debut": 2.86,
+"fin": 2.98
+},
+{
+"mot": "travaux",
+"debut": 2.98,
+"fin": 3.28
+},
+{
+"mot": "de",
+"debut": 3.28,
+"fin": 3.34
+},
+{
+"mot": "plomberie,",
+"debut": 3.34,
+"fin": 3.74
+},
+{
+"mot": "une",
+"debut": 3.94,
+"fin": 4.08
+},
+{
+"mot": "règle",
+"debut": 4.08,
+"fin": 4.28
+},
+{
+"mot": "à",
+"debut": 4.28,
+"fin": 4.38
+},
+{
+"mot": "connaître.",
+"debut": 4.38,
+"fin": 4.72
+},
+{
+"mot": "La",
+"debut": 5.14,
+"fin": 5.3
+},
+{
+"mot": "garantie",
+"debut": 5.3,
+"fin": 5.6
+},
+{
+"mot": "des",
+"debut": 5.6,
+"fin": 5.7
+},
+{
+"mot": "sénales",
+"debut": 5.7,
+"fin": 6.02
+},
+{
+"mot": "dure",
+"debut": 6.02,
+"fin": 6.16
+},
+{
+"mot": "10",
+"debut": 6.16,
+"fin": 6.48
+},
+{
+"mot": "ans,",
+"debut": 6.48,
+"fin": 6.62
+},
+{
+"mot": "à",
+"debut": 6.84,
+"fin": 7.26
+},
+{
+"mot": "partir",
+"debut": 7.26,
+"fin": 7.46
+},
+{
+"mot": "de",
+"debut": 7.46,
+"fin": 7.64
+},
+{
+"mot": "la",
+"debut": 7.64,
+"fin": 7.72
+},
+{
+"mot": "réception",
+"debut": 7.72,
+"fin": 7.98
+},
+{
+"mot": "des",
+"debut": 7.98,
+"fin": 8.16
+},
+{
+"mot": "travaux.",
+"debut": 8.16,
+"fin": 8.42
+},
+{
+"mot": "Les",
+"debut": 9.38,
+"fin": 9.48
+},
+{
+"mot": "canalisations",
+"debut": 9.48,
+"fin": 10.02
+},
+{
+"mot": "peuvent",
+"debut": 10.02,
+"fin": 10.2
+},
+{
+"mot": "être",
+"debut": 10.2,
+"fin": 10.36
+},
+{
+"mot": "concernées.",
+"debut": 10.36,
+"fin": 10.78
+},
+{
+"mot": "Des",
+"debut": 11.7,
+"fin": 11.92
+},
+{
+"mot": "années",
+"debut": 11.92,
+"fin": 12.12
+},
+{
+"mot": "après,",
+"debut": 12.12,
+"fin": 12.38
+},
+{
+"mot": "il",
+"debut": 12.66,
+"fin": 12.74
+},
+{
+"mot": "doit",
+"debut": 12.74,
+"fin": 12.9
+},
+{
+"mot": "encore",
+"debut": 12.9,
+"fin": 13.16
+},
+{
+"mot": "vous",
+"debut": 13.16,
+"fin": 13.32
+},
+{
+"mot": "trouver.",
+"debut": 13.32,
+"fin": 13.56
+},
+{
+"mot": "Avec",
+"debut": 14.58,
+"fin": 14.78
+},
+{
+"mot": "Procia,",
+"debut": 14.78,
+"fin": 15.12
+},
+{
+"mot": "votre",
+"debut": 15.66,
+"fin": 15.78
+},
+{
+"mot": "numéro",
+"debut": 15.78,
+"fin": 16.02
+},
+{
+"mot": "est",
+"debut": 16.02,
+"fin": 16.22
+},
+{
+"mot": "cliquable.",
+"debut": 16.22,
+"fin": 16.56
+},
+{
+"mot": "Un",
+"debut": 17.1,
+"fin": 17.3
+},
+{
+"mot": "impuie,",
+"debut": 17.3,
+"fin": 17.62
+},
+{
+"mot": "et",
+"debut": 17.78,
+"fin": 17.9
+},
+{
+"mot": "le",
+"debut": 17.9,
+"fin": 17.96
+},
+{
+"mot": "client",
+"debut": 17.96,
+"fin": 18.08
+},
+{
+"mot": "vous",
+"debut": 18.08,
+"fin": 18.24
+},
+{
+"mot": "appelle.",
+"debut": 18.24,
+"fin": 18.4
+},
+{
+"mot": "Et",
+"debut": 19.12,
+"fin": 19.28
+},
+{
+"mot": "vous,",
+"debut": 19.28,
+"fin": 19.4
+},
+{
+"mot": "vos",
+"debut": 19.64,
+"fin": 19.76
+},
+{
+"mot": "anciens",
+"debut": 19.76,
+"fin": 19.96
+},
+{
+"mot": "clients",
+"debut": 19.96,
+"fin": 20.18
+},
+{
+"mot": "?",
+"debut": 20.18,
+"fin": 20.56
+},
+{
+"mot": "Ils",
+"debut": 20.56,
+"fin": 20.64
+},
+{
+"mot": "ont",
+"debut": 20.64,
+"fin": 20.74
+},
+{
+"mot": "votre",
+"debut": 20.74,
+"fin": 20.86
+},
+{
+"mot": "numéro",
+"debut": 20.86,
+"fin": 21.14
+},
+{
+"mot": "?",
+"debut": 21.14,
+"fin": 21.92
+},
+{
+"mot": "Procia,",
+"debut": 21.92,
+"fin": 22.38
+},
+{
+"mot": "le",
+"debut": 22.78,
+"fin": 22.98
+},
+{
+"mot": "partenaire",
+"debut": 22.98,
+"fin": 23.36
+},
+{
+"mot": "des",
+"debut": 23.36,
+"fin": 23.44
+},
+{
+"mot": "plombiers.",
+"debut": 23.44,
+"fin": 23.72
+},
+{
+"mot": "Procia",
+"debut": 24.46,
+"fin": 24.72
+},
+{
+"mot": ".fr",
+"debut": 24.72,
+"fin": 25.08
+}
+]

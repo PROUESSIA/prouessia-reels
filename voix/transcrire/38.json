@@ -1,0 +1,402 @@
+[
+{
+"mot": "POV.",
+"debut": 0.0,
+"fin": 0.6
+},
+{
+"mot": "Un",
+"debut": 0.98,
+"fin": 1.34
+},
+{
+"mot": "client",
+"debut": 1.34,
+"fin": 1.52
+},
+{
+"mot": "veut",
+"debut": 1.52,
+"fin": 1.66
+},
+{
+"mot": "vous",
+"debut": 1.66,
+"fin": 1.78
+},
+{
+"mot": "écrire",
+"debut": 1.78,
+"fin": 1.98
+},
+{
+"mot": "le",
+"debut": 1.98,
+"fin": 2.14
+},
+{
+"mot": "soir.",
+"debut": 2.14,
+"fin": 2.32
+},
+{
+"mot": "Sa",
+"debut": 2.92,
+"fin": 3.12
+},
+{
+"mot": "fille",
+"debut": 3.12,
+"fin": 3.24
+},
+{
+"mot": "peut",
+"debut": 3.24,
+"fin": 3.4
+},
+{
+"mot": "attendre",
+"debut": 3.4,
+"fin": 3.68
+},
+{
+"mot": "demain,",
+"debut": 3.68,
+"fin": 3.92
+},
+{
+"mot": "mais",
+"debut": 4.52,
+"fin": 4.68
+},
+{
+"mot": "il",
+"debut": 4.68,
+"fin": 4.74
+},
+{
+"mot": "cherche",
+"debut": 4.74,
+"fin": 4.84
+},
+{
+"mot": "comment",
+"debut": 4.84,
+"fin": 5.0
+},
+{
+"mot": "veut",
+"debut": 5.0,
+"fin": 5.16
+},
+{
+"mot": "joindre.",
+"debut": 5.16,
+"fin": 5.42
+},
+{
+"mot": "Juste",
+"debut": 6.4,
+"fin": 6.76
+},
+{
+"mot": "un",
+"debut": 6.76,
+"fin": 6.82
+},
+{
+"mot": "numéro.",
+"debut": 6.82,
+"fin": 7.04
+},
+{
+"mot": "Il",
+"debut": 8.08,
+"fin": 8.26
+},
+{
+"mot": "ne",
+"debut": 8.26,
+"fin": 8.36
+},
+{
+"mot": "se",
+"debut": 8.36,
+"fin": 8.42
+},
+{
+"mot": "pas",
+"debut": 8.42,
+"fin": 8.54
+},
+{
+"mot": "appelé.",
+"debut": 8.54,
+"fin": 8.76
+},
+{
+"mot": "Lors",
+"debut": 9.52,
+"fin": 9.76
+},
+{
+"mot": "de",
+"debut": 9.76,
+"fin": 9.86
+},
+{
+"mot": "main,",
+"debut": 9.86,
+"fin": 9.96
+},
+{
+"mot": "il",
+"debut": 10.26,
+"fin": 10.3
+},
+{
+"mot": "a",
+"debut": 10.3,
+"fin": 10.38
+},
+{
+"mot": "oublié",
+"debut": 10.38,
+"fin": 10.58
+},
+{
+"mot": "votre",
+"debut": 10.58,
+"fin": 10.72
+},
+{
+"mot": "nom.",
+"debut": 10.72,
+"fin": 10.9
+},
+{
+"mot": "Et",
+"debut": 11.44,
+"fin": 11.56
+},
+{
+"mot": "c",
+"debut": 11.56,
+"fin": 11.66
+},
+{
+"mot": "'est",
+"debut": 11.66,
+"fin": 11.72
+},
+{
+"mot": "un",
+"debut": 11.72,
+"fin": 11.78
+},
+{
+"mot": "autre",
+"debut": 11.78,
+"fin": 11.9
+},
+{
+"mot": "plombier",
+"debut": 11.9,
+"fin": 12.24
+},
+{
+"mot": "qu",
+"debut": 12.24,
+"fin": 12.34
+},
+{
+"mot": "'à",
+"debut": 12.34,
+"fin": 12.38
+},
+{
+"mot": "le",
+"debut": 12.38,
+"fin": 12.42
+},
+{
+"mot": "chantier.",
+"debut": 12.42,
+"fin": 12.7
+},
+{
+"mot": "Avec",
+"debut": 13.6,
+"fin": 13.84
+},
+{
+"mot": "ProHesia,",
+"debut": 13.84,
+"fin": 14.28
+},
+{
+"mot": "le",
+"debut": 14.48,
+"fin": 14.56
+},
+{
+"mot": "client",
+"debut": 14.56,
+"fin": 14.74
+},
+{
+"mot": "remplit",
+"debut": 14.74,
+"fin": 15.06
+},
+{
+"mot": "le",
+"debut": 15.06,
+"fin": 15.12
+},
+{
+"mot": "formula.",
+"debut": 15.12,
+"fin": 15.32
+},
+{
+"mot": "C",
+"debut": 16.04,
+"fin": 16.24
+},
+{
+"mot": "'est",
+"debut": 16.24,
+"fin": 16.26
+},
+{
+"mot": "envoyé,",
+"debut": 16.26,
+"fin": 16.62
+},
+{
+"mot": "même",
+"debut": 17.04,
+"fin": 17.24
+},
+{
+"mot": "tard",
+"debut": 17.24,
+"fin": 17.4
+},
+{
+"mot": "le",
+"debut": 17.4,
+"fin": 17.5
+},
+{
+"mot": "soir,",
+"debut": 17.5,
+"fin": 17.66
+},
+{
+"mot": "et",
+"debut": 18.2,
+"fin": 18.28
+},
+{
+"mot": "vous",
+"debut": 18.28,
+"fin": 18.36
+},
+{
+"mot": "recevez",
+"debut": 18.36,
+"fin": 18.56
+},
+{
+"mot": "la",
+"debut": 18.56,
+"fin": 18.64
+},
+{
+"mot": "demande.",
+"debut": 18.64,
+"fin": 18.82
+},
+{
+"mot": "Et",
+"debut": 19.92,
+"fin": 20.0
+},
+{
+"mot": "vous,",
+"debut": 20.0,
+"fin": 20.12
+},
+{
+"mot": "vos",
+"debut": 20.18,
+"fin": 20.24
+},
+{
+"mot": "clients,",
+"debut": 20.24,
+"fin": 20.48
+},
+{
+"mot": "ils",
+"debut": 20.94,
+"fin": 21.02
+},
+{
+"mot": "vous",
+"debut": 21.02,
+"fin": 21.08
+},
+{
+"mot": "écrivent",
+"debut": 21.08,
+"fin": 21.28
+},
+{
+"mot": "comment",
+"debut": 21.28,
+"fin": 21.44
+},
+{
+"mot": "?",
+"debut": 21.44,
+"fin": 22.2
+},
+{
+"mot": "ProHesia.",
+"debut": 22.2,
+"fin": 22.9
+},
+{
+"mot": "Le",
+"debut": 23.44,
+"fin": 23.58
+},
+{
+"mot": "partenaire",
+"debut": 23.58,
+"fin": 23.96
+},
+{
+"mot": "des",
+"debut": 23.96,
+"fin": 24.04
+},
+{
+"mot": "plombiers.",
+"debut": 24.04,
+"fin": 24.32
+},
+{
+"mot": "ProHesia",
+"debut": 25.12,
+"fin": 25.48
+},
+{
+"mot": ".fr",
+"debut": 25.48,
+"fin": 25.74
+}
+]
