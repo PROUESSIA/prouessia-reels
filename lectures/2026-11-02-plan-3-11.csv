@@ -1,0 +1,12 @@
+200
+id,series,hook,status,scheduled_at,video_path
+58ea0637-c454-4586-bdbe-4526ce4c547e,vecu,"Votre logo, vos couleurs, votre site.",refuse,"2026-11-02 08:00:00+00",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/33/video.mp4
+a96cf1a6-165e-4626-903b-7e068e9a7584,pov,"POV : le client tape votre nom sur internet.",publie,"2026-11-02 11:30:00+00",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/34/video.mp4
+2b2c6b6b-2e50-4660-b1eb-d39d039dd415,sous_pression,"Sous pression · Épisode 6 — L'aimant",publie,"2026-11-02 17:00:00+00",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/anim/ep06/film.mp4
+52322c4a-5884-48a1-82ed-b88935327173,carte,"Le client demande : « vous avez un site ? »",refuse,"2026-11-02 19:30:00+00",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/35/video.mp4
+adffc15a-0050-46d1-8ef1-5eeb11586b66,motion,"Vos communes, affichées.",refuse,"2026-11-02 21:00:00+00",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/36/video.mp4
+b7a90a94-9907-4530-bd10-3f21777d530a,vecu,"Dépannage, chauffe-eau, salle de bain : tout est clair.",a_valider,"2026-11-03 08:00:00+00",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/37/video.mp4
+e2f0de4f-c0c4-4344-813a-e189c6a96300,pov,"POV : un client veut vous écrire le soir.",a_valider,"2026-11-03 11:30:00+00",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/38/video.mp4
+d14a9748-07b3-4439-babd-f3dc3caf94c2,serie,"Sous pression · Épisode 7 — Chez maman",a_valider,"2026-11-03 17:00:00+00",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/anim/ep07/film.mp4
+837507bc-5d76-4ef1-8fbb-6d6e33259412,carte,"Le client rappelle : « c'est vous qui avez posé ça ? »",a_valider,"2026-11-03 19:30:00+00",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/39/video.mp4
+0f7f3be6-0cab-4810-9ed9-9edea47b15d0,motion,"Votre site, rapide même sans réseau.",a_valider,"2026-11-03 21:00:00+00",https://qibubxxhvhghktlpvrls.supabase.co/storage/v1/object/public/reels/40/video.mp4
