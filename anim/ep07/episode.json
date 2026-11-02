@@ -1,0 +1,40 @@
+{
+ "serie": "Sous pression",
+ "numero": 7,
+ "titre": "Chez maman",
+ "voix": {
+  "dumas": "Sulafat",
+  "lea": "Aoede",
+  "julien": "Orus",
+  "vasseur": "Algenib"
+ },
+ "rythme": {
+  "pauses": 0.4,
+  "silences": 0.55,
+  "vitesse": 1.12
+ },
+ "fond": "tension",
+ "volume_fond": 0.34,
+ "textes": {
+  "dumas": [
+   "Léa, ma chérie ? Un monsieur du service seniors a changé mon joint hier. Gratuitement. Et ce matin, ça fuit.",
+   "Trop tard. J'ai appelé le numéro sur l'aimant.",
+   "Mais… il était si gentil."
+  ],
+  "lea": [
+   "Maman, tu n'appelles personne. On arrive.",
+   "Maman. Pose ce stylo.",
+   "Quatre cent cinquante euros à chaque fuite. Voilà ce que j'en fais.",
+   "Julien… le pare-brise."
+  ],
+  "julien": [
+   "L'aimant. On y va.",
+   "Les quatre pneus."
+  ],
+  "vasseur": [
+   "Une petite signature, madame Dumas, et vous êtes protégée.",
+   "Votre mère ? Quel hasard.",
+   "Bonne route, monsieur Morel."
+  ]
+ }
+}
