@@ -1,0 +1,16 @@
+200
+id,hook,status,scheduled_at,platform_ids
+26c02d35-53f3-410a-bbc2-79914fedf07c,"Chaque devis a le même look sérieux.",publie,"2026-10-31 08:00:00+00","""{\\""tiktok\\"":\\""6ae5a1418331ca99cc221f68\\"",\\""youtube\\"":\\""QgRiyxlhHtw\\"",\\""facebook\\"":\\""1873108277185507\\""}"""
+2f146cc5-3a2a-4f66-b1a3-ac90cba5d14c,"Offre flash : la maquette de votre site, gratuite.",publie,"2026-10-31 11:30:00+00","""{\\""tiktok\\"":\\""6ae5a1310f10a13cf34330d0\\"",\\""youtube\\"":\\""YW2WxOMjSPM\\""}"""
+fbf52bfc-b93d-47fe-b885-a42558755fae,"Sous pression · Épisode 4 — Le contrat",publie,"2026-10-31 17:00:00+00","""{\\""tiktok\\"":\\""6ae5a1372805a7371166834d\\"",\\""youtube\\"":\\""xK5txVZYfzM\\""}"""
+683513a4-7b33-4013-9f7b-daa586acf25b,"Le client demande : le devis est payant ?",publie,"2026-10-31 19:30:00+00","""{\\""tiktok\\"":\\""6ae5a13d0f10a13cf34330d8\\"",\\""youtube\\"":\\""YnevlbZsMHI\\""}"""
+bf1eb862-5ec2-4193-80b5-f885615056ce,"Client déjà connu ? Il est déjà dans votre liste.",publie,"2026-11-01 08:00:00+00","""{\\""tiktok\\"":\\""6ae6f2bc85d41401dcb731ac\\"",\\""youtube\\"":\\""m6vR9vVTLzY\\""}"""
+942cfd92-ad79-494f-aeed-db11f6c05117,"POV : le client doit installer un truc pour lire votre devis.",publie,"2026-11-01 11:30:00+00","""{\\""tiktok\\"":\\""6ae6f2c185d41401dcb731d1\\"",\\""youtube\\"":\\""fEptxCVHKpc\\""}"""
+f6d8bad6-78ae-4e88-a184-fab1b0975545,"Sous pression · Épisode 5 — La serrure",publie,"2026-11-01 17:00:00+00","""{\\""tiktok\\"":\\""6ae6f2b1d6d47fe1eb9b35cd\\"",\\""youtube\\"":\\""KjA2j8vMUE8\\""}"""
+3cc9df23-7411-47bf-a675-6b0327a89cde,"Le client dit : « on verra le prix après ».",publie,"2026-11-01 19:30:00+00","""{\\""tiktok\\"":\\""6ae6f2b5e514b688e10bd55b\\"",\\""youtube\\"":\\""bFOKzrU5NUU\\""}"""
+9c753714-f406-4a36-8acd-72232174d778,"Votre site de plombier, on le crée.",publie,"2026-11-01 21:00:00+00","""{\\""tiktok\\"":\\""6ae7031a6ba3cb613969ff8f\\"",\\""youtube\\"":\\""FPaDjSzc6G0\\""}"""
+58ea0637-c454-4586-bdbe-4526ce4c547e,"Votre logo, vos couleurs, votre site.",refuse,"2026-11-02 08:00:00+00",
+a96cf1a6-165e-4626-903b-7e068e9a7584,"POV : le client tape votre nom sur internet.",valide,"2026-11-02 11:30:00+00",
+2b2c6b6b-2e50-4660-b1eb-d39d039dd415,"Sous pression · Épisode 6 — L'aimant",valide,"2026-11-02 17:00:00+00",
+52322c4a-5884-48a1-82ed-b88935327173,"Le client demande : « vous avez un site ? »",refuse,"2026-11-02 19:30:00+00",
+adffc15a-0050-46d1-8ef1-5eeb11586b66,"Vos communes, affichées.",refuse,"2026-11-02 21:00:00+00",
