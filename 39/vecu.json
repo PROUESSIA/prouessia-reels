@@ -1,0 +1,122 @@
+{
+ "titre": "Le client rappelle&nbsp;: <b>«&nbsp;c'est vous qui avez posé ça&nbsp;?&nbsp;»</b>",
+ "sorte": "carte",
+ "gabarit": "carte",
+ "idee": 18,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "147075",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "appel": [
+    "Client · 8&nbsp;h&nbsp;15",
+    "« C'est vous qui avez refait mes tuyaux&nbsp;? »"
+   ]
+  },
+  {
+   "html": "Des travaux de plomberie, <b>une règle à connaître</b>",
+   "clip": "39",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "La garantie décennale dure <b>dix ans</b>",
+   "clip": "87146",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "À partir de <b>la réception des travaux</b>",
+   "clip": "41121",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Les canalisations <b>peuvent être concernées</b>",
+   "clip": "3833",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Des années après, <b>il doit encore vous trouver</b>",
+   "clip": "37379",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Avec Prouessia, <b>votre numéro est cliquable</b>",
+   "clip": "img:23-site-vitrine-mobile",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Un appui, et <b>le client vous appelle</b>",
+   "clip": "img:extras/22-formulaire-visiteur",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et vous, vos anciens clients, <b>ils ont votre numéro</b>&nbsp;?",
+   "clip": "154950",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "200276",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ],
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Un client rappelle : c'est vous qui avez refait mes tuyaux ?"
+  },
+  {
+   "dit": "La garantie décennale dure dix ans, à partir de la réception des travaux. Les canalisations peuvent être concernées.",
+   "ref": "le délai de la garantie décennale démarre le lendemain de la signature du procès-verbal de réception (Code civil, art. 1792-4-1) ; parmi les éléments d'équipement indissociables cités par service-public : canalisation, chauffage central (Code civil, art. 1792-2). Vérifié le 12/10/2026, faits/r03.json.",
+   "liens": [
+    [
+     "service-public.gouv.fr : Garantie décennale des constructeurs",
+     "https://www.service-public.gouv.fr/particuliers/vosdroits/F2034"
+    ]
+   ],
+   "label": "Ce que dit le texte :"
+  },
+  {
+   "dit": "Avec Prouessia, votre numéro est cliquable sur votre site : un appui, et le client vous appelle.",
+   "ref": "avantage n° 18 « Numéro cliquable » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Les conditions précises de mise en jeu de la garantie (dommages couverts, exclusions) ne sont pas traitées ; aucun montant n'est cité.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "03.11.2026",
+ "avert": "Information générale, pas un conseil personnalisé."
+}

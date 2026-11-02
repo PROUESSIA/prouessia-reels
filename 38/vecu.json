@@ -1,0 +1,115 @@
+{
+ "titre": "POV&nbsp;: un client veut <b>vous écrire le soir</b>",
+ "sorte": "pov",
+ "idee": 17,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "197",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Sa fuite <b>peut attendre demain</b>",
+   "clip": "197654",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Il cherche <b>comment vous joindre</b>",
+   "clip": "366165",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Juste un numéro. <b>Il n'ose pas appeler</b>",
+   "clip": "147074",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Le lendemain, <b>il a oublié votre nom</b>",
+   "clip": "3514",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Et c'est un autre plombier <b>qui a le chantier</b>",
+   "clip": "214661",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Avec Prouessia, <b>le client remplit le formulaire</b>",
+   "clip": "img:extras/22-formulaire-visiteur",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "C'est envoyé, <b>même tard le soir</b>",
+   "clip": "img:extras/22-demande-envoyee",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et vous recevez <b>la demande</b>",
+   "clip": "img:22-nouvelle-demande",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et vous, vos clients, <b>ils vous écrivent comment</b>&nbsp;?",
+   "clip": "1958",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "4906",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  }
+ ],
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Un client veut vous écrire le soir, ne trouve qu'un numéro, n'ose pas appeler, vous oublie, et c'est un autre plombier qui a le chantier."
+  },
+  {
+   "dit": "Avec Prouessia, le client remplit le formulaire de votre site, c'est envoyé même le soir, et vous recevez la demande.",
+   "ref": "avantage n° 17 « Le client vous écrit depuis le site » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "03.11.2026",
+ "avert": "Information générale, pas un conseil personnalisé."
+}

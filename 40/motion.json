@@ -1,0 +1,121 @@
+{
+ "titre": "Votre site, rapide même sans réseau",
+ "idees": [
+  19
+ ],
+ "cta": true,
+ "date": "03.11.2026",
+ "phrases": [
+  {
+   "dit": "Votre client est dans sa cave.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Votre client",
+    "est dans",
+    "sa cave."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Une seule barre de réseau.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Une seule",
+    "barre",
+    "de réseau."
+   ],
+   "jaune": [
+    1
+   ],
+   "bulle": true
+  },
+  {
+   "dit": "Il cherche un plombier. La page tourne.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Il cherche",
+    "un plombier.",
+    "La page tourne."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Avec Prouessia, votre site s'ouvre vite sur mobile.",
+   "scene": "app",
+   "haut": [
+    "Votre site,",
+    "rapide"
+   ],
+   "capture": "23-site-vitrine-mobile"
+  },
+  {
+   "dit": "Même avec une seule barre de réseau.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Même avec",
+    "une seule barre",
+    "de réseau."
+   ],
+   "jaune": [
+    1
+   ]
+  },
+  {
+   "dit": "Le client vous voit tout de suite.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Le client",
+    "vous voit",
+    "tout de suite."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Et vous, votre site, il s'ouvre vite ?",
+   "scene": "question",
+   "lignes": [
+    "Et vous,",
+    "votre site,",
+    "il s'ouvre vite ?"
+   ]
+  },
+  {
+   "dit": "Prouessia, le partenaire des plombiers.",
+   "scene": "fin"
+  }
+ ],
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Votre client est dans sa cave, avec une seule barre de réseau : il cherche un plombier et la page tourne."
+  },
+  {
+   "dit": "Avec Prouessia, votre site s'ouvre vite sur mobile, même avec une seule barre de réseau.",
+   "ref": "avantage n° 19 « Site rapide sur mobile » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui). Écran montré : site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo ; aucune durée de chargement n'est promise.",
+  "Les données visibles à l'écran sont celles d'un site de démonstration."
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "titre": "Dépannage, chauffe-eau, salle de bain&nbsp;: <b>tout est clair</b>",
+ "sorte": "vecu",
+ "idee": 16,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "115",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Un client a <b>une fuite sous l'évier</b>",
+   "clip": "235528",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Un autre veut <b>refaire sa douche</b>",
+   "clip": "116118",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Ils tombent sur votre nom, <b>sans plus d'infos</b>",
+   "clip": "293084",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Vous faites quoi&nbsp;? <b>Ils ne savent pas</b>",
+   "clip": "6772",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Alors ils appellent <b>quelqu'un d'autre</b>",
+   "clip": "1927",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Avec Prouessia, <b>vos services sont classés</b>",
+   "clip": "img:23-site-vitrine-mobile",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Le client sait <b>quoi vous demander</b>",
+   "clip": "img:extras/22-formulaire-visiteur",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et il vous contacte <b>pour le bon travail</b>",
+   "clip": "33742",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Et vous, vos services, <b>ils sont où</b>&nbsp;?",
+   "clip": "4344",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "257094",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  }
+ ],
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Un client a une fuite, un autre veut refaire sa douche : ils tombent sur votre nom sans savoir ce que vous faites, et appellent quelqu'un d'autre."
+  },
+  {
+   "dit": "Avec Prouessia, vos services sont classés sur votre site : le client sait quoi vous demander.",
+   "ref": "avantage n° 16 « Vos services classés » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "03.11.2026",
+ "avert": "Information générale, pas un conseil personnalisé."
+}
