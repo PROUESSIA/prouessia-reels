@@ -1,0 +1,482 @@
+=== https://www.guide-artisan.fr/plan-du-site [200]
+<!DOCTYPE html><html lang="fr">
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business# place: http://ogp.me/ns/place# article: http://ogp.me/ns/article#">
+    <title>Plan du site | Guide Artisan</title><meta name="description" content="Consultez sur cette page le plan de site du portail Guide Artisan afin de trouver rapidement l&#039;information que vous recherchez">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="og:site_name" content="Guide Artisan">
+<meta name="og:locale" content="fr_FR">
+<meta name="og:url" content="https://www.guide-artisan.fr/plan-du-site">
+<meta name="og:title" content="Plan du site | Guide Artisan">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="Guide Artisan">
+<meta name="twitter:title" content="Plan du site | Guide Artisan">
+<meta name="twitter:creator" content="@guideartisan"><link href="/static/1781773876/css/aos.css" media="all" rel="stylesheet" type="text/css">
+<link href="/static/1781773876/css/foundation.css" media="all" rel="stylesheet" type="text/css">
+<link href="/static/1781773876/css/styles.css" media="all" rel="stylesheet" type="text/css">
+<link href="/static/1781773876/css/print.css" media="print" rel="stylesheet" type="text/css">
+<link href="/static/1781773876/css/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+<link href="https://www.guide-artisan.fr/plan-du-site" rel="canonical"><script type="text/javascript" src="/static/1785426206/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/lib/aos.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/lib/picturefill.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/lib/tweenmax.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/lib/what-input.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/lib/underscore.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/lib/foundation.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/foundation.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/privacy-cookies.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/dropdown.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/placeholder.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/app.min.js"></script>
+<script type="text/javascript" src="/static/1785426206/js/menu.min.js"></script>
+<script type="text/javascript">
+    //<!--
+    window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({"analytics_storage":true,"ad_storage":false,"ad_user_data":false,"ad_personalization":false,"event":"Cookie Consent"});
+    //-->
+</script>
+<script type="text/javascript">
+    //<!--
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+"https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,"script","dataLayer","GTM-MLGFJCN");var currentUriState = "National"
+    //-->
+</script></head>
+    <body>
+                            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLGFJCN" height="0" width="0" style="display: none;visibility: hidden;"></iframe>
+            </noscript>
+                <div class="reveal cookie-modal" id="cookie-modal" data-close-on-esc="false" data-close-on-click="false" data-reveal data-multiple-opened="true">
+    <div id="cookie-modal-create" class="cookie-modal-create opened">
+        <p>Nous utilisons des cookies pour assurer le bon fonctionnement et mesurer l'audience du site internet Guide Artisan. Vous avez évidemment la possibilité de modifier les paramètres afin d'activer ou de désactiver en tout temps chaque catégorie de cookies.</p>
+        <p>Pour en savoir plus <a href="/information/politique-de-confidentialite">à propos des cookies</a>.</p>
+        <div class="cookie-buttons">
+            <input class="button red privacy-cookie-accept" type="button" value="Tout accepter" />
+            <input class="button grey-border privacy-cookie-options" type="button" value="Personnaliser" />
+            <input class="button grey-border privacy-cookie-refuse" type="button" value="Tout refuser" />
+        </div>
+    </div>
+        <div id="cookie-modal-edit" class="cookie-modal-edit">
+        <button class="close-button" aria-label="Fermer les opions" title="Fermer les options" type="button"></button>
+        <h2 class="cookie-modal-title">Personnaliser mes choix</h2>
+        <p>Cochez afin d’activer ou désactiver l’utilisation des cookies.</p>
+        <ul class="cookie-modal-options">
+                            <li>
+                                        <label class="label  checked padlock" for="privacy-control-necessary">
+                        Cookies strictement nécessaires                        <input class="privacy-control" name="necessary" id="privacy-control-necessary" type="checkbox" checked="checked" disabled="disabled" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                        <span class="cookies-accordion-item" >
+                        Il s&#039;agit des cookies qui sont nécessaires pour le fonctionnement du site Web et qui permettent que vous soyez en mesure de compléter les services que vous demandez.                    </span>
+                </li>
+                            <li>
+                                        <label class="label  checked padlock" for="privacy-control-cookie_social">
+                        Cookies de médias sociaux                        <input class="privacy-control" name="cookie_social" id="privacy-control-cookie_social" type="checkbox" checked="checked" disabled="disabled" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                        <span class="cookies-accordion-item" >
+                        Ces cookies vous permettent de partager le contenu du Site Web avec des plateformes de médias sociaux (par ex. Facebook, Twitter, Instagram). Nous n’avons aucun contrôle sur ces cookies étant donné qu’ils sont installés par les plateformes elles-même.                    </span>
+                </li>
+                            <li>
+                                        <label class="label  checked padlock" for="privacy-control-analytics_storage">
+                        Cookies de performance                        <input class="privacy-control" name="analytics_storage" id="privacy-control-analytics_storage" type="checkbox" data-write-data-layer checked="checked" disabled="disabled" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                        <span class="cookies-accordion-item" >
+                        Ces cookies nous permettent de recueillir des informations sur la façon dont les visiteurs utilisent le site, par exemple pour compter les visiteurs et cartographier comment les visiteurs se déplacent dans le site. Ils enregistrent votre visite sur le site, les pages que vous avez visitées et les liens que vous avez suivis.                    </span>
+                </li>
+                            <li>
+                                        <label class="label  checkbox-label" for="privacy-control-ad_storage">
+                        Cookies publicitaires                        <input class="privacy-control" name="ad_storage" id="privacy-control-ad_storage" type="checkbox" data-write-data-layer data-children="ad_user_data,ad_personalization" />
+                        <span class="checkmark-span"></span>
+                    </label>
+                                            <span class="accordion-icon right"></span>
+                                        <span class="cookies-accordion-item" style="display:none;">
+                        Ces cookies nous permettent de vous montrer des publicités sur mesure sur des sites tiers, sur la base de l&#039;intérêt pour nos produits et services que vous avez manifesté pendant votre visite sur notre Site Web.                    </span>
+                </li>
+                    </ul>
+        <div class="cookie-buttons">
+            <input class="button grey-border privacy-cookie-save" type="button" value="Enregistrer et continuer" />
+            <input class="button red privacy-cookie-accept" type="button" value="Tout accepter et continuer" />
+        </div>
+    </div>
+</div>
+        <div>
+            <header class="header">
+    <div class="header-top">
+        <div class="header-top-logo">
+            <a href="/">
+                <img src="/static/1781773876/css/img/logo.svg" alt="Logo de Guide&#x20;Artisan" />
+                <div>
+                    <span>Guide Artisan</span>
+                                            par Espace Aubade
+                                    </div>
+            </a>
+        </div>
+        <div class="header-top-aubade show-for-full">
+            <a href="https://www.espace-aubade.fr/" target="_blank">
+                <img src="/static/1781773876/css/img/logo-aubade-blue.svg" alt="Espace Aubade spécialiste de la salle de bains" />
+            </a>
+        </div>
+        <ul class="header-top-links&#x20;show-for-xxxlarge">
+    <li>
+        <a href="&#x2F;actualites">Actualités</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;qui-sommes-nous">Qui sommes-nous ?</a>
+    </li>
+    <li>
+        <a href="&#x2F;vous-etes-un-pro">Vous êtes un pro ?</a>
+    </li>
+</ul>        <div class="header-top-choose-project show-for-xxxlarge" style="width: 318px;">
+            <a href="https://www.espace-aubade.fr/demande-de-devis" class="header-top-choose-project-link" target="_blank" rel="noopener noreferrer">
+                Demander un devis
+            </a>
+        </div>
+                    <div class="header-top-crafter hide-for-small-only">
+                <a href="/trouver-un-artisan">Trouver un artisan</a>
+            </div>
+                <button id="menu-btn" class="menu-mobile hide-for-xxxlarge">
+            <span class="icon-burger"></span>
+        </button>
+    </div>
+    <div class="header-navigation hide-for-xxxlarge" id="header-navigation">
+                    <div class="find-crafter show-for-small-only">
+                <a href="/trouver-un-artisan">
+                    <span class="icon-search"></span>
+                    <span>Trouver un artisan</span>
+                </a>
+            </div>
+                <div class="header-navigation-category">
+            <ul class="level0">
+                <li class="level0">
+                    <a href="https://www.espace-aubade.fr/demande-de-devis" class="quote-external-link" target="_blank" rel="noopener noreferrer">Demander un devis</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-navigation-links hide-for-xxxlarge">
+            <ul class="level0">
+    <li>
+        <a href="&#x2F;actualites">Actualités</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;qui-sommes-nous">Qui sommes-nous ?</a>
+    </li>
+    <li>
+        <a href="&#x2F;vous-etes-un-pro">Vous êtes un pro ?</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;faq">Foire aux questions</a>
+    </li>
+    <li>
+        <a href="&#x2F;contact">Contact</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;charte-qualite-guide-artisan">Charte Qualité Guide Artisan</a>
+    </li>
+</ul>        </div>
+    </div>
+    <div class="menu-overlay"></div>
+    <span class="hidden" aria-hidden="true" id="page-top"></span>
+</header>
+    <div class="grid-container" id="breadcrumbs" itemscope itemtype="http://schema.org/WebPage" data-aos="fade-up">
+        <meta itemprop="name" content="Plan du site | Guide Artisan" />
+        <meta itemprop="url" content="https://www.guide-artisan.fr/plan-du-site" />
+        <ol class="breadcrumb " itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li><a href="&#x2F;">Accueil</a></li> <li> &sol; </li> <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">Plan du site</span><meta itemprop="item" content="https://www.guide-artisan.fr&#x2F;plan-du-site" /><meta itemprop="position" content="1" /></li>        </ol>
+    </div>
+            <section id="main-section">
+                <div id="sitemap" class="grid-container sitemap">
+    <h1 class="title-line">Plan du site</h1>
+    <div class="sitemap-crafters" data-aos="fade-up">
+        <h2 class="title-h2">
+            <a href="/trouver-un-artisan">Artisans</a>
+        </h2>
+        <ul class="navigation">
+    <li>
+        <a href="&#x2F;trouver-un-artisan">Régions</a>
+        <ul>
+            <li>
+                <a href="&#x2F;alsace">Alsace</a>
+            </li>
+            <li>
+                <a href="&#x2F;aquitaine">Aquitaine</a>
+            </li>
+            <li>
+                <a href="&#x2F;auvergne">Auvergne</a>
+            </li>
+            <li>
+                <a href="&#x2F;basse-normandie">Basse-Normandie</a>
+            </li>
+            <li>
+                <a href="&#x2F;bourgogne">Bourgogne</a>
+            </li>
+            <li>
+                <a href="&#x2F;bretagne">Bretagne</a>
+            </li>
+            <li>
+                <a href="&#x2F;centre">Centre-Val de Loire</a>
+            </li>
+            <li>
+                <a href="&#x2F;champagne-ardenne">Champagne-Ardenne</a>
+            </li>
+            <li>
+                <a href="&#x2F;franche-comte">Franche-Comté</a>
+            </li>
+            <li>
+                <a href="&#x2F;haute-normandie">Haute-Normandie</a>
+            </li>
+            <li>
+                <a href="&#x2F;ile-de-france">Île-de-France</a>
+            </li>
+            <li>
+                <a href="&#x2F;languedoc-roussillon">Languedoc-Roussillon</a>
+            </li>
+            <li>
+                <a href="&#x2F;limousin">Limousin</a>
+            </li>
+            <li>
+                <a href="&#x2F;lorraine">Lorraine</a>
+            </li>
+            <li>
+                <a href="&#x2F;midi-pyrenees">Midi-Pyrénées</a>
+            </li>
+            <li>
+                <a href="&#x2F;nord-pas-de-calais">Nord-Pas-de-Calais</a>
+            </li>
+            <li>
+                <a href="&#x2F;pays-de-la-loire">Pays de la Loire</a>
+            </li>
+            <li>
+                <a href="&#x2F;picardie">Picardie</a>
+            </li>
+            <li>
+                <a href="&#x2F;poitou-charentes">Poitou-Charentes</a>
+            </li>
+            <li>
+                <a href="&#x2F;paca">Provence-Alpes-Côte d&#039;Azur</a>
+            </li>
+            <li>
+                <a href="&#x2F;rhone-alpes">Rhône-Alpes</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="&#x2F;trouver-un-artisan">Corps de métier</a>
+        <ul>
+            <li>
+                <a href="&#x2F;carreleur">Carreleur</a>
+            </li>
+            <li>
+                <a href="&#x2F;charpentier">Charpentier</a>
+            </li>
+            <li>
+                <a href="&#x2F;chauffagiste">Chauffagiste</a>
+            </li>
+            <li>
+                <a href="&#x2F;climatisation">Climatisation</a>
+            </li>
+            <li>
+                <a href="&#x2F;couvreur-zingueur">Couvreur / Zingueur</a>
+            </li>
+            <li>
+                <a href="&#x2F;electricien">Électricien</a>
+            </li>
+            <li>
+                <a href="&#x2F;entreprise-renovation">Entreprise de rénovation</a>
+            </li>
+            <li>
+                <a href="&#x2F;facadier">Façadier</a>
+            </li>
+            <li>
+                <a href="&#x2F;installateur-photovoltaique">Installateur Photovoltaïque</a>
+            </li>
+            <li>
+                <a href="&#x2F;macon">Maçon</a>
+            </li>
+            <li>
+                <a href="&#x2F;menuisier">Menuisier</a>
+            </li>
+            <li>
+                <a href="&#x2F;paysagiste">Paysagiste</a>
+            </li>
+            <li>
+                <a href="&#x2F;plaquiste-platrier">Plaquiste / Plâtrier</a>
+            </li>
+            <li>
+                <a href="&#x2F;plombier">Plombier</a>
+            </li>
+            <li>
+                <a href="&#x2F;renovation-installation-sdb">Rénovation / installation salle de bains</a>
+            </li>
+        </ul>
+    </li>
+</ul>    </div>
+    <div data-aos="fade-up" class="sitemap-links">
+        <h2 class="title-h2">
+            <a href="/">Guide Artisan</a>
+        </h2>
+        <ul class="navigation">
+    <li>
+        <a href="&#x2F;">Accueil</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;charte-qualite-guide-artisan">Charte qualité Guide Artisan</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;mentions-legales">Mentions légales</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;politique-de-confidentialite">Politique de confidentialité</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;qui-sommes-nous">Qui sommes-nous ?</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;faq">Foire aux questions</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;reseaux-sociaux">Réseaux sociaux</a>
+    </li>
+    <li>
+        <a href="&#x2F;contact">Contact</a>
+    </li>
+    <li>
+        <a href="&#x2F;vous-etes-un-pro">Vous êtes un pro ?</a>
+    </li>
+    <li class="active">
+        <a href="&#x2F;plan-du-site">Plan du site</a>
+    </li>
+</ul>    </div>
+</div>
+            </section>
+        </div>
+        <footer class="main-footer">
+    <div class="upper-footer-block">
+        <div class="upper-footer">
+            <div class="upper-footer-title">
+                                    <a class="upper-footer-title-xxxlarge" href="/actualites">Dernières actualités</a>
+                                <div class="upper-footer-title-xxxlarge show-for-xxxlarge">Artisans à la une</div>
+            </div>
+            <div class="upper-footer-container" data-aos="fade-up">
+                                                    <div class="upper-footer-content nofollow">
+                                                <div class="date" data-aos="fade-up" data-aos-delay="100">
+                            21 septembre 2026                        </div>
+                        <a href="/actualites/couvreur-zingueur/toiture-en-bac-acier-avantages-inconvenients" class="content">
+                            Toiture en bac acier : avantages, inconvénients                        </a>
+                    </div>
+                                    <div class="upper-footer-content nofollow">
+                                                <div class="date" data-aos="fade-up" data-aos-delay="200">
+                            20 juillet 2026                        </div>
+                        <a href="/actualites/plombier/informations-plomberie/guide-complet-pour-vous-aider-a-bien-choisir-votre-robinetterie-de-salle-de-bains-ou-de-cuisine" class="content">
+                            Guide complet pour vous aider à bien choisir votre robinetterie de salle de bains ou de cuisine                        </a>
+                    </div>
+                                                    <div class="upper-footer-gap"></div>
+                                <div class="upper-footer-title hide-for-xxxlarge">Artisans à la une</div>
+                                                    <div class="upper-footer-content nofollow">
+                        <div class="crafter-container">
+                            <div class="more">
+                                <img src="https://media.espace-aubade.fr/crafter/100x100/crafters/CO/A/M/CO_AM004/logo/CO_AM004.jpg" alt="AMENAGEMENT&#x20;SALLE&#x20;DE&#x20;BAIN" />
+                            </div>
+                            <div class="crafter-block" data-aos="fade-up" data-aos-delay="100">
+                                <span class="crafter-name">
+                                    <a href="/centre/amenagement-salle-de-bain">
+                                        AMENAGEMENT SALLE DE BAIN                                    </a>
+                                </span>
+                                <span class="crafter-address">
+                                    11 Avenue de la Gare                                    <br />
+                                    18390                                    Saint-Germain-du-Puy                                </span>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="upper-footer-content nofollow">
+                        <div class="crafter-container">
+                            <div class="more">
+                                <img src="https://media.espace-aubade.fr/crafter/100x100/crafters/SC/Z/Z/SC_ZZ173/logo/SC_ZZ173.jpeg" alt="IBARRONDOGARAY" />
+                            </div>
+                            <div class="crafter-block" data-aos="fade-up" data-aos-delay="200">
+                                <span class="crafter-name">
+                                    <a href="/aquitaine/ibarrondogaray">
+                                        IBARRONDOGARAY                                    </a>
+                                </span>
+                                <span class="crafter-address">
+                                    5 Ter ZA du Luget                                    <br />
+                                    33290                                    Le Pian-Médoc                                </span>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <div class="lower-footer-block">
+        <div class="lower-footer-menu">
+            <ul class="navigation">
+    <li>
+        <a href="&#x2F;trouver-un-artisan">Trouver un artisan</a>
+    </li>
+    <li>
+        <a href="&#x2F;blog">Blog</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;faq">Foire aux questions</a>
+    </li>
+    <li>
+        <a href="&#x2F;contact">Contact</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;charte-qualite-guide-artisan">Charte Qualité Guide Artisan</a>
+    </li>
+</ul>            <a href="https://www.espace-aubade.fr/catalogue.html" target="_blank" class="footer-link-catalog">Recevez le catalogue Espace Aubade</a>
+        </div>
+        <div class="footer-crafter-appear">
+                <p class="crafter-appear-title">Apparaître sur Guide Artisan</p>
+                <p class="crafter-appear-text">Vous êtes plombier, chauffagiste, climaticien, électricien, carreleur ou artisan clé en main et souhaitez apparaître sur Guide Artisan&nbsp;?</p>
+                <a href="/vous-etes-un-pro">
+                    <div class="button">En savoir plus</div>
+                </a>
+        </div>
+        <div class="logos">
+            <div class="footer-logos-container">
+                <div class="footer-social">
+                    <div class="footer-social-title">Suivez Guide Artisan</div>
+                    <div class="footer-social-logos">
+                        <a href="https://www.instagram.com/guideartisan" target="_blank" rel="noopener noreferrer">
+                            <span id="instagram-footer-logo" class="social-btn instagram"></span>
+                        </a>
+                        <a href="https://www.facebook.com/GuideArtisan" target="_blank" rel="noopener noreferrer">
+                            <span id="facebook-footer-logo" class="social-btn fb"></span>
+                        </a>
+                    </div>
+                </div>
+                <a class="footer-logos" href="https://www.espace-aubade.fr" target="_blank">
+                    <img src="/static/1781773876/css/img/logo-aubade-blue.svg" alt="Espace Aubade spécialiste de la salle de bains" />
+                </a>
+                <a class="footer-logos" href="https://www.lesmateriaux.fr/" target="_blank">
+                    <img src="/static/1781773876/css/img/logo-materiaux.svg" alt="Les Matériaux, aménagement extérieur et intérieur" />
+                </a>
+            </div>
+        </div>
+        <div class="footer-legal-links">
+            <ul class="navigation">
+    <li class="active">
+        <a class="footer-link-separator" href="&#x2F;plan-du-site">Plan du site</a>
+    </li>
+    <li>
+        <a class="footer-link-separator" href="&#x2F;information&#x2F;mentions-legales">Mentions légales</a>
+    </li>
+    <li>
+        <a href="&#x2F;information&#x2F;politique-de-confidentialite">Politique de confidentialité</a>
+    </li>
+</ul>        </div>
+    </div>
+    <a href="#page-top" class="return-top-btn" data-smooth-scroll></a>
+</footer>
+<script type="text/javascript">
+    //<!--
+    AOS.init({once: true});
+    //-->
+</script>    </body>
+</html>
