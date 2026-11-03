@@ -225,7 +225,7 @@
   "avantage": "Une adresse web à votre nom",
   "accroche": "Une adresse web à votre nom, facile à donner.",
   "images": "Adresse inscrite sur la camionnette et sur une carte de visite",
-  "fait": false,
+  "fait": "2026-11-03 · 41",
   "captures": [
    "app:23-site-vitrine-mobile",
    "app:23-site-vitrine-ordi"
@@ -248,7 +248,7 @@
   "avantage": "Plus d'impression ni de scan",
   "accroche": "Plus d'imprimante, plus de scan, plus de papier.",
   "images": "Imprimante en panne, bourrage papier, puis signature en ligne",
-  "fait": false,
+  "fait": "2026-11-03 · 42",
   "captures": []
  },
  {
@@ -257,7 +257,7 @@
   "avantage": "PDF signé généré automatiquement",
   "accroche": "Le devis signé se fait tout seul en PDF.",
   "images": "Page PDF qui se tamponne « signé », classeur qui se remplit",
-  "fait": false,
+  "fait": "2026-11-03 · 43",
   "captures": [
    "app:08-pdf-signe"
   ]
@@ -268,7 +268,7 @@
   "avantage": "Vous êtes prévenu dès la signature",
   "accroche": "Il signe, et un e-mail vous prévient.",
   "images": "Plombier sur une échelle, notification qui vibre dans sa poche",
-  "fait": false,
+  "fait": "2026-11-03 · 44",
   "captures": [
    "app:09-notification-signature"
   ],

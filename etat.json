@@ -454,9 +454,59 @@
    "sujet": "Idée 19 · Site rapide sur mobile",
    "ton": "Charon",
    "note": "Ajouté le 2/11, à valider"
+  },
+  {
+   "n": "reel-41",
+   "reel": "41",
+   "style": "vécu",
+   "date": "2026-11-04",
+   "heure": "09:00",
+   "sujet": "Idée 20 · Une adresse web à votre nom",
+   "ton": "Charon",
+   "note": "Ajouté le 3/11, à valider"
+  },
+  {
+   "n": "reel-42",
+   "reel": "42",
+   "style": "POV",
+   "date": "2026-11-04",
+   "heure": "12:30",
+   "sujet": "Idée 22 · Plus d'impression ni de scan",
+   "ton": "Charon",
+   "note": "Ajouté le 3/11, à valider"
+  },
+  {
+   "n": "ep-8",
+   "reel": "anim/ep08",
+   "style": "série Sous pression",
+   "date": "2026-11-04",
+   "heure": "18:00",
+   "sujet": "Sous pression · Épisode 8 — La liste",
+   "ton": "Gemini Puck / Orus",
+   "note": "Ajouté le 3/11, à valider"
+  },
+  {
+   "n": "reel-43",
+   "reel": "43",
+   "style": "carte",
+   "date": "2026-11-04",
+   "heure": "20:30",
+   "sujet": "Devis accepté : il vous engage (faits : r04) · idée 23",
+   "ton": "Charon",
+   "note": "Ajouté le 3/11, à valider"
+  },
+  {
+   "n": "reel-44",
+   "reel": "44",
+   "style": "motion",
+   "date": "2026-11-04",
+   "heure": "22:00",
+   "sujet": "Idée 24 · Vous êtes prévenu dès la signature",
+   "ton": "Charon",
+   "note": "Ajouté le 3/11, à valider"
   }
  ],
- "prochain_numero_dossier": 41,
+ "prochain_numero_dossier": 45,
  "prospection": {
   "departement_semaine": "78",
   "derniere_page_importee": 2,
