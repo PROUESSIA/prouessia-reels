@@ -1,0 +1,362 @@
+[
+{
+"mot": "POV,",
+"debut": 0.0,
+"fin": 0.62
+},
+{
+"mot": "votre",
+"debut": 0.78,
+"fin": 0.96
+},
+{
+"mot": "client",
+"debut": 0.96,
+"fin": 1.24
+},
+{
+"mot": "veut",
+"debut": 1.24,
+"fin": 1.4
+},
+{
+"mot": "signer",
+"debut": 1.4,
+"fin": 1.66
+},
+{
+"mot": "le",
+"debut": 1.66,
+"fin": 1.76
+},
+{
+"mot": "devis",
+"debut": 1.76,
+"fin": 1.96
+},
+{
+"mot": "ce",
+"debut": 1.96,
+"fin": 2.1
+},
+{
+"mot": "soir.",
+"debut": 2.1,
+"fin": 2.32
+},
+{
+"mot": "Vous",
+"debut": 2.88,
+"fin": 3.06
+},
+{
+"mot": "rentrez",
+"debut": 3.06,
+"fin": 3.44
+},
+{
+"mot": "imprimer",
+"debut": 3.44,
+"fin": 3.82
+},
+{
+"mot": "le",
+"debut": 3.82,
+"fin": 3.88
+},
+{
+"mot": "devis.",
+"debut": 3.88,
+"fin": 4.12
+},
+{
+"mot": "L",
+"debut": 4.64,
+"fin": 4.84
+},
+{
+"mot": "'imprimante",
+"debut": 4.84,
+"fin": 5.12
+},
+{
+"mot": "n",
+"debut": 5.12,
+"fin": 5.24
+},
+{
+"mot": "'a",
+"debut": 5.24,
+"fin": 5.28
+},
+{
+"mot": "plus",
+"debut": 5.28,
+"fin": 5.38
+},
+{
+"mot": "d",
+"debut": 5.38,
+"fin": 5.5
+},
+{
+"mot": "'encre.",
+"debut": 5.5,
+"fin": 5.62
+},
+{
+"mot": "Le",
+"debut": 6.3,
+"fin": 6.5
+},
+{
+"mot": "lendemain,",
+"debut": 6.5,
+"fin": 6.84
+},
+{
+"mot": "il",
+"debut": 7.26,
+"fin": 7.46
+},
+{
+"mot": "faut",
+"debut": 7.46,
+"fin": 7.58
+},
+{
+"mot": "le",
+"debut": 7.58,
+"fin": 7.68
+},
+{
+"mot": "scanner.",
+"debut": 7.68,
+"fin": 7.84
+},
+{
+"mot": "Le",
+"debut": 8.5,
+"fin": 8.66
+},
+{
+"mot": "scanner",
+"debut": 8.66,
+"fin": 8.86
+},
+{
+"mot": "illisible.",
+"debut": 8.86,
+"fin": 9.44
+},
+{
+"mot": "Et",
+"debut": 9.82,
+"fin": 10.22
+},
+{
+"mot": "le",
+"debut": 10.22,
+"fin": 10.34
+},
+{
+"mot": "client",
+"debut": 10.34,
+"fin": 10.58
+},
+{
+"mot": "a",
+"debut": 10.58,
+"fin": 10.74
+},
+{
+"mot": "signé",
+"debut": 10.74,
+"fin": 10.92
+},
+{
+"mot": "ailleurs.",
+"debut": 10.92,
+"fin": 11.12
+},
+{
+"mot": "Avec",
+"debut": 12.04,
+"fin": 12.24
+},
+{
+"mot": "ProHesia,",
+"debut": 12.24,
+"fin": 12.68
+},
+{
+"mot": "le",
+"debut": 12.88,
+"fin": 12.98
+},
+{
+"mot": "client",
+"debut": 12.98,
+"fin": 13.18
+},
+{
+"mot": "signe",
+"debut": 13.18,
+"fin": 13.44
+},
+{
+"mot": "en",
+"debut": 13.44,
+"fin": 13.52
+},
+{
+"mot": "ligne.",
+"debut": 13.52,
+"fin": 13.72
+},
+{
+"mot": "Avec",
+"debut": 14.12,
+"fin": 14.4
+},
+{
+"mot": "son",
+"debut": 14.4,
+"fin": 14.56
+},
+{
+"mot": "doigt,",
+"debut": 14.56,
+"fin": 14.8
+},
+{
+"mot": "sur",
+"debut": 14.94,
+"fin": 15.08
+},
+{
+"mot": "son",
+"debut": 15.08,
+"fin": 15.18
+},
+{
+"mot": "téléphone.",
+"debut": 15.18,
+"fin": 15.42
+},
+{
+"mot": "Plus",
+"debut": 16.28,
+"fin": 16.42
+},
+{
+"mot": "d",
+"debut": 16.42,
+"fin": 16.52
+},
+{
+"mot": "'imprimantes,",
+"debut": 16.52,
+"fin": 16.96
+},
+{
+"mot": "plus",
+"debut": 17.2,
+"fin": 17.28
+},
+{
+"mot": "de",
+"debut": 17.28,
+"fin": 17.4
+},
+{
+"mot": "scans,",
+"debut": 17.4,
+"fin": 17.54
+},
+{
+"mot": "plus",
+"debut": 17.86,
+"fin": 17.94
+},
+{
+"mot": "de",
+"debut": 17.94,
+"fin": 18.02
+},
+{
+"mot": "papier.",
+"debut": 18.02,
+"fin": 18.18
+},
+{
+"mot": "Et",
+"debut": 19.16,
+"fin": 19.26
+},
+{
+"mot": "vous,",
+"debut": 19.26,
+"fin": 19.38
+},
+{
+"mot": "votre",
+"debut": 19.6,
+"fin": 19.74
+},
+{
+"mot": "imprimante,",
+"debut": 19.74,
+"fin": 20.1
+},
+{
+"mot": "elle",
+"debut": 20.14,
+"fin": 20.18
+},
+{
+"mot": "marche",
+"debut": 20.18,
+"fin": 20.38
+},
+{
+"mot": "?",
+"debut": 20.38,
+"fin": 21.02
+},
+{
+"mot": "ProHesia,",
+"debut": 21.02,
+"fin": 21.58
+},
+{
+"mot": "le",
+"debut": 21.84,
+"fin": 21.9
+},
+{
+"mot": "partenaire",
+"debut": 21.9,
+"fin": 22.24
+},
+{
+"mot": "des",
+"debut": 22.24,
+"fin": 22.32
+},
+{
+"mot": "plombiers.",
+"debut": 22.32,
+"fin": 22.56
+},
+{
+"mot": "ProHesia",
+"debut": 23.0,
+"fin": 23.3
+},
+{
+"mot": ".fr",
+"debut": 23.3,
+"fin": 23.58
+}
+]

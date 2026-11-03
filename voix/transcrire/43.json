@@ -1,0 +1,407 @@
+[
+{
+"mot": "Le",
+"debut": 0.0,
+"fin": 0.26
+},
+{
+"mot": "client",
+"debut": 0.26,
+"fin": 0.44
+},
+{
+"mot": "conteste.",
+"debut": 0.44,
+"fin": 0.82
+},
+{
+"mot": "On",
+"debut": 0.9,
+"fin": 0.96
+},
+{
+"mot": "n",
+"debut": 0.96,
+"fin": 1.06
+},
+{
+"mot": "'avait",
+"debut": 1.06,
+"fin": 1.12
+},
+{
+"mot": "pas",
+"debut": 1.12,
+"fin": 1.3
+},
+{
+"mot": "dit",
+"debut": 1.3,
+"fin": 1.42
+},
+{
+"mot": "ce",
+"debut": 1.42,
+"fin": 1.56
+},
+{
+"mot": "prix",
+"debut": 1.56,
+"fin": 1.74
+},
+{
+"mot": "-là.",
+"debut": 1.74,
+"fin": 1.88
+},
+{
+"mot": "Deux",
+"debut": 2.18,
+"fin": 2.4
+},
+{
+"mot": "vies",
+"debut": 2.4,
+"fin": 2.46
+},
+{
+"mot": "acceptées,",
+"debut": 2.46,
+"fin": 2.88
+},
+{
+"mot": "une",
+"debut": 3.12,
+"fin": 3.22
+},
+{
+"mot": "règle",
+"debut": 3.22,
+"fin": 3.38
+},
+{
+"mot": "à",
+"debut": 3.38,
+"fin": 3.52
+},
+{
+"mot": "connaître.",
+"debut": 3.52,
+"fin": 3.88
+},
+{
+"mot": "Un",
+"debut": 4.14,
+"fin": 4.24
+},
+{
+"mot": "deux",
+"debut": 4.24,
+"fin": 4.38
+},
+{
+"mot": "vies",
+"debut": 4.38,
+"fin": 4.48
+},
+{
+"mot": "acceptées",
+"debut": 4.48,
+"fin": 4.86
+},
+{
+"mot": "vous",
+"debut": 4.86,
+"fin": 4.96
+},
+{
+"mot": "engage.",
+"debut": 4.96,
+"fin": 5.2
+},
+{
+"mot": "Le",
+"debut": 5.74,
+"fin": 5.94
+},
+{
+"mot": "prix,",
+"debut": 5.94,
+"fin": 6.1
+},
+{
+"mot": "c",
+"debut": 6.18,
+"fin": 6.24
+},
+{
+"mot": "'est",
+"debut": 6.24,
+"fin": 6.26
+},
+{
+"mot": "ce",
+"debut": 6.26,
+"fin": 6.3
+},
+{
+"mot": "qui",
+"debut": 6.3,
+"fin": 6.38
+},
+{
+"mot": "est",
+"debut": 6.38,
+"fin": 6.46
+},
+{
+"mot": "écrit.",
+"debut": 6.46,
+"fin": 6.64
+},
+{
+"mot": "Les",
+"debut": 7.12,
+"fin": 7.18
+},
+{
+"mot": "travaux",
+"debut": 7.18,
+"fin": 7.42
+},
+{
+"mot": "aussi,",
+"debut": 7.42,
+"fin": 7.58
+},
+{
+"mot": "c",
+"debut": 7.66,
+"fin": 7.72
+},
+{
+"mot": "'est",
+"debut": 7.72,
+"fin": 7.74
+},
+{
+"mot": "ce",
+"debut": 7.74,
+"fin": 7.78
+},
+{
+"mot": "qui",
+"debut": 7.78,
+"fin": 7.86
+},
+{
+"mot": "est",
+"debut": 7.86,
+"fin": 7.96
+},
+{
+"mot": "écrit.",
+"debut": 7.96,
+"fin": 8.16
+},
+{
+"mot": "Encore",
+"debut": 8.7,
+"fin": 8.86
+},
+{
+"mot": "faut",
+"debut": 8.86,
+"fin": 9.0
+},
+{
+"mot": "-il",
+"debut": 9.0,
+"fin": 9.1
+},
+{
+"mot": "retrouver",
+"debut": 9.1,
+"fin": 9.32
+},
+{
+"mot": "le",
+"debut": 9.32,
+"fin": 9.54
+},
+{
+"mot": "devis",
+"debut": 9.54,
+"fin": 9.7
+},
+{
+"mot": "signé.",
+"debut": 9.7,
+"fin": 9.94
+},
+{
+"mot": "Avec",
+"debut": 10.54,
+"fin": 10.7
+},
+{
+"mot": "Prohecia,",
+"debut": 10.7,
+"fin": 11.1
+},
+{
+"mot": "le",
+"debut": 11.6,
+"fin": 11.68
+},
+{
+"mot": "client",
+"debut": 11.68,
+"fin": 11.86
+},
+{
+"mot": "signé",
+"debut": 11.86,
+"fin": 12.1
+},
+{
+"mot": "avec",
+"debut": 12.1,
+"fin": 12.22
+},
+{
+"mot": "son",
+"debut": 12.22,
+"fin": 12.36
+},
+{
+"mot": "doigt.",
+"debut": 12.36,
+"fin": 12.58
+},
+{
+"mot": "Et",
+"debut": 13.0,
+"fin": 13.22
+},
+{
+"mot": "le",
+"debut": 13.22,
+"fin": 13.3
+},
+{
+"mot": "devis",
+"debut": 13.3,
+"fin": 13.52
+},
+{
+"mot": "signé",
+"debut": 13.52,
+"fin": 13.78
+},
+{
+"mot": "se",
+"debut": 13.78,
+"fin": 13.86
+},
+{
+"mot": "fait",
+"debut": 13.86,
+"fin": 13.98
+},
+{
+"mot": "tout",
+"debut": 13.98,
+"fin": 14.1
+},
+{
+"mot": "seul",
+"debut": 14.1,
+"fin": 14.22
+},
+{
+"mot": "en",
+"debut": 14.22,
+"fin": 14.32
+},
+{
+"mot": "PDF.",
+"debut": 14.32,
+"fin": 14.52
+},
+{
+"mot": "Et",
+"debut": 15.36,
+"fin": 15.5
+},
+{
+"mot": "vous,",
+"debut": 15.5,
+"fin": 15.62
+},
+{
+"mot": "vos",
+"debut": 16.04,
+"fin": 16.18
+},
+{
+"mot": "devis",
+"debut": 16.18,
+"fin": 16.36
+},
+{
+"mot": "signés",
+"debut": 16.36,
+"fin": 16.6
+},
+{
+"mot": "sont",
+"debut": 16.6,
+"fin": 16.74
+},
+{
+"mot": "où",
+"debut": 16.74,
+"fin": 16.86
+},
+{
+"mot": "?",
+"debut": 16.86,
+"fin": 17.34
+},
+{
+"mot": "Prohecia,",
+"debut": 17.34,
+"fin": 17.96
+},
+{
+"mot": "le",
+"debut": 18.38,
+"fin": 18.48
+},
+{
+"mot": "partenaire",
+"debut": 18.48,
+"fin": 18.86
+},
+{
+"mot": "des",
+"debut": 18.86,
+"fin": 18.94
+},
+{
+"mot": "plombiers.",
+"debut": 18.94,
+"fin": 19.22
+},
+{
+"mot": "Prohecia",
+"debut": 19.94,
+"fin": 20.26
+},
+{
+"mot": ".fr",
+"debut": 20.26,
+"fin": 20.7
+}
+]

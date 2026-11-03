@@ -1,0 +1,382 @@
+[
+{
+"mot": "Une",
+"debut": 0.0,
+"fin": 0.42
+},
+{
+"mot": "adresse",
+"debut": 0.42,
+"fin": 0.64
+},
+{
+"mot": "web",
+"debut": 0.64,
+"fin": 0.82
+},
+{
+"mot": "à",
+"debut": 0.82,
+"fin": 0.9
+},
+{
+"mot": "votre",
+"debut": 0.9,
+"fin": 1.02
+},
+{
+"mot": "temps",
+"debut": 1.02,
+"fin": 1.16
+},
+{
+"mot": "?",
+"debut": 1.16,
+"fin": 1.56
+},
+{
+"mot": "Facile",
+"debut": 1.56,
+"fin": 1.7
+},
+{
+"mot": "à",
+"debut": 1.7,
+"fin": 1.78
+},
+{
+"mot": "donner.",
+"debut": 1.78,
+"fin": 1.94
+},
+{
+"mot": "Un",
+"debut": 2.44,
+"fin": 2.72
+},
+{
+"mot": "client",
+"debut": 2.72,
+"fin": 2.88
+},
+{
+"mot": "vous",
+"debut": 2.88,
+"fin": 3.06
+},
+{
+"mot": "demande",
+"debut": 3.06,
+"fin": 3.24
+},
+{
+"mot": "votre",
+"debut": 3.24,
+"fin": 3.38
+},
+{
+"mot": "site,",
+"debut": 3.38,
+"fin": 3.6
+},
+{
+"mot": "vous",
+"debut": 4.02,
+"fin": 4.18
+},
+{
+"mot": "épliez",
+"debut": 4.18,
+"fin": 4.34
+},
+{
+"mot": "une",
+"debut": 4.34,
+"fin": 4.5
+},
+{
+"mot": "adresse",
+"debut": 4.5,
+"fin": 4.72
+},
+{
+"mot": "à",
+"debut": 4.72,
+"fin": 4.84
+},
+{
+"mot": "rallonge,",
+"debut": 4.84,
+"fin": 5.14
+},
+{
+"mot": "avec",
+"debut": 5.38,
+"fin": 5.64
+},
+{
+"mot": "des",
+"debut": 5.64,
+"fin": 5.88
+},
+{
+"mot": "tirés",
+"debut": 5.88,
+"fin": 6.34
+},
+{
+"mot": "et",
+"debut": 6.34,
+"fin": 6.52
+},
+{
+"mot": "des",
+"debut": 6.52,
+"fin": 6.64
+},
+{
+"mot": "chiffres,",
+"debut": 6.64,
+"fin": 6.96
+},
+{
+"mot": "il",
+"debut": 7.46,
+"fin": 7.62
+},
+{
+"mot": "se",
+"debut": 7.62,
+"fin": 7.76
+},
+{
+"mot": "trompe",
+"debut": 7.76,
+"fin": 7.96
+},
+{
+"mot": "d",
+"debut": 7.96,
+"fin": 8.04
+},
+{
+"mot": "'une",
+"debut": 8.04,
+"fin": 8.1
+},
+{
+"mot": "lettre,",
+"debut": 8.1,
+"fin": 8.34
+},
+{
+"mot": "et",
+"debut": 8.74,
+"fin": 8.94
+},
+{
+"mot": "il",
+"debut": 8.94,
+"fin": 9.08
+},
+{
+"mot": "tombe",
+"debut": 9.08,
+"fin": 9.26
+},
+{
+"mot": "sur",
+"debut": 9.26,
+"fin": 9.36
+},
+{
+"mot": "un",
+"debut": 9.36,
+"fin": 9.5
+},
+{
+"mot": "autre",
+"debut": 9.5,
+"fin": 9.72
+},
+{
+"mot": "plombier.",
+"debut": 9.72,
+"fin": 10.06
+},
+{
+"mot": "Avec",
+"debut": 10.68,
+"fin": 10.98
+},
+{
+"mot": "Provesia,",
+"debut": 10.98,
+"fin": 11.42
+},
+{
+"mot": "une",
+"debut": 11.68,
+"fin": 11.86
+},
+{
+"mot": "adresse",
+"debut": 11.86,
+"fin": 12.08
+},
+{
+"mot": "web",
+"debut": 12.08,
+"fin": 12.34
+},
+{
+"mot": "à",
+"debut": 12.34,
+"fin": 12.5
+},
+{
+"mot": "votre",
+"debut": 12.5,
+"fin": 12.66
+},
+{
+"mot": "nom.",
+"debut": 12.66,
+"fin": 12.9
+},
+{
+"mot": "Votre",
+"debut": 13.44,
+"fin": 13.68
+},
+{
+"mot": "site",
+"debut": 13.68,
+"fin": 13.82
+},
+{
+"mot": "facile",
+"debut": 13.82,
+"fin": 14.1
+},
+{
+"mot": "à",
+"debut": 14.1,
+"fin": 14.3
+},
+{
+"mot": "donner,",
+"debut": 14.3,
+"fin": 14.48
+},
+{
+"mot": "au",
+"debut": 14.62,
+"fin": 14.72
+},
+{
+"mot": "téléphone",
+"debut": 14.72,
+"fin": 15.0
+},
+{
+"mot": "ou",
+"debut": 15.0,
+"fin": 15.26
+},
+{
+"mot": "sur",
+"debut": 15.26,
+"fin": 15.38
+},
+{
+"mot": "un",
+"debut": 15.38,
+"fin": 15.48
+},
+{
+"mot": "papier.",
+"debut": 15.48,
+"fin": 15.66
+},
+{
+"mot": "Et",
+"debut": 16.44,
+"fin": 16.58
+},
+{
+"mot": "vous,",
+"debut": 16.58,
+"fin": 16.7
+},
+{
+"mot": "votre",
+"debut": 16.76,
+"fin": 16.84
+},
+{
+"mot": "site,",
+"debut": 16.84,
+"fin": 17.12
+},
+{
+"mot": "on",
+"debut": 17.2,
+"fin": 17.28
+},
+{
+"mot": "le",
+"debut": 17.28,
+"fin": 17.36
+},
+{
+"mot": "trouve",
+"debut": 17.36,
+"fin": 17.42
+},
+{
+"mot": "facilement",
+"debut": 17.42,
+"fin": 17.8
+},
+{
+"mot": "?",
+"debut": 17.8,
+"fin": 18.5
+},
+{
+"mot": "Provesia,",
+"debut": 18.5,
+"fin": 18.98
+},
+{
+"mot": "le",
+"debut": 19.34,
+"fin": 19.42
+},
+{
+"mot": "partenaire",
+"debut": 19.42,
+"fin": 19.8
+},
+{
+"mot": "des",
+"debut": 19.8,
+"fin": 19.86
+},
+{
+"mot": "plombiers.",
+"debut": 19.86,
+"fin": 20.14
+},
+{
+"mot": "Provesia",
+"debut": 20.74,
+"fin": 21.08
+},
+{
+"mot": ".fr",
+"debut": 21.08,
+"fin": 21.38
+}
+]
