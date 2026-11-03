@@ -1,0 +1,113 @@
+{
+ "titre": "POV&nbsp;: votre client veut <b>signer le devis ce soir</b>",
+ "sorte": "pov",
+ "idee": 22,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "2348",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Vous rentrez <b>imprimer le devis</b>",
+   "clip": "221506",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "L'imprimante <b>n'a plus d'encre</b>",
+   "clip": "265250",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Le lendemain, <b>il faut le scanner</b>",
+   "clip": "212508",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Le scan est <b>illisible</b>",
+   "clip": "3188",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Et le client <b>a signé ailleurs</b>",
+   "clip": "79336",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Avec Prouessia, <b>le client signe en ligne</b>",
+   "clip": "img:05-envoyer-devis",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Avec son doigt, <b>sur son téléphone</b>",
+   "clip": "img:07-signature-doigt",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Plus d'imprimante, plus de scan, <b>plus de papier</b>",
+   "clip": "12543",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Et vous, votre imprimante, <b>elle marche</b>&nbsp;?",
+   "clip": "40816",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "109879",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  }
+ ],
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Le client veut signer le soir : vous rentrez imprimer le devis, l'imprimante n'a plus d'encre, le scan est illisible et le client signe ailleurs."
+  },
+  {
+   "dit": "Avec Prouessia, le client signe le devis en ligne, avec son doigt sur son téléphone : plus d'imprimante, plus de scan, plus de papier.",
+   "ref": "avantage n° 22 (et n° 21 « Signature au doigt sur téléphone ») « Plus d'impression ni de scan » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "04.11.2026",
+ "avert": "Information générale, pas un conseil personnalisé."
+}

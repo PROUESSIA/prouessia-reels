@@ -1,0 +1,122 @@
+{
+ "titre": "Le client conteste&nbsp;: <b>«&nbsp;on n'avait pas dit ce prix-là&nbsp;!&nbsp;»</b>",
+ "sorte": "carte",
+ "gabarit": "carte",
+ "idee": 23,
+ "phrases": [
+  {
+   "html": "",
+   "clip": "304045",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "appel": [
+    "Client · 19&nbsp;h&nbsp;40",
+    "« On n'avait pas dit ce prix-là&nbsp;! »"
+   ]
+  },
+  {
+   "html": "Devis accepté&nbsp;: <b>une règle à connaître</b>",
+   "clip": "42923",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Un devis accepté <b>vous engage</b>",
+   "clip": "68559",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Le prix, <b>c'est ce qui est écrit</b>",
+   "clip": "67460",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Les travaux aussi, <b>c'est ce qui est écrit</b>",
+   "clip": "4973",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Encore faut-il <b>retrouver le devis signé</b>",
+   "clip": "83870",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  },
+  {
+   "html": "Avec Prouessia, <b>le client signe avec son doigt</b>",
+   "clip": "img:07-signature-doigt",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et le devis signé <b>se fait tout seul en PDF</b>",
+   "clip": "img:extras/08-pdf-signe-page",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1,
+   "cy": 0.42,
+   "zoom": 1.0
+  },
+  {
+   "html": "Et vous, vos devis signés, <b>ils sont où</b>&nbsp;?",
+   "clip": "3142",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": 1
+  },
+  {
+   "html": "Prouessia, <b>le partenaire des plombiers</b><br><span style=\"font-size:60px;color:#fff\">prouessia.fr</span>",
+   "clip": "5629",
+   "debut": 1.0,
+   "cx": 0.5,
+   "sens": -1
+  }
+ ],
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Un client rappelle : on n'avait pas dit ce prix-là !"
+  },
+  {
+   "dit": "Un devis accepté vous engage : le prix et les travaux, c'est ce qui est écrit.",
+   "ref": "une fois le devis accepté par le client, il engage le professionnel à en respecter les termes (étendue, durée, coût de l'intervention). Vérifié le 12/10/2026, faits/r04.json.",
+   "liens": [
+    [
+     "economie.gouv.fr : Devis obligatoire, comment ça marche ?",
+     "https://www.economie.gouv.fr/entreprises/gerer-sa-comptabilite-et-ses-demarches/devis-obligatoire-comment-ca-marche"
+    ]
+   ],
+   "label": "Ce que dit le texte :"
+  },
+  {
+   "dit": "Avec Prouessia, le client signe avec son doigt et le devis signé se fait tout seul en PDF.",
+   "ref": "avantage n° 23 (et n° 21 « Signature au doigt sur téléphone ») « PDF signé généré automatiquement » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Les travaux supplémentaires en cours de chantier et les litiges ne sont pas traités ; aucun montant n'est cité.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "date": "04.11.2026",
+ "avert": "Information générale, pas un conseil personnalisé."
+}
