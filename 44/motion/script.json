@@ -1,0 +1,90 @@
+{
+ "titre": "Il signe, un e-mail vous prévient",
+ "phrases": [
+  {
+   "dit": "Vous êtes sur une échelle.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Vous êtes",
+    "sur une",
+    "échelle."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Votre client lit le devis.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Votre client",
+    "lit",
+    "le devis."
+   ],
+   "jaune": [
+    2
+   ],
+   "bulle": true
+  },
+  {
+   "dit": "Il signe avec son doigt.",
+   "scene": "app",
+   "haut": [
+    "Il signe",
+    "au doigt"
+   ],
+   "capture": "07-signature-doigt"
+  },
+  {
+   "dit": "Et un e-mail vous prévient.",
+   "scene": "app",
+   "haut": [
+    "Un e-mail",
+    "vous prévient"
+   ],
+   "capture": "09-notification-signature"
+  },
+  {
+   "dit": "Pas besoin de l'appeler.",
+   "scene": "texte",
+   "fond": "ink",
+   "lignes": [
+    "Pas besoin",
+    "de l'appeler."
+   ],
+   "jaune": [
+    1
+   ]
+  },
+  {
+   "dit": "Vous savez que c'est signé.",
+   "scene": "texte",
+   "fond": "accent",
+   "lignes": [
+    "Vous savez",
+    "que c'est",
+    "signé."
+   ],
+   "jaune": [
+    2
+   ]
+  },
+  {
+   "dit": "Et vous, vos devis signés, vous le savez ?",
+   "scene": "question",
+   "lignes": [
+    "Et vous,",
+    "vos devis signés,",
+    "vous le savez ?"
+   ]
+  },
+  {
+   "dit": "Prouessia, le partenaire des plombiers.",
+   "scene": "fin"
+  }
+ ],
+ "cta": true,
+ "mot": "DEVIS"
+}

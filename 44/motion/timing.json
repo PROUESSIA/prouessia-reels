@@ -1,0 +1,48 @@
+{
+ "phrases": [
+  {
+   "a": 0.35,
+   "b": 1.37,
+   "text": "Vous êtes sur une échelle."
+  },
+  {
+   "a": 1.82,
+   "b": 3.1,
+   "text": "Votre client lit le devis."
+  },
+  {
+   "a": 3.55,
+   "b": 4.59,
+   "text": "Il signe avec son doigt."
+  },
+  {
+   "a": 4.84,
+   "b": 5.92,
+   "text": "Et un e-mail vous prévient."
+  },
+  {
+   "a": 6.17,
+   "b": 6.95,
+   "text": "Pas besoin de l'appeler."
+  },
+  {
+   "a": 7.4,
+   "b": 8.39,
+   "text": "Vous savez que c'est signé."
+  },
+  {
+   "a": 8.84,
+   "b": 10.35,
+   "text": "Et vous, vos devis signés, vous le savez ?"
+  },
+  {
+   "a": 10.8,
+   "b": 13.69,
+   "text": "Prouessia, le partenaire des plombiers."
+  }
+ ],
+ "cta": {
+  "a": 14.14,
+  "b": 17.09
+ }
+}

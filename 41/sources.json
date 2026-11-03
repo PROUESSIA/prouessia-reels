@@ -1,0 +1,99 @@
+{
+ "num": "41",
+ "titre": "Une adresse web à votre nom, facile à donner",
+ "date": "04.11.2026",
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Un client vous demande votre site : vous épelez une adresse à rallonge, il se trompe d'une lettre et tombe sur un autre plombier."
+  },
+  {
+   "dit": "Avec Prouessia, votre site a une adresse web à votre nom, facile à donner.",
+   "ref": "avantage n° 20 « Une adresse web à votre nom » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "4504",
+   "sujet": "artisanat",
+   "url": "https://pixabay.com/videos/id-4504/",
+   "auteur": "faxtastic"
+  },
+  {
+   "id": "260456",
+   "sujet": "smartphone",
+   "url": "https://pixabay.com/videos/id-260456/",
+   "auteur": "Frank_Rietsch"
+  },
+  {
+   "id": "47743",
+   "sujet": "téléphoner",
+   "url": "https://pixabay.com/videos/id-47743/",
+   "auteur": "crew_jak"
+  },
+  {
+   "id": "3176",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-3176/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "260354",
+   "sujet": "l'internet",
+   "url": "https://pixabay.com/videos/id-260354/",
+   "auteur": "Frank_Rietsch"
+  },
+  {
+   "id": "44859",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-44859/",
+   "auteur": "FlorenceCdeM"
+  },
+  {
+   "id": "img:23-site-vitrine-mobile",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:23-site-vitrine-mobile/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:27-mentions-legales",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:27-mentions-legales/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "212509",
+   "sujet": "documents",
+   "url": "https://pixabay.com/videos/id-212509/",
+   "auteur": "MaxMedyk"
+  },
+  {
+   "id": "67461",
+   "sujet": "ouvrier",
+   "url": "https://pixabay.com/videos/id-67461/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "257088",
+   "sujet": "eau",
+   "url": "https://pixabay.com/videos/id-257088/",
+   "auteur": "padrinan"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

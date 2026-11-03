@@ -1,0 +1,104 @@
+{
+ "num": "43",
+ "titre": "Le client conteste : « on n'avait pas dit ce prix-là ! »",
+ "date": "04.11.2026",
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Un client rappelle : on n'avait pas dit ce prix-là !"
+  },
+  {
+   "dit": "Un devis accepté vous engage : le prix et les travaux, c'est ce qui est écrit.",
+   "ref": "une fois le devis accepté par le client, il engage le professionnel à en respecter les termes (étendue, durée, coût de l'intervention). Vérifié le 12/10/2026, faits/r04.json.",
+   "liens": [
+    [
+     "economie.gouv.fr : Devis obligatoire, comment ça marche ?",
+     "https://www.economie.gouv.fr/entreprises/gerer-sa-comptabilite-et-ses-demarches/devis-obligatoire-comment-ca-marche"
+    ]
+   ],
+   "label": "Ce que dit le texte :"
+  },
+  {
+   "dit": "Avec Prouessia, le client signe avec son doigt et le devis signé se fait tout seul en PDF.",
+   "ref": "avantage n° 23 (et n° 21 « Signature au doigt sur téléphone ») « PDF signé généré automatiquement » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Les travaux supplémentaires en cours de chantier et les litiges ne sont pas traités ; aucun montant n'est cité.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "304045",
+   "sujet": "téléphoner",
+   "url": "https://pixabay.com/videos/id-304045/",
+   "auteur": "VirtualZero"
+  },
+  {
+   "id": "42923",
+   "sujet": "chantier de construction",
+   "url": "https://pixabay.com/videos/id-42923/",
+   "auteur": "chuduyen215"
+  },
+  {
+   "id": "68559",
+   "sujet": "pièces de monnaie",
+   "url": "https://pixabay.com/videos/id-68559/",
+   "auteur": "Kmeel_com"
+  },
+  {
+   "id": "67460",
+   "sujet": "ouvrier",
+   "url": "https://pixabay.com/videos/id-67460/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "4973",
+   "sujet": "scie sauteuse",
+   "url": "https://pixabay.com/videos/id-4973/",
+   "auteur": "klimkin"
+  },
+  {
+   "id": "83870",
+   "sujet": "femme",
+   "url": "https://pixabay.com/videos/id-83870/",
+   "auteur": "SYG_Anime"
+  },
+  {
+   "id": "img:07-signature-doigt",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:07-signature-doigt/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:extras/08-pdf-signe-page",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:extras/08-pdf-signe-page/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "3142",
+   "sujet": "mousse",
+   "url": "https://pixabay.com/videos/id-3142/",
+   "auteur": "Life-Of-Vids"
+  },
+  {
+   "id": "5629",
+   "sujet": "de la vaisselle",
+   "url": "https://pixabay.com/videos/id-5629/",
+   "auteur": "Coverr-Free-Footage"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}

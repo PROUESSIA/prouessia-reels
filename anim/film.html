@@ -558,7 +558,7 @@ function decorEntrepot(x0) {
   for (const [x, z] of [[-.85, -1.4], [.85, -1.4], [-.85, 1.6], [.85, 1.6]]) { const r = cyl(.36, .36, .26, '#151515', x, .36, z, van, 16); r.rotation.z = Math.PI / 2; }
   const phares = []; for (const s of [-1, 1]) { const ph = new THREE.Mesh(new THREE.SphereGeometry(.09, 8, 6), new THREE.MeshBasicMaterial({color: '#fffbe8'})); ph.position.set(s * .65, .85, 2.37); van.add(ph);
     const sp = new THREE.SpotLight('#fff6dc', 0, 18, .45, .5, 1.2); sp.position.set(s * .65, .85, 2.4); van.add(sp); sp.target.position.set(s * .65, .4, 8); van.add(sp.target); phares.push(sp); }
-  lumieres(g, {ciel: '#2b3a66', sol: '#111', hemi: .55, points: [{c: '#ffc27a', i: 5, p: [3.3, 1.15, .35], d: 3.2, ombre: true}, {c: '#ffb35a', i: 9, p: [4.5, 3.2, -6.7], d: 9}, {c: '#6f86c8', i: 3, p: [1.5, 2, -4], d: 6}]});
+  lumieres(g, {ciel: '#5d72b8', sol: '#2a2a30', hemi: 1.6, points: [{c: '#ffc27a', i: 7, p: [3.3, 1.15, .35], d: 3.5, ombre: true}, {c: '#ffb35a', i: 22, p: [4.5, 3.2, -6.7], d: 12}, {c: '#8fa6e0', i: 9, p: [1.5, 2.4, -4.2], d: 7}, {c: '#9fb2e8', i: 10, p: [0, 3.2, .5], d: 8}, {c: '#9fb2e8', i: 7, p: [-2.4, 2.6, -.6], d: 5}, {c: '#9fb2e8', i: 7, p: [1.2, 2.2, -1.2], d: 4}, {c: '#8fa6e0', i: 9, p: [-3.2, 2.4, -4.0], d: 6}]});
   const theo = perso({...CAST.theo, pose: 'telephone'}, g);
   const telT = new THREE.Group(); theo.bd.main.add(telT); box(.075, .15, .012, '#111', 0, -.04, .05, telT);
   const ecr = new THREE.Mesh(new THREE.PlaneGeometry(.066, .13), new THREE.MeshBasicMaterial({color: '#dfe8ff'})); ecr.position.set(0, -.04, .057); telT.add(ecr);

@@ -1,0 +1,99 @@
+{
+ "num": "42",
+ "titre": "POV : votre client veut signer le devis ce soir",
+ "date": "04.11.2026",
+ "affirmations": [
+  {
+   "ref": "une mise en situation pour illustrer un problème courant, pas un cas réel ni une statistique.",
+   "liens": [],
+   "label": "Mise en situation :",
+   "dit": "Le client veut signer le soir : vous rentrez imprimer le devis, l'imprimante n'a plus d'encre, le scan est illisible et le client signe ailleurs."
+  },
+  {
+   "dit": "Avec Prouessia, le client signe le devis en ligne, avec son doigt sur son téléphone : plus d'imprimante, plus de scan, plus de papier.",
+   "ref": "avantage n° 22 (et n° 21 « Signature au doigt sur téléphone ») « Plus d'impression ni de scan » de la liste des 100 avantages de Prouessia (fonctions qui existent aujourd'hui dans le logiciel). Écrans de l'application montrés : compte et site de démonstration avec des données fictives.",
+   "liens": [
+    [
+     "prouessia.fr",
+     "https://prouessia.fr"
+    ]
+   ],
+   "label": "Notre outil :"
+  }
+ ],
+ "non_couvert": [
+  "Aucun chiffre officiel ni règle légale n'est cité dans cette vidéo.",
+  "Les données visibles à l'écran sont celles d'un compte de démonstration."
+ ],
+ "avert": "Information générale, pas un conseil personnalisé.",
+ "videos": [
+  {
+   "id": "2348",
+   "sujet": "égoutter",
+   "url": "https://pixabay.com/videos/id-2348/",
+   "auteur": "Life-Of-Vids"
+  },
+  {
+   "id": "221506",
+   "sujet": "classeur",
+   "url": "https://pixabay.com/videos/id-221506/",
+   "auteur": "u_dwkxvkvwv8"
+  },
+  {
+   "id": "265250",
+   "sujet": "travailler",
+   "url": "https://pixabay.com/videos/id-265250/",
+   "auteur": "Graphitage1"
+  },
+  {
+   "id": "212508",
+   "sujet": "documents",
+   "url": "https://pixabay.com/videos/id-212508/",
+   "auteur": "MaxMedyk"
+  },
+  {
+   "id": "3188",
+   "sujet": "clavier d'ordinateur",
+   "url": "https://pixabay.com/videos/id-3188/",
+   "auteur": "Coverr-Free-Footage"
+  },
+  {
+   "id": "79336",
+   "sujet": "téléphone intelligent",
+   "url": "https://pixabay.com/videos/id-79336/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "img:05-envoyer-devis",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:05-envoyer-devis/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "img:07-signature-doigt",
+   "sujet": "vidéo",
+   "url": "https://pixabay.com/videos/id-img:07-signature-doigt/",
+   "auteur": "Pixabay"
+  },
+  {
+   "id": "12543",
+   "sujet": "scintille",
+   "url": "https://pixabay.com/videos/id-12543/",
+   "auteur": "wastedgeneration"
+  },
+  {
+   "id": "40816",
+   "sujet": "worker",
+   "url": "https://pixabay.com/videos/id-40816/",
+   "auteur": "AlexKopeykin"
+  },
+  {
+   "id": "109879",
+   "sujet": "l'eau",
+   "url": "https://pixabay.com/videos/id-109879/",
+   "auteur": "Martin_Grabo"
+  }
+ ],
+ "licence_videos": "Licence Pixabay : usage commercial, sans attribution obligatoire",
+ "voix": "Google AI Studio (Gemini TTS), voix « Charon », style de moteur/vecu.py ; aucune musique"
+}
