@@ -1,0 +1,342 @@
+[
+{
+"mot": "Julien,",
+"debut": 0.0,
+"fin": 0.56
+},
+{
+"mot": "j",
+"debut": 1.14,
+"fin": 1.32
+},
+{
+"mot": "'ai",
+"debut": 1.32,
+"fin": 1.34
+},
+{
+"mot": "trouvé",
+"debut": 1.34,
+"fin": 1.52
+},
+{
+"mot": "l",
+"debut": 1.52,
+"fin": 1.7
+},
+{
+"mot": "'entrepôt",
+"debut": 1.7,
+"fin": 1.98
+},
+{
+"mot": "de",
+"debut": 1.98,
+"fin": 2.06
+},
+{
+"mot": "Vaseur.",
+"debut": 2.06,
+"fin": 2.42
+},
+{
+"mot": "Il",
+"debut": 2.96,
+"fin": 3.1
+},
+{
+"mot": "avait",
+"debut": 3.1,
+"fin": 3.22
+},
+{
+"mot": "oublié",
+"debut": 3.22,
+"fin": 3.54
+},
+{
+"mot": "une",
+"debut": 3.54,
+"fin": 3.66
+},
+{
+"mot": "facture",
+"debut": 3.66,
+"fin": 4.0
+},
+{
+"mot": "au",
+"debut": 4.0,
+"fin": 4.12
+},
+{
+"mot": "café",
+"debut": 4.12,
+"fin": 4.32
+},
+{
+"mot": "avec",
+"debut": 4.32,
+"fin": 4.84
+},
+{
+"mot": "l",
+"debut": 4.84,
+"fin": 5.02
+},
+{
+"mot": "'adresse.",
+"debut": 5.02,
+"fin": 5.14
+},
+{
+"mot": "Le",
+"debut": 5.9,
+"fin": 6.16
+},
+{
+"mot": "quai",
+"debut": 6.16,
+"fin": 6.28
+},
+{
+"mot": "est",
+"debut": 6.28,
+"fin": 6.38
+},
+{
+"mot": "ouvert,",
+"debut": 6.38,
+"fin": 6.6
+},
+{
+"mot": "juste",
+"debut": 7.0,
+"fin": 7.28
+},
+{
+"mot": "2",
+"debut": 7.28,
+"fin": 7.5
+},
+{
+"mot": "minutes.",
+"debut": 7.5,
+"fin": 7.64
+},
+{
+"mot": "Des",
+"debut": 8.42,
+"fin": 8.62
+},
+{
+"mot": "cartons",
+"debut": 8.62,
+"fin": 8.94
+},
+{
+"mot": "entiers",
+"debut": 8.94,
+"fin": 9.36
+},
+{
+"mot": "dément",
+"debut": 9.36,
+"fin": 9.62
+},
+{
+"mot": "et",
+"debut": 9.62,
+"fin": 10.1
+},
+{
+"mot": "dérobinés",
+"debut": 10.1,
+"fin": 10.48
+},
+{
+"mot": "à",
+"debut": 10.48,
+"fin": 10.58
+},
+{
+"mot": "10",
+"debut": 10.58,
+"fin": 10.76
+},
+{
+"mot": "euros.",
+"debut": 10.76,
+"fin": 10.98
+},
+{
+"mot": "Sur",
+"debut": 11.68,
+"fin": 11.92
+},
+{
+"mot": "le",
+"debut": 11.92,
+"fin": 12.04
+},
+{
+"mot": "bureau,",
+"debut": 12.04,
+"fin": 12.2
+},
+{
+"mot": "une",
+"debut": 12.46,
+"fin": 12.58
+},
+{
+"mot": "liste,",
+"debut": 12.58,
+"fin": 13.02
+},
+{
+"mot": "40",
+"debut": 13.24,
+"fin": 13.6
+},
+{
+"mot": "noms",
+"debut": 13.6,
+"fin": 13.98
+},
+{
+"mot": "que",
+"debut": 13.98,
+"fin": 14.48
+},
+{
+"mot": "des",
+"debut": 14.48,
+"fin": 14.6
+},
+{
+"mot": "personnes",
+"debut": 14.6,
+"fin": 14.84
+},
+{
+"mot": "âgées.",
+"debut": 14.84,
+"fin": 15.16
+},
+{
+"mot": "Avec",
+"debut": 15.86,
+"fin": 16.14
+},
+{
+"mot": "des",
+"debut": 16.14,
+"fin": 16.36
+},
+{
+"mot": "dates,",
+"debut": 16.36,
+"fin": 16.52
+},
+{
+"mot": "deuxième",
+"debut": 17.08,
+"fin": 17.36
+},
+{
+"mot": "passage,",
+"debut": 17.36,
+"fin": 17.64
+},
+{
+"mot": "une",
+"debut": 18.5,
+"fin": 18.76
+},
+{
+"mot": "camionnette.",
+"debut": 18.76,
+"fin": 19.26
+},
+{
+"mot": "Je",
+"debut": 19.76,
+"fin": 19.88
+},
+{
+"mot": "sors.",
+"debut": 19.88,
+"fin": 20.04
+},
+{
+"mot": "Je",
+"debut": 21.24,
+"fin": 21.76
+},
+{
+"mot": "suis",
+"debut": 21.76,
+"fin": 21.88
+},
+{
+"mot": "dehors.",
+"debut": 21.88,
+"fin": 22.1
+},
+{
+"mot": "J",
+"debut": 23.4,
+"fin": 23.7
+},
+{
+"mot": "'ai",
+"debut": 23.7,
+"fin": 23.76
+},
+{
+"mot": "tout",
+"debut": 23.76,
+"fin": 23.88
+},
+{
+"mot": "photographié.",
+"debut": 23.88,
+"fin": 24.32
+},
+{
+"mot": "Julien,",
+"debut": 25.04,
+"fin": 25.56
+},
+{
+"mot": "Madame",
+"debut": 26.3,
+"fin": 26.58
+},
+{
+"mot": "Carnier,",
+"debut": 26.58,
+"fin": 26.94
+},
+{
+"mot": "c",
+"debut": 27.66,
+"fin": 27.76
+},
+{
+"mot": "'est",
+"debut": 27.76,
+"fin": 27.8
+},
+{
+"mot": "cette",
+"debut": 27.8,
+"fin": 27.94
+},
+{
+"mot": "nuit.",
+"debut": 27.94,
+"fin": 28.1
+}
+]
