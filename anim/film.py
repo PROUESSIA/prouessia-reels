@@ -155,6 +155,14 @@ def carte(nom, fond, du, out):
 <div style="position:absolute;top:520px;left:0;right:0;font-size:64px;font-weight:800;color:#fff;font-family:Inter,sans-serif">● 01:47</div>
 <div style="position:absolute;bottom:90px;left:50%;transform:translateX(-50%);width:110px;height:110px;border-radius:55px;border:8px solid #fff;display:flex;align-items:center;justify-content:center"><div style="width:44px;height:44px;border-radius:8px;background:#ff3b30"></div></div></div>
 <div style="position:absolute;left:0;right:0;bottom:0;height:820px;background:linear-gradient(180deg,rgba(63,122,106,0) 0,rgba(63,122,106,.96) 22%);"></div>"""
+    elif nom == 'liste':   # gros plan : la photo de la liste prise par Théo, sur son téléphone (objet de l'histoire, sans légende)
+        L = ['12/10 · Lefèvre · ✓', '19/10 · Rocher · ✓', '27/10 · Bernard · ✓', '30/10 · Martin · ✓', '04/11 · Garnier', '06/11 · Petit', '09/11 · Roux', '13/11 · Lambert']
+        rows = ''.join(f'<div style="padding:10px 6px;{"border:6px solid #e0261b;border-radius:40px;margin:4px -10px;padding:6px 14px;font-weight:900" if i == 4 else ""}">{r}</div>' for i, r in enumerate(L))
+        corps = f"""<div style="width:470px;height:960px;border-radius:64px;background:#0b0b0d;border:14px solid #2a2b30;box-shadow:0 30px 80px rgba(0,0,0,.8);position:relative;overflow:hidden;transform:rotate(-6deg)">
+<div style="position:absolute;inset:0;background:#3a3027"></div>
+<div style="position:absolute;top:90px;left:34px;right:34px;bottom:110px;background:#f4f0e6;transform:rotate(3deg);box-shadow:0 10px 30px rgba(0,0,0,.6);padding:34px 30px;text-align:left;color:#222;text-shadow:none;font-family:Caveat,cursive;font-size:46px;line-height:1.05">
+<div style="font-size:52px;font-weight:700;text-decoration:underline;margin-bottom:14px">2e passage</div>{rows}</div>
+<div style="position:absolute;top:22px;left:50%;transform:translateX(-50%);width:120px;height:30px;border-radius:20px;background:#000"></div></div>"""
     elif nom == 'tel_eteint':   # gros plan : le téléphone de Julien, écran noir
         corps = """<div style="width:430px;height:880px;border-radius:64px;background:#0b0b0d;border:14px solid #2a2b30;box-shadow:0 30px 80px rgba(0,0,0,.8),inset 0 0 0 2px #444;
 position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(125deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,0) 38%)"></div>

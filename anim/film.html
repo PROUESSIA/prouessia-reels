@@ -511,7 +511,83 @@ function decorRueDumas(x0) {
   }};
 }
 DECORS.cuisine_dumas = decorCuisineDumas(140); DECORS.rue_dumas = decorRueDumas(160);
-const FONDS = {rue: '#06080e', chambre: '#0b0f1e', camion: '#05070f', cuisine_lefevre: '#1a1410', cuisine_jour: '#cfdcea', parking: '#05070f', maison_rocher: '#0a0d14', cuisine_dumas: '#dfe8f0', rue_dumas: '#bcd4ee'};
+// ép. 8 « La liste » : l'entrepôt de Vasseur, la nuit (quai ouvert au fond, cour et camionnette dehors)
+function decorEntrepot(x0) {
+  const g = new THREE.Group(); g.position.x = x0; scene.add(g);
+  box(8, .1, 9, '#3a3d42', 0, -.05, .5, g);                                                    // sol béton
+  for (let i = 0; i < 7; i++) box(.04, .002, 9, '#2f3236', -3 + i, .002, .5, g);
+  box(4.6, 3.6, .2, '#4a5058', -1.7, 1.8, -3, g); box(1.6, 3.6, .2, '#4a5058', 3.2, 1.8, -3, g); box(1.8, 1.4, .2, '#4a5058', 1.5, 2.9, -3, g);   // fond + quai
+  const rideau = box(1.8, .5, .3, '#7d848c', 1.5, 2.0, -2.95, g);                               // rideau métallique remonté
+  box(.2, 3.6, 9, '#454b52', -4, 1.8, .5, g); box(.2, 3.6, 9, '#454b52', 4, 1.8, .5, g);
+  for (let i = 0; i < 9; i++) box(.02, 3.4, .04, '#3a3f45', -3.9, 1.8, -3 + i, g);             // tôle ondulée
+  // étagères à gauche : cartons d'aimants
+  const lbl = (t1, t2, c) => texte([{t: t1, y: 70, s: 46, g: 1, c: '#111'}, {t: t2, y: 130, s: 40, g: 1, c: c || '#a01818'}], {fond: '#f2b705', w: 256, h: 160});
+  const texA = lbl('AIMANTS', 'URGENCE 24h/24');
+  for (const z of [-2.4, -1.4, -.4, .6]) { box(.06, 2.4, .06, '#8a3a1a', -3.75, 1.2, z, g); box(.06, 2.4, .06, '#8a3a1a', -3.15, 1.2, z, g); }
+  for (const y of [.15, .95, 1.75]) { box(.66, .05, 3.1, '#8a3a1a', -3.45, y, -.9, g);
+    for (let k = 0; k < 4; k++) { const z = -2.15 + k * .8; box(.5, .5, .6, '#a5835a', -3.45, y + .28, z, g);
+      const p = new THREE.Mesh(new THREE.PlaneGeometry(.3, .19), new THREE.MeshBasicMaterial({map: texA})); p.position.set(-3.19, y + .3, z); p.rotation.y = Math.PI / 2; g.add(p); } }
+  // carton d'aimants ouvert par terre
+  const cA = new THREE.Group(); cA.position.set(-2.3, 0, -1.2); g.add(cA);
+  box(.6, .4, .5, '#a5835a', 0, .2, 0, cA); for (const s of [-1, 1]) { const r = box(.6, .02, .25, '#9a7850', 0, .42, s * .37, cA); r.rotation.x = s * .9; }
+  const texM = texte([{t: 'URGENCE', y: 90, s: 44, g: 1, c: '#111'}, {t: 'PLOMBERIE', y: 140, s: 34, g: 1, c: '#111'}, {t: '24h/24', y: 200, s: 40, g: 1, c: '#a01818'}], {fond: '#f2b705', w: 256, h: 256});
+  for (let i = 0; i < 9; i++) { const m = new THREE.Mesh(new THREE.PlaneGeometry(.13, .16), new THREE.MeshBasicMaterial({map: texM})); m.position.set(-.2 + (i % 3) * .17, .405 + i * .002, -.15 + Math.floor(i / 3) * .15); m.rotation.set(-Math.PI / 2, 0, (rnd() - .5) * .6); cA.add(m); }
+  // carton de robinets premier prix
+  const cR = new THREE.Group(); cR.position.set(-2.3, 0, -.25); g.add(cR);
+  box(.6, .35, .5, '#a5835a', 0, .175, 0, cR);
+  for (let i = 0; i < 8; i++) { const r = cyl(.03, .03, .16, M('#c9ced3', {metalness: .6, roughness: .3}), -.2 + (i % 4) * .13, .38, -.1 + Math.floor(i / 4) * .2, cR, 8); r.rotation.z = Math.PI / 2; }
+  const eR = new THREE.Mesh(new THREE.PlaneGeometry(.5, .2), new THREE.MeshBasicMaterial({map: texte([{t: "ROBINET D'ARRÊT", y: 60, s: 38, g: 1, c: '#111'}, {t: '1er prix · 9,90 €', y: 120, s: 40, g: 1, c: '#a01818'}], {fond: '#f4efe3', w: 400, h: 160})}));
+  eR.position.set(0, .2, .256); cR.add(eR);
+  // bureau à droite, la lampe, la liste
+  box(1.5, .06, .75, '#5b4632', 2.9, .75, .5, g); for (const [a, b] of [[2.2, .17], [3.6, .17], [2.2, .83], [3.6, .83]]) box(.05, .72, .05, '#3f3022', a, .36, b, g);
+  cyl(.08, .1, .03, '#222', 3.4, .79, .25, g); cyl(.012, .012, .35, '#222', 3.4, .95, .25, g); const abat = cyl(.06, .12, .12, '#1b4a3a', 3.35, 1.12, .3, g); abat.rotation.z = .5;
+  const LISTE = [{t: '2e PASSAGE', y: 50, s: 34, g: 1, c: '#111'}];
+  ['12/10  Lefèvre  ✓', '19/10  Rocher  ✓', '27/10  Bernard  ✓', '30/10  Martin  ✓', '04/11  Garnier', '06/11  Petit', '09/11  Roux', '13/11  Lambert', '17/11  Moreau'].forEach((l, i) => LISTE.push({t: l, y: 105 + i * 38, s: 26, a: 'left', c: i === 4 ? '#a01818' : '#222', g: i === 4 ? 1 : 0}));
+  const liste = new THREE.Mesh(new THREE.PlaneGeometry(.21, .297), new THREE.MeshStandardMaterial({map: texte(LISTE, {fond: '#f4f0e6', w: 300, h: 440}), roughness: .9}));
+  liste.rotation.set(-Math.PI / 2, 0, Math.PI / 2 + .12); liste.position.set(2.75, .785, .5); g.add(liste);
+  for (let i = 0; i < 3; i++) { const f = box(.21, .003, .297, '#e8e2d4', 2.95 + i * .05, .782, .45 + i * .04, g); f.rotation.y = .3 + i * .2; }
+  // dehors : la cour, un lampadaire, la benne, la camionnette de Vasseur
+  box(16, .1, 10, '#1c1e22', 0, -.06, -8.1, g);
+  const lp = new THREE.Group(); lp.position.set(4.5, 0, -7); g.add(lp); box(.08, 3.4, .08, '#333', 0, 1.7, 0, lp);
+  const bl = new THREE.Mesh(new THREE.SphereGeometry(.13, 8, 6), new THREE.MeshBasicMaterial({color: '#ffb35a'})); bl.position.y = 3.4; lp.add(bl);
+  box(1.6, 1.1, .9, '#2f4d3a', -2.0, .55, -4.95, g); box(1.7, .08, 1.0, '#26402f', -2.0, 1.12, -4.95, g);                      // benne
+  const van = new THREE.Group(); g.add(van);
+  box(1.8, 1.5, 3.4, '#e9e9e4', 0, 1.15, -.3, van); box(1.8, 1.0, 1.0, '#e9e9e4', 0, .9, 1.85, van); box(1.6, .6, .05, '#1a2230', 0, 1.45, 2.36, van).rotation.x = -.45;
+  const vl = new THREE.Mesh(new THREE.PlaneGeometry(2.4, .55), new THREE.MeshBasicMaterial({map: texte([{t: 'VASSEUR', y: 70, s: 64, g: 1, c: '#a01818'}, {t: 'Dépannage 24h/24', y: 130, s: 44, g: 1, c: '#111'}], {fond: '#e9e9e4', w: 640, h: 160})}));
+  vl.position.set(-.915, 1.3, -.3); vl.rotation.y = -Math.PI / 2; van.add(vl);
+  for (const [x, z] of [[-.85, -1.4], [.85, -1.4], [-.85, 1.6], [.85, 1.6]]) { const r = cyl(.36, .36, .26, '#151515', x, .36, z, van, 16); r.rotation.z = Math.PI / 2; }
+  const phares = []; for (const s of [-1, 1]) { const ph = new THREE.Mesh(new THREE.SphereGeometry(.09, 8, 6), new THREE.MeshBasicMaterial({color: '#fffbe8'})); ph.position.set(s * .65, .85, 2.37); van.add(ph);
+    const sp = new THREE.SpotLight('#fff6dc', 0, 18, .45, .5, 1.2); sp.position.set(s * .65, .85, 2.4); van.add(sp); sp.target.position.set(s * .65, .4, 8); van.add(sp.target); phares.push(sp); }
+  lumieres(g, {ciel: '#2b3a66', sol: '#111', hemi: .55, points: [{c: '#ffc27a', i: 5, p: [3.3, 1.15, .35], d: 3.2, ombre: true}, {c: '#ffb35a', i: 9, p: [4.5, 3.2, -6.7], d: 9}, {c: '#6f86c8', i: 3, p: [1.5, 2, -4], d: 6}]});
+  const theo = perso({...CAST.theo, pose: 'telephone'}, g);
+  const telT = new THREE.Group(); theo.bd.main.add(telT); box(.075, .15, .012, '#111', 0, -.04, .05, telT);
+  const ecr = new THREE.Mesh(new THREE.PlaneGeometry(.066, .13), new THREE.MeshBasicMaterial({color: '#dfe8ff'})); ecr.position.set(0, -.04, .057); telT.add(ecr);
+  const torche = new THREE.SpotLight('#eef3ff', 0, 7, .5, .6, 1.4); theo.bd.main.add(torche); torche.target.position.set(0, -2, 3); theo.bd.main.add(torche.target);
+  const vasseur = perso({...CAST.vasseur, pose: 'debout'}, g); vasseur.root.visible = false;
+  return {g, persos: {theo, vasseur}, update(t, ev) {
+    const P = window.PLAN || {debut: 0, fin: 1}; const u = Math.min(1, Math.max(0, (t - P.debut) / Math.max(.3, P.fin - P.debut)));
+    const pp = n => { if (theo.pose !== n) pose(theo, n); };
+    const arrive = ev.has('phares'), dehors = ev.has('dehors');
+    van.visible = arrive || dehors; phares.forEach(sp => sp.intensity = arrive || dehors ? 60 : 0);
+    if (arrive) { van.position.set(1.5 - 7 + 7 * Math.min(1, u * 1.4), 0, -8.2); van.rotation.y = Math.PI / 2 - .9 * Math.min(1, u * 1.4); }   // elle tourne vers le quai
+    if (dehors) { van.position.set(1.5, 0, -7.2); van.rotation.y = 0; }
+    vasseur.root.visible = dehors && ev.has('vasseur'); vasseur.root.position.set(1.5, 0, -4.0 + u * .8); vers(vasseur, 1.5, 0);
+    torche.intensity = ev.has('torche') ? 9 : 0; telT.visible = true;
+    if (!dehors) theo.jg.h.rotation.x = theo.jd.h.rotation.x = 0;
+    if (ev.has('appel')) { pp('telephone'); theo.root.position.set(1.5, 0, -2.3 + u * .4); vers(theo, 1.2, 2); }
+    else if (ev.has('cartons')) { pp('telephone_main'); theo.root.position.set(-1.7, 0, -1.0); vers(theo, -3.2, -1.3); }
+    else if (ev.has('robinets')) { pp('telephone_main'); theo.root.position.set(-1.6, 0, -.5); vers(theo, -2.4, -.6); theo.torse.rotation.x = .35; }
+    else if (ev.has('bureau')) { pp('telephone_main'); theo.root.position.set(2.05, 0, .5); vers(theo, 3, .5); theo.torse.rotation.x = .3; }
+    else if (arrive && !ev.has('fuite')) { pp('debout'); theo.root.position.set(2.05, 0, .5); vers(theo, 1.5, -3); theo.torse.rotation.x = 0; }
+    else if (ev.has('fuite')) { pp('debout'); theo.torse.rotation.x = .25;   // il court vers la porte du côté, sous le rideau
+      theo.root.position.set(2.05 - u * 1.2, 0, .5 - u * 3.4); vers(theo, .8, -3.5);
+      const s = Math.sin(t * 14) * .7; theo.jg.h.rotation.x = s; theo.jd.h.rotation.x = -s; theo.bg.ep.rotation.x = -s; theo.bd.ep.rotation.x = s; }
+    else if (dehors) { pp('accroupi'); theo.root.position.set(-2.75, 0, -4.2); vers(theo, -1.2, -5.6); theo.torse.rotation.x = .35; }
+    if (!ev.has('robinets') && !ev.has('bureau') && !ev.has('fuite') && !dehors) theo.torse.rotation.x = 0;
+  }};
+}
+DECORS.entrepot = decorEntrepot(180);
+const FONDS = {rue: '#06080e', chambre: '#0b0f1e', camion: '#05070f', cuisine_lefevre: '#1a1410', cuisine_jour: '#cfdcea', parking: '#05070f', maison_rocher: '#0a0d14', cuisine_dumas: '#dfe8f0', rue_dumas: '#bcd4ee', entrepot: '#03050a'};
 
 // ---------- lecture de l'épisode ----------
 let EP = null; window.setEpisode = e => { EP = e; };
@@ -528,7 +604,7 @@ window.render = t => {
   c0.lerpVectors(V(p.cible[0]), V(p.cible[1]), u); c0.x += x0; cam.lookAt(c0);
   cam.fov = p.fov || 44; cam.updateProjectionMatrix();
   const ev = new Set((EP.evenements || []).filter(e => e.decor === p.decor && t >= e.debut && t <= e.fin).map(e => e.nom));
-  d.update(t, ev);
+  window.PLAN = p; d.update(t, ev);
   // qui parle : petits mouvements de tête ; les autres respirent
   const parle = EP.repliques.find(r => t >= r.debut && t <= r.fin);
   for (const [nom, pp] of Object.entries(d.persos)) {
